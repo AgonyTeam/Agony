@@ -3285,13 +3285,10 @@
 	<entity id="220" variant="0" subtype="13" name="Eternal Squirt" baseHP="25" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.000_Eternal Squirt.anm2">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="220" variant="0" name="Squirt" baseHP="15" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" subtype="66" anm2path="220.000_squirt shadow.anm2">
+	<entity id="220" variant="0" name="Squirt shadow" baseHP="15" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" subtype="66" anm2path="220.000_squirt shadow.anm2">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
     <entity id="220" variant="111" name="Squirt" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.111_Squirt guardian.anm2" shutdoors="false">
-        <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
-    </entity>
-	<entity id="220" variant="1" name="Poopfly" baseHP="15" stageHP="6" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.001_Poopfly.anm2">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 	<entity id="222" variant="1" name="Ring Fly" baseHP="5" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="17" friction="1" numGridCollisionPoints="1" shadowSize="22" portrait="89" subtype="66" anm2path="014.001_super pooter shadow.anm2" gridCollision="ground">
@@ -3551,9 +3548,6 @@
 	<entity id="246" anm2path="246.000_Ragling shadow.anm2" subtype="66" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="0" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="246" anm2path="246.001_Ghost spider.anm2" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="1" portrait="26">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-    </entity>
 	<entity id="246" anm2path="246.002_Ghost spider.anm2" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="2" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
@@ -3773,6 +3767,7 @@
 	<entity anm2path="A281.001_SwarmSpider.anm2" reroll="true" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="14" friction="1" id="281" name="Swarm" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="1" portrait="53" gridCollision="ground"> <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" /> </entity>
 	
 	<!-- More Friends End -->
+	
 	
 	<!-- Agony end -->
 	
