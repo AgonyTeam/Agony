@@ -2,7 +2,7 @@
 	<Info CreatedBy="robot" CreatedOn="02/04/2015 5:18:07 PM" Version="104" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="more friends/A281.001_SwarmSpider.png" Id="0"/>
+			<Spritesheet Path="A281.001_SwarmSpider.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>
