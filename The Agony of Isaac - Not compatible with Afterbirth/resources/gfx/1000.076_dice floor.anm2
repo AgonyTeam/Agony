@@ -1,0 +1,171 @@
+﻿<!--Converted to ANM2 by Gibbed.Rebirth.ConvertAnimations-->
+<AnimatedActor>
+  <Content>
+    <Spritesheets>
+      <Spritesheet Path="Effects/DiceRoomProps.png" Id="0" />
+    </Spritesheets>
+    <Layers>
+      <Layer Name="Slab" Id="0" SpritesheetId="0" />
+      <Layer Name="Dot1" Id="1" SpritesheetId="0" />
+      <Layer Name="Dot2" Id="2" SpritesheetId="0" />
+      <Layer Name="Dot3" Id="3" SpritesheetId="0" />
+      <Layer Name="Dot4" Id="4" SpritesheetId="0" />
+      <Layer Name="Dot5" Id="5" SpritesheetId="0" />
+      <Layer Name="Dot6" Id="6" SpritesheetId="0" />
+    </Layers>
+    <Nulls />
+    <Events />
+  </Content>
+  <Animations DefaultAnimation="1">
+    <Animation Name="1" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="-3" YPosition="-4" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="False" />
+        <LayerAnimation LayerId="3" Visible="False" />
+        <LayerAnimation LayerId="4" Visible="False" />
+        <LayerAnimation LayerId="5" Visible="False" />
+        <LayerAnimation LayerId="6" Visible="False" />
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+    <Animation Name="2" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="-36" YPosition="-37" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="True">
+          <Frame XPosition="24" YPosition="22" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="3" Visible="False" />
+        <LayerAnimation LayerId="4" Visible="False" />
+        <LayerAnimation LayerId="5" Visible="False" />
+        <LayerAnimation LayerId="6" Visible="False" />
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+    <Animation Name="3" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="-2" YPosition="-5" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="True">
+          <Frame XPosition="-41" YPosition="32" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="3" Visible="True">
+          <Frame XPosition="36" YPosition="-45" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="4" Visible="False" />
+        <LayerAnimation LayerId="5" Visible="False" />
+        <LayerAnimation LayerId="6" Visible="False" />
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+    <Animation Name="4" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="33" YPosition="31" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="True">
+          <Frame XPosition="-40" YPosition="31" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="3" Visible="True">
+          <Frame XPosition="-40" YPosition="-42" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="4" Visible="True">
+          <Frame XPosition="33" YPosition="-42" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="5" Visible="False" />
+        <LayerAnimation LayerId="6" Visible="False" />
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+    <Animation Name="5" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="33" YPosition="31" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="True">
+          <Frame XPosition="-40" YPosition="31" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="3" Visible="True">
+          <Frame XPosition="-40" YPosition="-42" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="4" Visible="True">
+          <Frame XPosition="33" YPosition="-42" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="5" Visible="True">
+          <Frame XPosition="-3" YPosition="-6" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="6" Visible="False" />
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+    <Animation Name="6" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="0" YPosition="0" XPivot="80" YPivot="80" Width="160" Height="160" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="0" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="1" Visible="True">
+          <Frame XPosition="30" YPosition="38" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="2" Visible="True">
+          <Frame XPosition="-35" YPosition="39" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="3" Visible="True">
+          <Frame XPosition="-35" YPosition="-50" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="4" Visible="True">
+          <Frame XPosition="30" YPosition="-49" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="5" Visible="True">
+          <Frame XPosition="-34" YPosition="-5" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+        <LayerAnimation LayerId="6" Visible="True">
+          <Frame XPosition="30" YPosition="-6" XPivot="24" YPivot="24" Width="48" Height="48" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="160" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+      </LayerAnimations>
+      <NullAnimations />
+      <Triggers />
+    </Animation>
+  </Animations>
+</AnimatedActor>

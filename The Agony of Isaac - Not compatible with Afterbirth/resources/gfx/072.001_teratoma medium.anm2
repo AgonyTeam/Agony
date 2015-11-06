@@ -1,0 +1,56 @@
+﻿<!--Converted to ANM2 by Gibbed.Rebirth.ConvertAnimations-->
+<AnimatedActor>
+  <Content>
+    <Spritesheets>
+      <Spritesheet Path="Bosses/Classic/Boss_068_Teratoma.png" Id="0" />
+    </Spritesheets>
+    <Layers>
+      <Layer Name="body" Id="0" SpritesheetId="0" />
+    </Layers>
+    <Nulls>
+      <Null Id="0" Name="BloodGuide" />
+      <Null Id="1" Name="OverlayEffect" />
+    </Nulls>
+    <Events>
+      <Event Id="0" Name="Explosion" />
+    </Events>
+  </Content>
+  <Animations DefaultAnimation="Medium">
+    <Animation Name="Medium" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="-1" YPosition="-18" XPivot="23" YPivot="33" Width="48" Height="64" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="80" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+      </LayerAnimations>
+      <NullAnimations>
+        <NullAnimation NullId="0" Visible="True" />
+        <NullAnimation NullId="1" Visible="True">
+          <Frame XPosition="0" YPosition="-44" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </NullAnimation>
+      </NullAnimations>
+      <Triggers />
+    </Animation>
+    <Animation Name="Death" FrameNum="1" Loop="False">
+      <RootAnimation>
+        <Frame XPosition="0" YPosition="0" Delay="1" Visible="True" XScale="100" YScale="100" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+      </RootAnimation>
+      <LayerAnimations>
+        <LayerAnimation LayerId="0" Visible="True">
+          <Frame XPosition="-1" YPosition="-18" XPivot="23" YPivot="33" Width="48" Height="64" XScale="100" YScale="100" Delay="1" Visible="True" XCrop="80" YCrop="0" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </LayerAnimation>
+      </LayerAnimations>
+      <NullAnimations>
+        <NullAnimation NullId="0" Visible="True">
+          <Frame XPosition="-2" YPosition="-18" Delay="1" Visible="True" XScale="471" YScale="457" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        </NullAnimation>
+        <NullAnimation NullId="1" Visible="True" />
+      </NullAnimations>
+      <Triggers>
+        <Trigger EventId="0" AtFrame="0" />
+      </Triggers>
+    </Animation>
+  </Animations>
+</AnimatedActor>
