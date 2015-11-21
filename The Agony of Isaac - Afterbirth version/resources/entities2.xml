@@ -2930,9 +2930,7 @@
 	<entity baseHP="25" boss="0" champion="1" subtype="66" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts shadow" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="0" portrait="36">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="057.000_Snail.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="1" portrait="36">
-        <gibs amount="8" blood="0" bone="0" eye="0" gut="1" large="0" />
-    </entity>
+	<!--deleted snails!-->
 	<entity anm2path="040.111_Guts guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="111" portrait="36" shutdoors="false">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="1" large="0" />
     </entity>
