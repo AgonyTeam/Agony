@@ -1001,7 +1001,7 @@
         <preload-snd id="48" /> <!-- SOUND_FORESTBOSS_STOMPS -->
         <preload-snd id="265" /> <!-- SOUND_SUMMONSOUND -->
     </entity>
-    <entity anm2path="044.000_Poky.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="16" friction="1" id="44" name="Poky" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" shutdoors="false" portrait="39">
+    <entity anm2path="044.000_Poky.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="16" friction="1" id="44" name="PokPoky" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" shutdoors="false" portrait="39">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
     <entity anm2path="044.001_Slide.anm2" baseHP="100" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="13" friction="1" id="44" name="Slide" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="1" shutdoors="false" portrait="39">
@@ -3457,6 +3457,10 @@
     </entity>
     <entity anm2path="027.001_Red Host.anm2" baseHP="15" subtype="21"boss="0" champion="1" collisionDamage="0" collisionMass="999" collisionRadius="13" friction="1" id="27" name="Red Host" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="1" portrait="24">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
+    </entity>
+	
+		<entity anm2path="073.001_Yellow block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1" id="73" name="Teratoma Small" numGridCollisionPoints="12" shutdoors="false" shadowSize="14" stageHP="0" variant="1" portrait="43" gridCollision="ground" subtype="1">
+        <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" worm="1" />
     </entity>
 	
 	<!-- More Friends Start -->
