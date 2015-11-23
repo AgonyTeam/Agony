@@ -2983,7 +2983,7 @@
         <gibs amount="18" blood="1" bone="0" eye="0" gut="1" large="1" />
         <preload id="40" variant="0" />
     </entity>
-	<entity anm2path="058.000_Derp-Bite.anm2" baseHP="35" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="1" portrait="48">
+	<entity anm2path="058.000_Derp-Bite.anm2" baseHP="35" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="48">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="058.111_parabite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="111" portrait="48" shutdoors="false">

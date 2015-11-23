@@ -330,7 +330,7 @@
 	<entity BaseHP="62" Champion="1" Group="Guardians" ID="57" Image="resources/Entities/57.0.0 - MemBrain.png" Kind="Enemies" Name="MemBrain" Subtype="0" Variant="111" />
 	<entity BaseHP="62" Champion="1" Group="Organs" ID="57" Image="resources/Entities/57.1.0 - Mama Guts.png" Kind="Enemies" Name="Mama Guts" Subtype="0" Variant="1" />
 	<entity BaseHP="35" Champion="1" Group="Worms" ID="58" Image="resources/Entities/58.0.0 - Para-Bite.png" Kind="Enemies" Name="Para-Bite" Subtype="0" Variant="0" />
-	<entity BaseHP="35" Champion="1" Group="GOOGLY EYES" ID="58" Image="resources/Entities/58.1.0 - Derp-Bite.png" Kind="Enemies" Name="Derp-Bite" Subtype="0" Variant="1" />
+	<entity BaseHP="35" Champion="1" Group="GOOGLY EYES" ID="58" Image="resources/Entities/58.1.0 - Derp-Bite.png" Kind="Enemies" Name="Derp-Bite" Subtype="0" Variant="2" />
 	<entity BaseHP="35" Champion="1" Group="Guardians" ID="58" Image="resources/Entities/58.0.0 - Para-Bite.png" Kind="Enemies" Name="Para-Bite" Subtype="0" Variant="111" />
 	<entity BaseHP="20" Champion="1" Group="Lumps" ID="59" Image="resources/Entities/59.0.0 - Fred.png" Kind="Enemies" Name="Fred" Subtype="0" Variant="0" />
 	<entity BaseHP="20" Champion="1" Group="Guardians" ID="59" Image="resources/Entities/59.0.111 - Stone Fred.png" Kind="Enemies" Name="Stone Fred" Subtype="111" Variant="1" />
