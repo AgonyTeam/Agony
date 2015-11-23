@@ -2440,15 +2440,11 @@
 	<entity anm2path="010.000_Hugger.anm2" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="1.3" id="10" name="Hugger" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="13" subtype="13" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="10" name="Frowning Gaper Shadow" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" portrait="0" subtype="66">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-    </entity>
+
 	<entity anm2path="010.000_Sackhead.anm2" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1.05" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="1" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="010.005_Gaper knight.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1.1" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="5" portrait="0">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-		</entity>
+
 	<entity anm2path="010.112_Frowning Gaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="10" name="Frowning Gaper guardian" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="112" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
@@ -2458,33 +2454,14 @@
 	<entity anm2path="012.000_Stone Horf.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="0" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="012.000_Horf shadow.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4" subtype="66">
-        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
-    </entity>
-	<entity subtype="66" baseHP="3" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="17" friction="1" id="13" name="Fly shadow" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="0" portrait="5" gridCollision="walls">
-		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
-    </entity>
+
+
 	<entity anm2path="013.001_small Fly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="-5" friction="1" id="13" name="Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="014.000_Pooter shadow.anm2" baseHP="8" subtype="66" boss="0" champion="1" collisionDamage="0" collisionMass="4" collisionRadius="17" friction="1" id="14" name="Pooter" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="0" portrait="6" gridCollision="walls">
-        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
-    </entity>
-	<entity anm2path="014.001_Super Pooter shadow.anm2" subtype="66" baseHP="8" boss="0" champion="1" collisionDamage="0" collisionMass="4" collisionRadius="17" friction="1" id="14" name="Super Pooter" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="1" portrait="7" gridCollision="walls">
-        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
-    </entity>
-	<entity anm2path="015.000_Conjoined grimaces.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0.00000001" id="15" name="Conjoined grimaces" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="0" subtype="25" portrait="8">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
-    </entity>
-	<entity anm2path="015.000_Clotty shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="0" portrait="8">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
-    </entity>
-	<entity anm2path="015.001_Clot shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clot" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="1" portrait="9">
-        <gibs amount="5" blood="1" bone="0" eye="0" gut="1" large="0" worm="1" />
-    </entity>
-    <entity anm2path="015.002_I.Blob shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="I.Blob" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="2" portrait="10">
-        <gibs amount="5" blood="1" bone="0" eye="1" gut="1" large="0" />
-    </entity>
+
+
+	
 	<entity anm2path="015.111_Clotty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="111" portrait="8" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
     </entity>
@@ -2494,18 +2471,11 @@
 	<entity anm2path="016.000_Mulligan Sackhead.anm2" subtype="1" baseHP="19" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="0.9" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="016.000_Mulligan shadow.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" subtype="66" portrait="11">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-    </entity>
-	<entity anm2path="016.005_Cutie.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="6" stageHP="0" variant="5" portrait="11">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-    </entity>
+
 	<entity anm2path="016.111_Mulligan guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="11" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-		<entity anm2path="016.001_Mulligoon shadow.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligoon" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="1" subtype="66" portrait="12">
-        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
-    </entity>
+
 	<entity anm2path="016.002_Boom sack.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" shutdoors="false" subtype="21" portrait="13">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
@@ -2800,18 +2770,14 @@
 	<entity anm2path="020.000_Googly Monstro.anm2" baseHP="250" boss="1" champion="0" collisionDamage="1" subtype="25" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="0" portrait="2">
         <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
     </entity>
-	<entity anm2path="020.000_New Monstro.anm2" baseHP="250" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="1" portrait="2">
-        <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
-    </entity>
+
 	<entity anm2path="020.111_Monstro guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="111" portrait="2" shutdoors="false">
         <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
     </entity>
 	<entity subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="7" collisionRadius="13" friction="1" id="21" name="Maggot shadow" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="0" portrait="14">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="022.000_Hive shadow.anm2" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="7" collisionRadius="13" friction="1" id="22" name="Hive" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" subtype="66" portrait="15">
-        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
-    </entity>
+
 	<entity anm2path="022.111_Hive guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="13" friction="1" id="22" name="Hive" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="15" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
@@ -2824,9 +2790,7 @@
 	<entity anm2path="024.000_sackhead.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1.1" id="24" name="Globin" numGridCollisionPoints="12" shadowSize="14" stageHP="0" subtype="1" variant="1" portrait="17">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
-	<entity anm2path="024.000_Globin shadow.anm2" baseHP="33" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="24" name="Globin shadow" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="17" subtype="66">
-        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
-    </entity>
+
 	<entity subtype="66" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="7" collisionRadius="13" friction="1" id="25" name="Boom Fly" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="0" portrait="19" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
@@ -3794,6 +3758,70 @@
 	
 	<entity id="264" variant="3" name="Mega Fatty" baseHP="600" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="68" anm2path="264.003_Sick Mega Fatty.anm2">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
+    </entity>
+	
+		<entity baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="10" name="Frowning Gaper Shadow" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" portrait="0" subtype="66">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
+    </entity>
+	
+		<entity anm2path="010.005_Gaper knight.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1.1" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="5" portrait="0">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
+		</entity>
+		
+			<entity anm2path="012.000_Horf shadow.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4" subtype="66">
+        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
+    </entity>
+	
+		<entity subtype="66" baseHP="3" boss="0" champion="1" collisionDamage="0" collisionMass="3" collisionRadius="17" friction="1" id="13" name="Fly shadow" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="0" portrait="5" gridCollision="walls">
+		<gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	
+		<entity anm2path="014.000_Pooter shadow.anm2" baseHP="8" subtype="66" boss="0" champion="1" collisionDamage="0" collisionMass="4" collisionRadius="17" friction="1" id="14" name="Pooter" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="0" portrait="6" gridCollision="walls">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	
+	<entity anm2path="014.001_Super Pooter shadow.anm2" subtype="66" baseHP="8" boss="0" champion="1" collisionDamage="0" collisionMass="4" collisionRadius="17" friction="1" id="14" name="Super Pooter" numGridCollisionPoints="0" shadowSize="22" stageHP="0" variant="1" portrait="7" gridCollision="walls">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	
+		<entity anm2path="015.000_Conjoined grimaces.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0.00000001" id="15" name="Conjoined grimaces" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="0" subtype="25" portrait="8">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
+    </entity>
+	
+	<entity anm2path="015.000_Clotty shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="0" portrait="8">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
+    </entity>
+	
+	<entity anm2path="015.001_Clot shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clot" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="1" portrait="9">
+        <gibs amount="5" blood="1" bone="0" eye="0" gut="1" large="0" worm="1" />
+    </entity>
+    
+	<entity anm2path="015.002_I.Blob shadow.anm2" subtype="66" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="I.Blob" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="2" portrait="10">
+        <gibs amount="5" blood="1" bone="0" eye="1" gut="1" large="0" />
+    </entity>
+	
+	<entity anm2path="016.000_Mulligan shadow.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" subtype="66" portrait="11">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
+    </entity>
+	
+	<entity anm2path="016.005_Cutie.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="6" stageHP="0" variant="5" portrait="11">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
+    </entity>
+	
+	<entity anm2path="016.001_Mulligoon shadow.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligoon" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="1" subtype="66" portrait="12">
+        <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
+    </entity>
+	
+	<entity anm2path="020.000_New Monstro.anm2" baseHP="250" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="1" portrait="2">
+        <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
+    </entity>
+	
+	<entity anm2path="022.000_Hive shadow.anm2" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="7" collisionRadius="13" friction="1" id="22" name="Hive" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" subtype="66" portrait="15">
+        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
+    </entity>
+	
+		<entity anm2path="024.000_Globin shadow.anm2" baseHP="33" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="24" name="Globin shadow" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="17" subtype="66">
+        <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 	
 	<!-- Unused Entities End -->
