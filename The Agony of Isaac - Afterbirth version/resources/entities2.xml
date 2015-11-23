@@ -708,10 +708,10 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
         <preload-snd id="165" /> <!-- SOUND_ZOMBIE_WALKER_KID -->
     </entity>
-    <entity anm2path="011.000_Gusher.anm2" reroll="true" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="11" name="Gusher" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="2">
+    <entity anm2path="011.000_Gusher.anm2" reroll="true" baseHP="10" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="11" name="Gusher" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="2">
         <gibs amount="4" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-    <entity anm2path="011.001_Pacer.anm2" reroll="true" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="11" name="Pacer" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="1" portrait="3">
+    <entity anm2path="011.001_Pacer.anm2" reroll="true" baseHP="10" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="13" friction="1" id="11" name="Pacer" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="1" portrait="3">
         <gibs amount="4" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
     <entity anm2path="012.000_Horf.anm2" reroll="true" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4">
