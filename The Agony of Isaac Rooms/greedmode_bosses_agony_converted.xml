@@ -1,0 +1,255 @@
+﻿<!--Converted to ANM2 by Gibbed.Rebirth.ConvertStage-->
+<stage>
+  <room type="5" variant="10000" name="Aether" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="5" y="3">
+      <entity type="65" variant="10" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="7" y="3">
+      <entity type="253" variant="0" subtype="1" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10001" name="Posthumous Centipede" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="2" y="2">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="3" y="2">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="4" y="2">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="5" y="2">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="6" y="2">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="7" y="2">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="8" y="2">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="9" y="2">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="2" y="11">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="3" y="11">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="4" y="11">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="5" y="11">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="6" y="11">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="7" y="11">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="8" y="11">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="9" y="11">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10002" name="The Bilnd" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="6" y="0">
+      <entity type="202" variant="10" subtype="360" weight="2" />
+    </spawn>
+    <spawn x="6" y="1">
+      <entity type="46" variant="2" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="4" y="2">
+      <entity type="241" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="8" y="2">
+      <entity type="241" variant="0" subtype="2" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10003" name="Deder Haunt" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="17" variant="33" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="5" y="9">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="9">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="7" y="9">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="5" y="10">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="10">
+      <entity type="260" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="7" y="10">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="5" y="11">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="11">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="7" y="11">
+      <entity type="202" variant="80" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10004" name="Eternal Polyjdfuiwesfhjd" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="3">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="6" y="10">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10005" name="Eternal Haunt" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="3">
+      <entity type="260" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10006" name="Eternal Fatty" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="10">
+      <entity type="264" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10007" name="Eternal Dingle" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="3">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10008" name="Eternal Cage" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="9">
+      <entity type="265" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10009" name="Eternal Dark One" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="10">
+      <entity type="267" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10010" name="Eternal Dark Two" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="6" y="10">
+      <entity type="268" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10011" name="Eternal Mega Maw" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="262" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10012" name="Eternal Gate" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="263" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10013" name="Eternal Angel 1" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="271" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="5" variant="10014" name="Eternal Angel 2" difficulty="1" weight="1" width="13" height="14" subtype="0" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="272" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+</stage>
