@@ -1,0 +1,295 @@
+﻿<!--Converted to ANM2 by Gibbed.Rebirth.ConvertStage-->
+<stage>
+  <room type="1" subtype="0" variant="10100" name="Agony (Spider) (Easy) (copy) (copy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="12" y="1">
+      <entity type="202" variant="68" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="6">
+      <entity type="246" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="6">
+      <entity type="246" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="0" y="12">
+      <entity type="202" variant="74" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10101" name="Agony (Spider) (Easy) (copy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="11" y="0">
+      <entity type="202" variant="79" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="1" y="1">
+      <entity type="202" variant="67" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="6">
+      <entity type="246" variant="2" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="6">
+      <entity type="246" variant="1" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10102" name="Agony (Stone Dips) (Easy) " difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="2" y="1">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="10" y="1">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="1" y="2">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="11" y="2">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="1" y="11">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="11" y="11">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="2" y="12">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="10" y="12">
+      <entity type="217" variant="0" subtype="111" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10103" name="Agony (Stone Trites) (Easy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="5">
+      <entity type="29" variant="2" subtype="111" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10104" name="Agony (Stone Nightcrawlers) (Easy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="5">
+      <entity type="255" variant="0" subtype="111" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10105" name="Agony (Stone Hollow) (Easy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="5" y="4">
+      <entity type="19" variant="1" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="6" y="4">
+      <entity type="19" variant="1" subtype="111" weight="2" />
+    </spawn>
+    <spawn x="7" y="4">
+      <entity type="19" variant="1" subtype="111" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10106" name="Agony (Bones) (Med)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="1" y="1">
+      <entity type="202" variant="76" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="2" y="2">
+      <entity type="227" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="6" y="6">
+      <entity type="260" variant="10" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="12" y="6">
+      <entity type="202" variant="67" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="11">
+      <entity type="227" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="3" y="12">
+      <entity type="202" variant="78" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10107" name="Agony (Bones) (Med) (copy)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="2" y="2">
+      <entity type="227" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="7" y="2">
+      <entity type="202" variant="66" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="1" y="7">
+      <entity type="202" variant="71" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="5" y="9">
+      <entity type="202" variant="76" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="11">
+      <entity type="227" variant="0" subtype="2" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10108" name="Agony (Bones) (Med) (copy) (copy)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="6" y="1">
+      <entity type="227" variant="0" subtype="3" weight="2" />
+    </spawn>
+    <spawn x="3" y="3">
+      <entity type="202" variant="81" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="5">
+      <entity type="202" variant="82" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="6">
+      <entity type="219" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="4" y="8">
+      <entity type="227" variant="0" subtype="3" weight="2" />
+    </spawn>
+    <spawn x="2" y="11">
+      <entity type="202" variant="67" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10109" name="Agony (Bones) (Med) (copy) (copy) (copy)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="0" y="0">
+      <entity type="260" variant="10" subtype="26" weight="2" />
+    </spawn>
+    <spawn x="11" y="0">
+      <entity type="202" variant="71" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="2">
+      <entity type="202" variant="72" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="3">
+      <entity type="227" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="6" y="10">
+      <entity type="227" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="10" y="11">
+      <entity type="202" variant="68" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="13">
+      <entity type="260" variant="10" subtype="26" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10110" name="Agony (Bones) (Med) (copy) (copy) (copy) (copy)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="2" y="1">
+      <entity type="202" variant="84" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="1">
+      <entity type="227" variant="0" subtype="3" weight="2" />
+    </spawn>
+    <spawn x="11" y="5">
+      <entity type="202" variant="74" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="7">
+      <entity type="227" variant="0" subtype="3" weight="2" />
+    </spawn>
+    <spawn x="1" y="9">
+      <entity type="202" variant="83" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="2" y="13">
+      <entity type="227" variant="0" subtype="3" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10111" name="Agony (Spider) (Easy)" difficulty="1" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <spawn x="8" y="1">
+      <entity type="202" variant="72" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="6">
+      <entity type="246" variant="2" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="6">
+      <entity type="246" variant="2" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="12">
+      <entity type="202" variant="77" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10112" name="Agony (Wall Spider) (Hard)" difficulty="10" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="0">
+      <entity type="49" variant="1" subtype="13" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" subtype="0" variant="10113" name="Agony (Spider) (Med)" difficulty="5" weight="3" width="13" height="14" shape="4">
+    <door x="6" y="14" exists="True" />
+    <door x="13" y="10" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="6" y="1">
+      <entity type="227" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="11" y="4">
+      <entity type="202" variant="74" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="3" y="9">
+      <entity type="246" variant="2" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="9">
+      <entity type="246" variant="2" subtype="0" weight="2" />
+    </spawn>
+  </room>
+</stage>
