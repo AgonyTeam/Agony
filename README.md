@@ -78,14 +78,14 @@ If your game crashes when using this mod you installed it incorrectly or you are
 
 If the mod doesnt work after installing it check the following things:
 
-is your game up to date ?  
------- if not update.
+is your game up to date ?   
+------ if not update.  
 
-do you have afterbirth installed ? 
------- if no then you cant use this mod.
+do you have afterbirth installed ?  
+------ if no then you cant use this mod.  
 
-do you have any other mods installed? 
------- if yes try deinstall all mods and install only this mod.
+do you have any other mods installed?  
+------ if yes try deinstall all mods and install only this mod.  
 
 
 ##Special Thanks to
