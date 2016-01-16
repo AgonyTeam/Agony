@@ -1,0 +1,597 @@
+﻿<!--Converted to ANM2 by Gibbed.Afterbirth.ConvertStage-->
+<stage>
+  <room type="1" variant="1088" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="10" exists="True" />
+    <spawn x="6" y="4">
+      <entity type="253" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="20" y="4">
+      <entity type="253" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="15" y="5">
+      <entity type="65" variant="10" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="9" y="6">
+      <entity type="65" variant="10" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="14" y="8">
+      <entity type="65" variant="10" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="11" y="9">
+      <entity type="65" variant="10" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="5" y="10">
+      <entity type="253" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="20" y="10">
+      <entity type="253" variant="0" subtype="1" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1089" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="26" y="10" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <spawn x="2" y="2">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="3" y="2">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="4" y="2">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="5" y="2">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="6" y="2">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="7" y="2">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="8" y="2">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="9" y="2">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="15" y="4">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="16" y="4">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="17" y="4">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="18" y="4">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="19" y="4">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="20" y="4">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="21" y="4">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="22" y="4">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="2" y="6">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="3" y="6">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="4" y="6">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="5" y="6">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="6" y="6">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="7" y="6">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="8" y="6">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="9" y="6">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="13" y="7">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="14" y="7">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="15" y="7">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="16" y="7">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="17" y="7">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="18" y="7">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="19" y="7">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="20" y="7">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="4" y="9">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="5" y="9">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="6" y="9">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="7" y="9">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="8" y="9">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="9" y="9">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="10" y="9">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="11" y="9">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="15" y="10">
+      <entity type="19" variant="1" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="16" y="10">
+      <entity type="19" variant="0" subtype="24" weight="2" />
+    </spawn>
+    <spawn x="17" y="10">
+      <entity type="19" variant="1" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="18" y="10">
+      <entity type="19" variant="0" subtype="23" weight="2" />
+    </spawn>
+    <spawn x="19" y="10">
+      <entity type="19" variant="1" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="20" y="10">
+      <entity type="19" variant="0" subtype="22" weight="2" />
+    </spawn>
+    <spawn x="21" y="10">
+      <entity type="19" variant="1" subtype="21" weight="2" />
+    </spawn>
+    <spawn x="22" y="10">
+      <entity type="19" variant="0" subtype="21" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1090" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="10" exists="True" />
+    <spawn x="12" y="2">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="13" y="2">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="14" y="2">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="4">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="17" y="4">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="13" y="6">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="13" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="18" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="19" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="20" y="7">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="13" y="8">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="16" y="8">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="11" y="10">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="15" y="11">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="16" y="11">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="17" y="11">
+      <entity type="239" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1091" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="10" exists="True" />
+    <spawn x="17" y="2">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="4" y="3">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="11" y="4">
+      <entity type="220" variant="0" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="16" y="4">
+      <entity type="220" variant="0" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="14" y="5">
+      <entity type="220" variant="0" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="12" y="7">
+      <entity type="220" variant="0" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="15" y="8">
+      <entity type="220" variant="0" subtype="13" weight="2" />
+    </spawn>
+    <spawn x="8" y="10">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="22" y="10">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1092" subtype="0" name="New Friends " difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="26" y="10" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <spawn x="14" y="2">
+      <entity type="208" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="10" y="3">
+      <entity type="208" variant="1" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="13" y="3">
+      <entity type="209" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="6" y="4">
+      <entity type="208" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="12" y="5">
+      <entity type="264" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="15" y="5">
+      <entity type="208" variant="1" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="10" y="6">
+      <entity type="209" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="13" y="7">
+      <entity type="209" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="8" y="8">
+      <entity type="208" variant="1" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="10" y="8">
+      <entity type="208" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="15" y="8">
+      <entity type="209" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="17" y="8">
+      <entity type="208" variant="0" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="12" y="9">
+      <entity type="208" variant="1" subtype="15" weight="2" />
+    </spawn>
+    <spawn x="15" y="9">
+      <entity type="264" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1093" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="26" y="10" exists="True" />
+    <spawn x="11" y="5">
+      <entity type="47" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="13" y="5">
+      <entity type="51" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="16" y="6">
+      <entity type="52" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="7">
+      <entity type="50" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="7">
+      <entity type="49" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="14" y="8">
+      <entity type="48" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="9">
+      <entity type="46" variant="2" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1094" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="7" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="4" y="3">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="5" y="3">
+      <entity type="244" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="7" y="3">
+      <entity type="244" variant="0" subtype="1" weight="2" />
+    </spawn>
+    <spawn x="8" y="3">
+      <entity type="269" variant="0" subtype="5" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1095" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="6" y="7" exists="True" />
+    <spawn x="2" y="0">
+      <entity type="68" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="4" y="2">
+      <entity type="229" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="4">
+      <entity type="229" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="6">
+      <entity type="68" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1096" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="7" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="10" y="0">
+      <entity type="91" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="2" y="1">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="10" y="5">
+      <entity type="261" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="2" y="6">
+      <entity type="91" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1097" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="14" shape="8">
+    <door x="26" y="10" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <door x="19" y="14" exists="True" />
+    <door x="6" y="14" exists="True" />
+    <door x="19" y="-1" exists="True" />
+    <door x="-1" y="10" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="17" y="4">
+      <entity type="82" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="11" y="5">
+      <entity type="65" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="7" y="7">
+      <entity type="64" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="15" y="7">
+      <entity type="63" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="19" y="7">
+      <entity type="83" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="8">
+      <entity type="66" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="11" y="10">
+      <entity type="65" variant="1" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1098" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="6" y="7" exists="True" />
+    <spawn x="2" y="1">
+      <entity type="100" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="4" y="3">
+      <entity type="94" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="4">
+      <entity type="94" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="10" y="5">
+      <entity type="100" variant="1" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="1099" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="7" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="1" y="1">
+      <entity type="67" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="3">
+      <entity type="67" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="11" y="5">
+      <entity type="67" variant="1" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="10100" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="6" y="7" exists="True" />
+    <spawn x="5" y="2">
+      <entity type="75" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="7" y="2">
+      <entity type="75" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="4" y="3">
+      <entity type="76" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="3">
+      <entity type="74" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="3">
+      <entity type="76" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="5" y="4">
+      <entity type="75" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="7" y="4">
+      <entity type="75" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="10101" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="7" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="-1" exists="True" />
+    <spawn x="3" y="3">
+      <entity type="43" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="4" y="3">
+      <entity type="15" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="6" y="3">
+      <entity type="20" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="8" y="3">
+      <entity type="15" variant="1" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="9" y="3">
+      <entity type="43" variant="1" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="10102" subtype="0" name="New Friends" difficulty="1" weight="3" width="26" height="7" shape="6">
+    <door x="6" y="-1" />
+    <door x="-1" y="3" exists="True" />
+    <door x="6" y="7" exists="True" />
+    <door x="19" y="-1" />
+    <door x="19" y="7" exists="True" />
+    <door x="26" y="3" exists="True" />
+    <spawn x="6" y="2">
+      <entity type="262" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="13" y="2">
+      <entity type="262" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="19" y="2">
+      <entity type="262" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+  <room type="1" variant="10103" subtype="0" name="New Friends" difficulty="1" weight="3" width="13" height="7" shape="1">
+    <door x="6" y="-1" exists="True" />
+    <door x="-1" y="3" exists="True" />
+    <door x="13" y="3" exists="True" />
+    <door x="6" y="7" exists="True" />
+    <spawn x="0" y="0">
+      <entity type="62" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="0">
+      <entity type="62" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="4" y="1">
+      <entity type="244" variant="0" subtype="3" weight="2" />
+    </spawn>
+    <spawn x="9" y="2">
+      <entity type="244" variant="0" subtype="6" weight="2" />
+    </spawn>
+    <spawn x="2" y="3">
+      <entity type="244" variant="0" subtype="2" weight="2" />
+    </spawn>
+    <spawn x="6" y="3">
+      <entity type="244" variant="0" subtype="5" weight="2" />
+    </spawn>
+    <spawn x="3" y="5">
+      <entity type="244" variant="0" subtype="7" weight="2" />
+    </spawn>
+    <spawn x="8" y="5">
+      <entity type="244" variant="0" subtype="4" weight="2" />
+    </spawn>
+    <spawn x="0" y="6">
+      <entity type="62" variant="0" subtype="0" weight="2" />
+    </spawn>
+    <spawn x="12" y="6">
+      <entity type="62" variant="0" subtype="0" weight="2" />
+    </spawn>
+  </room>
+</stage>
