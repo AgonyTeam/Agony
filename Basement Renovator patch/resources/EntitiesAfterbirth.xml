@@ -1328,6 +1328,8 @@
 
 	<!-- Guardians end -->
 	
+	<entity BaseHP="33" Champion="1" Group="Agony: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
+	
 	<!-- Agony patch end -->
 	
 
