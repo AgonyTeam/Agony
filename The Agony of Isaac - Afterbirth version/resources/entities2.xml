@@ -2456,7 +2456,7 @@
     </entity>
 
 
-	<entity anm2path="013.001_small Fly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="-5" friction="1" id="13" name="Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
+	<entity shutdoors="false" anm2path="013.001_small Fly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="-5" friction="1" id="13" name="Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -2720,7 +2720,7 @@
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 
-	 <entity anm2path="018.001_small Attack Fly.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="8.5" friction="1" id="18" name="Attack Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
+	 <entity shutdoors="false" anm2path="018.001_small Attack Fly.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="8.5" friction="1" id="18" name="Attack Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="019.000_Potato monster walking part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="21" portrait="0">
@@ -3468,7 +3468,7 @@
 	<entity anm2path="more friends/A281.001_SwarmSpider.anm2" reroll="true" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="14" friction="1" id="281" name="Swarm" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="1" portrait="53" gridCollision="ground"> <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" /> 
 	</entity>
 	
-	<entity subtype="1" anm2path="more friends/A257.001_FatCoccoon.anm2" reroll="true" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="1000000" collisionRadius="33" friction="0" id="257" name="Fat Cocoon" numGridCollisionPoints="0" shadowSize="26" stageHP="0" variant="0" portrait="133">
+	<entity anm2path="more friends/A257.001_FatCoccoon.anm2" reroll="true" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="1000000" collisionRadius="33" friction="0" id="257" name="Fat Cocoon" numGridCollisionPoints="0" shadowSize="26" stageHP="0" variant="1" portrait="133">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	
