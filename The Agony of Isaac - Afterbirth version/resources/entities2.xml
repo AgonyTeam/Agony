@@ -2704,7 +2704,7 @@
 	<entity anm2path="Box01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="2" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="128" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Box02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="129" shutdoors="false">
+	<entity anm2path="Box02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="40" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="129" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Box03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="130" shutdoors="false">
