@@ -1329,6 +1329,7 @@
 	<!-- Guardians end -->
 	
 	<entity BaseHP="33" Champion="1" Group="Agony: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
+	<entity BaseHP="200" Boss="1" Group="Agony: Eternals" ID="269" Image="resources/Entities/269.0.5 - Eternal Polycephalus.png" Kind="Bosses" Name="Polycephalus" Subtype="5" Variant="0" />
 	
 	<!-- Agony patch end -->
 	
