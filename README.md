@@ -82,7 +82,7 @@ is your game up to date ?
 ------ if not update.  
 
 do you have afterbirth installed ?  
------- if no then you cant use this mod.  
+------ if yes make sure you use the afterbirth version of this mod.  
 
 do you have any other mods installed?  
 ------ if yes try deinstall all mods and install only this mod.  
