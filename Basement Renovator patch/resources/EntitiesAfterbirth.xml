@@ -1284,14 +1284,14 @@
 	<entity BaseHP="16" Champion="1" Group="Agony: Guardians" ID="209" Image="resources/Entities/209.0.111 - Stone Fat Sack.png" Kind="Enemies" Name="Stone Fat Sack" Subtype="111" Variant="0" />
 	<entity BaseHP="16" Champion="1" Group="Agony: Guardians" ID="210" Image="resources/Entities/210.0.111 - Stone Blubber.png" Kind="Enemies" Name="Stone Blubber" Subtype="111" Variant="0" />
 	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="211" Image="resources/Entities/211.0.111 - Stone Half Sack.png" Kind="Enemies" Name="Stone Half Sack" Subtype="111" Variant="0" />
-	<entity BaseHP="20" Group="Agony: Guardians" ID="212" Image="resources/Entities/212.0.0 - Death's Head.png" Kind="Enemies" Name="Death's Head" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Group="Agony: Guardians" ID="213" Image="resources/Entities/213.0.0 - Mom's Hand.png" Kind="Enemies" Name="Mom's Hand" Subtype="0" Variant="111" />
+	<!--entity BaseHP="20" Group="Agony: Guardians" ID="212" Image="resources/Entities/212.0.0 - Death's Head.png" Kind="Enemies" Name="Death's Head" Subtype="0" Variant="111" /-->
+	<!--entity BaseHP="20" Group="Agony: Guardians" ID="213" Image="resources/Entities/213.0.0 - Mom's Hand.png" Kind="Enemies" Name="Mom's Hand" Subtype="0" Variant="111" /-->
 	<entity BaseHP="3" Group="Agony: Guardians" ID="217" Image="resources/Entities/217.0.111 - Stone Dip.png" Kind="Enemies" Name="Stone Dip" Subtype="111" Variant="0" />
 	<entity BaseHP="15" Group="Agony: Guardians" ID="220" Image="resources/Entities/220.0.0 - Squirt.png" Kind="Enemies" Name="Squirt" Subtype="0" Variant="111" />
 	<entity BaseHP="62" Group="Agony: Guardians" ID="223" Image="resources/Entities/223.0.111 - Stone Dinga.png" Kind="Enemies" Name="Stone Dinga" Subtype="111" Variant="0" />
 	<entity BaseHP="8" Group="Agony: Guardians" ID="227" Image="resources/Entities/227.0.0 - Boney Head.png" Kind="Enemies" Name="Boney" Subtype="0" Variant="111" />
 	<entity BaseHP="10" Group="Agony: Guardians" ID="239" Image="resources/Entities/239.0.0 - Grub.png" Kind="Enemies" Name="Grub" Subtype="0" Variant="111" />
-	<entity BaseHP="10" Group="Agony: Guardians" ID="244" Image="resources/Entities/244.0.111 - Stone Round Worm.png" Kind="Enemies" Name="Stone Round Worm" Subtype="111" Variant="0" />
+	<!--entity BaseHP="10" Group="Agony: Guardians" ID="244" Image="resources/Entities/244.0.111 - Stone Round Worm.png" Kind="Enemies" Name="Stone Round Worm" Subtype="111" Variant="0" /-->
 	<entity BaseHP="13" Champion="1" Group="Agony: Guardians" ID="246" Image="resources/Entities/246.0.0 - Rag Ling.png" Kind="Enemies" Name="Rag Ling" Subtype="0" Variant="111" />
 	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="248" Image="resources/Entities/248.0.0 - Psychic Horf.png" Kind="Enemies" Name="Psychic Horf" Subtype="0" Variant="111" />
 	<entity BaseHP="35" Group="Agony: Guardians" ID="255" Image="resources/Entities/255.0.111 - Stone Night Crawler.png" Kind="Enemies" Name="Stone Night Crawler" Subtype="111" Variant="0" />
@@ -1304,11 +1304,11 @@
 	<entity BaseHP="15" Champion="1" Group="Agony: Guardians" ID="27" Image="resources/Entities/27.0.0 - Host.png" Kind="Enemies" Name="Host" Subtype="0" Variant="111" />
 	<entity BaseHP="15" Champion="1" Group="Agony: Guardians" ID="27" Image="resources/Entities/27.1.111 - Stone Red Host.png" Kind="Enemies" Name="Stone Red Host" Subtype="111" Variant="1" />
 	<entity BaseHP="350" Boss="1" Group="Agony: Guardians" ID="28" Image="resources/Entities/28.0.111 - Stone Chub.png" Kind="Enemies" Name="Stone Chub" Subtype="111" Variant="0" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="29" Image="resources/Entities/29.0.0 - Hopper.png" Kind="Enemies" Name="Hopper" Subtype="0" Variant="111" />
+	<!--entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="29" Image="resources/Entities/29.0.0 - Hopper.png" Kind="Enemies" Name="Hopper" Subtype="0" Variant="111" /-->
 	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="29" Image="resources/Entities/29.1.111 - Stone Trite.png" Kind="Enemies" Name="Stone Trite" Subtype="111" Variant="2" />
 	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.2.0 - Sack.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.1.0 - Gut.png" Kind="Enemies" Name="Boil" Subtype="111" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.0.0 - Boil.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" />
+	<!--entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.1.0 - Gut.png" Kind="Enemies" Name="Boil" Subtype="111" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.0.0 - Boil.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" /-->
 	<entity BaseHP="25" Champion="1" Group="Agony: Guardians" ID="34" Image="resources/Entities/34.0.0 - Leaper.png" Kind="Enemies" Name="Leaper" Subtype="0" Variant="111" />
 	<entity BaseHP="595" Boss="1" Group="Agony: Guardians" ID="36" Image="resources/Entities/36.0.111 - Stone Gurdy.png" Kind="Enemies" Name="Stone Gurdy" Subtype="111" Variant="0" />
 	<entity BaseHP="25" Champion="1" Group="Agony: Guardians" ID="40" Image="resources/Entities/40.0.0 - Guts.png" Kind="Enemies" Name="Guts (Down)" Subtype="0" Variant="111" />
