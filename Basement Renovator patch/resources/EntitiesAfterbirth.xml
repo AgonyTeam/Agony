@@ -1058,7 +1058,7 @@
 	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="6" Variant="0" />
 	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="7" Variant="0" />	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="239" Image="resources/Entities/239.52.0 - Googly Grub.png" Kind="Enemies" Name="Googly Grub" Subtype="0" Variant="52" />
 	<entity BaseHP="20" Champion="1" Group="Agony: Stones" ID="30" Image="resources/Entities/30.1.25 - Constant Shooting Ipecac Grimace.png" Kind="Enemies" Name="Constant Shooting Ipecac Grimace" Subtype="25" Variant="1" />
-	<entity BaseHP="5" Group="Agony: Special Props" ID="33" Image="resources/Entities/33.69.69 - Literally Nothing.png" Kind="Stage" Name="Fire Place" Subtype="69" Variant="69" />
+	<!--entity BaseHP="5" Group="Agony: Special Props" ID="33" Image="resources/Entities/33.69.69 - Literally Nothing.png" Kind="Stage" Name="Fire Place" Subtype="69" Variant="69" /-->
 	<entity BaseHP="100" Group="Agony: Spikes" ID="41" Image="resources/Entities/44.0.1 - Purple block.png" Kind="Enemies" Name="Purple block" Subtype="5" Variant="1" />
 	<entity BaseHP="60" Boss="1" Group="Agony: Spiders" ID="49" Image="resources/Entities/49.1.13 - Angry ass spider.png" Kind="Enemies" Name="Angry ass spider" Subtype="13" Variant="1" />
 	<entity BaseHP="60" Boss="1" Group="Agony: Wall Spider Boss" ID="46" Image="resources/Entities/46.2.1 - Wall Spider Boss II Head.png" Kind="Bosses" Name="Wall Spider Boss II Head" Subtype="1" Variant="2" />
@@ -1330,6 +1330,24 @@
 	
 	<entity BaseHP="33" Champion="1" Group="Agony: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
 	<entity BaseHP="200" Boss="1" Group="Agony: Eternals" ID="269" Image="resources/Entities/269.0.5 - Eternal Polycephalus.png" Kind="Bosses" Name="Polycephalus" Subtype="5" Variant="0" />
+	
+	<!-- Dummies start -->
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/1.png" Kind="Stage" Name="Monstro Dummy" Subtype="1" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/14.png" Kind="Stage" Name="Peep Dummy" Subtype="14" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/15.png" Kind="Stage" Name="Loki Dummy" Subtype="15" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/26.png" Kind="Stage" Name="Hollow Dummy" Subtype="26" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/27.png" Kind="Stage" Name="Carrion Queen Dummy" Subtype="27" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/28.png" Kind="Stage" Name="Gurdy Jr. Dummy" Subtype="28" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/29.png" Kind="Stage" Name="Husk Dummy" Subtype="29" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/30.png" Kind="Stage" Name="Bloat Dummy" Subtype="30" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/35.png" Kind="Stage" Name="Mask of Infamy Dummy" Subtype="35" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/36.png" Kind="Stage" Name="Wretched Dummy" Subtype="36" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/10.png" Kind="Stage" Name="Pestilence Dummy" Subtype="10" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/11.png" Kind="Stage" Name="War Dummy" Subtype="11" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/48.png" Kind="Stage" Name="Cage Dummy" Subtype="48" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/50.png" Kind="Stage" Name="Dark One Dummy" Subtype="50" Variant="999" />
+	
+	<!-- Dummies end -->
 	
 	<!-- Agony patch end -->
 	
