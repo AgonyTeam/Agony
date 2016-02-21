@@ -3015,7 +3015,7 @@
 	<entity anm2path="207.000_Buttspider.anm2" subtype="16" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.35" id="208" name="Buttspider" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="16" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="207.000_Eternal Fatty.anm2" subtype="15" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0.8" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="15" variant="0" portrait="76">
+	<entity anm2path="Further Pain/Eternals/monsters/207.000_Fatty.anm2" subtype="15" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0.8" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="15" variant="0" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="207.000_Fatty Sackhead.anm2" subtype="13" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.1" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="76">
@@ -3049,7 +3049,7 @@
 	<entity anm2path="210.000_Stone Half Sack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="211" name="Half Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="79">
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="210.000_Eternal Half Sack.anm2" baseHP="10" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="79">
+	<entity anm2path="Further Pain/Eternals/monsters/210.000_Half Sack.anm2" baseHP="10" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="79">
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="210.001_Creep spider.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.25" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="0" portrait="79">
@@ -3089,7 +3089,7 @@
 	<entity id="219" subtype="1" variant="0" name="Wizoob" baseHP="25" stageHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="86" anm2path="Further Pain/Eternals/monsters/219.000_wizoob.anm2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="220" variant="0" subtype="13" name="Eternal Squirt" baseHP="25" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.000_Eternal Squirt.anm2">
+	<entity id="220" variant="0" subtype="13" name="Eternal Squirt" baseHP="25" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="Further Pain/Eternals/monsters/220.000_Squirt.anm2">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
@@ -3366,7 +3366,7 @@
         <gibs amount="6" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	
-	<entity id="260" variant="10" subtype="13" name="eternal Lil' Haunt" baseHP="45" stageHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.02" numGridCollisionPoints="12" shadowSize="11" portrait="64" anm2path="260.010_Eternal Lil Haunt.anm2" gridCollision="none">
+	<entity id="260" variant="10" subtype="13" name="eternal Lil' Haunt" baseHP="45" stageHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.02" numGridCollisionPoints="12" shadowSize="11" portrait="64" anm2path="Further Pain/Eternals/monsters/260.010_Lil Haunt.anm2" gridCollision="none">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
