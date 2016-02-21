@@ -3008,7 +3008,7 @@
     </entity>
 
 
-	<entity anm2path="206.001_eternal Small Crazy Long Legs.anm2" baseHP="12" boss="0" champion="1" subtype="5" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="207" name="Small Crazy Long Legs" numGridCollisionPoints="12" shadowSize="8" stageHP="8" variant="1" portrait="75">
+	<entity anm2path="Further Pain/Eternals/monsters/206.001_Small Crazy Long Legs.anm2" baseHP="12" boss="0" champion="1" subtype="5" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="207" name="Small Crazy Long Legs" numGridCollisionPoints="12" shadowSize="8" stageHP="8" variant="1" portrait="75">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
@@ -3086,7 +3086,7 @@
 	<entity id="219" variant="0" subtype="6" name="Tombstone Wizoob 5s" baseHP="25" stageHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="86" anm2path="219.000_Tombstone5 Wizoob.anm2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="219" subtype="1" variant="0" name="Wizoob" baseHP="25" stageHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="86" anm2path="219.000_eternal Wizoob.anm2">
+	<entity id="219" subtype="1" variant="0" name="Wizoob" baseHP="25" stageHP="15" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="86" anm2path="Further Pain/Eternals/monsters/219.000_wizoob.anm2">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="220" variant="0" subtype="13" name="Eternal Squirt" baseHP="25" stageHP="6" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.000_Eternal Squirt.anm2">
@@ -3162,7 +3162,7 @@
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="9" variant="1" />
     </entity>
-	<entity id="229" variant="0" subtype="5" name="Tumor" baseHP="20" stageHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106" anm2path="229.000_eternal Tumor.anm2" gridCollision="walls">
+	<entity id="229" variant="0" subtype="5" name="Tumor" baseHP="20" stageHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106" anm2path="Further Pain/Eternals/monsters/229.000_tumor.anm2" gridCollision="walls">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -3235,7 +3235,7 @@
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
 
-    <entity id="244" variant="0" subtype="1" name="Round Worm" baseHP="18" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_eternal round worm.anm2">
+    <entity id="244" variant="0" subtype="1" name="Round Worm" baseHP="18" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Eternals/monsters/244.000_round worm.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
