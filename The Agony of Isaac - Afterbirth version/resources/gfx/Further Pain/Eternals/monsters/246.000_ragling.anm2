@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="Monsters\Rebirth\monster_246_ragling.png" Id="0" />
+      <Spritesheet Path="monster_246_ragling.png" Id="0" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />

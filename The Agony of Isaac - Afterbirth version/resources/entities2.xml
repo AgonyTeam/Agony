@@ -2991,7 +2991,7 @@
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="205.001_eternal Small Baby Long Legs.anm2" subtype="5" baseHP="12" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Small Baby Long Legs" numGridCollisionPoints="12" shadowSize="8" stageHP="8" variant="1" portrait="74">
+	<entity anm2path="Further Pain/Eternals/monsters/205.001_Small Baby Long Legs.anm2" subtype="5" baseHP="12" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Small Baby Long Legs" numGridCollisionPoints="12" shadowSize="8" stageHP="8" variant="1" portrait="74">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="206.000_crazy long legs cocoon 336.anm2" baseHP="24" subtype="21" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
@@ -3303,7 +3303,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
-	<entity id="246" anm2path="246.000_eternal Ragling.anm2" subtype="1" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="28" stageHP="12" variant="0" portrait="26">
+	<entity id="246" anm2path="Further Pain/Eternals/monsters/246.000_Ragling.anm2" subtype="1" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="28" stageHP="12" variant="0" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -3320,7 +3320,7 @@
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	
-	<entity id="253" anm2path="253.000_eternal PsyTumor.anm2" variant="0" subtype="5" name="Psy Tumor" baseHP="40" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
+	<entity id="253" anm2path="Further Pain/Eternals/monsters/253.000_PsyTumor.anm2" variant="0" subtype="5" name="Psy Tumor" baseHP="40" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="253" anm2path="253.000_Aether.anm2" variant="0" subtype="1" name="Psy Tumor" baseHP="100" stageHP="75" boss="1" champion="1" collisionDamage="2" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
@@ -3330,7 +3330,7 @@
 	<entity id="255" anm2path="255.000_Stone NightCrawler.anm2" variant="0" subtype="111" shutdoors="false" name="Night Crawler" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="255" anm2path="255.000_eternal NightCrawler.anm2" variant="0" subtype="1" name="Night Crawler" baseHP="35" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
+	<entity id="255" anm2path="Further Pain/Eternals/monsters/255.000_NightCrawler.anm2" variant="0" subtype="1" name="Night Crawler" baseHP="35" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
