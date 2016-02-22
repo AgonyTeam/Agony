@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="new friends/eternal cage.png" Id="0" />
+      <Spritesheet Path="boss_090_fatty2.png" Id="0" />
       <Spritesheet Path="shadow.png" Id="1" />
     </Spritesheets>
     <Layers>

@@ -3216,10 +3216,10 @@
 	<entity id="237" variant="111" name="Gurgling" baseHP="0" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="237.111_Gurgling guardian.anm2" shutdoors="false">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="237" variant="1" subtype="13" name="eternal Gurgling (boss)" baseHP="90" stageHP="0" boss="1" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="237.000_Eternal Gurgling.anm2">
+	<entity id="237" variant="1" subtype="13" name="eternal Gurgling (boss)" baseHP="90" stageHP="0" boss="1" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="Further Pain/Eternals/bosses/237.000_Gurgling.anm2">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="237" variant="0" subtype="13" name="eternal Gurgling (boss)" baseHP="30" stageHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="237.000_Eternal Gurgling.anm2">
+	<entity id="237" variant="0" subtype="13" name="eternal Gurgling (boss)" baseHP="30" stageHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="Further Pain/Eternals/bosses/237.000_Eternal Gurgling.anm2">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="239" variant="52" name="Googly Grub" baseHP="10" stageHP="2.5" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.05" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="239.000_Googly Grub.anm2">
@@ -3337,7 +3337,7 @@
 	<entity id="260" variant="0" name="Tombstone Haunt" baseHP="400" subtype="15" boss="1" champion="0" collisionDamage="2" collisionMass="1000" collisionRadius="26" friction="1.02" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="260.000_tombstone Haunt.anm2" gridCollision="walls">
         <gibs amount="12" blood="1" bone="0" eye="0" gut="0" large="1" worm="1" />
     </entity>
-	<entity id="260" variant="0" subtype="5" name="Haunt" baseHP="200" boss="1" bossID="43" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="26" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="260.000_eternal Haunt.anm2" gridCollision="walls">
+	<entity id="260" variant="0" subtype="5" name="Haunt" baseHP="200" boss="1" bossID="43" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="26" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="Further Pain/Eternals/bosses/260.000_Haunt.anm2" gridCollision="walls">
         <gibs amount="12" blood="1" bone="0" eye="0" gut="0" large="1" worm="1" />
     </entity>
 	<entity id="260" variant="10" subtype="87" name="Lil' Haunt" baseHP="25" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="16" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="11" portrait="64" anm2path="260.010_black Lil Haunt.anm2" gridCollision="none">
@@ -3377,10 +3377,10 @@
 	<entity id="261" variant="0" subtype="111" name="Dingle" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_Stone Dingle.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
     </entity>
-	<entity id="261" variant="0" subtype="5" name="Dingle" baseHP="300" stageHP="0" boss="1" bossID="44" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_eternal Dingle.anm2">
+	<entity id="261" variant="0" subtype="5" name="Dingle" baseHP="300" stageHP="0" boss="1" bossID="44" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="Further Pain/Eternals/bosses/261.000_Dingle.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
     </entity>
-	<entity id="262" variant="0" subtype="5" name="Mega Maw" baseHP="350" stageHP="0" boss="1" bossID="45" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="50" portrait="66" anm2path="262.000_eternal MegaMaw.anm2">
+	<entity id="262" variant="0" subtype="5" name="Mega Maw" baseHP="350" stageHP="0" boss="1" bossID="45" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="50" portrait="66" anm2path="Further Pain/Eternals/bosses/262.000_MegaMaw.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -3388,7 +3388,7 @@
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
-	<entity id="263" variant="0" subtype="5" name="The Gate" baseHP="500" stageHP="0" boss="1" bossID="46" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="67" anm2path="263.000_eternal MegaMaw2.anm2">
+	<entity id="263" variant="0" subtype="5" name="The Gate" baseHP="500" stageHP="0" boss="1" bossID="46" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="67" anm2path="Further Pain/Eternals/bosses/263.000_MegaMaw2.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -3410,7 +3410,7 @@
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
-	<entity id="265" subtype="5" variant="000" name="The Cage" baseHP="500" stageHP="0" boss="1" bossID="48" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1.5" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="265.000_eternal Mega Fatty 2.anm2">
+	<entity id="265" subtype="5" variant="000" name="The Cage" baseHP="500" stageHP="0" boss="1" bossID="48" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1.5" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="Further Pain/Eternals/bosses/265.000_Mega Fatty 2.anm2">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -3421,11 +3421,11 @@
         <gibs amount="14" blood="1" bone="1" eye="0" gut="1" large="1" worm="1" />
     </entity>
 
-	<entity id="267" variant="0" subtype="5" name="Dark One" baseHP="400" stageHP="0" boss="1" bossID="50" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="71" anm2path="267.000_eternal Dark One.anm2" gridCollision="walls">
+	<entity id="267" variant="0" subtype="5" name="Dark One" baseHP="400" stageHP="0" boss="1" bossID="50" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="71" anm2path="Further Pain/Eternals/bosses/267.000_Dark One.anm2" gridCollision="walls">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 
-	<entity id="268" variant="0" subtype="5" name="The Adversary" baseHP="520" stageHP="0" boss="1" bossID="51" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="72" anm2path="268.000_eternal Dark One 2.anm2">
+	<entity id="268" variant="0" subtype="5" name="The Adversary" baseHP="520" stageHP="0" boss="1" bossID="51" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="72" anm2path="Further Pain/Eternals/bosses/268.000_Dark One 2.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 
@@ -3436,7 +3436,7 @@
 	<entity id="269" variant="10" name="Poleyes and phalus" baseHP="200" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="269.010_Poleyes and phalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="269" variant="0" subtype="5" name="Polycephalus" baseHP="200" stageHP="0" boss="1" bossID="52" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="269.000_eternal Polycephalus.anm2">
+	<entity id="269" variant="0" subtype="5" name="Polycephalus" baseHP="200" stageHP="0" boss="1" bossID="52" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="Further Pain/Eternals/bosses/269.000_Polycephalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 	<entity id="270" variant="0" subtype="1" name="Googly Mr. Fred" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="270.000_Googly Fred.anm2">
@@ -3445,11 +3445,11 @@
 	<entity id="270" variant="0" subtype="2" name="Googly Mr. Fred II" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="270.000_Googly Fred II.anm2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="271" variant="0" subtype="5" name="Uriel" baseHP="400" boss="1" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="22" friction="1" numGridCollisionPoints="0" shadowSize="28" portrait="75" anm2path="271.000_eternal angel.anm2">
+	<entity id="271" variant="0" subtype="5" name="Uriel" baseHP="400" boss="1" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="22" friction="1" numGridCollisionPoints="0" shadowSize="28" portrait="75" anm2path="Further Pain/Eternals/bosses/271.000_angel.anm2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 
-	<entity id="272" variant="0" subtype="5" name="Gabriel" baseHP="660" boss="1" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="22" friction="1" numGridCollisionPoints="0" shadowSize="28" portrait="75" anm2path="272.000_eternal angel2.anm2">
+	<entity id="272" variant="0" subtype="5" name="Gabriel" baseHP="660" boss="1" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="22" friction="1" numGridCollisionPoints="0" shadowSize="28" portrait="75" anm2path="Further Pain/Eternals/bosses/272.000_angel2.anm2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 	 <entity anm2path="027.000_Host.anm2" baseHP="15"subtype="21" boss="0" champion="1" collisionDamage="0" collisionMass="999" collisionRadius="13" friction="1" id="27" name="Host" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="0" portrait="24">

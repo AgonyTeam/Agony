@@ -2,8 +2,8 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/Eternal Gurgling hands.png" Id="0" />
-      <Spritesheet Path="New friends/Eternal gurgling.png" Id="1" />
+      <Spritesheet Path="monster_237_gurgling hands.png" Id="0" />
+      <Spritesheet Path="monster_237_gurgling.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
