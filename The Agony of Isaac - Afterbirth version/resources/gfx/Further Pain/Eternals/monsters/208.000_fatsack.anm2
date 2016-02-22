@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/Eternal fatsack.png" Id="0" />
+      <Spritesheet Path="monster_208_fatsack.png" Id="0" />
     </Spritesheets>
     <Layers>
       <Layer Name="Body" Id="0" SpritesheetId="0" />

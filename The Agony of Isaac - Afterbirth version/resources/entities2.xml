@@ -2980,7 +2980,7 @@
     </entity>
 
 
-	<entity anm2path="205.000_eternal Baby Long Legs.anm2" subtype="5" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Baby Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="6" variant="0" portrait="74">
+	<entity anm2path="Further Pain/Eternals/monsters/205.000_Baby Long Legs.anm2" subtype="5" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Baby Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="6" variant="0" portrait="74">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="205.000_new Baby Long Legs.anm2" subtype="2" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Baby Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="8" variant="0" portrait="74">
@@ -3003,7 +3003,7 @@
 	<entity anm2path="206.000_Crazy Long Legs cocoon 480.anm2" baseHP="24" subtype="23" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="206.000_eternal Crazy Long Legs.anm2" subtype="5" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="6" variant="0" portrait="75">
+	<entity anm2path="Further Pain/Eternals/monsters/206.000_Crazy Long Legs.anm2" subtype="5" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="6" variant="0" portrait="75">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
@@ -3028,13 +3028,13 @@
 	<entity anm2path="207.001_Stone Pale Fatty.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="208" name="Stone Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="111" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="207.001_Eternal Pale Fatty.anm2" baseHP="40" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="208" name="Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="10" variant="1" portrait="76">
+	<entity anm2path="Further Pain/Eternals/monsters/207.001_Pale Fatty.anm2" baseHP="40" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="208" name="Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="10" variant="1" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="208.000_Stone Fatsack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="77">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="208.000_Eternal Fatsack.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="77">
+	<entity anm2path="Further Pain/Eternals/monsters/208.000_Fatsack.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="77">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="209.000_Stone Blubber.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="111" portrait="78">
@@ -3043,7 +3043,7 @@
 	<entity anm2path="209.000_Blood fountain.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" shutdoors="false" collisionMass="999999999" collisionRadius="13" friction="0" id="210" name="Became the pimple prop" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="20" portrait="78">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="209.000_Eternal Blubber.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="78">
+	<entity anm2path="Further Pain/Eternals/monsters/209.000_Blubber.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="78">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="210.000_Stone Half Sack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="211" name="Half Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="79">
@@ -3066,7 +3066,7 @@
 	<entity id="217" variant="0" subtype="111" name="Dip" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="6" collisionRadius="9" friction="1" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="216.000_Stone Dip.anm2">
         <gibs amount="5" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="217" variant="13" Subtype="13" name="Eternal Dip" baseHP="9" stageHP="1" boss="0" champion="1" collisionDamage="1" collisionMass="0" collisionRadius="9" friction="1.03" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="216.000_Eternal Dip.anm2">
+	<entity id="217" variant="13" Subtype="13" name="Eternal Dip" baseHP="9" stageHP="1" boss="0" champion="1" collisionDamage="1" collisionMass="0" collisionRadius="9" friction="1.03" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="Further Pain/Eternals/monsters/216.000_Dip.anm2">
         <gibs amount="5" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
@@ -3104,7 +3104,7 @@
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
         <preload id="220" variant="0" />
     </entity>
-	<entity id="223" variant="13" name="Eternal Dinga" subtype="13" baseHP="62" stageHP="0" boss="0" champion="1" collisionDamage="2" collisionMass="3" collisionRadius="17" friction="1.5" numGridCollisionPoints="12" shadowSize="11" portrait="89" anm2path="223.000_Eternal Dinga.anm2">
+	<entity id="223" variant="13" name="Eternal Dinga" subtype="13" baseHP="62" stageHP="0" boss="0" champion="1" collisionDamage="2" collisionMass="3" collisionRadius="17" friction="1.5" numGridCollisionPoints="12" shadowSize="11" portrait="89" anm2path="Further Pain/Eternals/monsters/223.000_Dinga.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
         <preload id="220" variant="0" />
     </entity>
