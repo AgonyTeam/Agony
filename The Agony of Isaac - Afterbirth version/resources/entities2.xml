@@ -3476,6 +3476,10 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	
+	<entity subtype="5" id="404" variant="0" name="Little Horn" baseHP="300" stageHP="0" boss="1" bossID="60" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="16" friction="1.2" numGridCollisionPoints="12" shadowSize="16" portrait="82" anm2path="Further Pain/Eternals/bosses/404.000_Littlehorn.anm2">
+		<gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1" />
+	</entity>
+	
 	<!-- More Friends End -->
 	
 	<!-- Unused Entities Start
