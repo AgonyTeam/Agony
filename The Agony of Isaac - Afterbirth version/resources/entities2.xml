@@ -3468,7 +3468,7 @@
 	<entity anm2path="Further Pain/A281.001_SwarmSpider.anm2" reroll="true" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="14" friction="1" id="281" name="Swarm" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="1" portrait="53" gridCollision="ground"> <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" /> 
 	</entity>
 	
-	<entity subtype="1" anm2path="Further Pain/A257.001_FatCoccoon.anm2" reroll="true" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="1000000" collisionRadius="33" friction="0" id="257" name="Fat Cocoon" numGridCollisionPoints="0" shadowSize="26" stageHP="0" variant="0" portrait="133">
+	<entity subtype="1" anm2path="Further Pain/A257.001_FatCoccoon.anm2" reroll="true" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="1000000" collisionRadius="25" friction="0" id="257" name="Fat Cocoon" numGridCollisionPoints="0" shadowSize="26" stageHP="0" variant="0" portrait="133">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	
