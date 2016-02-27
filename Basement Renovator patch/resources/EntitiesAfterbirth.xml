@@ -1348,7 +1348,10 @@
 	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/50.png" Kind="Stage" Name="Dark One Dummy" Subtype="50" Variant="999" />
 	
 	<!-- Dummies end -->
-	
+	<entity BaseHP="300" Boss="1" Group="Agony: Eternals" ID="404" Image="resources/Entities/eternallittlehorn.png" Kind="Bosses" Name="Little Horn" Subtype="5" Variant="0" />
+	<entity BaseHP="5" Group="Agony: Spiders" ID="281" Image="resources/Entities/swarmspider.png" Kind="Enemies" Name="Swarm Spiders" Subtype="0" Variant="1" />
+	<entity BaseHP="25" Group="Agony: Worms" ID="285" Image="resources/Entities/brimworm.png" Kind="Enemies" Name="Brimstone Worm" Subtype="0" Variant="1" />
+	<entity BaseHP="20" Group="Agony: Cocoons" ID="257" Image="resources/Entities/fatcocoon.png" Kind="Enemies" Name="Fatty Cocoon" Subtype="1" Variant="0" />
 	<!-- Agony patch end -->
 	
 
