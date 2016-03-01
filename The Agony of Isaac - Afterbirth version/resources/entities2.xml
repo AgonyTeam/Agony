@@ -2769,7 +2769,7 @@
         <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
     </entity>
 
-	<entity anm2path="020.111_Monstro guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="111" portrait="2" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/bosses/020.111_Monstro guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="111" portrait="2" shutdoors="false">
         <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
     </entity>
 
@@ -2895,7 +2895,7 @@
 	<entity anm2path="062.000_Stone Pin.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" subtype="111" shutdoors="false" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
         <gibs amount="2" blood="1" bone="0" eye="0" gut="1" large="1" />
     </entity>
-	<entity anm2path="065.111_War guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="65" name="War" numGridCollisionPoints="12" shadowSize="19" stageHP="0" variant="111" portrait="29" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/bosses/065.111_War guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="65" name="War" numGridCollisionPoints="12" shadowSize="19" stageHP="0" variant="111" portrait="29" shutdoors="false">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="065.001_new Conquest.anm2" baseHP="500" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="65" name="Conquest" numGridCollisionPoints="12" shadowSize="19" stageHP="0" variant="1" portrait="30" subtype="1">
@@ -3213,7 +3213,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	
-	<entity id="237" variant="111" name="Gurgling" baseHP="0" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="237.111_Gurgling guardian.anm2" shutdoors="false">
+	<entity id="237" variant="111" name="Gurgling" baseHP="0" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="Further Pain/Guardians/bosses/237.111_Gurgling guardian.anm2" shutdoors="false">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="237" variant="1" subtype="13" name="eternal Gurgling (boss)" baseHP="90" stageHP="0" boss="1" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="Further Pain/Eternals/bosses/237.000_Gurgling.anm2">
@@ -3392,7 +3392,7 @@
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
-	<entity id="263" variant="111" name="The Gate" baseHP="0" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="67" anm2path="263.111_MegaMaw2 guardian.anm2" shutdoors="false">
+	<entity id="263" variant="111" name="The Gate" baseHP="0" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="33" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="67" anm2path="Further Pain/Guardians/bosses/263.111_MegaMaw2 guardian.anm2" shutdoors="false">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -3403,7 +3403,7 @@
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
-    <entity id="265" variant="111" name="The Cage" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="265.111_Mega Fatty 2 guardian.anm2" shutdoors="false">
+    <entity id="265" variant="111" name="The Cage" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="Further Pain/Guardians/bosses/265.111_Mega Fatty 2 guardian.anm2" shutdoors="false">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 	<entity id="265" variant="000" subtype="59" name="googly The Cage" baseHP="500" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="265.000_Googly Mega Fatty 2.anm2">
