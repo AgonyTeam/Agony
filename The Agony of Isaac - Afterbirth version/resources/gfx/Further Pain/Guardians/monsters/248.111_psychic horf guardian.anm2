@@ -1,9 +1,8 @@
-
 <!--Converted to ANM2 by Gibbed.Rebirth.ConvertAnimations-->
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="guardian\psychic maw guardian.png" Id="0" />
+      <Spritesheet Path="psychic horf guardian.png" Id="0" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />

@@ -2448,7 +2448,7 @@
 	<entity anm2path="010.112_Frowning Gaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="10" name="Frowning Gaper guardian" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="112" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="010.111_gaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="99999" collisionRadius="13" friction="1" id="10" name="guardian gaper" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="1" shutdoors="false" >
+	<entity anm2path="Further Pain/Guardians/monsters/010.111_gaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="99999" collisionRadius="13" friction="1" id="10" name="guardian gaper" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="1" shutdoors="false" >
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="012.000_Stone Horf.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="0" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4">
@@ -2462,7 +2462,7 @@
 
 
 	
-	<entity anm2path="015.111_Clotty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="111" portrait="8" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/015.111_Clotty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="111" portrait="8" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
     </entity>
 	    <entity anm2path="016.000_Mulligooglygan.anm2" subtype="5" baseHP="13" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
@@ -2472,14 +2472,14 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="016.111_Mulligan guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="11" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/016.111_Mulligan guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="11" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
 	<entity anm2path="016.002_Boom sack.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" shutdoors="false" subtype="21" portrait="13">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="016.002_Mulliboom guardian.anm2" baseHP="0" boss="0" champion="2" collisionDamage="0" collisionMass="9999999" collisionRadius="13" friction="1" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="2" subtype="1" portrait="13" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/016.002_Mulliboom guardian.anm2" baseHP="0" boss="0" champion="2" collisionDamage="0" collisionMass="9999999" collisionRadius="13" friction="1" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="2" subtype="1" portrait="13" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Gravestone14.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="33" subtype="0" shutdoors="false">
@@ -2774,7 +2774,7 @@
     </entity>
 
 
-	<entity anm2path="022.111_Hive guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="13" friction="1" id="22" name="Hive" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="15" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/022.111_Hive guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="7" collisionRadius="13" friction="1" id="22" name="Hive" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="15" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
@@ -2786,10 +2786,10 @@
     </entity>
 
 
-	<entity anm2path="026.002_Psychic Maw guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="7" collisionRadius="13" friction="1" id="26" name="Psychic Maw guardian" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="2" portrait="23" shutdoors="false" subtype="111">
+	<entity anm2path="Further Pain/Guardians/monsters/026.002_Psychic Maw guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="7" collisionRadius="13" friction="1" id="26" name="Psychic Maw guardian" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="2" portrait="23" shutdoors="false" subtype="111">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="027.111_Host guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="15" collisionRadius="13" friction="1" id="27" name="Host guardian" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="111" portrait="24" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/027.111_Host guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="15" collisionRadius="13" friction="1" id="27" name="Host guardian" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="111" portrait="24" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
 	<entity anm2path="027.001_Stone Red Host.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" shutdoors="false" collisionMass="999" collisionRadius="13" friction="1" id="27" name="Red Host" subtype="111" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="1" portrait="24">
@@ -2804,20 +2804,20 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="029.111_Trite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="29" name="Trite" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/029.111_Trite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="29" name="Trite" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="0" portrait="27" shutdoors="false" subtype="111">
+	<entity anm2path="Further Pain/Guardians/monsters/030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="0" portrait="27" shutdoors="false" subtype="111">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="111" portrait="27" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="111" portrait="27" shutdoors="false">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="311" portrait="27" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="311" portrait="27" shutdoors="false">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="211" portrait="27" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="211" portrait="27" shutdoors="false">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="030.001_Constant shooting ipecac grimace.anm2" shutdoors="false" baseHP="0" boss="0" champion="0" subtype="25" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="30" name="Constant shooting ipecac grimace" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="27">
@@ -2832,7 +2832,7 @@
         <preload id="1000" variant="15" />
     </entity>
 
-	<entity anm2path="034.111_Leaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="34" name="Leaper" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="111" portrait="25" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/034.111_Leaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="34" name="Leaper" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="111" portrait="25" shutdoors="false">
         <gibs amount="4" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="036.000_Stone Gurdy.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="100" collisionRadius="50" friction="1" id="36" name="Gurdy" numGridCollisionPoints="12" shadowSize="100" stageHP="0" variant="0" portrait="6">
@@ -2840,13 +2840,13 @@
     </entity>
 
 	<!--deleted snails!-->
-	<entity anm2path="040.111_Guts guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="111" portrait="36" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/040.111_Guts guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="111" portrait="36" shutdoors="false">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="041.000_Purple block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="0.9" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="1" portrait="37" shutdoors="false" subtype="5">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
-	<entity anm2path="041.002_Knight guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="2" portrait="37" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/041.002_Knight guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="2" portrait="37" shutdoors="false">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
@@ -2860,7 +2860,7 @@
         <gibs amount="9" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
 
-	<entity anm2path="053.111_Evil Twin guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="10" collisionRadius="13" friction="1" id="53" name="Evil Twin" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="1" subtype="111" portrait="41" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/053.111_Evil Twin guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="10" collisionRadius="13" friction="1" id="53" name="Evil Twin" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="1" subtype="111" portrait="41" shutdoors="false">
         <gibs amount="7" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -2868,14 +2868,14 @@
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	
-	<entity anm2path="057.111_Membrain guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="13" friction="1" id="57" name="Mama Guts" numGridCollisionPoints="12" shadowSize="40" stageHP="0" variant="111" portrait="47" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/057.111_Membrain guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="13" friction="1" id="57" name="Mama Guts" numGridCollisionPoints="12" shadowSize="40" stageHP="0" variant="111" portrait="47" shutdoors="false">
         <gibs amount="18" blood="1" bone="0" eye="0" gut="1" large="1" />
         <preload id="40" variant="0" />
     </entity>
 	<entity anm2path="058.000_Derp-Bite.anm2" baseHP="35" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="48">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="058.111_parabite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="111" portrait="48" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/058.111_parabite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="111" portrait="48" shutdoors="false">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="059.000_Stone Fred.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" shutdoors="false" collisionMass="10" sutbype="111" collisionRadius="13" friction="1" id="59" name="Fred" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="1" portrait="49">
@@ -2933,10 +2933,10 @@
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
 	
-	<entity anm2path="092.111_Heart guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="30" collisionRadius="13" friction="1" id="92" name="Heart" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="111" portrait="59" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/092.111_Heart guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="30" collisionRadius="13" friction="1" id="92" name="Heart" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="111" portrait="59" shutdoors="false">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="093.111_Mask guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="93" name="Mask" numGridCollisionPoints="12" shadowSize="15" stageHP="0" variant="111" portrait="58" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/093.111_Mask guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="93" name="Mask" numGridCollisionPoints="12" shadowSize="15" stageHP="0" variant="111" portrait="58" shutdoors="false">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="094.000_Eggsack.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="19" portrait="60">
@@ -3022,7 +3022,7 @@
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="207.111_Fatty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="208" name="Fatty guardian" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="111" portrait="76" shutdoors="false">
+	<entity anm2path="Further Pain/Guardians/monsters/207.111_Fatty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="208" name="Fatty guardian" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="111" portrait="76" shutdoors="false">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="207.001_Stone Pale Fatty.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="208" name="Stone Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="111" portrait="76">
@@ -3093,7 +3093,7 @@
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
-    <entity id="220" variant="111" name="Squirt" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="220.111_Squirt guardian.anm2" shutdoors="false">
+    <entity id="220" variant="111" name="Squirt" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="21" portrait="87" anm2path="Further Pain/Guardians/monsters/220.111_Squirt guardian.anm2" shutdoors="false">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
@@ -3158,7 +3158,7 @@
         <preload id="9" variant="1" />
     </entity>
 
-    <entity id="227" variant="111" name="Bony guardian" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" anm2path="227.111_Boney guardian.anm2" shutdoors="false">
+    <entity id="227" variant="111" name="Bony guardian" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" anm2path="Further Pain/Guardians/monsters/227.111_Boney guardian.anm2" shutdoors="false">
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="9" variant="1" />
     </entity>
@@ -3225,7 +3225,7 @@
 	<entity id="239" variant="52" name="Googly Grub" baseHP="10" stageHP="2.5" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.05" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="239.000_Googly Grub.anm2">
         <gibs amount="8" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity id="239" variant="111" name="Grub" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="239.111_Grub guardian.anm2" shutdoors="false">
+	<entity id="239" variant="111" name="Grub" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="Further Pain/Guardians/monsters/239.111_Grub guardian.anm2" shutdoors="false">
         <gibs amount="8" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity id="239" variant="1" name="Grub" baseHP="10" stageHP="2.5" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="239.001_maggotfly.anm2" gridCollision="walls">
@@ -3310,13 +3310,13 @@
 	<entity id="246" anm2path="246.002_Ghost spider.anm2" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="2" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="246" anm2path="246.111_Ragling guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling guardian" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
+	<entity id="246" anm2path="Further Pain/Guardians/monsters/246.111_Ragling guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling guardian" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity id="247" anm2path="247.000_Sackhead.anm2" baseHP="44" subtype="1" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.5" name="Flesh Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity id="248" anm2path="248.111_Psychic Horf guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" name="Psychic Horf guardian" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="4" shutdoors="false">
+	<entity id="248" anm2path="Further Pain/Guardians/monsters/248.111_Psychic Horf guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" name="Psychic Horf guardian" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="4" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	

@@ -2,8 +2,8 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="guardian/guardians_bodies.png" Id="0" />
-      <Spritesheet Path="guardian/knight guardian.png" Id="1" />
+      <Spritesheet Path="guardians_bodies.png" Id="0" />
+      <Spritesheet Path="knight guardian.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
