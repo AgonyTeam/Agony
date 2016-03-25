@@ -15,7 +15,7 @@
   <Animations DefaultAnimation="Appear">
     <Animation Name="Idle" FrameNum="15" Loop="True">
       <RootAnimation>
-        <Frame XPosition="3" YPosition="-25" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        <Frame XPosition="3" YPosition="-215" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
       </RootAnimation>
       <LayerAnimations>
         <LayerAnimation LayerId="0" Visible="True">
@@ -27,7 +27,7 @@
     </Animation>
     <Animation Name="Collect" FrameNum="15" Loop="False">
       <RootAnimation>
-        <Frame XPosition="3" YPosition="0" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        <Frame XPosition="3" YPosition="-25" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
       </RootAnimation>
       <LayerAnimations>
         <LayerAnimation LayerId="0" Visible="True">
@@ -39,7 +39,7 @@
     </Animation>
     <Animation Name="Appear" FrameNum="33" Loop="True">
       <RootAnimation>
-        <Frame XPosition="3" YPosition="0" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
+        <Frame XPosition="3" YPosition="-25" Delay="1" Visible="True" XScale="125" YScale="125" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="False" />
       </RootAnimation>
       <LayerAnimations>
         <LayerAnimation LayerId="0" Visible="True">
