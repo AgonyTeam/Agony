@@ -40,6 +40,7 @@ $HOME/Library/Application Support/Steam/SteamApps/common/The Binding of Isaac Re
 
 Windows (32-bit): 
 C:\Program Files\Steam\steamapps\common\The Binding of Isaac Rebirth\resources
+
 Windows (64-bit): 
 C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources
 
