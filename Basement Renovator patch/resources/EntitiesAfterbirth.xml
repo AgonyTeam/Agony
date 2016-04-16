@@ -1011,340 +1011,340 @@
 	
 	<!-- Agony Patch -->
 	
-	<entity BaseHP="10" Champion="1" Group="Agony: Gapers" ID="10" Image="resources/Entities/10.79.0 - Glitchy Gaper.png" Kind="Enemies" Name="Glitchy Gaper" Subtype="0" Variant="79" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Cocoons" ID="10" Image="resources/Entities/10.0.21 - Gaper cocoon.png" Kind="Enemies" Name="Gaper cocoon" Subtype="21" Variant="0" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Cocoons" ID="10" Image="resources/Entities/10.0.22 - Gaper cocoon flipped.png" Kind="Enemies" Name="Gaper cocoon flipped" Subtype="22" Variant="0" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Gapers" ID="10" Image="resources/Entities/10.13.13 - Hugger.png" Kind="Enemies" Name="Hugger" Subtype="13" Variant="13" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Gapers" ID="10" Image="resources/Entities/10.0.1 - lvl1 Sackhead.png" Kind="Enemies" Name="Lvl1 Sackhead" Subtype="1" Variant="0" />
-	<entity BaseHP="3" Group="Agony: Flies" ID="13" Image="resources/Entities/13.1.0 - small Fly.png" Kind="Enemies" Name="small Fly" Subtype="0" Variant="1" />
-	<entity BaseHP="13" Champion="1" Group="Agony: Gapers" ID="16" Image="resources/Entities/16.0.1 - Mulligan sackhead.png" Kind="Enemies" Name="Mulligan sackhead" Subtype="1" Variant="0" />
-	<entity BaseHP="13" Champion="1" Group="Agony: GOOGLY EYES" ID="16" Image="resources/Entities/16.0.5 - Mulligooglygan.png" Kind="Enemies" Name="Mulligan" Subtype="5" Variant="0" />
-	<entity BaseHP="13" Champion="1" Group="Agony: Cocoons" ID="16" Image="resources/Entities/16.2.21 - Boom sack.png" Kind="Enemies" Name="Boom sack" Subtype="21" Variant="2" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.5.0 - Sign 01.png" Kind="Stage" Name="Sign 01" Subtype="0" Variant="5" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.6.0 - Sign 02.png" Kind="Stage" Name="Sign 02" Subtype="0" Variant="6" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.7.0 - Sign 03.png" Kind="Stage" Name="Sign 03" Subtype="0" Variant="7" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.8.0 - Sign 04.png" Kind="Stage" Name="Sign 04" Subtype="0" Variant="8" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.9.0 - Sign 05.png" Kind="Stage" Name="Sign 05" Subtype="0" Variant="9" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.10.0 - Sign 06.png" Kind="Stage" Name="Sign 06" Subtype="0" Variant="10" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.11.0 - Sign 07.png" Kind="Stage" Name="Sign 07" Subtype="0" Variant="11" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.12.0 - Sign 08.png" Kind="Stage" Name="Sign 09" Subtype="0" Variant="12" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.13.0 - Sign 09.png" Kind="Stage" Name="Sign 010" Subtype="0" Variant="13" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.14.0 - Sign 10.png" Kind="Stage" Name="Sign 011" Subtype="0" Variant="14" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.15.0 - Sign 11.png" Kind="Stage" Name="Sign 012" Subtype="0" Variant="15" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.16.0 - Sign 12.png" Kind="Stage" Name="Sign 013" Subtype="0" Variant="16" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.17.0 - Sign 13.png" Kind="Stage" Name="Sign 014" Subtype="0" Variant="17" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.18.0 - Sign 14.png" Kind="Stage" Name="Sign 015" Subtype="0" Variant="18" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.19.0 - Sign 15.png" Kind="Stage" Name="Sign 016" Subtype="0" Variant="19" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.20.0 - Sign 16.png" Kind="Stage" Name="Sign 017" Subtype="0" Variant="20" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.21.0 - Sign 17.png" Kind="Stage" Name="Sign 018" Subtype="0" Variant="21" />
-	<entity BaseHP="5" Group="Agony: Signs" ID="17" Image="resources/Entities/17.22.0 - Sign 18.png" Kind="Stage" Name="Sign 019" Subtype="0" Variant="22" />
-	<entity BaseHP="5" Group="Agony: Tombstone haunt" ID="17" Image="resources/Entities/1500.0.0 - Gravestone14.png" Kind="Stage" Name="Tombstone Haunt gravestone" Subtype="0" Variant="33" />
-	<entity BaseHP="5" Group="Agony: Props" ID="17" Image="resources/Entities/17.227.0 - Grave Dirt.png" Kind="Stage" Name="Grave Dirt" Subtype="0" Variant="227" />
-	<entity BaseHP="5" Group="Agony: Flies" ID="18" Image="resources/Entities/18.1.0 - small Attack Fly.png" Kind="Enemies" Name="small Attack Fly" Subtype="0" Variant="1" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.21 - Posthumous Centipede walking part 01.png" Kind="Bosses" Name="Posthumous Centipede walking part 01" Subtype="21" Variant="0" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.22 - Posthumous Centipede walking part 02.png" Kind="Bosses" Name="Posthumous Centipede walking part 02" Subtype="22" Variant="0" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.23 - Posthumous Centipede walking part 03.png" Kind="Bosses" Name="Posthumous Centipede walking part 03" Subtype="23" Variant="0" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.24 - Posthumous Centipede walking part 04.png" Kind="Bosses" Name="Posthumous Centipede walking part 04" Subtype="24" Variant="0" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.21 - Posthumous Centipede flying part 01.png" Kind="Bosses" Name="Posthumous Centipede flying part 01" Subtype="21" Variant="1" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.22 - Posthumous Centipede flying part 02.png" Kind="Bosses" Name="Posthumous Centipede flying part 02" Subtype="22" Variant="1" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.23 - Posthumous Centipede flying part 03.png" Kind="Bosses" Name="Posthumous Centipede flying part 03" Subtype="23" Variant="1" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.24 - Posthumous Centipede flying part 04.png" Kind="Bosses" Name="Posthumous Centipede flying part 04" Subtype="24" Variant="1" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Spiders" ID="19" Image="resources/Entities/19.0.1 - Centipede.png" Kind="Enemies" Name="Centipede" Subtype="72" Variant="0" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Spiders" ID="19" Image="resources/Entities/19.0.3 - Centipede butt.png" Kind="Enemies" Name="Centipede" Subtype="73" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="2" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="3" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="4" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="5" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="6" Variant="0" />
-	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="7" Variant="0" />	<entity BaseHP="10" Group="Agony: GOOGLY EYES" ID="239" Image="resources/Entities/239.52.0 - Googly Grub.png" Kind="Enemies" Name="Googly Grub" Subtype="0" Variant="52" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Stones" ID="30" Image="resources/Entities/30.1.25 - Constant Shooting Ipecac Grimace.png" Kind="Enemies" Name="Constant Shooting Ipecac Grimace" Subtype="25" Variant="1" />
-	<!--entity BaseHP="5" Group="Agony: Special Props" ID="33" Image="resources/Entities/33.69.69 - Literally Nothing.png" Kind="Stage" Name="Fire Place" Subtype="69" Variant="69" /-->
-	<entity BaseHP="100" Group="Agony: Spikes" ID="41" Image="resources/Entities/44.0.1 - Purple block.png" Kind="Enemies" Name="Purple block" Subtype="5" Variant="1" />
-	<entity BaseHP="60" Boss="1" Group="Agony: Spiders" ID="49" Image="resources/Entities/49.1.13 - Angry ass spider.png" Kind="Enemies" Name="Angry ass spider" Subtype="13" Variant="1" />
-	<entity BaseHP="60" Boss="1" Group="Agony: Wall Spider Boss" ID="46" Image="resources/Entities/46.2.1 - Wall Spider Boss II Head.png" Kind="Bosses" Name="Wall Spider Boss II Head" Subtype="1" Variant="2" />
-	<entity BaseHP="35" Champion="1" Group="Agony: GOOGLY EYES" ID="58" Image="resources/Entities/58.1.0 - Derp-Bite.png" Kind="Enemies" Name="Derp-Bite" Subtype="0" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Watchful Eye" ID="60" Image="resources/Entities/60.1.69 - Watchful Eye.png" Kind="Bosses" Name="Watchful Eye" Subtype="69" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Watchful Eye" ID="60" Image="resources/Entities/60.1.68 - Watchful Eye's eye.png" Kind="Bosses" Name="Watchful Eye's eye" Subtype="68" Variant="1" />
-	<entity BaseHP="180" Boss="1" Group="Agony: GOOGLY EYES" ID="62" Image="resources/Entities/62.0.47 - Googly Pin.png" Kind="Enemies" Name="Googly Pin" Subtype="47" Variant="0" />
-	<entity BaseHP="500" Boss="1" Group="Agony: Aether" ID="65" Image="resources/Entities/65.10.1 - Aether kid.png" Kind="Bosses" Name="Aether kid" Subtype="5" Variant="10" />
-	<entity BaseHP="8" Boss="1" Group="Agony: Spikes" ID="73" Image="resources/Entities/73.1.1 - Yellow block.png" Kind="Enemies" Name="Yellow block" Subtype="1" Variant="1" />
-	<entity BaseHP="140" Boss="1" Group="Agony: Flies" ID="79" Image="resources/Entities/79.11.1 - Overflowing fly.png" Kind="Enemies" Name="Overflowing fly" Subtype="1" Variant="11" />
-	<entity BaseHP="6.5" Group="Agony: Spiders" ID="85" Image="resources/Entities/85.1.0 - small Spider.png" Kind="Enemies" Name="small Spider" Subtype="0" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Spiders" ID="88" Image="resources/Entities/88.0.13 - Bubbling spider I.png" Kind="Enemies" Name="Bubbling Spider I" Subtype="13" Variant="0" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Spiders" ID="88" Image="resources/Entities/88.69.13 - Bubbling spider II.png" Kind="Enemies" Name="Bubbling Spider II" Subtype="13" Variant="69" />
-	<entity BaseHP="20" Group="Agony: Spiders" ID="94" Image="resources/Entities/94.1.0 - Spider fly.png" Kind="Enemies" Name="Spiderfly" Subtype="0" Variant="1" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.0.3 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Left)" Subtype="0" Variant="0" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.1.3 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Left)" Subtype="0" Variant="1" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.2.3 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Left)" Subtype="0" Variant="2" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.0.1 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Up)" Subtype="1" Variant="0" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.1.1 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Up)" Subtype="1" Variant="1" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.2.1 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Up)" Subtype="1" Variant="2" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.0.2 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Right)" Subtype="2" Variant="0" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.1.2 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Right)" Subtype="2" Variant="1" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.2.2 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Right)" Subtype="2" Variant="2" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.0.0 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Down)" Subtype="3" Variant="0" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.1.0 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Down)" Subtype="3" Variant="1" />
-	<entity BaseHP="1" Group="Agony: Stones" ID="202" Image="resources/Entities/202.2.0 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Down)" Subtype="3" Variant="2" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Cocoons" ID="205" Image="resources/Entities/205.19.0 - Spider Eggsack.png" Kind="Enemies" Name="Spider Eggsack" Subtype="0" Variant="19" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Cocoons" ID="205" Image="resources/Entities/205.20.0 - Spider Eggsack flipped.png" Kind="Enemies" Name="Spider Eggsack flipped" Subtype="0" Variant="20" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="206" Image="resources/Entities/206.0.21 - Baby Long Legs cocoon I.png" Kind="Enemies" Name="Baby Long Legs cocoon I" Subtype="21" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="206" Image="resources/Entities/206.0.22 - Baby Long Legs cocoon II.png" Kind="Enemies" Name="Baby Long Legs cocoon II" Subtype="22" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="206" Image="resources/Entities/206.0.23 - Baby Long Legs cocoon III.png" Kind="Enemies" Name="Baby Long Legs cocoon III" Subtype="23" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Eternals" ID="206" Image="resources/Entities/206.0.5 - Eternal Baby Long Legs.png" Kind="Enemies" Name="Baby Long Legs" Subtype="5" Variant="0" />	
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="207" Image="resources/Entities/207.0.21 - Crazy Long Legs cocoon I.png" Kind="Enemies" Name="Crazy Long Legs cocoon I" Subtype="21" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="207" Image="resources/Entities/207.0.22 - Crazy Long Legs cocoon II.png" Kind="Enemies" Name="Crazy Long Legs cocoon II" Subtype="22" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Cocoons" ID="207" Image="resources/Entities/207.0.23 - Crazy Long Legs cocoon III.png" Kind="Enemies" Name="Crazy Long Legs cocoon III" Subtype="23" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Eternals" ID="207" Image="resources/Entities/207.0.5 - Eternal Crazy Long Legs.png" Kind="Enemies" Name="Crazy Long Legs" Subtype="5" Variant="0" />
-	<entity BaseHP="12" Champion="1" Group="Agony: Eternals" ID="207" Image="resources/Entities/207.1.5 - Eternal Small Crazy Long Legs.png" Kind="Enemies" Name="Small Crazy Long Legs" Subtype="5" Variant="1" />
-	<entity BaseHP="20" Group="Agony: Spiders" ID="208" Image="resources/Entities/208.16.16 - Buttspider.png" Kind="Enemies" Name="Buttspider" Subtype="16" Variant="16" />
-	<entity BaseHP="20" Group="Agony: Eternals" ID="208" Image="resources/Entities/208.0.15 - Eternal Fatty.png" Kind="Enemies" Name="Eternal Fatty" Subtype="15" Variant="0" />
-	<entity BaseHP="20" Group="Agony: Gapers" ID="208" Image="resources/Entities/208.0.13 - Fatty Sackhead.png" Kind="Enemies" Name="Fatty Sackhead" Subtype="13" Variant="0" />
-	<entity BaseHP="20" Group="Agony: Eternals" ID="208" Image="resources/Entities/208.1.15 - Eternal Pale Fatty.png" Kind="Enemies" Name="Eternal Pale Fatty" Subtype="15" Variant="1" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Eternals" ID="209" Image="resources/Entities/209.0.15 - Eternal Fat Sack.png" Kind="Enemies" Name="Eternal Fat Sack" Subtype="15" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Organs" ID="210" Image="resources/Entities/210.0.20 - Blood fountain.png" Kind="Enemies" Name="Pimple" Subtype="20" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Eternals" ID="210" Image="resources/Entities/210.0.15 - Eternal Blubber.png" Kind="Enemies" Name="Eternal Blubber" Subtype="15" Variant="0" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Spiders" ID="211" Image="resources/Entities/211.1.0 - Creep Spider.png" Kind="Enemies" Name="Creep Spider" Subtype="0" Variant="1" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Eternals" ID="211" Image="resources/Entities/211.0.15 - Eternal Half Sack.png" Kind="Enemies" Name="Eternal Half Sack" Subtype="15" Variant="0" />
-	<entity BaseHP="10" Group="Agony: Flies" ID="214" Image="resources/Entities/214.1.0 - lvl3 Fly.png" Kind="Enemies" Name="lvl3 Fly" Subtype="0" Variant="1" />
-	<entity BaseHP="13" Group="Agony: Spiders" ID="215" Image="resources/Entities/215.0.3 - lvl3 Spider.png" Kind="Enemies" Name="lvl3 Spider" Subtype="3" Variant="0" />
-	<entity BaseHP="3" Group="Agony: Eternals" ID="217" Image="resources/Entities/217.0.13 - Eternal Dip.png" Kind="Enemies" Name="Eternal Dip" Subtype="13" Variant="13" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="219" Image="resources/Entities/219.0.2 - Tombstone01 Wizoob.png" Kind="Enemies" Name="Tombstone 1 Wizoob" Subtype="2" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="219" Image="resources/Entities/219.0.3 - Tombstone02 Wizoob.png" Kind="Enemies" Name="Tombstone 2 Wizoob" Subtype="3" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="219" Image="resources/Entities/219.0.4 - Tombstone03 Wizoob.png" Kind="Enemies" Name="Tombstone 3 Wizoob" Subtype="4" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="219" Image="resources/Entities/219.0.5 - Tombstone04 Wizoob.png" Kind="Enemies" Name="Tombstone 4 Wizoob" Subtype="5" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="219" Image="resources/Entities/219.0.6 - Tombstone05 Wizoob.png" Kind="Enemies" Name="Tombstone 5 Wizoob" Subtype="6" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Eternals" ID="219" Image="resources/Entities/219.0.1 - Eternal Wizoob.png" Kind="Enemies" Name="Eternal Wizoob" Subtype="1" Variant="0" />
-	<entity BaseHP="15" Group="Agony: Eternals" ID="220" Image="resources/Entities/220.0.13 - Eternal Squirt.png" Kind="Enemies" Name="Eternal Squirt" Subtype="13" Variant="0" />
-	<entity BaseHP="20" Champion="1" Group="Agony: GOOGLY EYES" ID="221" Image="resources/Entities/221.1.0 - Derp Cod Worm.png" Kind="Enemies" Name="Derp Cod Worm" Subtype="0" Variant="1" />
-	<entity BaseHP="5" Group="Agony: Spiders" ID="222" Image="resources/Entities/222.1.0 - Ring Spider.png" Kind="Enemies" Name="Ring Spider" Subtype="0" Variant="1" />
-	<entity BaseHP="62" Group="Agony: Eternals" ID="223" Image="resources/Entities/223.13.13 - Eternal Dinga.png" Kind="Enemies" Name="Eternal Dinga" Subtype="13" Variant="13" />
-	<entity BaseHP="16" Group="Agony: Cocoons" ID="226" Image="resources/Entities/226.1.21 - Bony cocoon.png" Kind="Enemies" Name="Bony cocoon" Subtype="21" Variant="1" />
-	<entity BaseHP="16" Group="Agony: Cocoons" ID="226" Image="resources/Entities/226.1.22 - Bony cocoon flipped.png" Kind="Enemies" Name="Bony cocoon flipped" Subtype="22" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.10 - Tombstone bony 01.png" Kind="Enemies" Name="tombstone Boney 01" Subtype="10" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.11 - Tombstone bony 02.png" Kind="Enemies" Name="tombstone Boney 02" Subtype="11" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.12 - Tombstone bony 03.png" Kind="Enemies" Name="tombstone Boney 03" Subtype="12" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.13 - Tombstone bony 04.png" Kind="Enemies" Name="tombstone Boney 04" Subtype="13" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.14 - Tombstone bony 05.png" Kind="Enemies" Name="tombstone Boney 05" Subtype="14" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.15 - Tombstone bony 06.png" Kind="Enemies" Name="tombstone Boney 06" Subtype="15" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Tombstones" ID="227" Image="resources/Entities/227.1.16 - Tombstone bony 07.png" Kind="Enemies" Name="tombstone Boney 07" Subtype="16" Variant="1" />
-	<entity BaseHP="8" Group="Agony: Deads" ID="227" Image="resources/Entities/227.0.2 - Pile of bones.png" Kind="Enemies" Name="Pile of bones" Subtype="2" Variant="0" />
-	<entity BaseHP="8" Group="Agony: Deads" ID="227" Image="resources/Entities/227.0.3 - Pile of bones II.png" Kind="Enemies" Name="Pile of bones II" Subtype="3" Variant="0" />
-	<entity BaseHP="8" Group="Agony: Deads" ID="227" Image="resources/Entities/227.0.1 - Angry Skeleman.png" Kind="Enemies" Name="Angry skeleman" Subtype="1" Variant="0" />
-	<entity BaseHP="20" Group="Agony: Eternals" ID="229" Image="resources/Entities/229.0.5 - Eternal Tumor.png" Kind="Enemies" Name="Eternal Tumor" Subtype="5" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.0 - Broken Gaping Maw.png" Kind="Enemies" Name="Broken Gaping Maw" Subtype="0" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.1 - New Friends Broken Gaping Maw 01.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 01" Subtype="1" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.2 - New Friends Broken Gaping Maw 02.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 02" Subtype="2" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.3 - New Friends Broken Gaping Maw 03.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 03" Subtype="3" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.4 - New Friends Broken Gaping Maw 04.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 04" Subtype="4" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.5 - New Friends Broken Gaping Maw 05.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 05" Subtype="5" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.6 - New Friends Broken Gaping Maw 06.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 06" Subtype="6" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.7 - New Friends Broken Gaping Maw 07.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 07" Subtype="7" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.8 - New Friends Broken Gaping Maw 08.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 08" Subtype="8" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.9 - New Friends Broken Gaping Maw 09.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 09" Subtype="9" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.10 - New Friends Broken Gaping Maw 10.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 10" Subtype="10" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.11 - New Friends Broken Gaping Maw 11.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 11" Subtype="11" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Stones" ID="236" Image="resources/Entities/236.0.12 - New Friends Broken Gaping Maw 12.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 12" Subtype="12" Variant="0" />
-	<entity BaseHP="24" Champion="1" Group="Agony: Eternals" ID="237" Image="resources/Entities/237.0.13 - Eternal Gurgling.png" Kind="Enemies" Name="Eternal Gurgling" Subtype="13" Variant="0" />
-	<entity BaseHP="24" Champion="1" Group="Agony: Eternals" ID="237" Image="resources/Entities/237.1.13 - Eternal Gurgling.png" Kind="Bosses" Name="Eternal Gurgling" Subtype="13" Variant="1" />
-	<entity BaseHP="10" Group="Agony: Wall Spider Boss" ID="241" Image="resources/Entities/241.1.2 - Wall Spider Boss II Leg.png" Kind="Bosses" Name="Wall Spider Boss II Leg" Subtype="2" Variant="0" />
-	<entity BaseHP="10" Group="Agony: Eternals" ID="244" Image="resources/Entities/244.0.1 - Eternal Round Worm.png" Kind="Enemies" Name="Eternal Round Worm" Subtype="1" Variant="0" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.20 - Stalagmite01.png" Kind="Stage" Name="Stalagmite01" Subtype="20" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.21 - Stalagmite02.png" Kind="Stage" Name="Stalagmite02" Subtype="21" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.22 - Stalagmite03.png" Kind="Stage" Name="Stalagmite03" Subtype="22" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.23 - Stalagmite04.png" Kind="Stage" Name="Stalagmite04" Subtype="23" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.24 - Stalagmite05.png" Kind="Stage" Name="Stalagmite05" Subtype="24" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.25 - Stalagmite06.png" Kind="Stage" Name="Stalagmite06" Subtype="25" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.26 - Stalagmite07.png" Kind="Stage" Name="Stalagmite07" Subtype="26" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.27 - Stalagmite08.png" Kind="Stage" Name="Stalagmite08" Subtype="27" Variant="10" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone01.png" Kind="Stage" Name="Gravestone 01" Subtype="0" Variant="66" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone02.png" Kind="Stage" Name="Gravestone 02" Subtype="0" Variant="67" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone03.png" Kind="Stage" Name="Gravestone 03" Subtype="0" Variant="68" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone04.png" Kind="Stage" Name="Gravestone 04" Subtype="0" Variant="70" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone05.png" Kind="Stage" Name="Gravestone 05" Subtype="0" Variant="71" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone06.png" Kind="Stage" Name="Gravestone 06" Subtype="0" Variant="72" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone07.png" Kind="Stage" Name="Gravestone 07" Subtype="0" Variant="73" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone08.png" Kind="Stage" Name="Gravestone 08" Subtype="0" Variant="74" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone09.png" Kind="Stage" Name="Gravestone 09" Subtype="0" Variant="75" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone10.png" Kind="Stage" Name="Gravestone 10" Subtype="0" Variant="76" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone11.png" Kind="Stage" Name="Gravestone 11" Subtype="0" Variant="77" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone12.png" Kind="Stage" Name="Gravestone 12" Subtype="0" Variant="78" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone13.png" Kind="Stage" Name="Gravestone 13" Subtype="0" Variant="79" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Invisible block.png" Kind="Stage" Name="Gravestone 14 block" Subtype="0" Variant="80" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone15.png" Kind="Stage" Name="Gravestone 15" Subtype="0" Variant="81" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone16.png" Kind="Stage" Name="Gravestone 16" Subtype="0" Variant="82" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone17.png" Kind="Stage" Name="Gravestone 17" Subtype="0" Variant="83" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone18.png" Kind="Stage" Name="Gravestone 18" Subtype="0" Variant="84" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone19.png" Kind="Stage" Name="Gravestone 19" Subtype="0" Variant="85" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone20.png" Kind="Stage" Name="Gravestone 20" Subtype="0" Variant="86" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone21.png" Kind="Stage" Name="Gravestone 21" Subtype="0" Variant="87" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone22.png" Kind="Stage" Name="Gravestone 22" Subtype="0" Variant="88" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone23.png" Kind="Stage" Name="Gravestone 23" Subtype="0" Variant="89" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone24.png" Kind="Stage" Name="Gravestone 24" Subtype="0" Variant="90" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop01.png" Kind="Stage" Name="Darkroom prop 01" Subtype="0" Variant="301" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop02.png" Kind="Stage" Name="Darkroom prop 02" Subtype="0" Variant="302" />
-	<entity Group="Agony: Props" ID="17" Image="resources/Entities/1500.0.0 - Darkroomprop03.png" Kind="Stage" Name="Darkroom prop 03" Subtype="0" Variant="303" />
-	<entity Group="Agony: Props" ID="17" Image="resources/Entities/1500.0.0 - Darkroomprop04.png" Kind="Stage" Name="Darkroom prop 04" Subtype="0" Variant="304" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop05.png" Kind="Stage" Name="Darkroom prop 05" Subtype="0" Variant="305" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop06.png" Kind="Stage" Name="Darkroom prop 06" Subtype="0" Variant="306" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop07.png" Kind="Stage" Name="Darkroom prop 07" Subtype="0" Variant="307" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop08.png" Kind="Stage" Name="Darkroom prop 08" Subtype="0" Variant="308" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop09.png" Kind="Stage" Name="Darkroom prop 09" Subtype="0" Variant="309" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop10.png" Kind="Stage" Name="Darkroom prop 10" Subtype="0" Variant="310" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop11.png" Kind="Stage" Name="Darkroom prop 11" Subtype="0" Variant="311" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop12.png" Kind="Stage" Name="Darkroom prop 12" Subtype="0" Variant="312" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop13.png" Kind="Stage" Name="Darkroom prop 13" Subtype="0" Variant="313" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop14.png" Kind="Stage" Name="Darkroom prop 14" Subtype="0" Variant="314" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop15.png" Kind="Stage" Name="Darkroom prop 15" Subtype="0" Variant="315" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate01.png" Kind="Stage" Name="Crate 01" Subtype="5" Variant="0" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate02.png" Kind="Stage" Name="Crate 02" Subtype="6" Variant="0" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate03.png" Kind="Stage" Name="Crate 03" Subtype="7" Variant="0" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate04.png" Kind="Stage" Name="Crate 04" Subtype="8" Variant="0" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Box01.png" Kind="Stage" Name="Box 01" Subtype="0" Variant="128" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Box02.png" Kind="Stage" Name="Box 02" Subtype="0" Variant="129" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Box03.png" Kind="Stage" Name="Box 03" Subtype="0" Variant="130" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Box04.png" Kind="Stage" Name="Box 04" Subtype="0" Variant="131" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop01.png" Kind="Stage" Name="Womb Prop 01" Subtype="0" Variant="501" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop02.png" Kind="Stage" Name="Womb Prop 02" Subtype="0" Variant="502" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop03.png" Kind="Stage" Name="Womb Prop 03" Subtype="0" Variant="503" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop04.png" Kind="Stage" Name="Womb Prop 04" Subtype="0" Variant="504" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop05.png" Kind="Stage" Name="Womb Prop 05" Subtype="0" Variant="505" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop06.png" Kind="Stage" Name="Womb Prop 06" Subtype="0" Variant="506" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 01.png" Kind="Enemies" Name="Googly Greed 01" Subtype="0" Variant="200" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 02.png" Kind="Enemies" Name="Googly Greed 02" Subtype="0" Variant="201" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 03.png" Kind="Enemies" Name="Googly Greed 03" Subtype="0" Variant="202" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 04.png" Kind="Enemies" Name="Googly Greed 04" Subtype="0" Variant="203" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 05.png" Kind="Enemies" Name="Googly Greed 05" Subtype="0" Variant="204" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 06.png" Kind="Enemies" Name="Googly Greed 06" Subtype="0" Variant="205" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 07.png" Kind="Enemies" Name="Googly Greed 07" Subtype="0" Variant="206" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 08.png" Kind="Enemies" Name="Googly Greed 08" Subtype="0" Variant="207" />
-	<entity Group="Agony: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 09.png" Kind="Enemies" Name="Googly Greed 09" Subtype="0" Variant="208" />
-	<entity Group="Agony: Props" ID="202" Image="resources/Entities/1500.0.0 - Cathedralprop01.png" Kind="Stage" Name="cathedral prop 01" Subtype="0" Variant="256" />
-	<entity BaseHP="13" Champion="1" Group="Agony: Deads" ID="246" Image="resources/Entities/246.1.0 - Ghost spider.png" Kind="Enemies" Name="Ghost spider" Subtype="0" Variant="1" />
-	<entity BaseHP="13" Champion="1" Group="Agony: Deads" ID="246" Image="resources/Entities/246.2.0 - Ghost spider II.png" Kind="Enemies" Name="Ghost spider II" Subtype="0" Variant="2" />
-	<entity BaseHP="27" Champion="1" Group="Agony: Gapers" ID="247" Image="resources/Entities/247.0.1 - lvl3 Sackhead.png" Kind="Enemies" Name="Flesh Mobile Host" Subtype="1" Variant="0" />
-	<entity BaseHP="40" Group="Agony: Aether" ID="253" Image="resources/Entities/253.0.1 - Aether.png" Kind="Bosses" Name="Aether boss" Subtype="1" Variant="0" />
-	<entity BaseHP="40" Group="Agony: Eternals" ID="253" Image="resources/Entities/253.0.5 - Eternal Psy Tumor.png" Kind="Enemies" Name="Eternal Psy Tumor" Subtype="5" Variant="0" />
-	<entity BaseHP="35" Group="Agony: Eternals" ID="255" Image="resources/Entities/255.0.1 - Eternal Night Crawler.png" Kind="Enemies" Name="Eternal Night Crawler" Subtype="1" Variant="0" />
-	<entity BaseHP="200" Boss="1" Group="Agony: Eternals" ID="260" Image="resources/Entities/260.0.5 - Eternal Haunt.png" Kind="Bosses" Name="Haunt" Subtype="5" Variant="0" />
-	<entity BaseHP="200" Boss="1" Group="Agony: Boss Rooms" ID="260" Image="resources/Entities/260.0.15 - Tombstone Haunt.png" Kind="Bosses" Name="Tombstone Haunt" Subtype="15" Variant="0" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.20 - Tombstone Lil' Haunt 01.png" Kind="Enemies" Name="Tombstone Lil' Haunt 01" Subtype="20" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.21 - Tombstone Lil' Haunt 02.png" Kind="Enemies" Name="Tombstone Lil' Haunt 02" Subtype="21" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.22 - Tombstone Lil' Haunt 03.png" Kind="Enemies" Name="Tombstone Lil' Haunt 03" Subtype="22" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.23 - Tombstone Lil' Haunt 04.png" Kind="Enemies" Name="Tombstone Lil' Haunt 04" Subtype="23" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.24 - Tombstone Lil' Haunt 05.png" Kind="Enemies" Name="Tombstone Lil' Haunt 05" Subtype="24" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.25 - Tombstone Lil' Haunt 06.png" Kind="Enemies" Name="Tombstone Lil' Haunt 06" Subtype="25" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Tombstones" ID="260" Image="resources/Entities/260.10.26 - Will o the wisp.png" Kind="Enemies" Name="Will o the wisp" Subtype="26" Variant="10" />
-	<entity BaseHP="25" Group="Agony: Eternals" ID="260" Image="resources/Entities/260.10.13 - Eternal Lil' Haunt.png" Kind="Enemies" Name="Eternal Lil' Haunt" Subtype="13" Variant="10" />
-	<entity Group="Agony: Wall Spider Boss" ID="202" Image="resources/Entities/245.0.360 - Wall spider boss II big hole.png" Kind="Bosses" Name="Pushable Poop" Subtype="360" Variant="10" />
-	<entity BaseHP="300" Boss="1" Group="Agony: GOOGLY EYES" ID="261" Image="resources/Entities/261.0.27 - Dingoogly.png" Kind="Enemies" Name="Dingoogly" Subtype="27" Variant="0" />
-	<entity BaseHP="300" Boss="1" Group="Agony: Eternals" ID="261" Image="resources/Entities/261.0.5 - Eternal Dingle.png" Kind="Bosses" Name="Dingle" Subtype="5" Variant="0" />
-	<entity BaseHP="350" Boss="1" Group="Agony: Eternals" ID="262" Image="resources/Entities/262.0.5 - Eternal Mega Maw.png" Kind="Bosses" Name="Mega Maw" Subtype="5" Variant="0" />
-	<entity BaseHP="500" Boss="1" Group="Agony: Eternals" ID="263" Image="resources/Entities/263.0.5 - Eternal The Gate.png" Kind="Bosses" Name="The Gate" Subtype="5" Variant="0" />
-	<entity BaseHP="600" Boss="1" Group="Agony: Eternals" ID="264" Image="resources/Entities/264.0.5 - Eternal Mega Fatty.png" Kind="Bosses" Name="Mega Fatty" Subtype="5" Variant="0" />
-	<entity BaseHP="800" Boss="1" Group="Agony: GOOGLY EYES" ID="265" Image="resources/Entities/265.0.59 - Googly The Cage.png" Kind="Enemies" Name="Googly The Cage" Subtype="59" Variant="0" />
-	<entity BaseHP="800" Boss="1" Group="Agony: Eternals" ID="265" Image="resources/Entities/265.0.5 - Eternal The Cage.png" Kind="Bosses" Name="The Cage" Subtype="5" Variant="0" />
-	<entity BaseHP="400" Boss="1" Group="Agony: Eternals" ID="267" Image="resources/Entities/267.0.5 - Eternal Dark One.png" Kind="Bosses" Name="Dark One" Subtype="5" Variant="0" />
-	<entity BaseHP="520" Boss="1" Group="Agony: Eternals" ID="268" Image="resources/Entities/268.0.5 - Eternal The Adversary.png" Kind="Bosses" Name="The Adversary" Subtype="5" Variant="0" />
-	<entity BaseHP="200" Boss="1" Group="Agony: GOOGLY EYES" ID="269" Image="resources/Entities/269.10.0 - Poleyes and phalus.png" Kind="Enemies" Name="Poleyes and phalus" Subtype="0" Variant="10" />
-	<entity BaseHP="500" Boss="1" Group="Agony: GOOGLY EYES" ID="270" Image="resources/Entities/270.0.1 - Googly Fred I.png" Kind="Enemies" Name="Googly Fred I" Subtype="1" Variant="0" />
-	<entity BaseHP="500" Boss="1" Group="Agony: GOOGLY EYES" ID="270" Image="resources/Entities/270.0.2 - Googly Fred II.png" Kind="Enemies" Name="Googly Fred II" Subtype="2" Variant="0" />
-	<entity Boss="1" Group="Agony: Eternals" ID="271" Image="resources/Entities/271.0.5 - Eternal Blue Angel.png" Kind="Bosses" Name="Blue Angel" Subtype="5" Variant="0" />
-	<entity Boss="1" Group="Agony: Eternals" ID="272" Image="resources/Entities/272.0.5 - Eternal Red Angel.png" Kind="Bosses" Name="Red Angel" Subtype="5" Variant="0" />
-	<entity Group="Agony: Crawlspaces" ID="0" Image="resources/Entities/0.10.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="10" />
-	<entity Group="Agony: Crawlspaces" ID="0" Image="resources/Entities/0.20.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="20" />
-	<entity Group="Agony: Crawlspaces" ID="0" Image="resources/Entities/0.30.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="30" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Gapers" ID="10" Image="resources/Entities/10.79.0 - Glitchy Gaper.png" Kind="Enemies" Name="Glitchy Gaper" Subtype="0" Variant="79" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Cocoons" ID="10" Image="resources/Entities/10.0.21 - Gaper cocoon.png" Kind="Enemies" Name="Gaper cocoon" Subtype="21" Variant="0" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Cocoons" ID="10" Image="resources/Entities/10.0.22 - Gaper cocoon flipped.png" Kind="Enemies" Name="Gaper cocoon flipped" Subtype="22" Variant="0" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Gapers" ID="10" Image="resources/Entities/10.13.13 - Hugger.png" Kind="Enemies" Name="Hugger" Subtype="13" Variant="13" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Gapers" ID="10" Image="resources/Entities/10.0.1 - lvl1 Sackhead.png" Kind="Enemies" Name="Lvl1 Sackhead" Subtype="1" Variant="0" />
+	<entity BaseHP="3" Group="z[Agony]: Flies" ID="13" Image="resources/Entities/13.1.0 - small Fly.png" Kind="Enemies" Name="small Fly" Subtype="0" Variant="1" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Gapers" ID="16" Image="resources/Entities/16.0.1 - Mulligan sackhead.png" Kind="Enemies" Name="Mulligan sackhead" Subtype="1" Variant="0" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: GOOGLY EYES" ID="16" Image="resources/Entities/16.0.5 - Mulligooglygan.png" Kind="Enemies" Name="Mulligan" Subtype="5" Variant="0" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Cocoons" ID="16" Image="resources/Entities/16.2.21 - Boom sack.png" Kind="Enemies" Name="Boom sack" Subtype="21" Variant="2" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.5.0 - Sign 01.png" Kind="Stage" Name="Sign 01" Subtype="0" Variant="5" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.6.0 - Sign 02.png" Kind="Stage" Name="Sign 02" Subtype="0" Variant="6" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.7.0 - Sign 03.png" Kind="Stage" Name="Sign 03" Subtype="0" Variant="7" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.8.0 - Sign 04.png" Kind="Stage" Name="Sign 04" Subtype="0" Variant="8" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.9.0 - Sign 05.png" Kind="Stage" Name="Sign 05" Subtype="0" Variant="9" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.10.0 - Sign 06.png" Kind="Stage" Name="Sign 06" Subtype="0" Variant="10" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.11.0 - Sign 07.png" Kind="Stage" Name="Sign 07" Subtype="0" Variant="11" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.12.0 - Sign 08.png" Kind="Stage" Name="Sign 09" Subtype="0" Variant="12" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.13.0 - Sign 09.png" Kind="Stage" Name="Sign 010" Subtype="0" Variant="13" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.14.0 - Sign 10.png" Kind="Stage" Name="Sign 011" Subtype="0" Variant="14" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.15.0 - Sign 11.png" Kind="Stage" Name="Sign 012" Subtype="0" Variant="15" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.16.0 - Sign 12.png" Kind="Stage" Name="Sign 013" Subtype="0" Variant="16" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.17.0 - Sign 13.png" Kind="Stage" Name="Sign 014" Subtype="0" Variant="17" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.18.0 - Sign 14.png" Kind="Stage" Name="Sign 015" Subtype="0" Variant="18" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.19.0 - Sign 15.png" Kind="Stage" Name="Sign 016" Subtype="0" Variant="19" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.20.0 - Sign 16.png" Kind="Stage" Name="Sign 017" Subtype="0" Variant="20" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.21.0 - Sign 17.png" Kind="Stage" Name="Sign 018" Subtype="0" Variant="21" />
+	<entity BaseHP="5" Group="z[Agony]: Signs" ID="17" Image="resources/Entities/17.22.0 - Sign 18.png" Kind="Stage" Name="Sign 019" Subtype="0" Variant="22" />
+	<entity BaseHP="5" Group="z[Agony]: Tombstone haunt" ID="17" Image="resources/Entities/1500.0.0 - Gravestone14.png" Kind="Stage" Name="Tombstone Haunt gravestone" Subtype="0" Variant="33" />
+	<entity BaseHP="5" Group="z[Agony]: Props" ID="17" Image="resources/Entities/17.227.0 - Grave Dirt.png" Kind="Stage" Name="Grave Dirt" Subtype="0" Variant="227" />
+	<entity BaseHP="5" Group="z[Agony]: Flies" ID="18" Image="resources/Entities/18.1.0 - small Attack Fly.png" Kind="Enemies" Name="small Attack Fly" Subtype="0" Variant="1" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.21 - Posthumous Centipede walking part 01.png" Kind="Bosses" Name="Posthumous Centipede walking part 01" Subtype="21" Variant="0" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.22 - Posthumous Centipede walking part 02.png" Kind="Bosses" Name="Posthumous Centipede walking part 02" Subtype="22" Variant="0" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.23 - Posthumous Centipede walking part 03.png" Kind="Bosses" Name="Posthumous Centipede walking part 03" Subtype="23" Variant="0" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.0.24 - Posthumous Centipede walking part 04.png" Kind="Bosses" Name="Posthumous Centipede walking part 04" Subtype="24" Variant="0" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.21 - Posthumous Centipede flying part 01.png" Kind="Bosses" Name="Posthumous Centipede flying part 01" Subtype="21" Variant="1" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.22 - Posthumous Centipede flying part 02.png" Kind="Bosses" Name="Posthumous Centipede flying part 02" Subtype="22" Variant="1" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.23 - Posthumous Centipede flying part 03.png" Kind="Bosses" Name="Posthumous Centipede flying part 03" Subtype="23" Variant="1" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Posthumous Centipede" ID="19" Image="resources/Entities/19.1.24 - Posthumous Centipede flying part 04.png" Kind="Bosses" Name="Posthumous Centipede flying part 04" Subtype="24" Variant="1" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Spiders" ID="19" Image="resources/Entities/19.0.1 - Centipede.png" Kind="Enemies" Name="Centipede" Subtype="72" Variant="0" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Spiders" ID="19" Image="resources/Entities/19.0.3 - Centipede butt.png" Kind="Enemies" Name="Centipede" Subtype="73" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="2" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="3" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="4" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="5" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="6" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="244" Image="resources/Entities/244.0.2 - Derp Worm.png" Kind="Enemies" Name="Derp Worm" Subtype="7" Variant="0" />	<entity BaseHP="10" Group="z[Agony]: GOOGLY EYES" ID="239" Image="resources/Entities/239.52.0 - Googly Grub.png" Kind="Enemies" Name="Googly Grub" Subtype="0" Variant="52" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Stones" ID="30" Image="resources/Entities/30.1.25 - Constant Shooting Ipecac Grimace.png" Kind="Enemies" Name="Constant Shooting Ipecac Grimace" Subtype="25" Variant="1" />
+	<!--entity BaseHP="5" Group="z[Agony]: Special Props" ID="33" Image="resources/Entities/33.69.69 - Literally Nothing.png" Kind="Stage" Name="Fire Place" Subtype="69" Variant="69" /-->
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="41" Image="resources/Entities/44.0.1 - Purple block.png" Kind="Enemies" Name="Purple block" Subtype="5" Variant="1" />
+	<entity BaseHP="60" Boss="1" Group="z[Agony]: Spiders" ID="49" Image="resources/Entities/49.1.13 - Angry ass spider.png" Kind="Enemies" Name="Angry ass spider" Subtype="13" Variant="1" />
+	<entity BaseHP="60" Boss="1" Group="z[Agony]: Wall Spider Boss" ID="46" Image="resources/Entities/46.2.1 - Wall Spider Boss II Head.png" Kind="Bosses" Name="Wall Spider Boss II Head" Subtype="1" Variant="2" />
+	<entity BaseHP="35" Champion="1" Group="z[Agony]: GOOGLY EYES" ID="58" Image="resources/Entities/58.1.0 - Derp-Bite.png" Kind="Enemies" Name="Derp-Bite" Subtype="0" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Watchful Eye" ID="60" Image="resources/Entities/60.1.69 - Watchful Eye.png" Kind="Bosses" Name="Watchful Eye" Subtype="69" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Watchful Eye" ID="60" Image="resources/Entities/60.1.68 - Watchful Eye's eye.png" Kind="Bosses" Name="Watchful Eye's eye" Subtype="68" Variant="1" />
+	<entity BaseHP="180" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="62" Image="resources/Entities/62.0.47 - Googly Pin.png" Kind="Enemies" Name="Googly Pin" Subtype="47" Variant="0" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: Aether" ID="65" Image="resources/Entities/65.10.1 - Aether kid.png" Kind="Bosses" Name="Aether kid" Subtype="5" Variant="10" />
+	<entity BaseHP="8" Boss="1" Group="z[Agony]: Spikes" ID="73" Image="resources/Entities/73.1.1 - Yellow block.png" Kind="Enemies" Name="Yellow block" Subtype="1" Variant="1" />
+	<entity BaseHP="140" Boss="1" Group="z[Agony]: Flies" ID="79" Image="resources/Entities/79.11.1 - Overflowing fly.png" Kind="Enemies" Name="Overflowing fly" Subtype="1" Variant="11" />
+	<entity BaseHP="6.5" Group="z[Agony]: Spiders" ID="85" Image="resources/Entities/85.1.0 - small Spider.png" Kind="Enemies" Name="small Spider" Subtype="0" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Spiders" ID="88" Image="resources/Entities/88.0.13 - Bubbling spider I.png" Kind="Enemies" Name="Bubbling Spider I" Subtype="13" Variant="0" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Spiders" ID="88" Image="resources/Entities/88.69.13 - Bubbling spider II.png" Kind="Enemies" Name="Bubbling Spider II" Subtype="13" Variant="69" />
+	<entity BaseHP="20" Group="z[Agony]: Spiders" ID="94" Image="resources/Entities/94.1.0 - Spider fly.png" Kind="Enemies" Name="Spiderfly" Subtype="0" Variant="1" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.0.3 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Left)" Subtype="0" Variant="0" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.1.3 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Left)" Subtype="0" Variant="1" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.2.3 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Left)" Subtype="0" Variant="2" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.0.1 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Up)" Subtype="1" Variant="0" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.1.1 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Up)" Subtype="1" Variant="1" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.2.1 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Up)" Subtype="1" Variant="2" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.0.2 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Right)" Subtype="2" Variant="0" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.1.2 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Right)" Subtype="2" Variant="1" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.2.2 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Right)" Subtype="2" Variant="2" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.0.0 - Constant Stone Shooter.png" Kind="Enemies" Name="Constant Stone Shooter (Down)" Subtype="3" Variant="0" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.1.0 - Constant Stone Shooter II.png" Kind="Enemies" Name="Constant Stone Shooter II (Down)" Subtype="3" Variant="1" />
+	<entity BaseHP="1" Group="z[Agony]: Stones" ID="202" Image="resources/Entities/202.2.0 - Constant Stone Shooter III.png" Kind="Enemies" Name="Constant Stone Shooter III (Down)" Subtype="3" Variant="2" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Cocoons" ID="205" Image="resources/Entities/205.19.0 - Spider Eggsack.png" Kind="Enemies" Name="Spider Eggsack" Subtype="0" Variant="19" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Cocoons" ID="205" Image="resources/Entities/205.20.0 - Spider Eggsack flipped.png" Kind="Enemies" Name="Spider Eggsack flipped" Subtype="0" Variant="20" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="206" Image="resources/Entities/206.0.21 - Baby Long Legs cocoon I.png" Kind="Enemies" Name="Baby Long Legs cocoon I" Subtype="21" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="206" Image="resources/Entities/206.0.22 - Baby Long Legs cocoon II.png" Kind="Enemies" Name="Baby Long Legs cocoon II" Subtype="22" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="206" Image="resources/Entities/206.0.23 - Baby Long Legs cocoon III.png" Kind="Enemies" Name="Baby Long Legs cocoon III" Subtype="23" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Eternals" ID="206" Image="resources/Entities/206.0.5 - Eternal Baby Long Legs.png" Kind="Enemies" Name="Baby Long Legs" Subtype="5" Variant="0" />	
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="207" Image="resources/Entities/207.0.21 - Crazy Long Legs cocoon I.png" Kind="Enemies" Name="Crazy Long Legs cocoon I" Subtype="21" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="207" Image="resources/Entities/207.0.22 - Crazy Long Legs cocoon II.png" Kind="Enemies" Name="Crazy Long Legs cocoon II" Subtype="22" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Cocoons" ID="207" Image="resources/Entities/207.0.23 - Crazy Long Legs cocoon III.png" Kind="Enemies" Name="Crazy Long Legs cocoon III" Subtype="23" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Eternals" ID="207" Image="resources/Entities/207.0.5 - Eternal Crazy Long Legs.png" Kind="Enemies" Name="Crazy Long Legs" Subtype="5" Variant="0" />
+	<entity BaseHP="12" Champion="1" Group="z[Agony]: Eternals" ID="207" Image="resources/Entities/207.1.5 - Eternal Small Crazy Long Legs.png" Kind="Enemies" Name="Small Crazy Long Legs" Subtype="5" Variant="1" />
+	<entity BaseHP="20" Group="z[Agony]: Spiders" ID="208" Image="resources/Entities/208.16.16 - Buttspider.png" Kind="Enemies" Name="Buttspider" Subtype="16" Variant="16" />
+	<entity BaseHP="20" Group="z[Agony]: Eternals" ID="208" Image="resources/Entities/208.0.15 - Eternal Fatty.png" Kind="Enemies" Name="Eternal Fatty" Subtype="15" Variant="0" />
+	<entity BaseHP="20" Group="z[Agony]: Gapers" ID="208" Image="resources/Entities/208.0.13 - Fatty Sackhead.png" Kind="Enemies" Name="Fatty Sackhead" Subtype="13" Variant="0" />
+	<entity BaseHP="20" Group="z[Agony]: Eternals" ID="208" Image="resources/Entities/208.1.15 - Eternal Pale Fatty.png" Kind="Enemies" Name="Eternal Pale Fatty" Subtype="15" Variant="1" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Eternals" ID="209" Image="resources/Entities/209.0.15 - Eternal Fat Sack.png" Kind="Enemies" Name="Eternal Fat Sack" Subtype="15" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Organs" ID="210" Image="resources/Entities/210.0.20 - Blood fountain.png" Kind="Enemies" Name="Pimple" Subtype="20" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Eternals" ID="210" Image="resources/Entities/210.0.15 - Eternal Blubber.png" Kind="Enemies" Name="Eternal Blubber" Subtype="15" Variant="0" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Spiders" ID="211" Image="resources/Entities/211.1.0 - Creep Spider.png" Kind="Enemies" Name="Creep Spider" Subtype="0" Variant="1" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Eternals" ID="211" Image="resources/Entities/211.0.15 - Eternal Half Sack.png" Kind="Enemies" Name="Eternal Half Sack" Subtype="15" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: Flies" ID="214" Image="resources/Entities/214.1.0 - lvl3 Fly.png" Kind="Enemies" Name="lvl3 Fly" Subtype="0" Variant="1" />
+	<entity BaseHP="13" Group="z[Agony]: Spiders" ID="215" Image="resources/Entities/215.0.3 - lvl3 Spider.png" Kind="Enemies" Name="lvl3 Spider" Subtype="3" Variant="0" />
+	<entity BaseHP="3" Group="z[Agony]: Eternals" ID="217" Image="resources/Entities/217.0.13 - Eternal Dip.png" Kind="Enemies" Name="Eternal Dip" Subtype="13" Variant="13" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="219" Image="resources/Entities/219.0.2 - Tombstone01 Wizoob.png" Kind="Enemies" Name="Tombstone 1 Wizoob" Subtype="2" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="219" Image="resources/Entities/219.0.3 - Tombstone02 Wizoob.png" Kind="Enemies" Name="Tombstone 2 Wizoob" Subtype="3" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="219" Image="resources/Entities/219.0.4 - Tombstone03 Wizoob.png" Kind="Enemies" Name="Tombstone 3 Wizoob" Subtype="4" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="219" Image="resources/Entities/219.0.5 - Tombstone04 Wizoob.png" Kind="Enemies" Name="Tombstone 4 Wizoob" Subtype="5" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="219" Image="resources/Entities/219.0.6 - Tombstone05 Wizoob.png" Kind="Enemies" Name="Tombstone 5 Wizoob" Subtype="6" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Eternals" ID="219" Image="resources/Entities/219.0.1 - Eternal Wizoob.png" Kind="Enemies" Name="Eternal Wizoob" Subtype="1" Variant="0" />
+	<entity BaseHP="15" Group="z[Agony]: Eternals" ID="220" Image="resources/Entities/220.0.13 - Eternal Squirt.png" Kind="Enemies" Name="Eternal Squirt" Subtype="13" Variant="0" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: GOOGLY EYES" ID="221" Image="resources/Entities/221.1.0 - Derp Cod Worm.png" Kind="Enemies" Name="Derp Cod Worm" Subtype="0" Variant="1" />
+	<entity BaseHP="5" Group="z[Agony]: Spiders" ID="222" Image="resources/Entities/222.1.0 - Ring Spider.png" Kind="Enemies" Name="Ring Spider" Subtype="0" Variant="1" />
+	<entity BaseHP="62" Group="z[Agony]: Eternals" ID="223" Image="resources/Entities/223.13.13 - Eternal Dinga.png" Kind="Enemies" Name="Eternal Dinga" Subtype="13" Variant="13" />
+	<entity BaseHP="16" Group="z[Agony]: Cocoons" ID="226" Image="resources/Entities/226.1.21 - Bony cocoon.png" Kind="Enemies" Name="Bony cocoon" Subtype="21" Variant="1" />
+	<entity BaseHP="16" Group="z[Agony]: Cocoons" ID="226" Image="resources/Entities/226.1.22 - Bony cocoon flipped.png" Kind="Enemies" Name="Bony cocoon flipped" Subtype="22" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.10 - Tombstone bony 01.png" Kind="Enemies" Name="tombstone Boney 01" Subtype="10" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.11 - Tombstone bony 02.png" Kind="Enemies" Name="tombstone Boney 02" Subtype="11" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.12 - Tombstone bony 03.png" Kind="Enemies" Name="tombstone Boney 03" Subtype="12" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.13 - Tombstone bony 04.png" Kind="Enemies" Name="tombstone Boney 04" Subtype="13" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.14 - Tombstone bony 05.png" Kind="Enemies" Name="tombstone Boney 05" Subtype="14" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.15 - Tombstone bony 06.png" Kind="Enemies" Name="tombstone Boney 06" Subtype="15" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Tombstones" ID="227" Image="resources/Entities/227.1.16 - Tombstone bony 07.png" Kind="Enemies" Name="tombstone Boney 07" Subtype="16" Variant="1" />
+	<entity BaseHP="8" Group="z[Agony]: Deads" ID="227" Image="resources/Entities/227.0.2 - Pile of bones.png" Kind="Enemies" Name="Pile of bones" Subtype="2" Variant="0" />
+	<entity BaseHP="8" Group="z[Agony]: Deads" ID="227" Image="resources/Entities/227.0.3 - Pile of bones II.png" Kind="Enemies" Name="Pile of bones II" Subtype="3" Variant="0" />
+	<entity BaseHP="8" Group="z[Agony]: Deads" ID="227" Image="resources/Entities/227.0.1 - Angry Skeleman.png" Kind="Enemies" Name="Angry skeleman" Subtype="1" Variant="0" />
+	<entity BaseHP="20" Group="z[Agony]: Eternals" ID="229" Image="resources/Entities/229.0.5 - Eternal Tumor.png" Kind="Enemies" Name="Eternal Tumor" Subtype="5" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.0 - Broken Gaping Maw.png" Kind="Enemies" Name="Broken Gaping Maw" Subtype="0" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.1 - New Friends Broken Gaping Maw 01.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 01" Subtype="1" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.2 - New Friends Broken Gaping Maw 02.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 02" Subtype="2" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.3 - New Friends Broken Gaping Maw 03.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 03" Subtype="3" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.4 - New Friends Broken Gaping Maw 04.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 04" Subtype="4" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.5 - New Friends Broken Gaping Maw 05.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 05" Subtype="5" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.6 - New Friends Broken Gaping Maw 06.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 06" Subtype="6" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.7 - New Friends Broken Gaping Maw 07.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 07" Subtype="7" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.8 - New Friends Broken Gaping Maw 08.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 08" Subtype="8" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.9 - New Friends Broken Gaping Maw 09.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 09" Subtype="9" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.10 - New Friends Broken Gaping Maw 10.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 10" Subtype="10" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.11 - New Friends Broken Gaping Maw 11.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 11" Subtype="11" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Stones" ID="236" Image="resources/Entities/236.0.12 - New Friends Broken Gaping Maw 12.png" Kind="Enemies" Name="New Friends Broken Gaping Maw 12" Subtype="12" Variant="0" />
+	<entity BaseHP="24" Champion="1" Group="z[Agony]: Eternals" ID="237" Image="resources/Entities/237.0.13 - Eternal Gurgling.png" Kind="Enemies" Name="Eternal Gurgling" Subtype="13" Variant="0" />
+	<entity BaseHP="24" Champion="1" Group="z[Agony]: Eternals" ID="237" Image="resources/Entities/237.1.13 - Eternal Gurgling.png" Kind="Bosses" Name="Eternal Gurgling" Subtype="13" Variant="1" />
+	<entity BaseHP="10" Group="z[Agony]: Wall Spider Boss" ID="241" Image="resources/Entities/241.1.2 - Wall Spider Boss II Leg.png" Kind="Bosses" Name="Wall Spider Boss II Leg" Subtype="2" Variant="0" />
+	<entity BaseHP="10" Group="z[Agony]: Eternals" ID="244" Image="resources/Entities/244.0.1 - Eternal Round Worm.png" Kind="Enemies" Name="Eternal Round Worm" Subtype="1" Variant="0" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.20 - Stalagmite01.png" Kind="Stage" Name="Stalagmite01" Subtype="20" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.21 - Stalagmite02.png" Kind="Stage" Name="Stalagmite02" Subtype="21" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.22 - Stalagmite03.png" Kind="Stage" Name="Stalagmite03" Subtype="22" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.23 - Stalagmite04.png" Kind="Stage" Name="Stalagmite04" Subtype="23" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.24 - Stalagmite05.png" Kind="Stage" Name="Stalagmite05" Subtype="24" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.25 - Stalagmite06.png" Kind="Stage" Name="Stalagmite06" Subtype="25" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.26 - Stalagmite07.png" Kind="Stage" Name="Stalagmite07" Subtype="26" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.27 - Stalagmite08.png" Kind="Stage" Name="Stalagmite08" Subtype="27" Variant="10" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone01.png" Kind="Stage" Name="Gravestone 01" Subtype="0" Variant="66" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone02.png" Kind="Stage" Name="Gravestone 02" Subtype="0" Variant="67" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone03.png" Kind="Stage" Name="Gravestone 03" Subtype="0" Variant="68" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone04.png" Kind="Stage" Name="Gravestone 04" Subtype="0" Variant="70" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone05.png" Kind="Stage" Name="Gravestone 05" Subtype="0" Variant="71" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone06.png" Kind="Stage" Name="Gravestone 06" Subtype="0" Variant="72" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone07.png" Kind="Stage" Name="Gravestone 07" Subtype="0" Variant="73" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone08.png" Kind="Stage" Name="Gravestone 08" Subtype="0" Variant="74" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone09.png" Kind="Stage" Name="Gravestone 09" Subtype="0" Variant="75" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone10.png" Kind="Stage" Name="Gravestone 10" Subtype="0" Variant="76" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone11.png" Kind="Stage" Name="Gravestone 11" Subtype="0" Variant="77" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone12.png" Kind="Stage" Name="Gravestone 12" Subtype="0" Variant="78" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone13.png" Kind="Stage" Name="Gravestone 13" Subtype="0" Variant="79" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Invisible block.png" Kind="Stage" Name="Gravestone 14 block" Subtype="0" Variant="80" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone15.png" Kind="Stage" Name="Gravestone 15" Subtype="0" Variant="81" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone16.png" Kind="Stage" Name="Gravestone 16" Subtype="0" Variant="82" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone17.png" Kind="Stage" Name="Gravestone 17" Subtype="0" Variant="83" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone18.png" Kind="Stage" Name="Gravestone 18" Subtype="0" Variant="84" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone19.png" Kind="Stage" Name="Gravestone 19" Subtype="0" Variant="85" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone20.png" Kind="Stage" Name="Gravestone 20" Subtype="0" Variant="86" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone21.png" Kind="Stage" Name="Gravestone 21" Subtype="0" Variant="87" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone22.png" Kind="Stage" Name="Gravestone 22" Subtype="0" Variant="88" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone23.png" Kind="Stage" Name="Gravestone 23" Subtype="0" Variant="89" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Gravestone24.png" Kind="Stage" Name="Gravestone 24" Subtype="0" Variant="90" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop01.png" Kind="Stage" Name="Darkroom prop 01" Subtype="0" Variant="301" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop02.png" Kind="Stage" Name="Darkroom prop 02" Subtype="0" Variant="302" />
+	<entity Group="z[Agony]: Props" ID="17" Image="resources/Entities/1500.0.0 - Darkroomprop03.png" Kind="Stage" Name="Darkroom prop 03" Subtype="0" Variant="303" />
+	<entity Group="z[Agony]: Props" ID="17" Image="resources/Entities/1500.0.0 - Darkroomprop04.png" Kind="Stage" Name="Darkroom prop 04" Subtype="0" Variant="304" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop05.png" Kind="Stage" Name="Darkroom prop 05" Subtype="0" Variant="305" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop06.png" Kind="Stage" Name="Darkroom prop 06" Subtype="0" Variant="306" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop07.png" Kind="Stage" Name="Darkroom prop 07" Subtype="0" Variant="307" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop08.png" Kind="Stage" Name="Darkroom prop 08" Subtype="0" Variant="308" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop09.png" Kind="Stage" Name="Darkroom prop 09" Subtype="0" Variant="309" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop10.png" Kind="Stage" Name="Darkroom prop 10" Subtype="0" Variant="310" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop11.png" Kind="Stage" Name="Darkroom prop 11" Subtype="0" Variant="311" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop12.png" Kind="Stage" Name="Darkroom prop 12" Subtype="0" Variant="312" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop13.png" Kind="Stage" Name="Darkroom prop 13" Subtype="0" Variant="313" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop14.png" Kind="Stage" Name="Darkroom prop 14" Subtype="0" Variant="314" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Darkroomprop15.png" Kind="Stage" Name="Darkroom prop 15" Subtype="0" Variant="315" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate01.png" Kind="Stage" Name="Crate 01" Subtype="5" Variant="0" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate02.png" Kind="Stage" Name="Crate 02" Subtype="6" Variant="0" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate03.png" Kind="Stage" Name="Crate 03" Subtype="7" Variant="0" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Crate04.png" Kind="Stage" Name="Crate 04" Subtype="8" Variant="0" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Box01.png" Kind="Stage" Name="Box 01" Subtype="0" Variant="128" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Box02.png" Kind="Stage" Name="Box 02" Subtype="0" Variant="129" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Box03.png" Kind="Stage" Name="Box 03" Subtype="0" Variant="130" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Box04.png" Kind="Stage" Name="Box 04" Subtype="0" Variant="131" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop01.png" Kind="Stage" Name="Womb Prop 01" Subtype="0" Variant="501" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop02.png" Kind="Stage" Name="Womb Prop 02" Subtype="0" Variant="502" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop03.png" Kind="Stage" Name="Womb Prop 03" Subtype="0" Variant="503" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop04.png" Kind="Stage" Name="Womb Prop 04" Subtype="0" Variant="504" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop05.png" Kind="Stage" Name="Womb Prop 05" Subtype="0" Variant="505" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Wombprop06.png" Kind="Stage" Name="Womb Prop 06" Subtype="0" Variant="506" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 01.png" Kind="Enemies" Name="Googly Greed 01" Subtype="0" Variant="200" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 02.png" Kind="Enemies" Name="Googly Greed 02" Subtype="0" Variant="201" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 03.png" Kind="Enemies" Name="Googly Greed 03" Subtype="0" Variant="202" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 04.png" Kind="Enemies" Name="Googly Greed 04" Subtype="0" Variant="203" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 05.png" Kind="Enemies" Name="Googly Greed 05" Subtype="0" Variant="204" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 06.png" Kind="Enemies" Name="Googly Greed 06" Subtype="0" Variant="205" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 07.png" Kind="Enemies" Name="Googly Greed 07" Subtype="0" Variant="206" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 08.png" Kind="Enemies" Name="Googly Greed 08" Subtype="0" Variant="207" />
+	<entity Group="z[Agony]: GOOGLY EYES" ID="202" Image="resources/Entities/1500.0.0 - Googly Greed 09.png" Kind="Enemies" Name="Googly Greed 09" Subtype="0" Variant="208" />
+	<entity Group="z[Agony]: Props" ID="202" Image="resources/Entities/1500.0.0 - Cathedralprop01.png" Kind="Stage" Name="cathedral prop 01" Subtype="0" Variant="256" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Deads" ID="246" Image="resources/Entities/246.1.0 - Ghost spider.png" Kind="Enemies" Name="Ghost spider" Subtype="0" Variant="1" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Deads" ID="246" Image="resources/Entities/246.2.0 - Ghost spider II.png" Kind="Enemies" Name="Ghost spider II" Subtype="0" Variant="2" />
+	<entity BaseHP="27" Champion="1" Group="z[Agony]: Gapers" ID="247" Image="resources/Entities/247.0.1 - lvl3 Sackhead.png" Kind="Enemies" Name="Flesh Mobile Host" Subtype="1" Variant="0" />
+	<entity BaseHP="40" Group="z[Agony]: Aether" ID="253" Image="resources/Entities/253.0.1 - Aether.png" Kind="Bosses" Name="Aether boss" Subtype="1" Variant="0" />
+	<entity BaseHP="40" Group="z[Agony]: Eternals" ID="253" Image="resources/Entities/253.0.5 - Eternal Psy Tumor.png" Kind="Enemies" Name="Eternal Psy Tumor" Subtype="5" Variant="0" />
+	<entity BaseHP="35" Group="z[Agony]: Eternals" ID="255" Image="resources/Entities/255.0.1 - Eternal Night Crawler.png" Kind="Enemies" Name="Eternal Night Crawler" Subtype="1" Variant="0" />
+	<entity BaseHP="200" Boss="1" Group="z[Agony]: Eternals" ID="260" Image="resources/Entities/260.0.5 - Eternal Haunt.png" Kind="Bosses" Name="Haunt" Subtype="5" Variant="0" />
+	<entity BaseHP="200" Boss="1" Group="z[Agony]: Boss Rooms" ID="260" Image="resources/Entities/260.0.15 - Tombstone Haunt.png" Kind="Bosses" Name="Tombstone Haunt" Subtype="15" Variant="0" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.20 - Tombstone Lil' Haunt 01.png" Kind="Enemies" Name="Tombstone Lil' Haunt 01" Subtype="20" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.21 - Tombstone Lil' Haunt 02.png" Kind="Enemies" Name="Tombstone Lil' Haunt 02" Subtype="21" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.22 - Tombstone Lil' Haunt 03.png" Kind="Enemies" Name="Tombstone Lil' Haunt 03" Subtype="22" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.23 - Tombstone Lil' Haunt 04.png" Kind="Enemies" Name="Tombstone Lil' Haunt 04" Subtype="23" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.24 - Tombstone Lil' Haunt 05.png" Kind="Enemies" Name="Tombstone Lil' Haunt 05" Subtype="24" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.25 - Tombstone Lil' Haunt 06.png" Kind="Enemies" Name="Tombstone Lil' Haunt 06" Subtype="25" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Tombstones" ID="260" Image="resources/Entities/260.10.26 - Will o the wisp.png" Kind="Enemies" Name="Will o the wisp" Subtype="26" Variant="10" />
+	<entity BaseHP="25" Group="z[Agony]: Eternals" ID="260" Image="resources/Entities/260.10.13 - Eternal Lil' Haunt.png" Kind="Enemies" Name="Eternal Lil' Haunt" Subtype="13" Variant="10" />
+	<entity Group="z[Agony]: Wall Spider Boss" ID="202" Image="resources/Entities/245.0.360 - Wall spider boss II big hole.png" Kind="Bosses" Name="Pushable Poop" Subtype="360" Variant="10" />
+	<entity BaseHP="300" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="261" Image="resources/Entities/261.0.27 - Dingoogly.png" Kind="Enemies" Name="Dingoogly" Subtype="27" Variant="0" />
+	<entity BaseHP="300" Boss="1" Group="z[Agony]: Eternals" ID="261" Image="resources/Entities/261.0.5 - Eternal Dingle.png" Kind="Bosses" Name="Dingle" Subtype="5" Variant="0" />
+	<entity BaseHP="350" Boss="1" Group="z[Agony]: Eternals" ID="262" Image="resources/Entities/262.0.5 - Eternal Mega Maw.png" Kind="Bosses" Name="Mega Maw" Subtype="5" Variant="0" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: Eternals" ID="263" Image="resources/Entities/263.0.5 - Eternal The Gate.png" Kind="Bosses" Name="The Gate" Subtype="5" Variant="0" />
+	<entity BaseHP="600" Boss="1" Group="z[Agony]: Eternals" ID="264" Image="resources/Entities/264.0.5 - Eternal Mega Fatty.png" Kind="Bosses" Name="Mega Fatty" Subtype="5" Variant="0" />
+	<entity BaseHP="800" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="265" Image="resources/Entities/265.0.59 - Googly The Cage.png" Kind="Enemies" Name="Googly The Cage" Subtype="59" Variant="0" />
+	<entity BaseHP="800" Boss="1" Group="z[Agony]: Eternals" ID="265" Image="resources/Entities/265.0.5 - Eternal The Cage.png" Kind="Bosses" Name="The Cage" Subtype="5" Variant="0" />
+	<entity BaseHP="400" Boss="1" Group="z[Agony]: Eternals" ID="267" Image="resources/Entities/267.0.5 - Eternal Dark One.png" Kind="Bosses" Name="Dark One" Subtype="5" Variant="0" />
+	<entity BaseHP="520" Boss="1" Group="z[Agony]: Eternals" ID="268" Image="resources/Entities/268.0.5 - Eternal The Adversary.png" Kind="Bosses" Name="The Adversary" Subtype="5" Variant="0" />
+	<entity BaseHP="200" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="269" Image="resources/Entities/269.10.0 - Poleyes and phalus.png" Kind="Enemies" Name="Poleyes and phalus" Subtype="0" Variant="10" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="270" Image="resources/Entities/270.0.1 - Googly Fred I.png" Kind="Enemies" Name="Googly Fred I" Subtype="1" Variant="0" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: GOOGLY EYES" ID="270" Image="resources/Entities/270.0.2 - Googly Fred II.png" Kind="Enemies" Name="Googly Fred II" Subtype="2" Variant="0" />
+	<entity Boss="1" Group="z[Agony]: Eternals" ID="271" Image="resources/Entities/271.0.5 - Eternal Blue Angel.png" Kind="Bosses" Name="Blue Angel" Subtype="5" Variant="0" />
+	<entity Boss="1" Group="z[Agony]: Eternals" ID="272" Image="resources/Entities/272.0.5 - Eternal Red Angel.png" Kind="Bosses" Name="Red Angel" Subtype="5" Variant="0" />
+	<entity Group="z[Agony]: Crawlspaces" ID="0" Image="resources/Entities/0.10.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="10" />
+	<entity Group="z[Agony]: Crawlspaces" ID="0" Image="resources/Entities/0.20.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="20" />
+	<entity Group="z[Agony]: Crawlspaces" ID="0" Image="resources/Entities/0.30.0 - Ladder.png" Kind="Stage" Name="Ladders or something?" Subtype="0" Variant="30" />
 
 	
 	<!-- modified shtuff -->
 	
 	<!-- Make sure to delete these entities if they're already present -->
 	
-	<entity BaseHP="25" Champion="1" Group="Agony: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts down.png" Kind="Enemies" Name="Guts (Down)" Subtype="0" Variant="0" />
-	<entity BaseHP="25" Champion="1" Group="Agony: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts left.png" Kind="Enemies" Name="Guts (Left)" Subtype="1" Variant="0" />
-	<entity BaseHP="25" Champion="1" Group="Agony: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts up.png" Kind="Enemies" Name="Guts (Up)" Subtype="2" Variant="0" />
-	<entity BaseHP="25" Champion="1" Group="Agony: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts right.png" Kind="Enemies" Name="Guts (Right)" Subtype="3" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger.png" Kind="Enemies" Name="Wall Hugger (Nearest)" Subtype="0" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger left.png" Kind="Enemies" Name="Wall Hugger (Left)" Subtype="1" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger up.png" Kind="Enemies" Name="Wall Hugger (Up)" Subtype="2" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger right.png" Kind="Enemies" Name="Wall Hugger (Right)" Subtype="3" Variant="0" />
-	<entity BaseHP="100" Group="Agony: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger down.png" Kind="Enemies" Name="Wall Hugger (Down)" Subtype="4" Variant="0" />
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts down.png" Kind="Enemies" Name="Guts (Down)" Subtype="0" Variant="0" />
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts left.png" Kind="Enemies" Name="Guts (Left)" Subtype="1" Variant="0" />
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts up.png" Kind="Enemies" Name="Guts (Up)" Subtype="2" Variant="0" />
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Organs" ID="40" Image="resources/Entities/40.0.0 - Guts right.png" Kind="Enemies" Name="Guts (Right)" Subtype="3" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger.png" Kind="Enemies" Name="Wall Hugger (Nearest)" Subtype="0" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger left.png" Kind="Enemies" Name="Wall Hugger (Left)" Subtype="1" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger up.png" Kind="Enemies" Name="Wall Hugger (Up)" Subtype="2" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger right.png" Kind="Enemies" Name="Wall Hugger (Right)" Subtype="3" Variant="0" />
+	<entity BaseHP="100" Group="z[Agony]: Spikes" ID="218" Image="resources/Entities/218.0.0 - Wall Hugger down.png" Kind="Enemies" Name="Wall Hugger (Down)" Subtype="4" Variant="0" />
 
 	<!-- modified shtuff end -->
 	
 	<!-- guardians -->
 	
-	<entity BaseHP="22" Boss="1" Group="Agony: Guardians" ID="19" Image="resources/Entities/19.1.111 - Stone The Hollow.png" Kind="Enemies" Name="Stone The Hollow" Subtype="111" Variant="1" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="10" Image="resources/Entities/10.0.0 - Frowning Gaper.png" Kind="Enemies" Name="Frowning Gaper" Subtype="0" Variant="111" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="12" Image="resources/Entities/12.0.111 - Stone Horf.png" Kind="Enemies" Name="Stone Horf" Subtype="111" Variant="0" />
-	<entity BaseHP="15" Champion="1" Group="Agony: Guardians" ID="15" Image="resources/Entities/15.0.0 - Clotty.png" Kind="Enemies" Name="Clotty" Subtype="0" Variant="111" />
-	<entity BaseHP="13" Champion="1" Group="Agony: Guardians" ID="16" Image="resources/Entities/16.2.0 - Mulliboom.png" Kind="Enemies" Name="Mulliboom" Subtype="1" Variant="2" />
-	<entity BaseHP="22" Boss="1" Group="Agony: Guardians" ID="19" Image="resources/Entities/19.0.111 - Stone Larry Jr..png" Kind="Enemies" Name="Stone Larry Jr." Subtype="111" Variant="0" />
-	<entity BaseHP="250" Boss="1" Group="Agony: Guardians" ID="20" Image="resources/Entities/20.0.0 - Monstro.png" Kind="Enemies" Name="Monstro" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Group="Agony: Guardians" ID="208" Image="resources/Entities/208.1.111 - Stone Pale Fatty.png" Kind="Enemies" Name="Stone Pale Fatty" Subtype="111" Variant="1" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Guardians" ID="209" Image="resources/Entities/209.0.111 - Stone Fat Sack.png" Kind="Enemies" Name="Stone Fat Sack" Subtype="111" Variant="0" />
-	<entity BaseHP="16" Champion="1" Group="Agony: Guardians" ID="210" Image="resources/Entities/210.0.111 - Stone Blubber.png" Kind="Enemies" Name="Stone Blubber" Subtype="111" Variant="0" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="211" Image="resources/Entities/211.0.111 - Stone Half Sack.png" Kind="Enemies" Name="Stone Half Sack" Subtype="111" Variant="0" />
-	<!--entity BaseHP="20" Group="Agony: Guardians" ID="212" Image="resources/Entities/212.0.0 - Death's Head.png" Kind="Enemies" Name="Death's Head" Subtype="0" Variant="111" /-->
-	<!--entity BaseHP="20" Group="Agony: Guardians" ID="213" Image="resources/Entities/213.0.0 - Mom's Hand.png" Kind="Enemies" Name="Mom's Hand" Subtype="0" Variant="111" /-->
-	<entity BaseHP="3" Group="Agony: Guardians" ID="217" Image="resources/Entities/217.0.111 - Stone Dip.png" Kind="Enemies" Name="Stone Dip" Subtype="111" Variant="0" />
-	<entity BaseHP="15" Group="Agony: Guardians" ID="220" Image="resources/Entities/220.0.0 - Squirt.png" Kind="Enemies" Name="Squirt" Subtype="0" Variant="111" />
-	<entity BaseHP="62" Group="Agony: Guardians" ID="223" Image="resources/Entities/223.0.111 - Stone Dinga.png" Kind="Enemies" Name="Stone Dinga" Subtype="111" Variant="0" />
-	<entity BaseHP="8" Group="Agony: Guardians" ID="227" Image="resources/Entities/227.0.0 - Boney Head.png" Kind="Enemies" Name="Boney" Subtype="0" Variant="111" />
-	<entity BaseHP="10" Group="Agony: Guardians" ID="239" Image="resources/Entities/239.0.0 - Grub.png" Kind="Enemies" Name="Grub" Subtype="0" Variant="111" />
-	<!--entity BaseHP="10" Group="Agony: Guardians" ID="244" Image="resources/Entities/244.0.111 - Stone Round Worm.png" Kind="Enemies" Name="Stone Round Worm" Subtype="111" Variant="0" /-->
-	<entity BaseHP="13" Champion="1" Group="Agony: Guardians" ID="246" Image="resources/Entities/246.0.0 - Rag Ling.png" Kind="Enemies" Name="Rag Ling" Subtype="0" Variant="111" />
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="248" Image="resources/Entities/248.0.0 - Psychic Horf.png" Kind="Enemies" Name="Psychic Horf" Subtype="0" Variant="111" />
-	<entity BaseHP="35" Group="Agony: Guardians" ID="255" Image="resources/Entities/255.0.111 - Stone Night Crawler.png" Kind="Enemies" Name="Stone Night Crawler" Subtype="111" Variant="0" />
-	<entity BaseHP="300" Boss="1" Group="Agony: Guardians" ID="261" Image="resources/Entities/261.0.111 - Stone Dingle.png" Kind="enemies" Name="Stone Dingle" Subtype="111" Variant="0" />
-	<entity BaseHP="500" Boss="1" Group="Agony: Guardians" ID="263" Image="resources/Entities/263.0.0 - The Gate.png" Kind="Enemies" Name="The Gate" Subtype="0" Variant="111" />
-	<entity BaseHP="800" Boss="1" Group="Agony: Guardians" ID="265" Image="resources/Entities/265.0.0 - The Cage.png" Kind="Enemies" Name="The Cage" Subtype="0" Variant="111" />
-	<entity BaseHP="200" Boss="1" Group="Agony: Guardians" ID="269" Image="resources/Entities/269.0.111 - Stone Polycephalus.png" Kind="Enemies" Name="Stone Polycephalus" Subtype="111" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="22" Image="resources/Entities/22.0.0 - Hive.png" Kind="Enemies" Name="Hive" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="26" Image="resources/Entities/26.2.0 - Psychic Maw.png" Kind="Enemies" Name="Psychic Maw" Subtype="111" Variant="2" />
-	<entity BaseHP="15" Champion="1" Group="Agony: Guardians" ID="27" Image="resources/Entities/27.0.0 - Host.png" Kind="Enemies" Name="Host" Subtype="0" Variant="111" />
-	<entity BaseHP="15" Champion="1" Group="Agony: Guardians" ID="27" Image="resources/Entities/27.1.111 - Stone Red Host.png" Kind="Enemies" Name="Stone Red Host" Subtype="111" Variant="1" />
-	<entity BaseHP="350" Boss="1" Group="Agony: Guardians" ID="28" Image="resources/Entities/28.0.111 - Stone Chub.png" Kind="Enemies" Name="Stone Chub" Subtype="111" Variant="0" />
-	<!--entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="29" Image="resources/Entities/29.0.0 - Hopper.png" Kind="Enemies" Name="Hopper" Subtype="0" Variant="111" /-->
-	<entity BaseHP="10" Champion="1" Group="Agony: Guardians" ID="29" Image="resources/Entities/29.1.111 - Stone Trite.png" Kind="Enemies" Name="Stone Trite" Subtype="111" Variant="2" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.2.0 - Sack.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" />
-	<!--entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.1.0 - Gut.png" Kind="Enemies" Name="Boil" Subtype="111" Variant="1" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="30" Image="resources/Entities/30.0.0 - Boil.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" /-->
-	<entity BaseHP="25" Champion="1" Group="Agony: Guardians" ID="34" Image="resources/Entities/34.0.0 - Leaper.png" Kind="Enemies" Name="Leaper" Subtype="0" Variant="111" />
-	<entity BaseHP="595" Boss="1" Group="Agony: Guardians" ID="36" Image="resources/Entities/36.0.111 - Stone Gurdy.png" Kind="Enemies" Name="Stone Gurdy" Subtype="111" Variant="0" />
-	<entity BaseHP="25" Champion="1" Group="Agony: Guardians" ID="40" Image="resources/Entities/40.0.0 - Guts.png" Kind="Enemies" Name="Guts (Down)" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="41" Image="resources/Entities/41.1.0 - Selfless Knight.png" Kind="Enemies" Name="Selfless Knight" Subtype="0" Variant="2" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="53" Image="resources/Entities/53.0.0 - Dople.png" Kind="Enemies" Name="Dople" Subtype="111" Variant="1" />
-	<entity BaseHP="30" Champion="1" Group="Agony: Guardians" ID="56" Image="resources/Entities/56.0.111 - Stone Lump.png" Kind="Enemies" Name="Stone Lump" Subtype="111" Variant="0" />
-	<entity BaseHP="62" Champion="1" Group="Agony: Guardians" ID="57" Image="resources/Entities/57.0.0 - MemBrain.png" Kind="Enemies" Name="MemBrain" Subtype="0" Variant="111" />
-	<entity BaseHP="35" Champion="1" Group="Agony: Guardians" ID="58" Image="resources/Entities/58.0.0 - Para-Bite.png" Kind="Enemies" Name="Para-Bite" Subtype="0" Variant="111" />
-	<entity BaseHP="20" Champion="1" Group="Agony: Guardians" ID="59" Image="resources/Entities/59.0.111 - Stone Fred.png" Kind="Enemies" Name="Stone Fred" Subtype="111" Variant="1" />
-	<entity BaseHP="500" Boss="1" Group="Agony: Guardians" ID="65" Image="resources/Entities/65.0.0 - War.png" Kind="Enemies" Name="War" Subtype="0" Variant="111" />
-	<entity BaseHP="150" Boss="1" Group="Agony: Guardians" ID="67" Image="resources/Entities/67.1.111 - Stone The Husk.png" Kind="Enemies" Name="Stone The Husk" Subtype="111" Variant="1" />
-	<entity BaseHP="110" Boss="1" Group="Agony: Guardians" ID="67" Image="resources/Entities/67.0.111 - Stone The Duke of Flies.png" Kind="enemies" Name="Stone The Duke of Flies" Subtype="111" Variant="0" />
-	<entity BaseHP="36" Champion="1" Group="Agony: Guardians" ID="86" Image="resources/Entities/86.0.111 - Stone Keeper.png" Kind="Enemies" Name="Stone Keeper" Subtype="111" Variant="0" />
-	<entity BaseHP="40" Group="Agony: Guardians" ID="92" Image="resources/Entities/92.0.0 - Heart.png" Kind="Enemies" Name="Heart" Subtype="0" Variant="111" />
-	<entity BaseHP="40" Group="Agony: Guardians" ID="93" Image="resources/Entities/93.0.0 - Mask.png" Kind="Enemies" Name="Mask" Subtype="0" Variant="111" />
-	<entity BaseHP="24" Champion="1" Group="Agony: Guardians" ID="237" Image="resources/Entities/237.0.13 - Gurgling.png" Kind="Enemies" Name="Gurgling" Subtype="0" Variant="111" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Guardians" ID="19" Image="resources/Entities/19.1.111 - Stone The Hollow.png" Kind="Enemies" Name="Stone The Hollow" Subtype="111" Variant="1" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="10" Image="resources/Entities/10.0.0 - Frowning Gaper.png" Kind="Enemies" Name="Frowning Gaper" Subtype="0" Variant="111" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="12" Image="resources/Entities/12.0.111 - Stone Horf.png" Kind="Enemies" Name="Stone Horf" Subtype="111" Variant="0" />
+	<entity BaseHP="15" Champion="1" Group="z[Agony]: Guardians" ID="15" Image="resources/Entities/15.0.0 - Clotty.png" Kind="Enemies" Name="Clotty" Subtype="0" Variant="111" />
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Guardians" ID="16" Image="resources/Entities/16.2.0 - Mulliboom.png" Kind="Enemies" Name="Mulliboom" Subtype="1" Variant="2" />
+	<entity BaseHP="22" Boss="1" Group="z[Agony]: Guardians" ID="19" Image="resources/Entities/19.0.111 - Stone Larry Jr..png" Kind="Enemies" Name="Stone Larry Jr." Subtype="111" Variant="0" />
+	<entity BaseHP="250" Boss="1" Group="z[Agony]: Guardians" ID="20" Image="resources/Entities/20.0.0 - Monstro.png" Kind="Enemies" Name="Monstro" Subtype="0" Variant="111" />
+	<entity BaseHP="20" Group="z[Agony]: Guardians" ID="208" Image="resources/Entities/208.1.111 - Stone Pale Fatty.png" Kind="Enemies" Name="Stone Pale Fatty" Subtype="111" Variant="1" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Guardians" ID="209" Image="resources/Entities/209.0.111 - Stone Fat Sack.png" Kind="Enemies" Name="Stone Fat Sack" Subtype="111" Variant="0" />
+	<entity BaseHP="16" Champion="1" Group="z[Agony]: Guardians" ID="210" Image="resources/Entities/210.0.111 - Stone Blubber.png" Kind="Enemies" Name="Stone Blubber" Subtype="111" Variant="0" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="211" Image="resources/Entities/211.0.111 - Stone Half Sack.png" Kind="Enemies" Name="Stone Half Sack" Subtype="111" Variant="0" />
+	<!--entity BaseHP="20" Group="z[Agony]: Guardians" ID="212" Image="resources/Entities/212.0.0 - Death's Head.png" Kind="Enemies" Name="Death's Head" Subtype="0" Variant="111" /-->
+	<!--entity BaseHP="20" Group="z[Agony]: Guardians" ID="213" Image="resources/Entities/213.0.0 - Mom's Hand.png" Kind="Enemies" Name="Mom's Hand" Subtype="0" Variant="111" /-->
+	<entity BaseHP="3" Group="z[Agony]: Guardians" ID="217" Image="resources/Entities/217.0.111 - Stone Dip.png" Kind="Enemies" Name="Stone Dip" Subtype="111" Variant="0" />
+	<entity BaseHP="15" Group="z[Agony]: Guardians" ID="220" Image="resources/Entities/220.0.0 - Squirt.png" Kind="Enemies" Name="Squirt" Subtype="0" Variant="111" />
+	<entity BaseHP="62" Group="z[Agony]: Guardians" ID="223" Image="resources/Entities/223.0.111 - Stone Dinga.png" Kind="Enemies" Name="Stone Dinga" Subtype="111" Variant="0" />
+	<entity BaseHP="8" Group="z[Agony]: Guardians" ID="227" Image="resources/Entities/227.0.0 - Boney Head.png" Kind="Enemies" Name="Boney" Subtype="0" Variant="111" />
+	<entity BaseHP="10" Group="z[Agony]: Guardians" ID="239" Image="resources/Entities/239.0.0 - Grub.png" Kind="Enemies" Name="Grub" Subtype="0" Variant="111" />
+	<!--entity BaseHP="10" Group="z[Agony]: Guardians" ID="244" Image="resources/Entities/244.0.111 - Stone Round Worm.png" Kind="Enemies" Name="Stone Round Worm" Subtype="111" Variant="0" /-->
+	<entity BaseHP="13" Champion="1" Group="z[Agony]: Guardians" ID="246" Image="resources/Entities/246.0.0 - Rag Ling.png" Kind="Enemies" Name="Rag Ling" Subtype="0" Variant="111" />
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="248" Image="resources/Entities/248.0.0 - Psychic Horf.png" Kind="Enemies" Name="Psychic Horf" Subtype="0" Variant="111" />
+	<entity BaseHP="35" Group="z[Agony]: Guardians" ID="255" Image="resources/Entities/255.0.111 - Stone Night Crawler.png" Kind="Enemies" Name="Stone Night Crawler" Subtype="111" Variant="0" />
+	<entity BaseHP="300" Boss="1" Group="z[Agony]: Guardians" ID="261" Image="resources/Entities/261.0.111 - Stone Dingle.png" Kind="enemies" Name="Stone Dingle" Subtype="111" Variant="0" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: Guardians" ID="263" Image="resources/Entities/263.0.0 - The Gate.png" Kind="Enemies" Name="The Gate" Subtype="0" Variant="111" />
+	<entity BaseHP="800" Boss="1" Group="z[Agony]: Guardians" ID="265" Image="resources/Entities/265.0.0 - The Cage.png" Kind="Enemies" Name="The Cage" Subtype="0" Variant="111" />
+	<entity BaseHP="200" Boss="1" Group="z[Agony]: Guardians" ID="269" Image="resources/Entities/269.0.111 - Stone Polycephalus.png" Kind="Enemies" Name="Stone Polycephalus" Subtype="111" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="22" Image="resources/Entities/22.0.0 - Hive.png" Kind="Enemies" Name="Hive" Subtype="0" Variant="111" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="26" Image="resources/Entities/26.2.0 - Psychic Maw.png" Kind="Enemies" Name="Psychic Maw" Subtype="111" Variant="2" />
+	<entity BaseHP="15" Champion="1" Group="z[Agony]: Guardians" ID="27" Image="resources/Entities/27.0.0 - Host.png" Kind="Enemies" Name="Host" Subtype="0" Variant="111" />
+	<entity BaseHP="15" Champion="1" Group="z[Agony]: Guardians" ID="27" Image="resources/Entities/27.1.111 - Stone Red Host.png" Kind="Enemies" Name="Stone Red Host" Subtype="111" Variant="1" />
+	<entity BaseHP="350" Boss="1" Group="z[Agony]: Guardians" ID="28" Image="resources/Entities/28.0.111 - Stone Chub.png" Kind="Enemies" Name="Stone Chub" Subtype="111" Variant="0" />
+	<!--entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="29" Image="resources/Entities/29.0.0 - Hopper.png" Kind="Enemies" Name="Hopper" Subtype="0" Variant="111" /-->
+	<entity BaseHP="10" Champion="1" Group="z[Agony]: Guardians" ID="29" Image="resources/Entities/29.1.111 - Stone Trite.png" Kind="Enemies" Name="Stone Trite" Subtype="111" Variant="2" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="30" Image="resources/Entities/30.2.0 - Sack.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" />
+	<!--entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="30" Image="resources/Entities/30.1.0 - Gut.png" Kind="Enemies" Name="Boil" Subtype="111" Variant="1" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="30" Image="resources/Entities/30.0.0 - Boil.png" Kind="Enemies" Name="Boil" Subtype="0" Variant="111" /-->
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Guardians" ID="34" Image="resources/Entities/34.0.0 - Leaper.png" Kind="Enemies" Name="Leaper" Subtype="0" Variant="111" />
+	<entity BaseHP="595" Boss="1" Group="z[Agony]: Guardians" ID="36" Image="resources/Entities/36.0.111 - Stone Gurdy.png" Kind="Enemies" Name="Stone Gurdy" Subtype="111" Variant="0" />
+	<entity BaseHP="25" Champion="1" Group="z[Agony]: Guardians" ID="40" Image="resources/Entities/40.0.0 - Guts.png" Kind="Enemies" Name="Guts (Down)" Subtype="0" Variant="111" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="41" Image="resources/Entities/41.1.0 - Selfless Knight.png" Kind="Enemies" Name="Selfless Knight" Subtype="0" Variant="2" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="53" Image="resources/Entities/53.0.0 - Dople.png" Kind="Enemies" Name="Dople" Subtype="111" Variant="1" />
+	<entity BaseHP="30" Champion="1" Group="z[Agony]: Guardians" ID="56" Image="resources/Entities/56.0.111 - Stone Lump.png" Kind="Enemies" Name="Stone Lump" Subtype="111" Variant="0" />
+	<entity BaseHP="62" Champion="1" Group="z[Agony]: Guardians" ID="57" Image="resources/Entities/57.0.0 - MemBrain.png" Kind="Enemies" Name="MemBrain" Subtype="0" Variant="111" />
+	<entity BaseHP="35" Champion="1" Group="z[Agony]: Guardians" ID="58" Image="resources/Entities/58.0.0 - Para-Bite.png" Kind="Enemies" Name="Para-Bite" Subtype="0" Variant="111" />
+	<entity BaseHP="20" Champion="1" Group="z[Agony]: Guardians" ID="59" Image="resources/Entities/59.0.111 - Stone Fred.png" Kind="Enemies" Name="Stone Fred" Subtype="111" Variant="1" />
+	<entity BaseHP="500" Boss="1" Group="z[Agony]: Guardians" ID="65" Image="resources/Entities/65.0.0 - War.png" Kind="Enemies" Name="War" Subtype="0" Variant="111" />
+	<entity BaseHP="150" Boss="1" Group="z[Agony]: Guardians" ID="67" Image="resources/Entities/67.1.111 - Stone The Husk.png" Kind="Enemies" Name="Stone The Husk" Subtype="111" Variant="1" />
+	<entity BaseHP="110" Boss="1" Group="z[Agony]: Guardians" ID="67" Image="resources/Entities/67.0.111 - Stone The Duke of Flies.png" Kind="enemies" Name="Stone The Duke of Flies" Subtype="111" Variant="0" />
+	<entity BaseHP="36" Champion="1" Group="z[Agony]: Guardians" ID="86" Image="resources/Entities/86.0.111 - Stone Keeper.png" Kind="Enemies" Name="Stone Keeper" Subtype="111" Variant="0" />
+	<entity BaseHP="40" Group="z[Agony]: Guardians" ID="92" Image="resources/Entities/92.0.0 - Heart.png" Kind="Enemies" Name="Heart" Subtype="0" Variant="111" />
+	<entity BaseHP="40" Group="z[Agony]: Guardians" ID="93" Image="resources/Entities/93.0.0 - Mask.png" Kind="Enemies" Name="Mask" Subtype="0" Variant="111" />
+	<entity BaseHP="24" Champion="1" Group="z[Agony]: Guardians" ID="237" Image="resources/Entities/237.0.13 - Gurgling.png" Kind="Enemies" Name="Gurgling" Subtype="0" Variant="111" />
 
 	<!-- Guardians end -->
 	
-	<entity BaseHP="33" Champion="1" Group="Agony: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
+	<entity BaseHP="33" Champion="1" Group="z[Agony]: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
 	
 	<!-- Dummies start -->
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/1.png" Kind="Stage" Name="Monstro Dummy" Subtype="1" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/14.png" Kind="Stage" Name="Peep Dummy" Subtype="14" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/15.png" Kind="Stage" Name="Loki Dummy" Subtype="15" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/26.png" Kind="Stage" Name="Hollow Dummy" Subtype="26" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/27.png" Kind="Stage" Name="Carrion Queen Dummy" Subtype="27" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/28.png" Kind="Stage" Name="Gurdy Jr. Dummy" Subtype="28" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/29.png" Kind="Stage" Name="Husk Dummy" Subtype="29" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/30.png" Kind="Stage" Name="Bloat Dummy" Subtype="30" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/35.png" Kind="Stage" Name="Mask of Infamy Dummy" Subtype="35" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/36.png" Kind="Stage" Name="Wretched Dummy" Subtype="36" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/10.png" Kind="Stage" Name="Pestilence Dummy" Subtype="10" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/11.png" Kind="Stage" Name="War Dummy" Subtype="11" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/48.png" Kind="Stage" Name="Cage Dummy" Subtype="48" Variant="999" />
-	<entity BaseHP="0" Champion="0" Group="Agony: Dummies" ID="42" Image="resources/Entities/Dummies/50.png" Kind="Stage" Name="Dark One Dummy" Subtype="50" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/1.png" Kind="Stage" Name="Monstro Dummy" Subtype="1" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/14.png" Kind="Stage" Name="Peep Dummy" Subtype="14" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/15.png" Kind="Stage" Name="Loki Dummy" Subtype="15" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/26.png" Kind="Stage" Name="Hollow Dummy" Subtype="26" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/27.png" Kind="Stage" Name="Carrion Queen Dummy" Subtype="27" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/28.png" Kind="Stage" Name="Gurdy Jr. Dummy" Subtype="28" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/29.png" Kind="Stage" Name="Husk Dummy" Subtype="29" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/30.png" Kind="Stage" Name="Bloat Dummy" Subtype="30" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/35.png" Kind="Stage" Name="Mask of Infamy Dummy" Subtype="35" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/36.png" Kind="Stage" Name="Wretched Dummy" Subtype="36" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/10.png" Kind="Stage" Name="Pestilence Dummy" Subtype="10" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/11.png" Kind="Stage" Name="War Dummy" Subtype="11" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/48.png" Kind="Stage" Name="Cage Dummy" Subtype="48" Variant="999" />
+	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/50.png" Kind="Stage" Name="Dark One Dummy" Subtype="50" Variant="999" />
 	
 	<!-- Dummies end -->
 	
