@@ -2468,7 +2468,7 @@
 	    <entity anm2path="016.000_Mulligooglygan.anm2" subtype="5" baseHP="13" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="016.000_Mulligan Sackhead.anm2" subtype="1" baseHP="19" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="0.9" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
+	<entity anm2path="Further Pain/Sackheads/016.000_Mulligan Sackhead.anm2" subtype="1" baseHP="19" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="0.9" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -2778,10 +2778,10 @@
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
-	<entity anm2path="024.000_sackhead.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1.1" id="24" name="Globin" numGridCollisionPoints="12" shadowSize="14" stageHP="0" subtype="1" variant="0" portrait="17">
+	<entity anm2path="Further Pain/Sackheads/024.000_sackhead.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1.1" id="24" name="Globin" numGridCollisionPoints="12" shadowSize="14" stageHP="0" subtype="1" variant="0" portrait="17">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
-	<entity anm2path="024.000_sackhead.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1.1" id="24" name="Globin" numGridCollisionPoints="12" shadowSize="14" stageHP="0" subtype="1" variant="1" portrait="17">
+	<entity anm2path="Further Pain/Sackheads/024.000_sackhead.anm2" baseHP="25" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1.1" id="24" name="Globin" numGridCollisionPoints="12" shadowSize="14" stageHP="0" subtype="1" variant="1" portrait="17">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
@@ -2965,7 +2965,7 @@
         <gibs amount="0" blood="0" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="204.000_sackhead.anm2" subtype="1" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
+	<entity anm2path="Further Pain/Sackheads/204.000_sackhead.anm2" subtype="1" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
@@ -3018,7 +3018,7 @@
 	<entity anm2path="Further Pain/Eternals/monsters/207.000_Fatty.anm2" subtype="15" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0.8" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="15" variant="0" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="207.000_Fatty Sackhead.anm2" subtype="13" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.1" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="76">
+	<entity anm2path="Further Pain/Sackheads/207.000_Fatty Sackhead.anm2" subtype="13" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.1" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -3313,7 +3313,7 @@
 	<entity id="246" anm2path="Further Pain/Guardians/monsters/246.111_Ragling guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling guardian" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="247" anm2path="247.000_Sackhead.anm2" baseHP="44" subtype="1" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.5" name="Flesh Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
+	<entity id="247" anm2path="Further Pain/Sackheads/247.000_Sackhead.anm2" baseHP="44" subtype="1" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.5" name="Flesh Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity id="248" anm2path="Further Pain/Guardians/monsters/248.111_Psychic Horf guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="13" friction="1" name="Psychic Horf guardian" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="111" portrait="4" shutdoors="false">
