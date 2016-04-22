@@ -2958,10 +2958,10 @@
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
 
-	<entity anm2path="202.000_Constant Stone Shooter II.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="202" name="Constant Stone Shooter" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="1" shutdoors="false" portrait="70">
+	<entity anm2path="Further Pain/Grimaces/202.000_Constant Stone Shooter II.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="202" name="Constant Stone Shooter" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="1" shutdoors="false" portrait="70">
         <gibs amount="0" blood="0" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="202.000_Constant Stone Shooter III.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="202" name="Constant Stone Shooter" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="2" shutdoors="false" portrait="70">
+	<entity anm2path="Further Pain/Grimaces/202.000_Constant Stone Shooter III.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="202" name="Constant Stone Shooter" numGridCollisionPoints="0" shadowSize="24" stageHP="0" variant="2" shutdoors="false" portrait="70">
         <gibs amount="0" blood="0" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
@@ -3176,40 +3176,40 @@
     </entity>
 
 	
-	<entity id="236" variant="0" subtype="1" name="New Friends Broken Gaping Maw 01" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 01.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="1" name="New Friends Broken Gaping Maw 01" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 01.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="2" name="New Friends Broken Gaping Maw 02" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 02.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="2" name="New Friends Broken Gaping Maw 02" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 02.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="3" name="New Friends Broken Gaping Maw 03" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 03.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="3" name="New Friends Broken Gaping Maw 03" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 03.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="4" name="New Friends Broken Gaping Maw 04" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 04.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="4" name="New Friends Broken Gaping Maw 04" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 04.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="5" name="New Friends Broken Gaping Maw 05" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 05.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="5" name="New Friends Broken Gaping Maw 05" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 05.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="6" name="New Friends Broken Gaping Maw 06" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 06.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="6" name="New Friends Broken Gaping Maw 06" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 06.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="7" name="New Friends Broken Gaping Maw 07" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 07.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="7" name="New Friends Broken Gaping Maw 07" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 07.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="8" name="New Friends Broken Gaping Maw 08" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 08.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="8" name="New Friends Broken Gaping Maw 08" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 08.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="9" name="New Friends Broken Gaping Maw 09" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 09.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="9" name="New Friends Broken Gaping Maw 09" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 09.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="10" name="New Friends Broken Gaping Maw 10" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 10.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="10" name="New Friends Broken Gaping Maw 10" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 10.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="11" name="New Friends Broken Gaping Maw 11" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 11.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="11" name="New Friends Broken Gaping Maw 11" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 11.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="236" variant="0" subtype="12" name="New Friends Broken Gaping Maw 12" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="236.000_New Friends Broken GapingMaw 12.anm2" shutdoors="false">
+	<entity id="236" variant="0" subtype="12" name="New Friends Broken Gaping Maw 12" baseHP="100" stageHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="0" shadowSize="24" portrait="99" anm2path="Further Pain/Grimaces/236.000_New Friends Broken GapingMaw 12.anm2" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	
