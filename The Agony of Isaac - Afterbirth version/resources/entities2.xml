@@ -2441,7 +2441,7 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="010.000_Sackhead.anm2" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1.05" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="1" portrait="0">
+	<entity anm2path="Further Pain/Sackheads/010.000_Sackhead.anm2" baseHP="15" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1.05" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="1" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -2965,7 +2965,7 @@
         <gibs amount="0" blood="0" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="Further Pain/Sackheads/204.000_sackhead.anm2" subtype="1" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
+	<entity anm2path="204.000_sackhead.anm2" subtype="1" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="204" name="Mobile Host" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="72">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
