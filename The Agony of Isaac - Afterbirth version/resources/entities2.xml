@@ -2431,10 +2431,10 @@
 	<entity anm2path="010.000_Glitchy Gaper.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="-1.5" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="79" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="010.000_Gaper cocoon.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="21" portrait="0">
+	<entity anm2path="Further Pain/Cocoons/010.000_Gaper cocoon.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="21" portrait="0">
         <gibs amount="6" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
-	<entity anm2path="010.000_Gaper cocoon flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="22" portrait="0">
+	<entity anm2path="Further Pain/Cocoons/010.000_Gaper cocoon flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="22" portrait="0">
         <gibs amount="6" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
 	<entity anm2path="010.000_Hugger.anm2" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="1.3" id="10" name="Hugger" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="13" subtype="13" portrait="0">
@@ -2969,13 +2969,13 @@
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="205.000_Baby Long Legs cocoon 312.anm2" subtype="21" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
+	<entity anm2path="Further Pain/Cocoons/205.000_Baby Long Legs cocoon 312.anm2" subtype="21" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="205.000_Baby Long Legs cocoon 384.anm2" subtype="22" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
+	<entity anm2path="Further Pain/Cocoons/205.000_Baby Long Legs cocoon 384.anm2" subtype="22" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="205.000_Baby Long Legs cocoon 456.anm2" subtype="23" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
+	<entity anm2path="Further Pain/Cocoons/205.000_Baby Long Legs cocoon 456.anm2" subtype="23" baseHP="24" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="206" name="Baby Long Legs cocoon" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="74">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
@@ -2994,13 +2994,13 @@
 	<entity anm2path="Further Pain/Eternals/monsters/205.001_Small Baby Long Legs.anm2" subtype="5" baseHP="12" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="206" name="Small Baby Long Legs" numGridCollisionPoints="12" shadowSize="8" stageHP="8" variant="1" portrait="74">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="206.000_crazy long legs cocoon 336.anm2" baseHP="24" subtype="21" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
+	<entity anm2path="Further Pain/Cocoons/206.000_crazy long legs cocoon 336.anm2" baseHP="24" subtype="21" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="206.000_Crazy Long Legs cocoon 408.anm2" baseHP="24" subtype="22" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
+	<entity anm2path="Further Pain/Cocoons/206.000_Crazy Long Legs cocoon 408.anm2" baseHP="24" subtype="22" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="206.000_Crazy Long Legs cocoon 480.anm2" baseHP="24" subtype="23" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
+	<entity anm2path="Further Pain/Cocoons/206.000_Crazy Long Legs cocoon 480.anm2" baseHP="24" subtype="23" boss="0" champion="1" collisionDamage="1" collisionMass="999" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="4" variant="0" portrait="75">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Eternals/monsters/206.000_Crazy Long Legs.anm2" subtype="5" baseHP="22" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1" id="207" name="Crazy Long Legs" numGridCollisionPoints="12" shadowSize="11" stageHP="6" variant="0" portrait="75">
@@ -3108,11 +3108,11 @@
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
         <preload id="220" variant="0" />
     </entity>
-	<entity id="226" variant="1" subtype="21" name="Bony cocoon" baseHP="16" stageHP="5" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="103" anm2path="226.001_Bony cocoon.anm2">
+	<entity id="226" variant="1" subtype="21" name="Bony cocoon" baseHP="16" stageHP="5" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="103" anm2path="Further Pain/Cocoons/226.001_Bony cocoon.anm2">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="227" variant="0" />
     </entity>
-	<entity id="226" variant="1" subtype="22" name="Bony cocoon flipped" baseHP="16" stageHP="5" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="103" anm2path="226.001_Bony cocoon flipped.anm2">
+	<entity id="226" variant="1" subtype="22" name="Bony cocoon flipped" baseHP="16" stageHP="5" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="103" anm2path="Further Pain/Cocoons/226.001_Bony cocoon flipped.anm2">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="227" variant="0" />
     </entity>
