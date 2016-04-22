@@ -2850,13 +2850,13 @@
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
-	<entity anm2path="046.002_wall spider boss II head.anm2" subtype="1" baseHP="600" boss="1" champion="0" collisionDamage="2" collisionMass="99999" collisionRadius="13" friction="0" id="46" name="The Blind" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="12">
+	<entity anm2path="Further Pain/Spiders/bosses/046.002_wall spider boss II head.anm2" subtype="1" baseHP="600" boss="1" champion="0" collisionDamage="2" collisionMass="99999" collisionRadius="13" friction="0" id="46" name="The Blind" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="12">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="049.000_Wall spider boss II hands.anm2" subtype="2" baseHP="50" boss="1" champion="0" collisionDamage="2" collisionMass="1000" collisionRadius="13" friction="0" id="241" name="Gluttony" numGridCollisionPoints="12" shadowSize="17" stageHP="50" variant="0" portrait="17">
+	<entity anm2path="Further Pain/Spiders/bosses/049.000_Wall spider boss II hands.anm2" subtype="2" baseHP="50" boss="1" champion="0" collisionDamage="2" collisionMass="1000" collisionRadius="13" friction="0" id="241" name="Gluttony" numGridCollisionPoints="12" shadowSize="17" stageHP="50" variant="0" portrait="17">
         <gibs amount="8" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="049.001_Angry ass spider.anm2" baseHP="35" subtype="13" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="13" friction="1" id="49" name="Super Gluttony" numGridCollisionPoints="12" shadowSize="17" stageHP="10" variant="1" portrait="18">
+	<entity anm2path="Further Pain/Spiders/monsters/049.001_Angry ass spider.anm2" baseHP="35" subtype="13" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="13" friction="1" id="49" name="Super Gluttony" numGridCollisionPoints="12" shadowSize="17" stageHP="10" variant="1" portrait="18">
         <gibs amount="9" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
 
@@ -2917,7 +2917,7 @@
     </entity>
 
 
-	<entity anm2path="085.001_small spider.anm2" shutdoors="false" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="-5" friction="1" id="85" name="Spider" numGridCollisionPoints="12" shadowSize="5.5" stageHP="0" variant="1" portrait="53">
+	<entity anm2path="Further Pain/Spiders/monsters/085.001_small spider.anm2" shutdoors="false" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="-5" friction="1" id="85" name="Spider" numGridCollisionPoints="12" shadowSize="5.5" stageHP="0" variant="1" portrait="53">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -2926,10 +2926,10 @@
     </entity>
 
 	
-	<entity anm2path="088.000_Bubbling spider I.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.3" id="88" name="Walking Boil" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" subtype="13" portrait="63">
+	<entity anm2path="Further Pain/Spiders/monsters/088.000_Bubbling spider I.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.3" id="88" name="Walking Boil" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" subtype="13" portrait="63">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="088.002_Bubbling spider II.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.3" id="88" name="Walking Sack" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="69" sutbype="13" portrait="64">
+	<entity anm2path="Further Pain/Spiders/monsters/088.002_Bubbling spider II.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.3" id="88" name="Walking Sack" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="69" sutbype="13" portrait="64">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
 	
@@ -2945,7 +2945,7 @@
 	<entity anm2path="094.000_Eggsack flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="20" portrait="60">
         <gibs amount="4" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
-	<entity anm2path="094.001_Spider Fly.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.1" id="94" name="Big Spider" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="60" gridCollision="walls">
+	<entity anm2path="Further Pain/Spiders/monsters/094.001_Spider Fly.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.1" id="94" name="Big Spider" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="60" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="100.000_Big Sack.anm2" baseHP="130" boss="0" champion="0" collisionDamage="1" collisionMass="38" collisionRadius="35" friction="1" id="100" name="Widow" numGridCollisionPoints="12" shadowSize="54" stageHP="0" variant="8" portrait="58">
@@ -3012,7 +3012,7 @@
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="207.000_Buttspider.anm2" subtype="16" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.35" id="208" name="Buttspider" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="16" portrait="76">
+	<entity anm2path="Further Pain/Spiders/monsters/207.000_Buttspider.anm2" subtype="16" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.35" id="208" name="Buttspider" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="16" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Eternals/monsters/207.000_Fatty.anm2" subtype="15" baseHP="35" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0.8" id="208" name="Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="15" variant="0" portrait="76">
@@ -3052,14 +3052,14 @@
 	<entity anm2path="Further Pain/Eternals/monsters/210.000_Half Sack.anm2" baseHP="10" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="79">
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="210.001_Creep spider.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.25" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="0" portrait="79">
+	<entity anm2path="Further Pain/Spiders/monsters/210.001_Creep spider.anm2" baseHP="10" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.25" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="0" portrait="79">
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
 	<entity id="214" variant="1" name="lvl3 Fly" baseHP="20" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1.05" numGridCollisionPoints="8" shadowSize="14" portrait="82" anm2path="213.001_Level3Fly.anm2" gridCollision="walls">
         <gibs amount="0" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="215" variant="0" subtype="3" name="lvl3 Spider" baseHP="15" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.2" numGridCollisionPoints="12" shadowSize="16" portrait="83" anm2path="214.000_Level3Spider.anm2">
+	<entity id="215" variant="0" subtype="3" name="lvl3 Spider" baseHP="15" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.2" numGridCollisionPoints="12" shadowSize="16" portrait="83" anm2path="Further Pain/Spiders/monsters/214.000_Level3Spider.anm2">
         <gibs amount="0" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -3097,7 +3097,7 @@
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
-	<entity id="222" variant="1" name="Ring Fly" baseHP="5" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="17" friction="0.5" numGridCollisionPoints="1" shadowSize="11" portrait="89" anm2path="222.001_Ring spider.anm2" gridCollision="ground">
+	<entity id="222" variant="1" name="Ring Fly" baseHP="5" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="17" friction="0.5" numGridCollisionPoints="1" shadowSize="11" portrait="89" anm2path="Further Pain/Spiders/monsters/222.001_Ring spider.anm2" gridCollision="ground">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="223" variant="0" subtype="111" name="Dinga" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="2" collisionMass="3" collisionRadius="17" friction="1" numGridCollisionPoints="12" shadowSize="11" portrait="89" anm2path="223.000_Stone Dinga.anm2">
@@ -3307,7 +3307,7 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity id="246" anm2path="246.002_Ghost spider.anm2" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="2" portrait="26">
+	<entity id="246" anm2path="Further Pain/Spiders/monsters/246.002_Ghost spider.anm2" baseHP="13" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="2" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity id="246" anm2path="Further Pain/Guardians/monsters/246.111_Ragling guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" name="Rag Ling guardian" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="111" portrait="26" shutdoors="false">
@@ -3465,7 +3465,7 @@
 	
 	<!-- More Friends Start -->
 	
-	<entity anm2path="Further Pain/A281.001_SwarmSpider.anm2" reroll="true" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="14" friction="1" id="281" name="Swarm" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="1" portrait="53" gridCollision="ground"> <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" /> 
+	<entity anm2path="Further Pain/Spiders/monsters/A281.001_SwarmSpider.anm2" reroll="true" baseHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="14" friction="1" id="281" name="Swarm" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="1" portrait="53" gridCollision="ground"> <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" /> 
 	</entity>
 	
 	<entity subtype="1" anm2path="Further Pain/Cocoons/A257.001_FatCocoon.anm2" reroll="true" baseHP="20" boss="0" champion="0" collisionDamage="1" collisionMass="1000000" collisionRadius="25" friction="0" id="257" name="Fat Cocoon" numGridCollisionPoints="0" shadowSize="26" stageHP="0" variant="0" portrait="133">

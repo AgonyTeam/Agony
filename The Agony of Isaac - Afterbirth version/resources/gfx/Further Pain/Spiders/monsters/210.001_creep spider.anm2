@@ -1,9 +1,9 @@
-﻿<!--Converted to ANM2 by Gibbed.Rebirth.ConvertAnimations-->
+<!--Converted to ANM2 by Gibbed.Rebirth.ConvertAnimations-->
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/Bubbling spider II Body.png" Id="0" />
-      <Spritesheet Path="New friends/Shadow.png" Id="1" />
+      <Spritesheet Path="Creep spider Body.png" Id="0" />
+      <Spritesheet Path="Shadow.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
