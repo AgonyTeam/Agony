@@ -2456,7 +2456,7 @@
     </entity>
 
 
-	<entity shutdoors="false" anm2path="013.001_small Fly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="-5" friction="1" id="13" name="Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
+	<entity shutdoors="false" anm2path="Further Pain/Flies/013.001_small Fly.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="-5" friction="1" id="13" name="Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -2720,7 +2720,7 @@
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 
-	 <entity shutdoors="false" anm2path="018.001_small Attack Fly.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="8.5" friction="1" id="18" name="Attack Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
+	 <entity shutdoors="false" anm2path="Further Pain/Flies/018.001_small Attack Fly.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="8.5" friction="1" id="18" name="Attack Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="019.000_Potato monster walking part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="21" portrait="0">
@@ -2912,7 +2912,7 @@
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
-	<entity anm2path="079.011_Overflowing fly.anm2" baseHP="45" boss="0" champion="1" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1.1" id="79" name="Steven Baby" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="11" portrait="50" subtype="1">
+	<entity anm2path="Further Pain/Flies/079.011_Overflowing fly.anm2" baseHP="45" boss="0" champion="1" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1.1" id="79" name="Steven Baby" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="11" portrait="50" subtype="1">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -3056,7 +3056,7 @@
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
-	<entity id="214" variant="1" name="lvl3 Fly" baseHP="20" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1.05" numGridCollisionPoints="8" shadowSize="14" portrait="82" anm2path="213.001_Level3Fly.anm2" gridCollision="walls">
+	<entity id="214" variant="1" name="lvl3 Fly" baseHP="20" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="6" collisionRadius="13" friction="1.05" numGridCollisionPoints="8" shadowSize="14" portrait="82" anm2path="Further Pain/Flies/213.001_Level3Fly.anm2" gridCollision="walls">
         <gibs amount="0" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity id="215" variant="0" subtype="3" name="lvl3 Spider" baseHP="15" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1.2" numGridCollisionPoints="12" shadowSize="16" portrait="83" anm2path="Further Pain/Spiders/monsters/214.000_Level3Spider.anm2">
