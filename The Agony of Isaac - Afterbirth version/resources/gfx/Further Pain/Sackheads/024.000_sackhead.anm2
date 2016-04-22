@@ -2,8 +2,8 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/Globin sackhead body.png" Id="0" />
-      <Spritesheet Path="New friends/Globin sackhead head.png" Id="1" />
+      <Spritesheet Path="Globin sackhead body.png" Id="0" />
+      <Spritesheet Path="Globin sackhead head.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />

@@ -2,8 +2,8 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/shadow.png" Id="0" />
-      <Spritesheet Path="New friends/Bony cocoon.png" Id="1" />
+      <Spritesheet Path="shadow.png" Id="0" />
+      <Spritesheet Path="Bony cocoon.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
