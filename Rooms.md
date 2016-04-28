@@ -1,0 +1,21 @@
+#Rooms
+This file describes where enemies are intended to be used.
+##Basement
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/10.0.1%20-%20lvl1%20Sackhead.png)
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/24.0.1%20-%20Sackhead%20lvl2.png)
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/247.0.1%20-%20lvl3%20Sackhead.png)
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/10.13.13%20-%20Hugger.png)
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/10.79.0%20-%20Glitchy%20Gaper.png)
+![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/208.0.15%20-%20Eternal%20Fatty.png)
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
+![]()
