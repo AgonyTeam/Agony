@@ -1328,12 +1328,7 @@
 
 	<!-- Guardians end -->
 	
-<<<<<<< HEAD
-	<entity BaseHP="33" Champion="1" Group="Agony: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
-	<entity BaseHP="200" Boss="1" Group="Agony: Eternals" ID="269" Image="resources/Entities/269.0.5 - Eternal Polycephalus.png" Kind="Bosses" Name="Polycephalus" Subtype="5" Variant="0" />
-=======
 	<entity BaseHP="33" Champion="1" Group="z[Agony]: Gapers" ID="24" Image="resources/Entities/24.0.1 - Sackhead lvl2.png" Kind="Enemies" Name="Sackhead lvl2" Subtype="1" Variant="0" />
->>>>>>> 245d3e4... Updated BR patch
 	
 	<!-- Dummies start -->
 	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/1.png" Kind="Stage" Name="Monstro Dummy" Subtype="1" Variant="999" />
@@ -1352,11 +1347,7 @@
 	<entity BaseHP="0" Champion="0" Group="z[Agony]: Dummies" ID="42" Image="resources/Entities/Dummies/50.png" Kind="Stage" Name="Dark One Dummy" Subtype="50" Variant="999" />
 	
 	<!-- Dummies end -->
-	<entity BaseHP="300" Boss="1" Group="Agony: Eternals" ID="404" Image="resources/Entities/eternallittlehorn.png" Kind="Bosses" Name="Little Horn" Subtype="5" Variant="0" />
-	<entity BaseHP="5" Group="Agony: Spiders" ID="281" Image="resources/Entities/swarmspider.png" Kind="Enemies" Name="Swarm Spiders" Subtype="0" Variant="1" />
-	<entity BaseHP="25" Group="Agony: Worms" ID="285" Image="resources/Entities/brimworm.png" Kind="Enemies" Name="Brimstone Worm" Subtype="0" Variant="1" />
-	<entity BaseHP="20" Group="Agony: Cocoons" ID="257" Image="resources/Entities/fatcocoon.png" Kind="Enemies" Name="Fatty Cocoon" Subtype="1" Variant="0" />
-	<entity BaseHP="15" Group="Agony: Cocoons" ID="290" Image="resources/Entities/HostCocoon.png" Kind="Enemies" Name="Host Cocoon" Subtype="1" Variant="0" />
+	
 	<!-- Agony patch end -->
 	
 
