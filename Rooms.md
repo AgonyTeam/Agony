@@ -42,5 +42,10 @@ This file describes where enemies are intended to be used.
 ![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/1500.0.0%20-%20Crate02.png)
 ![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/1500.0.0%20-%20Crate03.png)
 ![](https://raw.githubusercontent.com/AgonyTeam/Agony/master/Basement%20Renovator%20patch/resources/Entities/1500.0.0%20-%20Crate04.png)
-
+##Catacombs
 ![]()
+![]()
+![]()
+![]()
+![]()
+
