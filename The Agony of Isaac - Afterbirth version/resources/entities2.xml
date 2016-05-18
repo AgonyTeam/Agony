@@ -2476,7 +2476,7 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="016.002_Boom sack.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" shutdoors="false" subtype="21" portrait="13">
+	<entity anm2path="Further Pain/Cocoons/016.002_Boom sack.anm2" baseHP="13" boss="0" champion="1" collisionDamage="0" collisionMass="999999" collisionRadius="13" friction="0" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" shutdoors="false" subtype="21" portrait="13">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/monsters/016.002_Mulliboom guardian.anm2" baseHP="0" boss="0" champion="2" collisionDamage="0" collisionMass="9999999" collisionRadius="13" friction="1" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="2" subtype="1" portrait="13" shutdoors="false">
@@ -2536,31 +2536,31 @@
 	<entity anm2path="Sign_022.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="22" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 1.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="-1" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="200" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 1.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="-1" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="200" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 2.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="201" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 2.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="201" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 3.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="202" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 3.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="202" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 4.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="203" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 4.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="203" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 5.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 5.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 6.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="205" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 6.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="205" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 7.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="206" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 7.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="206" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 8.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="207" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 8.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="207" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Googly greed 9.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="208" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/other/Googly greed 9.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="208" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Gravedirt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="227" shutdoors="false">
@@ -2765,7 +2765,7 @@
 	<entity anm2path="019.002_Spider worm.anm2" baseHP="22" boss="1" champion="1" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="0" variant="2" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="020.000_Googly Monstro.anm2" baseHP="250" boss="1" champion="0" collisionDamage="1" subtype="25" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="0" portrait="2">
+	<entity anm2path="Further Pain/Googlies/bosses/020.000_Googly Monstro.anm2" baseHP="250" boss="1" champion="0" collisionDamage="1" subtype="25" collisionMass="50" collisionRadius="40" friction="1" id="20" name="Monstro" numGridCollisionPoints="12" shadowSize="56" stageHP="0" variant="0" portrait="2">
         <gibs amount="18" blood="1" bone="0" eye="1" gut="1" large="1" />
     </entity>
 
@@ -2872,7 +2872,7 @@
         <gibs amount="18" blood="1" bone="0" eye="0" gut="1" large="1" />
         <preload id="40" variant="0" />
     </entity>
-	<entity anm2path="058.000_Derp-Bite.anm2" baseHP="35" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="48">
+	<entity anm2path="Further Pain/Googlies/monsters/058.000_Derp-Bite.anm2" baseHP="35" boss="0" champion="1" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="2" portrait="48">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/monsters/058.111_parabite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="111" portrait="48" shutdoors="false">
@@ -2889,7 +2889,7 @@
         <gibs amount="6" blood="1" bone="0" eye="1" gut="0" large="0" />
     </entity>
 
-	<entity anm2path="062.000_Googly Pin.anm2" subtype="47" baseHP="180" boss="1" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
+	<entity anm2path="Further Pain/Googlies/bosses/062.000_Googly Pin.anm2" subtype="47" baseHP="180" boss="1" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
         <gibs amount="2" blood="1" bone="0" eye="0" gut="1" large="1" />
     </entity>
 	<entity anm2path="062.000_Stone Pin.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" subtype="111" shutdoors="false" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
@@ -2954,7 +2954,7 @@
 	<entity anm2path="100.003_Spiderfly.anm2" baseHP="40" boss="0" champion="1" collisionDamage="1" collisionMass="16" collisionRadius="35" friction="1" id="100" name="Spiderfly" numGridCollisionPoints="12" shadowSize="26" stageHP="0" variant="3" portrait="58">
         <gibs amount="19" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
-	<entity anm2path="101.001_Googly Triachnid.anm2" baseHP="300" subtype="25" boss="1" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="40" friction="1" id="101" name="Triachnid" numGridCollisionPoints="12" shadowSize="33" stageHP="0" variant="1" portrait="61">
+	<entity anm2path="Further Pain/Googlies/bosses/101.001_Googly Triachnid.anm2" baseHP="300" subtype="25" boss="1" champion="0" collisionDamage="1" collisionMass="80" collisionRadius="40" friction="1" id="101" name="Triachnid" numGridCollisionPoints="12" shadowSize="33" stageHP="0" variant="1" portrait="61">
         <gibs amount="20" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
 
@@ -3222,7 +3222,7 @@
 	<entity id="237" variant="0" subtype="13" name="eternal Gurgling (boss)" baseHP="30" stageHP="5" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.1" numGridCollisionPoints="12" shadowSize="22" portrait="100" anm2path="Further Pain/Eternals/bosses/237.000_Eternal Gurgling.anm2">
         <gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="239" variant="52" name="Googly Grub" baseHP="10" stageHP="2.5" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.05" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="239.000_Googly Grub.anm2">
+	<entity id="239" variant="52" name="Googly Grub" baseHP="10" stageHP="2.5" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1.05" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="Further Pain/Googlies/monsters/239.000_Googly Grub.anm2">
         <gibs amount="8" blood="0" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity id="239" variant="111" name="Grub" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="22" portrait="102" anm2path="Further Pain/Guardians/monsters/239.111_Grub guardian.anm2" shutdoors="false">
@@ -3239,22 +3239,22 @@
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity id="244" variant="0" subtype="2" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm1.anm2">
+	<entity id="244" variant="0" subtype="2" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm1.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="244" variant="0" subtype="3" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm2.anm2">
+	<entity id="244" variant="0" subtype="3" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm2.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="244" variant="0" subtype="4" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm3.anm2">
+	<entity id="244" variant="0" subtype="4" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm3.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="244" variant="0" subtype="5" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm4.anm2">
+	<entity id="244" variant="0" subtype="5" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm4.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="244" variant="0" subtype="6" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm5.anm2">
+	<entity id="244" variant="0" subtype="6" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm5.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="244" variant="0" subtype="7" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="244.000_Derp Worm6.anm2">
+	<entity id="244" variant="0" subtype="7" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm6.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	<entity id="202" anm2path="Stalagmite01.anm2" baseHP="0" subtype="20" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
@@ -3371,7 +3371,7 @@
     </entity>
 
 
-	<entity id="261" variant="0" subtype="27" name="Googly Dingle" baseHP="300" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_Googly Dingle.anm2">
+	<entity id="261" variant="0" subtype="27" name="Googly Dingle" baseHP="300" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="Further Pain/Googlies/bosses/261.000_Googly Dingle.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
     </entity>
 	<entity id="261" variant="0" subtype="111" name="Dingle" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_Stone Dingle.anm2">
@@ -3406,7 +3406,7 @@
     <entity id="265" variant="111" name="The Cage" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="Further Pain/Guardians/bosses/265.111_Mega Fatty 2 guardian.anm2" shutdoors="false">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
-	<entity id="265" variant="000" subtype="59" name="googly The Cage" baseHP="500" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="265.000_Googly Mega Fatty 2.anm2">
+	<entity id="265" variant="000" subtype="59" name="googly The Cage" baseHP="500" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="40" friction="1" numGridCollisionPoints="12" shadowSize="56" portrait="69" anm2path="Further Pain/Googlies/bosses/265.000_Googly Mega Fatty 2.anm2">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -3433,16 +3433,16 @@
 	<entity id="269" variant="1" sutbype="111" shutdoors="false" name="Stone Polycephalus" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="269.000_Stone Polycephalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="269" variant="10" name="Poleyes and phalus" baseHP="200" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="269.010_Poleyes and phalus.anm2">
+	<entity id="269" variant="10" name="Poleyes and phalus" baseHP="200" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="Further Pain/Googlies/bosses/269.010_Poleyes and phalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 	<entity id="269" variant="0" subtype="5" name="Polycephalus" baseHP="200" stageHP="0" boss="1" bossID="52" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="Further Pain/Eternals/bosses/269.000_Polycephalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="270" variant="0" subtype="1" name="Googly Mr. Fred" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="270.000_Googly Fred.anm2">
+	<entity id="270" variant="0" subtype="1" name="Googly Mr. Fred" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="Further Pain/Googlies/bosses/270.000_Googly Fred.anm2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
-	<entity id="270" variant="0" subtype="2" name="Googly Mr. Fred II" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="270.000_Googly Fred II.anm2">
+	<entity id="270" variant="0" subtype="2" name="Googly Mr. Fred II" baseHP="100" boss="1" champion="0" collisionDamage="2" collisionMass="60" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="0" portrait="74" anm2path="Further Pain/Googlies/bosses/270.000_Googly Fred II.anm2">
         <gibs amount="18" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 	<entity id="271" variant="0" subtype="5" name="Uriel" baseHP="400" boss="1" champion="0" collisionDamage="2" collisionMass="100" collisionRadius="22" friction="1" numGridCollisionPoints="0" shadowSize="28" portrait="75" anm2path="Further Pain/Eternals/bosses/271.000_angel.anm2">

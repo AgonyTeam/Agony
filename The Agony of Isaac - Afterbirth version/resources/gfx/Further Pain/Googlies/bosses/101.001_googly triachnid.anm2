@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New Friends/Googly Triachnid.png" Id="0" />
+      <Spritesheet Path="Googly Triachnid.png" Id="0" />
       <Spritesheet Path="shadow.png" Id="1" />
     </Spritesheets>
     <Layers>
