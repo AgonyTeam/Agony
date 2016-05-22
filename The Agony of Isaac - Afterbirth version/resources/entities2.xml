@@ -2536,31 +2536,31 @@
 	<entity anm2path="Further Pain/Props/Signs/sign_022.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="22" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 1.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="-1" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="200" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 1.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="-1" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="200" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 2.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="201" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 2.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="201" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 3.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="202" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 3.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="202" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 4.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="203" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 4.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="203" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 5.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 5.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="204" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 6.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="205" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 6.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="205" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 7.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="206" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 7.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="206" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 8.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="207" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 8.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="207" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Further Pain/Googlies/other/Googly greed 9.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="208" shutdoors="false">
+	<entity anm2path="Further Pain/Googlies/others/Googly greed 9.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="0" friction="1" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="208" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Gravedirt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="227" shutdoors="false">
