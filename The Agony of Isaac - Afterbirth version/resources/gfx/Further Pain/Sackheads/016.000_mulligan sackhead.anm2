@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="Mulligan sackhead body.png" Id="0" />
+      <Spritesheet Path="../../Monsters/Classic/Monster_000_Bodies01.png" Id="0" />
       <Spritesheet Path="Mulligan sackhead head.png" Id="1" />
     </Spritesheets>
     <Layers>

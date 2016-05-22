@@ -2465,7 +2465,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/015.111_Clotty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="15" name="Clotty" numGridCollisionPoints="12" shadowSize="28" stageHP="0" variant="111" portrait="8" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="0" large="0" worm="1" />
     </entity>
-	    <entity anm2path="016.000_Mulligooglygan.anm2" subtype="5" baseHP="13" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
+	    <entity anm2path="Further Pain/Googlies/monsters/016.000_Mulligooglygan.anm2" subtype="5" baseHP="13" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="1" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Sackheads/016.000_Mulligan Sackhead.anm2" subtype="1" baseHP="19" boss="0" champion="1" collisionDamage="0" collisionMass="6" collisionRadius="13" friction="0.9" id="16" name="Mulligan" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="11">
@@ -2820,7 +2820,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/030.111_Boil guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Boil" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="211" portrait="27" shutdoors="false">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="030.001_Constant shooting ipecac grimace.anm2" shutdoors="false" baseHP="0" boss="0" champion="0" subtype="25" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="30" name="Constant shooting ipecac grimace" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="27">
+	<entity anm2path="Further Pain/Grimaces/030.001_Constant shooting ipecac grimace.anm2" shutdoors="false" baseHP="0" boss="0" champion="0" subtype="25" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="30" name="Constant shooting ipecac grimace" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="27">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="030.111_boil Gardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" id="30" name="Gut" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="27" shutdoors="false" subtype="111">
@@ -2939,10 +2939,10 @@
 	<entity anm2path="Further Pain/Guardians/monsters/093.111_Mask guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="93" name="Mask" numGridCollisionPoints="12" shadowSize="15" stageHP="0" variant="111" portrait="58" shutdoors="false">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="094.000_Eggsack.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="19" portrait="60">
+	<entity anm2path="Further Pain/Cocoons/094.000_Eggsack.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="19" portrait="60">
         <gibs amount="4" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
-	<entity anm2path="094.000_Eggsack flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="20" portrait="60">
+	<entity anm2path="Further Pain/Cocoons/094.000_Eggsack flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="9999" collisionRadius="13" friction="0" id="205" name="Spider egg" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="20" portrait="60">
         <gibs amount="4" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Spiders/monsters/094.001_Spider Fly.anm2" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1.1" id="94" name="Big Spider" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="1" portrait="60" gridCollision="walls">
