@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="sign/Sign_0014.png" Id="0" />
+      <Spritesheet Path="Sign_0020.png" Id="0" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
