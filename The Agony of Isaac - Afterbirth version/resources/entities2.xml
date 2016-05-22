@@ -2482,7 +2482,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/016.002_Mulliboom guardian.anm2" baseHP="0" boss="0" champion="2" collisionDamage="0" collisionMass="9999999" collisionRadius="13" friction="1" id="16" name="Mulliboom" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="2" subtype="1" portrait="13" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="Gravestone14.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="33" subtype="0" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone14.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="33" subtype="0" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Sign_005.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="5" shutdoors="false">
@@ -2566,106 +2566,106 @@
 	<entity anm2path="Gravedirt.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="227" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="66" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="66" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="67" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="67" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="68" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="68" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="70" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="70" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="71" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="71" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="72" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="72" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone07.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="73" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone07.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="73" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone08.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="74" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone08.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="74" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone09.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="75" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone09.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="75" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone10.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="76" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone10.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="76" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone11.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="77" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone11.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="77" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone12.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="78" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone12.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="78" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone13.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="79" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone13.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="79" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Invisibleblock.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="80" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone15.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="81" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone15.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="81" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone16.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="82" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone16.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="82" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone17.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="83" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone17.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="83" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone18.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="84" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone18.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="84" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone19.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="85" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone19.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="85" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone20.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="86" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone20.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="86" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone21.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="87" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone21.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="87" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone22.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="88" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone22.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="88" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone23.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="89" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone23.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="89" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Gravestone24.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="90" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Depths_Necropolis/Gravestone24.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="90" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="301" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="301" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="302" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="302" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="303" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="303" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="304" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="304" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="305" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="305" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="306" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="306" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop07.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="307" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop07.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="307" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop08.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="308" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop08.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="308" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop09.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="309" shutdoors="false">
+	<entity anm2path="Further Pain/Props/DarkRoom/Darkroomprop09.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="309" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Darkroomprop10.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="310" shutdoors="false">
+	<!--entity anm2path="Darkroomprop10.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="310" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Darkroomprop11.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="311" shutdoors="false">
@@ -2682,38 +2682,38 @@
     </entity>
 	<entity anm2path="Darkroomprop15.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="315" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
-    </entity>
-	<entity anm2path="WombProp01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="501" shutdoors="false">
+    </entity-->
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="501" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="WombProp02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="502" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="502" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="WombProp03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="503" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="503" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="WombProp04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="504" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="504" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="WombProp05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="505" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp05.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="505" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="WombProp06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="506" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Womb_Utero/WombProp06.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="506" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Box01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="2" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="128" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Basement/Box01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="2" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="128" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Box02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="40" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="129" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Basement/Box02.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="40" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="129" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Box03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="130" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Basement/Box03.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="130" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Box04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="131" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Basement/Box04.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="131" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="Cathedralprop01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="256" shutdoors="false">
+	<entity anm2path="Further Pain/Props/Cathedral/Cathedralprop01.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="1000" collisionRadius="1" friction="0" id="202" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="256" shutdoors="false">
         <gibs amount="4" blood="0" bone="1" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Sign_006.anm2" baseHP="5" boss="0" champion="0" collisionDamage="0" collisionMass="100" collisionRadius="1" friction="1" id="17" name="Shopkeeper" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="6" shutdoors="false">
@@ -3257,28 +3257,28 @@
 	<entity id="244" variant="0" subtype="7" name="Derp Worm" baseHP="10" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Further Pain/Googlies/monsters/244.000_Derp Worm6.anm2">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity id="202" anm2path="Stalagmite01.anm2" baseHP="0" subtype="20" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite01.anm2" baseHP="0" subtype="20" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite02.anm2" baseHP="0" subtype="21" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite02.anm2" baseHP="0" subtype="21" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite03.anm2" baseHP="0" subtype="22" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite03.anm2" baseHP="0" subtype="22" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite04.anm2" baseHP="0" subtype="23" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite04.anm2" baseHP="0" subtype="23" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite05.anm2" baseHP="0" subtype="24" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite05.anm2" baseHP="0" subtype="24" boss="0" champion="0" collisionDamage="0" collisionMass="10000" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="0" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite06.anm2" baseHP="0" subtype="25" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite06.anm2" baseHP="0" subtype="25" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite07.anm2" baseHP="0" subtype="26" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite07.anm2" baseHP="0" subtype="26" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="Stalagmite08.anm2" baseHP="0" subtype="27" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Caves_Catacombs/Stalagmite08.anm2" baseHP="0" subtype="27" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="1" friction="0" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="10" portrait="40" shutdoors="false">
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
@@ -3290,16 +3290,16 @@
         <gibs amount="4" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
-	<entity id="202" anm2path="245.001_Crate01.anm2" subtype="5" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Cellar/245.001_Crate01.anm2" subtype="5" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="245.001_Crate02.anm2" subtype="6" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Cellar/245.001_Crate02.anm2" subtype="6" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="245.001_Crate03.anm2" subtype="7" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Cellar/245.001_Crate03.anm2" subtype="7" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
-	<entity id="202" anm2path="245.001_Crate04.anm2" subtype="8" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
+	<entity id="202" anm2path="Further Pain/Props/Cellar/245.001_Crate04.anm2" subtype="8" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="500" collisionRadius="13" friction="0.5" name="Poop" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="0" portrait="40" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 
