@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/Aether wip.png" Id="0" />
+      <Spritesheet Path="Aether wip.png" Id="0" />
     </Spritesheets>
     <Layers>
       <Layer Name="Main" Id="0" SpritesheetId="0" />

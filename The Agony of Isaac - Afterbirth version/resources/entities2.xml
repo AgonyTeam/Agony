@@ -2723,16 +2723,16 @@
 	 <entity shutdoors="false" anm2path="Further Pain/Flies/018.001_small Attack Fly.anm2" baseHP="3" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="8.5" friction="1" id="18" name="Attack Fly" numGridCollisionPoints="0" shadowSize="5.5" stageHP="0" variant="1" portrait="5" gridCollision="walls">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="019.000_Potato monster walking part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="21" portrait="0">
+	<entity anm2path="Further Pain/Bosses/Potato/019.000_Potato monster walking part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="21" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="019.000_Potato monster walking part 02.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="22" portrait="0">
+	<entity anm2path="Further Pain/Bosses/Potato/019.000_Potato monster walking part 02.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="22" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="019.000_Potato monster walking part 03.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="23" portrait="0">
+	<entity anm2path="Further Pain/Bosses/Potato/019.000_Potato monster walking part 03.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="23" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="019.000_Potato monster walking part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="24" portrait="0">
+	<entity anm2path="Further Pain/Bosses/Potato/019.000_Potato monster walking part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="24" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/bosses/019.000_Stone Larry Jr..anm2" baseHP="0" boss="0" shutdoors="false" champion="0" collisionDamage="1" collisionMass="999" collisionRadius="20" friction="1" id="19" name="Larry Jr." subtype="111" numGridCollisionPoints="0" shadowSize="25" stageHP="0" variant="0" portrait="0">
@@ -2747,16 +2747,16 @@
 	<entity anm2path="019.000_Centipede boss.anm2" baseHP="30" boss="1" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="25" variant="0" portrait="0" subtype="2">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="019.001_Potato Monster Flying Part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="21" portrait="1">
+	<entity anm2path="Further Pain/Bosses/Potato/019.001_Potato Monster Flying Part 01.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="21" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="019.001_Potato Monster Flying Part 02.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="22" portrait="1">
+	<entity anm2path="Further Pain/Bosses/Potato/019.001_Potato Monster Flying Part 02.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="22" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="019.001_Potato Monster Flying Part 03.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="23" portrait="1">
+	<entity anm2path="Further Pain/Bosses/Potato/019.001_Potato Monster Flying Part 03.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="23" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="019.001_Potato Monster Flying Part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="24" portrait="1">
+	<entity anm2path="Further Pain/Bosses/Potato/019.001_Potato Monster Flying Part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="24" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/bosses/019.001_Stone The Hollow.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" subtype="111" shadowSize="23" stageHP="0" variant="1" portrait="1">
@@ -2901,7 +2901,7 @@
 	<entity anm2path="065.001_new Conquest.anm2" baseHP="500" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="65" name="Conquest" numGridCollisionPoints="12" shadowSize="19" stageHP="0" variant="1" portrait="30" subtype="1">
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
-	<entity anm2path="065.010_Aether kid.anm2" subtype="5" baseHP="75" boss="1" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="0.5" id="65" name="War without horse" numGridCollisionPoints="12" shadowSize="16" stageHP="50" variant="10" portrait="29">
+	<entity anm2path="Further Pain/Bosses/Aether/065.010_Aether kid.anm2" subtype="5" baseHP="75" boss="1" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="0.5" id="65" name="War without horse" numGridCollisionPoints="12" shadowSize="16" stageHP="50" variant="10" portrait="29">
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/bosses/067.000_Stone The Duke of Flies.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="999" collisionRadius="35" friction="1" id="67" name="The Duke of Flies" subtype="111" numGridCollisionPoints="12" shadowSize="34" stageHP="0" variant="0" portrait="32">
@@ -3323,7 +3323,7 @@
 	<entity id="253" anm2path="Further Pain/Eternals/monsters/253.000_PsyTumor.anm2" variant="0" subtype="5" name="Psy Tumor" baseHP="40" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="253" anm2path="253.000_Aether.anm2" variant="0" subtype="1" name="Psy Tumor" baseHP="100" stageHP="75" boss="1" champion="1" collisionDamage="2" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
+	<entity id="253" anm2path="Further Pain/Bosses/Aether/253.000_Aether.anm2" variant="0" subtype="1" name="Psy Tumor" baseHP="100" stageHP="75" boss="1" champion="1" collisionDamage="2" collisionMass="22" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="26" portrait="106">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
@@ -3334,7 +3334,7 @@
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity id="260" variant="0" name="Tombstone Haunt" baseHP="400" subtype="15" boss="1" champion="0" collisionDamage="2" collisionMass="1000" collisionRadius="26" friction="1.02" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="260.000_tombstone Haunt.anm2" gridCollision="walls">
+	<entity id="260" variant="0" name="Tombstone Haunt" baseHP="400" subtype="15" boss="1" champion="0" collisionDamage="2" collisionMass="1000" collisionRadius="26" friction="1.02" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="Further Pain/Bosses/TombHaunt/260.000_tombstone haunt.anm2" gridCollision="walls">
         <gibs amount="12" blood="1" bone="0" eye="0" gut="0" large="1" worm="1" />
     </entity>
 	<entity id="260" variant="0" subtype="5" name="Haunt" baseHP="200" boss="1" bossID="43" champion="0" collisionDamage="2" collisionMass="50" collisionRadius="26" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="64" anm2path="Further Pain/Eternals/bosses/260.000_Haunt.anm2" gridCollision="walls">
