@@ -2428,7 +2428,7 @@
 	<entity anm2path="005.021_Diamond.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Thune" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="20" subtype="5">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity anm2path="010.000_Glitchy Gaper.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="-1.5" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="79" portrait="0">
+	<entity anm2path="Further Pain/Gapers/010.000_Glitchy Gaper.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="-1.5" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="79" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Cocoons/010.000_Gaper cocoon.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="21" portrait="0">
@@ -2437,7 +2437,7 @@
 	<entity anm2path="Further Pain/Cocoons/010.000_Gaper cocoon flipped.anm2" baseHP="10" boss="0" champion="1" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="0" id="10" name="Gaper cocoon" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" subtype="22" portrait="0">
         <gibs amount="6" blood="0" bone="1" eye="1" gut="0" large="0" />
     </entity>
-	<entity anm2path="010.000_Hugger.anm2" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="1.3" id="10" name="Hugger" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="13" subtype="13" portrait="0">
+	<entity anm2path="Further Pain/Gapers/010.000_Hugger.anm2" baseHP="20" boss="0" champion="0" collisionDamage="0" collisionMass="99999" collisionRadius="13" friction="1.3" id="10" name="Hugger" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="13" subtype="13" portrait="0">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
