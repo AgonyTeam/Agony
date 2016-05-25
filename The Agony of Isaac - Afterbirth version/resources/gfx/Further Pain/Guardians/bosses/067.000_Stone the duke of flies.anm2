@@ -2,7 +2,7 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New Friends/Stones/Stone DukeOfFlies.png" Id="0" />
+      <Spritesheet Path="Stone DukeOfFlies.png" Id="0" />
       <Spritesheet Path="Effects\Effect_052_Dust Cloud.png" Id="1" />
     </Spritesheets>
     <Layers>

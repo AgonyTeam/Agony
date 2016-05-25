@@ -2451,7 +2451,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/010.111_gaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="99999" collisionRadius="13" friction="1" id="10" name="guardian gaper" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="111" portrait="1" shutdoors="false" >
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="012.000_Stone Horf.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="0" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4">
+	<entity anm2path="Further Pain/Guardians/monsters/012.000_Stone Horf.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="999999" collisionRadius="13" friction="0" id="12" name="Horf" numGridCollisionPoints="12" shadowSize="13" stageHP="0" variant="0" portrait="4">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 
@@ -2735,7 +2735,7 @@
 	<entity anm2path="019.000_Potato monster walking part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="14" variant="0" subtype="24" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="019.000_Stone Larry Jr..anm2" baseHP="0" boss="0" shutdoors="false" champion="0" collisionDamage="1" collisionMass="999" collisionRadius="20" friction="1" id="19" name="Larry Jr." subtype="111" numGridCollisionPoints="0" shadowSize="25" stageHP="0" variant="0" portrait="0">
+	<entity anm2path="Further Pain/Guardians/bosses/019.000_Stone Larry Jr..anm2" baseHP="0" boss="0" shutdoors="false" champion="0" collisionDamage="1" collisionMass="999" collisionRadius="20" friction="1" id="19" name="Larry Jr." subtype="111" numGridCollisionPoints="0" shadowSize="25" stageHP="0" variant="0" portrait="0">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="019.000_Centipede.anm2" baseHP="22" boss="0" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="Larry Jr." numGridCollisionPoints="0" shadowSize="25" stageHP="0" variant="0" portrait="0" subtype="72">
@@ -2759,7 +2759,7 @@
 	<entity anm2path="019.001_Potato Monster Flying Part 04.anm2" baseHP="35" boss="1" champion="0" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="14" variant="1" subtype="24" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="019.001_Stone The Hollow.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" subtype="111" shadowSize="23" stageHP="0" variant="1" portrait="1">
+	<entity anm2path="Further Pain/Guardians/bosses/019.001_Stone The Hollow.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" subtype="111" shadowSize="23" stageHP="0" variant="1" portrait="1">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
 	<entity anm2path="019.002_Spider worm.anm2" baseHP="22" boss="1" champion="1" collisionDamage="1" collisionMass="50" collisionRadius="20" friction="1" id="19" name="The Hollow" numGridCollisionPoints="0" shadowSize="23" stageHP="0" variant="2" portrait="1">
@@ -2792,15 +2792,15 @@
 	<entity anm2path="Further Pain/Guardians/monsters/027.111_Host guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="15" collisionRadius="13" friction="1" id="27" name="Host guardian" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="111" portrait="24" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
-	<entity anm2path="027.001_Stone Red Host.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" shutdoors="false" collisionMass="999" collisionRadius="13" friction="1" id="27" name="Red Host" subtype="111" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="1" portrait="24">
+	<entity anm2path="Further Pain/Guardians/monsters/027.001_Stone Red Host.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" shutdoors="false" collisionMass="999" collisionRadius="13" friction="1" id="27" name="Red Host" subtype="111" numGridCollisionPoints="12" shadowSize="25" stageHP="0" variant="1" portrait="24">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
 
-	<entity anm2path="028.000_Stone Chub.anm2" baseHP="0" boss="0" shutdoors="false" subtype="111" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="Chub" numGridCollisionPoints="12" shadowSize="42" stageHP="0" variant="0" portrait="3">
+	<entity anm2path="Further Pain/Guardians/bosses/028.000_Stone Chub.anm2" baseHP="0" boss="0" shutdoors="false" subtype="111" champion="0" collisionDamage="2" collisionMass="20" collisionRadius="18" friction="1" id="28" name="Chub" numGridCollisionPoints="12" shadowSize="42" stageHP="0" variant="0" portrait="3">
         <gibs amount="12" blood="1" bone="0" eye="1" gut="1" large="1" worm="1" />
     </entity>
 
-	<entity anm2path="029.001_Stone Trite.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" sutbype="111" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="29" name="Trite" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="2" portrait="26">
+	<entity anm2path="Further Pain/Guardians/monsters/029.001_Stone Trite.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" sutbype="111" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="29" name="Trite" numGridCollisionPoints="0" shadowSize="28" stageHP="0" variant="2" portrait="26">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
@@ -2835,7 +2835,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/034.111_Leaper guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="34" name="Leaper" numGridCollisionPoints="0" shadowSize="14" stageHP="0" variant="111" portrait="25" shutdoors="false">
         <gibs amount="4" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="036.000_Stone Gurdy.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="100" collisionRadius="50" friction="1" id="36" name="Gurdy" numGridCollisionPoints="12" shadowSize="100" stageHP="0" variant="0" portrait="6">
+	<entity anm2path="Further Pain/Guardians/bosses/036.000_Stone Gurdy.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" subtype="111" collisionDamage="1" collisionMass="100" collisionRadius="50" friction="1" id="36" name="Gurdy" numGridCollisionPoints="12" shadowSize="100" stageHP="0" variant="0" portrait="6">
         <gibs amount="18" blood="1" bone="1" eye="1" gut="1" large="1" worm="1" />
     </entity>
 
@@ -2864,7 +2864,7 @@
         <gibs amount="7" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 
-	<entity anm2path="056.000_Stone Lump.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="13" subtype="111" friction="1" id="56" name="Lump" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" portrait="45">
+	<entity anm2path="Further Pain/Guardians/monsters/056.000_Stone Lump.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="13" subtype="111" friction="1" id="56" name="Lump" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="0" portrait="45">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	
@@ -2878,7 +2878,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/058.111_parabite guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="10" collisionRadius="13" friction="1" id="58" name="Para-Bite" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="111" portrait="48" shutdoors="false">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="059.000_Stone Fred.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" shutdoors="false" collisionMass="10" sutbype="111" collisionRadius="13" friction="1" id="59" name="Fred" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="1" portrait="49">
+	<entity anm2path="Further Pain/Guardians/monsters/059.000_Stone Fred.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" shutdoors="false" collisionMass="10" sutbype="111" collisionRadius="13" friction="1" id="59" name="Fred" numGridCollisionPoints="12" shadowSize="0" stageHP="0" variant="1" portrait="49">
         <gibs amount="8" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="060.000_watchful eye eye.anm2" baseHP="50" boss="1" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" id="60" name="Eye" numGridCollisionPoints="12" subtype="68" shadowSize="0" stageHP="0" variant="1" portrait="50">
@@ -2892,7 +2892,7 @@
 	<entity anm2path="Further Pain/Googlies/bosses/062.000_Googly Pin.anm2" subtype="47" baseHP="180" boss="1" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
         <gibs amount="2" blood="1" bone="0" eye="0" gut="1" large="1" />
     </entity>
-	<entity anm2path="062.000_Stone Pin.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" subtype="111" shutdoors="false" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
+	<entity anm2path="Further Pain/Guardians/bosses/062.000_Stone Pin.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" subtype="111" shutdoors="false" collisionMass="30" collisionRadius="13" friction="1" id="62" name="Pin" numGridCollisionPoints="12" shadowSize="18" stageHP="0" variant="0" portrait="25">
         <gibs amount="2" blood="1" bone="0" eye="0" gut="1" large="1" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/bosses/065.111_War guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="1" id="65" name="War" numGridCollisionPoints="12" shadowSize="19" stageHP="0" variant="111" portrait="29" shutdoors="false">
@@ -2904,11 +2904,11 @@
 	<entity anm2path="065.010_Aether kid.anm2" subtype="5" baseHP="75" boss="1" champion="0" collisionDamage="2" collisionMass="30" collisionRadius="25" friction="0.5" id="65" name="War without horse" numGridCollisionPoints="12" shadowSize="16" stageHP="50" variant="10" portrait="29">
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
     </entity>
-	<entity anm2path="067.000_Stone The Duke of Flies.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="999" collisionRadius="35" friction="1" id="67" name="The Duke of Flies" subtype="111" numGridCollisionPoints="12" shadowSize="34" stageHP="0" variant="0" portrait="32">
+	<entity anm2path="Further Pain/Guardians/bosses/067.000_Stone The Duke of Flies.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="999" collisionRadius="35" friction="1" id="67" name="The Duke of Flies" subtype="111" numGridCollisionPoints="12" shadowSize="34" stageHP="0" variant="0" portrait="32">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 
-	<entity anm2path="067.001_Stone The Husk.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="35" friction="1" id="67" subtype="111" name="The Husk" numGridCollisionPoints="12" shadowSize="34" stageHP="0" variant="1" portrait="33">
+	<entity anm2path="Further Pain/Guardians/bosses/067.001_Stone The Husk.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" shutdoors="false" collisionMass="999" collisionRadius="35" friction="1" id="67" subtype="111" name="The Husk" numGridCollisionPoints="12" shadowSize="34" stageHP="0" variant="1" portrait="33">
         <gibs amount="16" blood="1" bone="1" eye="0" gut="0" large="1" />
     </entity>
 
@@ -2921,7 +2921,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
-	<entity anm2path="086.000_Stone Keeper.anm2" baseHP="0" boss="0" subtype="111" champion="0" shutdoors="false" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="86" name="Keeper" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="0" portrait="54">
+	<entity anm2path="Further Pain/Guardians/monsters/086.000_Stone Keeper.anm2" baseHP="0" boss="0" subtype="111" champion="0" shutdoors="false" collisionDamage="1" collisionMass="30" collisionRadius="13" friction="1" id="86" name="Keeper" numGridCollisionPoints="12" shadowSize="17" stageHP="0" variant="0" portrait="54">
         <gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 
@@ -3025,19 +3025,19 @@
 	<entity anm2path="Further Pain/Guardians/monsters/207.111_Fatty guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="208" name="Fatty guardian" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="111" portrait="76" shutdoors="false">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="207.001_Stone Pale Fatty.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="208" name="Stone Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="111" portrait="76">
+	<entity anm2path="Further Pain/Guardians/monsters/207.001_Stone Pale Fatty.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="208" name="Stone Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="1" subtype="111" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Eternals/monsters/207.001_Pale Fatty.anm2" baseHP="40" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="208" name="Pale Fatty" numGridCollisionPoints="12" shadowSize="16" stageHP="10" variant="1" portrait="76">
         <gibs amount="16" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
-	<entity anm2path="208.000_Stone Fatsack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="77">
+	<entity anm2path="Further Pain/Guardians/monsters/208.000_Stone Fatsack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="77">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Eternals/monsters/208.000_Fatsack.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1" id="209" name="Fat Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="5" variant="0" portrait="77">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="209.000_Stone Blubber.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="111" portrait="78">
+	<entity anm2path="Further Pain/Guardians/monsters/209.000_Stone Blubber.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="111" portrait="78">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="209.000_Blood fountain.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" shutdoors="false" collisionMass="999999999" collisionRadius="13" friction="0" id="210" name="Became the pimple prop" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="0" subtype="20" portrait="78">
@@ -3046,7 +3046,7 @@
 	<entity anm2path="Further Pain/Eternals/monsters/209.000_Blubber.anm2" subtype="15" baseHP="26" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="210" name="Blubber" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="78">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="210.000_Stone Half Sack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="211" name="Half Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="79">
+	<entity anm2path="Further Pain/Guardians/monsters/210.000_Stone Half Sack.anm2" baseHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="9999" collisionRadius="13" friction="1" id="211" name="Half Sack" numGridCollisionPoints="12" subtype="111" shadowSize="16" stageHP="0" variant="0" portrait="79">
         <gibs amount="10" blood="1" bone="1" eye="0" gut="1" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Eternals/monsters/210.000_Half Sack.anm2" baseHP="10" subtype="15" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="1.2" id="211" name="Half Sack" numGridCollisionPoints="12" shadowSize="16" stageHP="6" variant="0" portrait="79">
@@ -3063,7 +3063,7 @@
         <gibs amount="0" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
-	<entity id="217" variant="0" subtype="111" name="Dip" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="6" collisionRadius="9" friction="1" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="216.000_Stone Dip.anm2">
+	<entity id="217" variant="0" subtype="111" name="Dip" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="6" collisionRadius="9" friction="1" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="Further Pain/Guardians/monsters/216.000_Stone Dip.anm2">
         <gibs amount="5" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
     </entity>
 	<entity id="217" variant="13" Subtype="13" name="Eternal Dip" baseHP="9" stageHP="1" boss="0" champion="1" collisionDamage="1" collisionMass="0" collisionRadius="9" friction="1.03" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="Further Pain/Eternals/monsters/216.000_Dip.anm2">
@@ -3100,7 +3100,7 @@
 	<entity id="222" variant="1" name="Ring Fly" baseHP="5" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="3" collisionRadius="17" friction="0.5" numGridCollisionPoints="1" shadowSize="11" portrait="89" anm2path="Further Pain/Spiders/monsters/222.001_Ring spider.anm2" gridCollision="ground">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	<entity id="223" variant="0" subtype="111" name="Dinga" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="2" collisionMass="3" collisionRadius="17" friction="1" numGridCollisionPoints="12" shadowSize="11" portrait="89" anm2path="223.000_Stone Dinga.anm2">
+	<entity id="223" variant="0" subtype="111" name="Dinga" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="2" collisionMass="3" collisionRadius="17" friction="1" numGridCollisionPoints="12" shadowSize="11" portrait="89" anm2path="Further Pain/Guardians/monsters/223.000_Stone Dinga.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
         <preload id="220" variant="0" />
     </entity>
@@ -3327,7 +3327,7 @@
         <gibs amount="5" blood="1" bone="0" eye="0" gut="0" large="0" />
     </entity>
 
-	<entity id="255" anm2path="255.000_Stone NightCrawler.anm2" variant="0" subtype="111" shutdoors="false" name="Night Crawler" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
+	<entity id="255" anm2path="Further Pain/Guardians/monsters/255.000_Stone NightCrawler.anm2" variant="0" subtype="111" shutdoors="false" name="Night Crawler" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
     </entity>
 	<entity id="255" anm2path="Further Pain/Eternals/monsters/255.000_NightCrawler.anm2" variant="0" subtype="1" name="Night Crawler" baseHP="35" stageHP="0" boss="0" champion="1" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97">
@@ -3374,7 +3374,7 @@
 	<entity id="261" variant="0" subtype="27" name="Googly Dingle" baseHP="300" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="Further Pain/Googlies/bosses/261.000_Googly Dingle.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
     </entity>
-	<entity id="261" variant="0" subtype="111" name="Dingle" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_Stone Dingle.anm2">
+	<entity id="261" variant="0" subtype="111" name="Dingle" baseHP="0" stageHP="0" boss="0" champion="0" shutdoors="false" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="Further Pain/Guardians/bosses/261.000_Stone Dingle.anm2">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
     </entity>
 	<entity id="261" variant="0" subtype="5" name="Dingle" baseHP="300" stageHP="0" boss="1" bossID="44" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="Further Pain/Eternals/bosses/261.000_Dingle.anm2">
@@ -3430,7 +3430,7 @@
     </entity>
 
 
-	<entity id="269" variant="1" sutbype="111" shutdoors="false" name="Stone Polycephalus" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="269.000_Stone Polycephalus.anm2">
+	<entity id="269" variant="1" sutbype="111" shutdoors="false" name="Stone Polycephalus" baseHP="0" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="Further Pain/Guardians/bosses/269.000_Stone Polycephalus.anm2">
         <gibs amount="12" blood="1" bone="1" eye="0" gut="1" large="1" />
     </entity>
 	<entity id="269" variant="10" name="Poleyes and phalus" baseHP="200" stageHP="0" boss="1" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="73" anm2path="Further Pain/Googlies/bosses/269.010_Poleyes and phalus.anm2">
