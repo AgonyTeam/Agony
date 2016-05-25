@@ -2,8 +2,8 @@
 <AnimatedActor>
   <Content>
     <Spritesheets>
-      <Spritesheet Path="New friends/tombstone bony body.png" Id="0" />
-      <Spritesheet Path="New Friends/tombstone bony head.png" Id="1" />
+      <Spritesheet Path="tombstone bony body.png" Id="0" />
+      <Spritesheet Path="tombstone bony head.png" Id="1" />
     </Spritesheets>
     <Layers>
       <Layer Name="body" Id="0" SpritesheetId="0" />
