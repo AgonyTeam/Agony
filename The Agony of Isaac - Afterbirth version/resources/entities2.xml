@@ -3145,15 +3145,15 @@
         <preload id="9" variant="1" />
     </entity>
 
-	<entity id="227" variant="0" name="Became the angry skeleman" baseHP="8" stageHP="2" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" subtype="1" anm2path="227.000_new Boney.anm2">
+	<entity id="227" variant="0" name="Became the angry skeleman" baseHP="8" stageHP="2" boss="0" champion="1" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" subtype="1" anm2path="Further Pain/Deads/227.000_Angry Skeleman.anm2">
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="9" variant="1" />
     </entity>
-	<entity id="227" variant="0" name="Bony" baseHP="9" stageHP="9" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="104" subtype="2" anm2path="227.000_pile of bones.anm2">
+	<entity id="227" variant="0" name="Bony" baseHP="9" stageHP="9" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="104" subtype="2" anm2path="Further Pain/Deads/227.000_pile of bones.anm2">
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="9" variant="1" />
     </entity>
-	<entity id="227" variant="0" name="Bony" baseHP="9" stageHP="9" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="104" subtype="3" anm2path="227.000_pile of bones II.anm2">
+	<entity id="227" variant="0" name="Bony" baseHP="9" stageHP="9" boss="0" champion="1" collisionDamage="1" collisionMass="1000" collisionRadius="13" friction="0" numGridCollisionPoints="12" shadowSize="0" portrait="104" subtype="3" anm2path="Further Pain/Deads/227.000_pile of bones II.anm2">
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
         <preload id="9" variant="1" />
     </entity>
