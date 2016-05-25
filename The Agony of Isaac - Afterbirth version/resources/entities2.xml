@@ -2425,7 +2425,7 @@
 	<!-- Agony Start -->
 	
 	
-	<entity anm2path="005.021_Diamond.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Thune" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="20" subtype="5">
+	<entity anm2path="Further Pain/Others/005.021_Diamond.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Thune" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="20" subtype="5">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<entity anm2path="Further Pain/Gapers/010.000_Glitchy Gaper.anm2" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="-1.5" id="10" name="Frowning Gaper" numGridCollisionPoints="12" shadowSize="16" stageHP="0" variant="79" portrait="0">
@@ -2843,7 +2843,7 @@
 	<entity anm2path="Further Pain/Guardians/monsters/040.111_Guts guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="40" name="Guts" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="111" portrait="36" shutdoors="false">
         <gibs amount="8" blood="0" bone="0" eye="0" gut="1" large="0" />
     </entity>
-	<entity anm2path="041.000_Purple block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="0.9" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="1" portrait="37" shutdoors="false" subtype="5">
+	<entity anm2path="Further Pain/Others/041.000_purple block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="0.9" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="1" portrait="37" shutdoors="false" subtype="5">
         <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" worm="1" />
     </entity>
 	<entity anm2path="Further Pain/Guardians/monsters/041.002_Knight guardian.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="41" name="Knight" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="2" portrait="37" shutdoors="false">
@@ -3459,7 +3459,7 @@
         <gibs amount="6" blood="1" bone="1" eye="0" gut="0" large="0" worm="1" />
     </entity>
 	
-		<entity anm2path="073.001_Yellow block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1" id="73" name="Teratoma Small" numGridCollisionPoints="12" shutdoors="false" shadowSize="14" stageHP="0" variant="1" portrait="43" gridCollision="ground" subtype="1">
+		<entity anm2path="Further Pain/Others/073.001_yellow block.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="20" collisionRadius="13" friction="1" id="73" name="Teratoma Small" numGridCollisionPoints="12" shutdoors="false" shadowSize="14" stageHP="0" variant="1" portrait="43" gridCollision="ground" subtype="1">
         <gibs amount="6" blood="1" bone="0" eye="0" gut="1" large="0" worm="1" />
     </entity>
 	

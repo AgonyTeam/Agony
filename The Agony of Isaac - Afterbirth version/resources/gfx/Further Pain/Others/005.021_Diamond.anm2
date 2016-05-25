@@ -2,7 +2,7 @@
 	<Info CreatedBy="robot" CreatedOn="16.09.2015 13:51:59" Version="105" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="New friends/Diamond.png" Id="0"/>
+			<Spritesheet Path="Diamond.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>
