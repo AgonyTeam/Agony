@@ -10,8 +10,11 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
+--Enemies
 Include("YellowBlock.lua");
+--Items
 Include("LuckyLeg.lua");
+Include("DoubleDown.lua");
 
 --respawnV2's vars
 local ent_before = {};
