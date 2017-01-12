@@ -11,6 +11,7 @@ function Include(aFilename)
 end
 
 Include("YellowBlock.lua");
+Include("LuckyLeg.lua");
 
 --respawnV2's vars
 local ent_before = {};
@@ -98,4 +99,3 @@ end
 
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
-
