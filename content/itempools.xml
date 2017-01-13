@@ -2,5 +2,6 @@
     <Pool Name="treasure">
         <Item Name="Lucky Leg" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Double Down" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Growing Anxiety" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
 </ItemPools>

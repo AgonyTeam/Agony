@@ -15,6 +15,7 @@ Include("YellowBlock.lua");
 --Items
 Include("LuckyLeg.lua");
 Include("DoubleDown.lua");
+Include("GrowingAnxiety.lua");
 
 --respawnV2's vars
 local ent_before = {};
