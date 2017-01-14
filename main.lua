@@ -1,5 +1,5 @@
 Agony = RegisterMod("The Agony of Isaac", 1);
-StartDebug();
+--StartDebug();
 --debug_text = "Agony"
 
 --https://www.reddit.com/r/themoddingofisaac/comments/5ml25i/how_to_make_it_so_a_stat_modification_only_lasts/dc6uhnf/
@@ -14,7 +14,7 @@ end
 
 --Enemies
 Include("YellowBlock.lua");
-Include("EternalRoundworm.lua");
+Include("EternalMonsters.lua");
 --Items
 Include("LuckyLeg.lua");
 Include("DoubleDown.lua");

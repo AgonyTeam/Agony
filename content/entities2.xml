@@ -1,4 +1,5 @@
 <entities anm2root="gfx/" version="1" >
+	<!--YellowBlock-->
 	<!--Turns off if room is cleared, subtype 0= DR 1= DL 2= UR 3= UL-->
 	<entity anm2path="YellowBlock/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="15" collisionRadius="16" friction="1" id="501" name="Yellow Block" numGridCollisionPoints="12" shutdoors="false" shadowSize="14" stageHP="0" variant="0" portrait="43" subtype="0">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0" />
@@ -33,6 +34,13 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" worm="0" />
         <preload-snd id="237" /> <!-- SOUND_PLOP -->
     </entity>
+	<!--/YellowBlock-->
 	
+	<!--Eternals-->
+	<entity id="244" variant="0" subtype="15" name="Eternal Round Worm" reroll="true" baseHP="20" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Eternals/Monsters/Round Worm/animation.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
+        <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
+        <preload-snd id="318" /> <!-- SOUND_WORM_SPIT -->
+    </entity>
+	<!--/Eternals-->
 	
 </entities>	
