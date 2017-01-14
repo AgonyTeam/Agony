@@ -115,18 +115,6 @@ function yellowblock:ai_turn(entity);
 end
 
 
--- Debug Render
---function yellowblock:dbgtext()
---
---	for i = 1, #spwn_list do
---		Isaac.RenderText(spwn_list[i], 20, 80 + (i * 10), 255, 255, 255, 255);
---	end
---
---	Isaac.RenderText(yb_entitytype, 200, 0, 255, 255, 255, 255);
---	Isaac.RenderText(debug_text, 40, 50, 255, 255, 0, 255);
---end	
-
 -- Register the callbacks
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_main, yb_entitytype);
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_turn, yb_entitytype);
---yellowblock:AddCallback(ModCallbacks.MC_POST_RENDER, yellowblock.dbgtext);
