@@ -16,6 +16,8 @@ Include("YellowBlock.lua");
 Include("LuckyLeg.lua");
 Include("DoubleDown.lua");
 Include("GrowingAnxiety.lua");
+--Pills
+Include("PartyPills.lua");
 
 --respawnV2's vars
 local ent_before = {};
