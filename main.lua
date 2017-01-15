@@ -19,6 +19,7 @@ Include("EternalMonsters.lua");
 Include("LuckyLeg.lua");
 Include("DoubleDown.lua");
 Include("GrowingAnxiety.lua");
+Include("GasolineJuicebox.lua");
 --Pills
 Include("PartyPills.lua");
 
