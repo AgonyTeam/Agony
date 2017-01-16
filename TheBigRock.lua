@@ -3,7 +3,6 @@ local theBigRock =  {}
 
 --Grants + 2.69 DMG and -0.4 SPD
 function theBigRock:cacheUpdate (player,cacheFlag)
-	local player = Isaac.GetPlayer(0);
 	if (player:HasCollectible(item_TheBigRock)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		player.Damage = player.Damage + 3.69;

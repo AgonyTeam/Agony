@@ -3,7 +3,6 @@ local doubleDown = {}
 
 -- Doubles player damage
 function doubleDown:cacheUpdate (player,cacheFlag)
-	local player = Isaac.GetPlayer(0)
 	if (player:HasCollectible(item_DoubleDown)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		player.Damage = player.Damage*2
 	end

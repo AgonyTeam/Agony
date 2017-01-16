@@ -4,4 +4,5 @@
 	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" />
 	<passive cache="damage speed" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" />
 	<passive cache="damage range firedelay" name="Gasoline Juicebox" description="Tastes weird..." gfx="collectibles_gasolinejuicebox.png" />
+	<passive cache="all" name="Radioacive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" />
 </items>

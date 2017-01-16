@@ -5,7 +5,6 @@ local gasolinejb = {
 };
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
-	local player = Isaac.GetPlayer(0);
 	
 	if (player:HasCollectible(item_GasolineJuicebox) == true) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
