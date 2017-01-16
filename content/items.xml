@@ -2,4 +2,5 @@
 	<passive cache="luck" name="Lucky Leg" description="You feel really lucky" gfx="collectibles_luckyleg.png" />
 	<passive cache="damage" name="Double Down" description="Mysterious placeholder text" gfx="collectibles_doubledown.png" />
 	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" />
+	<passive cache="all" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" />
 </items>
