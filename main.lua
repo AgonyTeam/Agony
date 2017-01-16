@@ -20,6 +20,7 @@ Include("LuckyLeg.lua");
 Include("DoubleDown.lua");
 Include("GrowingAnxiety.lua");
 Include("TheBigRock.lua");
+Include("GasolineJuicebox.lua");
 --Pills
 Include("PartyPills.lua");
 
