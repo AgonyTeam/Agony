@@ -8,11 +8,11 @@ function radioactivePizza:cacheUpdate(player,cacheFlag)
 	--What the hell is happening
 
 	if player:HasCollectible(item_RadioActivePizza) then
-		local r1 = math.random(1,4)
-		local r2 = math.random(1,4)
-		--Make sure the stat arent the same
+		local r1 = (Game():GetRoom():GetDecorationSeed() % 4) +1
+		local r2 = (Game():GetRoom():GetSpawnSeed() % 4) +1
+		--Make sure the stat isnt the same
 		while r1 == r2 do
-			r2 = math.random(1,4)
+			r2 = ((r1 +1)%4) +1
 		end
 		--Upgrades a stat
 		if r1 == 1 and cacheFlag == CacheFlag.CACHE_DAMAGE then
@@ -20,21 +20,20 @@ function radioactivePizza:cacheUpdate(player,cacheFlag)
 		elseif r1 == 2 and cacheFlag == CacheFlag.CACHE_FIREDELAY then
 			--Broken for now
 			--player.FireDelay = player.FireDelay - 4
-			player.MaxFireDelay = player.MaxFireDelay - 4
+			player.MaxFireDelay = player.MaxFireDelay *0.5
 		elseif r1 == 3 and cacheFlag == CacheFlag.CACHE_SHOTSPEED then
-			player.ShotSpeed = player.ShotSpeed - 2
+			player.ShotSpeed = player.ShotSpeed + 2
 		elseif r1 == 4 and cacheFlag == CacheFlag.CACHE_SPEED then
 			player.MoveSpeed = player.MoveSpeed + 1
-		end
 		--Downgrade another one
 		if r2 == 1 and cacheFlag == CacheFlag.CACHE_DAMAGE then
 			player.Damage = player.Damage - 2.5
 		elseif r2 == 2 and cacheFlag == CacheFlag.CACHE_FIREDELAY then
 			--Broken for now
 			--player.FireDelay = player.FireDelay + 3
-			player.MaxFireDelay = player.MaxFireDelay + 4
+			player.MaxFireDelay = player.MaxFireDelay * 2
 		elseif r2 == 3 and cacheFlag == CacheFlag.CACHE_SHOTSPEED then
-			player.ShotSpeed = player.ShotSpeed + 2
+			player.ShotSpeed = player.ShotSpeed - 2
 		elseif r2 == 4 and cacheFlag == CacheFlag.CACHE_SPEED then
 			player.MoveSpeed = player.MoveSpeed - 0.7
 		end 
