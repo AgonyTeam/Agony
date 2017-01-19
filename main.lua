@@ -23,6 +23,7 @@ Include("TheBigRock.lua");
 Include("GasolineJuicebox.lua");
 Include("RadioactivePizza.lua");
 Include("Triplopia.lua");
+Include("TheRock.lua");
 --Pills
 Include("PartyPills.lua");
 

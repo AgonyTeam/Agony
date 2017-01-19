@@ -6,4 +6,5 @@
 	<passive cache="damage range firedelay" name="Gasoline Juicebox" description="Tastes weird..." gfx="collectibles_gasolinejuicebox.png" />
 	<passive cache="all" name="Radioactive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
+	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 </items>
