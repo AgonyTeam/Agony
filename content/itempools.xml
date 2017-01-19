@@ -15,6 +15,7 @@
     <Pool Name="angel">
     </Pool>
     <Pool Name="secret">
+        <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="library">
     </Pool>

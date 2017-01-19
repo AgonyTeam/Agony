@@ -24,7 +24,6 @@ end
 	Isaac.RenderText(tostring(item_TheBigRock), 400, 100, 255, 255, 255, 255)
 end--]]
 
-
 -- Morphs the small rock item 1/20th of the time into the big rock
 function theBigRock:morphSmallRock()
 	if theBigRock.seed ~= RNG():GetSeed() then

@@ -22,6 +22,7 @@ Include("GrowingAnxiety.lua");
 Include("TheBigRock.lua");
 Include("GasolineJuicebox.lua");
 Include("RadioactivePizza.lua");
+Include("Triplopia.lua");
 --Pills
 Include("PartyPills.lua");
 
