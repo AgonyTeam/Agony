@@ -119,8 +119,7 @@ function Agony:getNearestEnemy(sourceEnt)
 	local nearestEnt = nil;
 	
 	for i = 1, #entities do
-		--TODO: find a better way to check if entities are non-hostile
-		if (entities[i] ~= sourceEnt and not (entities[i].Type >= 1000) and not (entities[i].Type <= 9) and not (entities[i].Type == 17) and not (entities[i].Type == 33)) then
+		if (entities[i] ~= sourceEnt and entities[i]:IsVulnerableEnemy()) then
 			if (smallestDist == nil or sourceEnt.Position:Distance(entities[i].Position) < smallestDist) then
 				smallestDist = sourceEnt.Position:Distance(entities[i].Position);
 				nearestEnt = entities[i];
