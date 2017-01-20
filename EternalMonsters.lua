@@ -3,11 +3,6 @@ eternalM = {
 };
 entity_roundworm = Isaac.GetEntityTypeByName("Round Worm");
 
-
-local function calcTearVel(sourcePos, targetPos, multiplier)
-	return targetPos:__sub(sourcePos):Normalized():__mul(multiplier);
-end
-
 --Eternal Round Worms
 function eternalM.RoundWorm:ai_main(entity)
 	local room = Game():GetRoom();
@@ -28,14 +23,14 @@ function eternalM.RoundWorm:ai_main(entity)
 		if (sprite:IsEventTriggered("EternalShoot3") == true) then
 			--Host-like triple shot
 			entity:PlaySound(318, 1.0, 0, false, 1.0)
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-10), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, calcTearVel(entity.Position, PlayerPos, 15), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (calcTearVel(entity.Position, PlayerPos, 14)):Rotated(10), entity);
+			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-10), entity);
+			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Agony:calcTearVel(entity.Position, PlayerPos, 15), entity);
+			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(10), entity);
 		elseif (sprite:IsEventTriggered("EternalShoot2") == true) then
 			--V-shape double shot like Shroomers from EtG
 			entity:PlaySound(318, 1.0, 0, false, 1.0)
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-5), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (calcTearVel(entity.Position, PlayerPos, 14)):Rotated(5), entity);
+			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-5), entity);
+			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(5), entity);
 		end
 	end
 end

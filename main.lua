@@ -107,6 +107,33 @@ function string_totable(s)
 	return t;
 end
 
+--Calculates the velocity a tear needs to have to hit a target Position
+function Agony:calcTearVel(sourcePos, targetPos, multiplier)
+	return targetPos:__sub(sourcePos):Normalized():__mul(multiplier);
+end
+
+--retruns the nearest Entity
+function Agony:getNearestEnemy(sourceEnt)
+	local entities = Isaac.GetRoomEntities();
+	local smallestDist = nil;
+	local nearestEnt = nil;
+	
+	for i = 1, #entities do
+		if (entities[i] ~= sourceEnt and not (entities[i].Type >= 1000) and not (entities[i].Type <= 9) and not (entities[i].Type == 17) and not (entities[i].Type == 33)) then
+			if (smallestDist == nil or sourceEnt.Position:Distance(entities[i].Position) < smallestDist) then
+				smallestDist = sourceEnt.Position:Distance(entities[i].Position);
+				nearestEnt = entities[i];
+			end
+		end
+	end
+	
+	if (nearestEnt == nil) then
+		return sourceEnt;
+	else	
+		return nearestEnt;
+	end
+end
+
 --Agony END
 
 -- Debug Render
