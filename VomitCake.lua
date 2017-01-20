@@ -9,11 +9,11 @@ function vomitCake:spawnCreep(player)
 			local pos = player.Position
 			local vomitProb = 0
 			if luckMult > 0 then
-				vomitProb = Game():GetFrameCount()%(math.floor(300/luckMult))
+				vomitProb = Game():GetFrameCount()%(math.floor(300/(luckMult+1)))
 			elseif luckMult == 0 then
 				vomitProb = Game():GetFrameCount()%300
 			else
-				vomitProb = Game():GetFrameCount()%(-300*luckMult)
+				vomitProb = Game():GetFrameCount()%(-300*(luckMult-1))
 			end
 			
 			for i = 1, 4, 1 do

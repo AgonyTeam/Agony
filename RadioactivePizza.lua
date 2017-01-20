@@ -41,8 +41,7 @@ end
 
 
 --FireDelay workaround
-function radioactivePizza:updateFireDelay()
-	local player = Isaac.GetPlayer(0);
+function radioactivePizza:updateFireDelay(player)
 	if (radioactivePizza.TearBool == true) then
 		player.MaxFireDelay = player.MaxFireDelay - radioactivePizza.bonus;
 		radioactivePizza.TearBool = false;
@@ -50,4 +49,4 @@ function radioactivePizza:updateFireDelay()
 end
 
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, radioactivePizza.cacheUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, radioactivePizza.updateFireDelay)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.updateFireDelay)
