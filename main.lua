@@ -26,6 +26,7 @@ Include("Triplopia.lua");
 Include("TheRock.lua");
 Include("VomitCake.lua");
 Include("Tourette.lua");
+Include("Runestone.lua");
 --Pills
 Include("PartyPills.lua");
 

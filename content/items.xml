@@ -9,4 +9,5 @@
 	<passive name="Tourette" description="Mysterious placeholder text" gfx="collectibles_tourette.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
+	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="0" name="Runestone" />
 </items>

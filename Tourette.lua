@@ -10,6 +10,7 @@ function tourette:randomTear()
 	local luckMult = math.floor(player.Luck)
 	local shootJoy = player:GetShootingJoystick()
 	local pos = player.Position
+	local vel =  Vector (20*player.ShotSpeed * (.5+(math.random()/2)*(-1*math.random(2))) , 20*player.ShotSpeed * (.5+(math.random()/2)*(-1*math.random(2))))
 	--Ludo synergy
 	if player:HasCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE) then
 		for i = 1, #entities do
@@ -33,7 +34,7 @@ function tourette:randomTear()
 				Prob = Game():GetFrameCount()%(-45*(luckMult-1))
 			end	
 			if Prob == 0 then
-				player:FireTear(pos, Vector (20*player.ShotSpeed * (.5+(math.random()/2)*(-1*math.random(2))) , 20*player.ShotSpeed * (.5+(math.random()/2)*(-1*math.random(2)))) , true, true, false)
+				player:FireTear(pos, vel , true, true, false)
 			end
 		end
 	end

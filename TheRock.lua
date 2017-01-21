@@ -3,9 +3,10 @@ local theRock =  {
 	rseed = 1
 }
 
-function theRock:spawnRock(CollectibleType,rngArg)
+function theRock:spawnRock()
 	local room = Game():GetRoom()
 	local rock = nil
+	local player = Game():GetPlayer(0)
 	--3% chance to spawn a tinted, rock bomb or metal block
 	if (room:GetDecorationSeed()*theRock.rseed)%33 == 1 then
 		rock = GridEntityType.GRID_ROCKT
@@ -20,4 +21,4 @@ function theRock:spawnRock(CollectibleType,rngArg)
 	room:SpawnGridEntity(room:GetGridIndex(Isaac.GetFreeNearPosition(Game():GetPlayer(0).Position, 25)), rock, 0, RNG():GetSeed(), 1)
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, theRock.spawnRock, item_theRock)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, theRock.spawnRock, item_TheRock)
