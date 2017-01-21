@@ -27,6 +27,7 @@ Include("TheRock.lua");
 Include("VomitCake.lua");
 Include("Tourette.lua");
 Include("Runestone.lua");
+Include("MagicKit.lua");
 --Pills
 Include("PartyPills.lua");
 
