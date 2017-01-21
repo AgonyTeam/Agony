@@ -12,6 +12,8 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
+--Debug
+Include("Debug.lua");
 --Enemies
 Include("YellowBlock.lua");
 Include("EternalMonsters.lua");
