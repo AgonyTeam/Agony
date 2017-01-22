@@ -8,6 +8,8 @@ local growingAnxiety =  {
 --Shrinks the player upon getting hit
 function growingAnxiety:shrinkPlayer()
 	local player = Isaac.GetPlayer(0)
+	local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+	col:Reset()
 	if player:HasCollectible(item_GrowingAnxiety) then
 		if growingAnxiety.CurrentScaleMulti == 1 then
 			growingAnxiety.FormerScale = player.SpriteScale
@@ -15,6 +17,7 @@ function growingAnxiety:shrinkPlayer()
 		end
 		if growingAnxiety.CurrentScaleMulti > 0.5 then
 			growingAnxiety.CurrentScaleMulti = growingAnxiety.CurrentScaleMulti*0.9
+			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
 		end
 		player.SpriteScale = growingAnxiety.FormerScale*growingAnxiety.CurrentScaleMulti
 	end
