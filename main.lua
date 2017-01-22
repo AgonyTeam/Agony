@@ -1,6 +1,5 @@
 Agony = RegisterMod("The Agony of Isaac", 1);
 --StartDebug();
---debug_text = "Agony"
 
 --https://www.reddit.com/r/themoddingofisaac/comments/5ml25i/how_to_make_it_so_a_stat_modification_only_lasts/dc6uhnf/
 --needed to load other lua files right now and it only works when --luadebug is set in game properties
@@ -141,12 +140,5 @@ end
 
 --Agony END
 
--- Debug Render
---function Agony:dbgtext()
---	Isaac.RenderText(debug_text, 40, 50, 255, 255, 0, 255);
---end	
-
-
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
---Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.dbgtext);
