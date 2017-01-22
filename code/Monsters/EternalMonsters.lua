@@ -12,7 +12,7 @@ function eternalM.RoundWorm:ai_main(entity)
 	--TODO: put in a function, unless we decide to split up Eternals into multiple files
 	if (entity.Type == entity_roundworm and math.random(10) == 1 and room:GetFrameCount() <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
-		sprite:Load("/gfx/Eternals/Monsters/Round Worm/animation.anm2", true);
+		sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
 		entity.HitPoints = 20;
 		
 	end

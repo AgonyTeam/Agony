@@ -15,23 +15,23 @@ end
 --Debug
 --Include("Debug.lua");
 --Enemies
-Include("YellowBlock.lua");
-Include("EternalMonsters.lua");
+Include("code/Monsters/YellowBlock.lua");
+Include("code/Monsters/EternalMonsters.lua");
 --Items
-Include("LuckyLeg.lua");
-Include("DoubleDown.lua");
-Include("GrowingAnxiety.lua");
-Include("TheBigRock.lua");
-Include("GasolineJuicebox.lua");
-Include("RadioactivePizza.lua");
-Include("Triplopia.lua");
-Include("TheRock.lua");
-Include("VomitCake.lua");
-Include("Tourette.lua");
-Include("Runestone.lua");
-Include("MagicKit.lua");
+Include("code/Items/Collectibles/LuckyLeg.lua");
+Include("code/Items/Collectibles/DoubleDown.lua");
+Include("code/Items/Collectibles/GrowingAnxiety.lua");
+Include("code/Items/Collectibles/TheBigRock.lua");
+Include("code/Items/Collectibles/GasolineJuicebox.lua");
+Include("code/Items/Collectibles/RadioactivePizza.lua");
+Include("code/Items/Collectibles/Triplopia.lua");
+Include("code/Items/Collectibles/TheRock.lua");
+Include("code/Items/Collectibles/VomitCake.lua");
+Include("code/Items/Collectibles/Tourette.lua");
+Include("code/Items/Collectibles/Runestone.lua");
+Include("code/Items/Collectibles/MagicKit.lua");
 --Pills
-Include("PartyPills.lua");
+Include("code/Items/Pick Ups/PartyPills.lua");
 
 --respawnV2's vars
 local ent_before = {};
