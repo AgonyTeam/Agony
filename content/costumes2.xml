@@ -1,0 +1,3 @@
+<costumes anm2root="gfx/characters/">
+<costume name="Lucky Leg" anm2path="costume_luckyleg.anm2" type="none"/>
+</costumes>
