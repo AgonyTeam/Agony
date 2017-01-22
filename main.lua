@@ -13,7 +13,7 @@ function Include(aFilename)
 end
 
 --Debug
-Include("Debug.lua");
+--Include("Debug.lua");
 --Enemies
 Include("YellowBlock.lua");
 Include("EternalMonsters.lua");
