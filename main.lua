@@ -17,6 +17,8 @@ end
 --Enemies
 Include("code/Monsters/YellowBlock.lua");
 Include("code/Monsters/EternalMonsters.lua");
+--Other Entities
+--Include("code/Slots/TreasureHoarder.lua");
 --Items
 Include("code/Items/Collectibles/LuckyLeg.lua");
 Include("code/Items/Collectibles/DoubleDown.lua");
@@ -32,6 +34,8 @@ Include("code/Items/Collectibles/Runestone.lua");
 Include("code/Items/Collectibles/MagicKit.lua");
 Include("code/Items/Collectibles/LittleSugarDumdum.lua");
 Include("code/Items/Collectibles/YoureABigGuy.lua");
+Include("code/Items/Collectibles/KnowledgeIsPower.lua");
+Include("code/Items/Collectibles/WrathIsPower.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 

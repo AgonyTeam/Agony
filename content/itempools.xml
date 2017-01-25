@@ -7,14 +7,19 @@
         <Item Name="The Rock" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Vomit Cake" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Tourette" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="You're a Big Guy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Little Sugar Dumdum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Knowledge Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="boss">
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="devil">
+        <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="angel">
     </Pool>
