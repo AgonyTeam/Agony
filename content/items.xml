@@ -7,6 +7,7 @@
 	<passive cache="all" name="Radioactive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" />
 	<passive name="Vomit Cake" description="Mysterious placeholder text" gfx="collectibles_vomitcake.png" />
 	<passive name="Tourette" description="Mysterious placeholder text" gfx="collectibles_tourette.png" />
+	<passive cache="damage" name="You're a Big Guy" description="For you" gfx="collectibles_youreabigguy.png" maxhearts="2" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	

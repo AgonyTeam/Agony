@@ -31,6 +31,7 @@ Include("code/Items/Collectibles/Tourette.lua");
 Include("code/Items/Collectibles/Runestone.lua");
 Include("code/Items/Collectibles/MagicKit.lua");
 Include("code/Items/Collectibles/LittleSugarDumdum.lua");
+Include("code/Items/Collectibles/YoureABigGuy.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 
