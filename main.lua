@@ -11,6 +11,7 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
+
 --Debug
 --Include("Debug.lua");
 --Enemies
@@ -32,6 +33,7 @@ Include("code/Items/Collectibles/MagicKit.lua");
 Include("code/Items/Collectibles/LittleSugarDumdum.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
+
 
 --respawnV2's vars
 local ent_before = {};
@@ -141,5 +143,7 @@ end
 
 --Agony END
 
+
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
+

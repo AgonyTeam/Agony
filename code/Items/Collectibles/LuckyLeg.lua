@@ -1,5 +1,9 @@
 local item_LuckyLeg = Isaac.GetItemIdByName("Lucky Leg");
-local luckyLeg =  {};
+local luckyLeg =  {
+	hasItem = nil, --used for costume
+	costumeID = nil
+}
+luckyLeg.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_luckyleg.anm2")
 
 --Grants +1 Luck and gives a *2 multiplier to Luck
 function luckyLeg:cacheUpdate (player,cacheFlag)
@@ -8,6 +12,14 @@ function luckyLeg:cacheUpdate (player,cacheFlag)
 	end
 end
 
-
-
-Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, luckyLeg.cacheUpdate);
+function luckyLeg:onUpdate(player)
+	if Game():GetFrameCount() == 1 then
+		luckyLeg.hasItem = false
+	end
+	if luckyLeg.hasItem == false and player:HasCollectible(item_LuckyLeg) then
+		player:AddNullCostume(luckyLeg.costumeID)
+		luckyLeg.hasItem = true
+	end
+end
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, luckyLeg.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, luckyLeg.cacheUpdate)

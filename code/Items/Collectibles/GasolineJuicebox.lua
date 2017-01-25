@@ -1,8 +1,11 @@
 StartDebug();
 local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
 local gasolinejb = {
-	TearBool = false;
+	TearBool = false,
+	hasItem = nil,
+	costumeID = nil
 };
+gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
 
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
@@ -91,6 +94,19 @@ function gasolinejb:updateFireDelay()
 	end
 end
 
+
+--Checks if player has item, and gives him the costume
+function gasolinejb:onUpdate(player)
+	if Game():GetFrameCount() == 1 then
+		gasolinejb.hasItem = false
+	end
+	if gasolinejb.hasItem == false and player:HasCollectible(item_GasolineJuicebox) then
+		player:AddNullCostume(gasolinejb.costumeID)
+		gasolinejb.hasItem = true
+	end
+end
+
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);
