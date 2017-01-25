@@ -18,7 +18,7 @@ end
 Include("code/Monsters/YellowBlock.lua");
 Include("code/Monsters/EternalMonsters.lua");
 --Other Entities
---Include("code/Slots/TreasureHoarder.lua");
+Include("code/Items/Slots/TreasureHoarder.lua");
 --Items
 Include("code/Items/Collectibles/LuckyLeg.lua");
 Include("code/Items/Collectibles/DoubleDown.lua");
