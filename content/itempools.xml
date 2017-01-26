@@ -11,6 +11,7 @@
         <Item Name="Little Sugar Dumdum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Knowledge Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Loaded Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -21,6 +22,7 @@
     </Pool>
     <Pool Name="devil">
         <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="angel">
     </Pool>
