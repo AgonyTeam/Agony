@@ -10,6 +10,7 @@
 	<passive cache="damage" name="You're a Big Guy" description="For you" gfx="collectibles_youreabigguy.png" maxhearts="2" />
 	<passive cache="damage" name="Knowledge Is Power" description="Mysterious placeholder text" gfx="collectibles_knowledgeispower.png" />
 	<passive cache="damage" name="Wrath Is Power" description="Mysterious placeholder text" gfx="collectibles_wrathispower.png" />
+	<passive cache ="firedelay speed" name="Hyperactive" description="Mysterious placeholder text" gfx="collectibles_hyperactive.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	

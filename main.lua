@@ -37,6 +37,7 @@ Include("code/Items/Collectibles/YoureABigGuy.lua");
 Include("code/Items/Collectibles/KnowledgeIsPower.lua");
 Include("code/Items/Collectibles/WrathIsPower.lua");
 Include("code/Items/Collectibles/LoadedDice.lua");
+Include("code/Items/Collectibles/Hyperactive.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 
