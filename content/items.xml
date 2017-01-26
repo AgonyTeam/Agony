@@ -14,5 +14,6 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
 	<active description="Mysterious placeholder text" gfx="collectibles_magickit.png" maxcharges="0" name="Magic Kit" />
-	<active cache = "all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
+	<active cache ="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
+	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
 </items>
