@@ -14,6 +14,8 @@
         <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Cyanide" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -22,10 +24,12 @@
     <Pool Name="boss">
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="devil">
         <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="angel">
     </Pool>
