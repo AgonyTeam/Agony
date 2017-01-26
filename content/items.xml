@@ -19,4 +19,5 @@
 	<active cache ="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
 	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="1" name="D3" />
+	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" />
 </items>

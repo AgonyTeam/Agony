@@ -40,6 +40,7 @@ Include("code/Items/Collectibles/LoadedDice.lua");
 Include("code/Items/Collectibles/Hyperactive.lua");
 Include("code/Items/Collectibles/Tantrum.lua");
 Include("code/Items/Collectibles/D3.lua");
+Include("code/Items/Collectibles/Cyanide.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 
