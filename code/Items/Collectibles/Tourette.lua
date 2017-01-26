@@ -27,14 +27,25 @@ function tourette:randomTear()
 			--Take luck into account
 			local Prob = 0
 			if luckMult > 0 then
-				Prob = Game():GetFrameCount()%(math.ceil(45/(luckMult+1)))
+				Prob = Game():GetFrameCount()%(math.ceil(45/((luckMult/2)+1)))
 			elseif luckMult == 0 then
 				Prob = Game():GetFrameCount()%45
 			else
 				Prob = Game():GetFrameCount()%(-45*(luckMult-1))
 			end	
 			if Prob == 0 then
-				player:FireTear(pos, vel , true, true, false)
+				--Synergies
+				if player:HasCollectible(CollectibleType.COLLECTIBLE_BRIMSTONE) then
+					player:FireDelayedBrimstone(math.random(360), player)
+				elseif player:HasCollectible(CollectibleType.COLLECTIBLE_DR_FETUS) then
+					player:FireBomb(pos, vel)
+				elseif player:HasCollectible(CollectibleType.COLLECTIBLE_TECH_X) then
+					player:FireTechXLaser(pos, vel, math.random(10)*player.Damage)
+				elseif player:HasCollectible(CollectibleType.COLLECTIBLE_TECHNOLOGY) or player:HasCollectible(CollectibleType.COLLECTIBLE_TECHNOLOGY_2) then
+					player:FireTechLaser(pos, 0, vel, false, true)
+				else
+					player:FireTear(pos, vel , true, true, false)
+				end
 			end
 		end
 	end

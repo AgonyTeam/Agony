@@ -13,7 +13,7 @@ end
 
 
 --Debug
---Include("Debug.lua");
+Include("Debug.lua");
 --Enemies
 Include("code/Monsters/YellowBlock.lua");
 Include("code/Monsters/EternalMonsters.lua");
