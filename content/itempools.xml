@@ -17,6 +17,7 @@
         <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Overgrown Spine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Technology 9000" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

@@ -1,0 +1,1 @@
+Since there is no way to dynamically give a custom item a custom death note sprite, we'll keep them individually here and add them to the deathitem.png once every Agony item is made. This will break if mods loaded before Agony add items but oh well

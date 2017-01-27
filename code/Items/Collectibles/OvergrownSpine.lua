@@ -11,7 +11,7 @@ function overgrownSpine:linkTears()
 		local entList = Isaac.GetRoomEntities()
 		local tearList = {}
 		for i = 1, #entList, 1 do
-			if entList[i].Type == EntityType.ENTITY_TEAR then
+			if entList[i].Type == EntityType.ENTITY_TEAR and (entList[i].Parent.Type == 1 or (entList[i].Parent.Type == 3 and entList[i].Parent.Variant == 80)) then
 				table.insert(tearList,entList[i].Position)
 			end
 		end
