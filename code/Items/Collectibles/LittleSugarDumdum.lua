@@ -67,12 +67,12 @@ end
 function LSD:cacheUpdate (player,cacheFlag)
 	if Game():GetLevel():GetCurrentRoomIndex() == LSD.Room then	
 		player.MaxFireDelay = math.random(1,7)
-		player.ShotSpeed = math.random(1,6)*0.5
-		player.Damage = math.random(0,15)
+		player.ShotSpeed = math.random()*3
+		player.Damage = math.random()*15
 		--player.TearHeight = math.random(0,1)
-		--player.TearFallingSpeed = math.random(0,.5)
-		--player.MoveSpeed = math.random(0,2)
-		player.Luck = math.random(-10,10)
+		--player.TearFallingSpeed = math.random()*0.5
+		player.MoveSpeed = (math.random()*2)+0.1
+		player.Luck = (math.random()*20)-10
 	end
 end
 
