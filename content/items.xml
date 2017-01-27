@@ -16,6 +16,7 @@
 	<passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" />
 	<passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" />
 	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" />
+	<passive cache ="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
