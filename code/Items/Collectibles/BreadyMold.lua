@@ -1,3 +1,4 @@
+--Credit to otherhand for the code
 local breadyMold = {}
 local itemIds = {
     breadymold = Isaac.GetItemIdByName("Bready Mold")
@@ -10,28 +11,33 @@ function breadyMold:PickedUp()
 	local game = Game()
 	if player:HasCollectible(itemIds.breadymold) then
 		if breadymoldSpawned == false then
-		local pos = game:GetRoom():FindFreePickupSpawnPosition(player.Position, 1, true)
+		
 		local StatRandom = math.random(7)
-			if StatRandom == 1 then 
-			Isaac.Spawn(5, 100, 11, pos, Vector(0,0), nil)
+		local r2 = nil 
+		repeat
+			r2 = math.random(7)
+		until r2 ~= StatRandom
+			 
+			if StatRandom == 1 or r2 == 1 then 
+			Isaac.Spawn(5, 100, 11, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 2 then 
-			Isaac.Spawn(5, 100, 342, pos, Vector(0,0), nil)
+			if StatRandom == 2 or r2 == 2 then 
+			Isaac.Spawn(5, 100, 342, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 3 then 
-			Isaac.Spawn(5, 100, 12, pos, Vector(0,0), nil)
+			if StatRandom == 3 or r2 == 3 then 
+			Isaac.Spawn(5, 100, 12, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 4 then 
-			Isaac.Spawn(5, 100, 71, pos, Vector(0,0), nil)
+			if StatRandom == 4 or r2 == 4 then 
+			Isaac.Spawn(5, 100, 71, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 5 then 
-			Isaac.Spawn(5, 100, 121, pos, Vector(0,0), nil)
+			if StatRandom == 5 or r2 == 5 then 
+			Isaac.Spawn(5, 100, 121, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 6 then 
-			Isaac.Spawn(5, 100, 120, pos, Vector(0,0), nil)
+			if StatRandom == 6 or r2 == 6 then 
+			Isaac.Spawn(5, 100, 120, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
-			if StatRandom == 7 then 
-			Isaac.Spawn(5, 350, 32, pos, Vector(0,0), nil)
+			if StatRandom == 7 or r2 == 7 then 
+			Isaac.Spawn(5, 350, 32, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
 		--Game():GetPlayer(0):AddNullCostume(bmoldcostume)
 		breadymoldSpawned = true
@@ -43,5 +49,5 @@ function breadyMold:checkForNewRun()
 	breadymoldSpawned = false
 end
 
-breadyMold:AddCallback(ModCallbacks.MC_POST_UPDATE, breadyMold.PickedUp)
-breadyMold:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, breadyMold.checkForNewRun)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, breadyMold.PickedUp)
+Agpny:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, breadyMold.checkForNewRun)
