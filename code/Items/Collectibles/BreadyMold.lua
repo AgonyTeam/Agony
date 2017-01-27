@@ -50,4 +50,4 @@ function breadyMold:checkForNewRun()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, breadyMold.PickedUp)
-Agpny:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, breadyMold.checkForNewRun)
+Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, breadyMold.checkForNewRun)

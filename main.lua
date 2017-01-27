@@ -44,6 +44,7 @@ Include("code/Items/Collectibles/Cyanide.lua");
 Include("code/Items/Collectibles/SuicideGod.lua");
 Include("code/Items/Collectibles/PyramidHead.lua");
 Include("code/Items/Collectibles/BreadyMold.lua");
+Include("code/Items/Collectibles/OvergrownSpine.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 

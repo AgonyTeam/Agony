@@ -14,4 +14,4 @@ function debugScript:universalDebugText()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.displayEntities)
-Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalDebugText)
+--Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalDebugText)
