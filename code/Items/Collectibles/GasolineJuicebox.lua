@@ -81,6 +81,32 @@ function gasolinejb:TearsToFlames()
 			if (entities[i].Type == 1000 and entities[i].Variant == 52 and (entities[i].SpawnerType == 1 or entities[i].SpawnerType == 3) and entities[i].SubType == 1 and player:HasCollectible(CollectibleType.COLLECTIBLE_CANDLE)) then
 				entities[i].Velocity = entities[i].Velocity:__add(Agony:calcTearVel(entities[i].Position, (Agony:getNearestEnemy(entities[i])).Position, 0.5))
 			end
+			
+			--destroy poop
+			if (entities[i].Type == 1000 and entities[i].Variant == 52 and (entities[i].SpawnerType == 1 or entities[i].SpawnerType == 3) and entities[i].SubType == 1) then
+				local room = Game():GetRoom();
+				local grident_r = room:GetGridEntityFromPos(Vector(entities[i].Position.X + 25, entities[i].Position.Y));
+				local grident_l = room:GetGridEntityFromPos(Vector(entities[i].Position.X - 25, entities[i].Position.Y));
+				local grident_u = room:GetGridEntityFromPos(Vector(entities[i].Position.X, entities[i].Position.Y - 25));
+				local grident_d = room:GetGridEntityFromPos(Vector(entities[i].Position.X, entities[i].Position.Y + 25));
+				--debug_text = "toast "
+				if ((grident_r ~= nil) and (grident_r.Desc.Type == GridEntityType.GRID_POOP)) then
+					grident_r:Destroy(true);
+					--debug_text = debug_text .. "plop r"
+				end
+				if ((grident_l ~= nil) and (grident_l.Desc.Type == GridEntityType.GRID_POOP)) then
+					grident_l:Destroy(true);
+					--debug_text = debug_text .. "plop l"
+				end
+				if ((grident_u ~= nil) and (grident_u.Desc.Type == GridEntityType.GRID_POOP)) then
+					grident_u:Destroy(true);
+					--debug_text = debug_text .. "plop u"
+				end
+				if ((grident_d ~= nil) and (grident_d.Desc.Type == GridEntityType.GRID_POOP)) then
+					grident_d:Destroy(true);
+					--debug_text = debug_text .. "plop d"
+				end
+			end
 		end
 	end
 end
