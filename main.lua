@@ -60,6 +60,11 @@ local rspwn_allow = false;
 local spwn_list = {};
 local level_seed_backup = 666;
 
+local respawnIDs = { --holds all IDs that need to be respawned
+	yb_entitytype,
+	treasurehoarder.entityType
+}
+
 function Agony:respawnV2()
 	local room = Game():GetRoom();
 	local level = Game():GetLevel();
@@ -101,14 +106,16 @@ function Agony:respawnV2()
 	elseif (room:IsFirstVisit() == true and room:GetFrameCount() == 1) then --check if new room has respawnable entity inside, only once on the first room entry
 		ent_before = Isaac.GetRoomEntities();
 		for i = 1, #ent_before do
-			if (ent_before[i].Type == yb_entitytype) then
-				table.insert(spwn_list, 1, room_seed);
-				table.insert(spwn_list, 2, ent_before[i].Type);
-				table.insert(spwn_list, 3, ent_before[i].Variant);
-				table.insert(spwn_list, 4, ent_before[i].SubType);
-				table.insert(spwn_list, 5, ent_before[i].Position.X);
-				table.insert(spwn_list, 6, ent_before[i].Position.Y);
-			end
+			for j=1, #respawnIDs do
+				if (ent_before[i].Type == respawnIDs[j]) then
+					table.insert(spwn_list, 1, room_seed);
+					table.insert(spwn_list, 2, ent_before[i].Type);
+					table.insert(spwn_list, 3, ent_before[i].Variant);
+					table.insert(spwn_list, 4, ent_before[i].SubType);
+					table.insert(spwn_list, 5, ent_before[i].Position.X);
+					table.insert(spwn_list, 6, ent_before[i].Position.Y);
+				end
+			end	
 		end
 		Isaac.SaveModData(Agony, table_tostring(spwn_list)); --save the latest table for the case of game exit
 	end
