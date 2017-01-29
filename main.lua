@@ -49,6 +49,7 @@ Include("code/Items/Collectibles/SolomonsCrown.lua");
 Include("code/Items/Collectibles/Tech9000.lua");
 Include("code/Items/Collectibles/ElectricHair.lua");
 Include("code/Items/Collectibles/TDDUA.lua");
+Include("code/Items/Collectibles/PythagoresBody.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
