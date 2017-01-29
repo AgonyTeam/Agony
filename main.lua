@@ -48,8 +48,9 @@ Include("code/Items/Collectibles/OvergrownSpine.lua");
 Include("code/Items/Collectibles/SolomonsCrown.lua");
 Include("code/Items/Collectibles/Tech9000.lua");
 Include("code/Items/Collectibles/ElectricHair.lua");
-Include("code/Items/Collectibles/TillDeathDoUsApart.lua");
 Include("code/Items/Collectibles/Soulmates.lua");
+Include("code/Items/Collectibles/TDDUA.lua");
+
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 

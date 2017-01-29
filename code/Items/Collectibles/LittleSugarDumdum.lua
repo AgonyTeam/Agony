@@ -34,8 +34,9 @@ end
 
 function LSD:StartTheParty()
 	--LSD.IsTimeToParty = true
+	local player = Isaac.GetPlayer(0);
 	LSD.Room = Game():GetLevel():GetCurrentRoomIndex()
-	LSD.FormerScale = Isaac.GetPlayer(0).SpriteScale
+	LSD.FormerScale = player.SpriteScale
 	LSD.MaxFireDelay = player.MaxFireDelay
 	LSD.ShotSpeed = player.ShotSpeed
 	LSD.Damage = player.Damage

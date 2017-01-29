@@ -28,4 +28,5 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="1" name="D3" />
 	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" />
+	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 </items>
