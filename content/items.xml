@@ -19,7 +19,6 @@
 	<passive cache ="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" />
 	<passive name="Technology 9000" description="Mysterious placeholder text" gfx="collectibles_technology9000.png" />
 	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" />
-	<passive name="Implant Dispenser" description="Mysterious placeholder text" gfx="collectibles_implantdispenser.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	

@@ -41,14 +41,7 @@
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
     <!--/Treasure Hoarder-->
-    
-    <!--Pyrite Coin-->
-    <entity anm2path="Items/Pickups/Penny.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Pyrite Coin" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="20" subtype="7">
-        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
-        <preload-snd id="234" /> <!-- PENNYPICKUP -->
-    </entity>
-    <!--/Pyrite Coin-->
-	
+
     <!--Eternals-->
 	<entity id="244" variant="0" subtype="15" name="Eternal Round Worm" reroll="true" baseHP="20" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="100" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="97" anm2path="Monsters/Eternals/Round Worm/animation.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
