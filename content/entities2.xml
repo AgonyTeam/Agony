@@ -37,7 +37,7 @@
 	<!--/YellowBlock-->
 	
     <!--Treasure Hoarder-->
-    <entity anm2path="Items/Slots/TreasureHoarder/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="0" id="502" name="Treasure Hoarder" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="0" subtype="0" collisionMass="1000">
+    <entity anm2path="Items/Slots/TreasureHoarder/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="12" friction="0" id="502" name="Treasure Hoarder" numGridCollisionPoints="24" shadowSize="15" stageHP="0" variant="0" subtype="0" shutdoors="false">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
     </entity>
     <!--/Treasure Hoarder-->

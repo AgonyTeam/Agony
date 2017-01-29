@@ -7,7 +7,7 @@ treasurehoarder = {
 }
 treasurehoarder.entityType = Isaac.GetEntityTypeByName("Treasure Hoarder")
 
-local debug_text = nil
+--local debug_text = nil
 local collList = nil
 
 function treasurehoarder:ai_main(npc)
@@ -16,25 +16,32 @@ function treasurehoarder:ai_main(npc)
 	local sprite = npc:GetSprite()	
 
 	if (npc.State == NpcState.STATE_INIT) then
+		npc.V1 = npc.Position
+		npc.Position = npc.V1
+		npc.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
 		npc:AddEntityFlags(EntityFlag.FLAG_NO_FLASH_ON_DAMAGE)
 		npc:AddEntityFlags(EntityFlag.FLAG_NO_DEATH_TRIGGER)
 		npc:AddEntityFlags(EntityFlag.FLAG_NO_TARGET)
 		npc:AddEntityFlags(EntityFlag.FLAG_NO_STATUS_EFFECTS)
 		npc:AddEntityFlags(EntityFlag.FLAG_DONT_OVERWRITE)
-		npc.CanShutDoors = false
-		sprite:SetAnimation ("Idle")
-		sprite:Play("Idle", true)
-		npc.Friction = 10.0
+		--npc.CanShutDoors = false
+		npc.PositionOffset = Vector(0,8)
+		--sprite:SetAnimation ("Idle")
+		--sprite:Play("Idle", true) 
+		--npc.Friction = 10.0
 		npc.State = NpcState.STATE_IDLE
+	elseif (npc.State == NpcState.STATE_IDLE) then
+		npc.Position = npc.V1
+		--npc.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
     end
+	
 
 
+	--debug_text = tostring(sprite:IsPlaying("Idle"))
+	--debug_text2 = tostring(sprite:IsPlaying("PayPrize"))
+	--debug_text3 = tostring(sprite:IsPlaying("PayNothing"))
 
-	debug_text = tostring(sprite:IsPlaying("Idle"))
-	debug_text2 = tostring(sprite:IsPlaying("PayPrize"))
-	debug_text3 = tostring(sprite:IsPlaying("PayNothing"))
-
-    if player.Position:Distance(npc.Position) < 50 and sprite:IsPlaying("Idle") == true then
+    if player.Position:Distance(npc.Position) < 40 and sprite:IsPlaying("Idle") == true then
     	--Play the hoarder
     	--Credit to lombardo2 for this if statement
     	-- This wont accept modded item
@@ -114,12 +121,12 @@ function treasurehoarder:ai_main(npc)
 end
 
 
-function treasurehoarder:universalDebugText()
-	Isaac.RenderText(debug_text, 40, 250, 255, 255, 0, 255);
-	Isaac.RenderText(debug_text2, 40, 240, 255, 255, 0, 255);
-	Isaac.RenderText(debug_text3, 40, 230, 255, 255, 0, 255);
-end
+--function treasurehoarder:universalDebugText()
+--	Isaac.RenderText(debug_text, 40, 250, 255, 255, 0, 255);
+--	Isaac.RenderText(debug_text2, 40, 240, 255, 255, 0, 255);
+--	Isaac.RenderText(debug_text3, 40, 230, 255, 255, 0, 255);
+--end
 
 -- Register the callbacks
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, treasurehoarder.ai_main, treasurehoarder.entityType)
-Agony:AddCallback(ModCallbacks.MC_POST_RENDER, treasurehoarder.universalDebugText)
+--Agony:AddCallback(ModCallbacks.MC_POST_RENDER, treasurehoarder.universalDebugText)
