@@ -25,10 +25,11 @@ function suicideGod:onUpdate(player)
 	end
 	if player:HasCollectible(item_SuicideGod) then
 		if suicideGod.hasItem == false then
-			--player:AddNullCostume(suicideGod.costumeID)
+			player:AddNullCostume(suicideGod.costumeID)
 			suicideGod.hasItem = true
 		end
 	end
 end
+
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, suicideGod.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, suicideGod.checkIfPlayerDying)
