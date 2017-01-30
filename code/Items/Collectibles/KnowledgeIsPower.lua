@@ -29,5 +29,6 @@ function KIP:onUpdate(player)
 		end
 	end
 end
+
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, KIP.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, KIP.cacheUpdate)

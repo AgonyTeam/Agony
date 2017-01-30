@@ -18,7 +18,8 @@
         <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Overgrown Spine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Technology 9000" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -34,9 +35,11 @@
         <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Overgrown Spine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
+        <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
         <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
