@@ -50,6 +50,7 @@ Include("code/Items/Collectibles/Tech9000.lua");
 Include("code/Items/Collectibles/ElectricHair.lua");
 Include("code/Items/Collectibles/TDDUA.lua");
 Include("code/Items/Collectibles/PythagoresBody.lua");
+Include("code/Items/Collectibles/YeuxRevolver.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
