@@ -52,6 +52,7 @@ Include("code/Items/Collectibles/TDDUA.lua");
 Include("code/Items/Collectibles/PythagoresBody.lua");
 Include("code/Items/Collectibles/YeuxRevolver.lua");
 Include("code/Items/Collectibles/PovertyIsPower.lua");
+Include("code/Items/Collectibles/BrotherCancer.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");

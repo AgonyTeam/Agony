@@ -22,6 +22,7 @@
 	<passive name="Pythagore's Body" description="Mysterious placeholder text" gfx="collectibles_pythagoresbody.png" />
 	<passive cache="shotspeed damage firedelay" name="Yeux Revolver" description="Mysterious placeholder text" gfx="collectibles_yeuxrevolver.png" />
 	<passive cache="damage" name="Poverty is Power" description="Mysterious placeholder text" gfx="collectibles_povertyispower.png" />
+	<passive name="Tumor" description="Mysterious placeholder text" gfx="collectibles_tumor.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
@@ -30,5 +31,6 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="1" name="D3" />
 	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" />
+	<active description="Mysterious placeholder text" gfx="collectibles_brothercancer.png" maxcharges="6" name="Brother Cancer" />
 	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 </items>
