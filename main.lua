@@ -54,6 +54,7 @@ Include("code/Items/Collectibles/YeuxRevolver.lua");
 Include("code/Items/Collectibles/PovertyIsPower.lua");
 Include("code/Items/Collectibles/BrotherCancer.lua");
 Include("code/Items/Collectibles/RememberMeNow.lua");
+Include("code/Items/Collectibles/Cornucopia.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
