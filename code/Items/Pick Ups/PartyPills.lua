@@ -1,4 +1,5 @@
-local pill_PartyPills = Isaac.GetPillEffectByName("Party Pills!")
+--local pill_PartyPills = Isaac.GetPillEffectByName("Party Pills!")
+PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!");
 local partypills = {
 	--IsTimeToParty = false,
 	Room = nil,
@@ -40,5 +41,5 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, partypills.DistortEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, partypills.DistortPlayer)
-Agony:AddCallback(ModCallbacks.MC_USE_PILL, partypills.StartTheParty, pill_PartyPills)
+Agony:AddCallback(ModCallbacks.MC_USE_PILL, partypills.StartTheParty, PillEffect.AGONY_PEFF_PARTY_PILLS)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, partypills.StopTheParty)

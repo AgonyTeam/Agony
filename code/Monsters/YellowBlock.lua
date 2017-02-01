@@ -2,7 +2,8 @@
 
 --Yellow Block
 yellowblock = {};
-yb_entitytype = Isaac.GetEntityTypeByName("Yellow Block");
+--yb_entitytype = Isaac.GetEntityTypeByName("Yellow Block");
+EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block");
 --debug_text = "";
 
 -- Movement
@@ -116,5 +117,5 @@ end
 
 
 -- Register the callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_main, yb_entitytype);
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_turn, yb_entitytype);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_main, EntityType.AGONY_ETYPE_YELLOW_BLOCK);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, yellowblock.ai_turn, EntityType.AGONY_ETYPE_YELLOW_BLOCK);

@@ -1,12 +1,12 @@
 treasurehoarder = {
-	entityType = nil,
+	--entityType = nil,
 	rseed = 1,
 	isPrizeDue = false,
 	isGoingToTP = false,
 	pos = nil
 }
-treasurehoarder.entityType = Isaac.GetEntityTypeByName("Treasure Hoarder")
-
+--treasurehoarder.entityType = Isaac.GetEntityTypeByName("Treasure Hoarder")
+EntityType["AGONY_ETYPE_TREASURE_HOARDER"] = Isaac.GetEntityTypeByName("Treasure Hoarder");
 --local debug_text = nil
 local collList = nil
 
@@ -48,7 +48,8 @@ function treasurehoarder:ai_main(npc)
     	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
             local colletibles = {}
             for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-                if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
+                Isaac.DebugString(name);
+				if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
                     table.insert(colletibles, id)
                 end
             end
@@ -128,5 +129,5 @@ end
 --end
 
 -- Register the callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, treasurehoarder.ai_main, treasurehoarder.entityType)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, treasurehoarder.ai_main, EntityType.AGONY_ETYPE_TREASURE_HOARDER)
 --Agony:AddCallback(ModCallbacks.MC_POST_RENDER, treasurehoarder.universalDebugText)
