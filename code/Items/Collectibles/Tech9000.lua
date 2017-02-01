@@ -1,4 +1,5 @@
-local item_techninek = Isaac.GetItemIdByName("Technology 9000");
+--local item_techninek = Isaac.GetItemIdByName("Technology 9000");
+CollectibleType["AGONY_C_TECH_9000"] = Isaac.GetItemIdByName("Technology 9000");
 local techninek = {
 	TearBool = false,
 	hasItem = nil,
@@ -14,7 +15,7 @@ function techninek:TearsToLaser()
 	local tearParent = nil;
 	
 	--Replace tears with fires after gettign shot down
-	if (player:HasCollectible(item_techninek) == true) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_TECH_9000) == true) then
 		for i = 1, #entities do
 			if (entities[i].Type == EntityType.ENTITY_TEAR and (entities[i].Parent.Type == 1 or (entities[i].Parent.Type == 3 and entities[i].Parent.Variant == 80))) then --player == 1.0.0, incubus == 3.80.0
 				
@@ -31,19 +32,18 @@ function techninek:TearsToLaser()
 					tearParent = nil;
 				end
 			end
-		end
-
-		--Fires dissappear after time
-		if (entities[i].Type == 1000 and entities[i].Variant == 52 and (entities[i].SpawnerType == 1 or entities[i].SpawnerType == 3) and entities[i].SubType == 1 and not player:HasCollectible(CollectibleType.COLLECTIBLE_RED_CANDLE)) then
-			if (entities[i].FrameCount % 100 == 0) then
-				if (entities[i]:GetSprite():IsPlaying("FireStage00") == true) then
-					entities[i]:GetSprite():Play("FireStage01");
-				elseif (entities[i]:GetSprite():IsPlaying("FireStage01") == true) then
-					entities[i]:GetSprite():Play("FireStage02");
-				elseif (entities[i]:GetSprite():IsPlaying("FireStage02") == true) then
-					entities[i]:GetSprite():Play("FireStage03");
-				elseif (entities[i]:GetSprite():IsPlaying("FireStage03") == true) then
-					entities[i]:Remove();
+			--Fires dissappear after time
+			if (entities[i].Type == 1000 and entities[i].Variant == 52 and (entities[i].SpawnerType == 1 or entities[i].SpawnerType == 3) and entities[i].SubType == 1 and not player:HasCollectible(CollectibleType.COLLECTIBLE_RED_CANDLE)) then
+				if (entities[i].FrameCount % 100 == 0) then
+					if (entities[i]:GetSprite():IsPlaying("FireStage00") == true) then
+						entities[i]:GetSprite():Play("FireStage01");
+					elseif (entities[i]:GetSprite():IsPlaying("FireStage01") == true) then
+						entities[i]:GetSprite():Play("FireStage02");
+					elseif (entities[i]:GetSprite():IsPlaying("FireStage02") == true) then
+						entities[i]:GetSprite():Play("FireStage03");
+					elseif (entities[i]:GetSprite():IsPlaying("FireStage03") == true) then
+						entities[i]:Remove();
+					end
 				end
 			end
 		end
@@ -55,7 +55,7 @@ function techninek:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		techninek.hasItem = false
 	end
-	if techninek.hasItem == false and player:HasCollectible(item_techninek) then
+	if techninek.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TECH_9000) then
 		--player:AddNullCostume(techninek.costumeID)
 		techninek.hasItem = true
 	end

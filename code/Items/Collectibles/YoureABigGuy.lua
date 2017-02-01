@@ -1,4 +1,5 @@
-local item_BigGuy = Isaac.GetItemIdByName("You're a Big Guy");
+--local item_BigGuy = Isaac.GetItemIdByName("You're a Big Guy");
+CollectibleType["AGONY_C_URA_BIG_GUY"] = Isaac.GetItemIdByName("You're a Big Guy");
 local bigGuy =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -6,7 +7,7 @@ local bigGuy =  {
 bigGuy.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_bigguy.anm2")
 
 function bigGuy:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_BigGuy)) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_URA_BIG_GUY)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 			player.Damage = player.Damage + 1.69420;
 		end
@@ -18,7 +19,7 @@ function bigGuy:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		bigGuy.hasItem = false
 	end
-	if bigGuy.hasItem == false and player:HasCollectible(item_BigGuy) then
+	if bigGuy.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_URA_BIG_GUY) then
 		-- commented out until we have a costume
 		--player:AddNullCostume(bigGuy.costumeID)
 		bigGuy.hasItem = true

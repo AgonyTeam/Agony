@@ -1,4 +1,5 @@
-local item_Tantrum = Isaac.GetItemIdByName("Tantrum")
+--local item_Tantrum = Isaac.GetItemIdByName("Tantrum")
+CollectibleType["AGONY_C_TANTRUM"] = Isaac.GetItemIdByName("Tantrum");
 local tantrum =  {
 	hasItem = false,
 	costumeID = nil,
@@ -11,12 +12,12 @@ function tantrum:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		tantrum.hasItem = false
 	end
-	if tantrum.hasItem == false and player:HasCollectible(item_Tantrum) then
+	if tantrum.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TANTRUM) then
 		--player:AddNullCostume(tantrum.costumeID)
 		tantrum.hasItem = true
 	end
 
-	if player:HasCollectible(item_Tantrum) then
+	if player:HasCollectible(CollectibleType.AGONY_C_TANTRUM) then
 		if player:GetActiveItem() ~= nil then
 			if player:NeedsCharge() then 
 				if tantrum.playerHasFullCharge then

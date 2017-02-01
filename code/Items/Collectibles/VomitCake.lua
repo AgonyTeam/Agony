@@ -1,8 +1,9 @@
-local item_VomitCake = Isaac.GetItemIdByName("Vomit Cake")
+--local item_VomitCake = Isaac.GetItemIdByName("Vomit Cake")
+CollectibleType["AGONY_C_VOMIT_CAKE"] = Isaac.GetItemIdByName("Vomit Cake");
 local vomitCake =  {}
 
 function vomitCake:spawnCreep(player)
-	if player:HasCollectible(item_VomitCake) == true then
+	if player:HasCollectible(CollectibleType.AGONY_C_VOMIT_CAKE) == true then
 		local luckMult = math.floor(player.Luck)
 		local shootJoy = player:GetShootingJoystick()
 		if shootJoy.X ~= 0 or shootJoy.Y ~= 0 then

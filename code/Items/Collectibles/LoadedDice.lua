@@ -1,4 +1,5 @@
-local item_LoadedDice = Isaac.GetItemIdByName("Loaded Dice")
+--local item_LoadedDice = Isaac.GetItemIdByName("Loaded Dice")
+CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
 local loadedDice =  {}
 
 function loadedDice:rerollIntoButterBean()
@@ -10,4 +11,4 @@ function loadedDice:rerollIntoButterBean()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, loadedDice.rerollIntoButterBean, item_LoadedDice)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, loadedDice.rerollIntoButterBean, CollectibleType.AGONY_C_LOADED_DICE)

@@ -1,4 +1,5 @@
-local item_GrowingAnxiety = Isaac.GetItemIdByName("Growing Anxiety")
+--local item_GrowingAnxiety = Isaac.GetItemIdByName("Growing Anxiety")
+CollectibleType["AGONY_C_GROWING_ANXIETY"] = Isaac.GetItemIdByName("Growing Anxiety");
 local growingAnxiety =  {
 	FormerScale = {},
 	CurrentScaleMulti = 1,
@@ -10,7 +11,7 @@ function growingAnxiety:shrinkPlayer()
 	local player = Isaac.GetPlayer(0)
 	local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
 	col:Reset()
-	if player:HasCollectible(item_GrowingAnxiety) then
+	if player:HasCollectible(CollectibleType.AGONY_C_GROWING_ANXIETY) then
 		if growingAnxiety.CurrentScaleMulti == 1 then
 			growingAnxiety.FormerScale = player.SpriteScale
 			growingAnxiety.Room = Game():GetLevel():GetCurrentRoomIndex()

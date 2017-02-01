@@ -1,4 +1,5 @@
-local item_TheBigRock = Isaac.GetItemIdByName("The Big Rock")
+--local item_TheBigRock = Isaac.GetItemIdByName("The Big Rock")
+CollectibleType["AGONY_C_THE_BIG_ROCK"] = Isaac.GetItemIdByName("The Big Rock");
 local theBigRock =  {
 	hasTriedToMorphSmallRock = false,
 	seed = nil
@@ -6,7 +7,7 @@ local theBigRock =  {
 
 --Grants + 2.69 DMG and -0.4 SPD
 function theBigRock:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_TheBigRock)) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_THE_BIG_ROCK)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		player.Damage = player.Damage + 3.69;
 		end
@@ -29,7 +30,7 @@ function theBigRock:morphSmallRock()
 		for i = 1, #entList, 1 do
 			if entList[i].Type == 5 and entList[i].Variant == 100 and entList[i].SubType == 90 then
 				if RNG():GetSeed()%20 == 1 then
-					entList[i]:ToPickup():Morph(entList[i].Type, entList[i].Variant, item_TheBigRock, true)
+					entList[i]:ToPickup():Morph(entList[i].Type, entList[i].Variant, CollectibleType.AGONY_C_THE_BIG_ROCK, true)
 				end
 				theBigRock.hasTriedToMorphSmallRock = true
 			end

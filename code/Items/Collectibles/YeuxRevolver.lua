@@ -1,4 +1,5 @@
-local item_YeuxRev = Isaac.GetItemIdByName("Yeux Revolver");
+--local item_YeuxRev = Isaac.GetItemIdByName("Yeux Revolver");
+CollectibleType["AGONY_C_YEUX_REVOLVER"] = Isaac.GetItemIdByName("Yeux Revolver");
 local yeuxRev =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
@@ -8,7 +9,7 @@ yeuxRev.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_yeuxrevolve
 
 --Grants +1 Luck and gives a *2 multiplier to Luck
 function yeuxRev:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_YeuxRev)) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 			player.Damage = (player.Damage + 3.42069)
 		end
@@ -25,7 +26,7 @@ function yeuxRev:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		yeuxRev.hasItem = false
 	end
-	if yeuxRev.hasItem == false and player:HasCollectible(item_YeuxRev) then
+	if yeuxRev.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER) then
 		--player:AddNullCostume(yeuxRev.costumeID)
 		yeuxRev.hasItem = true
 	end

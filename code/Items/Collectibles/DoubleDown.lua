@@ -1,4 +1,5 @@
-local item_DoubleDown = Isaac.GetItemIdByName("Double Down")
+--local item_DoubleDown = Isaac.GetItemIdByName("Double Down")
+CollectibleType["AGONY_C_DOUBLE_DOWN"] = Isaac.GetItemIdByName("Double Down");
 local doubleDown = {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -8,7 +9,7 @@ doubleDown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_doubledo
 
 -- Doubles player damage
 function doubleDown:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_DoubleDown)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		player.Damage = player.Damage*2
 	end
 end
@@ -16,7 +17,7 @@ end
 -- Doubles damage taken
 function doubleDown:doubleDmgTaken(entity,dmgAmount)
 	local player = Isaac.GetPlayer(0);
-	if player:HasCollectible(item_DoubleDown) then
+	if player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) then
 		for i=1, dmgAmount do
 			if player:GetSoulHearts() > 0 then
 				player:AddSoulHearts(-1)
@@ -33,7 +34,7 @@ function doubleDown:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		doubleDown.hasItem = false
 	end
-	if doubleDown.hasItem == false and player:HasCollectible(item_DoubleDown) then
+	if doubleDown.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) then
 		player:AddNullCostume(doubleDown.costumeID)
 		doubleDown.hasItem = true
 	end

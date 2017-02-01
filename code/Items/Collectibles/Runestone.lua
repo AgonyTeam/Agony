@@ -1,4 +1,5 @@
-local item_Runestone = Isaac.GetItemIdByName("Runestone")
+--local item_Runestone = Isaac.GetItemIdByName("Runestone")
+CollectibleType["AGONY_C_RUNESTONE"] = Isaac.GetItemIdByName("Runestone");
 local runestone =  {
 	rseed = 1
 }
@@ -14,4 +15,4 @@ function runestone:spawnRune()
 	runestone.rseed = (RNG():GetSeed()*runestone.rseed)%100
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, runestone.spawnRune, item_Runestone)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, runestone.spawnRune, CollectibleType.AGONY_C_RUNESTONE)

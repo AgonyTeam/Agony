@@ -1,4 +1,5 @@
-local item_SuicideGod = Isaac.GetItemIdByName("Suicide God");
+--local item_SuicideGod = Isaac.GetItemIdByName("Suicide God");
+CollectibleType["AGONY_C_SUICIDE_GOD"] = Isaac.GetItemIdByName("Suicide God");
 local suicideGod =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -7,7 +8,7 @@ suicideGod.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_suicideg
 
 function suicideGod:checkIfPlayerDying()
 	local player = Game():GetPlayer(0)
-	if player:HasCollectible(item_SuicideGod) then
+	if player:HasCollectible(CollectibleType.AGONY_C_SUICIDE_GOD) then
 		local sprite = player:GetSprite()
 
 		if sprite:IsPlaying("Death") and sprite:GetFrame() == 1 then
@@ -23,7 +24,7 @@ function suicideGod:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		suicideGod.hasItem = false
 	end
-	if player:HasCollectible(item_SuicideGod) then
+	if player:HasCollectible(CollectibleType.AGONY_C_SUICIDE_GOD) then
 		if suicideGod.hasItem == false then
 			player:AddNullCostume(suicideGod.costumeID)
 			suicideGod.hasItem = true

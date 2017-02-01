@@ -1,4 +1,5 @@
-local item_ElectricHair = Isaac.GetItemIdByName("Electric Hair");
+--local item_ElectricHair = Isaac.GetItemIdByName("Electric Hair");
+CollectibleType["AGONY_C_ELECTRIC_HAIR"] = Isaac.GetItemIdByName("Electric Hair");
 local electricHair =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -7,7 +8,7 @@ electricHair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_electr
 
 --Grants +1 Luck and gives a *2 multiplier to Luck
 function electricHair:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_ElectricHair)) and (cacheFlag == CacheFlag.CACHE_SPEED) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR)) and (cacheFlag == CacheFlag.CACHE_SPEED) then
 		player.MoveSpeed = player.MoveSpeed + 0.2;
 	end
 end
@@ -16,7 +17,7 @@ function electricHair:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		electricHair.hasItem = false
 	end
-	if electricHair.hasItem == false and player:HasCollectible(item_ElectricHair) then
+	if electricHair.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR) then
 		--player:AddNullCostume(electricHair.costumeID)
 		electricHair.hasItem = true
 	end
@@ -24,7 +25,7 @@ end
 
 function electricHair:randomZap()
 	local player = Game():GetPlayer(0)
-	if player:HasCollectible(item_ElectricHair) then
+	if player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR) then
 		local entList = Isaac.GetRoomEntities()
 		local vulList = {}
 		for i = 1, #entList, 1 do

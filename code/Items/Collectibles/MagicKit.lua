@@ -1,4 +1,5 @@
-local item_MagicKit = Isaac.GetItemIdByName("Magic Kit")
+--local item_MagicKit = Isaac.GetItemIdByName("Magic Kit")
+CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
 local magicKit = {
 	rseed = 1
 }
@@ -15,12 +16,12 @@ end
 
 function magicKit:OpenKit()
 	local player = Game():GetPlayer(0)
-	if (player:HasCollectible(item_MagicKit)) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_MAGIC_KIT)) then
 		for i = 1, player.Luck + 3, 1 do
 			magicKit:spawnRune(player)
 		end
-		player:RemoveCollectible(item_MagicKit)		
+		player:RemoveCollectible(CollectibleType.AGONY_C_MAGIC_KIT)		
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, magicKit.OpenKit, item_MagicKit)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, magicKit.OpenKit, CollectibleType.AGONY_C_MAGIC_KIT)

@@ -1,5 +1,6 @@
-StartDebug();
-local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
+--StartDebug();
+--local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
+CollectibleType["AGONY_C_GASOLINE_JB"] = Isaac.GetItemIdByName("Gasoline Juicebox");
 local gasolinejb = {
 	TearBool = false,
 	hasItem = nil,
@@ -10,7 +11,7 @@ gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasoline
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
 	
-	if (player:HasCollectible(item_GasolineJuicebox) == true) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) == true) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 			player.Damage = player.Damage - 1;
 		end
@@ -35,7 +36,7 @@ function gasolinejb:TearsToFlames()
 	local tearParent = nil;
 	
 	--Replace tears with fires
-	if (player:HasCollectible(item_GasolineJuicebox) == true) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) == true) then
 		for i = 1, #entities do
 			if (entities[i].Type == EntityType.ENTITY_TEAR and (entities[i].Parent.Type == 1 or (entities[i].Parent.Type == 3 and entities[i].Parent.Variant == 80))) then --player == 1.0.0, incubus == 3.80.0
 				
@@ -126,7 +127,7 @@ function gasolinejb:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		gasolinejb.hasItem = false
 	end
-	if gasolinejb.hasItem == false and player:HasCollectible(item_GasolineJuicebox) then
+	if gasolinejb.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) then
 		player:AddNullCostume(gasolinejb.costumeID)
 		gasolinejb.hasItem = true
 	end

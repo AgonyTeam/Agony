@@ -1,4 +1,5 @@
-local item_TilDeathDoUsApart = Isaac.GetItemIdByName("Til Death Do Us Apart");
+--local item_TilDeathDoUsApart = Isaac.GetItemIdByName("Til Death Do Us Apart");
+CollectibleType["AGONY_C_TDDUA"] = Isaac.GetItemIdByName("Til Death Do Us Apart");
 local tilDeath = {};
 
 local CONVERT_LUCK_BASE = 0.10
@@ -9,7 +10,7 @@ function tilDeath:ConvertEntity(hurtEntity, dmgAmount, dmgFlags, source, countdo
     local player = Isaac.GetPlayer(0)
     if hurtEntity.HitPoints < dmgAmount 
 			and not hurtEntity:IsBoss()
-			and player:HasCollectible(item_TilDeathDoUsApart)
+			and player:HasCollectible(CollectibleType.AGONY_C_TDDUA)
             and hurtEntity:IsVulnerableEnemy() then
         local threshold = CONVERT_LUCK_BASE + player.Luck * CONVERT_LUCK_MULTI
         if rng:RandomFloat() < threshold then

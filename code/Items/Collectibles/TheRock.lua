@@ -1,4 +1,5 @@
-local item_TheRock = Isaac.GetItemIdByName("The Rock")
+--local item_TheRock = Isaac.GetItemIdByName("The Rock")
+CollectibleType["AGONY_C_THE_ROCK"] = Isaac.GetItemIdByName("The Rock");
 local theRock =  {
 	rseed = 1
 }
@@ -21,4 +22,4 @@ function theRock:spawnRock()
 	room:SpawnGridEntity(room:GetGridIndex(Isaac.GetFreeNearPosition(Game():GetPlayer(0).Position, 25)), rock, 0, RNG():GetSeed(), 1)
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, theRock.spawnRock, item_TheRock)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, theRock.spawnRock, CollectibleType.AGONY_C_THE_ROCK)

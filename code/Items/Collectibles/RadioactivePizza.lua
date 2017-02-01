@@ -1,4 +1,5 @@
-local item_RadioActivePizza = Isaac.GetItemIdByName("Radioactive Pizza")
+--local item_RadioActivePizza = Isaac.GetItemIdByName("Radioactive Pizza")
+CollectibleType["AGONY_C_RADIOACTIVE_PIZZA"] = Isaac.GetItemIdByName("Radioactive Pizza");
 local radioactivePizza =  {
 	TearBool = false,
 	bonus = 0
@@ -7,7 +8,7 @@ local radioactivePizza =  {
 --Gives a bonus to one stat, a malus to another one
 function radioactivePizza:cacheUpdate(player,cacheFlag)
 
-	if player:HasCollectible(item_RadioActivePizza) then
+	if player:HasCollectible(CollectibleType.AGONY_C_RADIOACTIVE_PIZZA) then
 		local r1 = (Game():GetRoom():GetDecorationSeed() % 3) +1
 		local r2 = (Game():GetRoom():GetSpawnSeed() % 3) +1
 		--Make sure the stat isnt the same

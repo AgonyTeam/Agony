@@ -1,4 +1,5 @@
-local item_KIP = Isaac.GetItemIdByName("Knowledge Is Power");
+--local item_KIP = Isaac.GetItemIdByName("Knowledge Is Power");
+CollectibleType["AGONY_C_KIP"] = Isaac.GetItemIdByName("Knowledge Is Power");
 local KIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -6,7 +7,7 @@ local KIP =  {
 KIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_knowledgeispower.anm2")
 
 function KIP:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_KIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
+	if (player:HasCollectible(CollectibleType.AGONY_C_KIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		player.Damage = player.Damage + 0.08 * player:GetNumKeys()
 	end
 end
@@ -16,7 +17,7 @@ function KIP:onUpdate(player)
 		KIP.hasItem = false
 	end
 
-	if player:HasCollectible(item_KIP) then
+	if player:HasCollectible(CollectibleType.AGONY_C_KIP) then
 		--Force the game to evaluate the cache every 10 frames, only way I found to update the stat when picking up keys
 		--Will improve the code as we get more callbacks nicolo pls
 		if Game():GetFrameCount()%10 == 0 then

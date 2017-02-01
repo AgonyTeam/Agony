@@ -1,9 +1,10 @@
-local item_RMeNow = Isaac.GetItemIdByName("Remember Me Now")
+--local item_RMeNow = Isaac.GetItemIdByName("Remember Me Now")
+CollectibleType["AGONY_C_REMEMBER_ME_NOW"] = Isaac.GetItemIdByName("Remember Me Now");
 local RMeNow =  {}
 
 function RMeNow:goBack()
 	local player = Game():GetPlayer(0)
-	player:RemoveCollectible(item_RMeNow)
+	player:RemoveCollectible(CollectibleType.AGONY_C_REMEMBER_ME_NOW)
 	local lvl = Game():GetLevel()
 	local stage = lvl:GetStage()
 	if Game():IsGreedMode() and stage > LevelStage.STAGE1_GREED then
@@ -15,4 +16,4 @@ function RMeNow:goBack()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, RMeNow.goBack, item_RMeNow)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, RMeNow.goBack, CollectibleType.AGONY_C_REMEMBER_ME_NOW)

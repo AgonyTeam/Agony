@@ -1,15 +1,16 @@
 --Credit to otherhand for the code
 local breadyMold = {}
-local itemIds = {
-    breadymold = Isaac.GetItemIdByName("Bready Mold")
-}
+--local itemIds = {
+--   breadymold = Isaac.GetItemIdByName("Bready Mold")
+--}
+CollectibleType["AGONY_C_BREADY_MOLD"] = Isaac.GetItemIdByName("Bready Mold");
 
 local breadymoldSpawned = false
 
 function breadyMold:PickedUp()
 	local player = Isaac.GetPlayer(0);
 	local game = Game()
-	if player:HasCollectible(itemIds.breadymold) then
+	if player:HasCollectible(CollectibleType.AGONY_C_BREADY_MOLD) then
 		if breadymoldSpawned == false then
 		
 		local StatRandom = math.random(7)

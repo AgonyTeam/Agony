@@ -1,4 +1,5 @@
-local item_Tourette = Isaac.GetItemIdByName("Tourette")
+--local item_Tourette = Isaac.GetItemIdByName("Tourette")
+CollectibleType["AGONY_C_TOURETTE"] = Isaac.GetItemIdByName("Tourette");
 local tourette =  {
 	TearBool = false
 }
@@ -23,7 +24,7 @@ function tourette:randomTear()
 	end
 	--if player is shooting, fire random tears
 	if (shootJoy.X ~= 0 or shootJoy.Y ~= 0) or player:HasCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE) then
-		if (player:HasCollectible(item_Tourette)) then
+		if (player:HasCollectible(CollectibleType.AGONY_C_TOURETTE)) then
 			--Take luck into account
 			local Prob = 0
 			if luckMult > 0 then

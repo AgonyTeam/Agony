@@ -1,4 +1,5 @@
-local item_OvergrownSpine = Isaac.GetItemIdByName("Overgrown Spine");
+--local item_OvergrownSpine = Isaac.GetItemIdByName("Overgrown Spine");
+CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
 local overgrownSpine =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -7,7 +8,7 @@ overgrownSpine.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_over
 
 function overgrownSpine:linkTears()
 	local player = Game():GetPlayer(0)
-	if player:HasCollectible(item_OvergrownSpine) then
+	if player:HasCollectible(CollectibleType.AGONY_C_OVERGROWN_SPINE) then
 		local entList = Isaac.GetRoomEntities()
 		local tearList = {}
 		for i = 1, #entList, 1 do
@@ -31,7 +32,7 @@ function overgrownSpine:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		overgrownSpine.hasItem = false
 	end
-	if overgrownSpine.hasItem == false and player:HasCollectible(item_OvergrownSpine) then
+	if overgrownSpine.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_OVERGROWN_SPINE) then
 		--player:AddNullCostume(overgrownSpine.costumeID)
 		overgrownSpine.hasItem = true
 	end

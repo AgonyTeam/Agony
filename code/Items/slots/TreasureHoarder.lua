@@ -47,9 +47,9 @@ function treasurehoarder:ai_main(npc)
     	-- This wont accept modded item
     	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
             local colletibles = {}
-            for i=1, CollectibleType.NUM_COLLECTIBLES do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-                if player:HasCollectible(i) then --If they have it add it to the table
-                    table.insert(colletibles, i)
+            for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
+                if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
+                    table.insert(colletibles, id)
                 end
             end
             player:RemoveCollectible(colletibles[math.random(#colletibles)]) --Randomly select a collectible from the table and remove it

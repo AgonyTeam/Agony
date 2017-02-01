@@ -1,4 +1,5 @@
-local item_SolomonCrown = Isaac.GetItemIdByName("Solomon's Crown");
+--local item_SolomonCrown = Isaac.GetItemIdByName("Solomon's Crown");
+CollectibleType["AGONY_C_SOLOMON_CROWN"] = Isaac.GetItemIdByName("Solomon's Crown");
 local solomonCrown =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
@@ -8,7 +9,7 @@ solomonCrown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_solomo
 
 --Grants +1 Luck and gives a *2 multiplier to Luck
 function solomonCrown:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(item_SolomonCrown)) and player:GetHearts() == player:GetMaxHearts()/2 then
+	if (player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN)) and player:GetHearts() == player:GetMaxHearts()/2 then
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
 			player.Luck = (player.Luck + 2);
 		end
@@ -28,7 +29,7 @@ function solomonCrown:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		solomonCrown.hasItem = false
 	end
-	if solomonCrown.hasItem == false and player:HasCollectible(item_SolomonCrown) then
+	if solomonCrown.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN) then
 		--player:AddNullCostume(solomonCrown.costumeID)
 		solomonCrown.hasItem = true
 	end
@@ -43,7 +44,7 @@ function solomonCrown:updateFireDelay(player)
 end
 
 function solomonCrown:evaluateCache(player)
-	if player:HasCollectible(item_SolomonCrown) then
+	if player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN) then
 		player:AddCacheFlags(CacheFlag.CACHE_SPEED)
 		player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
 		player:AddCacheFlags(CacheFlag.CACHE_LUCK)

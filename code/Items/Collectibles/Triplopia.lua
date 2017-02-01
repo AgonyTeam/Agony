@@ -1,4 +1,5 @@
-local item_Triplopia = Isaac.GetItemIdByName("Triplopia")
+--local item_Triplopia = Isaac.GetItemIdByName("Triplopia")
+CollectibleType["AGONY_C_TRIPLOPIA"] = Isaac.GetItemIdByName("Triplopia");
 local triplopia =  {}
 
 function triplopia:tripleAllCollectibles()
@@ -10,7 +11,7 @@ function triplopia:tripleAllCollectibles()
 			Isaac.Spawn(entList[i].Type, entList[i].Variant, entList[i].SubType, Isaac.GetFreeNearPosition(entList[i].Position, 25), Vector(0, 0), player)
 		end
 	end
-	player:RemoveCollectible(item_Triplopia)
+	player:RemoveCollectible(CollectibleType.AGONY_C_TRIPLOPIA)
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, triplopia.tripleAllCollectibles, item_Triplopia)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, triplopia.tripleAllCollectibles, CollectibleType.AGONY_C_TRIPLOPIA)
