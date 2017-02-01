@@ -1,5 +1,5 @@
-Agony = RegisterMod("The Agony of Isaac", 1);
 --StartDebug();
+Agony = RegisterMod("The Agony of Isaac", 1);
 
 --https://www.reddit.com/r/themoddingofisaac/comments/5ml25i/how_to_make_it_so_a_stat_modification_only_lasts/dc6uhnf/
 --needed to load other lua files right now and it only works when --luadebug is set in game properties
@@ -11,12 +11,11 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
-
 --Debug
 Include("Debug.lua");
 --Enemies
 Include("code/Monsters/YellowBlock.lua");
-Include("code/Monsters/EternalMonsters.lua");
+Include("code/Monsters/Eternals/RoundWorm.lua");
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
 --Items

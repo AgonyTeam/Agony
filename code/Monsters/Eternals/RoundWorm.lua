@@ -1,23 +1,21 @@
-eternalM = {
-	RoundWorm = {};
-};
-entity_roundworm = Isaac.GetEntityTypeByName("Round Worm");
+EternalRoundWorm = {};
+--entity_roundworm = Isaac.GetEntityTypeByName("Round Worm");
 
 --Eternal Round Worms
-function eternalM.RoundWorm:ai_main(entity)
+function EternalRoundWorm:ai_main(entity)
 	local room = Game():GetRoom();
 	local sprite = entity:GetSprite();
 	
 	--Replace regular entity with eternal version
 	--TODO: put in a function, unless we decide to split up Eternals into multiple files
-	if (entity.Type == entity_roundworm and math.random(10) == 1 and room:GetFrameCount() <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_ROUND_WORM and math.random(10) == 1 and room:GetFrameCount() <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
 		entity.HitPoints = 20;
 		
 	end
 	
-	if (entity.Type == entity_roundworm and entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK) then
+	if (entity.Type == EntityType.ENTITY_ROUND_WORM and entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK) then
 		local PlayerPos = entity:GetPlayerTarget().Position;
 		
 		if (sprite:IsEventTriggered("EternalShoot3") == true) then
@@ -36,4 +34,4 @@ function eternalM.RoundWorm:ai_main(entity)
 end
 
 --Callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalM.RoundWorm.ai_main, entity_roundworm);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, EternalRoundWorm.ai_main, EntityType.ENTITY_ROUND_WORM);
