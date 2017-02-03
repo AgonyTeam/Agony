@@ -34,5 +34,11 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_brothercancer.png" maxcharges="6" name="Brother Cancer" />
 	<active description="Mysterious placeholder text" gfx="collectibles_remembermenow.png" maxcharges="0" name="Remember Me Now" />
 	<active description="Mysterious placeholder text" gfx="collectibles_cornucopia.png" maxcharges="12" name="Cornucopia" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest5.png" maxcharges="3" name="Pandora's Chest     " />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest4.png" maxcharges="3" name="Pandora's Chest    " />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest3.png" maxcharges="6" name="Pandora's Chest   " />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest2.png" maxcharges="6" name="Pandora's Chest  " />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest1.png" maxcharges="12" name="Pandora's Chest " />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" />
 	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 </items>
