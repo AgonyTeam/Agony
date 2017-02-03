@@ -1,5 +1,7 @@
 --Credit to otherhand for the code
-local breadyMold = {}
+local breadyMold = {
+	seed = nil
+}
 --local itemIds = {
 --   breadymold = Isaac.GetItemIdByName("Bready Mold")
 --}
@@ -47,7 +49,10 @@ function breadyMold:PickedUp()
 end
 
 function breadyMold:checkForNewRun()
-	breadymoldSpawned = false
+	if breadyMold.seed == nil and breadyMold.seed ~= RNG():GetSeed() then
+		breadymoldSpawned = false
+		seed = RNG():GetSeed()
+	end
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, breadyMold.PickedUp)

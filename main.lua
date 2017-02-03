@@ -12,9 +12,10 @@ function Include(aFilename)
 end
 
 --Debug
-Include("Debug.lua");
+--Include("Debug.lua");
 --Enemies
 Include("code/Monsters/YellowBlock.lua");
+--Eternals
 Include("code/Monsters/Eternals/RoundWorm.lua");
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
