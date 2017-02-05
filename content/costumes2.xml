@@ -5,4 +5,5 @@
 	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="none" />
 	<costume name="Radioactive Pizza" anm2path="costume_radioactivepizza.anm2" type="none" />
 	<costume name="Tumor" anm2path="costume_tumor.anm2" type="none" />
+	<costume name="Poverty Is Power" anm2path="costume_povertyispower.anm2" type="none" />
 </costumes>

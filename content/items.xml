@@ -41,5 +41,6 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest2.png" maxcharges="6" name="Pandora's Chest  " />
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest1.png" maxcharges="12" name="Pandora's Chest " />
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" />
+	<active description="Mysterious placeholder text" gfx="collectibles_d5.png" maxcharges="6" name="D5" />
 	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 </items>

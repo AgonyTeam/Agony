@@ -18,7 +18,7 @@ function PIP:onUpdate(player)
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_PIP) then
 		if PIP.hasItem == false then
-			--player:AddNullCostume(PIP.costumeID)
+			player:AddNullCostume(PIP.costumeID)
 			PIP.hasItem = true
 		end
 		--Force the game to evaluate the cache every 10 frames, only way I found to update the stat when picking up keys
