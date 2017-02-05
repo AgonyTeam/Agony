@@ -21,7 +21,7 @@ function techninek:TearsToLaser()
 				
 				velocity = entities[i].Velocity;
 				pos = entities[i].Position;
-				if pos:Distance(player.Position) > 200 then
+				if pos:Distance(player.Position) > (125 + math.random(200)) then
 					local fire = Isaac.Spawn(1000, 52, 1, pos, Vector (0,0), player);
 					fire.CollisionDamage = player.Damage/10;
 					entities[i]:Remove()

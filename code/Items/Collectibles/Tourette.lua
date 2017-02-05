@@ -45,7 +45,7 @@ function tourette:randomTear()
 				elseif player:HasCollectible(CollectibleType.COLLECTIBLE_TECHNOLOGY) or player:HasCollectible(CollectibleType.COLLECTIBLE_TECHNOLOGY_2) then
 					player:FireTechLaser(pos, 0, vel, false, true)
 				else
-					player:FireTear(pos, vel , true, true, false)
+					player:FireTear(pos, vel, true, true, false)
 				end
 			end
 		end

@@ -7,7 +7,7 @@ local tumor =  {
 	hasItem = nil
 }
 
-tumor.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_brothercancer.anm2")
+tumor.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_tumor.anm2")
 
 function tumor:spawnTumor()
 	local player = Isaac.GetPlayer(0)
@@ -19,7 +19,7 @@ function tumor:onUpdate(player)
 		tumor.hasItem = false
 	end
 	if tumor.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TUMOR) then
-		--player:AddNullCostume(tumor.costumeID)
+		player:AddNullCostume(tumor.costumeID)
 		tumor.hasItem = true
 	end
 end
