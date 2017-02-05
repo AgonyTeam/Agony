@@ -48,7 +48,7 @@ function treasurehoarder:ai_main(npc)
     	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
             local colletibles = {}
             for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-                Isaac.DebugString(name);
+                --Isaac.DebugString(name);
 				if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
                     table.insert(colletibles, id)
                 end
@@ -117,6 +117,7 @@ function treasurehoarder:ai_main(npc)
 	
     if sprite:IsPlaying("Teleport") and treasurehoarder.isGoingToTP == true then
     	npc:Remove()
+		Agony.redoSpawnList(); --avoid respawning after teleporting away
     end
 
 end
