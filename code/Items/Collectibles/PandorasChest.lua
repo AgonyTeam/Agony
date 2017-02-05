@@ -1,9 +1,9 @@
-CollectibleType["AGONY_C_PANDORASCHEST5"] = Isaac.GetItemIdByName("Pandora's Chest     ");
-CollectibleType["AGONY_C_PANDORASCHEST4"] = Isaac.GetItemIdByName("Pandora's Chest    ");
-CollectibleType["AGONY_C_PANDORASCHEST3"] = Isaac.GetItemIdByName("Pandora's Chest   ");
-CollectibleType["AGONY_C_PANDORASCHEST2"] = Isaac.GetItemIdByName("Pandora's Chest  ");
-CollectibleType["AGONY_C_PANDORASCHEST1"] = Isaac.GetItemIdByName("Pandora's Chest ");
-CollectibleType["AGONY_C_PANDORASCHEST0"] = Isaac.GetItemIdByName("Pandora's Chest");
+CollectibleType["AGONY_C_PANDORASCHEST5"] = Isaac.GetItemIdByName("Pandora's Chest     ")
+CollectibleType["AGONY_C_PANDORASCHEST4"] = Isaac.GetItemIdByName("Pandora's Chest    ")
+CollectibleType["AGONY_C_PANDORASCHEST3"] = Isaac.GetItemIdByName("Pandora's Chest   ")
+CollectibleType["AGONY_C_PANDORASCHEST2"] = Isaac.GetItemIdByName("Pandora's Chest  ")
+CollectibleType["AGONY_C_PANDORASCHEST1"] = Isaac.GetItemIdByName("Pandora's Chest ")
+CollectibleType["AGONY_C_PANDORASCHEST0"] = Isaac.GetItemIdByName("Pandora's Chest")
 
 
 local pandorasChest = {

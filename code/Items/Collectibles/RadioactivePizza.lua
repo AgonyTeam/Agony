@@ -2,8 +2,11 @@
 CollectibleType["AGONY_C_RADIOACTIVE_PIZZA"] = Isaac.GetItemIdByName("Radioactive Pizza");
 local radioactivePizza =  {
 	TearBool = false,
-	bonus = 0
+	bonus = 0,
+	hasItem = nil, --used for costume
+	costumeID = nil
 }
+radioactivePizza.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_radioactivepizza.anm2")
 
 --Gives a bonus to one stat, a malus to another one
 function radioactivePizza:cacheUpdate(player,cacheFlag)
@@ -49,5 +52,15 @@ function radioactivePizza:updateFireDelay(player)
 	end
 end
 
+function radioactivePizza:onUpdate(player)
+	if Game():GetFrameCount() == 1 then
+		radioactivePizza.hasItem = false
+	end
+	if radioactivePizza.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_RADIOACTIVE_PIZZA) then
+		player:AddNullCostume(radioactivePizza.costumeID)
+		radioactivePizza.hasItem = true
+	end
+end
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, radioactivePizza.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.updateFireDelay)

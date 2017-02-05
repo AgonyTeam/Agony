@@ -3,4 +3,5 @@
 	<costume name="Gasoline Juicebox" anm2path="costume_gasolinejuicebox.anm2" type="none" hasSkinAlt="true"/>
 	<costume name="Double Down" anm2path="costume_doubledown.anm2" type="none" hasSkinAlt="true"/>
 	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="none" />
+	<costume name="Radioactive Pizza" anm2path="costume_radioactivepizza.anm2" type="none" />
 </costumes>

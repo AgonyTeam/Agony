@@ -21,6 +21,7 @@
         <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Brother Cancer" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Pandora's Chest" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -48,6 +49,7 @@
         <Item Name="Runestone" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Cyanide" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Pandora's Chest" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="library">
     </Pool>
