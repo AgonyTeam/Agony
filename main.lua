@@ -62,6 +62,7 @@ Include("code/Items/Collectibles/Despair.lua");
 Include("code/Items/Collectibles/D5.lua");
 Include("code/Items/Collectibles/SpecialOne.lua");
 --Include("code/Items/Collectibles/TheLudovicoExperiment.lua"); --This needs to be reworked, it's not an interesting item atm
+Include("code/Items/Collectibles/Ferrofluid.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
