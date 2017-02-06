@@ -79,9 +79,11 @@ end
 local ent_before = {};
 local rspwn_allow = false;
 saveData.spwn_list = saveData.spwn_list or {}; --either load list from save, or make an empty one
+saveData.rseed_list = saveData.rseed_list or {};
 local level_seed_backup = 666;
 local redo = false;
 local redo2 = false;
+local glowingHourglass_allow = true;
 
 local respawnIDs = { --holds all IDs that need to be respawned
 	EntityType.AGONY_ETYPE_TREASURE_HOARDER,
@@ -112,7 +114,9 @@ function Agony:respawnV2()
 	
 	if(Game():GetFrameCount() == 1 or (level_seed ~= level_seed_backup and Game():GetFrameCount() > 1)) then --reset vars and delete savedata when restarting run and entering a new level
 		saveData.spwn_list = {};
+		saveData.rseed_list = {};
 		rspwn_allow = false;
+		glowingHourglass_allow = true;
 		ent_before = {};
 		--Isaac.RemoveModData(Agony);
 		SaveNow();
@@ -124,6 +128,12 @@ function Agony:respawnV2()
 		if (room:IsFirstVisit() == false and room:IsClear() == true and saveData.spwn_list[i] == room_seed and room:GetFrameCount() == 1) then
 			rspwn_allow = true;
 		end	
+	end
+	
+	for i=1, #saveData.rseed_list do
+		if (saveData.rseed_list[i] == room_seed) then
+			glowingHourglass_allow = false;
+		end
 	end
 	
 	if (redo == true) then
@@ -152,8 +162,9 @@ function Agony:respawnV2()
 			end	
 		end
 		rspwn_allow = false; --avoid looping the respawn and remove
-	elseif ((room:IsFirstVisit() == true and room:GetFrameCount() == 1) or redo2 == true) then --check if new room has respawnable entity inside, only once on the first room entry
+	elseif ((room:IsFirstVisit() == true and room:GetFrameCount() == 1 and glowingHourglass_allow == true) or redo2 == true) then --check if new room has respawnable entity inside, only once on the first room entry
 		ent_before = Isaac.GetRoomEntities();
+		table.insert(saveData.rseed_list, 1 ,room_seed)
 		for i = 1, #ent_before do
 			for j=1, #respawnIDs do
 				if (ent_before[i].Type == respawnIDs[j]) then
@@ -169,6 +180,8 @@ function Agony:respawnV2()
 		--Isaac.SaveModData(Agony, table_tostring(spwn_list)); --save the latest table for the case of game exit
 		redo2 = false;
 		SaveNow();
+	elseif (room:GetFrameCount() > 10 and glowingHourglass_allow == false) then
+		glowingHourglass_allow = true;
 	end
 end
 
