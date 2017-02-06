@@ -9,10 +9,10 @@ leprechaunContract.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_
 function leprechaunContract:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_LEPRECHAUNS_CONTRACT)) then
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
-			player.Luck = player.Luck + player.Damage*2 
+			player.Luck = player.Luck + player.Damage*2
 		end
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = player.Damage * 0.5 
+			player.Damage = player.Damage * 0.75
 		end
 	end
 end
@@ -22,7 +22,7 @@ function leprechaunContract:onUpdate(player)
 		leprechaunContract.hasItem = false
 	end
 	if leprechaunContract.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_LEPRECHAUNS_CONTRACT) then
-		player:AddNullCostume(leprechaunContract.costumeID)
+		--player:AddNullCostume(leprechaunContract.costumeID)
 		leprechaunContract.hasItem = true
 	end
 end
