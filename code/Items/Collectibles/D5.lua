@@ -27,4 +27,5 @@ function dfive:rerollhearts(player)
 	end
 end
 
+
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dfive.rerollhearts, CollectibleType.AGONY_C_D5)

@@ -12,7 +12,6 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
-
 --Debug
 Include("Debug.lua");
 --Enemies
@@ -64,6 +63,7 @@ Include("code/Items/Collectibles/SpecialOne.lua");
 --Include("code/Items/Collectibles/TheLudovicoExperiment.lua"); --This needs to be reworked, it's not an interesting item atm
 Include("code/Items/Collectibles/Ferrofluid.lua");
 Include("code/Items/Collectibles/LeprechaunsContract.lua");
+Include("code/Items/Collectibles/FragileConception.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
