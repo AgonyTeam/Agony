@@ -13,13 +13,18 @@ function Include(aFilename)
 end
 
 --SaveData
+local newestSaveVer = 1;
 if Isaac.HasModData(Agony) then
 	saveData = json.decode(Isaac.LoadModData(Agony));
+	if saveData.saveVer == nil or saveData.saveVer ~= newestSaveVer then
+		saveData = {saveVer = newestSaveVer};
+	end
 else
-	saveData = {};
+	saveData = {saveVer = newestSaveVer};
 end
 
 saveData.gasolinejb = saveData.gasolinejb or {};
+saveData.radioactivePizza = saveData.radioactivePizza or {};
 
 --Debug
 Include("Debug.lua");
