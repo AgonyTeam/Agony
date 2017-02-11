@@ -163,9 +163,6 @@ function gasolinejb:updateFireDelay()
 	local player = Isaac.GetPlayer(0);
 	if (gasolinejb.TearBool == true) then
 		player.MaxFireDelay = player.MaxFireDelay * 1.5 + 2;
-		if gasolinejb.hasLudo then
-			player.MaxFireDelay = 999999999
-		end
 		gasolinejb.TearBool = false;
 	end
 end
@@ -175,9 +172,6 @@ end
 function gasolinejb:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		gasolinejb.hasItem = false
-		gasolinejb.hasLudo = false
-		saveData.gasolinejb.hasLudo = false
-		Agony:SaveNow();
 	end
 	if gasolinejb.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) then
 		player:AddNullCostume(gasolinejb.costumeID)
@@ -186,11 +180,17 @@ function gasolinejb:onUpdate(player)
 end
 
 function gasolinejb:reset(player)
-	if gasolinejb.seed == nil then
-		gasolinejb.seed = RNG():GetSeed()
-	elseif gasolinejb.seed ~= RNG():GetSeed() then
+	if Game():GetFrameCount() <= 1 then
 		gasolinejb.hasLudo = false
-		gasolinejb.seed = RNG():GetSeed()
+		saveData.gasolinejb.hasLudo = false
+		Agony:SaveNow();
+	end
+end
+
+function gasolinejb:prohibitTears()
+	local player = Isaac.GetPlayer(0)
+	if gasolinejb.hasLudo then
+		player.FireDelay = 1337;
 	end
 end
 
@@ -211,3 +211,4 @@ Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.restoreLudo);
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.prohibitTears);
