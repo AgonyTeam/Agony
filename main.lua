@@ -12,6 +12,15 @@ function Include(aFilename)
   dofile( ("%s%s"):format(baseDir, aFilename) )
 end
 
+--SaveData
+if Isaac.HasModData(Agony) then
+	saveData = json.decode(Isaac.LoadModData(Agony));
+else
+	saveData = {};
+end
+
+saveData.gasolinejb = saveData.gasolinejb or {};
+
 --Debug
 Include("Debug.lua");
 --Enemies
@@ -69,13 +78,6 @@ Include("code/Items/Collectibles/FragileConception.lua");
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 
---SaveData
-if Isaac.HasModData(Agony) then
-	saveData = json.decode(Isaac.LoadModData(Agony));
-else
-	saveData = {};
-end
-
 --respawnV2's vars
 local ent_before = {};
 local rspwn_allow = false;
@@ -92,7 +94,7 @@ local respawnIDs = { --holds all IDs that need to be respawned
 }
 
 --make the game save the saveData table
-function SaveNow()
+function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
 end
 
@@ -120,7 +122,7 @@ function Agony:respawnV2()
 		glowingHourglass_allow = true;
 		ent_before = {};
 		--Isaac.RemoveModData(Agony);
-		SaveNow();
+		Agony:SaveNow();
 		level_seed_backup = level_seed;
 	end
 
@@ -180,7 +182,7 @@ function Agony:respawnV2()
 		end
 		--Isaac.SaveModData(Agony, table_tostring(spwn_list)); --save the latest table for the case of game exit
 		redo2 = false;
-		SaveNow();
+		Agony:SaveNow();
 	elseif (room:GetFrameCount() > 10 and glowingHourglass_allow == false) then
 		glowingHourglass_allow = true;
 	end
