@@ -169,6 +169,9 @@ end
 function gasolinejb:onUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		gasolinejb.hasItem = false
+		gasolinejb.hasLudo = false
+		saveData.gasolinejb.hasLudo = false
+		Agony:SaveNow();
 	end
 	if gasolinejb.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) then
 		player:AddNullCostume(gasolinejb.costumeID)
