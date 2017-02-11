@@ -194,8 +194,20 @@ function gasolinejb:reset(player)
 	end
 end
 
+function gasolinejb:restoreLudo()
+	local player = Isaac.GetPlayer(0)
+	if (not player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) and gasolinejb.hasLudo == true) then
+		player:AddCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE, 0, false)
+		player.FireDelay = 0;
+		gasolinejb.hasLudo = false
+		saveData.gasolinejb.hasLudo = false
+		Agony:SaveNow()
+	end
+end
+
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, gasolinejb.reset)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.restoreLudo);
