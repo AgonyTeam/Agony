@@ -8,7 +8,6 @@ local gasolinejb = {
 	hasLudo = saveData.gasolinejb.hasLudo or false,
 	seed = nil,
 	ludoFire = nil,
-	ludoFirePos = nil,
 	roomID = nil
 };
 gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
@@ -122,14 +121,21 @@ function gasolinejb:TearsToFlames()
 			end
 			if gasolinejb.ludoFire == nil then
 				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, player.Position, Vector(0,0), player);
+				if player:HasCollectible(CollectibleType.COLLECTIBLE_CANDLE) then
+					gasolinejb.ludoFire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire_blue.png")
+					gasolinejb.ludoFire:GetSprite():LoadGraphics()
+				end
 				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
-				gasolinejb.ludoFirePos = player.Position
 				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
 				gasolinejb.ludoFire.GridCollisionClass = -1 --nicolo why u hiding shit from us, this is undocumented
 			elseif gasolinejb.ludoFire.FrameCount > math.random(120) then
 				--debug_text = tostring(gasolinejb.ludoFire.Velocity.X) .. " " .. tostring(gasolinejb.ludoFire.Velocity.Y) .. " " .. tostring(gasolinejb.ludoFire.GridCollisionClass)
 				gasolinejb.ludoFire.SpriteScale = Vector(1,1)
 				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, gasolinejb.ludoFire.Position, gasolinejb.ludoFire.Velocity, player);
+				if player:HasCollectible(CollectibleType.COLLECTIBLE_CANDLE) then
+					gasolinejb.ludoFire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire_blue.png")
+					gasolinejb.ludoFire:GetSprite():LoadGraphics()
+				end
 				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
 				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
 				gasolinejb.ludoFire.GridCollisionClass = -1 --this apparently is the "COLLISION_WALLS_ONLY" mode, but nicolo didn't tell us
