@@ -23,7 +23,7 @@ function ferrofluid:onUpdate(player)
 		ferrofluid.hasItem = false
 	end
 	if ferrofluid.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_FERROFLUID) then
-		--player:AddNullCostume(ferrofluid.costumeID)
+		player:AddNullCostume(ferrofluid.costumeID)
 		ferrofluid.hasItem = true
 	end
 end
