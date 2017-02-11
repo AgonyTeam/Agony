@@ -38,6 +38,7 @@ function ferrofluid:updateFireDelay()
 end
 
 function ferrofluid:attractTears()
+	local player = Isaac.GetPlayer(0);
 	if player:HasCollectible(CollectibleType.AGONY_C_FERROFLUID) then
 		local entities = Isaac.GetRoomEntities()
 		for i = 1, #entities do
