@@ -7,13 +7,10 @@ local breadyMold = {
 --}
 CollectibleType["AGONY_C_BREADY_MOLD"] = Isaac.GetItemIdByName("Bready Mold");
 
-local breadymoldSpawned = false
-
 function breadyMold:PickedUp()
 	local player = Isaac.GetPlayer(0);
 	local game = Game()
 	if player:HasCollectible(CollectibleType.AGONY_C_BREADY_MOLD) then
-		if breadymoldSpawned == false then
 		
 		local StatRandom = math.random(7)
 		local r2 = nil 
@@ -43,17 +40,8 @@ function breadyMold:PickedUp()
 			Isaac.Spawn(5, 350, 32, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 			end
 		--Game():GetPlayer(0):AddNullCostume(bmoldcostume)
-		breadymoldSpawned = true
-		end
-	end
-end
-
-function breadyMold:checkForNewRun()
-	if breadyMold.seed == nil and breadyMold.seed ~= RNG():GetSeed() then
-		breadymoldSpawned = false
-		seed = RNG():GetSeed()
+			player:RemoveCollectible(CollectibleType.AGONY_C_BREADY_MOLD)
 	end
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, breadyMold.PickedUp)
-Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, breadyMold.checkForNewRun)

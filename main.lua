@@ -64,6 +64,7 @@ Include("code/Items/Collectibles/SpecialOne.lua");
 Include("code/Items/Collectibles/Ferrofluid.lua");
 Include("code/Items/Collectibles/LeprechaunsContract.lua");
 Include("code/Items/Collectibles/FragileConception.lua");
+--Include("code/Items/Collectibles/TheLudovicoTheory.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");

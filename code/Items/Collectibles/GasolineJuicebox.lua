@@ -4,7 +4,12 @@ CollectibleType["AGONY_C_GASOLINE_JB"] = Isaac.GetItemIdByName("Gasoline Juicebo
 local gasolinejb = {
 	TearBool = false,
 	hasItem = nil,
-	costumeID = nil
+	costumeID = nil,
+	hasLudo = false,
+	seed = nil,
+	ludoFire = nil,
+	ludoFirePos = nil,
+	roomID = nil
 };
 gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
 
@@ -109,7 +114,40 @@ function gasolinejb:TearsToFlames()
 				end
 			end
 		end
+
+		-- Ludo Synergy
+		if player:HasCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE) then
+			gasolinejb:ludoSynergy()
+		end
+		if gasolinejb.hasLudo then
+			if gasolinejb.roomID == nil or gasolinejb.roomID ~= Game():GetLevel():GetCurrentRoomIndex() then 
+				gasolinejb.ludoFire = nil
+				gasolinejb.roomID = Game():GetLevel():GetCurrentRoomIndex()
+			end
+			if gasolinejb.ludoFire == nil then
+				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, player.Position, Vector(0,0), player);
+				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
+				gasolinejb.ludoFirePos = player.Position
+				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
+			elseif gasolinejb.ludoFire.FrameCount > math.random(120) then
+				gasolinejb.ludoFire.SpriteScale = Vector(1,1)
+				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, player.Position, Vector(0,0), player);
+				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
+				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
+			end
+			gasolinejb.ludoFirePos = gasolinejb.ludoFirePos:__add(player:GetShootingJoystick():__mul(5*player.ShotSpeed))
+			gasolinejb.ludoFire.Position = gasolinejb.ludoFirePos
+		end
 	end
+end
+
+function gasolinejb:ludoSynergy()
+	local player = Game():GetPlayer(0)
+	player:RemoveCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE)
+	gasolinejb.hasLudo = true
+	gasolinejb.TearBool = true
+	player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
+	player:EvaluateItems()
 end
 
 --FireDelay workaround
@@ -117,6 +155,9 @@ function gasolinejb:updateFireDelay()
 	local player = Isaac.GetPlayer(0);
 	if (gasolinejb.TearBool == true) then
 		player.MaxFireDelay = player.MaxFireDelay * 1.5 + 2;
+		if gasolinejb.hasLudo then
+			player.MaxFireDelay = 999999999
+		end
 		gasolinejb.TearBool = false;
 	end
 end
@@ -133,6 +174,16 @@ function gasolinejb:onUpdate(player)
 	end
 end
 
+function gasolinejb:reset(player)
+	if gasolinejb.seed == nil then
+		gasolinejb.seed = RNG():GetSeed()
+	elseif gasolinejb.seed ~= RNG():GetSeed() then
+		gasolinejb.hasLudo = false
+		gasolinejb.seed = RNG():GetSeed()
+	end
+end
+
+Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, gasolinejb.reset)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
