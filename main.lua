@@ -78,8 +78,7 @@ Include("code/Items/Collectibles/SpecialOne.lua");
 Include("code/Items/Collectibles/Ferrofluid.lua");
 Include("code/Items/Collectibles/LeprechaunsContract.lua");
 Include("code/Items/Collectibles/FragileConception.lua");
---Include("code/Items/Collectibles/TheLudovicoTheory.lua"); --God damn these Ludovico variation are hard to get right
-Include("code/Items/Collectibles/RigidMind.lua")
+--Include("code/Items/Collectibles/TheLudovicoTheory.lua");
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
