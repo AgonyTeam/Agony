@@ -31,6 +31,7 @@
 	<passive name="Fragile Conception" description="Mysterious placeholder text" gfx="collectibles_fragileconception.png" />
 	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
 	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
+	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
