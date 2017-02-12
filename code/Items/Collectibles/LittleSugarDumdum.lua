@@ -34,7 +34,7 @@ function LSD:DistortPlayer(player)
 	end
 end
 
-function LSD:StartTheParty()
+function LSD:onUse()
 	--LSD.IsTimeToParty = true
 	local player = Isaac.GetPlayer(0);
 	LSD.Room = Game():GetLevel():GetCurrentRoomIndex()
@@ -83,5 +83,5 @@ end
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, LSD.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, LSD.DistortEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, LSD.DistortPlayer)
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, LSD.StartTheParty, CollectibleType.AGONY_C_LSD)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, LSD.onUse, CollectibleType.AGONY_C_LSD)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, LSD.StopTheParty)

@@ -15,7 +15,7 @@ function bigGuy:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function bigGuy:onUpdate(player)
+function bigGuy:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		bigGuy.hasItem = false
 	end
@@ -25,5 +25,5 @@ function bigGuy:onUpdate(player)
 		bigGuy.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, bigGuy.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, bigGuy.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, bigGuy.cacheUpdate)

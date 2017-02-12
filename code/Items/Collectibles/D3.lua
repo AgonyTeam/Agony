@@ -2,7 +2,8 @@
 CollectibleType["AGONY_C_D3"] = Isaac.GetItemIdByName("D3");
 local dthree =  {}
 
-function dthree:rerollColl()
+function dthree:onUse()
+    --Reroll a random item ont he player
 	local player = Game():GetPlayer(0)
 	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
 	    local colletibles = {}
@@ -17,4 +18,4 @@ function dthree:rerollColl()
 	return true
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dthree.rerollColl, CollectibleType.AGONY_C_D3)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dthree.onUse, CollectibleType.AGONY_C_D3)

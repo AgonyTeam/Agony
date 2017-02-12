@@ -7,7 +7,7 @@ local pythB =  {
 pythB.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_pythagorebody.anm2")
 
 
-function pythB:onUpdate(player)
+function pythB:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		pythB.hasItem = false
 	end
@@ -26,4 +26,4 @@ function pythB:ExplodeOnDeath(hurtEntity, dmgAmount, dmgFlags, source, countdown
 end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, pythB.ExplodeOnDeath)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, pythB.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, pythB.onPlayerUpdate)

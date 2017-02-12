@@ -14,7 +14,7 @@ function luckyLeg:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function luckyLeg:onUpdate(player)
+function luckyLeg:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		luckyLeg.hasItem = false
 	end
@@ -23,5 +23,5 @@ function luckyLeg:onUpdate(player)
 		luckyLeg.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, luckyLeg.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, luckyLeg.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, luckyLeg.cacheUpdate)

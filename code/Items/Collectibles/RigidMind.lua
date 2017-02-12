@@ -20,7 +20,7 @@ function rigidMind:FireRightAngledTears()
 	end
 end
 
-function rigidMind:onUpdate(player)
+function rigidMind:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		rigidMind.hasItem = false
 	end
@@ -31,4 +31,4 @@ function rigidMind:onUpdate(player)
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, rigidMind.FireRightAngledTears)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, rigidMind.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, rigidMind.onPlayerUpdate)

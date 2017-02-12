@@ -2,7 +2,8 @@
 CollectibleType["AGONY_C_CYANIDE"] = Isaac.GetItemIdByName("Cyanide");
 local cyanide =  {}
 
-function cyanide:killPlayer()
+function cyanide:onUse()
+	--Teleports the player to the void and emoves the item
 	local player = Game():GetPlayer(0)
 	player:RemoveCollectible(CollectibleType.AGONY_C_CYANIDE)
 	for i = 1, 5, 1 do
@@ -11,4 +12,4 @@ function cyanide:killPlayer()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, cyanide.killPlayer, CollectibleType.AGONY_C_CYANIDE)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, cyanide.onUse, CollectibleType.AGONY_C_CYANIDE)

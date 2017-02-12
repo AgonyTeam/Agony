@@ -2,7 +2,7 @@
 CollectibleType["AGONY_C_REMEMBER_ME_NOW"] = Isaac.GetItemIdByName("Remember Me Now");
 local RMeNow =  {}
 
-function RMeNow:goBack()
+function RMeNow:onUse()
 	local player = Game():GetPlayer(0)
 	player:RemoveCollectible(CollectibleType.AGONY_C_REMEMBER_ME_NOW)
 	local lvl = Game():GetLevel()
@@ -16,4 +16,4 @@ function RMeNow:goBack()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, RMeNow.goBack, CollectibleType.AGONY_C_REMEMBER_ME_NOW)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, RMeNow.onUse, CollectibleType.AGONY_C_REMEMBER_ME_NOW)

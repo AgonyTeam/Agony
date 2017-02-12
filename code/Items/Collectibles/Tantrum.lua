@@ -8,7 +8,7 @@ local tantrum =  {
 }
 tantrum.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_hyperactive.anm2")
 
-function tantrum:onUpdate(player)
+function tantrum:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		tantrum.hasItem = false
 	end
@@ -35,4 +35,4 @@ function tantrum:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, tantrum.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, tantrum.onPlayerUpdate)

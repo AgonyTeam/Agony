@@ -2,7 +2,7 @@
 CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
 local loadedDice =  {}
 
-function loadedDice:rerollIntoButterBean()
+function loadedDice:onUse()
 	local ent = Isaac.GetRoomEntities()
 	for i = 1, #ent, 1 do
 		if ent[i].Type == 5 and ent[i].Variant == 100 then
@@ -12,4 +12,4 @@ function loadedDice:rerollIntoButterBean()
 	return true
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, loadedDice.rerollIntoButterBean, CollectibleType.AGONY_C_LOADED_DICE)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, loadedDice.onUse, CollectibleType.AGONY_C_LOADED_DICE)

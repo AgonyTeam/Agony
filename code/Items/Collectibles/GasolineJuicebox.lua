@@ -14,7 +14,7 @@ gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasoline
 
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
-	
+	--Damage and firedelay down
 	if (player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) == true) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 			player.Damage = player.Damage - 1;
@@ -169,7 +169,7 @@ end
 
 
 --Checks if player has item, and gives him the costume
-function gasolinejb:onUpdate(player)
+function gasolinejb:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		gasolinejb.hasItem = false
 	end
@@ -206,7 +206,7 @@ function gasolinejb:restoreLudo()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, gasolinejb.reset)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);

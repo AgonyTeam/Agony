@@ -12,7 +12,7 @@ function WIP:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function WIP:onUpdate(player)
+function WIP:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		WIP.hasItem = false
 	end
@@ -30,5 +30,5 @@ function WIP:onUpdate(player)
 		end
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, WIP.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, WIP.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, WIP.cacheUpdate)

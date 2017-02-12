@@ -12,7 +12,7 @@ function KIP:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function KIP:onUpdate(player)
+function KIP:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		KIP.hasItem = false
 	end
@@ -31,5 +31,5 @@ function KIP:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, KIP.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, KIP.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, KIP.cacheUpdate)

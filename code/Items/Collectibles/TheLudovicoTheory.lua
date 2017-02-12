@@ -30,7 +30,7 @@ function ludovicoTheory:SimulateTears()
 	end
 end
 
-function ludovicoTheory:onUpdate(player)
+function ludovicoTheory:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		ludovicoTheory.hasItem = false
 	end
@@ -41,4 +41,4 @@ function ludovicoTheory:onUpdate(player)
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ludovicoTheory.SimulateTears)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ludovicoTheory.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ludovicoTheory.onPlayerUpdate)

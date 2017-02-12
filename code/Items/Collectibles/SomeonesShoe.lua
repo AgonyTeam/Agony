@@ -21,7 +21,8 @@ local someonesshoe = {
 	}
 };
 
-function someonesshoe:switchPlace()
+function someonesshoe:onUse()
+	--Switch places with furthest away enemy
 	local player = Isaac.GetPlayer(0);
 	
 	local targetEnt = Agony:getFurthestEnemy(player, someonesshoe.wList, someonesshoe.bList);
@@ -47,5 +48,5 @@ function someonesshoe:fillCharge()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, someonesshoe.switchPlace, CollectibleType.AGONY_C_SOMEONES_SHOE)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, someonesshoe.onUse, CollectibleType.AGONY_C_SOMEONES_SHOE)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, someonesshoe.fillCharge)

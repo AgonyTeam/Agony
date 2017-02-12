@@ -8,6 +8,7 @@ local ferrofluid =  {
 ferrofluid.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_ferrofluid.anm2")
 
 function ferrofluid:cacheUpdate (player,cacheFlag)
+	--Damage and tears up
 	if (player:HasCollectible(CollectibleType.AGONY_C_FERROFLUID)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 			player.Damage = player.Damage + 1.69;
@@ -18,7 +19,7 @@ function ferrofluid:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function ferrofluid:onUpdate(player)
+function ferrofluid:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		ferrofluid.hasItem = false
 	end
@@ -37,7 +38,8 @@ function ferrofluid:updateFireDelay()
 	end
 end
 
-function ferrofluid:attractTears()
+function ferrofluid:onUpdate()
+	--Tears attract each other
 	local player = Isaac.GetPlayer(0);
 	if player:HasCollectible(CollectibleType.AGONY_C_FERROFLUID) then
 		local entities = Isaac.GetRoomEntities()
@@ -53,7 +55,7 @@ function ferrofluid:attractTears()
 	end	
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.attractTears)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ferrofluid.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ferrofluid.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ferrofluid.cacheUpdate)

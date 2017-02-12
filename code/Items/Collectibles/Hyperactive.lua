@@ -26,7 +26,7 @@ function hyperactive:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function hyperactive:onUpdate(player)
+function hyperactive:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		hyperactive.hasItem = false
 	end
@@ -45,6 +45,6 @@ function hyperactive:updateFireDelay(player)
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, hyperactive.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, hyperactive.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, hyperactive.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, hyperactive.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, hyperactive.autoUseItem)

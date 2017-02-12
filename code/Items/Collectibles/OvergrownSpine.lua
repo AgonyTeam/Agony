@@ -28,7 +28,7 @@ function overgrownSpine:linkTears()
 end
 
 
-function overgrownSpine:onUpdate(player)
+function overgrownSpine:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		overgrownSpine.hasItem = false
 	end
@@ -37,5 +37,5 @@ function overgrownSpine:onUpdate(player)
 		overgrownSpine.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, overgrownSpine.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, overgrownSpine.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, overgrownSpine.linkTears)

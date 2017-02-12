@@ -8,7 +8,7 @@ local ludoExp =  {
 }
 ludoExp.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_theludovicoexperiment.anm2")
 
-function ludoExp:onUpdate(player)
+function ludoExp:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		ludoExp.hasItem = false
 	end
@@ -51,4 +51,4 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ludoExp.attractTears)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ludoExp.cacheUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ludoExp.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ludoExp.onPlayerUpdate)

@@ -15,7 +15,7 @@ function doubleDown:cacheUpdate (player,cacheFlag)
 end
 
 -- Doubles damage taken
-function doubleDown:doubleDmgTaken(entity,dmgAmount)
+function doubleDown:onTakeDmg(entity,dmgAmount)
 	local player = Isaac.GetPlayer(0);
 	if player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) then
 		for i=1, dmgAmount do
@@ -30,7 +30,7 @@ function doubleDown:doubleDmgTaken(entity,dmgAmount)
 	return true
 end
 
-function doubleDown:onUpdate(player)
+function doubleDown:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		doubleDown.hasItem = false
 	end
@@ -39,6 +39,6 @@ function doubleDown:onUpdate(player)
 		doubleDown.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, doubleDown.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, doubleDown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, doubleDown.cacheUpdate)
-Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, doubleDown.doubleDmgTaken, EntityType.ENTITY_PLAYER)
+Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, doubleDown.onTakeDmg, EntityType.ENTITY_PLAYER)
