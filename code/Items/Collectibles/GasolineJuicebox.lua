@@ -5,10 +5,9 @@ local gasolinejb = {
 	TearBool = false,
 	hasItem = nil,
 	costumeID = nil,
-	hasLudo = false,
+	hasLudo = saveData.gasolinejb.hasLudo or false,
 	seed = nil,
 	ludoFire = nil,
-	ludoFirePos = nil,
 	roomID = nil
 };
 gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
@@ -71,13 +70,9 @@ function gasolinejb:TearsToFlames()
 			--Fires dissappear after time, unless isaac has the red candle
 			if (entities[i].Type == 1000 and entities[i].Variant == 52 and (entities[i].SpawnerType == 1 or entities[i].SpawnerType == 3) and entities[i].SubType == 1 and not player:HasCollectible(CollectibleType.COLLECTIBLE_RED_CANDLE)) then
 				if (entities[i].FrameCount % 100 == 0) then
-					if (entities[i]:GetSprite():IsPlaying("FireStage00") == true) then
-						entities[i]:GetSprite():Play("FireStage01");
-					elseif (entities[i]:GetSprite():IsPlaying("FireStage01") == true) then
-						entities[i]:GetSprite():Play("FireStage02");
-					elseif (entities[i]:GetSprite():IsPlaying("FireStage02") == true) then
-						entities[i]:GetSprite():Play("FireStage03");
-					elseif (entities[i]:GetSprite():IsPlaying("FireStage03") == true) then
+					entities[i]:ToEffect().State = entities[i]:ToEffect().State + 1;
+					entities[i]:GetSprite():Play("FireStage0" .. tostring(entities[i]:ToEffect().State - 1));
+					if (entities[i]:ToEffect().State >= 5) then
 						entities[i]:Remove();
 					end
 				end
@@ -126,17 +121,28 @@ function gasolinejb:TearsToFlames()
 			end
 			if gasolinejb.ludoFire == nil then
 				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, player.Position, Vector(0,0), player);
+				if player:HasCollectible(CollectibleType.COLLECTIBLE_CANDLE) then
+					gasolinejb.ludoFire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire_blue.png")
+					gasolinejb.ludoFire:GetSprite():LoadGraphics()
+				end
 				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
-				gasolinejb.ludoFirePos = player.Position
 				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
+				gasolinejb.ludoFire.GridCollisionClass = -1 --nicolo why u hiding shit from us, this is undocumented
 			elseif gasolinejb.ludoFire.FrameCount > math.random(120) then
+				--debug_text = tostring(gasolinejb.ludoFire.Velocity.X) .. " " .. tostring(gasolinejb.ludoFire.Velocity.Y) .. " " .. tostring(gasolinejb.ludoFire.GridCollisionClass)
 				gasolinejb.ludoFire.SpriteScale = Vector(1,1)
-				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, player.Position, Vector(0,0), player);
+				gasolinejb.ludoFire = Isaac.Spawn(1000, 52, 1, gasolinejb.ludoFire.Position, gasolinejb.ludoFire.Velocity, player);
+				if player:HasCollectible(CollectibleType.COLLECTIBLE_CANDLE) then
+					gasolinejb.ludoFire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire_blue.png")
+					gasolinejb.ludoFire:GetSprite():LoadGraphics()
+				end
 				gasolinejb.ludoFire.SpriteScale = Vector(2,2)
 				gasolinejb.ludoFire.CollisionDamage = player.Damage/3
+				gasolinejb.ludoFire.GridCollisionClass = -1 --this apparently is the "COLLISION_WALLS_ONLY" mode, but nicolo didn't tell us
 			end
-			gasolinejb.ludoFirePos = gasolinejb.ludoFirePos:__add(player:GetShootingJoystick():__mul(5*player.ShotSpeed))
-			gasolinejb.ludoFire.Position = gasolinejb.ludoFirePos
+			if player:GetShootingJoystick().X ~= 0 or player:GetShootingJoystick().Y ~= 0 then
+				gasolinejb.ludoFire.Velocity = player:GetShootingJoystick():__mul(5*player.ShotSpeed)
+			end
 		end
 	end
 end
@@ -145,6 +151,8 @@ function gasolinejb:ludoSynergy()
 	local player = Game():GetPlayer(0)
 	player:RemoveCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE)
 	gasolinejb.hasLudo = true
+	saveData.gasolinejb.hasLudo = true
+	Agony:SaveNow();
 	gasolinejb.TearBool = true
 	player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
 	player:EvaluateItems()
@@ -155,9 +163,6 @@ function gasolinejb:updateFireDelay()
 	local player = Isaac.GetPlayer(0);
 	if (gasolinejb.TearBool == true) then
 		player.MaxFireDelay = player.MaxFireDelay * 1.5 + 2;
-		if gasolinejb.hasLudo then
-			player.MaxFireDelay = 999999999
-		end
 		gasolinejb.TearBool = false;
 	end
 end
@@ -175,11 +180,28 @@ function gasolinejb:onUpdate(player)
 end
 
 function gasolinejb:reset(player)
-	if gasolinejb.seed == nil then
-		gasolinejb.seed = RNG():GetSeed()
-	elseif gasolinejb.seed ~= RNG():GetSeed() then
+	if Game():GetFrameCount() <= 1 then
 		gasolinejb.hasLudo = false
-		gasolinejb.seed = RNG():GetSeed()
+		saveData.gasolinejb.hasLudo = false
+		Agony:SaveNow();
+	end
+end
+
+function gasolinejb:prohibitTears()
+	local player = Isaac.GetPlayer(0)
+	if gasolinejb.hasLudo then
+		player.FireDelay = 1337;
+	end
+end
+
+function gasolinejb:restoreLudo()
+	local player = Isaac.GetPlayer(0)
+	if (not player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) and gasolinejb.hasLudo == true) then
+		player:AddCollectible(CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE, 0, false)
+		player.FireDelay = 0;
+		gasolinejb.hasLudo = false
+		saveData.gasolinejb.hasLudo = false
+		Agony:SaveNow()
 	end
 end
 
@@ -188,3 +210,5 @@ Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.restoreLudo);
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.prohibitTears);
