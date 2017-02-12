@@ -81,6 +81,7 @@ Include("code/Items/Collectibles/FragileConception.lua");
 --Include("code/Items/Collectibles/TheLudovicoTheory.lua"); --God damn these Ludovico variation are hard to get right
 Include("code/Items/Collectibles/RigidMind.lua")
 Include("code/Items/Collectibles/DiceTattoo.lua")
+Include("code/Items/Collectibles/SomeonesShoe.lua")
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
@@ -224,6 +225,42 @@ function Agony:getNearestEnemy(sourceEnt)
 		return sourceEnt;
 	else	
 		return nearestEnt;
+	end
+end
+
+--returns the furthest enemy
+function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
+	whiteList = whiteList or {}
+	blackList = blackList or {}
+	local entities = Isaac.GetRoomEntities();
+	local largestDist = nil;
+	local furthestEnt = nil;
+	
+	for i=1, #blackList do
+		local tmp = {}
+		for j=1, #entities do
+			if entities[j].Type ~= blackList[i] then
+				 table.insert(tmp, 1, entities[j])
+			end
+		end
+		entities = tmp
+	end
+	
+	for i = 1, #entities do
+		for j=1, #whiteList do
+			if entities[i] ~= sourceEnt and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j]) then
+				if (largestDist == nil or sourceEnt.Position:Distance(entities[i].Position) > largestDist) then
+					largestDist = sourceEnt.Position:Distance(entities[i].Position);
+					furthestEnt = entities[i];
+				end
+			end
+		end
+	end
+	
+	if (furthestEnt == nil) then
+		return sourceEnt;
+	else	
+		return furthestEnt;
 	end
 end
 

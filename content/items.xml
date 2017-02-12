@@ -32,11 +32,14 @@
 	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
 	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
 	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" />
+	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
+	
+	
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
 	<active description="Mysterious placeholder text" gfx="collectibles_magickit.png" maxcharges="0" name="Magic Kit" />
-	<active cache ="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
+	<active cache="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
 	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="1" name="D3" />
 	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" />
@@ -50,5 +53,5 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest1.png" maxcharges="12" name="Pandora's Chest " />
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d5.png" maxcharges="6" name="D5" />
-	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
+	<active description="Feels weird to walk a mile in those" gfx="collectibles_someonesshoe.png" maxcharges="300" name="Someone's Shoe" />
 </items>

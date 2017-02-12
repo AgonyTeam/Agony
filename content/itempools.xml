@@ -29,6 +29,7 @@
         <Item Name="Fragile Conception" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Rigid Mind" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Dice Tattoo" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Someone's Shoe" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
