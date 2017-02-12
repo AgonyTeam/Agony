@@ -1,7 +1,8 @@
 CollectibleType["AGONY_C_D5"] = Isaac.GetItemIdByName("D5");
 local dfive = {}
 
-function dfive:rerollhearts(player)
+function dfive:onUse(player)
+	--Rerolls the player's hp
 	local heartCount = 0
 	local player = Game():GetPlayer(0)
 	heartcount = player:GetMaxHearts() + player:GetSoulHearts() + player:GetBlackHearts() + player:GetGoldenHearts()
@@ -27,4 +28,4 @@ function dfive:rerollhearts(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dfive.rerollhearts, CollectibleType.AGONY_C_D5)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dfive.onUse, CollectibleType.AGONY_C_D5)

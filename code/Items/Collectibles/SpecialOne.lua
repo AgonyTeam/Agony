@@ -21,7 +21,7 @@ function specialOne:fireWizTears ()
 	end
 end
 
-function specialOne:onUpdate(player)
+function specialOne:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		specialOne.hasItem = false
 	end
@@ -32,5 +32,5 @@ function specialOne:onUpdate(player)
 		end
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, specialOne.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, specialOne.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, specialOne.fireWizTears)

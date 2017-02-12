@@ -29,7 +29,8 @@ table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_LIL_GURDY)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BALL_OF_BANDAGES)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BUMBO)
 
-function fragileConception:checkDamageTaken()
+function fragileConception:onUpdate()
+	--Check fi the player has taken damage this stage
 	local player = Game():GetPlayer(0)
 	if player:HasCollectible(CollectibleType.AGONY_C_FRAGILE_CONCEPTION) then
 		if fragileConception.stage == nil then
@@ -45,7 +46,7 @@ function fragileConception:checkDamageTaken()
 	end
 end
 
-function fragileConception:onUpdate(player)
+function fragileConception:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		fragileConception.hasItem = false
 	end
@@ -55,5 +56,5 @@ function fragileConception:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, fragileConception.checkDamageTaken)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, fragileConception.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, fragileConception.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, fragileConception.onPlayerUpdate)

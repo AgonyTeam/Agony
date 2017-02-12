@@ -51,7 +51,7 @@ function techninek:TearsToLaser()
 end
 
 --Checks if player has item, and gives him the costume
-function techninek:onUpdate(player)
+function techninek:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		techninek.hasItem = false
 	end
@@ -61,5 +61,5 @@ function techninek:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, techninek.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, techninek.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, techninek.TearsToLaser);

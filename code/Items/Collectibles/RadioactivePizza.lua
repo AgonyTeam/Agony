@@ -60,7 +60,7 @@ function radioactivePizza:updateFireDelay(player)
 	end
 end
 
-function radioactivePizza:onUpdate(player)
+function radioactivePizza:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		radioactivePizza.hasItem = false
 	end
@@ -78,7 +78,7 @@ function radioactivePizza:reset(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, radioactivePizza.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, radioactivePizza.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, radioactivePizza.reset)

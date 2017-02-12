@@ -9,6 +9,7 @@ local despair =  {
 despair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_despair.anm2")
 
 function despair:cacheUpdate (player,cacheFlag)
+	--Lowers stats on the floor of pickup but increases them upon reaching a new stage
 	if (player:HasCollectible(CollectibleType.AGONY_C_DESPAIR)) then
 		if despair.stage == nil then 
 			despair.stage = Game():GetLevel():GetStage()
@@ -34,10 +35,17 @@ function despair:cacheUpdate (player,cacheFlag)
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			despair.TearBool = true
 		end
+	else
+		despair:reset()
 	end
 end
 
-function despair:onUpdate(player)
+function despair:reset()
+	--Resets variable if the item is rerolled or lost (or if restarting the run)
+	despair.stage = nil
+end
+
+function despair:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		despair.hasItem = false
 	end
@@ -66,6 +74,6 @@ function despair:updateFireDelay(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, despair.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, despair.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, despair.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, despair.cacheUpdate)

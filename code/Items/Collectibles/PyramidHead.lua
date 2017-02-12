@@ -13,7 +13,7 @@ function pyramidHead:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function pyramidHead:onUpdate(player)
+function pyramidHead:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		pyramidHead.hasItem = false
 	end
@@ -42,5 +42,5 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, pyramidHead.darken)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, pyramidHead.fearEnemies)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, pyramidHead.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, pyramidHead.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, pyramidHead.cacheUpdate)

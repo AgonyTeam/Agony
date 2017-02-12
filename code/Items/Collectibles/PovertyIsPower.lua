@@ -12,7 +12,7 @@ function PIP:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function PIP:onUpdate(player)
+function PIP:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		PIP.hasItem = false
 	end
@@ -30,5 +30,5 @@ function PIP:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, PIP.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, PIP.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, PIP.cacheUpdate)

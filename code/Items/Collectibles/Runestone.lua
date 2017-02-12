@@ -4,7 +4,7 @@ local runestone =  {
 	rseed = 1
 }
 
-function runestone:spawnRune()
+function runestone:onUse()
 	local player = Game():GetPlayer(0)
 	local room = Game():GetRoom()
 	local rand = (room:GetDecorationSeed()*runestone.rseed)%10
@@ -15,4 +15,4 @@ function runestone:spawnRune()
 	runestone.rseed = (RNG():GetSeed()*runestone.rseed)%100
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, runestone.spawnRune, CollectibleType.AGONY_C_RUNESTONE)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, runestone.onUse, CollectibleType.AGONY_C_RUNESTONE)

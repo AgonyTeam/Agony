@@ -22,7 +22,7 @@ function yeuxRev:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function yeuxRev:onUpdate(player)
+function yeuxRev:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		yeuxRev.hasItem = false
 	end
@@ -42,5 +42,5 @@ function yeuxRev:updateFireDelay()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, yeuxRev.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, yeuxRev.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, yeuxRev.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, yeuxRev.cacheUpdate)

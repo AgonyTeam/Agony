@@ -17,7 +17,7 @@ function leprechaunContract:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function leprechaunContract:onUpdate(player)
+function leprechaunContract:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		leprechaunContract.hasItem = false
 	end
@@ -26,5 +26,5 @@ function leprechaunContract:onUpdate(player)
 		leprechaunContract.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, leprechaunContract.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, leprechaunContract.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, leprechaunContract.cacheUpdate)

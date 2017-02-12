@@ -14,7 +14,7 @@ function magicKit:spawnRune(player)
 	Isaac.Spawn(5, 300, 32+rand, player.Position:__add(vTrans), Vector (0,0), player)
 end
 
-function magicKit:OpenKit()
+function magicKit:onUse()
 	local player = Game():GetPlayer(0)
 	if (player:HasCollectible(CollectibleType.AGONY_C_MAGIC_KIT)) then
 		for i = 1, player.Luck + 3, 1 do
@@ -24,4 +24,4 @@ function magicKit:OpenKit()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, magicKit.OpenKit, CollectibleType.AGONY_C_MAGIC_KIT)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, magicKit.onUse, CollectibleType.AGONY_C_MAGIC_KIT)

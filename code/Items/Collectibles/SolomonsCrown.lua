@@ -25,7 +25,7 @@ function solomonCrown:cacheUpdate (player,cacheFlag)
 	end
 end
 
-function solomonCrown:onUpdate(player)
+function solomonCrown:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		solomonCrown.hasItem = false
 	end
@@ -55,5 +55,5 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE,solomonCrown.evaluateCache)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, solomonCrown.cacheUpdate)

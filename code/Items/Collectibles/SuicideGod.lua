@@ -20,7 +20,7 @@ function suicideGod:checkIfPlayerDying()
 	end
 end
 
-function suicideGod:onUpdate(player)
+function suicideGod:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		suicideGod.hasItem = false
 	end
@@ -32,5 +32,5 @@ function suicideGod:onUpdate(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, suicideGod.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, suicideGod.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, suicideGod.checkIfPlayerDying)
