@@ -22,6 +22,7 @@ function magicKit:OpenKit()
 		end
 		player:RemoveCollectible(CollectibleType.AGONY_C_MAGIC_KIT)		
 	end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, magicKit.OpenKit, CollectibleType.AGONY_C_MAGIC_KIT)

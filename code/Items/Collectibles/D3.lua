@@ -14,6 +14,7 @@ function dthree:rerollColl()
         player:RemoveCollectible(colletibles[math.random(#colletibles)])
         player:AddCollectible(math.random(CollectibleType.NUM_COLLECTIBLES), 0, true)
     end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, dthree.rerollColl, CollectibleType.AGONY_C_D3)

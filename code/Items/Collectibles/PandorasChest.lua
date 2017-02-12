@@ -20,6 +20,7 @@ function pandorasChest:RemoveChain(collectibleType, RNG)
 	else
 		player:AddCollectible(collectibleType + 1, 0, false)
 	end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, pandorasChest.RemoveChain , CollectibleType.AGONY_C_PANDORASCHEST5)

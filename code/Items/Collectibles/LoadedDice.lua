@@ -9,6 +9,7 @@ function loadedDice:rerollIntoButterBean()
 			ent[i]:ToPickup():Morph(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, CollectibleType.COLLECTIBLE_BUTTER_BEAN,true)
 		end
 	end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, loadedDice.rerollIntoButterBean, CollectibleType.AGONY_C_LOADED_DICE)

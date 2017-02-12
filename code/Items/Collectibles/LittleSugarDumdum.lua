@@ -47,6 +47,7 @@ function LSD:StartTheParty()
 	LSD.TearColor = player.TearColor
 	LSD.MoveSpeed = player.MoveSpeed
 	LSD.Luck = player.Luck
+	return true
 end
 
 function LSD:StopTheParty()

@@ -20,6 +20,7 @@ function theRock:spawnRock()
 	end
 	theRock.rseed = (RNG():GetSeed()*theRock.rseed)%100
 	room:SpawnGridEntity(room:GetGridIndex(Isaac.GetFreeNearPosition(Game():GetPlayer(0).Position, 25)), rock, 0, RNG():GetSeed(), 1)
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, theRock.spawnRock, CollectibleType.AGONY_C_THE_ROCK)

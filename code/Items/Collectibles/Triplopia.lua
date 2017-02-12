@@ -12,6 +12,7 @@ function triplopia:tripleAllCollectibles()
 		end
 	end
 	player:RemoveCollectible(CollectibleType.AGONY_C_TRIPLOPIA)
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, triplopia.tripleAllCollectibles, CollectibleType.AGONY_C_TRIPLOPIA)

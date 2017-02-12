@@ -11,6 +11,7 @@ function cornucopia:spawnItem()
 	if (math.random(30)+cornucopia.timesUsed) > 29 then
 		player:RemoveCollectible(CollectibleType.AGONY_C_CORNUCOPIA)
 	end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, cornucopia.spawnItem, CollectibleType.AGONY_C_CORNUCOPIA)

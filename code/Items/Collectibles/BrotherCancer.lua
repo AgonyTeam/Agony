@@ -12,6 +12,7 @@ tumor.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_tumor.anm2")
 function tumor:spawnTumor()
 	local player = Isaac.GetPlayer(0)
 	Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, CollectibleType.AGONY_C_TUMOR, Isaac.GetFreeNearPosition(player.Position, 25), Vector(0, 0), player)
+	return true
 end
 
 function tumor:onUpdate(player)

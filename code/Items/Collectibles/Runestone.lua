@@ -13,6 +13,7 @@ function runestone:spawnRune()
 
 	Isaac.Spawn(5, 300, 32+rand, player.Position:__add(vTrans), Vector (0,0), player)
 	runestone.rseed = (RNG():GetSeed()*runestone.rseed)%100
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, runestone.spawnRune, CollectibleType.AGONY_C_RUNESTONE)
