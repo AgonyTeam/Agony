@@ -29,6 +29,8 @@
 	<passive cache="damage firedelay" name="Ferrofluid" description="Mysterious placeholder text" gfx="collectibles_ferrofluid.png" />
 	<passive cache="damage luck" name="Leprechaun's Contract" description="Mysterious placeholder text" gfx="collectibles_leprechauntscontract.png" />
 	<passive name="Fragile Conception" description="Mysterious placeholder text" gfx="collectibles_fragileconception.png" />
+	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
+	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
 	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
