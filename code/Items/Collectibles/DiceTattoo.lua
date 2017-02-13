@@ -11,6 +11,8 @@ diceTattoo.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_dicetatt
 function diceTattoo:onUpdate()
 	--Rerolls a random item on the player on clearing the room
 	local player = Game():GetPlayer(0)
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_DICE_TATTOO)
+	
 	if player:HasCollectible(CollectibleType.AGONY_C_DICE_TATTOO) then
 		local lvl = Game():GetLevel()
 		local room = lvl:GetCurrentRoom()
@@ -30,8 +32,8 @@ function diceTattoo:onUpdate()
 		        	        table.insert(colletibles, id)
 		         	   end
 		       	 	end
-		       		player:RemoveCollectible(colletibles[math.random(#colletibles)])
-		        	player:AddCollectible(math.random(CollectibleType.NUM_COLLECTIBLES), 0, true)
+		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
+		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
 	    		end
 	    	end
 		end

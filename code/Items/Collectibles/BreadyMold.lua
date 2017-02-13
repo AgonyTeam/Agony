@@ -19,11 +19,12 @@ table.insert(breadyMold.shroomItems,CollectibleType.COLLECTIBLE_MINI_MUSH)
 function breadyMold:onUpdate()
 	-- If the player has the item, removes it and spawn 2 random shroom items, the items can be the same
 	local player = Isaac.GetPlayer(0);
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_BREADY_MOLD)
 	local game = Game()
 	if player:HasCollectible(CollectibleType.AGONY_C_BREADY_MOLD) then
 		
 		for i = 1, 2, 1 do
-			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, breadyMold.shroomItems[math.random(#breadyMold.shroomItems)], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
+			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, breadyMold.shroomItems[rng:RandomInt(#breadyMold.shroomItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 		end
 		player:RemoveCollectible(CollectibleType.AGONY_C_BREADY_MOLD)
 	end

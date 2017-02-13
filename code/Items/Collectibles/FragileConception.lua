@@ -32,6 +32,8 @@ table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BUMBO)
 function fragileConception:onUpdate()
 	--Check fi the player has taken damage this stage
 	local player = Game():GetPlayer(0)
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_FRAGILE_CONCEPTION)
+	
 	if player:HasCollectible(CollectibleType.AGONY_C_FRAGILE_CONCEPTION) then
 		if fragileConception.stage == nil then
 			fragileConception.stage = Game():GetLevel():GetStage()
@@ -42,7 +44,7 @@ function fragileConception:onUpdate()
 			else
 				for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_FRAGILE_CONCEPTION), 1 do
 					if fragileConception.famSpawned < player:GetCollectibleNum(CollectibleType.AGONY_C_FRAGILE_CONCEPTION)*4 then
-						player:AddCollectible(fragileConception.famList[math.random(#fragileConception.famList+1)], 0, false)
+						player:AddCollectible(fragileConception.famList[rng:RandomInt(#fragileConception.famList)+1)], 0, false)
 						fragileConception.famSpawned = fragileConception.famSpawned +1
 					end
 				end
