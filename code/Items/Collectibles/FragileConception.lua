@@ -42,7 +42,7 @@ function fragileConception:onUpdate()
 			else
 				for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_FRAGILE_CONCEPTION), 1 do
 					if fragileConception.famSpawned < player:GetCollectibleNum(CollectibleType.AGONY_C_FRAGILE_CONCEPTION)*4 then
-						player:AddCollectible(fragileConception.famList[math.random(#fragileConception.famList+1)], 0, false)
+						player:AddCollectible(fragileConception.famList[player:GetCollectibleRNG(CollectibleType.AGONY_C_FRAGILE_CONCEPTION):RandomInt(#fragileConception.famList)+1], 0, false)
 						fragileConception.famSpawned = fragileConception.famSpawned +1
 					end
 				end

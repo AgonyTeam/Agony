@@ -1,13 +1,10 @@
 --local item_MagicKit = Isaac.GetItemIdByName("Magic Kit")
 CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
-local magicKit = {
-	rseed = 1
-}
+local magicKit = {}
 
 function magicKit:spawnRune(player)
 	local room = Game():GetRoom()
-	local rand = (room:GetDecorationSeed()*magicKit.rseed)%9
-	magicKit.rseed = (RNG():GetSeed()*magicKit.rseed)%100
+	local rand = player:GetCollectibleRNG(CollectibleType.AGONY_C_MAGIC_KIT):RandomInt(10)
 	local vTrans = Vector (25,0)
 	vTrans = vTrans:Rotated(math.random(360))
 

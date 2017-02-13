@@ -10,7 +10,7 @@ function cornucopia:onUse()
 	Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, CollectibleType.COLLECTIBLE_NULL, Isaac.GetFreeNearPosition(player.Position, 25), Vector(0, 0), player)
 	cornucopia.timesUsed = cornucopia.timesUsed + 1
 	--has an increasing chance to break
-	if (math.random(30)+cornucopia.timesUsed) > 29 then
+	if (player:GetCollectibleRNG(CollectibleType.AGONY_C_CORNUCOPIA):RandomInt(30)+1+cornucopia.timesUsed) > 29 then
 		player:RemoveCollectible(CollectibleType.AGONY_C_CORNUCOPIA)
 	end
 	return true

@@ -12,8 +12,8 @@ function dthree:onUse()
                 table.insert(colletibles, id)
             end
         end
-        player:RemoveCollectible(colletibles[math.random(#colletibles)])
-        player:AddCollectible(math.random(CollectibleType.NUM_COLLECTIBLES), 0, true)
+        player:RemoveCollectible(colletibles[player:GetCollectibleRNG(CollectibleType.AGONY_C_D3):RandomInt(#colletibles)+1])
+        player:AddCollectible(player:GetCollectibleRNG(CollectibleType.AGONY_C_D3):RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
     end
 	return true
 end

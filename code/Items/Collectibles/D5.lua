@@ -13,7 +13,7 @@ function dfive:onUse(player)
 	player.HitPoints = 0
 	player.MaxHitPoints = 0
 	for i = 1, heartcount, 1 do
-		local r = math.random(100)
+		local r = player:GetCollectibleRNG(CollectibleType.AGONY_C_D5):RandomInt(100)
 		if r > 50 then
 			player:AddMaxHearts(1, false)
 		elseif r > 30 then
