@@ -17,7 +17,7 @@ function growingAnxiety:onTakeDmg()
 			growingAnxiety.Room = Game():GetLevel():GetCurrentRoomIndex()
 		end
 		if growingAnxiety.CurrentScaleMulti > 0.5 then
-			growingAnxiety.CurrentScaleMulti = growingAnxiety.CurrentScaleMulti*0.9
+			growingAnxiety.CurrentScaleMulti = growingAnxiety.CurrentScaleMulti - growingAnxiety.CurrentScaleMulti*0.1*player:GetCollectibleNum(CollectibleType.AGONY_C_GROWING_ANXIETY)
 			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
 		end
 		player.SpriteScale = growingAnxiety.FormerScale*growingAnxiety.CurrentScaleMulti

@@ -11,25 +11,26 @@ despair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_despair.anm
 function despair:cacheUpdate (player,cacheFlag)
 	--Lowers stats on the floor of pickup but increases them upon reaching a new stage
 	if (player:HasCollectible(CollectibleType.AGONY_C_DESPAIR)) then
+		local collNum = player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR)
 		if despair.stage == nil then 
 			despair.stage = Game():GetLevel():GetStage()
 		end
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
-			player.Luck = player.Luck - 2
+			player.Luck = player.Luck - 2*collNum
 			if despair.stage ~= nil then
-				player.Luck = player.Luck + Game():GetLevel():GetStage() - despair.stage
+				player.Luck = player.Luck + (Game():GetLevel():GetStage() - despair.stage)*collNum
 			end
 		end
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = player.Damage - 2
+			player.Damage = player.Damage - 2*collNum
 			if despair.stage ~= nil then
-				player.Damage = player.Damage + (Game():GetLevel():GetStage() - despair.stage)*3
+				player.Damage = player.Damage + (Game():GetLevel():GetStage() - despair.stage)*3*collNum
 			end
 		end
 		if (cacheFlag == CacheFlag.CACHE_SPEED) then
 			player.MoveSpeed = player.MoveSpeed - 0.5
 			if despair.stage ~= nil then
-				player.MoveSpeed = player.MoveSpeed + (Game():GetLevel():GetStage() - despair.stage)*0.2
+				player.MoveSpeed = player.MoveSpeed + (Game():GetLevel():GetStage() - despair.stage)*0.2*collNum
 			end
 		end
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
@@ -66,9 +67,9 @@ end
 --FireDelay workaround
 function despair:updateFireDelay(player)
 	if (despair.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay + 5
+		player.MaxFireDelay = player.MaxFireDelay + 5*player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR)
 		if despair.stage ~= nil then
-			player.MaxFireDelay = player.MaxFireDelay - (Game():GetLevel():GetStage() - despair.stage)*3
+			player.MaxFireDelay = player.MaxFireDelay - (Game():GetLevel():GetStage() - despair.stage)*3*player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR)
 		end
 		despair.TearBool = false;
 	end

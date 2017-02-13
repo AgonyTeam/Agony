@@ -17,11 +17,14 @@ function overgrownSpine:linkTears()
 			end
 		end
 		for j = 1, #tearList-1, 1 do
-			if math.random(4) == 1 then
-				local laser = player:FireTechLaser(tearList[j], 1, Vector (tearList[j+1].X-tearList[j].X,tearList[j+1].Y-tearList[j].Y), false, false)
-				laser:SetMaxDistance(tearList[j+1]:Distance(tearList[j]))
-				laser:SetTimeout(1)
-				--laser:SetColor(Color(0, 0, 0, 10, 0, 0, 0), 2, 1, false, false)
+			--scales with number of copies
+			for k = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_OVERGROWN_SPINE) do
+				if math.random(4) == 1 then
+					local laser = player:FireTechLaser(tearList[j], 1, Vector (tearList[j+1].X-tearList[j].X,tearList[j+1].Y-tearList[j].Y), false, false)
+					laser:SetMaxDistance(tearList[j+1]:Distance(tearList[j]))
+					laser:SetTimeout(1)
+					--laser:SetColor(Color(0, 0, 0, 10, 0, 0, 0), 2, 1, false, false)
+				end
 			end
 		end
 	end

@@ -13,7 +13,7 @@ function suicideGod:checkIfPlayerDying()
 
 		if sprite:IsPlaying("Death") and sprite:GetFrame() == 1 then
 			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
-			for j = 1, 5, 1 do
+			for j = 1, 5*player:GetCollectibleNum(CollectibleType.AGONY_C_SUICIDE_GOD), 1 do
 	   	    	Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_NULL, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
 	   	    end
 		end

@@ -10,7 +10,7 @@ doubleDown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_doubledo
 -- Doubles player damage
 function doubleDown:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-		player.Damage = player.Damage*2
+		player.Damage = player.Damage*2*player:GetCollectibleNum(CollectibleType.AGONY_C_DOUBLE_DOWN)
 	end
 end
 
@@ -18,11 +18,14 @@ end
 function doubleDown:onTakeDmg(entity,dmgAmount)
 	local player = Isaac.GetPlayer(0);
 	if player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) then
-		for i=1, dmgAmount do
-			if player:GetSoulHearts() > 0 then
-				player:AddSoulHearts(-1)
-			else
-				player:AddHearts(-1)
+		--For each double down the player has
+		for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_DOUBLE_DOWN) do
+			for i=1, dmgAmount do
+				if player:GetSoulHearts() > 0 then
+					player:AddSoulHearts(-1)
+				else
+					player:AddHearts(-1)
+				end
 			end
 		end
 	end
@@ -39,6 +42,7 @@ function doubleDown:onPlayerUpdate(player)
 		doubleDown.hasItem = true
 	end
 end
+
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, doubleDown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, doubleDown.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, doubleDown.onTakeDmg, EntityType.ENTITY_PLAYER)

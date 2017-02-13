@@ -8,7 +8,7 @@ WIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_wrathispower.an
 
 function WIP:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_WIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-		player.Damage = player.Damage + 0.08 * player:GetNumBombs()
+		player.Damage = player.Damage + 0.08 * player:GetNumBombs()*player:GetCollectibleNum(CollectibleType.AGONY_C_WIP)
 	end
 end
 

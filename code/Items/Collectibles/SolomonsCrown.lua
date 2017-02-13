@@ -11,13 +11,13 @@ solomonCrown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_solomo
 function solomonCrown:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN)) and player:GetHearts() == player:GetMaxHearts()/2 then
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
-			player.Luck = (player.Luck + 2);
+			player.Luck = (player.Luck + 2)*player:GetCollectibleNum(CollectibleType.AGONY_C_SOLOMON_CROWN);
 		end
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = (player.Damage + 1.2);
+			player.Damage = (player.Damage + 1.2)*player:GetCollectibleNum(CollectibleType.AGONY_C_SOLOMON_CROWN);
 		end
 		if (cacheFlag == CacheFlag.CACHE_SPEED) then
-			player.MoveSpeed = (player.MoveSpeed + 0.3);
+			player.MoveSpeed = (player.MoveSpeed + 0.3)*player:GetCollectibleNum(CollectibleType.AGONY_C_SOLOMON_CROWN);
 		end
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			TearBool = true
@@ -38,7 +38,7 @@ end
 --FireDelay workaround
 function solomonCrown:updateFireDelay(player)
 	if (solomonCrown.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay - 2
+		player.MaxFireDelay = player.MaxFireDelay - 2*player:GetCollectibleNum(CollectibleType.AGONY_C_SOLOMON_CROWN)
 		solomonCrown.TearBool = false;
 	end
 end

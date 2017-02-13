@@ -9,9 +9,9 @@ bigGuy.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_bigguy.anm2"
 function bigGuy:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_URA_BIG_GUY)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = player.Damage + 1.69420;
+			player.Damage = player.Damage + 1.69420*player:GetCollectibleNum(CollectibleType.AGONY_C_URA_BIG_GUY);
 		end
-	 	player.SpriteScale = player.SpriteScale*1.1
+	 	player.SpriteScale = player.SpriteScale*1.1*player:GetCollectibleNum(CollectibleType.AGONY_C_URA_BIG_GUY)
 	end
 end
 

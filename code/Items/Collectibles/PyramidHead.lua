@@ -1,4 +1,3 @@
---local item_PyramidHead = Isaac.GetItemIdByName("Pyramid Head");
 CollectibleType["AGONY_C_PYRAMID_HEAD"] = Isaac.GetItemIdByName("Pyramid Head");
 local pyramidHead =  {
 	hasItem = nil, --used for costume
@@ -6,7 +5,6 @@ local pyramidHead =  {
 }
 pyramidHead.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_pyramidhead.anm2")
 
---Grants +1 Luck and gives a *2 multiplier to Luck
 function pyramidHead:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_PYRAMID_HEAD)) and (cacheFlag == CacheFlag.CACHE_SPEED) then
 		player.MoveSpeed = player.MoveSpeed - 0.3

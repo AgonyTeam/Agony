@@ -38,10 +38,14 @@ function electricHair:onUpdate()
 			if vulList[j]:Distance(player.Position) < 500 then			
 				if math.random(100) == 1 then
 					for k = 1, #vulList, 1 do
-						if math.random(100) > 50 and k ~= j and vulList[k]:Distance(vulList[j]) < 150 then
-							local laser = player:FireTechLaser(vulList[j], 0, Vector (vulList[k].X - vulList[j].X,vulList[k].Y - vulList[j].Y), false, true)
-							laser:SetTimeout(1)
-							laser:SetMaxDistance(vulList[k]:Distance(vulList[j]))
+						--for each copy the player has do
+						--This makes it twice likely to shoot a laser if the player has two copies
+						for l = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_ELECTRIC_HAIR) do
+							if math.random(100) > 50 and k ~= j and vulList[k]:Distance(vulList[j]) < 150 then
+								local laser = player:FireTechLaser(vulList[j], 0, Vector (vulList[k].X - vulList[j].X,vulList[k].Y - vulList[j].Y), false, true)
+								laser:SetTimeout(1)
+								laser:SetMaxDistance(vulList[k]:Distance(vulList[j]))
+							end
 						end
 					end
 				end

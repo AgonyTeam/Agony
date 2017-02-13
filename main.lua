@@ -82,6 +82,7 @@ Include("code/Items/Collectibles/FragileConception.lua");
 Include("code/Items/Collectibles/RigidMind.lua")
 Include("code/Items/Collectibles/DiceTattoo.lua")
 Include("code/Items/Collectibles/SomeonesShoe.lua")
+Include("code/Items/Collectibles/PersonalBubble.lua")
 
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");

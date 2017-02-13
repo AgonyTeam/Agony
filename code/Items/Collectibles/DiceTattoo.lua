@@ -20,17 +20,20 @@ function diceTattoo:onUpdate()
 			diceTattoo.isRoomClear = room:IsClear()
 		elseif diceTattoo.isRoomClear == false and room:IsClear() then
 			diceTattoo.isRoomClear = true
-			--Reroll a random item
-			if player:GetCollectibleCount() >= 1 then --If the player has collectibles
-		    	local colletibles = {}
-	        	for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-	        	    if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
-	        	        table.insert(colletibles, id)
-	         	   end
-	       	 	end
-	       		player:RemoveCollectible(colletibles[math.random(#colletibles)])
-	        	player:AddCollectible(math.random(CollectibleType.NUM_COLLECTIBLES), 0, true)
-    		end
+			--For each DiceTattoo the player has
+			for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_DICE_TATTOO), 1 do
+				--Reroll a random item
+				if player:GetCollectibleCount() >= 1 then --If the player has collectibles
+			    	local colletibles = {}
+		        	for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
+		        	    if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
+		        	        table.insert(colletibles, id)
+		         	   end
+		       	 	end
+		       		player:RemoveCollectible(colletibles[math.random(#colletibles)])
+		        	player:AddCollectible(math.random(CollectibleType.NUM_COLLECTIBLES), 0, true)
+	    		end
+	    	end
 		end
 	end
 end

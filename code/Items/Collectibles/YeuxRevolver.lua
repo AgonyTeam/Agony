@@ -11,10 +11,10 @@ yeuxRev.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_yeuxrevolve
 function yeuxRev:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = (player.Damage + 3.42069)
+			player.Damage = (player.Damage + 3.42069*player:GetCollectibleNum(CollectibleType.AGONY_C_YEUX_REVOLVER))
 		end
 		if (cacheFlag == CacheFlag.CACHE_SHOTSPEED) then
-			player.ShotSpeed = (player.ShotSpeed + 1.69420)
+			player.ShotSpeed = (player.ShotSpeed + 1.69420*player:GetCollectibleNum(CollectibleType.AGONY_C_YEUX_REVOLVER))
 		end
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			yeuxRev.TearBool = true
@@ -36,7 +36,7 @@ end
 function yeuxRev:updateFireDelay()
 	local player = Isaac.GetPlayer(0);
 	if (yeuxRev.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay + 4;
+		player.MaxFireDelay = player.MaxFireDelay + 4*player:GetCollectibleNum(CollectibleType.AGONY_C_YEUX_REVOLVER);
 		yeuxRev.TearBool = false;
 	end
 end

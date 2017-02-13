@@ -17,7 +17,7 @@ function vomitCake:spawnCreep(player)
 				vomitProb = Game():GetFrameCount()%(-300*(luckMult-1))
 			end
 			
-			for i = 1, 4, 1 do
+			for i = 1, 10, 1 do
 				if vomitProb == i then
 					pos = pos + shootJoy*25*i
 					Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_GREEN , 0, pos, Vector (0,0), player)

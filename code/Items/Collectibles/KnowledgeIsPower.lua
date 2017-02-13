@@ -8,7 +8,7 @@ KIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_knowledgeispowe
 
 function KIP:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_KIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-		player.Damage = player.Damage + 0.08 * player:GetNumKeys()
+		player.Damage = player.Damage + 0.08 * player:GetNumKeys()*player:GetCollectibleNum(CollectibleType.AGONY_C_KIP)
 	end
 end
 

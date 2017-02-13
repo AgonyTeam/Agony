@@ -21,12 +21,12 @@ function tantrum:onPlayerUpdate(player)
 		if player:GetActiveItem() ~= nil then
 			if player:NeedsCharge() then 
 				if tantrum.playerHasFullCharge then
-					for i = 1, 5, 1 do
+					r = math.random(4)+3
+					for i = 1, r*AGONY_C_SUICIDE_GOD, 1 do
 					player:UseActiveItem(player:GetActiveItem(), false, true, true, false)
 					end
 					player:RemoveCollectible(player:GetActiveItem())
 					tantrum.playerHasFullCharge = false
-					player:AddCoins(1)
 				end
 			else
 				tantrum.playerHasFullCharge = true

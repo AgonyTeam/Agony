@@ -10,7 +10,7 @@ luckyLeg.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_luckyleg.a
 --Grants +1 Luck and gives a *2 multiplier to Luck
 function luckyLeg:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_LUCKY_LEG)) and (cacheFlag == CacheFlag.CACHE_LUCK) then
-		player.Luck = (player.Luck + 1)*2;
+		player.Luck = (player.Luck + 1)*2*player:GetCollectibleNum(CollectibleType.AGONY_C_LUCKY_LEG);
 	end
 end
 

@@ -33,6 +33,7 @@
 	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
 	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" />
 	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
+	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
 	
 	
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
