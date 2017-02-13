@@ -5,6 +5,8 @@ function dfive:onUse(player)
 	--Rerolls the player's hp
 	local heartCount = 0
 	local player = Game():GetPlayer(0)
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_D5)
+	
 	heartcount = player:GetMaxHearts() + player:GetSoulHearts() + player:GetBlackHearts() + player:GetGoldenHearts()
 	player:AddSoulHearts(-player:GetSoulHearts())
 	player:AddBlackHearts(-player:GetBlackHearts())
@@ -13,7 +15,7 @@ function dfive:onUse(player)
 	player.HitPoints = 0
 	player.MaxHitPoints = 0
 	for i = 1, heartcount, 1 do
-		local r = player:GetCollectibleRNG(CollectibleType.AGONY_C_D5):RandomInt(100)
+		local r = rng:RandomInt(100)
 		if r > 50 then
 			player:AddMaxHearts(1, false)
 		elseif r > 30 then

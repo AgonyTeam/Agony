@@ -10,15 +10,16 @@ radioactivePizza.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_ra
 
 --Gives a bonus to one stat, a malus to another one
 function radioactivePizza:cacheUpdate(player,cacheFlag)
-
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_RADIOACTIVE_PIZZA)
+	
 	if player:HasCollectible(CollectibleType.AGONY_C_RADIOACTIVE_PIZZA) then
-		local r1 = saveData.radioactivePizza.r1 or (Game():GetRoom():GetDecorationSeed() % 3) +1
-		local r2 = saveData.radioactivePizza.r1 or (Game():GetRoom():GetSpawnSeed() % 3) +1
+		local r1 = saveData.radioactivePizza.r1 or rng:RandomInt(3) + 1
+		local r2 = saveData.radioactivePizza.r1 or rng:RandomInt(3) + 1
 		--Make sure the stat isnt the same
 		while r1 == r2 do
 			r2 = ((r1 +1)%3) +1
 		end
-		
+		--Save the numbers
 		saveData.radioactivePizza.r1 = r1
 		saveData.radioactivePizza.r2 = r2
 		Agony:SaveNow()

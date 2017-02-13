@@ -23,9 +23,11 @@ end
 
 function pyramidHead:fearEnemies(npc)
 	local player = Game():GetPlayer(0)
+	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_PYRAMID_HEAD)
+	
 	if player:HasCollectible(CollectibleType.AGONY_C_PYRAMID_HEAD) then
 		if npc.Position:Distance(player.Position) < 500 then			
-			if math.random(60*3) == 1 then
+			if rng:RandomInt(180) == 1 then
 				npc:AddFear(EntityRef(player), 120)
 			end
 		end
