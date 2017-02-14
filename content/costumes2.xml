@@ -8,4 +8,5 @@
 	<costume name="Poverty Is Power" anm2path="costume_povertyispower.anm2" type="none" />
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="none" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="none" />
+	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="none" />
 </costumes>
