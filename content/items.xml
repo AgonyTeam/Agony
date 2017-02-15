@@ -55,4 +55,6 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" />
 	<active description="Mysterious placeholder text" gfx="collectibles_d5.png" maxcharges="5" name="D5" />
 	<active description="Feels weird to walk a mile in those" gfx="collectibles_someonesshoe.png" maxcharges="300" name="Someone's Shoe" />
+	
+	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
 </items>

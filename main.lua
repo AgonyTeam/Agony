@@ -31,6 +31,9 @@ saveData.radioactivePizza = saveData.radioactivePizza or {};
 
 
 
+--Familiars
+Include("code/Familiars/TinyTinyHorn.lua");
+
 --respawnV2's vars
 local ent_before = {};
 local rspwn_allow = false;
