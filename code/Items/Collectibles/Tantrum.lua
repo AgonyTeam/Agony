@@ -21,8 +21,8 @@ function tantrum:onPlayerUpdate(player)
 		if player:GetActiveItem() ~= nil then
 			if player:NeedsCharge() then 
 				if tantrum.playerHasFullCharge then
-					r = math.random(4)+3
-					for i = 1, r*AGONY_C_SUICIDE_GOD, 1 do
+					r = player:GetCollectibleRNG(CollectibleType.AGONY_C_TANTRUM):RandomInt(4)+3
+					for i = 1, r, 1 do
 					player:UseActiveItem(player:GetActiveItem(), false, true, true, false)
 					end
 					player:RemoveCollectible(player:GetActiveItem())

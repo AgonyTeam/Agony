@@ -2,6 +2,7 @@
 Agony = RegisterMod("The Agony of Isaac", 1);
 local json = require("json")
 
+
 --https://www.reddit.com/r/themoddingofisaac/comments/5ml25i/how_to_make_it_so_a_stat_modification_only_lasts/dc6uhnf/
 --needed to load other lua files right now and it only works when --luadebug is set in game properties
 --later nicalis will add require() preoperly
@@ -26,66 +27,9 @@ end
 saveData.gasolinejb = saveData.gasolinejb or {};
 saveData.radioactivePizza = saveData.radioactivePizza or {};
 
---Debug
-Include("Debug.lua");
---Enemies
-Include("code/Monsters/YellowBlock.lua");
---Eternals
-Include("code/Monsters/Eternals/RoundWorm.lua");
---Other Entities
-Include("code/Items/Slots/TreasureHoarder.lua");
---Items
-Include("code/Items/Collectibles/LuckyLeg.lua");
-Include("code/Items/Collectibles/DoubleDown.lua");
-Include("code/Items/Collectibles/GrowingAnxiety.lua");
-Include("code/Items/Collectibles/TheBigRock.lua");
-Include("code/Items/Collectibles/GasolineJuicebox.lua");
-Include("code/Items/Collectibles/RadioactivePizza.lua");
-Include("code/Items/Collectibles/Triplopia.lua");
-Include("code/Items/Collectibles/TheRock.lua");
-Include("code/Items/Collectibles/VomitCake.lua");
-Include("code/Items/Collectibles/Tourette.lua");
-Include("code/Items/Collectibles/Runestone.lua");
-Include("code/Items/Collectibles/MagicKit.lua");
-Include("code/Items/Collectibles/LittleSugarDumdum.lua");
-Include("code/Items/Collectibles/YoureABigGuy.lua");
-Include("code/Items/Collectibles/KnowledgeIsPower.lua");
-Include("code/Items/Collectibles/WrathIsPower.lua");
-Include("code/Items/Collectibles/LoadedDice.lua");
-Include("code/Items/Collectibles/Hyperactive.lua");
-Include("code/Items/Collectibles/Tantrum.lua");
-Include("code/Items/Collectibles/D3.lua");
-Include("code/Items/Collectibles/Cyanide.lua");
-Include("code/Items/Collectibles/SuicideGod.lua");
-Include("code/Items/Collectibles/PyramidHead.lua");
-Include("code/Items/Collectibles/BreadyMold.lua");
-Include("code/Items/Collectibles/OvergrownSpine.lua");
-Include("code/Items/Collectibles/SolomonsCrown.lua");
-Include("code/Items/Collectibles/Tech9000.lua");
-Include("code/Items/Collectibles/ElectricHair.lua");
-Include("code/Items/Collectibles/TDDUA.lua");
-Include("code/Items/Collectibles/PythagoresBody.lua");
-Include("code/Items/Collectibles/YeuxRevolver.lua");
-Include("code/Items/Collectibles/PovertyIsPower.lua");
-Include("code/Items/Collectibles/BrotherCancer.lua");
-Include("code/Items/Collectibles/RememberMeNow.lua");
-Include("code/Items/Collectibles/Cornucopia.lua");
-Include("code/Items/Collectibles/PandorasChest.lua");
-Include("code/Items/Collectibles/Despair.lua");
-Include("code/Items/Collectibles/D5.lua");
-Include("code/Items/Collectibles/SpecialOne.lua");
---Include("code/Items/Collectibles/TheLudovicoExperiment.lua"); --This needs to be reworked, it's not an interesting item atm
-Include("code/Items/Collectibles/Ferrofluid.lua");
-Include("code/Items/Collectibles/LeprechaunsContract.lua");
-Include("code/Items/Collectibles/FragileConception.lua");
---Include("code/Items/Collectibles/TheLudovicoTheory.lua"); --God damn these Ludovico variation are hard to get right
-Include("code/Items/Collectibles/RigidMind.lua")
-Include("code/Items/Collectibles/DiceTattoo.lua")
-Include("code/Items/Collectibles/SomeonesShoe.lua")
-Include("code/Items/Collectibles/PersonalBubble.lua")
 
---Pills
-Include("code/Items/Pick Ups/PartyPills.lua");
+
+
 
 --respawnV2's vars
 local ent_before = {};
@@ -264,6 +208,72 @@ function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
 		return furthestEnt;
 	end
 end
+
+
+--Debug
+Include("Debug.lua");
+--Enemies
+Include("code/Monsters/YellowBlock.lua");
+--Eternals
+Include("code/Monsters/Eternals/RoundWorm.lua");
+--Other Entities
+Include("code/Items/Slots/TreasureHoarder.lua");
+--Items
+Include("code/Items/Collectibles/LuckyLeg.lua");
+Include("code/Items/Collectibles/DoubleDown.lua");
+Include("code/Items/Collectibles/GrowingAnxiety.lua");
+Include("code/Items/Collectibles/TheBigRock.lua");
+Include("code/Items/Collectibles/GasolineJuicebox.lua");
+Include("code/Items/Collectibles/RadioactivePizza.lua");
+Include("code/Items/Collectibles/Triplopia.lua");
+Include("code/Items/Collectibles/TheRock.lua");
+Include("code/Items/Collectibles/VomitCake.lua");
+Include("code/Items/Collectibles/Tourette.lua");
+Include("code/Items/Collectibles/Runestone.lua");
+Include("code/Items/Collectibles/MagicKit.lua");
+Include("code/Items/Collectibles/LittleSugarDumdum.lua");
+Include("code/Items/Collectibles/YoureABigGuy.lua");
+Include("code/Items/Collectibles/KnowledgeIsPower.lua");
+Include("code/Items/Collectibles/WrathIsPower.lua");
+Include("code/Items/Collectibles/LoadedDice.lua");
+Include("code/Items/Collectibles/Hyperactive.lua");
+Include("code/Items/Collectibles/Tantrum.lua");
+Include("code/Items/Collectibles/D3.lua");
+Include("code/Items/Collectibles/Cyanide.lua");
+Include("code/Items/Collectibles/SuicideGod.lua");
+Include("code/Items/Collectibles/PyramidHead.lua");
+Include("code/Items/Collectibles/BreadyMold.lua");
+Include("code/Items/Collectibles/OvergrownSpine.lua");
+Include("code/Items/Collectibles/SolomonsCrown.lua");
+Include("code/Items/Collectibles/Tech9000.lua");
+Include("code/Items/Collectibles/ElectricHair.lua");
+Include("code/Items/Collectibles/TDDUA.lua");
+Include("code/Items/Collectibles/PythagoresBody.lua");
+Include("code/Items/Collectibles/YeuxRevolver.lua");
+Include("code/Items/Collectibles/PovertyIsPower.lua");
+Include("code/Items/Collectibles/BrotherCancer.lua");
+Include("code/Items/Collectibles/RememberMeNow.lua");
+Include("code/Items/Collectibles/Cornucopia.lua");
+Include("code/Items/Collectibles/PandorasChest.lua");
+Include("code/Items/Collectibles/Despair.lua");
+Include("code/Items/Collectibles/D5.lua");
+Include("code/Items/Collectibles/SpecialOne.lua");
+--Include("code/Items/Collectibles/TheLudovicoExperiment.lua"); --This needs to be reworked, it's not an interesting item atm
+Include("code/Items/Collectibles/Ferrofluid.lua");
+Include("code/Items/Collectibles/LeprechaunsContract.lua");
+Include("code/Items/Collectibles/FragileConception.lua");
+--Include("code/Items/Collectibles/TheLudovicoTheory.lua"); --God damn these Ludovico variation are hard to get right
+Include("code/Items/Collectibles/RigidMind.lua")
+Include("code/Items/Collectibles/DiceTattoo.lua")
+Include("code/Items/Collectibles/SomeonesShoe.lua")
+Include("code/Items/Collectibles/PersonalBubble.lua")
+
+--Transformations
+Include("code/Misc/Transformations/God.lua")
+
+--Pills
+Include("code/Items/Pick Ups/PartyPills.lua");
+
 
 --Agony END
 

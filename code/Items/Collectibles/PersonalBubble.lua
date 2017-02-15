@@ -37,7 +37,7 @@ function personalBubble:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		personalBubble.hasItem = false
 	end
-	if personalBubble.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_LUCKY_LEG) then
+	if personalBubble.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_PERSONAL_BUBBLE) then
 		player:AddNullCostume(personalBubble.costumeID)
 		personalBubble.hasItem = true
 	end
