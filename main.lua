@@ -27,13 +27,6 @@ end
 saveData.gasolinejb = saveData.gasolinejb or {};
 saveData.radioactivePizza = saveData.radioactivePizza or {};
 
-
-
-
-
---Familiars
-Include("code/Familiars/TinyTinyHorn.lua");
-
 --respawnV2's vars
 local ent_before = {};
 local rspwn_allow = false;
@@ -277,6 +270,8 @@ Include("code/Misc/Transformations/God.lua")
 --Pills
 Include("code/Items/Pick Ups/PartyPills.lua");
 
+--Familiars
+Include("code/Familiars/TinyTinyHorn.lua");
 
 --Agony END
 
