@@ -30,6 +30,7 @@
         <Item Name="Rigid Mind" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Dice Tattoo" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Someone's Shoe" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Bow Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -54,6 +55,7 @@
     <Pool Name="angel">
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Cornucopia" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
         <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

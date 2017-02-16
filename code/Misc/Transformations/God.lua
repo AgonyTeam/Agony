@@ -20,5 +20,4 @@ function god:onPlayerUpdate(player)
 	end
 end
 
-
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, god.onPlayerUpdate)
