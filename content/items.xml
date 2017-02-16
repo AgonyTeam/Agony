@@ -58,4 +58,5 @@
 	<active description="Feels weird to walk a mile in those" gfx="collectibles_someonesshoe.png" maxcharges="300" name="Someone's Shoe" />
 	
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
+	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />
 </items>
