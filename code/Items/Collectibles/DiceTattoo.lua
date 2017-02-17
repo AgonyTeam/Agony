@@ -45,7 +45,7 @@ function diceTattoo:onPlayerUpdate(player)
 		diceTattoo.hasItem = false
 	end
 	if diceTattoo.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_DICE_TATTOO) then
-		--player:AddNullCostume(diceTattoo.costumeID)
+		player:AddNullCostume(diceTattoo.costumeID)
 		diceTattoo.hasItem = true
 	end
 end

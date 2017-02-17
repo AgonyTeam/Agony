@@ -36,7 +36,7 @@ function overgrownSpine:onPlayerUpdate(player)
 		overgrownSpine.hasItem = false
 	end
 	if overgrownSpine.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_OVERGROWN_SPINE) then
-		--player:AddNullCostume(overgrownSpine.costumeID)
+		player:AddNullCostume(overgrownSpine.costumeID)
 		overgrownSpine.hasItem = true
 	end
 end

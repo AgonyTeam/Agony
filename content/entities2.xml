@@ -65,5 +65,11 @@
     <entity anm2path="Familiars/Drunken Fly/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1.69" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Drunken Fly" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="505">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+    <entity anm2path="Familiars/Metal Baby/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Metal Baby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="506">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity> 
+    <entity anm2path="Familiars/Goat Fetus/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Goat Fetus" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="507">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 	<!--/Familiars-->	
 </entities>	

@@ -9,4 +9,6 @@
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="none" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="none" />
 	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="none" />
+	<costume name="Overgrown Spine" anm2path="costume_overgrownspine.anm2" type="none" />
+	<costume name="Dice Tattoo" anm2path="costume_dicetattoo.anm2" type="none" />
 </costumes>
