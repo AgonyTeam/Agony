@@ -274,6 +274,8 @@ Include("code/Items/Pick Ups/PartyPills.lua");
 --Familiars
 Include("code/Familiars/TinyTinyHorn.lua");
 Include("code/Familiars/GrudgeHolder.lua");
+Include("code/Familiars/Soulmates.lua");
+Include("code/Familiars/DrunkenFly.lua");
 
 --Agony END
 

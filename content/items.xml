@@ -59,4 +59,6 @@
 	
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_drunkenfly.png" name="Drunken Fly" />
 </items>

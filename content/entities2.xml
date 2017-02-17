@@ -56,5 +56,14 @@
     <entity anm2path="Familiars/Grudge Holder/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Grudge Holder" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="502">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+    <entity anm2path="Familiars/Soulmate Juliet/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1.69" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Juliet" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="503">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="Familiars/Soulmate Romeo/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1.69" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Romeo" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="504">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+    <entity anm2path="Familiars/Drunken Fly/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="1.69" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Drunken Fly" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="505">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 	<!--/Familiars-->	
 </entities>	
