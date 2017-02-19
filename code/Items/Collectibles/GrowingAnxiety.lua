@@ -3,8 +3,11 @@ CollectibleType["AGONY_C_GROWING_ANXIETY"] = Isaac.GetItemIdByName("Growing Anxi
 local growingAnxiety =  {
 	FormerScale = {},
 	CurrentScaleMulti = 1,
-	Room = {}
+	Room = {},
+    hasItem = nil, --used for costume
+    costumeID = nil
 }
+growingAnxiety.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_growingAnxiety.anm2")
 
 --Shrinks the player upon getting hit
 function growingAnxiety:onTakeDmg()
@@ -33,5 +36,16 @@ function growingAnxiety:onPlayerUpdate(player)
 	end
 end
 
+function growingAnxiety:onPlayerUpdate(player)
+    if Game():GetFrameCount() == 1 then
+        growingAnxiety.hasItem = false
+    end
+    if growingAnxiety.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TDDUA) then
+        player:AddNullCostume(growingAnxiety.costumeID)
+        growingAnxiety.hasItem = true
+    end
+end
+
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, growingAnxiety.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, growingAnxiety.onTakeDmg, EntityType.ENTITY_PLAYER)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, growingAnxiety.onPlayerUpdate)			

@@ -9,7 +9,6 @@ local goatFetus = {
 function goatFetus:updateFam(fam)
 	local player = Isaac.GetPlayer(0)
 	local famSprite = fam:GetSprite()
-	local EntList = Isaac.GetRoomEntities()
 
 	--Attract enemy projectiles
 	local entities = Isaac.GetRoomEntities()
@@ -61,7 +60,6 @@ end
 --called on init
 function goatFetus:initFam(fam)
 	fam:GetSprite():Play("Idle")
-	fam.IsFollower = true --important, or else it isn't a familiar that follows the player
 end
 
 --needed or else the familiar won't appear

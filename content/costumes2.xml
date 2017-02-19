@@ -11,4 +11,6 @@
 	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="none" />
 	<costume name="Overgrown Spine" anm2path="costume_overgrownspine.anm2" type="none" />
 	<costume name="Dice Tattoo" anm2path="costume_dicetattoo.anm2" type="none" />
+	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="none" />
+	<costume name="Till Death Do Us Apart" anm2path="costume_tilldeathdousappart.anm2" type="none" />
 </costumes>

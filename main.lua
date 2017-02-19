@@ -278,6 +278,7 @@ Include("code/Familiars/Soulmates.lua");
 Include("code/Familiars/DrunkenFly.lua");
 Include("code/Familiars/MetalBaby.lua");
 Include("code/Familiars/GoatFetus.lua");
+Include("code/Familiars/MommysDemon.lua");
 
 
 --Agony END
