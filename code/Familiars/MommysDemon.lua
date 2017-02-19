@@ -17,7 +17,6 @@ function mommysDemon:updateFam(fam)
 	local player = Game():GetPlayer(0)
 	local entities = Isaac.GetRoomEntities()
 	local vulBool = false --is There a vulnerable Enemy in the room ?
-
 	--Sort vulBool
 	for j = 1, #entities do
 		if (entities[j]:IsVulnerableEnemy()) then
@@ -91,7 +90,7 @@ end
 --called on init
 function mommysDemon:initFam(fam)
 	fam:GetSprite():Play("Idle")
-	fam.GridCollisionClass = GridCollisionClass.COLLISION_SOLID
+	fam.GridCollisionClass = GridCollisionClass.COLLISION_WALL_EXCEPT_PLAYER
 end
 
 --needed or else the familiar won't appear
