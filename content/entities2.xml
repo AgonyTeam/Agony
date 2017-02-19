@@ -47,6 +47,11 @@
         <gibs amount="6" blood="1" bone="0" eye="1" gut="1" large="0" />
         <preload-snd id="318" /> <!-- SOUND_WORM_SPIT -->
     </entity>
+	<entity id="217" variant="0" subtype="15" name="Eternal Dip" reroll="true" baseHP="6" stageHP="1" boss="0" champion="0" collisionDamage="1" collisionMass="6" collisionRadius="9" friction="1" numGridCollisionPoints="12" shadowSize="12" portrait="85" anm2path="Monsters/Eternals/Dip/animation.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
+        <gibs amount="5" blood="0" bone="0" eye="0" gut="0" large="0" poop="1" />
+        <preload-snd id="60" /> <!-- SOUND_BABY_HURT -->
+    </entity>
+	
 	<!--/Eternals-->
 	
 	<!--Familiars-->

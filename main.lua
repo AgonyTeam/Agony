@@ -148,16 +148,44 @@ function Agony:calcTearVel(sourcePos, targetPos, multiplier)
 end
 
 --returns the nearest Enemy
-function Agony:getNearestEnemy(sourceEnt)
+function Agony:getNearestEnemy(sourceEnt, whiteList, blackList)
+	whiteList = whiteList or {0}
+	blackList = blackList or {}
 	local entities = Isaac.GetRoomEntities();
 	local smallestDist = nil;
 	local nearestEnt = nil;
 	
+	::redo::
+	if blackList.mode == "only_same_ent" then
+		local tmp = {}
+		for i=1, #entities do
+			if entities[i].Type == sourceEnt.Type and entities[i].Variant == sourceEnt.Variant and entities[i].SubType == sourceEnt.SubType then
+				table.insert(tmp, 1, entities[i])
+			end
+		end
+		entities = tmp
+	elseif blackList.mode == nil then
+		for i=1, #blackList do
+			local tmp = {}
+			for j=1, #entities do
+				if entities[j].Type ~= blackList[i] then
+					 table.insert(tmp, 1, entities[j])
+				end
+			end
+			entities = tmp
+		end
+	else
+		blackList.mode = nil
+		goto redo
+	end
+	
 	for i = 1, #entities do
-		if (entities[i] ~= sourceEnt and entities[i]:IsVulnerableEnemy()) then
-			if (smallestDist == nil or sourceEnt.Position:Distance(entities[i].Position) < smallestDist) then
-				smallestDist = sourceEnt.Position:Distance(entities[i].Position);
-				nearestEnt = entities[i];
+		for j = 1, #whiteList do
+			if (entities[i].Index ~= sourceEnt.Index and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j])) then
+				if (smallestDist == nil or sourceEnt.Position:Distance(entities[i].Position) < smallestDist) then
+					smallestDist = sourceEnt.Position:Distance(entities[i].Position);
+					nearestEnt = entities[i];
+				end
 			end
 		end
 	end
@@ -171,25 +199,39 @@ end
 
 --returns the furthest enemy
 function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
-	whiteList = whiteList or {}
+	whiteList = whiteList or {0}
 	blackList = blackList or {}
 	local entities = Isaac.GetRoomEntities();
 	local largestDist = nil;
 	local furthestEnt = nil;
 	
-	for i=1, #blackList do
+	::redo::
+	if blackList.mode == "only_same_ent" then
 		local tmp = {}
-		for j=1, #entities do
-			if entities[j].Type ~= blackList[i] then
-				 table.insert(tmp, 1, entities[j])
+		for i=1, #entities do
+			if entities[i].Type == sourceEnt.Type and entities[i].Variant == sourceEnt.Variant and entities[i].SubType == sourceEnt.SubType then
+				table.insert(tmp, 1, entities[i])
 			end
 		end
 		entities = tmp
+	elseif blackList.mode == nil then
+		for i=1, #blackList do
+			local tmp = {}
+			for j=1, #entities do
+				if entities[j].Type ~= blackList[i] then
+					 table.insert(tmp, 1, entities[j])
+				end
+			end
+			entities = tmp
+		end
+	else
+		blackList.mode = nil
+		goto redo
 	end
 	
 	for i = 1, #entities do
 		for j=1, #whiteList do
-			if entities[i] ~= sourceEnt and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j]) then
+			if entities[i].Index ~= sourceEnt.Index and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j]) then
 				if (largestDist == nil or sourceEnt.Position:Distance(entities[i].Position) > largestDist) then
 					largestDist = sourceEnt.Position:Distance(entities[i].Position);
 					furthestEnt = entities[i];
@@ -212,6 +254,7 @@ Include("Debug.lua");
 Include("code/Monsters/YellowBlock.lua");
 --Eternals
 Include("code/Monsters/Eternals/RoundWorm.lua");
+Include("code/Monsters/Eternals/Dip.lua");
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
 --Items
