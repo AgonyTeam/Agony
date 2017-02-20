@@ -14,7 +14,7 @@ function Include(aFilename)
 end
 
 --SaveData
-local newestSaveVer = 1;
+local newestSaveVer = 2;
 if Isaac.HasModData(Agony) then
 	saveData = json.decode(Isaac.LoadModData(Agony));
 	if saveData.saveVer == nil or saveData.saveVer ~= newestSaveVer then
@@ -26,6 +26,8 @@ end
 
 saveData.gasolinejb = saveData.gasolinejb or {};
 saveData.radioactivePizza = saveData.radioactivePizza or {};
+saveData.Sacks3 = saveData.Sacks3 or {};
+saveData.Sacks2 = saveData.Sacks2 or {};
 
 --respawnV2's vars
 local ent_before = {};
@@ -323,6 +325,7 @@ Include("code/Familiars/DrunkenFly.lua");
 Include("code/Familiars/MetalBaby.lua");
 Include("code/Familiars/GoatFetus.lua");
 Include("code/Familiars/MommysDemon.lua");
+Include("code/Familiars/SackOfSacksOfSacks.lua");
 
 
 --Agony END

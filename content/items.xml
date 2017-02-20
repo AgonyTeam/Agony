@@ -64,4 +64,6 @@
 	<familiar description="Mysterious placeholder text" gfx="collectibles_metalbaby.png" name="Metal Baby" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_goatfetus.png" name="Goat Fetus" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_mommysdemon.png" name="Mommy's Demon" />
+	<familiar description="Sack of Sacks of Sacks of Sacks of Sacks of..." gfx="collectibles_sackofsacksofsacks.png" name="Sack of Sacks of Sacks" />
+	<familiar description="Or is it a Bag of Sacks..?" gfx="collectibles_sackofbags.png" name="Sack of Bags" />
 </items>

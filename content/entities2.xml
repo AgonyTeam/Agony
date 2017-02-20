@@ -83,5 +83,11 @@
     <entity anm2path="Familiars/Mommy's Demon/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Mommy's Demon" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="508">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+	<entity anm2path="Familiars/Sack of Sacks of Sacks/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Sack of Sacks of Sacks" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="509">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	<entity anm2path="Familiars/Sack of Bags/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Sack of Bags" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="510">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 	<!--/Familiars-->	
 </entities>	
