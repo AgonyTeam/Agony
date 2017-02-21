@@ -35,6 +35,7 @@
 	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
 	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" />
+	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" />
 	
 	
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />

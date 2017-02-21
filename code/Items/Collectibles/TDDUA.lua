@@ -22,6 +22,7 @@ function tilDeath:ConvertEntity(hurtEntity, dmgAmount, dmgFlags, source, countdo
 			hurtEntity:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
 		end
     end
+    return true
 end
 
 function tilDeath:onPlayerUpdate(player)

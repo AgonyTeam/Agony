@@ -310,6 +310,7 @@ Include("code/Items/Collectibles/DiceTattoo.lua")
 Include("code/Items/Collectibles/SomeonesShoe.lua")
 Include("code/Items/Collectibles/PersonalBubble.lua")
 Include("code/Items/Collectibles/BowlCut.lua")
+Include("code/Items/Collectibles/Parasites.lua")
 
 --Transformations
 Include("code/Misc/Transformations/God.lua")
