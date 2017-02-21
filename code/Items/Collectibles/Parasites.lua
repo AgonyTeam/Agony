@@ -8,7 +8,7 @@ parasites.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_parasites
 
 function parasites:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_PARASITES)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-		player.Damage = player.Damage + 2.69*player:GetCollectibleNum(CollectibleType.AGONY_C_PARASITES);
+		player.Damage = player.Damage + 3.69*player:GetCollectibleNum(CollectibleType.AGONY_C_PARASITES);
 	end
 end
 
@@ -24,13 +24,16 @@ end
 
 function parasites:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
     local player = Isaac.GetPlayer(0)
-    player:AddKeys(1)
     if hurtEntity.HitPoints < dmgAmount 
 			and not hurtEntity:IsBoss()
 			and player:HasCollectible(CollectibleType.AGONY_C_PARASITES)
             and hurtEntity:IsVulnerableEnemy()
-            and hurtEntity.Type ~= EntityType.ENTITY_SPIDER then
-    	player:AddCoins(1)
+            and hurtEntity.Type ~= EntityType.ENTITY_SPIDER 
+            and math.random(15) == 1 then
+      	for i = 1, math.random(2)+3, 1 do 
+    		--hurtEntity:ToNPC():ThrowSpider(hurtEntity.Position, hurtEntity.Position:__add(Vector (math.random(20)-10),math.random(20)-10), false, math.random(15))
+    		Isaac.Spawn(EntityType.ENTITY_SPIDER, 0, 0, hurtEntity.Position:__add(Vector (math.random(20)-10),math.random(20)-10), Vector (0,0), hurtEntity)
+    	end
     end
 end
 
