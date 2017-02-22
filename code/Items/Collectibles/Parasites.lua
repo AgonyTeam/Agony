@@ -30,7 +30,7 @@ function parasites:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
             and hurtEntity:IsVulnerableEnemy()
             and hurtEntity.Type ~= EntityType.ENTITY_SPIDER 
             and math.random(15) == 1 then
-      	for i = 1, math.random(2)+3, 1 do 
+      	for i = 1, math.random(2)+2, 1 do 
     		--hurtEntity:ToNPC():ThrowSpider(hurtEntity.Position, hurtEntity.Position:__add(Vector (math.random(20)-10),math.random(20)-10), false, math.random(15))
     		Isaac.Spawn(EntityType.ENTITY_SPIDER, 0, 0, hurtEntity.Position:__add(Vector (math.random(20)-10),math.random(20)-10), Vector (0,0), hurtEntity)
     	end

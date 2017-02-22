@@ -37,6 +37,7 @@
         <Item Name="Mommy's Demon" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Tesla Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -59,6 +60,7 @@
         <Item Name="Despair" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Goat Fetus" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
