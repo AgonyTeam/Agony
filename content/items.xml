@@ -36,6 +36,7 @@
 	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
 	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" />
 	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" />
+	<passive name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" />
 	
 	
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />

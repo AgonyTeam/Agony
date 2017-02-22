@@ -311,6 +311,7 @@ Include("code/Items/Collectibles/SomeonesShoe.lua")
 Include("code/Items/Collectibles/PersonalBubble.lua")
 Include("code/Items/Collectibles/BowlCut.lua")
 Include("code/Items/Collectibles/Parasites.lua")
+Include("code/Items/Collectibles/SpooderBoi.lua")
 
 --Transformations
 Include("code/Misc/Transformations/God.lua")
