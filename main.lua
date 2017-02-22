@@ -316,7 +316,10 @@ Include("code/Items/Collectibles/Parasites.lua")
 Include("code/Misc/Transformations/God.lua")
 
 --Pills
-Include("code/Items/Pick Ups/PartyPills.lua");
+Include("code/Items/Pick Ups/Pills/PartyPills.lua");
+
+--Cards
+Include("code/Items/Pick Ups/Cards/Reload.lua")
 
 --Familiars
 Include("code/Familiars/TinyTinyHorn.lua");
