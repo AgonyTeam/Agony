@@ -327,6 +327,7 @@ Include("code/Familiars/MetalBaby.lua");
 Include("code/Familiars/GoatFetus.lua");
 Include("code/Familiars/MommysDemon.lua");
 Include("code/Familiars/SackOfSacksOfSacks.lua");
+Include("code/Familiars/TeslaBaby.lua");
 
 
 --Agony END
