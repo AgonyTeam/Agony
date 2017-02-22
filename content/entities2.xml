@@ -94,6 +94,9 @@
     </entity>
     <entity anm2path="Familiars/Burnt Baby/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Burnt Baby" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="512">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>    
+    <entity anm2path="Familiars/Chest of Chests/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Chest of Chests" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="513">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<!--/Familiars-->	
 </entities>	

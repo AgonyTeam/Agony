@@ -69,4 +69,5 @@
 	<familiar description="Or is it a Bag of Sacks..?" gfx="collectibles_sackofbags.png" name="Sack of Bags" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_teslababy.png" name="Tesla Baby" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_burntbaby.png" name="Burnt Baby" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_chestofchests.png" name="Chest of Chests" />
 </items>

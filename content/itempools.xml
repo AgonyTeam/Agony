@@ -38,12 +38,16 @@
         <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Tesla Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Chest of Chests" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="D5" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Dice Tattoo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Chest of Chests" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="boss">
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -73,6 +77,7 @@
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Cyanide" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Pandora's Chest" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="library">
     </Pool>
