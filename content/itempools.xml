@@ -40,6 +40,8 @@
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Chest of Chests" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Spooderboi" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Grandpa Fly" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

@@ -334,6 +334,7 @@ Include("code/Familiars/SackOfSacksOfSacks.lua");
 Include("code/Familiars/TeslaBaby.lua");
 Include("code/Familiars/BurntBaby.lua");
 Include("code/Familiars/ChestOfChests.lua");
+Include("code/Familiars/GrandpaFly.lua");
 
 
 --Agony END

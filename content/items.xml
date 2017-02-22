@@ -71,4 +71,5 @@
 	<familiar description="Mysterious placeholder text" gfx="collectibles_teslababy.png" name="Tesla Baby" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_burntbaby.png" name="Burnt Baby" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_chestofchests.png" name="Chest of Chests" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_grandpafly.png" name="Grandpa Fly" />
 </items>
