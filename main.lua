@@ -249,7 +249,6 @@ function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
 	end
 end
 
-
 --Debug
 Include("Debug.lua");
 --Enemies
@@ -258,6 +257,7 @@ Include("code/Monsters/YellowBlock.lua");
 Include("code/Monsters/Eternals/RoundWorm.lua");
 Include("code/Monsters/Eternals/Dip.lua");
 Include("code/Monsters/Eternals/Squirt.lua");
+Include("code/Monsters/Eternals/Pooter.lua");
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
 --Items

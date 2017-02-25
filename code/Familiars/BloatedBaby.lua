@@ -11,9 +11,10 @@ function bloatedBaby:updateFam(fam)
 	local entities = Isaac.GetRoomEntities()
 		for i = 1, #entities do
 			if (entities[i].Type == EntityType.ENTITY_PROJECTILE) and entities[i].Position:Distance(fam.Position) < 30 then
-				local t = player:FireTear(fam.Position, Vector(math.random(2)-1, math.random(2)-1):__mul(3), false, true, false)
-				t.Variant = TearVariant.BOBS_HEAD
-				t.Color:SetColorize(0, 1, 0, 1)
+				local t = Isaac.Spawn(EntityType.ENTITY_TEAR, 0 , 0, fam.Position, Vector(math.random(2)-1, math.random(2)-1):__mul(3), fam)
+				--local t = player:FireTear(fam.Position, Vector(math.random(2)-1, math.random(2)-1):__mul(3), false, true, false)
+				t.Variant = (TearVariant.BOBS_HEAD)
+				t.Color = Color(0, 1, 0, 1, 0, 0, 0)
 				entities[i]:Remove()
 				famSprite:Play("Hit", true)
 			end

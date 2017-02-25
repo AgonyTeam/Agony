@@ -32,7 +32,7 @@
 	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
 	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
 	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" />
-	<passive name="Til Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
+	<passive name="Till Death Do Us Apart" description="Form an alliance" gfx="collectibles_TDDUA.png" blackhearts="2" />
 	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
 	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" />
 	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" />

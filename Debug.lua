@@ -3,6 +3,7 @@ local debugScript = {}
 debug_text = "ayy"
 debug_tbl1 = {one_no = "entries"}
 debug_tbl2 = {two_no = "entries"}
+debug_entity = nil
 
 function debugScript:displayEntities()
 	local entList = Isaac.GetRoomEntities()
@@ -13,6 +14,7 @@ end
  
 function debugScript:universalDebugText()
 	Isaac.RenderText(debug_text, 40, 250, 255, 255, 0, 255);
+	Isaac.RenderText(tostring(debug_entity.State), 10, 250, 255, 255, 255, 255);
 end
 
 function debugScript:universalTableParser()
@@ -28,6 +30,11 @@ function debugScript:universalTableParser()
 	end
 end
 
+function debugScript:stateReader(ent)
+	debug_entity = ent
+end
+
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.displayEntities)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalDebugText)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalTableParser)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, debugScript.stateReader, EntityType.ENTITY_POOTER)

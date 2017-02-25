@@ -1,5 +1,5 @@
 --local item_TilDeathDoUsApart = Isaac.GetItemIdByName("Til Death Do Us Apart");
-CollectibleType["AGONY_C_TDDUA"] = Isaac.GetItemIdByName("Til Death Do Us Apart");
+CollectibleType["AGONY_C_TDDUA"] = Isaac.GetItemIdByName("Till Death Do Us Apart");
 local tilDeath = {
     hasItem = nil, --used for costume
     costumeID = nil
