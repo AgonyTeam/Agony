@@ -73,4 +73,6 @@
 	<familiar description="Mysterious placeholder text" gfx="collectibles_chestofchests.png" name="Chest of Chests" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_grandpafly.png" name="Grandpa Fly" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_bloatedbaby.png" name="Bloated Baby" />
+
+	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" />
 </items>

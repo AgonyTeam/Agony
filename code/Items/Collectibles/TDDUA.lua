@@ -12,14 +12,17 @@ local rng = RNG()
 
 function tilDeath:ConvertEntity(hurtEntity, dmgAmount, dmgFlags, source, countdown)
     local player = Isaac.GetPlayer(0)
+    local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+    col:Reset()
     if hurtEntity.HitPoints < dmgAmount 
 			and not hurtEntity:IsBoss()
 			and player:HasCollectible(CollectibleType.AGONY_C_TILL_DEATH_DO_US_APART)
             and hurtEntity:IsVulnerableEnemy() then
         local threshold = CONVERT_LUCK_BASE + player.Luck * CONVERT_LUCK_MULTI
         if rng:RandomFloat() < threshold then
-		  hurtEntity.HitPoints = hurtEntity.MaxHitPoints + dmgAmount; --because function is called before damage os taken. this will make sure the enemy stays alive if the player deals massive dmg
-		  hurtEntity:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
+	        hurtEntity.HitPoints = hurtEntity.MaxHitPoints + dmgAmount; --because function is called before damage os taken. this will make sure the enemy stays alive if the player deals massive dmg
+            hurtEntity:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
+            Game():SpawnParticles(hurtEntity.Position, EffectVariant.POOF01, 1, 1, col, 0)
         end
     end
 end
