@@ -40,6 +40,7 @@ function soulmates:onTakeDmg(TookDamage, DamageAmount, DamageFlag, DamageSource,
 			TookDamage:AddCharmed(60)
 		end
 	end
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, soulmates.updateFamJuliet, FamiliarVariant.AGONY_F_SOULMATE_JULIET)

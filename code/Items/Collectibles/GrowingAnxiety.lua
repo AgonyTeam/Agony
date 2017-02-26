@@ -7,7 +7,7 @@ local growingAnxiety =  {
     hasItem = nil, --used for costume
     costumeID = nil
 }
-growingAnxiety.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_growingAnxiety.anm2")
+growingAnxiety.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_growinganxiety.anm2")
 
 --Shrinks the player upon getting hit
 function growingAnxiety:onTakeDmg()
@@ -25,6 +25,7 @@ function growingAnxiety:onTakeDmg()
 		end
 		player.SpriteScale = growingAnxiety.FormerScale*growingAnxiety.CurrentScaleMulti
 	end
+	return true
 end
 
 --Resets the player size after leaving the room
@@ -40,7 +41,7 @@ function growingAnxiety:onPlayerUpdate(player)
     if Game():GetFrameCount() == 1 then
         growingAnxiety.hasItem = false
     end
-    if growingAnxiety.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TDDUA) then
+    if growingAnxiety.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GROWING_ANXIETY) then
         player:AddNullCostume(growingAnxiety.costumeID)
         growingAnxiety.hasItem = true
     end

@@ -23,6 +23,7 @@ function pythB:ExplodeOnDeath(hurtEntity, dmgAmount, dmgFlags, source, countdown
     	hurtEntity:Remove()
     	Game():BombExplosionEffects(hurtEntity.Position, 10, player.TearFlags, player.Color, hurtEntity, 1, false, false)
     end
+    return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, pythB.ExplodeOnDeath)
