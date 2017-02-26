@@ -35,7 +35,6 @@ function parasites:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
     		Isaac.Spawn(EntityType.ENTITY_SPIDER, 0, 0, hurtEntity.Position:__add(Vector (math.random(20)-10),math.random(20)-10), Vector (0,0), hurtEntity)
     	end
     end
-    return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, parasites.onTakeDmg)

@@ -18,11 +18,10 @@ function tilDeath:ConvertEntity(hurtEntity, dmgAmount, dmgFlags, source, countdo
             and hurtEntity:IsVulnerableEnemy() then
         local threshold = CONVERT_LUCK_BASE + player.Luck * CONVERT_LUCK_MULTI
         if rng:RandomFloat() < threshold then
-			hurtEntity.HitPoints = hurtEntity.MaxHitPoints + dmgAmount; --because function is called before damage os taken. this will make sure the enemy stays alive if the player deals massive dmg
-			hurtEntity:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
-		end
+		  hurtEntity.HitPoints = hurtEntity.MaxHitPoints + dmgAmount; --because function is called before damage os taken. this will make sure the enemy stays alive if the player deals massive dmg
+		  hurtEntity:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
+        end
     end
-    return true
 end
 
 function tilDeath:onPlayerUpdate(player)

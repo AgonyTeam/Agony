@@ -30,7 +30,6 @@ function soulmates:onTakeDmg(TookDamage, DamageAmount, DamageFlag, DamageSource,
 			TookDamage:AddConfusion(DamageSource, 60, false)
 		end
 	end
-	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, soulmates.updateFam, FamiliarVariant.AGONY_F_DRUNKEN_FLY)

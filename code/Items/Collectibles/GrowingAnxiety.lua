@@ -25,7 +25,6 @@ function growingAnxiety:onTakeDmg()
 		end
 		player.SpriteScale = growingAnxiety.FormerScale*growingAnxiety.CurrentScaleMulti
 	end
-	return true
 end
 
 --Resets the player size after leaving the room
@@ -35,10 +34,8 @@ function growingAnxiety:onPlayerUpdate(player)
 		growingAnxiety.CurrentScaleMulti = 1
 		player.SpriteScale = growingAnxiety.FormerScale
 	end
-end
 
-function growingAnxiety:onPlayerUpdate(player)
-    if Game():GetFrameCount() == 1 then
+	if Game():GetFrameCount() == 1 then
         growingAnxiety.hasItem = false
     end
     if growingAnxiety.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GROWING_ANXIETY) then
@@ -49,4 +46,3 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, growingAnxiety.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, growingAnxiety.onTakeDmg, EntityType.ENTITY_PLAYER)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, growingAnxiety.onPlayerUpdate)			

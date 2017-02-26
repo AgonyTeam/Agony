@@ -29,8 +29,6 @@ function doubleDown:onTakeDmg(entity,dmgAmount)
 			end
 		end
 	end
-	--Ensures other TAKE_DMG callbacks trigger
-	return true
 end
 
 function doubleDown:onPlayerUpdate(player)
