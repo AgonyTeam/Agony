@@ -53,7 +53,7 @@ function theWay:onUse()
 	end
 
 	--player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
-	Isaac.Spawn(100, 5, rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1 , Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
+	Isaac.Spawn(5, 100, rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1 , Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
 	player:EvaluateItems()
 
 	return true
