@@ -42,6 +42,7 @@
         <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Spooderboi" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Grandpa Fly" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -72,6 +73,7 @@
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Cornucopia" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
         <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -82,6 +84,7 @@
         <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="library">
+        <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="challenge">
     </Pool>

@@ -28,6 +28,7 @@ saveData.gasolinejb = saveData.gasolinejb or {};
 saveData.radioactivePizza = saveData.radioactivePizza or {};
 saveData.Sacks3 = saveData.Sacks3 or {};
 saveData.Sacks2 = saveData.Sacks2 or {};
+saveData.theWay = saveData.theWay or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -316,6 +317,7 @@ Include("code/Items/Collectibles/PersonalBubble.lua")
 Include("code/Items/Collectibles/BowlCut.lua")
 Include("code/Items/Collectibles/Parasites.lua")
 Include("code/Items/Collectibles/SpooderBoi.lua")
+Include("code/Items/Collectibles/TheWay.lua")
 
 --Trinkets
 Include("code/Items/Trinkets/SwallowedDice.lua")
