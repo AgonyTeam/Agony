@@ -251,6 +251,9 @@ end
 
 --Debug
 Include("Debug.lua");
+--Include("EntityRegister.lua")
+--Include("entnames.lua")
+--Include("printentnames.lua")
 --Enemies
 Include("code/Monsters/YellowBlock.lua");
 --Eternals
@@ -258,6 +261,7 @@ Include("code/Monsters/Eternals/RoundWorm.lua");
 Include("code/Monsters/Eternals/Dip.lua");
 Include("code/Monsters/Eternals/Squirt.lua");
 Include("code/Monsters/Eternals/Pooter.lua");
+Include("code/Monsters/Eternals/SuperPooter.lua");
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
 --Items
@@ -341,7 +345,6 @@ Include("code/Familiars/GrandpaFly.lua");
 Include("code/Familiars/BloatedBaby.lua");
 
 --Agony END
-
 
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
