@@ -50,6 +50,18 @@ function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
 end
 
+--Eternal al list
+local EternalsList = {}
+function Agony:AddEternal(Type,Variant,Name)
+	table.insert(EternalsList, Type)
+	table.insert(EternalsList, Variant)
+	table.insert(EternalsList, Name)
+end
+
+function Agony:getEternalList()
+	return EternalsList
+end 
+
 function Agony:respawnV2()
 	local room = Game():GetRoom();
 	local level = Game():GetLevel();
@@ -263,6 +275,8 @@ Include("code/Monsters/Eternals/Dip.lua");
 Include("code/Monsters/Eternals/Squirt.lua");
 Include("code/Monsters/Eternals/Pooter.lua");
 Include("code/Monsters/Eternals/SuperPooter.lua");
+Include("code/Monsters/Eternals/ChampionFetus.lua");
+
 --Other Entities
 Include("code/Items/Slots/TreasureHoarder.lua");
 --Items

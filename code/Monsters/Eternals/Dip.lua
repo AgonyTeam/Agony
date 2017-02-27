@@ -4,6 +4,9 @@ EternalDip = {
 	}
 };
 
+--Add to Eternal List
+Agony:AddEternal(EntityType.ENTITY_DIP,0,"Dip")
+
 --Eternal Dips
 function EternalDip:ai_main(entity)
 	local room = Game():GetRoom();

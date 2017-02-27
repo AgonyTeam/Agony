@@ -1,4 +1,7 @@
- EternalSuperPooter = {};
+EternalSuperPooter = {};
+
+--Add to Eternal List
+Agony:AddEternal(EntityType.ENTITY_POOTER,1,"Super Pooter")
 
 --V-shot helper function
 local function doVShot(entity, playerPos, angle)

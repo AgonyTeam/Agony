@@ -4,6 +4,9 @@ EternalSquirt = {
 	}
 };
 
+--Add to Eternal List
+Agony:AddEternal(EntityType.ENTITY_SQUIRT,0,"Squirt")
+
 --Eternal Squirts
 function EternalSquirt:ai_main(entity)
 	local room = Game():GetRoom();
