@@ -36,7 +36,7 @@ function theWay:onUse()
 	local player = Game():GetPlayer(0)
 	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_THE_WAY)
 	
-	local r = rng:RandomInt(3) + 1
+	local r = rng:RandomInt(4) + 1
 	
 	if r == 1 then
 		theWay.tearMalus = theWay.tearMalus*1.2
