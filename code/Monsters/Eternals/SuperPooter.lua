@@ -1,11 +1,5 @@
  EternalSuperPooter = {};
 
-
---Add the id, variant and name to the EternalsList
-table.insert(EternalsList, EntityType.ENTITY_POOTER);
-table.insert(EternalsList, 1);
-table.insert(EternalsList, "Super Pooter");
-
 --V-shot helper function
 local function doVShot(entity, playerPos, angle)
 	entity:PlaySound(SoundEffect.SOUND_BLOODSHOOT, 1.0, 0, false, 1.0)
