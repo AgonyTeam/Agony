@@ -4,6 +4,12 @@ EternalSquirt = {
 	}
 };
 
+
+--Add the id, variant and name to the EternalsList
+table.insert(EternalsList, EntityType.ENTITY_SQUIRT);
+table.insert(EternalsList, 0);
+table.insert(EternalsList, "Squirt");
+
 --Eternal Squirts
 function EternalSquirt:ai_main(entity)
 	local room = Game():GetRoom();

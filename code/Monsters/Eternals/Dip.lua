@@ -4,6 +4,11 @@ EternalDip = {
 	}
 };
 
+--Add the id, variant and name to the EternalsList
+table.insert(EternalsList, EntityType.ENTITY_DIP);
+table.insert(EternalsList, 0);
+table.insert(EternalsList, "Dip");
+
 --Eternal Dips
 function EternalDip:ai_main(entity)
 	local room = Game():GetRoom();

@@ -1,6 +1,11 @@
 EternalRoundWorm = {};
 --entity_roundworm = Isaac.GetEntityTypeByName("Round Worm");
 
+--Add the id, variant and name to the EternalsList
+table.insert(EternalsList, EntityType.ENTITY_ROUND_WORM);
+table.insert(EternalsList, 0);
+table.insert(EternalsList, "Round Worm");
+
 --Eternal Round Worms
 function EternalRoundWorm:ai_main(entity)
 	local room = Game():GetRoom();

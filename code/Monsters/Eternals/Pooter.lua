@@ -1,5 +1,10 @@
  EternalPooter = {};
 
+--Add the id, variant and name to the EternalsList
+table.insert(EternalsList, EntityType.ENTITY_POOTER);
+table.insert(EternalsList, 0);
+table.insert(EternalsList, "Pooter");
+
 --Eternal Pooters
 function EternalPooter:ai_main(entity)
 	local room = Game():GetRoom();

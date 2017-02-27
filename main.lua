@@ -45,6 +45,9 @@ local respawnIDs = { --holds all IDs that need to be respawned
 	EntityType.AGONY_ETYPE_YELLOW_BLOCK
 }
 
+--Eternal list
+local EternalsList = {}
+
 --make the game save the saveData table
 function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
