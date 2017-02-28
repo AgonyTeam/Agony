@@ -262,6 +262,15 @@ function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
 	end
 end
 
+--Display Giant Book anim
+function Agony:displayGiantBook(animName,pngPath)
+	--TODO, figure out a way to make it spawn inthe middle of the screen
+	local giantbook = Isaac.Spawn(EntityType.ENTITY_FLY, 0, 16, Isaac.WorldToRenderPosition(Vector(320,300)), Vector (0,0), player)
+	local sprite = giantbook:GetSprite()
+	sprite:ReplaceSpritesheet(0, pngPath)
+	sprite:Play(animName, true)
+end
+
 --Debug
 Include("Debug.lua");
 --Include("EntityRegister.lua")
@@ -359,6 +368,10 @@ Include("code/Familiars/BurntBaby.lua");
 Include("code/Familiars/ChestOfChests.lua");
 Include("code/Familiars/GrandpaFly.lua");
 Include("code/Familiars/BloatedBaby.lua");
+
+--UI
+Include("code/UI/GiantBook.lua");
+
 
 --Agony END
 

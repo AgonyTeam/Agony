@@ -56,6 +56,8 @@ function theWay:onUse()
 	Isaac.Spawn(5, 100, rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1 , Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
 	player:EvaluateItems()
 
+	Agony:displayGiantBook("Appear","theWay.png")
+
 	return true
 end
 
