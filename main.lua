@@ -368,6 +368,7 @@ Include("code/Familiars/BurntBaby.lua");
 Include("code/Familiars/ChestOfChests.lua");
 Include("code/Familiars/GrandpaFly.lua");
 Include("code/Familiars/BloatedBaby.lua");
+Include("code/Familiars/WaitNo.lua");
 
 --UI
 Include("code/UI/GiantBook.lua");
