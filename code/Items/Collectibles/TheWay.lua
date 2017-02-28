@@ -55,8 +55,9 @@ function theWay:onUse()
 	--player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
 	Isaac.Spawn(5, 100, rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1 , Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
 	player:EvaluateItems()
+	
 
-	Agony:displayGiantBook("Appear","theWay.png")
+	--Agony:displayGiantBook("Appear","theWay.png")
 
 	return true
 end
@@ -72,6 +73,7 @@ function theWay:cacheUpdate(player,cacheFlag)
 		player.Luck = player.Luck-theWay.luckMalus
 	end
 	if cacheFlag == CacheFlag.CACHE_FIREDELAY then
+		theWay.tearMalus = theWay.tearMalus *1.3
 		theWay.TearBool = true
 	end
 end

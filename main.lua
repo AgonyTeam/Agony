@@ -265,7 +265,7 @@ end
 --Display Giant Book anim
 function Agony:displayGiantBook(animName,pngPath)
 	--TODO, figure out a way to make it spawn inthe middle of the screen
-	local giantbook = Isaac.Spawn(EntityType.ENTITY_FLY, 0, 16, Isaac.WorldToRenderPosition(Vector(320,300)), Vector (0,0), player)
+	local giantbook = Isaac.Spawn(503, 0, 16, Isaac.WorldToRenderPosition(Vector(853/2,480/2)), Vector (0,0), player)
 	local sprite = giantbook:GetSprite()
 	sprite:ReplaceSpritesheet(0, pngPath)
 	sprite:Play(animName, true)
