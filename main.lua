@@ -341,6 +341,7 @@ Include("code/Items/Collectibles/BowlCut.lua")
 Include("code/Items/Collectibles/Parasites.lua")
 Include("code/Items/Collectibles/SpooderBoi.lua")
 Include("code/Items/Collectibles/TheWay.lua")
+Include("code/Items/Collectibles/GoldMan.lua")
 
 --Trinkets
 Include("code/Items/Trinkets/SwallowedDice.lua")
