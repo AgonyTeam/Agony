@@ -12,6 +12,7 @@ local theWay =  {
 --Load the maluses or init them otherwise
 function theWay:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
+		theWay.TearBool = false
 		theWay.damageMalus = saveData.theWay.damageMalus or 1
 		theWay.tearMalus = saveData.theWay.tearMalus or 1
 		theWay.speedMalus = saveData.theWay.speedMalus or 1
@@ -36,15 +37,15 @@ function theWay:onUse()
 	local player = Game():GetPlayer(0)
 	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_THE_WAY)
 	
-	local r = rng:RandomInt(4) + 1
+	local r = rng:RandomInt(4)
 	
-	if r == 1 then
-		theWay.tearMalus = theWay.tearMalus*1.2
+	if r == 3 then
+		theWay.tearMalus = theWay.tearMalus*1.3
 		player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
-	elseif r == 2 then
+	elseif r == 1 then
 		theWay.luckMalus = theWay.luckMalus + 2.69
 		player:AddCacheFlags(CacheFlag.CACHE_LUCK)
-	elseif r == 3 then
+	elseif r == 2 then
 		theWay.speedMalus = theWay.speedMalus*0.8
 		player:AddCacheFlags(CacheFlag.CACHE_SPEED)
 	else
@@ -73,7 +74,6 @@ function theWay:cacheUpdate(player,cacheFlag)
 		player.Luck = player.Luck-theWay.luckMalus
 	end
 	if cacheFlag == CacheFlag.CACHE_FIREDELAY then
-		theWay.tearMalus = theWay.tearMalus *1.3
 		theWay.TearBool = true
 	end
 end
