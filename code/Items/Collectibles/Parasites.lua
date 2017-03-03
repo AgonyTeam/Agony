@@ -17,7 +17,7 @@ function parasites:onPlayerUpdate(player)
 		parasites.hasItem = false
 	end
 	if parasites.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_PARASITES) then
-		--player:AddNullCostume(parasites.costumeID)
+		player:AddNullCostume(parasites.costumeID)
 		parasites.hasItem = true
 	end
 end

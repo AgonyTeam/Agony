@@ -25,7 +25,7 @@ function KIP:onPlayerUpdate(player)
 			player:EvaluateItems()
 		end
 		if KIP.hasItem == false then
-			--player:AddNullCostume(KIP.costumeID)
+			player:AddNullCostume(KIP.costumeID)
 			KIP.hasItem = true
 		end
 	end

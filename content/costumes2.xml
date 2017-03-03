@@ -13,4 +13,8 @@
 	<costume name="Dice Tattoo" anm2path="costume_dicetattoo.anm2" type="none" />
 	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="none" />
 	<costume name="Till Death Do Us Apart" anm2path="costume_tilldeathdousappart.anm2" type="none" />
+	<costume name="Electric Hair" anm2path="costume_electrichair.anm2" type="none" />
+	<costume name="Knowledge Is Power" anm2path="costume_knowledgeispower.anm2" type="none" />
+	<costume name="Parasites" anm2path="costume_parasites.anm2" type="none" />
+	<costume name="Vomit Cake" anm2path="costume_parasites.anm2" type="none" />
 </costumes>

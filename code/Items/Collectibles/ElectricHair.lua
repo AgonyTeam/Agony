@@ -18,7 +18,7 @@ function electricHair:onPlayerUpdate(player)
 		electricHair.hasItem = false
 	end
 	if electricHair.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR) then
-		--player:AddNullCostume(electricHair.costumeID)
+		player:AddNullCostume(electricHair.costumeID)
 		electricHair.hasItem = true
 	end
 end

@@ -1,6 +1,10 @@
 --local item_VomitCake = Isaac.GetItemIdByName("Vomit Cake")
 CollectibleType["AGONY_C_VOMIT_CAKE"] = Isaac.GetItemIdByName("Vomit Cake");
-local vomitCake =  {}
+local vomitCake =  {	
+	hasItem = nil, --used for costume
+	costumeID = nil
+}
+vomitCake.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_vomitcake.anm2")
 
 function vomitCake:spawnCreep(player)
 	if player:HasCollectible(CollectibleType.AGONY_C_VOMIT_CAKE) == true then
@@ -27,5 +31,15 @@ function vomitCake:spawnCreep(player)
 	end
 end
 
+function vomitCake:onPlayerUpdate(player)
+	if Game():GetFrameCount() == 1 then
+		vomitCake.hasItem = false
+	end
+	if vomitCake.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_VOMIT_CAKE) then
+		player:AddNullCostume(vomitCake.costumeID)
+		vomitCake.hasItem = true
+	end
+end
 
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, vomitCake.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, vomitCake.spawnCreep)
