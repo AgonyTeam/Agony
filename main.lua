@@ -34,6 +34,9 @@ local respawnIDs = { --holds all IDs that need to be respawned
 	EntityType.AGONY_ETYPE_YELLOW_BLOCK
 }
 
+--spritesToRender table
+spritesToRender = {}
+
 --make the game save the saveData table
 function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
@@ -251,13 +254,29 @@ function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
 	end
 end
 
---Display Giant Book anim
-function Agony:displayGiantBook(animName,pngPath)
-	--TODO, figure out a way to make it spawn inthe middle of the screen
-	local giantbook = Isaac.Spawn(503, 0, 16, Isaac.WorldToRenderPosition(Vector(853/2,480/2)), Vector (0,0), player)
-	local sprite = giantbook:GetSprite()
-	sprite:ReplaceSpritesheet(0, pngPath)
-	sprite:Play(animName, true)
+--Display Giant Book anim take 2
+function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
+	customAnm2 = customAnm2 or "giantbook.anm2"
+	local giantbook = Sprite()
+	giantbook:Load("gfx/ui/giantbook/" .. customAnm2, true)
+	giantbook:ReplaceSpritesheet(0, "gfx/ui/giantbook/" .. bookSprite)
+	giantbook:LoadGraphics()
+	giantbook:Play(animName, true)
+	--testsprite:Reload()
+	spritesToRender[#spritesToRender+1] = { 
+		giantbook,
+		Vector((640-128-48)/2, (460-128-48)/2) --640 is the room width, 460 is height. Have to subtract 128 to center the book sprite and 48 because only then it apparently is like the vanilla giant book effect
+	}
+end
+
+--Render all sprites in spritesToRender
+function Agony:renderSprites()
+	for _,spriteTable in pairs(spritesToRender) do
+		local sprite = spriteTable[1]
+		local renderPos = spriteTable[2]
+		sprite:Render(renderPos, Vector(0,0), Vector(0,0))
+		sprite:Update()
+	end
 end
 
 --Debug
@@ -360,11 +379,17 @@ require("code/Familiars/GrandpaFly");
 require("code/Familiars/BloatedBaby");
 require("code/Familiars/WaitNo");
 
---UI
-require("code/UI/GiantBook");
-
+--Extra
+local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
+for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
+	if name ~= "NUM_COLLECTIBLES" then
+		num_collectibles = num_collectibles + 1
+	end
+end
+CollectibleType.NUM_COLLECTIBLES = num_collectibles 
 
 --Agony END
 
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
+Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites);
