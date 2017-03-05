@@ -352,6 +352,7 @@ require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
 require("code/Items/Collectibles/GoldMan")
 require("code/Items/Collectibles/LilRedBook")
+require("code/Items/Collectibles/SacramentalWine")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

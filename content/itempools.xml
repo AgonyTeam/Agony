@@ -45,6 +45,7 @@
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Wait, No." RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Lil'Red Book" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -76,6 +77,7 @@
         <Item Name="Cornucopia" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Sacramental Wine" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
         <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -88,6 +90,7 @@
     </Pool>
     <Pool Name="library">
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Lil'Red Book" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="challenge">
     </Pool>
