@@ -50,7 +50,7 @@
 
     <!--Joseph-->
     <entity anm2path="Monsters/Bosses/Joseph/animation.anm2" reroll="false" baseHP="200" boss="1" champion="0" collisionDamage="2" collisionMass="6" collisionRadius="26" friction="1" id="504" name="Joseph" numGridCollisionPoints="12" shadowSize="26" stageHP="0" variant="0" portrait="11" >
-        <gibs amount="12" blood="2" bone="2" eye="2" gut="2" large="1" />
+        <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
         <preload-snd id="143" /> <!-- SOUND_SCARED_WHIMPER -->
     </entity>
     <!--/Joseph-->

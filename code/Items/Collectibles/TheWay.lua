@@ -2,10 +2,10 @@ CollectibleType["AGONY_C_THE_WAY"] = Isaac.GetItemIdByName("The Way");
 
 local theWay =  {
 	--Malus multipliers
-	damageMalus = nil,
-	speedMalus = nil,
-	tearMalus = nil,
-	luckMalus = nil,
+	damageMalus = saveData.theWay.damageMalus or nil,
+	speedMalus = saveData.theWay.tearMalus or nil,
+	tearMalus = saveData.theWay.speedMalus or nil,
+	luckMalus = saveData.theWay.luckMalus or nil,
 	TearBool = false
 }
 
@@ -13,10 +13,10 @@ local theWay =  {
 function theWay:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		theWay.TearBool = false
-		theWay.damageMalus = saveData.theWay.damageMalus or 1
-		theWay.tearMalus = saveData.theWay.tearMalus or 1
-		theWay.speedMalus = saveData.theWay.speedMalus or 1
-		theWay.luckMalus = saveData.theWay.luckMalus or 0
+		theWay.damageMalus = 1
+		theWay.tearMalus = 1
+		theWay.speedMalus = 1
+		theWay.luckMalus = 0
 		
 		saveData.theWay.damageMalus = theWay.damageMalus
 		saveData.theWay.tearMalus = theWay.tearMalus
@@ -58,7 +58,7 @@ function theWay:onUse()
 	player:EvaluateItems()
 	
 
-	--Agony:displayGiantBook("Appear","theWay.png")
+	Agony:AnimGiantBook("theWay.png", "Shake", nil)
 
 	return true
 end
