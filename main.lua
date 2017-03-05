@@ -354,6 +354,7 @@ require("code/Items/Collectibles/GoldMan")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
+require("code/Items/Trinkets/PartyPooper")
 
 --Transformations
 require("code/Misc/Transformations/God")

@@ -78,4 +78,5 @@
 	<familiar description="Mysterious placeholder text" gfx="collectibles_waitno.png" name="Wait, No." />
 
 	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" />
 </items>
