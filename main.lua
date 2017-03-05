@@ -351,6 +351,7 @@ require("code/Items/Collectibles/Parasites")
 require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
 require("code/Items/Collectibles/GoldMan")
+require("code/Items/Collectibles/LilRedBook")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
