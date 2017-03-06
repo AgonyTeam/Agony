@@ -35,7 +35,7 @@ Check out our project boards!
 - Bad items aren't bad
        - It's important to have bad items, as long as they can somehow be useful in a specific situation
 - Random is fun but controlled randomness is more fun
-       - Think how the Discover mechanic in Hearthstone is way more rewarding than gettign a random card
+       - Think how the Discover mechanic in Hearthstone is way more rewarding than getting a random card
 - Go big or go home
        - When designing/modifying something don't change 5-10%, big cuts are way more effective when it comes to balancing, trust me!
 
