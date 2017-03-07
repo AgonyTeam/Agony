@@ -27,4 +27,4 @@ end
 
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, EternalMoter.ai_main, EntityType.ENTITY_ATTACKFLY);
-Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, EternalMoter.ai_main, EntityType.ENTITY_ATTACKFLY);
+Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, EternalMoter.ai_take_damage, EntityType.ENTITY_ATTACKFLY);
