@@ -1,3 +1,5 @@
+EternalMoter = {};
+
 --Add to Eternal List
 Agony:AddEternal(EntityType.ENTITY_MOTER,1,"Moter")
 

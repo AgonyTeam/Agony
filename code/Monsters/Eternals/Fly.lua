@@ -1,3 +1,5 @@
+EternalFly = {};
+
 --Add to Eternal List
 Agony:AddEternal(EntityType.ENTITY_FLY,1,"Fly")
 
