@@ -279,6 +279,10 @@ function Agony:renderSprites()
 	end
 end
 
+
+--Extra Bits
+PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
+
 --Debug
 require("Debug");
 --require("EntityRegister")
@@ -353,6 +357,7 @@ require("code/Items/Collectibles/TheWay")
 require("code/Items/Collectibles/GoldMan")
 require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
+require("code/Items/Collectibles/PyriteNugget")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
@@ -366,6 +371,9 @@ require("code/Items/Pick Ups/Pills/PartyPills");
 
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
+
+--Coins
+require("code/Items/Pick Ups/Coins/PyriteCoin")
 
 --Familiars
 require("code/Familiars/TinyTinyHorn");
@@ -383,7 +391,7 @@ require("code/Familiars/GrandpaFly");
 require("code/Familiars/BloatedBaby");
 require("code/Familiars/WaitNo");
 
---Extra
+--Extra Bits 2
 local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
 for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
 	if name ~= "NUM_COLLECTIBLES" then

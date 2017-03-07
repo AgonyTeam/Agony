@@ -48,6 +48,15 @@
         <preload-snd id="143" /> <!-- SOUND_SCARED_WHIMPER -->
     </entity>
     <!--/Joseph-->
+	
+	<!--Pickups-->
+	<entity anm2path="Items/Pick Ups/Pyrite Coin/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Pyrite Coin" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="520" subtype="51">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	    <preload-snd id="237" /> <!-- SOUND_PLOP -->
+    </entity>
+	<!--/Pickups-->
+	
+	
     <!--Eternals-->
     <entity anm2path="Monsters/Eternals/Champion Fetus/animation.anm2" reroll="true" baseHP="25" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="38" name="Eternal Champion Fetus" numGridCollisionPoints="0" shadowSize="16" stageHP="0" variant="3" subtype="15" portrait="32" bestiary="true" bestiaryTransform="0,3,1" bestiaryAnim="Move">
         <gibs amount="6" blood="1" bone="1" eye="1" gut="1" large="0" />
