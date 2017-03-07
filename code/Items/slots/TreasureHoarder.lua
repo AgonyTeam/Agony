@@ -92,7 +92,7 @@ function treasurehoarder:ai_main(npc)
    	    		elseif randprice > 92 then
    	    			for j = 1, 2, 1 do
    	    		   	   	Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Isaac.GetFreeNearPosition(npc.Position, 50), Vector (0,0), npc)
-					end
+					    end
    	    		elseif randprice > 75 then
    	    			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Isaac.GetFreeNearPosition(npc.Position, 50), Vector (0,0), npc)
    	    		elseif randprice > 60 then
