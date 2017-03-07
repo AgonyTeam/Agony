@@ -1,6 +1,6 @@
 local debugScript = {}
 
-debug_text = "ayy"
+debug_text = tostring(Isaac.GetCardIdByName("Reload!"))
 debug_tbl1 = {one_no = "entries"}
 debug_tbl2 = {two_no = "entries"}
 debug_entity = nil

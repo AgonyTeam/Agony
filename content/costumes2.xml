@@ -18,4 +18,6 @@
 	<costume name="Parasites" anm2path="costume_parasites.anm2" type="none" />
 	<costume name="Vomit Cake" anm2path="costume_vomitcake.anm2" type="none" />
 	<costume name="Gold Man" anm2path="costume_goldman.anm2" type="none" />
+	<costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="none" />
+	<costume name="Tourette" anm2path="costume_tourette.anm2" type="none" />
 </costumes>

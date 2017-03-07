@@ -1,4 +1,4 @@
-Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
+Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload")
 local reload = {}
 
 function reload.onUse()
