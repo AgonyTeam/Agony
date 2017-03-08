@@ -1,8 +1,8 @@
 <AnimatedActor>
-	<Info CreatedBy="robot" CreatedOn="08.03.2017 18:24:45" Version="106" Fps="30"/>
+	<Info CreatedBy="robot" CreatedOn="08.03.2017 20:54:28" Version="108" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="main.png" Id="0"/>
+			<Spritesheet Path="..\eternalflies.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>
