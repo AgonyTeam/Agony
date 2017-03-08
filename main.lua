@@ -298,6 +298,8 @@ require("code/Monsters/Eternals/Pooter");
 require("code/Monsters/Eternals/SuperPooter");
 require("code/Monsters/Eternals/ChampionFetus");
 require("code/Monsters/Eternals/Moter");
+require("code/Monsters/Eternals/Fly");
+require("code/Monsters/Eternals/AttackFly");
 --Bosses
 require("code/Bosses/Joseph");
 --Other Entities

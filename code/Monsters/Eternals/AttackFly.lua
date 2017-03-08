@@ -1,7 +1,7 @@
 EternalAttackFly = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_ATTACKFLY,1,"Attack Fly")
+Agony:AddEternal(EntityType.ENTITY_ATTACKFLY,0,"Attack Fly")
 
 --Eternal Attack Flies
 function EternalAttackFly:ai_main(entity)
@@ -15,6 +15,9 @@ function EternalAttackFly:ai_main(entity)
 	end
 	
 	--Needs code for random dashes	
+	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and entity.SubType == 15) then
+		debug_text = entity.State
+	end
 	
 end
 

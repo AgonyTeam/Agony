@@ -2,7 +2,7 @@
 	<Info CreatedBy="robot" CreatedOn="08.03.2017 18:31:08" Version="105" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="..\flies.png" Id="0"/>
+			<Spritesheet Path="main.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>
