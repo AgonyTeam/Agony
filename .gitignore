@@ -1,3 +1,8 @@
+#ignore Isaac Files
 save.dat
 disable.it
 update.it
+
+#Ignore windows files
+**/desktop.ini
+desktop.ini
