@@ -9,7 +9,7 @@ function EternalAttackFly:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and rng:RandomInt(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Attack Fly/animation.anm2", true);
 		entity.HitPoints = 10;
