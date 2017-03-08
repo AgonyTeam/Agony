@@ -10,11 +10,12 @@ Agony:AddEternal(EntityType.ENTITY_DIP,0,"Dip")
 --Eternal Dips
 function EternalDip:ai_main(entity)
 	local sprite = entity:GetSprite();
+	local rng = entity:GetDropRNG()
 	entity.Target = nil
 
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_DIP and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_DIP and rng:RandomInt(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Dip/animation.anm2", true);
 		entity.HitPoints = 6;

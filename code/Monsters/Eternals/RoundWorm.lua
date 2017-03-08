@@ -7,10 +7,11 @@ Agony:AddEternal(EntityType.ENTITY_ROUND_WORM,0,"Round Worm")
 --Eternal Round Worms
 function EternalRoundWorm:ai_main(entity)
 	local sprite = entity:GetSprite();
+	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
 	--TODO: put in a function, unless we decide to split up Eternals into multiple files
-	if (entity.Type == EntityType.ENTITY_ROUND_WORM and math.random(10) == 10 and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_ROUND_WORM and rng:RandomInt(10) == 1 and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
 		entity.HitPoints = 20;
