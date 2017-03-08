@@ -12,7 +12,7 @@ function spooderBoi:onPlayerUpdate(player)
 		spooderBoi.hasItem = false
 	end
 	if spooderBoi.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SPOODER_BOI) then
-		--player:AddNullCostume(spooderBoi.costumeID)
+		player:AddNullCostume(spooderBoi.costumeID)
 		spooderBoi.hasItem = true
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_SPOODER_BOI) then

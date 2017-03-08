@@ -20,4 +20,5 @@
 	<costume name="Gold Man" anm2path="costume_goldman.anm2" type="none" />
 	<costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="none" />
 	<costume name="Tourette" anm2path="costume_tourette.anm2" type="none" />
+	<costume name="Spooderboi" anm2path="costume_spooderboi.anm2" type="none" />
 </costumes>
