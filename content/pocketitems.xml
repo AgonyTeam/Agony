@@ -1,5 +1,5 @@
 <pocketitems>
-	<pilleffect name="Party Pills!" hud="HLM reference TBD"  />
+	<pilleffect name="Party Pills!" />
 
 	<card description="RELOAD!" hud="Reload" name="Reload" />
 </pocketitems>
