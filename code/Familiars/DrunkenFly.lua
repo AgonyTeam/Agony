@@ -14,7 +14,10 @@ end
 
 --called on init
 function soulmates:initFam(fam)
+	local player = Isaac.GetPlayer(0)
 	fam:GetSprite():Play("Idle")
+	fam.OrbitLayer = 71
+	fam:RecalculateOrbitOffset(fam.OrbitLayer, true)
 end
 
 --needed or else the familiar won't appear
