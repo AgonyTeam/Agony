@@ -14,7 +14,7 @@ function goldMan:onPlayerUpdate(player)
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_GOLD_MAN) and goldMan.hasBeenUsed == false then
 			player:AddGoldenHearts(24)
-			goldMan = true
+			goldMan.hasBeenUsed = true
 	end
 
 	if Game():GetFrameCount() == 1 then
