@@ -2,7 +2,11 @@
 	<Info CreatedBy="robot" CreatedOn="08.03.2017 20:37:56" Version="107" Fps="30"/>
 	<Content>
 		<Spritesheets>
+<<<<<<< HEAD
 			<Spritesheet Path="..\eternalflies.png" Id="0"/>
+=======
+			<Spritesheet Path="main.png" Id="0"/>
+>>>>>>> origin/ANewKindOfPain
 		</Spritesheets>
 		<Layers>
 			<Layer Name="body" Id="0" SpritesheetId="0"/>
