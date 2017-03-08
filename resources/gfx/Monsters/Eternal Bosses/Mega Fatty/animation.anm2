@@ -1,9 +1,9 @@
 <AnimatedActor>
-	<Info CreatedBy="Unknown" CreatedOn="08.03.2017 13:44:18" Version="2" Fps="30"/>
+	<Info CreatedBy="Unknown" CreatedOn="08.03.2017 16:16:28" Version="3" Fps="30"/>
 	<Content>
 		<Spritesheets>
 			<Spritesheet Path="main.png" Id="0"/>
-			<Spritesheet Path="..\shadow.png" Id="1"/>
+			<Spritesheet Path="..\..\shadow.png" Id="1"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="Body" Id="0" SpritesheetId="0"/>
