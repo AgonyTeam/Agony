@@ -6,18 +6,16 @@ Agony:AddEternal(EntityType.ENTITY_ATTACKFLY,0,"Attack Fly")
 --Eternal Attack Flies
 function EternalAttackFly:ai_main(entity)
 	local sprite = entity:GetSprite();
+	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and rng:RandomInt(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Attack Fly/animation.anm2", true);
 		entity.HitPoints = 10;
 	end
 	
 	--Needs code for random dashes	
-	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and entity.SubType == 15) then
-		debug_text = entity.State
-	end
 	
 end
 

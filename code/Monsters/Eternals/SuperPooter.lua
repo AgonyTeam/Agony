@@ -15,9 +15,10 @@ end
 --Eternal Super Pooters
 function EternalSuperPooter:ai_main(entity)
 	local sprite = entity:GetSprite();
+	local rng = entity:GetDropRNG()
 
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_POOTER and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15 and entity.Variant == 1) then
+	if (entity.Type == EntityType.ENTITY_POOTER and rng:RandomInt(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15 and entity.Variant == 1) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Super Pooter/animation.anm2", true);
 		entity.HitPoints = 16;

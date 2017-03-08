@@ -6,9 +6,10 @@ Agony:AddEternal(EntityType.ENTITY_MOTER,1,"Moter")
 --Eternal Moters
 function EternalMoter:ai_main(entity)
 	local sprite = entity:GetSprite();
+	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_MOTER and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_MOTER and rng:RandomInt(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
 		Isaac.Spawn(18, 1, 15, entity.Position, Vector(0,0), entity);
 		entity:Remove();
 	end
