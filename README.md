@@ -6,13 +6,14 @@
 
 ##Information
 ###General
-Welcome to The Agony of Isaac, a WIP mod for The Binding of Isaac Afterbirth+ !
+Welcome to The Agony of Isaac, a WIP mod for The Binding of Isaac Afterbirth† !
 
-The mod is currently playable, just download the repository, put it wherever your Afterbirth+ mod folder is and enjoy!
+The mod is currently playable, just download the repository, put it wherever your Afterbirth† mod folder is and enjoy!
 
 ##Help Wanted
 There's a lot of work to do, hopefully you can contribute and get your name in the credits!
 Check out our project boards!
+Be sure to join the Discord channel (https://discord.gg/52gwHev)!
 
 ###Coding
 - (https://github.com/AgonyTeam/Agony/projects/1) Anything here that has the "APPROVED" tag has to be done, assign yourself and program away!  
