@@ -299,7 +299,7 @@ require("code/Monsters/Eternals/SuperPooter");
 require("code/Monsters/Eternals/ChampionFetus");
 require("code/Monsters/Eternals/Moter");
 --Bosses
-require("code/Monsters/Bosses/Joseph");
+require("code/Bosses/Joseph");
 --Other Entities
 require("code/Items/Slots/TreasureHoarder");
 --Items
