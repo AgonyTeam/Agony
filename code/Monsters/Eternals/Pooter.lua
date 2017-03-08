@@ -5,11 +5,10 @@ Agony:AddEternal(EntityType.ENTITY_POOTER,0,"Pooter")
 
 --Eternal Pooters
 function EternalPooter:ai_main(entity)
-	local room = Game():GetRoom();
 	local sprite = entity:GetSprite();
 
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_POOTER and math.random(10) == 1 and room:GetFrameCount() <= 10 and entity.SubType ~= 15 and entity.Variant == 0) then
+	if (entity.Type == EntityType.ENTITY_POOTER and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15 and entity.Variant == 0) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Pooter/animation.anm2", true);
 		entity.HitPoints = 16;

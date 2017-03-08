@@ -9,13 +9,12 @@ Agony:AddEternal(EntityType.ENTITY_SQUIRT,0,"Squirt")
 
 --Eternal Squirts
 function EternalSquirt:ai_main(entity)
-	local room = Game():GetRoom();
 	local sprite = entity:GetSprite();
 	--entity.Target = nil
 	--debug_text = tostring(entity.State)
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_SQUIRT and math.random(10) == 1 and room:GetFrameCount() <= 10 and entity.SubType ~= 15) then
+	if (entity.Type == EntityType.ENTITY_SQUIRT and math.random(10) == 1 and entity.FrameCount <= 10 and entity.SubType ~= 15) then
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Squirt/animation.anm2", true);
 		entity.HitPoints = 30;
