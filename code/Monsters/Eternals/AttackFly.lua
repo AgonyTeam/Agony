@@ -14,20 +14,12 @@ function EternalAttackFly:ai_main(entity)
 		sprite:Load("gfx/Monsters/Eternals/Attack Fly/animation.anm2", true);
 		entity.HitPoints = 10;
 	end
-<<<<<<< HEAD
-		
-=======
-	
->>>>>>> origin/ANewKindOfPain
+
 	--Random Dashes
 	if (entity.Type == EntityType.ENTITY_ATTACKFLY and entity.Variant == 0 and entity.SubType == 15 and rng:RandomFloat() < 0.15) then
 		entity.Velocity = entity.Velocity:__add(Vector.FromAngle(rng:RandomInt(360)):__mul(rng:RandomInt(10)+1))
 	end
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> origin/ANewKindOfPain
 end
 
 --Callbacks
