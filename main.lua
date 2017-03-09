@@ -282,7 +282,7 @@ end
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
-Agony.ETERNAL_SPAWN_CHANCE = 0.1 --Eternals spawn chance constant
+Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
 --Debug
 require("Debug");
