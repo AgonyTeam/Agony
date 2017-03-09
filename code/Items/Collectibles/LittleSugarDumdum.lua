@@ -12,8 +12,17 @@ local LSD = {
 	TearFallingSpeed = nil,
 	TearColor = nil,
 	MoveSpeed = nil,
-	Luck = nil
+	Luck = nil,
+	restartedGame = true
 }
+
+--json can't handle vectors, so it's saved as a table
+if saveData.LSD.FormerScale ~= nil and saveData.LSD.FormerScale.X ~= nil and saveData.LSD.FormerScale.Y ~= nil then
+	LSD.FormerScale = Vector(saveData.LSD.FormerScale.X, saveData.LSD.FormerScale.Y)
+else
+	saveData.LSD.FormerScale = {}
+end
+
 
 function LSD:DistortEnemies(npc)
 	if LSD.Room == Game():GetLevel():GetCurrentRoomIndex() and npc.Type ~= EntityType.ENTITY_FIREPLACE then
@@ -47,6 +56,9 @@ function LSD:onUse()
 	LSD.TearColor = player.TearColor
 	LSD.MoveSpeed = player.MoveSpeed
 	LSD.Luck = player.Luck
+	saveData.LSD.FormerScale.X = LSD.FormerScale.X
+	saveData.LSD.FormerScale.Y = LSD.FormerScale.Y
+	Agony:SaveNow()
 	return true
 end
 
@@ -65,6 +77,12 @@ function LSD:StopTheParty()
 		player.TearColor = LSD.TearColor
 		player.MoveSpeed = LSD.MoveSpeed
 		player.Luck = LSD.Luck
+		saveData.LSD.FormerScale = nil
+		Agony:SaveNow()
+	elseif LSD.restartedGame and LSD.FormerScale ~= nil then
+		local player = Isaac.GetPlayer(0)
+		player.SpriteScale = LSD.FormerScale
+		LSD.restartedGame = false
 	end
 end
 

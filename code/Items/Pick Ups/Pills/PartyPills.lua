@@ -8,6 +8,14 @@ local partypills = {
 	colorOverlayIndex = nil
 }
 
+--json can't handle vectors, so it's saved as a table
+if saveData.partypills.FormerScale ~= nil and saveData.partypills.FormerScale.X ~= nil and saveData.partypills.FormerScale.Y ~= nil then
+	partypills.FormerScale = Vector(saveData.partypills.FormerScale.X, saveData.partypills.FormerScale.Y)
+else
+	saveData.partypills.FormerScale = {}
+end
+
+
 function partypills:DistortEnemies(npc)
 	if partypills.Room == Game():GetLevel():GetCurrentRoomIndex() and npc.Type ~= EntityType.ENTITY_FIREPLACE then
 		npc.Scale = 1+0.3*math.sin(Game():GetFrameCount()/2)
@@ -31,6 +39,9 @@ function partypills:StartTheParty()
 	--partypills.IsTimeToParty = true
 	partypills.Room = Game():GetLevel():GetCurrentRoomIndex()
 	partypills.FormerScale = Isaac.GetPlayer(0).SpriteScale
+	saveData.partypills.FormerScale.X = partypills.FormerScale.X
+	saveData.partypills.FormerScale.Y = partypills.FormerScale.Y
+	Agony:SaveNow()
 	partypills.colorOverlay, partypills.colorOverlayIndex = Agony:addToRender("effect/colorfilter.anm2", "RedBlue")
 end
 
@@ -43,6 +54,8 @@ function partypills:StopTheParty()
 		player.SpriteRotation = 0
 		partypills.colorOverlay:Stop()
 		spritesToRender[partypills.colorOverlayIndex] = nil
+		saveData.partypills.FormerScale = nil
+		Agony:SaveNow()
 	end
 end
 

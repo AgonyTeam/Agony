@@ -18,6 +18,8 @@ saveData.radioactivePizza = saveData.radioactivePizza or {};
 saveData.Sacks3 = saveData.Sacks3 or {};
 saveData.Sacks2 = saveData.Sacks2 or {};
 saveData.theWay = saveData.theWay or {}
+saveData.partypills = saveData.partypills or {}
+saveData.LSD = saveData.LSD or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -296,6 +298,17 @@ function Agony:addToRender(anm2, animName, pos)
 	return spritesToRender[#spritesToRender][1], #spritesToRender --returns sprite and the index in the table
 end
 
+--clears savedata on new run
+function Agony:clearSaveData()
+	if Game():GetFrameCount() <= 1 then
+		for group,_ in pairs(saveData) do
+			if group ~= "newestSaveVer" then
+				saveData[group] = {}
+			end
+		end
+		Agony:SaveNow()
+	end
+end
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
@@ -421,5 +434,6 @@ CollectibleType.NUM_COLLECTIBLES = num_collectibles
 --Agony END
 
 --Callbacks
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2);
-Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites);
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
+Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
+Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
