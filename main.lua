@@ -279,6 +279,23 @@ function Agony:renderSprites()
 	end
 end
 
+--Add sprite to render list
+function Agony:addToRender(anm2, animName, pos)
+	anm2 = tostring(anm2)
+	animName = tostring(animName)
+	pos = pos or Vector(0,0)
+	
+	local sprite = Sprite()
+	sprite:Load("gfx/" .. anm2, true)
+	sprite:Play(animName, true)
+	spritesToRender[#spritesToRender+1] = {
+		sprite,
+		pos
+	}
+	
+	return spritesToRender[#spritesToRender][1], #spritesToRender --returns sprite and the index in the table
+end
+
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins

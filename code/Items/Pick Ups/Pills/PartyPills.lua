@@ -3,7 +3,9 @@ PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!")
 local partypills = {
 	--IsTimeToParty = false,
 	Room = nil,
-	FormerScale = nil
+	FormerScale = nil,
+	colorOverlay = nil,
+	colorOverlayIndex = nil
 }
 
 function partypills:DistortEnemies(npc)
@@ -18,8 +20,10 @@ end
 
 function partypills:DistortPlayer(player)
 	if Game():GetLevel():GetCurrentRoomIndex() == partypills.Room then
+		local room = Game():GetRoom()
 		player.SpriteScale = Vector(1,1):__mul(1+0.3*math.sin(Game():GetFrameCount()/2))
 		player.SpriteRotation = math.sin(Game():GetFrameCount()/2)*15
+		room:EmitBloodFromWalls(1, 5)
 	end
 end
 
@@ -27,6 +31,7 @@ function partypills:StartTheParty()
 	--partypills.IsTimeToParty = true
 	partypills.Room = Game():GetLevel():GetCurrentRoomIndex()
 	partypills.FormerScale = Isaac.GetPlayer(0).SpriteScale
+	partypills.colorOverlay, partypills.colorOverlayIndex = Agony:addToRender("effect/colorfilter.anm2", "RedBlue")
 end
 
 function partypills:StopTheParty()
@@ -36,6 +41,8 @@ function partypills:StopTheParty()
 		local player = Isaac.GetPlayer(0)
 		player.SpriteScale = partypills.FormerScale
 		player.SpriteRotation = 0
+		partypills.colorOverlay:Stop()
+		spritesToRender[partypills.colorOverlayIndex] = nil
 	end
 end
 
