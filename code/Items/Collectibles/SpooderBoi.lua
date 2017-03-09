@@ -24,4 +24,4 @@ function spooderBoi:onPlayerUpdate(player)
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, spooderBoi.onPlayerUpdate)
-Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, spooderBoi.cacheUpdate)
+--Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, spooderBoi.cacheUpdate)

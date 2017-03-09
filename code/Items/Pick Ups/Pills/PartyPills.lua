@@ -18,7 +18,7 @@ end
 
 function partypills:DistortPlayer(player)
 	if Game():GetLevel():GetCurrentRoomIndex() == partypills.Room then
-		player.SpriteScale = Vector (1,1) * (1+0.3*math.sin(Game():GetFrameCount()/2))
+		player.SpriteScale = Vector(1,1):__mul(1+0.3*math.sin(Game():GetFrameCount()/2))
 		player.SpriteRotation = math.sin(Game():GetFrameCount()/2)*15
 	end
 end

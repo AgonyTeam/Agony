@@ -286,9 +286,6 @@ Agony.ETERNAL_SPAWN_CHANCE = 0.1 --Eternals spawn chance constant
 
 --Debug
 require("Debug");
---require("EntityRegister")
---require("entnames")
---require("printentnames")
 --Enemies
 require("code/Monsters/YellowBlock");
 --Eternals

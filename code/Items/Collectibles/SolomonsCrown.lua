@@ -53,7 +53,7 @@ function solomonCrown:evaluateCache(player)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE,solomonCrown.evaluateCache)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.evaluateCache)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, solomonCrown.cacheUpdate)

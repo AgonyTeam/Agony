@@ -27,7 +27,7 @@ end
 
 function LSD:DistortPlayer(player)
 	if Game():GetLevel():GetCurrentRoomIndex() == LSD.Room then
-		player.SpriteScale = Vector (1,1) * (1+0.3*math.sin(Game():GetFrameCount()/2))
+		player.SpriteScale = Vector(1,1) * (1+0.3*math.sin(Game():GetFrameCount()/2))
 		player.SpriteRotation = math.sin(Game():GetFrameCount()/2)*15
 		player:EvaluateItems() --Refreshes the random stats
 		LSD:cacheUpdate(player)
