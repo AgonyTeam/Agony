@@ -49,10 +49,10 @@ Be sure to join the Discord channel (https://discord.gg/52gwHev)!
 
 
 ###How to use Github
-- **0**: Get git. If you are on Windows or Mac, get "Github Dektop", for linux just get "git" with "apt-get install", if it isn't already installed by default.
-- **1**: Fork the repo by pressing the button that says "Fork" on it. (In your browser)
-- **2**: Clone your Fork to your Computer.  For that open up "Git Shell" on Windows/Mac or a terminal window on Linux. In the command line you just opened you just enter "git clone url". Replace 'url' with the link you get from clicking the green 'Clone or download' button on github in your browser.
-- **3**: In the command line, go into the folder that your repo was cloned into with the "cd path" command. ('path' being the path to the folder, on windows, just do "cd Agony" in our case). Make your changes.
-- **4**: Once done making changes, go to the command line again and enter "git commit -a" to commit all changes. A text editor window will open, prompting you to enter a commit message. Enter a message describing what is changed and then save the file and exit the text window.
-- **5**: Now do "git push". Your changes should be live now.
-- **6**: In the browser, go to the original repo and push the "New pull request button". Now on the compare page, click "compare across forks" and select your fork as the "head fork". Add some title and description and last but not least press "Create Pull Request".
+- **0**: Get git. If you are on Windows or Mac, get "[Github Dektop](https://desktop.github.com/)", for linux just get "git" with `apt-get install`, if it isn't already installed by default.
+- **1**: Fork the repo by pressing the button that says "_Fork_" on it. (In your browser)
+- **2**: Clone your Fork to your Computer. For that open up "_Git Shell_" on Windows/Mac or a terminal window on Linux. In the command line you just opened, enter `git clone url`. Replace `url` with the link you get from clicking the green "_Clone or download_" button on github in your browser.
+- **3**: In the command line, go into the folder that your repo was cloned into with the `cd path` command. (`path` being the path to the folder, on windows, just do `cd Agony` in our case). Make your changes.
+- **4**: Once done making changes, go to the command line again and enter `git commit -a` to commit all changes. A text editor window will open, prompting you to enter a commit message. Enter a message describing what is changed and then save the file and exit the text window.
+- **5**: Now do `git push`. Your changes should be live now.
+- **6**: In the browser, go to the original repo and push the "_New pull request_" button. Now on the compare page, click "_compare across forks_" and select your fork as the "_head fork_". Add some title and description and last but not least press "_Create Pull Request_".
