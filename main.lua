@@ -408,6 +408,7 @@ require("code/Items/Collectibles/GoldMan")
 require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
 require("code/Items/Collectibles/PyriteNugget")
+require("code/Items/Collectibles/IrritatingBracelets")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

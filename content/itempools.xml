@@ -46,6 +46,7 @@
         <Item Name="Wait, No." RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Lil'Red Book" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Irritating Bracelet" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

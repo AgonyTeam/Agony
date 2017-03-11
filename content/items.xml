@@ -62,7 +62,8 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_theway.png" maxcharges="6" name="The Way" />
 	<active description="Mysterious placeholder text" gfx="collectibles_lilredbook.png" maxcharges="3" name="Lil'Red Book" />
 	<active description="Don't be fooled" gfx="collectibles_payritenugget.png" maxcharges="1" name="Pyrite Nugget" />
-	
+	<active description="Mysterious placeholder text" gfx="collectibles_irritatingbracelets.png" maxcharges="1" name="Irritating Bracelets" />
+
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" />
