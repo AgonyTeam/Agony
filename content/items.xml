@@ -36,7 +36,7 @@
 	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
 	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" />
 	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" />
-	<passive name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" />
+	<passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" />
 	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" />
 	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" />
 
