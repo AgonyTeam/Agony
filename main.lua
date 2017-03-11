@@ -261,6 +261,7 @@ end
 function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
 	customAnm2 = customAnm2 or "giantbook.anm2"
 	local giantbook = Sprite()
+	local player = Isaac.GetPlayer(0)
 	giantbook:Load("gfx/ui/giantbook/" .. customAnm2, true)
 	giantbook:ReplaceSpritesheet(0, "gfx/ui/giantbook/" .. bookSprite)
 	giantbook:LoadGraphics()
@@ -268,7 +269,9 @@ function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
 	--testsprite:Reload()
 	spritesToRender[#spritesToRender+1] = { 
 		giantbook,
-		Vector((640-128-48)/2, (460-128-48)/2) --640 is the room width, 460 is height. Have to subtract 128 to center the book sprite and 48 because only then it apparently is like the vanilla giant book effect
+		Vector((640-128-48)/2, (460-128-48)/2), --640 is the room width, 460 is height. Have to subtract 128 to center the book sprite and 48 because only then it apparently is like the vanilla giant book effect
+		animName,
+		30
 	}
 end
 
@@ -277,23 +280,35 @@ function Agony:renderSprites()
 	for _,spriteTable in pairs(spritesToRender) do
 		local sprite = spriteTable[1]
 		local renderPos = spriteTable[2]
+		local animName = spriteTable[3]
+		local fps = spriteTable[4] or 60
+		
 		sprite:Render(renderPos, Vector(0,0), Vector(0,0))
-		sprite:Update()
+		if Game():GetFrameCount() % (60/fps) == 0 and not Game():IsPaused() then
+			sprite:Update()
+		end
+		
+		if sprite:IsFinished(animName) then
+			spritesToRender[_] = nil
+		end
 	end
 end
 
 --Add sprite to render list
-function Agony:addToRender(anm2, animName, pos)
+function Agony:addToRender(anm2, animName, pos, fps)
 	anm2 = tostring(anm2)
 	animName = tostring(animName)
 	pos = pos or Vector(0,0)
+	fps = fps or 60
 	
 	local sprite = Sprite()
 	sprite:Load("gfx/" .. anm2, true)
 	sprite:Play(animName, true)
 	spritesToRender[#spritesToRender+1] = {
 		sprite,
-		pos
+		pos,
+		animName,
+		fps
 	}
 	
 	return spritesToRender[#spritesToRender][1], #spritesToRender --returns sprite and the index in the table
