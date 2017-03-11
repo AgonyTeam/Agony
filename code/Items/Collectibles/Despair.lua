@@ -4,7 +4,7 @@ local despair =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
 	TearBool = false,
-	stage = nil
+	stage = saveData.despair.stage or nil
 }
 despair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_despair.anm2")
 
@@ -14,6 +14,8 @@ function despair:cacheUpdate (player,cacheFlag)
 		local collNum = player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR)
 		if despair.stage == nil then 
 			despair.stage = Game():GetLevel():GetStage()
+			saveData.despair.stage = despair.stage
+			Agony:SaveNow()
 		end
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
 			player.Luck = player.Luck - 2*collNum
@@ -44,6 +46,8 @@ end
 function despair:reset()
 	--Resets variable if the item is rerolled or lost (or if restarting the run)
 	despair.stage = nil
+	saveData.despair.stage = nil
+	Agony:SaveNow()
 end
 
 function despair:onPlayerUpdate(player)

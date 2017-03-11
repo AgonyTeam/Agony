@@ -22,6 +22,7 @@ saveData.partypills = saveData.partypills or {}
 saveData.LSD = saveData.LSD or {}
 saveData.bloodyNut = saveData.bloodyNut or {}
 saveData.luckyEgg = saveData.luckyEgg or {}
+saveData.despair = saveData.despair or {}
 
 --respawnV2's vars
 local ent_before = {};
