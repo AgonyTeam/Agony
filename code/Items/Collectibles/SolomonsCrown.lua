@@ -5,9 +5,8 @@ local solomonCrown =  {
 	costumeID = nil,
 	TearBool = false
 }
-solomonCrown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_solomoncrown.anm2")
+solomonCrown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_solomonscrown.anm2")
 
---Grants +1 Luck and gives a *2 multiplier to Luck
 function solomonCrown:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN)) and player:GetHearts() == player:GetMaxHearts()/2 then
 		if (cacheFlag == CacheFlag.CACHE_LUCK) then
@@ -30,7 +29,7 @@ function solomonCrown:onPlayerUpdate(player)
 		solomonCrown.hasItem = false
 	end
 	if solomonCrown.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN) then
-		--player:AddNullCostume(solomonCrown.costumeID)
+		player:AddNullCostume(solomonCrown.costumeID)
 		solomonCrown.hasItem = true
 	end
 end

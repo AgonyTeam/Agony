@@ -21,4 +21,5 @@
 	<costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="none" />
 	<costume name="Tourette" anm2path="costume_tourette.anm2" type="none" />
 	<costume name="Spooderboi" anm2path="costume_spooderboi.anm2" type="none" />
+	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="none" />
 </costumes>
