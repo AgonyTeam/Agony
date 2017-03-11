@@ -1,7 +1,9 @@
 CollectibleType["AGONY_C_GRANDPA_FLY"] = Isaac.GetItemIdByName("Grandpa Fly")
 FamiliarVariant["AGONY_F_GRANDPA_FLY"] = Isaac.GetEntityVariantByName("Grandpa Fly")
 
-local grandpaFly = {}
+local grandpaFly = {
+	flies = {}
+}
 
 --main behaviour function
 function grandpaFly:updateFam(fam)
@@ -9,7 +11,9 @@ function grandpaFly:updateFam(fam)
 	local famSprite = fam:GetSprite()
 	if math.random(300) == 1 then
 		famSprite:Play("Attack", true)
-		Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BROWN_NUGGET_POOTER, 0, fam.Position, Vector (0,0), player)
+		local fly = Isaac.Spawn(EntityType.ENTITY_FAMILIAR, FamiliarVariant.BROWN_NUGGET_POOTER, 0, fam.Position, Vector (0,0), player)
+		fly:GetData().roomId = Game():GetLevel():GetCurrentRoomIndex()
+		table.insert(grandpaFly.flies, fly)
 	end
 	if not famSprite:IsPlaying("Attack") then
 		famSprite:Play("Fly", false)
@@ -30,6 +34,16 @@ function grandpaFly:cacheUpdate(player, cacheFlag)
 	end
 end
 
+function grandpaFly:removeFlies()
+	for _,entity in pairs(grandpaFly.flies) do
+		if entity:GetData().roomId ~= Game():GetLevel():GetCurrentRoomIndex() then
+			--entity.Visible = false
+			entity:Remove()
+		end
+	end
+end
+
 Agony:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, grandpaFly.updateFam, FamiliarVariant.AGONY_F_GRANDPA_FLY)
 Agony:AddCallback(ModCallbacks.MC_FAMILIAR_INIT, grandpaFly.initFam, FamiliarVariant.AGONY_F_GRANDPA_FLY)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, grandpaFly.cacheUpdate)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, grandpaFly.removeFlies)
