@@ -23,6 +23,9 @@ function teslaBaby:updateFam(fam)
 		end
 		famSprite:Play("Shoot", true)
 	end
+	if famSprite:IsFinished("Shoot") then
+		famSprite:Play("Idle", false)
+	end
 	fam:FollowParent() --important so the familiar stays in the line of familiars
 end
 
