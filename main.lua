@@ -346,6 +346,7 @@ require("code/Monsters/Eternals/ChampionFetus");
 require("code/Monsters/Eternals/Moter");
 require("code/Monsters/Eternals/Fly");
 require("code/Monsters/Eternals/AttackFly");
+require("code/Monsters/Eternals/RedBoomFly");
 --Bosses
 require("code/Bosses/Joseph");
 --Other Entities

@@ -17,14 +17,14 @@ function EternalRedBoomFly:ai_main(entity)
 	end
 end
 
-function EternalRedBoomFLY:ai_take_damage(entity,damage,_,_,_)
+function EternalRedBoomFly:ai_take_damage(entity,damage,_,_,_)
 	if entity.Variant == 1 and entity.SubType == 15 and damage >= entity.HitPoints then
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi/3),math.sin(math.pi/3)), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi/3),math.sin(2*math.pi/3)), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi),math.sin(math.pi)), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(4*math.pi/3),math.sin(4*math.pi/3)), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(5*math.pi/3),math.sin(5*math.pi/3)), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi/3),math.sin(2*math.pi/3)), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi/3)*13,math.sin(math.pi/3)*13), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi/3)*13,math.sin(2*math.pi/3)*13), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi)*13,math.sin(math.pi)*13), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(4*math.pi/3)*13,math.sin(4*math.pi/3)*13), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(5*math.pi/3)*13,math.sin(5*math.pi/3)*13), entity);
+		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi)*13,math.sin(2*math.pi)*13), entity);
 	end
 end
 
