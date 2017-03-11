@@ -2,10 +2,10 @@ CollectibleType["AGONY_C_THE_WAY"] = Isaac.GetItemIdByName("The Way");
 
 local theWay =  {
 	--Malus multipliers
-	damageMalus = saveData.theWay.damageMalus or nil,
-	speedMalus = saveData.theWay.tearMalus or nil,
-	tearMalus = saveData.theWay.speedMalus or nil,
-	luckMalus = saveData.theWay.luckMalus or nil,
+	damageMalus = saveData.theWay.damageMalus or 1,
+	speedMalus = saveData.theWay.tearMalus or 1,
+	tearMalus = saveData.theWay.speedMalus or 1,
+	luckMalus = saveData.theWay.luckMalus or 0,
 	TearBool = false
 }
 
@@ -81,7 +81,7 @@ end
 --FireDelay workaround
 function theWay:updateFireDelay(player)
 	if (theWay.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay * theWay.tearMalus
+		player.MaxFireDelay = math.floor(player.MaxFireDelay * theWay.tearMalus)
 		theWay.TearBool = false
 	end
 end

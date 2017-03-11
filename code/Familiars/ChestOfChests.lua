@@ -31,11 +31,17 @@ function chestOfChests:updateFam(fam)
 	elseif chestOfChests.isRoomClear == false and room:IsClear() then
 		chestOfChests.isRoomClear = true
 		if player:GetCollectibleRNG(CollectibleType.AGONY_C_CHEST_OF_CHESTS):RandomInt(50) == 1 then
+			famSprite:Play("Spawn")
 			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_ETERNALCHEST, ChestSubType.CHEST_CLOSED, fam.Position, Vector (0,0), player)
 		elseif player:GetCollectibleRNG(CollectibleType.AGONY_C_CHEST_OF_CHESTS):RandomInt(5) == 1 then
+			famSprite:Play("Spawn")
 			Isaac.Spawn(EntityType.ENTITY_PICKUP, chestOfChests.chestList[player:GetCollectibleRNG(CollectibleType.AGONY_C_CHEST_OF_CHESTS):RandomInt(#chestOfChests.chestList)+1], ChestSubType.CHEST_CLOSED, fam.Position, Vector (0,0), player)
 			Game():SpawnParticles(fam.Position, EffectVariant.POOF01, 1, 1, col, 0)
 		end
+	end
+	
+	if famSprite:IsFinished("Spawn") then
+		famSprite:Play("FloatDown")
 	end
 	fam:FollowParent() --important so the familiar stays in the line of familiars
 end
