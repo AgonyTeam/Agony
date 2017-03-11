@@ -91,6 +91,9 @@
 	<entity anm2path="Monsters/Eternals/Attack Fly/animation.anm2" reroll="true" baseHP="10" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="17" friction="1" id="18" name="Eternal Attack Fly" numGridCollisionPoints="0" shadowSize="11" stageHP="0" variant="0" subtype="15" portrait="5" gridCollision="walls" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Fly">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+	<entity anm2path="Monsters/Eternals/Red Boom Fly/animation.anm2" reroll="true" baseHP="40" boss="0" champion="1" collisionDamage="1" collisionMass="7" collisionRadius="13" friction="1" id="25" name="Eternal Red Boom Fly" numGridCollisionPoints="12" shadowSize="20" stageHP="0" variant="1" subtype="15" portrait="20" gridCollision="walls" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Fly">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 	<!--/Eternals-->
 	
 	<!--Familiars-->

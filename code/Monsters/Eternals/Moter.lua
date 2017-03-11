@@ -16,8 +16,8 @@ function EternalMoter:ai_main(entity)
 end
 
 --Spawn Eternal Flies on death
-function EternalMoter:ai_take_damage(entity,damage,_,player,_)
-	if entity.Variant == 1 and entity.SubType == 15 and damage >= entity.HitPoints then --NOTE: Eternal Attack Flies not implemented yet,  for now spawns normal Attack Flies
+function EternalMoter:ai_take_damage(entity,damage,_,_,_)
+	if entity.Variant == 1 and entity.SubType == 15 and damage >= entity.HitPoints then
 		Isaac.Spawn(18, 0, 15, entity.Position, Vector(0,0), entity)
 		Isaac.Spawn(18, 0, 15, entity.Position, Vector(0,0), entity)
 		Isaac.Spawn(18, 0, 15, entity.Position, Vector(0,0), entity)
