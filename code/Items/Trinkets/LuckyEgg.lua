@@ -27,6 +27,7 @@ function luckyEgg:applyLckBuff()
 end
 
 function luckyEgg:onUpdate()
+	local player = Isaac.GetPlayer(0)
 	if Game():GetFrameCount() == 1 or luckyEgg.stage == nil then
 		luckyEgg.luckBuff = Game():GetLevel():GetStage()
 		saveData.luckyEgg.luckBuff = luckyEgg.luckBuff

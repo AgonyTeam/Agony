@@ -320,7 +320,7 @@ end
 function Agony:clearSaveData()
 	if Game():GetFrameCount() <= 1 then
 		for group,_ in pairs(saveData) do
-			if group ~= "newestSaveVer" then
+			if group ~= "saveVer" then
 				saveData[group] = {}
 			end
 		end
