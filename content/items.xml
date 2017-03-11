@@ -81,4 +81,5 @@
 
 	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" />
 </items>

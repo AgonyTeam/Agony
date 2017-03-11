@@ -20,6 +20,7 @@ saveData.Sacks2 = saveData.Sacks2 or {};
 saveData.theWay = saveData.theWay or {}
 saveData.partypills = saveData.partypills or {}
 saveData.LSD = saveData.LSD or {}
+saveData.bloodyNut = saveData.bloodyNut or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -393,6 +394,7 @@ require("code/Items/Collectibles/PyriteNugget")
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
 require("code/Items/Trinkets/PartyPooper")
+require("code/Items/Trinkets/BloodyNut")
 
 --Transformations
 require("code/Misc/Transformations/God")
