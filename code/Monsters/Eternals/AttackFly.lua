@@ -13,6 +13,7 @@ function EternalAttackFly:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Attack Fly/animation.anm2", true);
 		entity.HitPoints = 10;
+		entity.MaxHitPoints = 10;
 	end
 
 	--Random Dashes

@@ -19,6 +19,7 @@ function EternalSquirt:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Squirt/animation.anm2", true);
 		entity.HitPoints = 30;
+		entity.MaxHitPoints = 30;
 		
 	end
 	

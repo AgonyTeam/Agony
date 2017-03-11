@@ -22,6 +22,7 @@ function EternalSuperPooter:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Super Pooter/animation.anm2", true);
 		entity.HitPoints = 16;
+		entity.MaxHitPoints = 16;
 		
 	end
 	

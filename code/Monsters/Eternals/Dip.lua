@@ -19,6 +19,7 @@ function EternalDip:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Dip/animation.anm2", true);
 		entity.HitPoints = 6;
+		entity.MaxHitPoints = 6;
 		
 	end
 	

@@ -15,6 +15,7 @@ function EternalRoundWorm:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
 		entity.HitPoints = 20;
+		entity.MaxHitPoints = 20;
 		
 	end
 	
