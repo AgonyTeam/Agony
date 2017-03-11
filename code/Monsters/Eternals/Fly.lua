@@ -13,7 +13,8 @@ function EternalFly:ai_main(entity)
 		entity.SubType = 15;
 		sprite:Load("gfx/Monsters/Eternals/Fly/animation.anm2", true);
 		entity.MaxHitPoints = 0;
-		entity.CanShutDoors = false
+		entity.CollisionDamage = 1;
+		entity.CanShutDoors = false;
 	end
 end
 
