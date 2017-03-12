@@ -1,13 +1,14 @@
 TrinketType["AGONY_T_LUCKY_EGG"] = Isaac.GetTrinketIdByName("Lucky Egg")
 
 local luckyEgg = {
-	luckBuff = saveData.luckyEgg.luckBuff or 0,
+	realLuckBuff = saveData.luckyEgg.realLuckBuff or 0,
+	luckBuff = realLuckBuff,
 	stage = saveData.luckyEgg.stage or nil
 }
 
 function luckyEgg:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
 	local player = Isaac.GetPlayer(0)
-	if player:HasTrinket(TrinketType.AGONY_T_LUCKY_EGG) then		
+	if player:HasTrinket(TrinketType.AGONY_T_LUCKY_EGG) then	
 		luckyEgg:applyLckBuff()
 		player:AddCacheFlags(CacheFlag.CACHE_LUCK)
 		player:EvaluateItems()
@@ -21,24 +22,35 @@ function luckyEgg:cacheUpdate (player,cacheFlag)
 end
 
 function luckyEgg:applyLckBuff()
-	luckyEgg.luckBuff = luckyEgg.luckBuff + 0.69
-	saveData.luckyEgg.luckBuff = luckyEgg.luckBuff
+	luckyEgg.realLuckBuff = luckyEgg.realLuckBuff + 0.69
+	luckyEgg.luckBuff = luckyEgg.realLuckBuff
+	saveData.luckyEgg.realLuckBuff = luckyEgg.realLuckBuff
 	Agony:SaveNow()
 end
 
 function luckyEgg:onUpdate()
 	local player = Isaac.GetPlayer(0)
 	if Game():GetFrameCount() == 1 or luckyEgg.stage == nil then
-		luckyEgg.luckBuff = Game():GetLevel():GetStage()
-		saveData.luckyEgg.luckBuff = luckyEgg.luckBuff
+		luckyEgg.stage = Game():GetLevel():GetStage()
+		saveData.luckyEgg.stage = luckyEgg.stage
 		Agony:SaveNow()
 	end
 	if luckyEgg.stage ~= Game():GetLevel():GetStage() then
 		luckyEgg.stage = Game():GetLevel():GetStage()
-		luckyEgg.luckBuff = 0
-		saveData.luckyEgg.luckBuff = luckyEgg.luckBuff
+		luckyEgg.realLuckBuff = 0
+		luckyEgg.luckBuff = luckyEgg.realLuckBuff
+		saveData.luckyEgg.realLuckBuff = luckyEgg.realLuckBuff
 		saveData.luckyEgg.stage = luckyEgg.stage
 		Agony:SaveNow()
+		player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+		player:EvaluateItems()
+	end
+	if not player:HasTrinket(TrinketType.AGONY_T_LUCKY_EGG) then
+		luckyEgg.luckBuff = 0
+		player:AddCacheFlags(CacheFlag.CACHE_LUCK)
+		player:EvaluateItems()
+	elseif player:HasTrinket(TrinketType.AGONY_T_LUCKY_EGG) and luckyEgg.luckBuff ~= luckyEgg.realLuckBuff then
+		luckyEgg.luckBuff = luckyEgg.realLuckBuff
 		player:AddCacheFlags(CacheFlag.CACHE_LUCK)
 		player:EvaluateItems()
 	end
