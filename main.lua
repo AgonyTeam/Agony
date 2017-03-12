@@ -268,7 +268,6 @@ function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
 	giantbook:ReplaceSpritesheet(0, "gfx/ui/giantbook/" .. bookSprite)
 	giantbook:LoadGraphics()
 	giantbook:Play(animName, true)
-	--testsprite:Reload()
 	spritesToRender[#spritesToRender+1] = { 
 		giantbook,
 		Vector((640-128-48)/2, (460-128-48)/2), --640 is the room width, 460 is height. Have to subtract 128 to center the book sprite and 48 because only then it apparently is like the vanilla giant book effect

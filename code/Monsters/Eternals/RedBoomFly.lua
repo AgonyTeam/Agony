@@ -1,7 +1,7 @@
 EternalRedBoomFly = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_BOOMFLY,1,"RedBoomFly")
+Agony:AddEternal(EntityType.ENTITY_BOOMFLY,1,"Red Boom Fly")
 
 --Eternal RedBoomFlies
 function EternalRedBoomFly:ai_main(entity)
@@ -10,11 +10,12 @@ function EternalRedBoomFly:ai_main(entity)
 
 	--Replace regular entity with eternal version
 	if (entity.Type == EntityType.ENTITY_BOOMFLY and entity.Variant == 1 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
-		entity.SubType = 15;
-		sprite:Load("gfx/Monsters/Eternals/Red Boom Fly/animation.anm2", true);
-		entity.HitPoints = 40;
-		entity.MaxHitPoints = 40;
-		
+		--entity.SubType = 15;
+		--sprite:Load("gfx/Monsters/Eternals/Red Boom Fly/animation.anm2", true);
+		--entity.HitPoints = 40;
+		--entity.MaxHitPoints = 40;
+		entity:Morph(entity.Type, entity.Variant, 15, -1)
+		entity.HitPoints = entity.MaxHitPoints
 	end
 end
 
