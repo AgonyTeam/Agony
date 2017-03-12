@@ -388,7 +388,6 @@ require("code/Items/Collectibles/BrotherCancer");
 require("code/Items/Collectibles/RememberMeNow");
 require("code/Items/Collectibles/Cornucopia");
 require("code/Items/Collectibles/PandorasChest");
-require("code/Items/Collectibles/Despair");
 require("code/Items/Collectibles/D5");
 require("code/Items/Collectibles/SpecialOne");
 --require("code/Items/Collectibles/TheLudovicoExperiment"); --This needs to be reworked, it's not an interesting item atm
@@ -443,6 +442,7 @@ require("code/Familiars/ChestOfChests");
 require("code/Familiars/GrandpaFly");
 require("code/Familiars/BloatedBaby");
 require("code/Familiars/WaitNo");
+require("code/Familiars/Despair");
 
 --Extra Bits 2
 local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items

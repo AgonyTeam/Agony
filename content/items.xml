@@ -23,7 +23,6 @@
 	<passive cache="shotspeed damage firedelay" name="Yeux Revolver" description="Mysterious placeholder text" gfx="collectibles_yeuxrevolver.png" />
 	<passive cache="damage" name="Poverty is Power" description="Mysterious placeholder text" gfx="collectibles_povertyispower.png" />
 	<passive name="Tumor" description="Mysterious placeholder text" gfx="collectibles_tumor.png" />
-	<passive cache ="damage firedelay speed luck" name="Despair" description="Mysterious placeholder text" gfx="collectibles_despair.png" />
 	<passive name="Special One" description="Mysterious placeholder text" gfx="collectibles_specialone.png" />
 	<!--<passive cache="all" name="The Ludovico Experiment" description="Mysterious placeholder text" gfx="collectibles_ludovicoexperiment.png" />-->
 	<passive cache="damage firedelay" name="Ferrofluid" description="Mysterious placeholder text" gfx="collectibles_ferrofluid.png" />
@@ -79,6 +78,7 @@
 	<familiar description="Mysterious placeholder text" gfx="collectibles_grandpafly.png" name="Grandpa Fly" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_bloatedbaby.png" name="Bloated Baby" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_waitno.png" name="Wait, No." />
+	<familiar cache ="damage firedelay speed luck" name="Despair" description="Mysterious placeholder text" gfx="collectibles_despair.png" />
 
 	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" />

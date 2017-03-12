@@ -145,5 +145,8 @@
     <entity anm2path="Familiars/Wait No/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Wait No" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="516">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
+    <entity anm2path="Familiars/Despair/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Despair" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="517">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
 	<!--/Familiars-->	
 </entities>	

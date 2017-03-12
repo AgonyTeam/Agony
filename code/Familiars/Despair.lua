@@ -1,14 +1,15 @@
-CollectibleType["AGONY_C_DESPAIR"] = Isaac.GetItemIdByName("Despair");
+CollectibleType["AGONY_C_DESPAIR"] = Isaac.GetItemIdByName("Despair")
+FamiliarVariant["AGONY_F_DESPAIR"] = Isaac.GetEntityVariantByName("Despair")
 
 local despair =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	TearBool = false,
 	stage = saveData.despair.stage or nil
 }
-despair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_despair.anm2")
 
 function despair:cacheUpdate (player,cacheFlag)
+	if cacheFlag == CacheFlag.CACHE_FAMILIARS then
+		player:CheckFamiliar(FamiliarVariant.AGONY_F_DESPAIR, player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR), player:GetCollectibleRNG(CollectibleType.AGONY_C_DESPAIR)) --no idea what the rng is for, but it's needed
+	end
 	--Lowers stats on the floor of pickup but increases them upon reaching a new stage
 	if (player:HasCollectible(CollectibleType.AGONY_C_DESPAIR)) then
 		local collNum = player:GetCollectibleNum(CollectibleType.AGONY_C_DESPAIR)
@@ -51,14 +52,6 @@ function despair:reset()
 end
 
 function despair:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		despair.hasItem = false
-	end
-	if despair.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_DESPAIR) then
-		--player:AddNullCostume(despair.costumeID)
-		despair.hasItem = true
-	end
-
 	if despair.stage ~= nil and despair.stage ~= Game():GetLevel():GetStage() then
 		player:AddCacheFlags(CacheFlag.CACHE_SPEED)
 		player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
@@ -79,6 +72,25 @@ function despair:updateFireDelay(player)
 	end
 end
 
+--main behaviour function
+function despair:updateFam(fam)
+	local player;Game():GetPlayer(0)
+	local col = Color(0, 0, 0, 0, 0, 0, 0)
+	col:Reset()
+	if Game():GetFrameCount()%7 == 1 then
+		Game():SpawnParticles(fam.Position, EffectVariant.PLAYER_CREEP_HOLYWATER_TRAIL, 1, 0, col, 0)
+	end
+	fam:FollowParent() --important so the familiar stays in the line of familiars
+end
+
+--called on init
+function despair:initFam(fam)
+	fam:GetSprite():Play("Idle")
+	fam.IsFollower = true --important, or else it isn't a familiar that follows the player
+end
+
+Agony:AddCallback(ModCallbacks.MC_FAMILIAR_UPDATE, despair.updateFam, FamiliarVariant.AGONY_F_DESPAIR)
+Agony:AddCallback(ModCallbacks.MC_FAMILIAR_INIT, despair.initFam, FamiliarVariant.AGONY_F_DESPAIR)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, despair.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, despair.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, despair.cacheUpdate)
