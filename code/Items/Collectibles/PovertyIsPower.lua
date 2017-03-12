@@ -1,10 +1,10 @@
 --local item_PIP = Isaac.GetItemIdByName("Poverty is Power");
-CollectibleType["AGONY_C_PIP"] = Isaac.GetItemIdByName("Poverty is Power");
+CollectibleType["AGONY_C_PIP"] = Isaac.GetItemIdByName("Poverty = Power");
 local PIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
 }
-PIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_povertyispower.anm2")
+PIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_povertyequalspower.anm2")
 
 function PIP:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_PIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then

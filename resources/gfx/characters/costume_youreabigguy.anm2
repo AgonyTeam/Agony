@@ -2,10 +2,10 @@
 	<Info CreatedBy="robot" CreatedOn="27.08.2014 01:54:07" Version="103" Fps="30"/>
 	<Content>
 		<Spritesheets>
-			<Spritesheet Path="costumes\costume_povertyispower.png" Id="0"/>
+			<Spritesheet Path="costumes\costume_youreabigguy.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
-			<Layer Name="head" Id="0" SpritesheetId="0"/>
+			<Layer Name="head2" Id="0" SpritesheetId="0"/>
 		</Layers>
 		<Nulls/>
 		<Events/>

@@ -1,10 +1,10 @@
 --local item_WIP = Isaac.GetItemIdByName("Wrath Is Power");
-CollectibleType["AGONY_C_WIP"] = Isaac.GetItemIdByName("Wrath Is Power");
+CollectibleType["AGONY_C_WIP"] = Isaac.GetItemIdByName("Wrath = Power");
 local WIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
 }
-WIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_wrathispower.anm2")
+WIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_wrathequalspower.anm2")
 
 function WIP:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_WIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
@@ -25,7 +25,7 @@ function WIP:onPlayerUpdate(player)
 			player:EvaluateItems()
 		end
 		if WIP.hasItem == false then
-			--player:AddNullCostume(WIP.costumeID)
+			player:AddNullCostume(WIP.costumeID)
 			WIP.hasItem = true
 		end
 	end

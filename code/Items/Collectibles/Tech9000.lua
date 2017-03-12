@@ -56,7 +56,7 @@ function techninek:onPlayerUpdate(player)
 		techninek.hasItem = false
 	end
 	if techninek.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TECH_9000) then
-		--player:AddNullCostume(techninek.costumeID)
+		player:AddNullCostume(techninek.costumeID)
 		techninek.hasItem = true
 	end
 end

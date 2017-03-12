@@ -8,8 +8,8 @@
 	<passive name="Vomit Cake" description="Mysterious placeholder text" gfx="collectibles_vomitcake.png" />
 	<passive name="Tourette" description="Mysterious placeholder text" gfx="collectibles_tourette.png" />
 	<passive cache="damage" name="You're a Big Guy" description="For you" gfx="collectibles_youreabigguy.png" maxhearts="2" />
-	<passive cache="damage" name="Knowledge Is Power" description="Mysterious placeholder text" gfx="collectibles_knowledgeispower.png" />
-	<passive cache="damage" name="Wrath Is Power" description="Mysterious placeholder text" gfx="collectibles_wrathispower.png" />
+	<passive cache="damage" name="Knowledge = Power" description="Mysterious placeholder text" gfx="collectibles_knowledgeequalspower.png" />
+	<passive cache="damage" name="Wrath = Power" description="Mysterious placeholder text" gfx="collectibles_wrathequalspower.png" />
 	<passive cache ="firedelay speed" name="Hyperactive" description="Mysterious placeholder text" gfx="collectibles_hyperactive.png" />
 	<passive name="Tantrum" description="Mysterious placeholder text" gfx="collectibles_tantrum.png" />
 	<passive name="Suicide God" description="Mysterious placeholder text" gfx="collectibles_suicidegod.png" />
@@ -21,7 +21,7 @@
 	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" />
 	<passive name="Pythagore's Body" description="Mysterious placeholder text" gfx="collectibles_pythagoresbody.png" />
 	<passive cache="shotspeed damage firedelay" name="Yeux Revolver" description="Mysterious placeholder text" gfx="collectibles_yeuxrevolver.png" />
-	<passive cache="damage" name="Poverty is Power" description="Mysterious placeholder text" gfx="collectibles_povertyispower.png" />
+	<passive cache="damage" name="Poverty = Power" description="Mysterious placeholder text" gfx="collectibles_povertyequalspower.png" />
 	<passive name="Tumor" description="Mysterious placeholder text" gfx="collectibles_tumor.png" />
 	<passive cache ="damage firedelay speed luck" name="Despair" description="Mysterious placeholder text" gfx="collectibles_despair.png" />
 	<passive name="Special One" description="Mysterious placeholder text" gfx="collectibles_specialone.png" />
