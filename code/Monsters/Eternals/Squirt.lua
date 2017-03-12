@@ -16,11 +16,12 @@ function EternalSquirt:ai_main(entity)
 	
 	--Replace regular entity with eternal version
 	if (entity.Type == EntityType.ENTITY_SQUIRT and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
-		entity.SubType = 15;
-		sprite:Load("gfx/Monsters/Eternals/Squirt/animation.anm2", true);
-		entity.HitPoints = 30;
-		entity.MaxHitPoints = 30;
-		
+		--entity.SubType = 15;
+		--sprite:Load("gfx/Monsters/Eternals/Squirt/animation.anm2", true);
+		--entity.HitPoints = 30;
+		--entity.MaxHitPoints = 30;
+		entity:Morph(entity.Type, entity.Variant, 15, -1)
+		entity.HitPoints = entity.MaxHitPoints
 	end
 	
 	if (entity.Type == EntityType.ENTITY_SQUIRT and entity.SubType == 15 and entity.State == NpcState.STATE_MOVE) then

@@ -4,6 +4,7 @@ local reload = {}
 function reload.onUse()
 	local player = Game():GetPlayer(0)
 	local entities = Isaac.GetRoomEntities()
+	Agony:AnimGiantBook("reload.png", "Appear")
 	for i = 1, #entities, 1 do
 		if entities[i].Type == EntityType.ENTITY_PICKUP 
 			and (entities[i].Variant == PickupVariant.PICKUP_REDCHEST

@@ -19,11 +19,12 @@ function EternalSuperPooter:ai_main(entity)
 
 	--Replace regular entity with eternal version
 	if (entity.Type == EntityType.ENTITY_POOTER and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15 and entity.Variant == 1) then
-		entity.SubType = 15;
-		sprite:Load("gfx/Monsters/Eternals/Super Pooter/animation.anm2", true);
-		entity.HitPoints = 16;
-		entity.MaxHitPoints = 16;
-		
+		--entity.SubType = 15;
+		--sprite:Load("gfx/Monsters/Eternals/Super Pooter/animation.anm2", true);
+		--entity.HitPoints = 16;
+		--entity.MaxHitPoints = 16;
+		entity:Morph(entity.Type, entity.Variant, 15, -1)
+		entity.HitPoints = entity.MaxHitPoints
 	end
 	
 	if (entity.Type == EntityType.ENTITY_POOTER and entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK and entity.Variant == 1) then

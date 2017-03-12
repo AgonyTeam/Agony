@@ -10,11 +10,13 @@ function EternalFly:ai_main(entity)
 	
 	--Replace regular entity with eternal version
 	if (entity.Type == EntityType.ENTITY_FLY and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
-		entity.SubType = 15;
-		sprite:Load("gfx/Monsters/Eternals/Fly/animation.anm2", true);
-		entity.MaxHitPoints = 0;
-		entity.CollisionDamage = 1;
-		entity.CanShutDoors = false;
+		--entity.SubType = 15;
+		--sprite:Load("gfx/Monsters/Eternals/Fly/animation.anm2", true);
+		--entity.MaxHitPoints = 0;
+		--entity.CollisionDamage = 1;
+		--entity.CanShutDoors = false;
+		entity:Morph(entity.Type, entity.Variant, 15, -1)
+		entity.HitPoints = entity.MaxHitPoints
 	end
 end
 

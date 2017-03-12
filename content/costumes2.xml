@@ -5,7 +5,7 @@
 	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="none" />
 	<costume name="Radioactive Pizza" anm2path="costume_radioactivepizza.anm2" type="none" />
 	<costume name="Tumor" anm2path="costume_tumor.anm2" type="none" />
-	<costume name="Poverty Is Power" anm2path="costume_povertyispower.anm2" type="none" />
+	<costume name="Poverty = Power" anm2path="costume_povertyequalspower.anm2" type="none" />
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="none" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="none" />
 	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="none" />
@@ -14,7 +14,7 @@
 	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="none" />
 	<costume name="Till Death Do Us Apart" anm2path="costume_tilldeathdousappart.anm2" type="none" />
 	<costume name="Electric Hair" anm2path="costume_electrichair.anm2" type="none" />
-	<costume name="Knowledge Is Power" anm2path="costume_knowledgeispower.anm2" type="none" />
+	<costume name="Knowledge = Power" anm2path="costume_knowledgeequalspower.anm2" type="none" />
 	<costume name="Parasites" anm2path="costume_parasites.anm2" type="none" />
 	<costume name="Vomit Cake" anm2path="costume_vomitcake.anm2" type="none" />
 	<costume name="Gold Man" anm2path="costume_goldman.anm2" type="none" />
@@ -22,4 +22,8 @@
 	<costume name="Tourette" anm2path="costume_tourette.anm2" type="none" />
 	<costume name="Spooderboi" anm2path="costume_spooderboi.anm2" type="none" />
 	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="none" />
+	<costume name="Wrath = Power" anm2path="costume_wrathequalspower.anm2" type="none" />
+	<costume name="Yeux Revolver" anm2path="costume_yeuxrevolver.anm2" type="none" />
+	<costume name="Technology 9000" anm2path="costume_technology9000.anm2" type="none" />
+	<costume name="You're a Big Guy" anm2path="costume_youreabigguy.anm2" type="none" />
 </costumes>

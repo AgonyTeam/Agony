@@ -27,7 +27,7 @@ function yeuxRev:onPlayerUpdate(player)
 		yeuxRev.hasItem = false
 	end
 	if yeuxRev.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER) then
-		--player:AddNullCostume(yeuxRev.costumeID)
+		player:AddNullCostume(yeuxRev.costumeID)
 		yeuxRev.hasItem = true
 	end
 end

@@ -12,10 +12,12 @@ function EternalRoundWorm:ai_main(entity)
 	--Replace regular entity with eternal version
 	--TODO: put in a function, unless we decide to split up Eternals into multiple files
 	if (entity.Type == EntityType.ENTITY_ROUND_WORM and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
-		entity.SubType = 15;
-		sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
-		entity.HitPoints = 20;
-		entity.MaxHitPoints = 20;
+		--entity.SubType = 15;
+		--sprite:Load("gfx/Monsters/Eternals/Round Worm/animation.anm2", true);
+		--entity.HitPoints = 20;
+		--entity.MaxHitPoints = 20;
+		entity:Morph(entity.Type, entity.Variant, 15, -1)
+		entity.HitPoints = entity.MaxHitPoints
 		
 	end
 	
