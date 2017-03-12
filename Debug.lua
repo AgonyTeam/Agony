@@ -13,7 +13,7 @@ function debugScript:displayEntities()
 end
  
 function debugScript:universalDebugText()
-	Isaac.RenderText(debug_text), 40, 250, 255, 255, 0, 255);
+	Isaac.RenderText(debug_text), 40, 250, 255, 255, 0, 255));
 	if debug_entity ~= nil then
 		Isaac.RenderText(tostring(debug_entity.State), 10, 250, 255, 255, 255, 255);
 	end

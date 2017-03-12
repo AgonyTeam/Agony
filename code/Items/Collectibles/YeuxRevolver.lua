@@ -7,7 +7,6 @@ local yeuxRev =  {
 }
 yeuxRev.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_yeuxrevolver.anm2")
 
---Grants +1 Luck and gives a *2 multiplier to Luck
 function yeuxRev:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
