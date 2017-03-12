@@ -40,6 +40,19 @@ function yeuxRev:updateFireDelay()
 	end
 end
 
+function yeuxRev:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
+	local player = Game():GetPlayer(0)
+	player:AddKeys(1)
+	if player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER) and hurtEntity:IsVulnerableEnemy() then
+		player:AddBombs(1)
+		local time = Isaac.GetTime()
+		while time + 45 >Isaac.GetTime() do
+		end
+		Game():ShakeScreen(math.floor(player.Damage/3))
+	end
+end
+
+Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, yeuxRev.onTakeDmg)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, yeuxRev.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, yeuxRev.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, yeuxRev.cacheUpdate)
