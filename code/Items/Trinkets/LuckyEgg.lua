@@ -2,9 +2,10 @@ TrinketType["AGONY_T_LUCKY_EGG"] = Isaac.GetTrinketIdByName("Lucky Egg")
 
 local luckyEgg = {
 	realLuckBuff = saveData.luckyEgg.realLuckBuff or 0,
-	luckBuff = luckyEgg.realLuckBuff,
+	luckBuff = 0,
 	stage = saveData.luckyEgg.stage or nil
 }
+--luckyEgg.luckBuff = luckyEgg.realLuckBuff
 
 function luckyEgg:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
 	local player = Isaac.GetPlayer(0)
