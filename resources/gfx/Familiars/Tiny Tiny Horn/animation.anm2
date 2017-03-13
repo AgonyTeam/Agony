@@ -1,5 +1,5 @@
 <AnimatedActor>
-	<Info CreatedBy="robot" CreatedOn="2/15/2017 9:33:55 PM" Version="106" Fps="30"/>
+	<Info CreatedBy="robot" CreatedOn="3/13/2017 6:28:24 PM" Version="107" Fps="30"/>
 	<Content>
 		<Spritesheets>
 			<Spritesheet Path="main.png" Id="0"/>
@@ -140,7 +140,7 @@
 			<NullAnimations/>
 			<Triggers/>
 		</Animation>
-		<Animation Name="FloatShootDown" FrameNum="16" Loop="false">
+		<Animation Name="FloatShootDown" FrameNum="16" Loop="true">
 			<RootAnimation>
 				<Frame XPosition="0" YPosition="0" XScale="100" YScale="100" Delay="16" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
 			</RootAnimation>
@@ -159,7 +159,7 @@
 			<NullAnimations/>
 			<Triggers/>
 		</Animation>
-		<Animation Name="FloatShootSide" FrameNum="16" Loop="false">
+		<Animation Name="FloatShootSide" FrameNum="16" Loop="true">
 			<RootAnimation>
 				<Frame XPosition="0" YPosition="0" XScale="100" YScale="100" Delay="16" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
 			</RootAnimation>
@@ -178,7 +178,7 @@
 			<NullAnimations/>
 			<Triggers/>
 		</Animation>
-		<Animation Name="FloatShootUp" FrameNum="16" Loop="false">
+		<Animation Name="FloatShootUp" FrameNum="16" Loop="true">
 			<RootAnimation>
 				<Frame XPosition="0" YPosition="0" XScale="100" YScale="100" Delay="16" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
 			</RootAnimation>
