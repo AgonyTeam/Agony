@@ -9,8 +9,9 @@ function soulmates:updateFamJuliet(fam)
 	local player = Isaac.GetPlayer(0)
 	fam.OrbitDistance = Vector (125,150)
 	fam.OrbitSpeed = 0.03
-	fam.OrbitLayer = 69
+	fam.OrbitLayer = 68
 	fam.Velocity = fam:GetOrbitPosition(player.Position:__add(player.Velocity)):__sub(fam.Position)
+	fam:RecalculateOrbitOffset(fam.OrbitLayer, true)
 end
 
 function soulmates:updateFamRomeo(fam)
@@ -19,6 +20,7 @@ function soulmates:updateFamRomeo(fam)
 	fam.OrbitSpeed = 0.03
 	fam.OrbitLayer = 69
 	fam.Velocity = fam:GetOrbitPosition(player.Position:__add(player.Velocity)):__sub(fam.Position)
+	fam:RecalculateOrbitOffset(fam.OrbitLayer, true)
 end
 
 --called on init
