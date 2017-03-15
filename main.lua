@@ -424,6 +424,7 @@ require("code/Items/Collectibles/PyriteNugget")
 require("code/Items/Collectibles/IrritatingBracelets")
 require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
+require("code/Items/Collectibles/CashewMilk")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
