@@ -422,6 +422,8 @@ require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
 require("code/Items/Collectibles/PyriteNugget")
 require("code/Items/Collectibles/IrritatingBracelets")
+require("code/Items/Collectibles/ProductiveSeizure")
+require("code/Items/Collectibles/BirthdayGift")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

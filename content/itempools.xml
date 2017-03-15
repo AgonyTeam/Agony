@@ -47,6 +47,8 @@
         <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Lil'Red Book" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Irritating Bracelet" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Birthday Gift" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -72,6 +74,7 @@
         <Item Name="Goat Fetus" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>

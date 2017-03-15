@@ -38,6 +38,8 @@
 	<passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" />
 	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" />
 	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" />
+	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" />
+	<passive name="Birthday Gift" description="Mysterious placeholder text" gfx="collectibles_birthdaygift.png" />
 
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
