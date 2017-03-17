@@ -58,6 +58,7 @@
         <Item Name="Dice Tattoo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Chest of Chests" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Safe Space" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="boss">
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

@@ -23,6 +23,7 @@ saveData.LSD = saveData.LSD or {}
 saveData.bloodyNut = saveData.bloodyNut or {}
 saveData.luckyEgg = saveData.luckyEgg or {}
 saveData.despair = saveData.despair or {}
+saveData.safeSpace = saveData.safeSpace or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -425,6 +426,7 @@ require("code/Items/Collectibles/IrritatingBracelets")
 require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
+require("code/Items/Collectibles/SafeSpace")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
