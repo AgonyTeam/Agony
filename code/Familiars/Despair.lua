@@ -74,7 +74,6 @@ end
 
 --main behaviour function
 function despair:updateFam(fam)
-	local player;Game():GetPlayer(0)
 	local col = Color(0, 0, 0, 0, 0, 0, 0)
 	col:Reset()
 	if Game():GetFrameCount()%7 == 1 then

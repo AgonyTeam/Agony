@@ -24,15 +24,16 @@ function safeSpace:onPlayerUpdate(player)
 	if player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE) then
 		
 		if player:GetCollectibleCount() >= 1 then --If the player has collectibles
-	    local colletibles = {}
-        for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-            if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
-                table.insert(colletibles, id)
-            end
-        end
-        safeSpace.storedItem = colletibles[rng:RandomInt(#colletibles)+1]
-        saveData.safeSpace.storedItem = safeSpace.storedItem
-        player:RemoveCollectible(safeSpace.storedItem)
+	    	local colletibles = {}
+        	for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
+            	if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
+               		table.insert(colletibles, id)
+            	end
+        	end
+        	safeSpace.storedItem = colletibles[rng:RandomInt(#colletibles)+1]
+       		saveData.safeSpace.storedItem = safeSpace.storedItem
+       		player:RemoveCollectible(safeSpace.storedItem)
+    	end
 	end
 end
 
