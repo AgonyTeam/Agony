@@ -20,8 +20,6 @@ table.insert(spooderBoi.spooderList, EntityType.ENTITY_BABY_LONG_LEGS)
 table.insert(spooderBoi.spooderList, 1) --small version
 table.insert(spooderBoi.spooderList, EntityType.ENTITY_CRAZY_LONG_LEGS)
 table.insert(spooderBoi.spooderList, 1) --small version
-table.insert(spooderBoi.spooderList, EntityType.ENTITY_BOIL)
-table.insert(spooderBoi.spooderList, 2)
 table.insert(spooderBoi.spooderList, EntityType.ENTITY_FAMILIAR)  -- blue spider
 table.insert(spooderBoi.spooderList, FamiliarVariant.BLUE_SPIDER) -- blue spider
 table.insert(spooderBoi.spooderList, EntityType.ENTITY_TICKING_SPIDER)
