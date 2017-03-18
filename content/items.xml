@@ -39,7 +39,6 @@
 	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" />
 	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" />
 	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" />
-	<passive name="Birthday Gift" description="Mysterious placeholder text" gfx="collectibles_birthdaygift.png" />
 	<passive cache="firedelay damage" name="Cashew Milk" description="Mysterious placeholder text" gfx="collectibles_cashewmilk.png" />
 	<passive name="Safe Space" description="Mysterious placeholder text" gfx="collectibles_safespace.png" />
 
@@ -66,6 +65,7 @@
 	<active description="Mysterious placeholder text" gfx="collectibles_lilredbook.png" maxcharges="3" name="Lil'Red Book" />
 	<active description="Don't be fooled" gfx="collectibles_payritenugget.png" maxcharges="1" name="Pyrite Nugget" />
 	<active description="Mysterious placeholder text" gfx="collectibles_irritatingbracelets.png" maxcharges="1" name="Irritating Bracelets" />
+	<active name="Birthday Gift" description="Mysterious placeholder text" gfx="collectibles_birthdaygift.png" />
 
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />

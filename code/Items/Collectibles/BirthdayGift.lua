@@ -62,21 +62,18 @@ table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_WAIT_NO)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_BIRTHDAY_GIFT) --Infinite garbage hell yeah
 
 
-function birthdayGift:onUpdate()
+function birthdayGift:onUse()
 	-- If the player has the item, removes it and spawn 2 to 3 garbage items
 	local player = Isaac.GetPlayer(0);
 	local rng = player:GetCollectibleRNG(CollectibleType.AGONY_C_BIRTHDAY_GIFT)
 	local game = Game()
-	if player:HasCollectible(CollectibleType.AGONY_C_BIRTHDAY_GIFT) then
-		local r = 2
-		if math.random(10) > 7 then
-			r = 3
-		end
-		for i = 1, r, 1 do
-			Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
-		end
-		player:RemoveCollectible(CollectibleType.AGONY_C_BIRTHDAY_GIFT)
+	local r = 2
+	if math.random(10) > 7 then
+		r = 3
+	end
+	for i = 1, r, 1 do
+		Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, birthdayGift.onUpdate)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, birthdayGift.onUse)
