@@ -26,4 +26,5 @@
 	<costume name="Yeux Revolver" anm2path="costume_yeuxrevolver.anm2" type="none" />
 	<costume name="Technology 9000" anm2path="costume_technology9000.anm2" type="none" />
 	<costume name="You're a Big Guy" anm2path="costume_youreabigguy.anm2" type="none" />
+	<costume name="Safe Space" anm2path="costume_safespace.anm2" type="none" />
 </costumes>

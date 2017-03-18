@@ -19,7 +19,7 @@ function safeSpace:onPlayerUpdate(player)
 	end
 	if safeSpace.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE) then
 		--commented out until we have a costume
-		--player:AddNullCostume(safeSpace.costumeID)
+		player:AddNullCostume(safeSpace.costumeID)
 		safeSpace.hasItem = true
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE) and (saveData.safeSpace.storedItem == 0 or saveData.safeSpace.storedItem == nil) then
@@ -39,4 +39,11 @@ function safeSpace:onPlayerUpdate(player)
 	end
 end
 
+function safeSpace:cacheUpdate (player,cacheFlag)
+	if (player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
+		player.Damage = player.Damage + 0.69*player:GetCollectibleNum(CollectibleType.AGONY_C_SAFE_SPACE);
+	end
+end
+
+Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, safeSpace.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, safeSpace.onPlayerUpdate)
