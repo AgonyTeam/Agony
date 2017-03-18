@@ -345,7 +345,7 @@ end
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
-PickupVariant["AGONY_PICKUP_CHEST"] = 521 --Agony Chests
+PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, since the subtype for chests is already used
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
 --Debug

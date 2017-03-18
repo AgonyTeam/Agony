@@ -54,7 +54,7 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
         <preload-snd id="237" /> <!-- SOUND_PLOP -->
     </entity>
-    <entity anm2path="Items/Pick Ups/Safe/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="12" friction="0" id="5" name="Safe" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="521">
+    <entity anm2path="Items/Pick Ups/Safe/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="12" friction="0" id="5" name="Safe" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="550">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" subtype="0"/>
         <preload-snd id="22" /> <!-- CHEST_OPEN -->
     </entity>
