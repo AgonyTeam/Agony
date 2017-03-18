@@ -345,6 +345,7 @@ end
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
+PickupVariant["AGONY_PICKUP_CHEST"] = 521 --Agony Chests
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
 --Debug
@@ -364,8 +365,9 @@ require("code/Monsters/Eternals/AttackFly");
 require("code/Monsters/Eternals/RedBoomFly");
 --Bosses
 require("code/Bosses/Joseph");
---Other Entities
+--Other entities
 require("code/Items/Slots/TreasureHoarder");
+
 --Items
 require("code/Items/Collectibles/LuckyLeg");
 require("code/Items/Collectibles/DoubleDown");
@@ -437,14 +439,15 @@ require("code/Items/Trinkets/LuckyEgg")
 --Transformations
 require("code/Misc/Transformations/God")
 
+--Pickups
 --Pills
 require("code/Items/Pick Ups/Pills/PartyPills");
-
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
-
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
+--Chests
+require("code/Items/Pick Ups/Chests/Safe")
 
 --Familiars
 require("code/Familiars/TinyTinyHorn");

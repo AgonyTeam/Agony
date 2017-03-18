@@ -76,4 +76,4 @@ function birthdayGift:onUse()
 	end
 end
 
-Agony:AddCallback(ModCallbacks.MC_USE_ITEM, birthdayGift.onUse)
+Agony:AddCallback(ModCallbacks.MC_USE_ITEM, birthdayGift.onUse, CollectibleType.AGONY_C_BIRTHDAY_GIFT)
