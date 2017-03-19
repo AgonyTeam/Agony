@@ -429,6 +429,7 @@ require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
 require("code/Items/Collectibles/SafeSpace")
+require("code/Items/Collectibles/SocialAnxiety")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

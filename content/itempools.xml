@@ -50,6 +50,7 @@
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Birthday Gift" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Cashew Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -77,6 +78,7 @@
         <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
