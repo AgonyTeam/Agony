@@ -1,7 +1,7 @@
 CollectibleType["AGONY_C_BIRTHDAY_GIFT"] = Isaac.GetItemIdByName("Birthday Gift");
 
 local birthdayGift = {
-	garbageItems = {}
+	garbageItems = Agony.ENUMS["ItemPools"]["Garbage"]
 }
 
 
@@ -9,6 +9,7 @@ local birthdayGift = {
 --The list is not definitive and will defenitely need ot be reworked
 --Vanilla garbage
 --Passives
+--[[
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_ABEL)
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_BLACK_BEAN)
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_BOOM)
@@ -60,7 +61,7 @@ table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_PYRITE_NUGGET)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_THE_ROCK)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_WAIT_NO)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_BIRTHDAY_GIFT) --Infinite garbage hell yeah
-
+ ]]--
 
 function birthdayGift:onUse()
 	-- If the player has the item, removes it and spawn 2 to 3 garbage items

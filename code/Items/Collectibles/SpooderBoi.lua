@@ -3,11 +3,12 @@ CollectibleType["AGONY_C_SPOODER_BOI"] = Isaac.GetItemIdByName("Spooderboi");
 local spooderBoi =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
-	spooderList = {}
+	spooderList = Agony.ENUMS["EnemyLists"]["Spooders"]
 }
 spooderBoi.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_spooderboi.anm2")
 
 --Spawnable monster List
+--[[
 table.insert(spooderBoi.spooderList, EntityType.ENTITY_SPIDER)
 table.insert(spooderBoi.spooderList, 0)
 table.insert(spooderBoi.spooderList, EntityType.ENTITY_SPIDER_L2)
@@ -32,6 +33,7 @@ table.insert(spooderBoi.spooderList, EntityType.ENTITY_RAGLING)
 table.insert(spooderBoi.spooderList, 0)
 table.insert(spooderBoi.spooderList, 303) --Blister
 table.insert(spooderBoi.spooderList, 0) --Blister
+]]--
 
 function spooderBoi:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
@@ -44,8 +46,8 @@ function spooderBoi:onPlayerUpdate(player)
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_SPOODER_BOI) then
 		if math.random(300) == 1 then
-			local r = (rng:RandomInt(#spooderBoi.spooderList/2)*2)+1
-			local spooder = Isaac.Spawn(spooderBoi.spooderList[r], spooderBoi.spooderList[r+1], 0, player.Position, Vector (0,0), player)
+			local r = (rng:RandomInt(#spooderBoi.spooderList))+1
+			local spooder = Isaac.Spawn(spooderBoi.spooderList[r][1], spooderBoi.spooderList[r][2], 0, player.Position, Vector (0,0), player)
 			spooder:AddEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM);
 		end
 	end
