@@ -75,6 +75,8 @@ function birthdayGift:onUse()
 	for i = 1, r, 1 do
 		Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 	end
+	player:RemoveCollectible(CollectibleType.AGONY_C_BIRTHDAY_GIFT)
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, birthdayGift.onUse, CollectibleType.AGONY_C_BIRTHDAY_GIFT)
