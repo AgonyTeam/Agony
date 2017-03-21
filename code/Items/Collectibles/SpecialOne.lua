@@ -12,10 +12,11 @@ function specialOne:fireWizTears ()
 		local entList = Isaac.GetRoomEntities()
 		for i = 1, #entList, 1 do
 			player:GetEffects():AddCollectibleEffect(CollectibleType.COLLECTIBLE_THE_WIZ, false)
-			if entList[i].Type == EntityType.ENTITY_TEAR and entList[i].SubType ~= 1 and (entList[i].Parent.Type == EntityType.ENTITY_PLAYER or (entList[i].Parent.Type == 3 and entList[i].Parent.SubType == 80)) and entList[i].FrameCount == 1 then
+			if entList[i].Type == EntityType.ENTITY_TEAR and entList[i]:GetData().SpecialOne ~= 0 and (entList[i].Parent.Type == EntityType.ENTITY_PLAYER or (entList[i].Parent.Type == 3 and entList[i].Parent.SubType == 80)) and entList[i].FrameCount == 1 then
 				local t = player:FireTear(player.Position, entList[i].Velocity:__mul(-1), false, false, true)
-				t.SubType = 1
-				--Set the subtype to 1 to avoid firing another tear because of this new one
+				--Copy the data to avoid proccing other items like rigid mind
+				entList[i]:GetData().SpecialOne = 0 
+				Agony:dataCopy(entList[i]:GetData(),t:GetData())
 			end
 		end
 	end
@@ -32,5 +33,6 @@ function specialOne:onPlayerUpdate(player)
 		end
 	end
 end
+
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, specialOne.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, specialOne.fireWizTears)

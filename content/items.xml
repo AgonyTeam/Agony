@@ -42,6 +42,7 @@
 	<passive cache="firedelay damage" name="Cashew Milk" description="Mysterious placeholder text" gfx="collectibles_cashewmilk.png" />
 	<passive cache="damage" name="Safe Space" description="Mysterious placeholder text" gfx="collectibles_safespace.png" maxhearts="2" />
 	<passive name="Social Anxiety" description="Mysterious placeholder text" gfx="collectibles_socialanxiety.png" />
+	<passive name="Milkman" description="My Milk is Delicious" gfx="collectibles_milkman.png" />
 
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />

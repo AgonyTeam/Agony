@@ -343,11 +343,18 @@ function Agony:removeFriendlyEnemies()
 	end
 end
 
+function Agony:dataCopy(originData,targetData)
+	targetData.SpecialOne = originData.SpecialOne --Special One Item Data
+	targetData.RigidMind = originData.RigidMind --Rigid Mind Item Data
+end
+
+
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
 PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, since the subtype for chests is already used
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
-
+AgonyTearSubtype = {}
+AgonyTearSubtype["MILKMAN"] = 1
 --Debug
 require("Debug");
 --Enemies
@@ -430,6 +437,7 @@ require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
 require("code/Items/Collectibles/SafeSpace")
 require("code/Items/Collectibles/SocialAnxiety")
+require("code/Items/Collectibles/Milkman")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
