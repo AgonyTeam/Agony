@@ -6,11 +6,12 @@ local fragileConception =  {
 	stage = nil,
 	dmgTot = 0,
 	famSpawned = 0,
-	famList = {}
+	famList = Agony.ENUMS["ItemPools"]["FragileConceptionFams"]
 }
 fragileConception.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_fragileconception.anm2")
 
 --Make a table with all the familiars this item can spawn
+--[[
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BROTHER_BOBBY)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_STEVEN)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_ROBO_BABY)
@@ -28,7 +29,7 @@ table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_KEY_BUM)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_LIL_GURDY)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BALL_OF_BANDAGES)
 table.insert(fragileConception.famList,CollectibleType.COLLECTIBLE_BUMBO)
-
+]]--
 function fragileConception:onUpdate()
 	--Check fi the player has taken damage this stage
 	local player = Game():GetPlayer(0)

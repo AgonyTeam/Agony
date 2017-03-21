@@ -1,7 +1,7 @@
 CollectibleType["AGONY_C_BIRTHDAY_GIFT"] = Isaac.GetItemIdByName("Birthday Gift");
 
 local birthdayGift = {
-	garbageItems = {}
+	garbageItems = Agony.ENUMS["ItemPools"]["Garbage"]
 }
 
 
@@ -9,6 +9,7 @@ local birthdayGift = {
 --The list is not definitive and will defenitely need ot be reworked
 --Vanilla garbage
 --Passives
+--[[
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_ABEL)
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_BLACK_BEAN)
 table.insert(birthdayGift.garbageItems,CollectibleType.COLLECTIBLE_BOOM)
@@ -60,7 +61,7 @@ table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_PYRITE_NUGGET)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_THE_ROCK)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_WAIT_NO)
 table.insert(birthdayGift.garbageItems,CollectibleType.AGONY_C_BIRTHDAY_GIFT) --Infinite garbage hell yeah
-
+ ]]--
 
 function birthdayGift:onUse()
 	-- If the player has the item, removes it and spawn 2 to 3 garbage items
@@ -74,6 +75,8 @@ function birthdayGift:onUse()
 	for i = 1, r, 1 do
 		Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
 	end
+	player:RemoveCollectible(CollectibleType.AGONY_C_BIRTHDAY_GIFT)
+	return true
 end
 
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, birthdayGift.onUse, CollectibleType.AGONY_C_BIRTHDAY_GIFT)

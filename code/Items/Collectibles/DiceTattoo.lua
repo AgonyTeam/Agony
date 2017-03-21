@@ -26,12 +26,7 @@ function diceTattoo:onUpdate()
 			for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_DICE_TATTOO), 1 do
 				--Reroll a random item
 				if player:GetCollectibleCount() >= 1 then --If the player has collectibles
-			    	local colletibles = {}
-		        	for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-		        	    if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
-		        	        table.insert(colletibles, id)
-		         	   end
-		       	 	end
+			    	local colletibles = Agony:getCurrentItems()
 		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
 		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
 	    		end

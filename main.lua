@@ -348,6 +348,28 @@ function Agony:dataCopy(originData,targetData)
 	targetData.RigidMind = originData.RigidMind --Rigid Mind Item Data
 end
 
+--returns the items the player currently has
+--a list of items can be specified to check if the player has any of these
+function Agony:getCurrentItems(pool)
+	pool = pool or {}
+	local currList = {}
+	local player = Isaac.GetPlayer(0)
+	for name, id in pairs(CollectibleType) do
+		if #pool == 0 then
+			if name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id) then
+				table.insert(currList, id)
+			end
+		else
+			for _, poolId in pairs(pool) do
+				if id == poolId and name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id) then
+					table.insert(currList, id)
+				end
+			end
+		end
+	end
+	debug_tbl1 = currList
+	return currList
+end
 
 --Extra Bits
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
@@ -355,6 +377,8 @@ PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, sin
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 AgonyTearSubtype = {}
 AgonyTearSubtype["MILKMAN"] = 1
+Agony.ENUMS = require("ExtraEnums")
+
 --Debug
 require("Debug");
 --Enemies

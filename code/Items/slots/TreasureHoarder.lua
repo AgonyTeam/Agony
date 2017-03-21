@@ -46,13 +46,7 @@ function treasurehoarder:ai_main(npc)
     	--Credit to lombardo2 for this if statement
     	-- This wont accept modded item
     	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
-            local colletibles = {}
-            for name, id in pairs(CollectibleType) do --Iterate over all collectibles to see if the player has it, as far as I know you can't get the current collectible list
-                --Isaac.DebugString(name);
-				if (name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id)) then --If they have it add it to the table
-                    table.insert(colletibles, id)
-                end
-            end
+            local colletibles = Agony:getCurrentItems()
             player:RemoveCollectible(colletibles[math.random(#colletibles)]) --Randomly select a collectible from the table and remove it
 	    	treasurehoarder.rseed = (room:GetDecorationSeed()*treasurehoarder.rseed)%100
 			if treasurehoarder.rseed + ((player.Luck)*2) > 30 then
