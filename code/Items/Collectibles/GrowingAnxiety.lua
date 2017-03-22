@@ -1,5 +1,4 @@
 --local item_GrowingAnxiety = Isaac.GetItemIdByName("Growing Anxiety")
-CollectibleType["AGONY_C_GROWING_ANXIETY"] = Isaac.GetItemIdByName("Growing Anxiety");
 local growingAnxiety =  {
 	FormerScale = {},
 	CurrentScaleMulti = 1,

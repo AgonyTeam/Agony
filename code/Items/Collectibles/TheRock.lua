@@ -1,5 +1,4 @@
 --local item_TheRock = Isaac.GetItemIdByName("The Rock")
-CollectibleType["AGONY_C_THE_ROCK"] = Isaac.GetItemIdByName("The Rock");
 local theRock =  {}
 
 function theRock:spawnRock()

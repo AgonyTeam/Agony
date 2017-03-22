@@ -1,5 +1,4 @@
 --local item_techninek = Isaac.GetItemIdByName("Technology 9000");
-CollectibleType["AGONY_C_TECH_9000"] = Isaac.GetItemIdByName("Technology 9000");
 local techninek = {
 	TearBool = false,
 	hasItem = nil,

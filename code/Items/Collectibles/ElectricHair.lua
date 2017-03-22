@@ -1,5 +1,4 @@
 --local item_ElectricHair = Isaac.GetItemIdByName("Electric Hair");
-CollectibleType["AGONY_C_ELECTRIC_HAIR"] = Isaac.GetItemIdByName("Electric Hair");
 local electricHair =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

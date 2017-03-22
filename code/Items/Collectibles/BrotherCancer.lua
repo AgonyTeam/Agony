@@ -1,5 +1,4 @@
-CollectibleType["AGONY_C_BROTHER_CANCER"] = Isaac.GetItemIdByName("Brother Cancer");
-CollectibleType["AGONY_C_TUMOR"] = Isaac.GetItemIdByName("Tumor");
+
 local tumor =  {
 	costumeID = nil,
 	hasItem = nil

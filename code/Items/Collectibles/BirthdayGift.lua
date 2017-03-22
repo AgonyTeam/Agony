@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_BIRTHDAY_GIFT"] = Isaac.GetItemIdByName("Birthday Gift");
 
 local birthdayGift = {
 	garbageItems = Agony.ENUMS["ItemPools"]["Garbage"]

@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SPECIAL_ONE"] = Isaac.GetItemIdByName("Special One");
 
 local specialOne =  {
 	hasItem = nil, --used for costume

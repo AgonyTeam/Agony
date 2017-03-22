@@ -1,5 +1,4 @@
 --local item_PythB = Isaac.GetItemIdByName("Pythagore's Body");
-CollectibleType["AGONY_C_PYTHAGORE_BODY"] = Isaac.GetItemIdByName("Pythagore's Body");
 local pythB =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

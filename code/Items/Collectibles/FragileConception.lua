@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_FRAGILE_CONCEPTION"] = Isaac.GetItemIdByName("Fragile Conception");
 
 local fragileConception =  {
 	hasItem = nil, --used for costume

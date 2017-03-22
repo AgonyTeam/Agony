@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_GRUDGE_HOLDER"] = Isaac.GetItemIdByName("Grudge Holder")
-FamiliarVariant["AGONY_F_GRUDGE_HOLDER"] = Isaac.GetEntityVariantByName("Grudge Holder")
 
 local GrudgeHolder = {}
 

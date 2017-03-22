@@ -1,4 +1,3 @@
-TrinketType["AGONY_T_PARTY_POOPER"] = Isaac.GetTrinketIdByName("Party Pooper")
 
 local partyPooper = {}
 

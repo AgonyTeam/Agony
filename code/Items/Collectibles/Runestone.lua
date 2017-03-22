@@ -1,5 +1,4 @@
 --local item_Runestone = Isaac.GetItemIdByName("Runestone")
-CollectibleType["AGONY_C_RUNESTONE"] = Isaac.GetItemIdByName("Runestone");
 local runestone =  {}
 
 function runestone:onUse()

@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_MOMMYS_DEMON"] = Isaac.GetItemIdByName("Mommy's Demon")
-FamiliarVariant["AGONY_F_MOMMYS_DEMON"] = Isaac.GetEntityVariantByName("Mommy's Demon")
 
 local mommysDemon = {
 	vDisplacement = nil,

@@ -1,5 +1,4 @@
 --local item_RadioActivePizza = Isaac.GetItemIdByName("Radioactive Pizza")
-CollectibleType["AGONY_C_RADIOACTIVE_PIZZA"] = Isaac.GetItemIdByName("Radioactive Pizza");
 local radioactivePizza =  {
 	TearBool = false,
 	bonus = 0,

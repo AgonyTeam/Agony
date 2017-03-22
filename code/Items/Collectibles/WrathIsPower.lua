@@ -1,5 +1,4 @@
 --local item_WIP = Isaac.GetItemIdByName("Wrath Is Power");
-CollectibleType["AGONY_C_WIP"] = Isaac.GetItemIdByName("Wrath = Power");
 local WIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

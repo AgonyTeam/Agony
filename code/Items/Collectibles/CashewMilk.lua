@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_CASHEW_MILK"] = Isaac.GetItemIdByName("Cashew Milk");
 local CashewMilk =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,

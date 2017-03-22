@@ -1,5 +1,4 @@
 --local item_KIP = Isaac.GetItemIdByName("Knowledge Is Power");
-CollectibleType["AGONY_C_KIP"] = Isaac.GetItemIdByName("Knowledge = Power");
 local KIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

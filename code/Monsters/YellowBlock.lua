@@ -3,7 +3,6 @@
 --Yellow Block
 yellowblock = {};
 --yb_entitytype = Isaac.GetEntityTypeByName("Yellow Block");
-EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block");
 --debug_text = "";
 
 -- Movement

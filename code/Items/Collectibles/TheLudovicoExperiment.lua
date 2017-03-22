@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_THE_LUDOVICO_EXPERIMENT"] = Isaac.GetItemIdByName("The Ludovico Experiment");
 
 local ludoExp =  {
 	hasItem = nil, --used for costume

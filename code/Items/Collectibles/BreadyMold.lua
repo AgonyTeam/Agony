@@ -1,7 +1,3 @@
---Credit to otherhand for the original code
-
-CollectibleType["AGONY_C_BREADY_MOLD"] = Isaac.GetItemIdByName("Bready Mold");
-
 local breadyMold = {
 	seed = nil,
 	shroomItems = Agony.ENUMS["ItemPools"]["Mushrooms"]

@@ -1,5 +1,4 @@
 --local item_TheBigRock = Isaac.GetItemIdByName("The Big Rock")
-CollectibleType["AGONY_C_THE_BIG_ROCK"] = Isaac.GetItemIdByName("The Big Rock");
 local theBigRock =  {
 	hasTriedToMorphSmallRock = false,
 	seed = nil,

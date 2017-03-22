@@ -1,5 +1,4 @@
 --local item_DoubleDown = Isaac.GetItemIdByName("Double Down")
-CollectibleType["AGONY_C_DOUBLE_DOWN"] = Isaac.GetItemIdByName("Double Down");
 local doubleDown = {
 	hasItem = nil, --used for costume
 	costumeID = nil

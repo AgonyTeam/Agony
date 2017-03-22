@@ -8,7 +8,20 @@ Lists = {
 			CollectibleType.COLLECTIBLE_ONE_UP,
 			CollectibleType.COLLECTIBLE_BLUE_CAP,
 			CollectibleType.COLLECTIBLE_GODS_FLESH,
-			CollectibleType.COLLECTIBLE_MINI_MUSH
+			CollectibleType.COLLECTIBLE_MINI_MUSH,
+		},
+
+		Beans = {
+			--Vanilla
+			CollectibleType.COLLECTIBLE_BEAN,
+			CollectibleType.COLLECTIBLE_BLACK_BEAN,
+			CollectibleType.COLLECTIBLE_BUTTER_BEAN,
+			CollectibleType.COLLECTIBLE_WAIT_WHAT,
+			CollectibleType.COLLECTIBLE_KIDNEY_BEAN,
+			CollectibleType.COLLECTIBLE_LINGER_BEAN,
+			CollectibleType.COLLECTIBLE_MEGA_BEAN,
+			--Agony
+			CollectibleType.AGONY_C_WAIT_NO,
 		},
 			
 		Garbage = {

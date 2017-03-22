@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SPOODER_BOI"] = Isaac.GetItemIdByName("Spooderboi");
 
 local spooderBoi =  {
 	hasItem = nil, --used for costume

@@ -1,5 +1,4 @@
 --local item_SolomonCrown = Isaac.GetItemIdByName("Solomon's Crown");
-CollectibleType["AGONY_C_SOLOMON_CROWN"] = Isaac.GetItemIdByName("Solomon's Crown");
 local solomonCrown =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,

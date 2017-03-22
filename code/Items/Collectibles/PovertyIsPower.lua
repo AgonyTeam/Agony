@@ -1,5 +1,4 @@
 --local item_PIP = Isaac.GetItemIdByName("Poverty is Power");
-CollectibleType["AGONY_C_PIP"] = Isaac.GetItemIdByName("Poverty = Power");
 local PIP =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

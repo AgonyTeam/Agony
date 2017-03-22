@@ -1,5 +1,4 @@
 --local item_SuicideGod = Isaac.GetItemIdByName("Suicide God");
-CollectibleType["AGONY_C_SUICIDE_GOD"] = Isaac.GetItemIdByName("Suicide God");
 local suicideGod =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

@@ -6,7 +6,6 @@ treasurehoarder = {
 	pos = nil
 }
 --treasurehoarder.entityType = Isaac.GetEntityTypeByName("Treasure Hoarder")
-EntityType["AGONY_ETYPE_TREASURE_HOARDER"] = Isaac.GetEntityTypeByName("Treasure Hoarder");
 --local debug_text = nil
 local collList = nil
 

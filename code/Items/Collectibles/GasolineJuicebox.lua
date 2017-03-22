@@ -1,6 +1,5 @@
 --StartDebug();
 --local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
-CollectibleType["AGONY_C_GASOLINE_JB"] = Isaac.GetItemIdByName("Gasoline Juicebox");
 local gasolinejb = {
 	TearBool = false,
 	hasItem = nil,

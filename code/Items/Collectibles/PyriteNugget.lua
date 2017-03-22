@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_PYRITE_NUGGET"] = Isaac.GetItemIdByName("Pyrite Nugget")
 
 pyritenugget = {}
 

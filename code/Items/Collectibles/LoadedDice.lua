@@ -1,5 +1,4 @@
 --local item_LoadedDice = Isaac.GetItemIdByName("Loaded Dice")
-CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
 local loadedDice =  {}
 
 function loadedDice:onUse()

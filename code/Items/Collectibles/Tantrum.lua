@@ -1,5 +1,4 @@
 --local item_Tantrum = Isaac.GetItemIdByName("Tantrum")
-CollectibleType["AGONY_C_TANTRUM"] = Isaac.GetItemIdByName("Tantrum");
 local tantrum =  {
 	hasItem = false,
 	costumeID = nil,

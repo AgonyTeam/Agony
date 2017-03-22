@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_PYRAMID_HEAD"] = Isaac.GetItemIdByName("Pyramid Head");
 local pyramidHead =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

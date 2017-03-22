@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_DICE_TATTOO"] = Isaac.GetItemIdByName("Dice Tattoo");
 
 local diceTattoo =  {
 	hasItem = nil, --used for costume

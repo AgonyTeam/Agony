@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_CHEST_OF_CHESTS"] = Isaac.GetItemIdByName("Chest of Chests")
-FamiliarVariant["AGONY_F_CHEST_OF_CHESTS"] = Isaac.GetEntityVariantByName("Chest of Chests")
 
 local chestOfChests = {
 	roomID = nil,

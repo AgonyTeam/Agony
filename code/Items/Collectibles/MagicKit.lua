@@ -1,5 +1,4 @@
 --local item_MagicKit = Isaac.GetItemIdByName("Magic Kit")
-CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
 local magicKit = {}
 
 function magicKit:spawnRune(player)

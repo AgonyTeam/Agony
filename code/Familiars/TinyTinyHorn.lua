@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_TINY_TINY_HORN"] = Isaac.GetItemIdByName("Tiny Tiny Horn")
-FamiliarVariant["AGONY_F_TINY_TINY_HORN"] = Isaac.GetEntityVariantByName("Tiny Tiny Horn")
 
 local TinyTinyHorn = {
 	maxCooldown = 60,

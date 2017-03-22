@@ -1,5 +1,4 @@
 --local item_Hyperactive = Isaac.GetItemIdByName("Hyperactive")
-CollectibleType["AGONY_C_HYPERACTIVE"] = Isaac.GetItemIdByName("Hyperactive");
 local hyperactive =  {
 	hasItem = false,
 	costumeID = nil,

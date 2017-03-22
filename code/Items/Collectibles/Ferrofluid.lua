@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_FERROFLUID"] = Isaac.GetItemIdByName("Ferrofluid");
 
 local ferrofluid =  {
 	hasItem = nil, --used for costume

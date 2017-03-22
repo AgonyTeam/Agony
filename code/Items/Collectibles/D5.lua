@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_D5"] = Isaac.GetItemIdByName("D5");
 local dfive = {}
 
 function dfive:onUse(player)

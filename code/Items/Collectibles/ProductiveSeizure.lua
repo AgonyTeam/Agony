@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_PRODUCTIVE_SEIZURE"] =      Isaac.GetItemIdByName("Productive Seizure")
 local productiveSeizure = {
     hasItem = nil, --used for costume
     costumeID = nil

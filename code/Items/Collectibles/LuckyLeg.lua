@@ -1,5 +1,4 @@
 --local item_LuckyLeg = Isaac.GetItemIdByName("Lucky Leg");
-CollectibleType["AGONY_C_LUCKY_LEG"] = Isaac.GetItemIdByName("Lucky Leg");
 
 local luckyLeg =  {
 	hasItem = nil, --used for costume

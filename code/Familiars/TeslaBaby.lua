@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_TESLA_BABY"] = Isaac.GetItemIdByName("Tesla Baby")
-FamiliarVariant["AGONY_F_TESLA_BABY"] = Isaac.GetEntityVariantByName("Tesla Baby")
 
 local teslaBaby = {}
 

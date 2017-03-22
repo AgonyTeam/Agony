@@ -372,11 +372,10 @@ function Agony:getCurrentItems(pool)
 end
 
 --Extra Bits
-PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
-PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, since the subtype for chests is already used
+
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
-AgonyTearSubtype = {}
-AgonyTearSubtype["MILKMAN"] = 1
+--Register Agony's ID
+require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
 
 --Debug
@@ -471,6 +470,7 @@ require("code/Items/Trinkets/LuckyEgg")
 
 --Transformations
 require("code/Misc/Transformations/God")
+require("code/Misc/Transformations/MisterBean")
 
 --Pickups
 --Pills

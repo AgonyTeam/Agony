@@ -1,4 +1,3 @@
-TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice")
 
 local swallowedDice = {}
 

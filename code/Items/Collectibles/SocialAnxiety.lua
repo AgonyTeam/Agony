@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SOCIAL_ANXIETY"] = Isaac.GetItemIdByName("Social Anxiety");
 
 local socialAnxiety =  {
 	hasItem = nil, --used for costume

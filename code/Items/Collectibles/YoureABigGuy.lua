@@ -1,5 +1,4 @@
 --local item_BigGuy = Isaac.GetItemIdByName("You're a Big Guy");
-CollectibleType["AGONY_C_URA_BIG_GUY"] = Isaac.GetItemIdByName("You're a Big Guy");
 local bigGuy =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

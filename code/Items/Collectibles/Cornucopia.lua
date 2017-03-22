@@ -1,5 +1,4 @@
 --local item_Cornucopia = Isaac.GetItemIdByName("Cornucopia")
-CollectibleType["AGONY_C_CORNUCOPIA"] = Isaac.GetItemIdByName("Cornucopia");
 local cornucopia =  {
 	timesUsed = 0
 }

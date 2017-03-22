@@ -1,5 +1,4 @@
 --local pill_PartyPills = Isaac.GetPillEffectByName("Party Pills!")
-PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!");
 local partypills = {
 	--IsTimeToParty = false,
 	Room = nil,

@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SOMEONES_SHOE"] = Isaac.GetItemIdByName("Someone's Shoe")
 local someonesshoe = {
 	bList = {
 		EntityType.ENTITY_ROUND_WORM,

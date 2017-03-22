@@ -1,5 +1,4 @@
 --local item_Cyanide = Isaac.GetItemIdByName("Cyanide")
-CollectibleType["AGONY_C_CYANIDE"] = Isaac.GetItemIdByName("Cyanide");
 local cyanide =  {}
 
 function cyanide:onUse()

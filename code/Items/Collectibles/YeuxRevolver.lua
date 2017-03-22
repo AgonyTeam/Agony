@@ -1,5 +1,4 @@
 --local item_YeuxRev = Isaac.GetItemIdByName("Yeux Revolver");
-CollectibleType["AGONY_C_YEUX_REVOLVER"] = Isaac.GetItemIdByName("Yeux Revolver");
 local yeuxRev =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,

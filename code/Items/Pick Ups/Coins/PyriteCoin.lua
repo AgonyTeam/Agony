@@ -1,4 +1,3 @@
-CoinSubType["AGONY_COIN_PYRITE"] = 51 --not sure how to read that one automatically
 
 pyritecoin = {}
 

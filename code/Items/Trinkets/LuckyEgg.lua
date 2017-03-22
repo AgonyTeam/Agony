@@ -1,4 +1,3 @@
-TrinketType["AGONY_T_LUCKY_EGG"] = Isaac.GetTrinketIdByName("Lucky Egg")
 
 local luckyEgg = {
 	realLuckBuff = saveData.luckyEgg.realLuckBuff or 0,

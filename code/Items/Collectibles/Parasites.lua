@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_PARASITES"] = Isaac.GetItemIdByName("Parasites");
 
 local parasites =  {
 	hasItem = nil, --used for costume

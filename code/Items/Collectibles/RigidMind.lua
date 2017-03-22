@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_RIGID_MIND"] = Isaac.GetItemIdByName("Rigid Mind");
 
 local rigidMind =  {
 	hasItem = nil, --used for costume

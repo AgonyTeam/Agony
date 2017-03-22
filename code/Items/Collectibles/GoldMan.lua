@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_GOLD_MAN"] = Isaac.GetItemIdByName("Gold Man");
 
 local goldMan = {
 hasBeenUsed = false,

@@ -1,5 +1,4 @@
 --local item_RMeNow = Isaac.GetItemIdByName("Remember Me Now")
-CollectibleType["AGONY_C_REMEMBER_ME_NOW"] = Isaac.GetItemIdByName("Remember Me Now");
 local RMeNow =  {}
 
 function RMeNow:onUse()

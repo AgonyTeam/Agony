@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_LIL_RED_BOOK"] = Isaac.GetItemIdByName("Lil'Red Book");
 local lilRedBook = {}
 
 function lilRedBook:onUse()

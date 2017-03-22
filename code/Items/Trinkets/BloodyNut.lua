@@ -1,4 +1,3 @@
-TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
 
 local bloodyNut = {
 	dmgBuff = saveData.bloodyNut.dmgBuff or 0

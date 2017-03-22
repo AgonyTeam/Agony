@@ -1,5 +1,4 @@
 --local item_Tourette = Isaac.GetItemIdByName("Tourette")
-CollectibleType["AGONY_C_TOURETTE"] = Isaac.GetItemIdByName("Tourette");
 
 local tourette =  {
 	TearBool = false,

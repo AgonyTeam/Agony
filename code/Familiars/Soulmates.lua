@@ -1,6 +1,3 @@
-CollectibleType["AGONY_C_SOULMATES"] = Isaac.GetItemIdByName("Soulmates")
-FamiliarVariant["AGONY_F_SOULMATE_JULIET"] = Isaac.GetEntityVariantByName("Juliet")
-FamiliarVariant["AGONY_F_SOULMATE_ROMEO"] = Isaac.GetEntityVariantByName("Romeo")
 
 local soulmates = {}
 

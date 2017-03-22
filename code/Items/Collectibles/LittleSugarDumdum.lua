@@ -1,5 +1,4 @@
 --local item_LSD = Isaac.GetItemIdByName("Little Sugar Dumdum")
-CollectibleType["AGONY_C_LSD"] = Isaac.GetItemIdByName("Little Sugar Dumdum");
 
 local LSD = {
 	--IsTimeToParty = false,

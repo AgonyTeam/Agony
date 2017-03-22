@@ -1,7 +1,3 @@
-CollectibleType["AGONY_C_SACK_OF_SACKS_OF_SACKS"] = Isaac.GetItemIdByName("Sack of Sacks of Sacks")
-CollectibleType["AGONY_C_SACK_OF_BAGS"] = Isaac.GetItemIdByName("Sack of Bags")
-FamiliarVariant["AGONY_F_SACK_OF_SACKS_OF_SACKS"] = Isaac.GetEntityVariantByName("Sack of Sacks of Sacks")
-FamiliarVariant["AGONY_F_SACK_OF_BAGS"] = Isaac.GetEntityVariantByName("Sack of Bags")
 
 local Sacks3 = {
 	--levelSeed = saveData.Sacks3.levelSeed

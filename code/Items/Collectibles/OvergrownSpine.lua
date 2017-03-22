@@ -1,5 +1,4 @@
 --local item_OvergrownSpine = Isaac.GetItemIdByName("Overgrown Spine");
-CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
 local overgrownSpine =  {
 	hasItem = nil, --used for costume
 	costumeID = nil

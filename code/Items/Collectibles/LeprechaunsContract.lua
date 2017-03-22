@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_LEPRECHAUNS_CONTRACT"] = Isaac.GetItemIdByName("Leprechaun's Contract");
 
 local leprechaunContract =  {
 	hasItem = nil, --used for costume

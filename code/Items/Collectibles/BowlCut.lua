@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_BOWL_CUT"] = Isaac.GetItemIdByName("Bowl Cut");
 
 local BowlCut =  {
 	hasItem = nil, --used for costume

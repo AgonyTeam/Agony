@@ -1,5 +1,4 @@
 --local item_D3 = Isaac.GetItemIdByName("D3")
-CollectibleType["AGONY_C_D3"] = Isaac.GetItemIdByName("D3");
 local dthree =  {}
 
 function dthree:onUse()

@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_DESPAIR"] = Isaac.GetItemIdByName("Despair")
-FamiliarVariant["AGONY_F_DESPAIR"] = Isaac.GetEntityVariantByName("Despair")
 
 local despair =  {
 	TearBool = false,

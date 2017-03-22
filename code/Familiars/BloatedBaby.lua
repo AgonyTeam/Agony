@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_BLOATED_BABY"] = Isaac.GetItemIdByName("Bloated Baby")
-FamiliarVariant["AGONY_F_BLOATED_BABY"] = Isaac.GetEntityVariantByName("Bloated Baby")
 
 local bloatedBaby = {}
 

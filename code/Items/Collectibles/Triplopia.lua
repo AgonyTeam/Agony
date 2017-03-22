@@ -1,5 +1,4 @@
 --local item_Triplopia = Isaac.GetItemIdByName("Triplopia")
-CollectibleType["AGONY_C_TRIPLOPIA"] = Isaac.GetItemIdByName("Triplopia");
 local triplopia =  {}
 
 function triplopia:tripleAllCollectibles()

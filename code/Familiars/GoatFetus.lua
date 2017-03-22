@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_GOAT_FETUS"] = Isaac.GetItemIdByName("Goat Fetus")
-FamiliarVariant["AGONY_F_GOAT_FETUS"] = Isaac.GetEntityVariantByName("Goat Fetus")
 
 local goatFetus = {
 	v = Vector(3,3)

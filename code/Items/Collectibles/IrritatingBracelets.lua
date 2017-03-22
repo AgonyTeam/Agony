@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_IRRITATING_BRACELETS"] = Isaac.GetItemIdByName("Irritating Bracelets");
 local irritatingBracelets =  {}
 
 function irritatingBracelets:onUse()

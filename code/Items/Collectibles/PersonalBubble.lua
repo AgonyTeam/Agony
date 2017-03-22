@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_PERSONAL_BUBBLE"] = Isaac.GetItemIdByName("Personal Bubble");
 
 local personalBubble =  {
 	hasItem = nil, --used for costume

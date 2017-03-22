@@ -1,5 +1,4 @@
 --local item_VomitCake = Isaac.GetItemIdByName("Vomit Cake")
-CollectibleType["AGONY_C_VOMIT_CAKE"] = Isaac.GetItemIdByName("Vomit Cake");
 local vomitCake =  {	
 	hasItem = nil, --used for costume
 	costumeID = nil

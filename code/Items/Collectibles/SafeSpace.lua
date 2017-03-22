@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SAFE_SPACE"] = Isaac.GetItemIdByName("Safe Space");
 local safeSpace =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,

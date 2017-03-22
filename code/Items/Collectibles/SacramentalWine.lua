@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_SACRAMENTAL_WINE"] = Isaac.GetItemIdByName("Sacramental Wine");
 
 local sacramentalWine =  {
 	hasItem = nil, --used for costume

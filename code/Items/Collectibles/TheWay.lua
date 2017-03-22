@@ -1,4 +1,3 @@
-CollectibleType["AGONY_C_THE_WAY"] = Isaac.GetItemIdByName("The Way");
 
 local theWay =  {
 	--Malus multipliers

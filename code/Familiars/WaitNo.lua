@@ -1,5 +1,3 @@
-CollectibleType["AGONY_C_WAIT_NO"] = Isaac.GetItemIdByName("Wait, No.")
-FamiliarVariant["AGONY_F_WAIT_NO"] = Isaac.GetEntityVariantByName("Wait No")
 
 local waitNo = {}
 
