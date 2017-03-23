@@ -20,11 +20,11 @@ function milkman:onUpdate()
 	local player = Game():GetPlayer(0)
   if player:HasCollectible(CollectibleType.AGONY_C_MILKMAN) then
     if player.Luck > 0 then
-  		milkProb = Game():GetFrameCount()%(math.floor(300/(player.Luck+1)))
+  		milkProb = math.random(5000)%(math.floor(300/(player.Luck+1)))
   	elseif player.Luck == 0 then
-  		milkProb = Game():GetFrameCount()%300
+  		milkProb = math.random(5000)%300
   	else
-  		milkProb = Game():GetFrameCount()%(-300*(player.Luck-1))
+  		milkProb = math.random(5000)%(-300*(player.Luck-1))
   	end
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
