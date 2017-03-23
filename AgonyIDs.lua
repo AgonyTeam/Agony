@@ -132,3 +132,4 @@ EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block
 --Custom Tears
 AgonyTearSubtype = {}
 AgonyTearSubtype["MILKMAN"] = 1
+AgonyTearSubtype["JAUNDICE"] = 2

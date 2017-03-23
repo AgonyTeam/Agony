@@ -39,7 +39,7 @@ end
 
 function milkman:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
     local player = Isaac.GetPlayer(0)
-    if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == 1 then
+    if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.MILKMAN then
     	Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_WHITE , 0, source.Position, Vector(0,0), player)
     	for i = 1, 15, 1 do
     		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.PLAYER_CREEP_WHITE , 0, Vector(source.Position.X+math.random(100)-50,source.Position.Y+math.random(100)-50), Vector(0,0), player)
