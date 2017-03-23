@@ -85,6 +85,7 @@
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Milkman" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="The Father's Blessing" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
         <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -92,6 +93,7 @@
         <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Sacramental Wine" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="The Father's Blessing" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
         <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

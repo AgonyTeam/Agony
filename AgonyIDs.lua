@@ -104,6 +104,7 @@ CollectibleType["AGONY_C_RUNESTONE"] = Isaac.GetItemIdByName("Runestone");
 CollectibleType["AGONY_C_JAUNDICE"] = Isaac.GetItemIdByName("Jaundice");
 CollectibleType["AGONY_C_VANITY"] = Isaac.GetItemIdByName("Vanity");
 CollectibleType["AGONY_C_PLACEHOLDER"] = Isaac.GetItemIdByName("Placeholder");
+CollectibleType["AGONY_C_FATHERS_BLESSING"] = Isaac.GetItemIdByName("The Father's Blessing");
 
 --Trinkets
 TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")

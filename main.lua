@@ -465,6 +465,7 @@ require("code/Items/Collectibles/Milkman")
 require("code/Items/Collectibles/Jaundice")
 require("code/Items/Collectibles/Vanity")
 require("code/Items/Collectibles/Placeholder")
+require("code/Items/Collectibles/FathersBlessing")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
