@@ -462,6 +462,7 @@ require("code/Items/Collectibles/SafeSpace")
 require("code/Items/Collectibles/SocialAnxiety")
 require("code/Items/Collectibles/Milkman")
 require("code/Items/Collectibles/Jaundice")
+require("code/Items/Collectibles/Vanity")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
