@@ -24,6 +24,7 @@ saveData.bloodyNut = saveData.bloodyNut or {}
 saveData.luckyEgg = saveData.luckyEgg or {}
 saveData.despair = saveData.despair or {}
 saveData.safeSpace = saveData.safeSpace or {}
+saveData.placeholder = saveData.placeholder or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -463,6 +464,7 @@ require("code/Items/Collectibles/SocialAnxiety")
 require("code/Items/Collectibles/Milkman")
 require("code/Items/Collectibles/Jaundice")
 require("code/Items/Collectibles/Vanity")
+require("code/Items/Collectibles/Placeholder")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
