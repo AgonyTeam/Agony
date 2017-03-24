@@ -20,7 +20,7 @@ function milkman:onUpdate()
 	local player = Game():GetPlayer(0)
   if player:HasCollectible(CollectibleType.AGONY_C_MILKMAN) then
     if player.Luck > 0 then
-  		milkProb = math.random(5000)%(math.floor(300/(player.Luck+1)))
+  		milkProb = math.floor(math.random(5000)%(math.floor(300/(player.Luck+1))))
   	elseif player.Luck == 0 then
   		milkProb = math.random(5000)%300
   	else

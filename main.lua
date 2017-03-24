@@ -467,6 +467,7 @@ require("code/Items/Collectibles/Vanity")
 require("code/Items/Collectibles/Placeholder")
 require("code/Items/Collectibles/FathersBlessing")
 require("code/Items/Collectibles/TheFireplace")
+require("code/Items/Collectibles/ToyHammer")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

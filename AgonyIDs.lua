@@ -106,6 +106,7 @@ CollectibleType["AGONY_C_VANITY"] = Isaac.GetItemIdByName("Vanity");
 CollectibleType["AGONY_C_PLACEHOLDER"] = Isaac.GetItemIdByName("Placeholder");
 CollectibleType["AGONY_C_FATHERS_BLESSING"] = Isaac.GetItemIdByName("The Father's Blessing");
 CollectibleType["AGONY_C_THE_FIREPLACE"] = Isaac.GetItemIdByName("The Fireplace");
+CollectibleType["AGONY_C_THE_TOY_HAMMER"] = Isaac.GetItemIdByName("Toy Hammer");
 
 --Trinkets
 TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
@@ -137,3 +138,4 @@ EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block
 AgonyTearSubtype = {}
 AgonyTearSubtype["MILKMAN"] = 1
 AgonyTearSubtype["JAUNDICE"] = 2
+AgonyTearSubtype["TOYHAMMER"] = 3

@@ -20,7 +20,7 @@ function jaundice:onUpdate()
   local player = Game():GetPlayer(0)
   if player:HasCollectible(CollectibleType.AGONY_C_JAUNDICE) then
     if player.Luck > 0 then
-      prob = math.random(5000)%(math.floor(300/(player.Luck+1)))
+      prob = math.floor(math.random(5000)%(math.floor(300/(player.Luck+1))))
     elseif player.Luck == 0 then
       prob = math.random(5000)%300
     else
