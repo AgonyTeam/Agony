@@ -47,6 +47,7 @@
 	<passive name="Placeholder" description="Mysterious placeholder text" gfx="collectibles_placeholder.png" />
 	<passive name="The Father's Blessing" description="Mysterious placeholder text" gfx="collectibles_thefathersblessing.png" />
 	<passive name="Toy Hammer" description="Mysterious placeholder text" gfx="collectibles_toyhammer.png" />
+	<passive name="Tech <3" description="Mysterious placeholder text" gfx="collectibles_techlessthanthree.png" />
 
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />

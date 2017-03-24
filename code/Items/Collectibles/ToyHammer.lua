@@ -20,17 +20,17 @@ function toyHammer:onUpdate()
 	local player = Game():GetPlayer(0)
   if player:HasCollectible(CollectibleType.AGONY_C_THE_TOY_HAMMER) then
     if player.Luck > 0 then
-  		milkProb = math.floor(math.random(5000)%(math.floor(300/(player.Luck+1))))
+  		Prob = math.floor(math.random(5000)%(math.floor(300/(player.Luck+1))))
   	elseif player.Luck == 0 then
-  		milkProb = math.random(5000)%300
+  		Prob = math.random(5000)%300
   	else
-  		milkProb = math.random(5000)%(-300*(player.Luck-1))
+  		Prob = math.random(5000)%(-300*(player.Luck-1))
   	end
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
-    		if entity.FrameCount == 1 and milkProb == 1 then
-    			--TODO : Change gfx to milk
-    			entity.SubType = AgonyTearSubtype.TOYHAMMER
+    		if entity.FrameCount == 1 and Prob == 1 then
+    			--TODO : Change gfx to hammer shit idc
+    			entity.SubType = AgonyTearSubtype.TOY_HAMMER
     		end
     	end
     end
@@ -39,7 +39,7 @@ end
 
 function toyHammer:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
-  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.TOYHAMMER and hurtEntity:IsVulnerableEnemy() then
+  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.TOY_HAMMER and hurtEntity:IsVulnerableEnemy() then
     hurtEntity:GetData().slagged = 120
     hurtEntity:SetColor(Color(0.5, 0, 0.5, 1, 1, 1, 1), 120, 1, false, false)     	
   end
