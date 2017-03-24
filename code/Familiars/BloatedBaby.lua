@@ -5,24 +5,34 @@ local bloatedBaby = {}
 function bloatedBaby:updateFam(fam)
 	local player = Isaac.GetPlayer(0)
 	local famSprite = fam:GetSprite()
+	local famData = fam:GetData()
 	--Fires ipecac on hit
 	local entities = Isaac.GetRoomEntities()
-		for i = 1, #entities do
-			if (entities[i].Type == EntityType.ENTITY_PROJECTILE) and entities[i].Position:Distance(fam.Position) < 30 then
-				local t = Isaac.Spawn(EntityType.ENTITY_TEAR, 0 , 0, fam.Position, Vector(math.random(2)-1, math.random(2)-1):__mul(3), fam)
-				--local t = player:FireTear(fam.Position, Vector(math.random(2)-1, math.random(2)-1):__mul(3), false, true, false)
-				t.Variant = (TearVariant.BOBS_HEAD)
-				t.Color = Color(0, 1, 0, 1, 0, 0, 0)
-				entities[i]:Remove()
-				famSprite:Play("Hit", true)
-			end
+	for i = 1, #entities do
+		if (entities[i].Type == EntityType.ENTITY_PROJECTILE) and entities[i].Position:Distance(fam.Position) < 30 then
+			local t = Isaac.Spawn(EntityType.ENTITY_TEAR, 0 , 0, fam.Position, Vector.FromAngle(math.random(360)):__mul(5), fam)
+			Agony:AddTearFlags(t:ToTear(), TearFlags.TEAR_EXPLOSIVE | TearFlags.TEAR_POISON) --make tears ipecac
+			t.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
+			table.insert(famData.Tears, t:ToTear())
+			entities[i]:Remove()
+			famSprite:Play("Hit", true)
 		end
+	end
+	for _, tear in pairs(famData.Tears) do
+		if tear.Height <= -10 then
+			tear.Height = 0.1*(tear.FrameCount + ((player.TearHeight-13.5)/2))^2 + 2*(player.TearHeight-13.5) --ipecac arc function, got it pretty close to looking like vanilla I think
+		end
+		if not tear:Exists() then
+			famData.Tears[_] = nil
+		end
+	end
 	fam:FollowParent() --important so the familiar stays in the line of familiars
 end
 
 --called on init
 function bloatedBaby:initFam(fam)
 	fam:GetSprite():Play("Idle")
+	fam:GetData().Tears = {}
 	fam.IsFollower = true --important, or else it isn't a familiar that follows the player
 end
 
