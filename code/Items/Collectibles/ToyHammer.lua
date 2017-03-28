@@ -1,4 +1,3 @@
-
 local toyHammer =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
@@ -43,13 +42,13 @@ function toyHammer:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
     hurtEntity:GetData().slagged = 120
     hurtEntity:SetColor(Color(0.5, 0, 0.5, 1, 1, 1, 1), 120, 1, false, false)     	
   end
-  if hurtEntity:GetData().slagged > 0 then
+  if hurtEntity:GetData().slagged ~= nil and hurtEntity:GetData().slagged > 0 then
     hurtEntity:AddHealth(-dmgAmount)
   end  
 end
 
 function toyHammer:onNpcUpdate(npc)
-  if npc:GetData().slagged > 0 then
+  if npc:GetData().slagged ~= nil and npc:GetData().slagged > 0 then
     npc:GetData().slagged = npc:GetData().slagged -1
   end
 end
