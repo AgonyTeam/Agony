@@ -520,13 +520,6 @@ require("code/Familiars/WaitNo");
 require("code/Familiars/Despair");
 
 --Extra Bits 2
-local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
-for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
-	if name ~= "NUM_COLLECTIBLES" then
-		num_collectibles = num_collectibles + 1
-	end
-end
-CollectibleType.NUM_COLLECTIBLES = num_collectibles 
 
 --Agony END
 
