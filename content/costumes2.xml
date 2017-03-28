@@ -27,4 +27,7 @@
 	<costume name="Technology 9000" anm2path="costume_technology9000.anm2" type="none" />
 	<costume name="You're a Big Guy" anm2path="costume_youreabigguy.anm2" type="none" />
 	<costume name="Safe Space" anm2path="costume_safespace.anm2" type="none" />
+	
+	<!--Transformations-->
+	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
 </costumes>

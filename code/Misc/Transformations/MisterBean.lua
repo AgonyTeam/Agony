@@ -2,32 +2,19 @@ local misterBean =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
 	requireditems = Agony.ENUMS["ItemPools"]["Beans"],
-	ItemHistory = {} --Keeps track of what Items the player has had
+	Items = {} --Keeps track of what Items the player has had
 }
-misterBean.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_misterbean.anm2")
+misterBean.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/trans_misterbean.anm2")
 
 function misterBean:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		misterBean.hasItem = false
-		misterBean.ItemHistory = {}
+		misterBean.Items = {}
 	end
-	for i = 1, #misterBean.requireditems do
-		if player:HasCollectible(misterBean.requireditems[i]) then
-			local isInHistory = false
-			for j = 1, #misterBean.ItemHistory do
-				if misterBean.ItemHistory[j] == misterBean.requireditems[i] then
-					isInHistory = true
-				end
-			end
-			if not isInHistory then
-				table.insert(misterBean.ItemHistory, misterBean.requireditems[i])
-			end
-		end
-	end
-
-	if #misterBean.ItemHistory > 2 then
+	misterBean.Items = Agony:getCurrentItems(misterBean.requireditems)
+	if #misterBean.Items > 2 then
 		if misterBean.hasItem == false then
-			--player:AddNullCostume(misterBean.costumeID)
+			player:AddNullCostume(misterBean.costumeID)
 			misterBean.hasItem = true
 			--POOF!
 			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
