@@ -41,24 +41,24 @@ function partypills:StartTheParty()
 	saveData.partypills.FormerScale.X = partypills.FormerScale.X
 	saveData.partypills.FormerScale.Y = partypills.FormerScale.Y
 	Agony:SaveNow()
-	partypills.colorOverlay, partypills.colorOverlayIndex = Agony:addToRender("effect/colorfilter.anm2", "RedBlue")
+	partypills.colorOverlay, partypills.colorOverlayIndex = Agony:addToRender("effect/colorfilter.anm2", "RedBlue", Vector(0,0), 60)
 end
 
 function partypills:StopTheParty()
-	if (partypills.Room ~= nil) and (Game():GetLevel():GetCurrentRoomIndex() ~= partypills.Room) then
+	--if (partypills.Room ~= nil) and (Game():GetLevel():GetCurrentRoomIndex() ~= partypills.Room) then
 		--partypills.IsTimeToParty = false
-		partypills.Room = nil
-		local player = Isaac.GetPlayer(0)
-		player.SpriteScale = partypills.FormerScale
-		player.SpriteRotation = 0
-		partypills.colorOverlay:Stop()
-		spritesToRender[partypills.colorOverlayIndex] = nil
-		saveData.partypills.FormerScale = nil
-		Agony:SaveNow()
-	end
+	partypills.Room = nil
+	local player = Isaac.GetPlayer(0)
+	player.SpriteScale = partypills.FormerScale
+	player.SpriteRotation = 0
+	partypills.colorOverlay:Stop()
+	spritesToRender[partypills.colorOverlayIndex] = nil
+	saveData.partypills.FormerScale = nil
+	Agony:SaveNow()
+	--end
 end
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, partypills.DistortEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, partypills.DistortPlayer)
 Agony:AddCallback(ModCallbacks.MC_USE_PILL, partypills.StartTheParty, PillEffect.AGONY_PEFF_PARTY_PILLS)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, partypills.StopTheParty)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, partypills.StopTheParty)

@@ -62,23 +62,23 @@ function LSD:onUse()
 end
 
 function LSD:StopTheParty()
-	if (LSD.Room ~= nil) and (Game():GetLevel():GetCurrentRoomIndex() ~= LSD.Room) then
-		--LSD.IsTimeToParty = false
-		LSD.Room = nil
-		local player = Isaac.GetPlayer(0)
-		player.SpriteScale = LSD.FormerScale
-		player.SpriteRotation = 0
-		player.MaxFireDelay = LSD.MaxFireDelay
-		player.ShotSpeed = LSD.ShotSpeed
-		player.Damage = LSD.Damage
-		player.TearHeight = LSD.TearHeight
-		player.TearFallingSpeed = LSD.TearFallingSpeed
-		player.TearColor = LSD.TearColor
-		player.MoveSpeed = LSD.MoveSpeed
-		player.Luck = LSD.Luck
-		saveData.LSD.FormerScale = nil
-		Agony:SaveNow()
-	elseif LSD.restartedGame and LSD.FormerScale ~= nil then
+	--if (LSD.Room ~= nil) and (Game():GetLevel():GetCurrentRoomIndex() ~= LSD.Room) then
+	--LSD.IsTimeToParty = false
+	LSD.Room = nil
+	local player = Isaac.GetPlayer(0)
+	player.SpriteScale = LSD.FormerScale
+	player.SpriteRotation = 0
+	player.MaxFireDelay = LSD.MaxFireDelay
+	player.ShotSpeed = LSD.ShotSpeed
+	player.Damage = LSD.Damage
+	player.TearHeight = LSD.TearHeight
+	player.TearFallingSpeed = LSD.TearFallingSpeed
+	player.TearColor = LSD.TearColor
+	player.MoveSpeed = LSD.MoveSpeed
+	player.Luck = LSD.Luck
+	saveData.LSD.FormerScale = nil
+	Agony:SaveNow()
+	if LSD.restartedGame and LSD.FormerScale ~= nil then
 		local player = Isaac.GetPlayer(0)
 		player.SpriteScale = LSD.FormerScale
 		LSD.restartedGame = false
@@ -101,4 +101,4 @@ Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, LSD.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, LSD.DistortEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, LSD.DistortPlayer)
 Agony:AddCallback(ModCallbacks.MC_USE_ITEM, LSD.onUse, CollectibleType.AGONY_C_LSD)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, LSD.StopTheParty)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, LSD.StopTheParty)

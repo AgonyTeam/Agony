@@ -332,14 +332,11 @@ end
 --fixes the bug bug that allowed charmed enemies to persist through rooms when restarting the game (#128 on git)
 --this is a bug in the actual game, wtf nicolo, why do I have to fix this
 function Agony:removeFriendlyEnemies()
-	local room = Game():GetRoom()
 	local ents = Isaac.GetRoomEntities()
-	
-	if room:GetFrameCount() <= 1 then
-		for _,entity in pairs(ents) do
-			if entity:HasEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM) and not (entity.Type == 23 and entity.Variant == 0 and entity.SubType == 1) then --not 23.0.1 because that's that leech item
-				entity:Remove()
-			end
+	--debug_text = Game():GetFrameCount()
+	for _,entity in pairs(ents) do
+		if entity:HasEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM) and not (entity.Type == 23 and entity.Variant == 0 and entity.SubType == 1) then --not 23.0.1 because that's that leech item
+			entity:Remove()
 		end
 	end
 end
@@ -368,7 +365,7 @@ function Agony:getCurrentItems(pool)
 			end
 		end
 	end
-	debug_tbl1 = currList
+	--debug_tbl1 = currList
 	return currList
 end
 
@@ -393,7 +390,6 @@ Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 --Register Agony's ID
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
---TearFlags = Agony.ENUMS["TearFlags"] --put it into its own variable for cosmetic purposes
 
 --Debug
 require("Debug");
@@ -538,4 +534,4 @@ CollectibleType.NUM_COLLECTIBLES = num_collectibles
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.removeFriendlyEnemies)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
