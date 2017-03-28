@@ -50,7 +50,7 @@ function placeholder:onPlayerUpdate(player)
 		placeholder.hasItem = false
 	end
 	if placeholder.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_PLACEHOLDER) then
-		--player:AddNullCostume(placeholder.costumeID)
+		player:AddNullCostume(placeholder.costumeID)
 		placeholder.hasItem = true
 	end
 end
