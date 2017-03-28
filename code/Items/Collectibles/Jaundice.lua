@@ -10,7 +10,7 @@ function jaundice:onPlayerUpdate(player)
 		jaundice.hasItem = false
 	end
 	if jaundice.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_JAUNDICE) then
-		--player:AddNullCostume(jaundice.costumeID)
+		player:AddNullCostume(jaundice.costumeID)
 		jaundice.hasItem = true
 	end
 end
