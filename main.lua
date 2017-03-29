@@ -369,24 +369,23 @@ function Agony:getCurrentItems(pool)
 	return currList
 end
 
---these are some TearFlag manipulation functions, they are similar to the EntityFlags functions
---dunno why nicalis forgot them
-function Agony:AddTearFlags(tearEnt, flags)
-	--return tearflags | flags
-	tearEnt.TearFlags = tearEnt.TearFlags | flags
+--these are some Flag manipulation functions, they are similar to the EntityFlags functions
+function Agony:AddFlags(flagSource, flags)
+	return flagSource | flags
 end
 
-function Agony:HasTearFlags(tearEnt, flags)
-	return (tearEnt.TearFlags & flags) ~= 0
+function Agony:HasFlags(flagSource, flags)
+	return (flagSource & flags) ~= 0
 end
 
-function Agony:ClearTearFlags(tearEnt, flags)
-	tearEnt.TearFlags = tearEnt.TearFlags & (~flags)
+function Agony:ClearFlags(flagSource, flags)
+	return flagSource & (~flags)
 end
+
 
 --Extra Bits
-
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
+
 --Register Agony's ID
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
