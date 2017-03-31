@@ -7,10 +7,10 @@ pilgrimsShoe.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_pilgri
 function pilgrimsShoe:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_PILGRIMS_SHOE)) then
 		if (cacheFlag == CacheFlag.CACHE_DAMAGE) then
-			player.Damage = player.Damage + (2-player.MoveSpeed)*2
+			player.Damage = player.Damage + (2-player.MoveSpeed)*1.5
 		end
 		if (cacheFlag == CacheFlag.CACHE_SPEED) then
-			player.MoveSpeed = math.floor(player.MoveSpeed/1.5)
+			player.MoveSpeed = player.MoveSpeed*0.7
 		end
 	end
 end
@@ -25,7 +25,7 @@ function pilgrimsShoe:onPlayerUpdate(player)
 		--Will improve the code as we get more callbacks nicolo pls
 		if Game():GetFrameCount()%3 == 0 then
 			player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
-			player:AddCacheFlags(CacheFlag.CACHE_SPEED)
+			player:EvaluateItems()
 		end
 	end
 end
