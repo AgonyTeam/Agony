@@ -3,14 +3,14 @@ local techLessThanThree =  {
 	hasItem = nil, --used for costume
 	costumeID = nil
 }
-techLessThanThree.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_techlessthanthree.anm2")
+techLessThanThree.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_techlessthan3.anm2")
 
 function techLessThanThree:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
 		techLessThanThree.hasItem = false
 	end
 	if techLessThanThree.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TECH_LESS_THAN_3) then
-		--player:AddNullCostume(techLessThanThree.costumeID)
+		player:AddNullCostume(techLessThanThree.costumeID)
 		techLessThanThree.hasItem = true
 	end
 end
@@ -30,6 +30,8 @@ function techLessThanThree:onUpdate()
     	if entity.Type == EntityType.ENTITY_TEAR then
     		if entity.FrameCount == 1 and Prob == 1 then
     			--TODO : Change gfx to idk
+          entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_techlessthan3.png")
+          entity:GetSprite():LoadGraphics()
     			entity.SubType = AgonyTearSubtype.TECH_LESS_THAN_3
     		end
     	end

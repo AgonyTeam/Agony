@@ -19,7 +19,7 @@ function sacramentalWine:onPlayerUpdate(player)
 
 	if player:HasCollectible(CollectibleType.AGONY_C_SACRAMENTAL_WINE) then
 		if sacramentalWine.hasItem == false then
-			--player:AddNullCostume(sacramentalWine.costumeID)
+			player:AddNullCostume(sacramentalWine.costumeID)
 			sacramentalWine.hasItem = true
 		end
 

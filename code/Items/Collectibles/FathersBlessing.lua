@@ -14,7 +14,7 @@ end
 
 function fathersBlessing:onNpcUpdate(npc)
 	local player = Game():GetPlayer(0)
-	if player:HasCollectible(CollectibleType.AGONY_C_FATHERS_BLESSING) then
+	if player:HasCollectible(CollectibleType.AGONY_C_FATHERS_BLESSING) and npc:IsVulnerableEnemy() then
 		if fathersBlessing.cooldown == 0 then
 			if npc.Position:Distance(player.Position) < 50 then
 				local col = Color(0, 0, 0, 0, 0, 0, 0)
