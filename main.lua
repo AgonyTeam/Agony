@@ -332,14 +332,11 @@ end
 --fixes the bug bug that allowed charmed enemies to persist through rooms when restarting the game (#128 on git)
 --this is a bug in the actual game, wtf nicolo, why do I have to fix this
 function Agony:removeFriendlyEnemies()
-	local room = Game():GetRoom()
 	local ents = Isaac.GetRoomEntities()
-	
-	if room:GetFrameCount() <= 1 then
-		for _,entity in pairs(ents) do
-			if entity:HasEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM) and not (entity.Type == 23 and entity.Variant == 0 and entity.SubType == 1) then --not 23.0.1 because that's that leech item
-				entity:Remove()
-			end
+	--debug_text = Game():GetFrameCount()
+	for _,entity in pairs(ents) do
+		if entity:HasEntityFlags(EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_CHARM) and not (entity.Type == 23 and entity.Variant == 0 and entity.SubType == 1) then --not 23.0.1 because that's that leech item
+			entity:Remove()
 		end
 	end
 end
@@ -368,32 +365,30 @@ function Agony:getCurrentItems(pool)
 			end
 		end
 	end
-	debug_tbl1 = currList
+	--debug_tbl1 = currList
 	return currList
 end
 
---these are some TearFlag manipulation functions, they are similar to the EntityFlags functions
---dunno why nicalis forgot them
-function Agony:AddTearFlags(tearEnt, flags)
-	--return tearflags | flags
-	tearEnt.TearFlags = tearEnt.TearFlags | flags
+--these are some Flag manipulation functions, they are similar to the EntityFlags functions
+function Agony:AddFlags(flagSource, flags)
+	return flagSource | flags
 end
 
-function Agony:HasTearFlags(tearEnt, flags)
-	return (tearEnt.TearFlags & flags) ~= 0
+function Agony:HasFlags(flagSource, flags)
+	return (flagSource & flags) ~= 0
 end
 
-function Agony:ClearTearFlags(tearEnt, flags)
-	tearEnt.TearFlags = tearEnt.TearFlags & (~flags)
+function Agony:ClearFlags(flagSource, flags)
+	return flagSource & (~flags)
 end
+
 
 --Extra Bits
-
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
+
 --Register Agony's ID
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
---TearFlags = Agony.ENUMS["TearFlags"] --put it into its own variable for cosmetic purposes
 
 --Debug
 require("Debug");
@@ -524,13 +519,6 @@ require("code/Familiars/WaitNo");
 require("code/Familiars/Despair");
 
 --Extra Bits 2
-local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
-for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
-	if name ~= "NUM_COLLECTIBLES" then
-		num_collectibles = num_collectibles + 1
-	end
-end
-CollectibleType.NUM_COLLECTIBLES = num_collectibles 
 
 --Agony END
 
@@ -538,4 +526,4 @@ CollectibleType.NUM_COLLECTIBLES = num_collectibles
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.removeFriendlyEnemies)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)

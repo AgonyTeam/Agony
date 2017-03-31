@@ -141,3 +141,12 @@ AgonyTearSubtype["MILKMAN"] = 1
 AgonyTearSubtype["JAUNDICE"] = 2
 AgonyTearSubtype["TOY_HAMMER"] = 3
 AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
+
+--Constants Updater
+local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
+for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
+	if name ~= "NUM_COLLECTIBLES" then
+		num_collectibles = num_collectibles + 1
+	end
+end
+CollectibleType.NUM_COLLECTIBLES = num_collectibles 

@@ -29,5 +29,9 @@
 	<costume name="Safe Space" anm2path="costume_safespace.anm2" type="none" />
 	<costume name="Tech <3" anm2path="costume_techlessthan3.anm2" type="none" />
 	<costume name="Sacramental Wine" anm2path="costume_sacramentalwine.anm2" type="none" />
-	<costume name="Placeholder" anm2path="costume_sacramentalwine.anm2" type="none" />
+	<costume name="Jaundice" anm2path="costume_jaundice.anm2" priority="99" type="none" />
+	<costume name="Placeholder" anm2path="costume_placeholder.anm2" type="none" />
+	
+	<!--Transformations-->
+	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
 </costumes>

@@ -11,7 +11,7 @@ function bloatedBaby:updateFam(fam)
 	for i = 1, #entities do
 		if (entities[i].Type == EntityType.ENTITY_PROJECTILE) and entities[i].Position:Distance(fam.Position) < 30 then
 			local t = Isaac.Spawn(EntityType.ENTITY_TEAR, 0 , 0, fam.Position, Vector.FromAngle(math.random(360)):__mul(5), fam)
-			Agony:AddTearFlags(t:ToTear(), TearFlags.TEAR_EXPLOSIVE | TearFlags.TEAR_POISON) --make tears ipecac
+			t:ToTear().TearFlags = Agony:AddFlags(t:ToTear().TearFlags, TearFlags.TEAR_EXPLOSIVE | TearFlags.TEAR_POISON) --make tears ipecac
 			t.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
 			table.insert(famData.Tears, t:ToTear())
 			entities[i]:Remove()

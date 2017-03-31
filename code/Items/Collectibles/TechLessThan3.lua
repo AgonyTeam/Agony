@@ -47,7 +47,7 @@ function techLessThanThree:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, co
 end
 
 function techLessThanThree:onNpcUpdate(npc)
-  if npc:GetData().techsavvy > 0 then
+  if npc:GetData().techsavvy ~= nil and npc:GetData().techsavvy > 0 then
     npc:GetData().techsavvy = npc:GetData().techsavvy -1
     local entList = Isaac.GetRoomEntities()
     for i = 1, #entList, 1 do
