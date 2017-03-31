@@ -26,7 +26,7 @@
 	<passive name="Special One" description="Mysterious placeholder text" gfx="collectibles_specialone.png" />
 	<!--<passive cache="all" name="The Ludovico Experiment" description="Mysterious placeholder text" gfx="collectibles_ludovicoexperiment.png" />-->
 	<passive cache="damage firedelay" name="Ferrofluid" description="Mysterious placeholder text" gfx="collectibles_ferrofluid.png" />
-	<passive cache="damage luck" name="Leprechaun's Contract" description="Mysterious placeholder text" gfx="collectibles_leprechauntscontract.png" />
+	<passive cache="damage luck" name="Leprechaun's Contract" description="Mysterious placeholder text" gfx="collectibles_leprechaunscontract.png" />
 	<passive name="Fragile Conception" description="Mysterious placeholder text" gfx="collectibles_fragileconception.png" />
 	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
 	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
