@@ -31,6 +31,8 @@
 	<costume name="Sacramental Wine" anm2path="costume_sacramentalwine.anm2" type="none" />
 	<costume name="Jaundice" anm2path="costume_jaundice.anm2" priority="99" type="none" />
 	<costume name="Placeholder" anm2path="costume_placeholder.anm2" type="none" />
+	<costume name="Leprechaun's Contract" anm2path="costume_leprechaunscontract.anm2" type="none" />
+	<costume name="Cashew Milk" anm2path="costume_cashewmilk.anm2" type="none" />
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />

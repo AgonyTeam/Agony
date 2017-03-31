@@ -480,6 +480,7 @@ require("code/Items/Collectibles/FathersBlessing")
 require("code/Items/Collectibles/TheFireplace")
 require("code/Items/Collectibles/ToyHammer")
 require("code/Items/Collectibles/TechLessThan3")
+require("code/Items/Collectibles/PilgrimsShoe")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

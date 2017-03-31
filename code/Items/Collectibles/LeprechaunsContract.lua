@@ -21,7 +21,7 @@ function leprechaunContract:onPlayerUpdate(player)
 		leprechaunContract.hasItem = false
 	end
 	if leprechaunContract.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_LEPRECHAUNS_CONTRACT) then
-		--player:AddNullCostume(leprechaunContract.costumeID)
+		player:AddNullCostume(leprechaunContract.costumeID)
 		leprechaunContract.hasItem = true
 	end
 end

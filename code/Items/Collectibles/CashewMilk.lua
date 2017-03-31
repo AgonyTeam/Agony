@@ -3,7 +3,7 @@ local CashewMilk =  {
 	costumeID = nil,
 	TearBool = false
 }
-CashewMilk.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_knowledgeequalspower.anm2")
+CashewMilk.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_cashewmilk.anm2")
 
 function CashewMilk:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_CASHEW_MILK)) then
@@ -32,7 +32,7 @@ function CashewMilk:onPlayerUpdate(player)
 			player:EvaluateItems()
 		end
 		if CashewMilk.hasItem == false then
-			--player:AddNullCostume(CashewMilk.costumeID)
+			player:AddNullCostume(CashewMilk.costumeID)
 			CashewMilk.hasItem = true
 		end
 	end
