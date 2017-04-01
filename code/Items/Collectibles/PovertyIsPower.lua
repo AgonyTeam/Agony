@@ -8,7 +8,7 @@ PIP.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_povertyequalspo
 function PIP:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_PIP)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
 		local collNum = player:GetCollectibleNum(CollectibleType.AGONY_C_PIP)
-		player.Damage = (player.Damage + 20*collNum) - ((player:GetNumBombs() + player:GetNumKeys() + player:GetNumCoins())/2)*collNum
+		player.Damage = (player.Damage + ((99*3)-(player:GetNumBombs() + player:GetNumKeys() + player:GetNumCoins()))*0.04*collNum)
 	end
 end
 
