@@ -116,6 +116,9 @@ Lists = {
 			{EntityType.ENTITY_RAGLING, 0},
 			{303, 0}, --Blister,
 		},
+		FlamingAlts = {
+			EntityType.ENTITY_CLOTTY,
+		},
 	},
 }
 
