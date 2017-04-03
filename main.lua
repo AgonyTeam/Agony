@@ -25,6 +25,8 @@ saveData.luckyEgg = saveData.luckyEgg or {}
 saveData.despair = saveData.despair or {}
 saveData.safeSpace = saveData.safeSpace or {}
 saveData.placeholder = saveData.placeholder or {}
+saveData.bigD = saveData.bigD or {}
+saveData.misterBean = saveData.misterBean or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -494,6 +496,7 @@ require("code/Items/Trinkets/LuckyEgg")
 --Transformations
 require("code/Misc/Transformations/God")
 require("code/Misc/Transformations/MisterBean")
+require("code/Misc/Transformations/BigD")
 
 --Pickups
 --Pills

@@ -23,6 +23,25 @@ Lists = {
 			--Agony
 			CollectibleType.AGONY_C_WAIT_NO,
 		},
+
+		Ds = {
+			--Vanilla
+			CollectibleType.COLLECTIBLE_D6,
+			CollectibleType.COLLECTIBLE_D100,
+			CollectibleType.COLLECTIBLE_D1,
+			CollectibleType.COLLECTIBLE_D10,
+			CollectibleType.COLLECTIBLE_D12,
+			CollectibleType.COLLECTIBLE_D20,
+			CollectibleType.COLLECTIBLE_DINF,
+			CollectibleType.COLLECTIBLE_D4,
+			CollectibleType.COLLECTIBLE_D8,
+			CollectibleType.COLLECTIBLE_D7,
+			--Agony
+			CollectibleType.AGONY_C_D3,
+			CollectibleType.AGONY_C_D5,
+			CollectibleType.AGONY_C_DICE_TATTOO,
+			CollectibleType.AGONY_C_LOADED_DICE,
+		},
 			
 		Garbage = {
 			--Vanilla

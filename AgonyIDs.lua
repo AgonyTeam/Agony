@@ -142,6 +142,7 @@ AgonyTearSubtype["MILKMAN"] = 1
 AgonyTearSubtype["JAUNDICE"] = 2
 AgonyTearSubtype["TOY_HAMMER"] = 3
 AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
+AgonyTearSubtype["BIG_D"] = 5
 
 --Constants Updater
 local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items

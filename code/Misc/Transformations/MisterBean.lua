@@ -2,7 +2,7 @@ local misterBean =  {
 	hasItem = nil, --used for costume
 	costumeID = nil,
 	requireditems = Agony.ENUMS["ItemPools"]["Beans"],
-	Items = {} --Keeps track of what Items the player has had
+	Items = saveData.misterBean.Items or {} --Keeps track of what Items the player has had
 }
 misterBean.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/trans_misterbean.anm2")
 
@@ -11,7 +11,21 @@ function misterBean:onPlayerUpdate(player)
 		misterBean.hasItem = false
 		misterBean.Items = {}
 	end
-	misterBean.Items = Agony:getCurrentItems(misterBean.requireditems)
+	for i = 1, #misterBean.requireditems do
+		if player:HasCollectible(misterBean.requireditems[i]) then
+			local isNew = true
+			for j = 1, #misterBean.Items do
+				if misterBean.Items[j] == misterBean.requireditems[i] then
+					isNew = false 
+				end
+			end
+			if isNew then
+				table.insert(misterBean.Items, misterBean.requireditems[i])
+				saveData.misterBean.Items = misterBean.Items
+				Agony:SaveNow()
+			end
+		end
+	end
 	if #misterBean.Items > 2 then
 		if misterBean.hasItem == false then
 			player:AddNullCostume(misterBean.costumeID)
