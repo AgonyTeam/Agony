@@ -5,7 +5,7 @@ function bClotty:ai_main(ent)
 		local rng = ent:GetDropRNG()
 		local eData = ent:GetData()
 		local eSprite = ent:GetSprite()
-		--debug_text = tostring(ent.StateFrame)
+		debug_text = tostring(EffectVariant.HOT_BOMB_FIRE)
 		if ent.State == NpcState.STATE_ATTACK then
 			local r = rng:RandomInt(15)+1
 			if rng:RandomInt(2) == 0 then
@@ -14,14 +14,15 @@ function bClotty:ai_main(ent)
 			local roomEnts = Isaac.GetRoomEntities()
 			for _, rEnt in pairs(roomEnts) do
 				if rEnt.Type == EntityType.ENTITY_PROJECTILE and rEnt.Position:Distance(ent.Position) <= 2 and rEnt.FrameCount <= 1 then
-					--if rng:RandomInt(10) == 0 then
-					--	fire = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 2, 0, rEnt.Position, rEnt.Velocity:Rotated(r), ent)
-					--	fire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire.png")
-					--	fire:GetSprite():LoadGraphics()
-					--	rEnt:Remove()
-					--else
-					rEnt.Velocity = rEnt.Velocity:Rotated(r)
-					--end
+					if rng:RandomInt(10) == 0 then
+						fire = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.HOT_BOMB_FIRE, 1, rEnt.Position, rEnt.Velocity:Rotated(r), ent)
+						fire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire.png")
+						fire:GetSprite():LoadGraphics()
+						fire.SpawnerEntity = ent
+						rEnt:Remove()
+					else
+						rEnt.Velocity = rEnt.Velocity:Rotated(r)
+					end
 				end
 			end
 		--[[elseif ent.State == NpcState.STATE_MOVE then
@@ -35,4 +36,4 @@ function bClotty:ai_main(ent)
 end
 
 --Callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, bClotty.ai_main, EntityType.ENTITY_CLOTTY);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, bClotty.ai_main, EntityType.ENTITY_CLOTTY)
