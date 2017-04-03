@@ -36,4 +36,5 @@
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
+	<costume name="Big D" anm2path="trans_bigd.anm2" type="none" />
 </costumes>

@@ -28,7 +28,7 @@ function bigD:onPlayerUpdate(player)
 	end
 	if #bigD.Items > 2 then
 		if bigD.hasItem == false then
-			--player:AddNullCostume(bigD.costumeID)
+			player:AddNullCostume(bigD.costumeID)
 			bigD.hasItem = true
 			--POOF!
 			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
