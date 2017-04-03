@@ -32,6 +32,7 @@ function someonesshoe:onUse()
 	
 	player:AnimateTeleport(true)
 	targetEnt.Position = playerPos
+	targetEnt:AddHealth(-player.Damage*3)
 	player.Position = targetPos
 	player:SetMinDamageCooldown(120)
 	player:AnimateTeleport(false)
