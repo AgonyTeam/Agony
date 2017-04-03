@@ -69,6 +69,7 @@
         <Item Name="Safe Space" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Vanity" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Fireplace" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Worm Knot" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="boss">
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

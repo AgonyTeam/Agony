@@ -119,6 +119,21 @@ Lists = {
 			CollectibleType.COLLECTIBLE_BUMBO,
 		},
 	},
+	--Custom Trinket lists
+	Trinkets = {
+		Worms = {
+			TrinketType.TRINKET_WIGGLE_WORM,
+			TrinketType.TRINKET_WHIP_WORM,
+			TrinketType.TRINKET_PULSE_WORM,
+			TrinketType.TRINKET_RING_WORM,
+			TrinketType.TRINKET_FLAT_WORM,
+			TrinketType.TRINKET_HOOK_WORM,
+			TrinketType.TRINKET_RAINBOW_WORM,
+			TrinketType.TRINKET_TAPE_WORM,
+			TrinketType.TRINKET_LAZY_WORM,
+			TrinketType.TRINKET_OUROBOROS_WORM,
+		},
+	},
 	--Custom enemy lists
 	EnemyLists = {
 		Spooders = { --for spooderboi
