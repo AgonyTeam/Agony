@@ -4,8 +4,8 @@ function bClotty:ai_main(ent)
 	if ent.SubType == 20 then
 		local rng = ent:GetDropRNG()
 		local eData = ent:GetData()
-		local eSprite = ent:GetSprite()
-		debug_text = tostring(EffectVariant.HOT_BOMB_FIRE)
+		--local eSprite = ent:GetSprite()
+		--debug_text = tostring(EffectVariant.HOT_BOMB_FIRE)
 		if ent.State == NpcState.STATE_ATTACK then
 			local r = rng:RandomInt(15)+1
 			if rng:RandomInt(2) == 0 then
@@ -16,8 +16,6 @@ function bClotty:ai_main(ent)
 				if rEnt.Type == EntityType.ENTITY_PROJECTILE and rEnt.Position:Distance(ent.Position) <= 2 and rEnt.FrameCount <= 1 then
 					if rng:RandomInt(10) == 0 then
 						fire = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.HOT_BOMB_FIRE, 1, rEnt.Position, rEnt.Velocity:Rotated(r), ent)
-						fire:GetSprite():ReplaceSpritesheet(0, "gfx/effects/effect_005_fire.png")
-						fire:GetSprite():LoadGraphics()
 						fire.SpawnerEntity = ent
 						rEnt:Remove()
 					else
