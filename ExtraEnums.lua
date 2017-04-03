@@ -68,6 +68,8 @@ Lists = {
 			CollectibleType.AGONY_C_BIRTHDAY_GIFT,
 			CollectibleType.AGONY_C_DICE_TATTOO,
 			CollectibleType.AGONY_C_CASHEW_MILK,
+			CollectibleType.AGONY_C_EASTER_EGG,
+			
 		},
 			
 		Garbage = {

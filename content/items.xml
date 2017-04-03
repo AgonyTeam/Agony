@@ -77,6 +77,7 @@
 	<active name="Vanity" description="Mysterious placeholder text" gfx="collectibles_vanity.png" />
 	<active name="The Fireplace" description="Mysterious placeholder text" gfx="collectibles_thefireplace.png" maxcharges="1" />
 	<active name="Worm Knot" description="Mysterious placeholder text" gfx="collectibles_wormknot.png" maxcharges="1" />
+	<active name="Easter Egg" description="Mysterious placeholder text" gfx="collectibles_easteregg.png" maxcharges="0" />
 
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />

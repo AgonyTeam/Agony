@@ -26,9 +26,7 @@ function bigD:onPlayerUpdate(player)
 			end
 		end
 	end
-	player:AddKeys(#bigD.Items)
 	if #bigD.Items > 2 then
-		player:AddBombs(1)
 		if bigD.hasItem == false then
 			--player:AddNullCostume(bigD.costumeID)
 			bigD.hasItem = true
