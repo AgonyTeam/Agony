@@ -487,6 +487,7 @@ require("code/Items/Collectibles/ToyHammer")
 require("code/Items/Collectibles/TechLessThan3")
 require("code/Items/Collectibles/PilgrimsShoe")
 require("code/Items/Collectibles/WormKnot")
+require("code/Items/Collectibles/EasterEgg")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

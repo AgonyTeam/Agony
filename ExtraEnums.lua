@@ -42,6 +42,33 @@ Lists = {
 			CollectibleType.AGONY_C_DICE_TATTOO,
 			CollectibleType.AGONY_C_LOADED_DICE,
 		},
+
+		Zany = {
+			--Vanilla
+			CollectibleType.COLLECTIBLE_CURSED_EYE,
+			CollectibleType.COLLECTIBLE_BOBS_BRAIN,
+			CollectibleType.COLLECTIBLE_IPECAC,
+			CollectibleType.COLLECTIBLE_MY_REFLECTION,
+			CollectibleType.COLLECTIBLE_ANTI_GRAVITY,
+			CollectibleType.COLLECTIBLE_STRANGE_ATTRACTOR,
+			CollectibleType.COLLECTIBLE_CROOKED_PENNY,
+			CollectibleType.COLLECTIBLE_GUILLOTINE,
+			CollectibleType.COLLECTIBLE_LUDOVICO_TECHNIQUE,
+			CollectibleType.COLLECTIBLE_TINY_PLANET,
+			CollectibleType.COLLECTIBLE_TECHNOLOGY_2,
+			CollectibleType.COLLECTIBLE_3_DOLLAR_BILL,
+			CollectibleType.COLLECTIBLE_THE_WIZ,
+			CollectibleType.COLLECTIBLE_EVES_MASCARA,
+			CollectibleType.COLLECTIBLE_SOY_MILK,
+			CollectibleType.COLLECTIBLE_MISSING_NO,
+			CollectibleType.COLLECTIBLE_UNDEFINED,
+			CollectibleType.COLLECTIBLE_METRONOME,
+
+			--Agony
+			CollectibleType.AGONY_C_BIRTHDAY_GIFT,
+			CollectibleType.AGONY_C_DICE_TATTOO,
+			CollectibleType.AGONY_C_CASHEW_MILK,
+		},
 			
 		Garbage = {
 			--Vanilla
