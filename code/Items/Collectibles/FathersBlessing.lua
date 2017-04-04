@@ -39,7 +39,7 @@ function fathersBlessing:onPlayerUpdate(player)
 		fathersBlessing.hasItem = false
 	end
 	if fathersBlessing.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_FATHERS_BLESSING) then
-		--player:AddNullCostume(fathersBlessing.costumeID)
+		player:AddNullCostume(fathersBlessing.costumeID)
 		fathersBlessing.hasItem = true
 	end
 end
