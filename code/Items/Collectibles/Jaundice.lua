@@ -30,6 +30,8 @@ function jaundice:onUpdate()
       if entity.Type == EntityType.ENTITY_TEAR then
         if entity.FrameCount == 1 and prob == 1 then
           --TODO : Change gfx to yellow stuff idk
+          entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_jaundice.png")
+          entity:GetSprite():LoadGraphics()
           entity.SubType = AgonyTearSubtype.JAUNDICE
         end
       end

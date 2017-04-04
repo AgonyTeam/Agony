@@ -54,6 +54,8 @@ function bigD:onUpdate()
     	if entity.Type == EntityType.ENTITY_TEAR then
     		if entity.FrameCount == 1 and Prob == 1 then
     			--TODO : Change gfx to D
+    			entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_bigd.png")
+          		entity:GetSprite():LoadGraphics()
     			entity.SubType = AgonyTearSubtype.BIG_D
     		end
     	end
