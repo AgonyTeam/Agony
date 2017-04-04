@@ -21,7 +21,7 @@
         <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Brother Cancer" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="     Pandora's Chest" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Pandora's Chest     " RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Despair" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="D5" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Special One" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
