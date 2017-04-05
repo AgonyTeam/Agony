@@ -27,7 +27,7 @@ function diceTattoo:onUpdate()
 				if player:GetCollectibleCount() >= 1 then --If the player has collectibles
 			    	local colletibles = Agony:getCurrentItems()
 		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
-		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
+		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES-1)+1, 0, true)
 	    		end
 	    	end
 		end
