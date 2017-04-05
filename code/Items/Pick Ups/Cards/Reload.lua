@@ -21,16 +21,32 @@ function reload:onUse()
 		or entities[i].Variant == PickupVariant.PICKUP_ETERNALCHEST
 		or entities[i].Variant == PickupVariant.PICKUP_BOMBCHEST
 		or entities[i].Variant == PickupVariant.PICKUP_SPIKEDCHEST
-		or entities[i].Variant == PickupVariant.AGONY_PICKUP_SAFE)
+		--[[or entities[i].Variant == PickupVariant.AGONY_PICKUP_SAFE]])
 		and entities[i].SubType == ChestSubType.CHEST_OPENED then
 			local newChest = Isaac.Spawn(EntityType.ENTITY_PICKUP, entities[i].Variant, ChestSubType.CHEST_CLOSED, entities[i].Position, Vector (0,0), player)
 			--Special safe synergy/easter egg
-			if entities[i].Variant == PickupVariant.AGONY_PICKUP_SAFE then
-				local oldchestData = entities[i]:GetData()
-				local newChestData = newChest:GetData()
-				newChestData.storedItem = oldchestData.storedItem
-			end
+			--if entities[i].Variant == PickupVariant.AGONY_PICKUP_SAFE then
+			--	local oldchestData = entities[i]:GetData()
+			--	local newChestData = newChest:GetData()
+			--	newChestData.storedItem = oldchestData.storedItem
+			--end
 			entities[i]:Remove()
+		--Special safe synergy/easter egg
+		elseif entities[i].Type == EntityType.ENTITY_PICKUP and entities[i].Variant == PickupVariant.PICKUP_COLLECTIBLE and eSprite:GetFilename() == Agony.Pedestals.ANIMFILE and eSprite:GetOverlayFrame() == Agony.Pedestals.PEDESTAL_SAFE then
+			local pos = nil
+			local oldchestData = entities[i]:GetData()
+			if entities[i].SubType == 0 then --remove the empty pedestal and respawn the chest at the exact same place as before
+				pos = entities[i].Position
+				entities[i]:Remove()
+			else
+				pos = Isaac.GetFreeNearPosition(entities[i].Position, 50) --respawn chest next to pedestal
+			end
+			local newChest = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.AGONY_PICKUP_SAFE, ChestSubType.CHEST_CLOSED, pos, Vector (0,0), player)
+			local newChestData = newChest:GetData()
+			newChestData.storedItem = oldchestData.storedItem
+			if entities[i]:Exists() then --change to normal pedestal if it exists
+				eSprite:SetOverlayFrame("Alternates", 0) 
+			end
 		elseif entities[i].Type == EntityType.ENTITY_PICKUP and entities[i].Variant == PickupVariant.PICKUP_COLLECTIBLE 
 		and (eSprite:GetOverlayFrame() == 4 --the frames are the different pedestal visuals, check the pedChests table for meaning of each frame
 		or eSprite:GetOverlayFrame() == 5

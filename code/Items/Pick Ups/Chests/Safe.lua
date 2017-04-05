@@ -28,17 +28,14 @@ function safe:onUpdate()
           entsprite:Play("Open", true)
           sound:Play(SoundEffect.SOUND_PLOP, 1, 0, false, 1)
           --spawn item
-          Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, entdata.storedItem , Isaac.GetFreeNearPosition(player.Position, 50), Vector (0,0), player)
-          saveData.safeSpace.storedItem = 0
-          entity.SubType = ChestSubType.CHEST_OPENED
+		  entity:Remove()
+          local pedestal = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, entdata.storedItem , entity.Position, Vector (0,0), player)
+		  Agony:loadCustomPedestal(pedestal, Agony.Pedestals.PEDESTAL_SAFE, entdata)
+		  saveData.safeSpace.storedItem = 0
           Agony:SaveNow()
         end
-      elseif entity.SubType == ChestSubType.CHEST_OPENED then
-        if not entsprite:IsPlaying("Open") and not entsprite:IsPlaying("Opened") then
-          entsprite:Play("Opened", true)
-        end
       end
-    end
+	end
   end
 end
 
