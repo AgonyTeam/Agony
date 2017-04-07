@@ -1,6 +1,4 @@
-local ferrofluid =  {
-	TearBool = false
-}
+local ferrofluid =  {}
 
 function ferrofluid:cacheUpdate (player,cacheFlag)
 	--Damage and tears up
@@ -9,17 +7,8 @@ function ferrofluid:cacheUpdate (player,cacheFlag)
 			player.Damage = player.Damage + 1.69*player:GetCollectibleNum(CollectibleType.AGONY_C_FERROFLUID)
 		end
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
-			ferrofluid.TearBool = true
+			player.MaxFireDelay = player.MaxFireDelay - player.MaxFireDelay*0.2*player:GetCollectibleNum(CollectibleType.AGONY_C_FERROFLUID)
 		end
-	end
-end
-
---FireDelay workaround
-function ferrofluid:updateFireDelay()
-	local player = Isaac.GetPlayer(0);
-	if (ferrofluid.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay - player.MaxFireDelay*0.2*player:GetCollectibleNum(CollectibleType.AGONY_C_FERROFLUID);
-		ferrofluid.TearBool = false;
 	end
 end
 
@@ -41,5 +30,4 @@ function ferrofluid:onUpdate()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ferrofluid.cacheUpdate)

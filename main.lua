@@ -329,6 +329,7 @@ function Agony:clearSaveData()
 			end
 		end
 		Agony:SaveNow()
+		Isaac.DebugString("Reset Agony Savedata")
 	end
 end
 

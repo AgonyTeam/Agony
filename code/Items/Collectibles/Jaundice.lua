@@ -36,21 +36,12 @@ function jaundice:cacheUpdate (player,cacheFlag)
   -- tears up
   if (player:HasCollectible(CollectibleType.AGONY_C_JAUNDICE)) then
     if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
-      jaundice.TearBool = true
+      player.MaxFireDelay = player.MaxFireDelay - player.MaxFireDelay*0.2*player:GetCollectibleNum(CollectibleType.AGONY_C_JAUNDICE);
     end
   end
 end
 
---FireDelay workaround
-function jaundice:updateFireDelay()
-  local player = Isaac.GetPlayer(0);
-  if (jaundice.TearBool == true) then
-    player.MaxFireDelay = player.MaxFireDelay - player.MaxFireDelay*0.2*player:GetCollectibleNum(CollectibleType.AGONY_C_JAUNDICE);
-    jaundice.TearBool = false;
-  end
-end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, jaundice.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, jaundice.updateFireDelay)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, jaundice.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, jaundice.onTakeDmg);
