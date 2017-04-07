@@ -548,6 +548,7 @@ require("code/Items/Pick Ups/Pills/PartyPills");
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
 --require("code/Items/Pick Ups/Cards/LotteryTicket")
+require("code/Items/Pick Ups/Cards/RepairWrench")
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests

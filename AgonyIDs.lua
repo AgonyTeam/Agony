@@ -121,6 +121,7 @@ TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice
 --Cards
 Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
 Card["AGONY_CARD_LOTTERY_TICKET"] = Isaac.GetCardIdByName("Lottery Ticket")
+Card["AGONY_CARD_REPAIR_WRENCH"] = Isaac.GetCardIdByName("Repair Wrench")
 
 --Coin Variant
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins

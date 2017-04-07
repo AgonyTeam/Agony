@@ -4,4 +4,5 @@
 	<!--Impotant note on cards to save everyone from headaches: hud and name HAVE TO be EXACTLY THE SAME or else we'll get -1 as an id.-->
 	<card description="RELOAD!!" hud="Reload!" name="Reload!" />
 	<!--card description="It's gambling time!" hud="Lottery Ticket" name="Lottery Ticket" /-->
+	<card description="This oughta fix it" hud="Repair Wrench" name="Repair Wrench" />
 </pocketitems>
