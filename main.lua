@@ -547,6 +547,7 @@ require("code/Misc/Transformations/BigD")
 require("code/Items/Pick Ups/Pills/PartyPills");
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
+--require("code/Items/Pick Ups/Cards/LotteryTicket")
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
