@@ -1,10 +1,6 @@
-
 local ferrofluid =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	TearBool = false
 }
-ferrofluid.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_ferrofluid.anm2")
 
 function ferrofluid:cacheUpdate (player,cacheFlag)
 	--Damage and tears up
@@ -15,16 +11,6 @@ function ferrofluid:cacheUpdate (player,cacheFlag)
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			ferrofluid.TearBool = true
 		end
-	end
-end
-
-function ferrofluid:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		ferrofluid.hasItem = false
-	end
-	if ferrofluid.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_FERROFLUID) then
-		player:AddNullCostume(ferrofluid.costumeID)
-		ferrofluid.hasItem = true
 	end
 end
 
@@ -56,5 +42,4 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, ferrofluid.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, ferrofluid.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, ferrofluid.cacheUpdate)

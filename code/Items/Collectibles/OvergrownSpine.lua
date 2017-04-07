@@ -1,9 +1,5 @@
 --local item_OvergrownSpine = Isaac.GetItemIdByName("Overgrown Spine");
-local overgrownSpine =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-overgrownSpine.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_overgrownspine.anm2")
+local overgrownSpine =  {}
 
 function overgrownSpine:linkTears()
 	local player = Game():GetPlayer(0)
@@ -29,15 +25,4 @@ function overgrownSpine:linkTears()
 	end
 end
 
-
-function overgrownSpine:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		overgrownSpine.hasItem = false
-	end
-	if overgrownSpine.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_OVERGROWN_SPINE) then
-		player:AddNullCostume(overgrownSpine.costumeID)
-		overgrownSpine.hasItem = true
-	end
-end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, overgrownSpine.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, overgrownSpine.linkTears)

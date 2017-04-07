@@ -1,10 +1,6 @@
-
 local fathersBlessing =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	cooldown = 0
 }
-fathersBlessing.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_thefathersblessing.anm2")
 
 function fathersBlessing:onUpdate()
 	if fathersBlessing.cooldown > 0 then
@@ -34,16 +30,5 @@ function fathersBlessing:onNpcUpdate(npc)
 	end
 end
 
-function fathersBlessing:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		fathersBlessing.hasItem = false
-	end
-	if fathersBlessing.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_FATHERS_BLESSING) then
-		player:AddNullCostume(fathersBlessing.costumeID)
-		fathersBlessing.hasItem = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, fathersBlessing.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, fathersBlessing.onNpcUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, fathersBlessing.onPlayerUpdate)

@@ -2,15 +2,11 @@
 --local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
 local gasolinejb = {
 	TearBool = false,
-	hasItem = nil,
-	costumeID = nil,
 	hasLudo = saveData.gasolinejb.hasLudo or false,
 	seed = nil,
 	ludoFire = nil,
 	roomID = nil
 };
-gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
-
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
 	--Damage and firedelay down
@@ -166,18 +162,6 @@ function gasolinejb:updateFireDelay()
 	end
 end
 
-
---Checks if player has item, and gives him the costume
-function gasolinejb:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		gasolinejb.hasItem = false
-	end
-	if gasolinejb.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) then
-		player:AddNullCostume(gasolinejb.costumeID)
-		gasolinejb.hasItem = true
-	end
-end
-
 function gasolinejb:reset(player)
 	if Game():GetFrameCount() <= 1 then
 		gasolinejb.hasLudo = false
@@ -205,7 +189,6 @@ function gasolinejb:restoreLudo()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, gasolinejb.reset)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);

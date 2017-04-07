@@ -1,9 +1,4 @@
-
-local sacramentalWine =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-sacramentalWine.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_sacramentalwine.anm2")
+local sacramentalWine =  {}
 
 function sacramentalWine:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_SACRAMENTAL_WINE)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
@@ -12,17 +7,7 @@ function sacramentalWine:cacheUpdate (player,cacheFlag)
 end
 
 function sacramentalWine:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		sacramentalWine.hasItem = false
-	end
-	
-
 	if player:HasCollectible(CollectibleType.AGONY_C_SACRAMENTAL_WINE) then
-		if sacramentalWine.hasItem == false then
-			player:AddNullCostume(sacramentalWine.costumeID)
-			sacramentalWine.hasItem = true
-		end
-
 		local redHearts = player:GetMaxHearts()
 		if redHearts > 0 then
 			player:AddMaxHearts(-redHearts, false)

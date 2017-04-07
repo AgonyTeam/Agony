@@ -1,9 +1,6 @@
 local CashewMilk =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	TearBool = false
 }
-CashewMilk.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_cashewmilk.anm2")
 
 function CashewMilk:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_CASHEW_MILK)) then
@@ -17,10 +14,6 @@ function CashewMilk:cacheUpdate (player,cacheFlag)
 end
 
 function CashewMilk:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		CashewMilk.hasItem = false
-	end
-
 	if player:HasCollectible(CollectibleType.AGONY_C_CASHEW_MILK) then
 		--Force the game to evaluate the cache every 3 frames
 		--Will improve the code as we get more callbacks nicolo pls
@@ -30,10 +23,6 @@ function CashewMilk:onPlayerUpdate(player)
 				player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
 			end
 			player:EvaluateItems()
-		end
-		if CashewMilk.hasItem == false then
-			player:AddNullCostume(CashewMilk.costumeID)
-			CashewMilk.hasItem = true
 		end
 	end
 end

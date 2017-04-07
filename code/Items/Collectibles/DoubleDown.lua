@@ -1,10 +1,5 @@
 --local item_DoubleDown = Isaac.GetItemIdByName("Double Down")
-local doubleDown = {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-doubleDown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_doubledown.anm2")
-
+local doubleDown = {}
 
 -- Doubles player damage
 function doubleDown:cacheUpdate (player,cacheFlag)
@@ -30,16 +25,5 @@ function doubleDown:onTakeDmg(entity,dmgAmount)
 	end
 end
 
-function doubleDown:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		doubleDown.hasItem = false
-	end
-	if doubleDown.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) then
-		player:AddNullCostume(doubleDown.costumeID)
-		doubleDown.hasItem = true
-	end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, doubleDown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, doubleDown.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, doubleDown.onTakeDmg, EntityType.ENTITY_PLAYER)

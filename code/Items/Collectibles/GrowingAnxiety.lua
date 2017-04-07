@@ -3,10 +3,7 @@ local growingAnxiety =  {
 	FormerScale = {},
 	CurrentScaleMulti = 1,
 	Room = {},
-    hasItem = nil, --used for costume
-    costumeID = nil
 }
-growingAnxiety.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_growinganxiety.anm2")
 
 --Shrinks the player upon getting hit
 function growingAnxiety:onTakeDmg()
@@ -33,14 +30,6 @@ function growingAnxiety:onPlayerUpdate(player)
 		growingAnxiety.CurrentScaleMulti = 1
 		player.SpriteScale = growingAnxiety.FormerScale
 	end
-
-	if Game():GetFrameCount() == 1 then
-        growingAnxiety.hasItem = false
-    end
-    if growingAnxiety.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GROWING_ANXIETY) then
-        player:AddNullCostume(growingAnxiety.costumeID)
-        growingAnxiety.hasItem = true
-    end
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, growingAnxiety.onPlayerUpdate)

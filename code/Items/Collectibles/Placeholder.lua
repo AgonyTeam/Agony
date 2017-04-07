@@ -3,12 +3,9 @@
 --3 Give a copy (make sure the copy doesnt trigger)
 
 local placeholder =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	items = saveData.placeholder.items or {},
 	newestItem = saveData.placeholder.newestItem or nil
 }
-placeholder.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_placeholder.anm2")
 
 function placeholder:onUpdate()
 	local player = Game():GetPlayer(0)
@@ -45,15 +42,4 @@ function placeholder:onUpdate()
 	end
 end
 
-function placeholder:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		placeholder.hasItem = false
-	end
-	if placeholder.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_PLACEHOLDER) then
-		player:AddNullCostume(placeholder.costumeID)
-		placeholder.hasItem = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, placeholder.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, placeholder.onPlayerUpdate)

@@ -1,10 +1,7 @@
 
 local personalBubble =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	cooldown = 0
 }
-personalBubble.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_personalbubble.anm2")
 
 function personalBubble:onUpdate()
 	if personalBubble.cooldown > 0 then
@@ -32,16 +29,5 @@ function personalBubble:onNpcUpdate(npc)
 	end
 end
 
-function personalBubble:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		personalBubble.hasItem = false
-	end
-	if personalBubble.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_PERSONAL_BUBBLE) then
-		player:AddNullCostume(personalBubble.costumeID)
-		personalBubble.hasItem = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, personalBubble.onUpdate)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, personalBubble.onNpcUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, personalBubble.onPlayerUpdate)

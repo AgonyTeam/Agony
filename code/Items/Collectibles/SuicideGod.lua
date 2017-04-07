@@ -1,9 +1,5 @@
 --local item_SuicideGod = Isaac.GetItemIdByName("Suicide God");
-local suicideGod =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-suicideGod.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_suicidegod.anm2")
+local suicideGod =  {}
 
 function suicideGod:checkIfPlayerDying()
 	local player = Game():GetPlayer(0)
@@ -19,17 +15,4 @@ function suicideGod:checkIfPlayerDying()
 	end
 end
 
-function suicideGod:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		suicideGod.hasItem = false
-	end
-	if player:HasCollectible(CollectibleType.AGONY_C_SUICIDE_GOD) then
-		if suicideGod.hasItem == false then
-			player:AddNullCostume(suicideGod.costumeID)
-			suicideGod.hasItem = true
-		end
-	end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, suicideGod.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, suicideGod.checkIfPlayerDying)

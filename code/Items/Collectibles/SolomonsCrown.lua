@@ -1,7 +1,5 @@
 --local item_SolomonCrown = Isaac.GetItemIdByName("Solomon's Crown");
 local solomonCrown =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	TearBool = false
 }
 solomonCrown.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_solomonscrown.anm2")
@@ -20,16 +18,6 @@ function solomonCrown:cacheUpdate (player,cacheFlag)
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			TearBool = true
 		end
-	end
-end
-
-function solomonCrown:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		solomonCrown.hasItem = false
-	end
-	if solomonCrown.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SOLOMON_CROWN) then
-		player:AddNullCostume(solomonCrown.costumeID)
-		solomonCrown.hasItem = true
 	end
 end
 
@@ -53,5 +41,4 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.evaluateCache)
 Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, solomonCrown.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, solomonCrown.cacheUpdate)

@@ -1,15 +1,11 @@
 <AnimatedActor>
-<<<<<<< HEAD
-	<Info CreatedBy="robot" CreatedOn="27.08.2014 01:54:07" Version="103" Fps="30"/>
-=======
-	<Info CreatedBy="robot" CreatedOn="3/12/2017 2:01:40 PM" Version="104" Fps="30"/>
+	<Info CreatedBy="robot" CreatedOn="4/7/2017 5:14:45 PM" Version="105" Fps="30"/>
 	<Content>
 		<Spritesheets>
 			<Spritesheet Path="costumes\costume_placeholder.png" Id="0"/>
 		</Spritesheets>
 		<Layers>
 			<Layer Name="head" Id="0" SpritesheetId="0"/>
-
 		</Layers>
 		<Nulls/>
 		<Events/>
@@ -60,8 +56,8 @@
 			</RootAnimation>
 			<LayerAnimations>
 				<LayerAnimation LayerId="0" Visible="true">
-					<Frame XPosition="0" YPosition="-5" XPivot="16" YPivot="28" XCrop="64" YCrop="0" Width="32" Height="32" XScale="100" YScale="100" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
-					<Frame XPosition="0" YPosition="-5" XPivot="16" YPivot="28" XCrop="96" YCrop="0" Width="32" Height="32" XScale="100" YScale="100" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
+					<Frame XPosition="0" YPosition="-5" XPivot="16" YPivot="28" XCrop="192" YCrop="0" Width="32" Height="32" XScale="100" YScale="100" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
+					<Frame XPosition="0" YPosition="-5" XPivot="16" YPivot="28" XCrop="224" YCrop="0" Width="32" Height="32" XScale="100" YScale="100" Delay="2" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
 				</LayerAnimation>
 			</LayerAnimations>
 			<NullAnimations/>

@@ -1,10 +1,7 @@
 --local item_YeuxRev = Isaac.GetItemIdByName("Yeux Revolver");
 local yeuxRev =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	TearBool = false
 }
-yeuxRev.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_yeuxrevolver.anm2")
 
 function yeuxRev:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER)) then
@@ -17,16 +14,6 @@ function yeuxRev:cacheUpdate (player,cacheFlag)
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
 			yeuxRev.TearBool = true
 		end
-	end
-end
-
-function yeuxRev:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		yeuxRev.hasItem = false
-	end
-	if yeuxRev.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER) then
-		player:AddNullCostume(yeuxRev.costumeID)
-		yeuxRev.hasItem = true
 	end
 end
 
@@ -53,5 +40,4 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, yeuxRev.onTakeDmg)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, yeuxRev.updateFireDelay)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, yeuxRev.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, yeuxRev.cacheUpdate)

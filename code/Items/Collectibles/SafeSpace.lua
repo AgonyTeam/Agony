@@ -1,13 +1,9 @@
 local safeSpace =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	storedItem = saveData.safeSpace.storedItem or 0
 }
-safeSpace.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_safespace.anm2")
 
 function safeSpace:onPlayerUpdate(player)
 	if Game():GetFrameCount() == 1 then
-		safeSpace.hasItem = false
 		if saveData.safeSpace.storedItem == nil then
 			saveData.safeSpace.storedItem = safeSpace.storedItem
 			Agony:SaveNow()
@@ -15,11 +11,6 @@ function safeSpace:onPlayerUpdate(player)
 	end
 	if saveData.safeSpace.storedItem == 0 then
 		safeSpace.storedItem = 0
-	end
-	if safeSpace.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE) then
-		--commented out until we have a costume
-		player:AddNullCostume(safeSpace.costumeID)
-		safeSpace.hasItem = true
 	end
 	if player:HasCollectible(CollectibleType.AGONY_C_SAFE_SPACE) and (saveData.safeSpace.storedItem == 0 or saveData.safeSpace.storedItem == nil) then
 		if player:GetCollectibleCount() >= 2 then --If the player has collectibles
