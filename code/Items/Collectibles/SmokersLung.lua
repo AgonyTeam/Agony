@@ -39,8 +39,8 @@ function smokersLung:onPlayerUpdate(player)
 				elseif smokersLung.lastAction == ButtonAction.ACTION_SHOOTDOWN then lastShootingDir.Y = 1
 				elseif smokersLung.lastAction == ButtonAction.ACTION_SHOOTUP then lastShootingDir.Y = -1 end
 				
-				for i = 1, 5+math.random(5) do
-					t = player:FireTear(player.Position, lastShootingDir:__mul(player.ShotSpeed*5):__add(player.Velocity):Rotated(math.random(20)-10):__mul(1 +((math.random(20)-10)/100)), false, true, false)
+				for i = 1, 10+math.random(10) do
+					t = player:FireTear(player.Position, lastShootingDir:__mul(player.ShotSpeed*5):__add(player.Velocity):Rotated(math.random(20)-10):__mul(1 +((math.random(40)-20)/100)), false, true, false)
 					t.TearFlags = t.TearFlags | TearFlags.TEAR_PIERCING
 					t.TearFlags = t.TearFlags | TearFlags.TEAR_SPECTRAL
 					t:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_smokerslung.png")
@@ -59,6 +59,9 @@ function smokersLung:cacheUpdate (player,cacheFlag)
 		if cacheFlag == CacheFlag.CACHE_RANGE then
 			--player.TearHeight = 25
 			player.TearFallingAcceleration = 0
+		end
+		if cacheFlag == CacheFlag.CACHE_DAMAGE then
+			player.Damage = player.Damage / 1.5
 		end
 	end
 end
