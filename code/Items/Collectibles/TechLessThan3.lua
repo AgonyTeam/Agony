@@ -13,7 +13,7 @@ function techLessThanThree:onUpdate()
   	end
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
-    		if entity.FrameCount == 1 and Prob == 1 then
+    		if entity.FrameCount == 1 and Prob == 0 then
     			--TODO : Change gfx to idk
           entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_techlessthan3.png")
           entity:GetSprite():LoadGraphics()
