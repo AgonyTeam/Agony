@@ -120,7 +120,9 @@ TrinketType["AGONY_T_PARTY_POOPER"] = Isaac.GetTrinketIdByName("Party Pooper")
 TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice")
 
 --Cards
-Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload")
+Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
+Card["AGONY_CARD_LOTTERY_TICKET"] = Isaac.GetCardIdByName("Lottery Ticket")
+Card["AGONY_CARD_REPAIR_WRENCH"] = Isaac.GetCardIdByName("Repair Wrench")
 
 --Coin Variant
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
@@ -135,9 +137,10 @@ PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!")
 
 --Misc Entities
 EntityType["AGONY_ETYPE_TREASURE_HOARDER"] = Isaac.GetEntityTypeByName("Treasure Hoarder");
-
 --Monsters
 EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block");
+--Bosses
+EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
 
 --Custom Tears
 AgonyTearSubtype = {}
@@ -148,10 +151,28 @@ AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
 AgonyTearSubtype["BIG_D"] = 5
 
 --Constants Updater
-local num_collectibles = 0 --update NUM_COLLECTIBLES to include all new items
-for name, id in pairs(CollectibleType) do --because #CollectibleType is 0 for some reason, I'll have to count them this way
-	if name ~= "NUM_COLLECTIBLES" then
-		num_collectibles = num_collectibles + 1
+local enumsToUpdate = {
+	CollectibleType,
+	PillEffect,
+	TrinketType,
+	Card
+}
+local boosterConsts = { --nicalis forgot to update their enums with the new things added in the booster pack
+	9,
+	0,
+	3,
+	3
+}
+for _, enum in pairs(enumsToUpdate) do
+	local count = 0
+	local constName = nil
+	for name, id in pairs(enum) do
+		if name:sub(1,4) ~= "NUM_"  and name ~= "CARD_RANDOM" and name ~= "PILLEFFECT_NULL" then --have to exclude CARD_RANDOM and PILLEFFECT_NULL because they don't count
+			count = count + 1
+		elseif name:sub(1,4) == "NUM_" then
+			constName = name
+		end
 	end
+	enum[constName] = count + boosterConsts[_]
 end
-CollectibleType.NUM_COLLECTIBLES = num_collectibles 
+

@@ -183,6 +183,13 @@ Lists = {
 			EntityType.ENTITY_CLOTTY,
 		},
 	},
+	--Custom Pedestals
+	Pedestals = {
+		PEDESTAL_DEFAULT = 0,
+		PEDESTAL_SAFE = 1,
+		NUM_PEDESTALS = 2,
+		ANIMFILE = "gfx/Items/Pick Ups/Pedestals/animation.anm2",
+	},
 }
 
 return Lists

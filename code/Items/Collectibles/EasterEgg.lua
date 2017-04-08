@@ -1,4 +1,3 @@
-
 local easterEgg = {
 	zanyItems = Agony.ENUMS["ItemPools"]["Zany"]
 }

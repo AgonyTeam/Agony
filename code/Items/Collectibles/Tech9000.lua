@@ -1,10 +1,7 @@
 --local item_techninek = Isaac.GetItemIdByName("Technology 9000");
 local techninek = {
 	TearBool = false,
-	hasItem = nil,
-	costumeID = nil
 }
-techninek.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_technology9000.anm2")
 
 function techninek:TearsToLaser()
 	local player = Isaac.GetPlayer(0);
@@ -49,16 +46,4 @@ function techninek:TearsToLaser()
 	end
 end
 
---Checks if player has item, and gives him the costume
-function techninek:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		techninek.hasItem = false
-	end
-	if techninek.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TECH_9000) then
-		player:AddNullCostume(techninek.costumeID)
-		techninek.hasItem = true
-	end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, techninek.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, techninek.TearsToLaser);

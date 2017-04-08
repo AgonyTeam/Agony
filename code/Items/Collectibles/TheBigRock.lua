@@ -2,10 +2,7 @@
 local theBigRock =  {
 	hasTriedToMorphSmallRock = false,
 	seed = nil,
-	hasItem = nil, --used for costume
-	costumeID = nil
 }
-theBigRock.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_thebigrock.anm2")
 
 --Grants + 2.69 DMG and -0.4 SPD
 function theBigRock:cacheUpdate (player,cacheFlag)
@@ -40,20 +37,5 @@ function theBigRock:morphSmallRock()
 	end
 end
 
-function theBigRock:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		theBigRock.hasItem = false
-	end
-	
-
-	if player:HasCollectible(CollectibleType.AGONY_C_THE_BIG_ROCK) then
-		if theBigRock.hasItem == false then
-			player:AddNullCostume(theBigRock.costumeID)
-			theBigRock.hasItem = true
-		end
-	end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, theBigRock.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, theBigRock.cacheUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, theBigRock.morphSmallRock)

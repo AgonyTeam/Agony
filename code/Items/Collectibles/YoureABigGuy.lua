@@ -1,7 +1,6 @@
 --local item_BigGuy = Isaac.GetItemIdByName("You're a Big Guy");
 local bigGuy =  {
 	hasItem = nil, --used for costume
-	costumeID = nil
 }
 bigGuy.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_youreabigguy.anm2")
 
@@ -19,7 +18,6 @@ function bigGuy:onPlayerUpdate(player)
 	end
 	if bigGuy.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_URA_BIG_GUY) then
 		-- commented out until we have a costume
-		player:AddNullCostume(bigGuy.costumeID)
 		player.SpriteScale = player.SpriteScale*1.4
 		bigGuy.hasItem = true
 	end

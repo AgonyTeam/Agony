@@ -1,7 +1,4 @@
-
 local diceTattoo =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	roomID = nil,
 	isRoomClear = nil
 }
@@ -27,22 +24,11 @@ function diceTattoo:onUpdate()
 				if player:GetCollectibleCount() >= 1 then --If the player has collectibles
 			    	local colletibles = Agony:getCurrentItems()
 		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
-		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
+		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES-1)+1, 0, true)
 	    		end
 	    	end
 		end
 	end
 end
 
-function diceTattoo:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		diceTattoo.hasItem = false
-	end
-	if diceTattoo.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_DICE_TATTOO) then
-		player:AddNullCostume(diceTattoo.costumeID)
-		diceTattoo.hasItem = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, diceTattoo.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, diceTattoo.onPlayerUpdate)

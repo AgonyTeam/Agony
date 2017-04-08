@@ -1,9 +1,5 @@
 --local item_TilDeathDoUsApart = Isaac.GetItemIdByName("Til Death Do Us Apart");
-local tilDeath = {
-    hasItem = nil, --used for costume
-    costumeID = nil
-}
-tilDeath.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_tilldeathdousappart.anm2")
+local tilDeath = {}
 
 local CONVERT_LUCK_BASE = 0.10
 local CONVERT_LUCK_MULTI = 0.07
@@ -26,15 +22,4 @@ function tilDeath:ConvertEntity(hurtEntity, dmgAmount, dmgFlags, source, countdo
     end
 end
 
-function tilDeath:onPlayerUpdate(player)
-    if Game():GetFrameCount() == 1 then
-        tilDeath.hasItem = false
-    end
-    if tilDeath.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TILL_DEATH_DO_US_APART) then
-        player:AddNullCostume(tilDeath.costumeID)
-        tilDeath.hasItem = true
-    end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, tilDeath.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, tilDeath.ConvertEntity);

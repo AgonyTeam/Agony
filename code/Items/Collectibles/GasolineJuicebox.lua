@@ -1,16 +1,11 @@
 --StartDebug();
 --local item_GasolineJuicebox = Isaac.GetItemIdByName("Gasoline Juicebox");
 local gasolinejb = {
-	TearBool = false,
-	hasItem = nil,
-	costumeID = nil,
 	hasLudo = saveData.gasolinejb.hasLudo or false,
 	seed = nil,
 	ludoFire = nil,
 	roomID = nil
 };
-gasolinejb.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_gasolinejuicebox.anm2")
-
 
 function gasolinejb:cacheUpdate(player, cacheFlag)
 	--Damage and firedelay down
@@ -19,9 +14,8 @@ function gasolinejb:cacheUpdate(player, cacheFlag)
 			player.Damage = player.Damage - 1;
 		end
 		
-		--CACHE_FIREDELAY is broken rn so we need to use workarounds
 		if (cacheFlag == CacheFlag.CACHE_FIREDELAY) then
-			gasolinejb.TearBool = true;
+			player.MaxFireDelay = player.MaxFireDelay * 1.5 + 2;
 		end
 		
 		--Not really sure how to set range. Documentation gives me 3 different attributes for range
@@ -157,27 +151,6 @@ function gasolinejb:ludoSynergy()
 	player:EvaluateItems()
 end
 
---FireDelay workaround
-function gasolinejb:updateFireDelay()
-	local player = Isaac.GetPlayer(0);
-	if (gasolinejb.TearBool == true) then
-		player.MaxFireDelay = player.MaxFireDelay * 1.5 + 2;
-		gasolinejb.TearBool = false;
-	end
-end
-
-
---Checks if player has item, and gives him the costume
-function gasolinejb:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		gasolinejb.hasItem = false
-	end
-	if gasolinejb.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_GASOLINE_JB) then
-		player:AddNullCostume(gasolinejb.costumeID)
-		gasolinejb.hasItem = true
-	end
-end
-
 function gasolinejb:reset(player)
 	if Game():GetFrameCount() <= 1 then
 		gasolinejb.hasLudo = false
@@ -205,9 +178,7 @@ function gasolinejb:restoreLudo()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, gasolinejb.reset)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, gasolinejb.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, gasolinejb.cacheUpdate);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.TearsToFlames);
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.updateFireDelay);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.restoreLudo);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, gasolinejb.prohibitTears);

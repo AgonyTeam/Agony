@@ -1,19 +1,4 @@
-
-local techLessThanThree =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-techLessThanThree.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_techlessthan3.anm2")
-
-function techLessThanThree:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		techLessThanThree.hasItem = false
-	end
-	if techLessThanThree.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_TECH_LESS_THAN_3) then
-		player:AddNullCostume(techLessThanThree.costumeID)
-		techLessThanThree.hasItem = true
-	end
-end
+local techLessThanThree =  {}
 
 function techLessThanThree:onUpdate()
 	local ents = Isaac.GetRoomEntities()
@@ -64,4 +49,3 @@ end
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, techLessThanThree.onNpcUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, techLessThanThree.onTakeDmg);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, techLessThanThree.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, techLessThanThree.onPlayerUpdate)

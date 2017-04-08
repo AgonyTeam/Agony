@@ -1,12 +1,7 @@
 --local item_Tourette = Isaac.GetItemIdByName("Tourette")
-
 local tourette =  {
 	TearBool = false,
-	hasItem = nil, --used for costume
-	costumeID = nil
 }
-tourette.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_tourette.anm2")
-
 
 function tourette:randomTear()
 
@@ -56,19 +51,4 @@ function tourette:randomTear()
 	end
 end
 
-function tourette:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		tourette.hasItem = false
-	end
-	
-
-	if player:HasCollectible(CollectibleType.AGONY_C_TOURETTE) then
-		if tourette.hasItem == false then
-			player:AddNullCostume(tourette.costumeID)
-			tourette.hasItem = true
-		end
-	end
-end
-
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, tourette.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, tourette.randomTear)

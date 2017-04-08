@@ -1,104 +1,110 @@
 <items gfxroot="gfx/items/" version="1">
-	<passive cache="luck" name="Lucky Leg" description="You feel really lucky" gfx="collectibles_luckyleg.png" />
-	<passive cache="damage" name="Double Down" description="Mysterious placeholder text" gfx="collectibles_doubledown.png" />
-	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" />
-	<passive cache="damage speed" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" />
-	<passive cache="damage range firedelay" name="Gasoline Juicebox" description="Tastes weird..." gfx="collectibles_gasolinejuicebox.png" />
-	<passive cache="all" name="Radioactive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" />
-	<passive name="Vomit Cake" description="Mysterious placeholder text" gfx="collectibles_vomitcake.png" />
-	<passive name="Tourette" description="Mysterious placeholder text" gfx="collectibles_tourette.png" />
-	<passive cache="damage" name="You're a Big Guy" description="For you" gfx="collectibles_youreabigguy.png" maxhearts="2" />
-	<passive cache="damage" name="Knowledge = Power" description="Mysterious placeholder text" gfx="collectibles_knowledgeequalspower.png" />
-	<passive cache="damage" name="Wrath = Power" description="Mysterious placeholder text" gfx="collectibles_wrathequalspower.png" />
-	<passive cache ="firedelay speed" name="Hyperactive" description="Mysterious placeholder text" gfx="collectibles_hyperactive.png" />
-	<passive name="Tantrum" description="Mysterious placeholder text" gfx="collectibles_tantrum.png" />
-	<passive name="Suicide God" description="Mysterious placeholder text" gfx="collectibles_suicidegod.png" />
-	<passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" />
-	<passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" />
-	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" />
-	<passive cache ="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" />
-	<passive name="Technology 9000" description="Mysterious placeholder text" gfx="collectibles_technology9000.png" />
-	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" />
-	<passive name="Pythagore's Body" description="Mysterious placeholder text" gfx="collectibles_pythagoresbody.png" />
-	<passive cache="shotspeed damage firedelay" name="Yeux Revolver" description="Mysterious placeholder text" gfx="collectibles_yeuxrevolver.png" />
-	<passive cache="damage" name="Poverty = Power" description="Mysterious placeholder text" gfx="collectibles_povertyequalspower.png" />
-	<passive name="Tumor" description="Mysterious placeholder text" gfx="collectibles_tumor.png" />
-	<passive name="Special One" description="Mysterious placeholder text" gfx="collectibles_specialone.png" />
-	<!--<passive cache="all" name="The Ludovico Experiment" description="Mysterious placeholder text" gfx="collectibles_ludovicoexperiment.png" />-->
-	<passive cache="damage firedelay" name="Ferrofluid" description="Mysterious placeholder text" gfx="collectibles_ferrofluid.png" />
-	<passive cache="damage luck" name="Leprechaun's Contract" description="Mysterious placeholder text" gfx="collectibles_leprechaunscontract.png" />
-	<passive name="Fragile Conception" description="Mysterious placeholder text" gfx="collectibles_fragileconception.png" />
-	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" />-->
-	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" />
-	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" />
-	<passive name="Till Death Do Us Apart" description="Form an alliance" gfx="collectibles_tilldeathdousapart.png"  />
-	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" />
-	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" />
-	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" />
-	<passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" />
-	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" />
-	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" />
-	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" />
-	<passive cache="firedelay damage" name="Cashew Milk" description="Mysterious placeholder text" gfx="collectibles_cashewmilk.png" />
-	<passive cache="damage" name="Safe Space" description="Mysterious placeholder text" gfx="collectibles_safespace.png" maxhearts="2" />
-	<passive name="Social Anxiety" description="Mysterious placeholder text" gfx="collectibles_socialanxiety.png" />
-	<passive name="Milkman" description="My Milk is Delicious" gfx="collectibles_milkman.png" />
-	<passive cache="firedelay" name="Jaundice" description="Mysterious placeholder text" gfx="collectibles_jaundice.png" />
-	<passive name="Placeholder" description="Mysterious placeholder text" gfx="collectibles_placeholder.png" />
-	<passive name="The Father's Blessing" description="Mysterious placeholder text" gfx="collectibles_thefathersblessing.png" />
-	<passive name="Toy Hammer" description="Mysterious placeholder text" gfx="collectibles_toyhammer.png" />
-	<passive name="Tech <3" description="Mysterious placeholder text" gfx="collectibles_techlessthan3.png" />
-	<passive cache="damage speed" name="Pilgrim's Shoe" description="Mysterious placeholder text" gfx="collectibles_pilgrimsshoe.png" />
-	<passive cache="shotspeed range" name="Smoker's Lung" description="Mysterious placeholder text" gfx="collectibles_smokerslung.png" />
+	<!--Passive IDs: 1-300 -->
+	<passive cache="luck" name="Lucky Leg" description="You feel really lucky" gfx="collectibles_luckyleg.png" id="1" />
+	<passive cache="damage" name="Double Down" description="Mysterious placeholder text" gfx="collectibles_doubledown.png" id="2" />
+	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" id="3" />
+	<passive cache="damage speed" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" id="4" />
+	<passive cache="damage range firedelay" name="Gasoline Juicebox" description="Tastes weird..." gfx="collectibles_gasolinejuicebox.png" id="5" />
+	<passive cache="all" name="Radioactive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" id="6" />
+	<passive name="Vomit Cake" description="Mysterious placeholder text" gfx="collectibles_vomitcake.png" id="7" />
+	<passive name="Tourette" description="Mysterious placeholder text" gfx="collectibles_tourette.png" id="8" />
+	<passive cache="damage" name="You're a Big Guy" description="For you" gfx="collectibles_youreabigguy.png" maxhearts="2" id="9" />
+	<passive cache="damage" name="Knowledge = Power" description="Mysterious placeholder text" gfx="collectibles_knowledgeequalspower.png" id="10" />
+	<passive cache="damage" name="Wrath = Power" description="Mysterious placeholder text" gfx="collectibles_wrathequalspower.png" id="11" />
+	<passive cache ="firedelay speed" name="Hyperactive" description="Mysterious placeholder text" gfx="collectibles_hyperactive.png" id="12" />
+	<passive name="Tantrum" description="Mysterious placeholder text" gfx="collectibles_tantrum.png" id="13" />
+	<passive name="Suicide God" description="Mysterious placeholder text" gfx="collectibles_suicidegod.png" id="14" />
+	<passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" id="15" />
+	<passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" id="16" />
+	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" id="17" />
+	<passive cache ="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" id="18" />
+	<passive name="Technology 9000" description="Mysterious placeholder text" gfx="collectibles_technology9000.png" id="19" />
+	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" id="20" />
+	<passive name="Pythagore's Body" description="Mysterious placeholder text" gfx="collectibles_pythagoresbody.png" id="21" />
+	<passive cache="shotspeed damage firedelay" name="Yeux Revolver" description="Mysterious placeholder text" gfx="collectibles_yeuxrevolver.png" id="22" />
+	<passive cache="damage" name="Poverty = Power" description="Mysterious placeholder text" gfx="collectibles_povertyequalspower.png" id="23" />
+	<passive name="Tumor" description="Mysterious placeholder text" gfx="collectibles_tumor.png" id="24" />
+	<passive name="Special One" description="Mysterious placeholder text" gfx="collectibles_specialone.png" id="25" />
+	<!--<passive cache="all" name="The Ludovico Experiment" description="Mysterious placeholder text" gfx="collectibles_ludovicoexperiment.png" id="26" />-->
+	<passive cache="damage firedelay" name="Ferrofluid" description="Mysterious placeholder text" gfx="collectibles_ferrofluid.png" id="27" />
+	<passive cache="damage luck" name="Leprechaun's Contract" description="Mysterious placeholder text" gfx="collectibles_leprechaunscontract.png" id="28" />
+	<passive name="Fragile Conception" description="Mysterious placeholder text" gfx="collectibles_fragileconception.png" id="29" />
+	<!--<passive name="The Ludovico Theory" description="Mysterious placeholder text" gfx="collectibles_theludovicotheory.png" id="30" />-->
+	<passive name="Rigid Mind" description="Mysterious placeholder text" gfx="collectibles_rigidmind.png" id="31" />
+	<passive name="Dice Tattoo" description="Mysterious placeholder text" gfx="collectibles_dicetattoo.png" id="32" />
+	<passive name="Till Death Do Us Apart" description="Form an alliance" gfx="collectibles_tilldeathdousapart.png" id="33" />
+	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" id="34" />
+	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" id="35" />
+	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" id="36" />
+	<passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" id="37" />
+	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" id="38" />
+	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" id="39" />
+	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" id="40" />
+	<passive cache="firedelay damage" name="Cashew Milk" description="Mysterious placeholder text" gfx="collectibles_cashewmilk.png" id="41" />
+	<passive cache="damage" name="Safe Space" description="Mysterious placeholder text" gfx="collectibles_safespace.png" maxhearts="2" id="42" />
+	<passive name="Social Anxiety" description="Mysterious placeholder text" gfx="collectibles_socialanxiety.png" id="43" />
+	<passive name="Milkman" description="My Milk is Delicious" gfx="collectibles_milkman.png" id="44" />
+	<passive cache="firedelay" name="Jaundice" description="Mysterious placeholder text" gfx="collectibles_jaundice.png" id="45" />
+	<passive name="Placeholder" description="Mysterious placeholder text" gfx="collectibles_placeholder.png" id="46" />
+	<passive name="The Father's Blessing" description="Mysterious placeholder text" gfx="collectibles_thefathersblessing.png" id="47" />
+	<passive name="Toy Hammer" description="Mysterious placeholder text" gfx="collectibles_toyhammer.png" id="48" />
+	<passive name="Tech <3" description="Mysterious placeholder text" gfx="collectibles_techlessthan3.png" id="49" />
+	<passive cache="damage speed" name="Pilgrim's Shoe" description="Mysterious placeholder text" gfx="collectibles_pilgrimsshoe.png" id="50" />
+	<passive cache="shotspeed range" name="Smoker's Lung" description="Mysterious placeholder text" gfx="collectibles_smokerslung.png" id="51" />
 
-	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
-	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />
-	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" />	
-	<active description="Mysterious placeholder text" gfx="collectibles_magickit.png" maxcharges="0" name="Magic Kit" />
-	<active cache="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" />
-	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" />
-	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="3" name="D3" />
-	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" />
-	<active description="Mysterious placeholder text" gfx="collectibles_brothercancer.png" maxcharges="6" name="Brother Cancer" />
-	<active description="Mysterious placeholder text" gfx="collectibles_remembermenow.png" maxcharges="0" name="Remember Me Now" />
-	<active description="Mysterious placeholder text" gfx="collectibles_cornucopia.png" maxcharges="12" name="Cornucopia" />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest5.png" maxcharges="3" name="Pandora's Chest     " />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest4.png" maxcharges="3" name="Pandora's Chest    " />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest3.png" maxcharges="6" name="Pandora's Chest   " />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest2.png" maxcharges="6" name="Pandora's Chest  " />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest1.png" maxcharges="12" name="Pandora's Chest " />
-	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" />
-	<active description="Mysterious placeholder text" gfx="collectibles_d5.png" maxcharges="5" name="D5" />
-	<active description="Feels weird to walk a mile in those" gfx="collectibles_someonesshoe.png" maxcharges="300" name="Someone's Shoe" />
-	<active description="Mysterious placeholder text" gfx="collectibles_theway.png" maxcharges="6" name="The Way" />
-	<active description="Mysterious placeholder text" gfx="collectibles_lilredbook.png" maxcharges="3" name="Lil'Red Book" />
-	<active description="Don't be fooled" gfx="collectibles_payritenugget.png" maxcharges="1" name="Pyrite Nugget" />
-	<active description="Mysterious placeholder text" gfx="collectibles_irritatingbracelets.png" maxcharges="1" name="Irritating Bracelets" />
-	<active name="Birthday Gift" description="Mysterious placeholder text" gfx="collectibles_birthdaygift.png" />
-	<active name="Vanity" description="Mysterious placeholder text" gfx="collectibles_vanity.png" />
-	<active name="The Fireplace" description="Mysterious placeholder text" gfx="collectibles_thefireplace.png" maxcharges="1" />
-	<active name="Worm Knot" description="Mysterious placeholder text" gfx="collectibles_wormknot.png" maxcharges="1" />
-	<active name="Easter Egg" description="Mysterious placeholder text" gfx="collectibles_easteregg.png" maxcharges="0" />
-
-	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" />
-	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_drunkenfly.png" name="Drunken Fly" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_metalbaby.png" name="Metal Baby" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_goatfetus.png" name="Goat Fetus" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_mommysdemon.png" name="Mommy's Demon" />
-	<familiar description="Sack of Sacks of Sacks of Sacks of Sacks of..." gfx="collectibles_sackofsacksofsacks.png" name="Sack of Sacks of Sacks" />
-	<familiar description="Or is it a Bag of Sacks..?" gfx="collectibles_sackofbags.png" name="Sack of Bags" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_teslababy.png" name="Tesla Baby" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_burntbaby.png" name="Burnt Baby" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_chestofchests.png" name="Chest of Chests" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_grandpafly.png" name="Grandpa Fly" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_bloatedbaby.png" name="Bloated Baby" />
-	<familiar description="Mysterious placeholder text" gfx="collectibles_waitno.png" name="Wait, No." />
-	<familiar cache ="damage firedelay speed luck" name="Despair" description="Mysterious placeholder text" gfx="collectibles_despair.png" />
-
-	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" />
-	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" />
-	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" />
-	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" />
+	<!--Active IDs: 301-600 -->
+	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" id="301" />
+	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" id="302" />
+	<active description="Mysterious placeholder text" gfx="collectibles_runestone.png" maxcharges="6" name="Runestone" id="303" />	
+	<active description="Mysterious placeholder text" gfx="collectibles_magickit.png" maxcharges="0" name="Magic Kit" id="304" />
+	<active cache="all" description="Mysterious placeholder text" gfx="collectibles_littlesugardumdum.png" maxcharges="4" name="Little Sugar Dumdum" id="305" />
+	<active description="Mysterious placeholder text" gfx="collectibles_loadeddice.png" maxcharges="6" name="Loaded Dice" id="306" />
+	<active description="Mysterious placeholder text" gfx="collectibles_d3.png" maxcharges="3" name="D3" id="307" />
+	<active description="Please don't do it" gfx="collectibles_cyanide.png" maxcharges="0" name="Cyanide" id="308" />
+	<active description="Mysterious placeholder text" gfx="collectibles_brothercancer.png" maxcharges="6" name="Brother Cancer" id="309" />
+	<active description="Mysterious placeholder text" gfx="collectibles_remembermenow.png" maxcharges="0" name="Remember Me Now" id="310" />
+	<active description="Mysterious placeholder text" gfx="collectibles_cornucopia.png" maxcharges="12" name="Cornucopia" id="311" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest5.png" maxcharges="3" name="Pandora's Chest     " id="312" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest4.png" maxcharges="3" name="Pandora's Chest    " id="313" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest3.png" maxcharges="6" name="Pandora's Chest   " id="314" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest2.png" maxcharges="6" name="Pandora's Chest  " id="315" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest1.png" maxcharges="12" name="Pandora's Chest " id="316" />
+	<active description="Mysterious placeholder text" gfx="collectibles_pandoraschest0.png" maxcharges="12" name="Pandora's Chest" id="317" />
+	<active description="Mysterious placeholder text" gfx="collectibles_d5.png" maxcharges="5" name="D5" id="318" />
+	<active description="Feels weird to walk a mile in those" gfx="collectibles_someonesshoe.png" maxcharges="300" name="Someone's Shoe" id="319" />
+	<active description="Mysterious placeholder text" gfx="collectibles_theway.png" maxcharges="6" name="The Way" id="320" />
+	<active description="Mysterious placeholder text" gfx="collectibles_lilredbook.png" maxcharges="3" name="Lil'Red Book" id="321" />
+	<active description="Don't be fooled" gfx="collectibles_payritenugget.png" maxcharges="1" name="Pyrite Nugget" id="322" />
+	<active description="Mysterious placeholder text" gfx="collectibles_irritatingbracelets.png" maxcharges="1" name="Irritating Bracelets" id="323" />
+	<active name="Birthday Gift" description="Mysterious placeholder text" gfx="collectibles_birthdaygift.png" id="324" />
+	<active name="Vanity" description="Mysterious placeholder text" gfx="collectibles_vanity.png" id="325" />
+	<active name="The Fireplace" description="Mysterious placeholder text" gfx="collectibles_thefireplace.png" maxcharges="1" id="326" />
+	<active name="Worm Knot" description="Mysterious placeholder text" gfx="collectibles_wormknot.png" maxcharges="1" id="327" />
+	<active name="Easter Egg" description="Mysterious placeholder text" gfx="collectibles_easteregg.png" maxcharges="0" id="328" />
+	
+	<!--Familiar IDs: 601-??? -->
+	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" id="601" />
+	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" id="602" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" id="603" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_drunkenfly.png" name="Drunken Fly" id="604" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_metalbaby.png" name="Metal Baby" id="605" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_goatfetus.png" name="Goat Fetus" id="606" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_mommysdemon.png" name="Mommy's Demon" id="607" />
+	<familiar description="Sack of Sacks of Sacks of Sacks of Sacks of..." gfx="collectibles_sackofsacksofsacks.png" name="Sack of Sacks of Sacks" id="608" />
+	<familiar description="Or is it a Bag of Sacks..?" gfx="collectibles_sackofbags.png" name="Sack of Bags" id="609" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_teslababy.png" name="Tesla Baby" id="610" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_burntbaby.png" name="Burnt Baby" id="611" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_chestofchests.png" name="Chest of Chests" id="612" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_grandpafly.png" name="Grandpa Fly" id="613" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_bloatedbaby.png" name="Bloated Baby" id="614" />
+	<familiar description="Mysterious placeholder text" gfx="collectibles_waitno.png" name="Wait, No." id="615" />
+	<familiar cache ="damage firedelay speed luck" name="Despair" description="Mysterious placeholder text" gfx="collectibles_despair.png" id="616" />
+	
+	<!--Trinket IDs: 1-???-->
+	<!--dunno why nicalis seperated trinket ids from all others, but not actives from passives and familiars-->
+	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" id="1" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" id="2" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" id="3" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" id="4" />
+>>>>>>> b760505a93f0206ca90d2b7c7ceb6b72a61af134
 </items>

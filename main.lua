@@ -45,7 +45,8 @@ local respawnIDs = { --holds all IDs that need to be respawned
 
 --spritesToRender table
 spritesToRender = {}
-
+--All custom pedestals that need to stay that way
+pedestalsToRender = {}
 --make the game save the saveData table
 function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
@@ -328,6 +329,7 @@ function Agony:clearSaveData()
 			end
 		end
 		Agony:SaveNow()
+		Isaac.DebugString("Reset Agony Savedata")
 	end
 end
 
@@ -384,6 +386,45 @@ function Agony:ClearFlags(flagSource, flags)
 	return flagSource & (~flags)
 end
 
+--gets the sprite path of a collectible
+function Agony:getItemGfxFromId(id)
+	id = tonumber(id) or 1
+	local item = Isaac.GetItemConfig():GetCollectible(id)
+	return item.GfxFileName
+end
+
+--loads a custom pedestal sprite
+function Agony:loadCustomPedestal(ped, pType, data, index)
+	pType = pType or 0
+	index = index or #pedestalsToRender+1
+	data = data or ped:GetData()
+	local sprite = ped:GetSprite()
+	
+	for k, v in pairs(data) do
+		ped:GetData()[k] = v
+	end
+	sprite:Load("gfx/Items/Pick Ups/Pedestals/animation.anm2", true)
+	sprite:ReplaceSpritesheet(1, Agony:getItemGfxFromId(ped.SubType))
+	sprite:LoadGraphics()
+	sprite:SetOverlayFrame("Alternates", pType)
+	sprite:Play("Idle")
+	pedestalsToRender[index] = {ped, pType, ped:GetData()}
+end
+
+--reload custom pedestal gfx when the item changes
+function Agony:reloadPedestal()
+	for index, pedTbl in pairs(pedestalsToRender) do
+		local ped = pedTbl[1]
+		local pType = pedTbl[2]
+		local pData = pedTbl[3]
+		if ped:GetSprite():GetFilename() ~= "gfx/Items/Pick Ups/Pedestals/animation.anm2" then
+			Agony:loadCustomPedestal(ped, pType, pData, index)
+		end
+		if not ped:Exists() or ped:GetSprite():GetOverlayFrame() == 0 then
+			pedestalsToRender[index] = nil
+		end
+	end
+end
 
 --Extra Bits
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
@@ -391,6 +432,7 @@ Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 --Register Agony's ID
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
+Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 
 --Debug
 require("Debug");
@@ -506,6 +548,8 @@ require("code/Misc/Transformations/BigD")
 require("code/Items/Pick Ups/Pills/PartyPills");
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
+--require("code/Items/Pick Ups/Cards/LotteryTicket")
+require("code/Items/Pick Ups/Cards/RepairWrench")
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
@@ -537,3 +581,4 @@ Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)

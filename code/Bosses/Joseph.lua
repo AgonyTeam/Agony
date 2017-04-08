@@ -8,10 +8,6 @@ table.insert(joseph.weakFlyList,EntityType.ENTITY_MOTER)
 table.insert(joseph.weakFlyList,EntityType.ENTITY_DART_FLY)
 table.insert(joseph.weakFlyList,EntityType.ENTITY_RING_OF_FLIES)
 
-EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
-
-
-
 function joseph:ai_main(entity)
 	local room = Game():GetRoom();
 	local sprite = entity:GetSprite();

@@ -1,24 +1,10 @@
 --local item_ElectricHair = Isaac.GetItemIdByName("Electric Hair");
-local electricHair =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-electricHair.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_electrichair.anm2")
+local electricHair =  {}
 
 --Grants +0.2 speed
 function electricHair:cacheUpdate (player,cacheFlag)
 	if (player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR)) and (cacheFlag == CacheFlag.CACHE_SPEED) then
 		player.MoveSpeed = player.MoveSpeed + 0.2;
-	end
-end
-
-function electricHair:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		electricHair.hasItem = false
-	end
-	if electricHair.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_ELECTRIC_HAIR) then
-		player:AddNullCostume(electricHair.costumeID)
-		electricHair.hasItem = true
 	end
 end
 
@@ -55,8 +41,5 @@ function electricHair:onUpdate()
 	end
 end
 
-
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, electricHair.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, electricHair.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, electricHair.cacheUpdate)

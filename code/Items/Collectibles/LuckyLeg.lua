@@ -18,9 +18,9 @@ function luckyLeg:onPlayerUpdate(player)
 		luckyLeg.hasItem = false
 	end
 	if luckyLeg.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_LUCKY_LEG) then
-		player:AddNullCostume(luckyLeg.costumeID)
+		player:AddCostume(Isaac.GetItemConfig():GetCollectible(CollectibleType.AGONY_C_LUCKY_LEG), false)
 		luckyLeg.hasItem = true
 	end
 end
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, luckyLeg.onPlayerUpdate)
+--Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, luckyLeg.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, luckyLeg.cacheUpdate)
