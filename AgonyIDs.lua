@@ -112,6 +112,7 @@ CollectibleType["AGONY_C_PILGRIMS_SHOE"] = Isaac.GetItemIdByName("Pilgrim's Shoe
 CollectibleType["AGONY_C_WORM_KNOT"] = Isaac.GetItemIdByName("Worm Knot");
 CollectibleType["AGONY_C_EASTER_EGG"] = Isaac.GetItemIdByName("Easter Egg");
 CollectibleType["AGONY_C_SMOKERS_LUNG"] = Isaac.GetItemIdByName("Smoker's Lung");
+CollectibleType["AGONY_C_STINK_EYE"] = Isaac.GetItemIdByName("Stink Eye");
 
 --Trinkets
 TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
@@ -149,6 +150,7 @@ AgonyTearSubtype["JAUNDICE"] = 2
 AgonyTearSubtype["TOY_HAMMER"] = 3
 AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
 AgonyTearSubtype["BIG_D"] = 5
+AgonyTearSubtype["STINK_EYE"] = 6
 
 --Constants Updater
 local enumsToUpdate = {

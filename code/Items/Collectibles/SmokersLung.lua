@@ -73,8 +73,11 @@ function smokersLung:onUpdate()
 				ents[i]:ToTear().FallingAcceleration = 0
 				ents[i]:ToTear().FallingSpeed = 0
 				ents[i].Velocity = ents[i].Velocity:__mul(0.97)
-				if ents[i].FrameCount == 169 then
-					ents[i]:Remove()
+				if ents[i].FrameCount > 169 then
+					ents[i].SizeMulti = ents[i].SizeMulti*0.95
+					if ents[i].FrameCount > 250 then
+						ents[i]:Remove()
+					end
 				end
 			end
 		end

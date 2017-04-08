@@ -28,17 +28,17 @@ end
 function toyHammer:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
   if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.TOY_HAMMER and hurtEntity:IsVulnerableEnemy() then
-    hurtEntity:GetData().slagged = 120
+    hurtEntity:GetData().status_slagged = 120
     hurtEntity:SetColor(Color(0.5, 0, 0.5, 1, 1, 1, 1), 120, 1, false, false)     	
   end
-  if hurtEntity:GetData().slagged ~= nil and hurtEntity:GetData().slagged > 0 then
+  if hurtEntity:GetData().status_slagged ~= nil and hurtEntity:GetData().status_slagged > 0 then
     hurtEntity:AddHealth(-dmgAmount)
   end  
 end
 
 function toyHammer:onNpcUpdate(npc)
-  if npc:GetData().slagged ~= nil and npc:GetData().slagged > 0 then
-    npc:GetData().slagged = npc:GetData().slagged -1
+  if npc:GetData().status_slagged ~= nil and npc:GetData().status_slagged > 0 then
+    npc:GetData().status_slagged = npc:GetData().status_slagged -1
   end
 end
 
