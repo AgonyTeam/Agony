@@ -35,6 +35,7 @@
 	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="passive"  id="34" />
 	<costume name="The Father's Blessing" anm2path="costume_thefathersblessing.anm2" type="passive"  id="47" />
 	<costume name="Toy Hammer" anm2path="costume_toyhammer.anm2" type="passive"  id="48" />
+	<costume name="Stink Eye" anm2path="costume_stinkeye.anm2" type="passive"  id="52" />
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
