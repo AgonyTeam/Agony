@@ -1,19 +1,9 @@
 
 local smokersLung =  {
-	hasItem = nil, --used for costume
-	costumeID = nil,
 	lastAction = nil
 }
-smokersLung.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_smokerslung.anm2")
 
 function smokersLung:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		smokersLung.hasItem = false
-	end
-	if smokersLung.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_SMOKERS_LUNG) then
-		--player:AddNullCostume(smokersLung.costumeID)
-		smokersLung.hasItem = true
-	end
 	if player:GetData().smokersLungCooldown == nil then
 		player:GetData().smokersLungCooldown = 0 
 	end
