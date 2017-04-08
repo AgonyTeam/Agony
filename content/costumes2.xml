@@ -1,31 +1,30 @@
 <costumes anm2root="gfx/characters/">
 	<costume name="Lucky Leg" anm2path="costume_luckyleg.anm2" type="passive" id="1" />
-	<costume name="Gasoline Juicebox" anm2path="costume_gasolinejuicebox.anm2" type="passive" hasSkinAlt="true" id="5" />
 	<costume name="Double Down" anm2path="costume_doubledown.anm2" type="passive" hasSkinAlt="true" id="2" />
-	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="passive"  id="14" />
+	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="passive"  id="3" />
+	<costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="passive"  id="4" />
+	<costume name="Gasoline Juicebox" anm2path="costume_gasolinejuicebox.anm2" type="passive" hasSkinAlt="true" id="5" />
 	<costume name="Radioactive Pizza" anm2path="costume_radioactivepizza.anm2" type="passive"  id="6" />
+	<costume name="Vomit Cake" anm2path="costume_vomitcake.anm2" type="passive"  id="7" />
+	<costume name="Tourette" anm2path="costume_tourette.anm2" type="passive"  id="8" />
+	<costume name="You're a Big Guy" anm2path="costume_youreabigguy.anm2" type="passive"  id="9" />
+	<costume name="Wrath = Power" anm2path="costume_wrathequalspower.anm2" type="passive"  id="11" />
 	<costume name="Tumor" anm2path="costume_tumor.anm2" type="passive"  id="24" />
 	<costume name="Poverty = Power" anm2path="costume_povertyequalspower.anm2" type="passive"  id="23" />
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="passive"  id="27" />
+	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="passive"  id="14" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="passive"  id="29" />
-	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="passive"  id="34" />
 	<costume name="Overgrown Spine" anm2path="costume_overgrownspine.anm2" type="passive"  id="17" />
+	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="passive"  id="18" />
 	<costume name="Dice Tattoo" anm2path="costume_dicetattoo.anm2" type="passive"  id="32" />
-	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="passive"  id="3" />
 	<costume name="Till Death Do Us Apart" anm2path="costume_tilldeathdousappart.anm2" type="passive"  id="33" />
 	<costume name="Electric Hair" anm2path="costume_electrichair.anm2" type="passive"  id="20" />
 	<costume name="Knowledge = Power" anm2path="costume_knowledgeequalspower.anm2" type="passive"  id="10" />
-	<costume name="Parasites" anm2path="costume_parasites.anm2" type="passive"  id="36" />
-	<costume name="Vomit Cake" anm2path="costume_vomitcake.anm2" type="passive"  id="7" />
-	<costume name="Gold Man" anm2path="costume_goldman.anm2" type="passive"  id="38" />
-	<costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="passive"  id="4" />
-	<costume name="Tourette" anm2path="costume_tourette.anm2" type="passive"  id="8" />
-	<costume name="Spooderboi" anm2path="costume_spooderboi.anm2" type="passive"  id="37" />
-	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="passive"  id="18" />
-	<costume name="Wrath = Power" anm2path="costume_wrathequalspower.anm2" type="passive"  id="11" />
 	<costume name="Yeux Revolver" anm2path="costume_yeuxrevolver.anm2" type="passive"  id="22" />
+	<costume name="Parasites" anm2path="costume_parasites.anm2" type="passive"  id="36" />
+	<costume name="Gold Man" anm2path="costume_goldman.anm2" type="passive"  id="38" />
+	<costume name="Spooderboi" anm2path="costume_spooderboi.anm2" type="passive"  id="37" />
 	<costume name="Technology 9000" anm2path="costume_technology9000.anm2" type="passive"  id="19" />
-	<costume name="You're a Big Guy" anm2path="costume_youreabigguy.anm2" type="passive"  id="9" />
 	<costume name="Safe Space" anm2path="costume_safespace.anm2" type="passive"  id="42" />
 	<costume name="Tech <3" anm2path="costume_techlessthan3.anm2" type="passive"  id="49" />
 	<costume name="Sacramental Wine" anm2path="costume_sacramentalwine.anm2" type="passive"  id="39" />
@@ -33,7 +32,9 @@
 	<costume name="Placeholder" anm2path="costume_placeholder.anm2" type="passive"  id="46" />
 	<costume name="Leprechaun's Contract" anm2path="costume_leprechaunscontract.anm2" type="passive"  id="28" />
 	<costume name="Cashew Milk" anm2path="costume_cashewmilk.anm2" type="passive"  id="41" />
+	<costume name="Personal Bubble" anm2path="costume_personalbubble.anm2" type="passive"  id="34" />
 	<costume name="The Father's Blessing" anm2path="costume_thefathersblessing.anm2" type="passive"  id="47" />
+	<costume name="Toy Hammer" anm2path="costume_toyhammer.anm2" type="passive"  id="48" />
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />

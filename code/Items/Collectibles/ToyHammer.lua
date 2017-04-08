@@ -1,18 +1,5 @@
-local toyHammer =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-toyHammer.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_toyhammer.anm2")
+local toyHammer =  {}
 
-function toyHammer:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		toyHammer.hasItem = false
-	end
-	if toyHammer.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_THE_TOY_HAMMER) then
-		--player:AddNullCostume(toyHammer.costumeID)
-		toyHammer.hasItem = true
-	end
-end
 
 function toyHammer:onUpdate()
 	local ents = Isaac.GetRoomEntities()
@@ -27,10 +14,10 @@ function toyHammer:onUpdate()
   	end
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
-    		if entity.FrameCount == 1 and Prob == 1 then
+    		if entity.FrameCount == 1 and Prob == 0 then
     			--TODO : Change gfx to hammer shit idc
-          --entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_techlessthan3.png")
-          --entity:GetSprite():LoadGraphics()
+          entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_toyhammer.png")
+          entity:GetSprite():LoadGraphics()
     			entity.SubType = AgonyTearSubtype.TOY_HAMMER
     		end
     	end
@@ -58,4 +45,3 @@ end
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, toyHammer.onNpcUpdate)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, toyHammer.onTakeDmg);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, toyHammer.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, toyHammer.onPlayerUpdate)
