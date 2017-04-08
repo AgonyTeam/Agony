@@ -107,5 +107,4 @@
 	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" id="2" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" id="3" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" id="4" />
->>>>>>> b760505a93f0206ca90d2b7c7ceb6b72a61af134
 </items>
