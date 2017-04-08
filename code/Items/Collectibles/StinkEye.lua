@@ -29,7 +29,11 @@ function stinkEye:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
   if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.STINK_EYE and hurtEntity:IsVulnerableEnemy() then
     hurtEntity:GetData().status_stinks = 120
-    hurtEntity:SetColor(Color(0.5, 0.2, 0, 1, 1, 1, 1), 120, 1, false, false)     	
+    hurtEntity:SetColor(Color(0.5, 0.2, 0, 1, 1, 1, 1), 120, 1, false, false)
+    if hurtEntity.HitPoints < dmgAmount then
+        --not sure why this doesnt work
+       Game():GetRoom():SpawnGridEntity(Game():GetRoom():GetGridIndex(hurtEntity.Position), GridEntityType.GRID_POOP, 0, RNG():GetSeed(), 1)
+    end
   end 
 end
 
