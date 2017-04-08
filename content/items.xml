@@ -49,6 +49,7 @@
 	<passive name="Toy Hammer" description="Mysterious placeholder text" gfx="collectibles_toyhammer.png" />
 	<passive name="Tech <3" description="Mysterious placeholder text" gfx="collectibles_techlessthan3.png" />
 	<passive cache="damage speed" name="Pilgrim's Shoe" description="Mysterious placeholder text" gfx="collectibles_pilgrimsshoe.png" />
+	<passive cache="shotspeed range" name="Smoker's Lung" description="Mysterious placeholder text" gfx="collectibles_smokerslung.png" />
 
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" />
 	<active description="Mysterious placeholder text" gfx="collectibles_therock.png" maxcharges="1" name="The Rock" />

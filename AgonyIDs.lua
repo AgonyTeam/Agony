@@ -111,6 +111,7 @@ CollectibleType["AGONY_C_TECH_LESS_THAN_3"] = Isaac.GetItemIdByName("Tech <3");
 CollectibleType["AGONY_C_PILGRIMS_SHOE"] = Isaac.GetItemIdByName("Pilgrim's Shoe");
 CollectibleType["AGONY_C_WORM_KNOT"] = Isaac.GetItemIdByName("Worm Knot");
 CollectibleType["AGONY_C_EASTER_EGG"] = Isaac.GetItemIdByName("Easter Egg");
+CollectibleType["AGONY_C_SMOKERS_LUNG"] = Isaac.GetItemIdByName("Smoker's Lung");
 
 --Trinkets
 TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
