@@ -18,7 +18,12 @@ function theRock:spawnRock()
 		rock = GridEntityType.GRID_ROCK
 	end
 	--theRock.rseed = (RNG():GetSeed()*theRock.rseed)%100
-	room:SpawnGridEntity(room:GetGridIndex(Isaac.GetFreeNearPosition(Game():GetPlayer(0).Position, 25)), rock, 0, RNG():GetSeed(), 1)
+	local pos = Isaac.GetFreeNearPosition(Game():GetPlayer(0).Position, 25)
+	room:SpawnGridEntity(room:GetGridIndex(pos), rock, 0, RNG():GetSeed(), 1)
+	--POOF!
+	local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+	col:Reset()
+	Game():SpawnParticles(pos, EffectVariant.POOF01, 1, 1, col, 0)
 	return true
 end
 

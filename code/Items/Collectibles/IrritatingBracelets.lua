@@ -7,6 +7,10 @@ function irritatingBracelets:onUse()
 	for i = 1, #entities do
 		if (entities[i].Type == EntityType.ENTITY_PROJECTILE) and entities[i].Position:Distance(player.Position) < 50 then
 			player:FireTear(entities[i].Position, entities[i].Velocity:__mul(-1), false, true, false)
+			--POOF!
+			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+			col:Reset()
+			Game():SpawnParticles(entities[i].Position, EffectVariant.POOF01, 1, 1, col, 0)
 			entities[i]:Remove()
 		end
 	end

@@ -32,6 +32,10 @@ function placeholder:onUpdate()
 						player:AddCollectible(placeholder.newestItem, 0, true)
 						saveData.placeholder.newestItem = placeholder.newestItem
 						Agony:SaveNow()
+						--POOF!
+						local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+						col:Reset()
+						Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
 					end
 				end
 			end  

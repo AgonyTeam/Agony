@@ -25,6 +25,10 @@ function diceTattoo:onUpdate()
 			    	local colletibles = Agony:getCurrentItems()
 		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
 		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES-1)+1, 0, true)
+		        	--POOF!
+					local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+					col:Reset()
+					Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
 	    		end
 	    	end
 		end

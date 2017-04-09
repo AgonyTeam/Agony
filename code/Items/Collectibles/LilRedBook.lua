@@ -14,6 +14,10 @@ function lilRedBook:onUse()
 		if entities[i]:IsVulnerableEnemy() then
 			entities[i].MaxHitPoints = totalHealth/totalVulnEntities
 			entities[i].HitPoints = entities[i].MaxHitPoints
+			--POOF!
+			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+			col:Reset()
+			Game():SpawnParticles(entities[i].Position, EffectVariant.BLOOD_PARTICLE , 1, 1, col, 0)
 		end
 	end
 	return true

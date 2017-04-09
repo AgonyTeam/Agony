@@ -13,7 +13,12 @@ function birthdayGift:onUse()
 		r = 3
 	end
 	for i = 1, r, 1 do
-		Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), nil)
+		local pos = Isaac.GetFreeNearPosition(player.Position, 50)
+		Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, birthdayGift.garbageItems[rng:RandomInt(#birthdayGift.garbageItems)+1], pos, Vector(0,0), nil)
+		--POOF!
+		local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+		col:Reset()
+		Game():SpawnParticles(pos, EffectVariant.POOF01, 1, 1, col, 0)
 	end
 	player:RemoveCollectible(CollectibleType.AGONY_C_BIRTHDAY_GIFT)
 	return true
