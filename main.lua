@@ -388,7 +388,7 @@ end
 
 --gets the sprite path of a collectible
 function Agony:getItemGfxFromId(id)
-	id = tonumber(id) or 1
+	--id = tonumber(id) or 1
 	local item = Isaac.GetItemConfig():GetCollectible(id)
 	return item.GfxFileName
 end
