@@ -26,6 +26,9 @@ function bloatedBaby:updateFam(fam)
 			famData.Tears[_] = nil
 		end
 	end
+	if famSprite:IsFinished("Hit") then
+		famSprite:Play("Idle")
+	end
 	fam:FollowParent() --important so the familiar stays in the line of familiars
 end
 
