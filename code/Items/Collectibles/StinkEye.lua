@@ -1,6 +1,5 @@
 local stinkEye =  {}
 
-
 function stinkEye:onUpdate()
 	local ents = Isaac.GetRoomEntities()
 	local player = Game():GetPlayer(0)
@@ -15,9 +14,8 @@ function stinkEye:onUpdate()
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
     		if entity.FrameCount == 1 and Prob == 0 then
-    			--TODO : Change gfx to idk
-          entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_stinkeye.png")
-          entity:GetSprite():LoadGraphics()
+				entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_stinkeye.png")
+				entity:GetSprite():LoadGraphics()
     			entity.SubType = AgonyTearSubtype.STINK_EYE
     		end
     	end
@@ -44,11 +42,10 @@ function stinkEye:onNpcUpdate(npc)
       if ents[i].Position:Distance(npc.Position) < 100 and ents[i]:IsEnemy() and ents[i].Index ~= npc.Index then
         ents[i]:AddPoison(EntityRef(npc), 15, 3)
         ents[i]:AddFear(EntityRef(npc), 15)
-        Game():GetPlayer(0):AddBombs(1)
       end
     end
+	npc:GetData().status_stinks = npc:GetData().status_stinks -1
   end
-  npc:GetData().status_stinks = npc:GetData().status_stinks -1
 end
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, stinkEye.onNpcUpdate)
