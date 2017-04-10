@@ -27,6 +27,7 @@ saveData.safeSpace = saveData.safeSpace or {}
 saveData.placeholder = saveData.placeholder or {}
 saveData.bigD = saveData.bigD or {}
 saveData.misterBean = saveData.misterBean or {}
+saveData.goldMan = saveData.goldMan or {}
 
 --respawnV2's vars
 local ent_before = {};
