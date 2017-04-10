@@ -14,7 +14,7 @@ function personalBubble:onNpcUpdate(npc)
 	if player:HasCollectible(CollectibleType.AGONY_C_PERSONAL_BUBBLE) then
 		if personalBubble.cooldown == 0 then
 			if npc.Position:Distance(player.Position) < 50 then
-				Game():ButterBeanFart(player.Position, 100*player:GetCollectibleNum(CollectibleType.AGONY_C_PERSONAL_BUBBLE), player, true)
+				Game():ButterBeanFart(player.Position, 200*player:GetCollectibleNum(CollectibleType.AGONY_C_PERSONAL_BUBBLE), player, true)
 				local luckMult = nil
 				if player.Luck > 0 then
 				 	luckMult = player.Luck+1
@@ -23,7 +23,7 @@ function personalBubble:onNpcUpdate(npc)
 				else
 					luckMult = player.Luck
 				end
-				personalBubble.cooldown = 15+60/luckMult
+				personalBubble.cooldown = 10+(30/luckMult)
 			end
 		end
 	end

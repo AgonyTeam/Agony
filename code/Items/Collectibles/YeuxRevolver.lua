@@ -19,7 +19,7 @@ end
 
 --FireDelay workaround
 function yeuxRev:updateFireDelay()
-	local player = Isaac.GetPlayer(0);
+	local player = Isaac.GetPlayer(0)
 	if (yeuxRev.TearBool == true) then
 		player.MaxFireDelay = player.MaxFireDelay + 4*player:GetCollectibleNum(CollectibleType.AGONY_C_YEUX_REVOLVER);
 		yeuxRev.TearBool = false;
@@ -28,9 +28,7 @@ end
 
 function yeuxRev:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
 	local player = Game():GetPlayer(0)
-	--player:AddKeys(1)
 	if player:HasCollectible(CollectibleType.AGONY_C_YEUX_REVOLVER) and hurtEntity:IsVulnerableEnemy() then
-		--player:AddBombs(1)
 		local time = Isaac.GetTime()
 		while time + 45 >Isaac.GetTime() do
 		end
