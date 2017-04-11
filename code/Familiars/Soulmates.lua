@@ -34,7 +34,7 @@ function soulmates:cacheUpdate(player, cacheFlag)
 end
 
 function soulmates:onTakeDmg(TookDamage, DamageAmount, DamageFlag, DamageSource, DamageCountdownFrames)
-	if DamageSource.Variant == FamiliarVariant.AGONY_F_SOULMATE_ROMEO or DamageSource.Variant == FamiliarVariant.AGONY_F_SOULMATE_JULIET then
+	if (DamageSource.Variant == FamiliarVariant.AGONY_F_SOULMATE_ROMEO or DamageSource.Variant == FamiliarVariant.AGONY_F_SOULMATE_JULIET) and DamageSource.Type == 3 then
 		if math.random(5) == 1 then
 			TookDamage:AddCharmed(60)
 		end
