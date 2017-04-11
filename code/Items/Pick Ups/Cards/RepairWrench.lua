@@ -10,7 +10,7 @@ function repairW:onUse()
 	local player = Isaac.GetPlayer(0)
 	local rng = player:GetCardRNG(Card.AGONY_CARD_REPAIR_WRENCH)
 	local ents = Isaac.GetRoomEntities()
-	
+	Agony:AnimGiantBook("RepairWrench.png", "Wrench", "giantbook_wrench.anm2")
 	for _,ent in pairs(ents) do
 		if ent.Type == EntityType.ENTITY_SLOT then
 			if (ent.Variant == 10 and ent:GetSprite():IsFinished("Death")) or ent:GetSprite():IsPlaying("Broken") then
