@@ -1,0 +1,75 @@
+<AnimatedActor>
+	<Info CreatedBy="robot" CreatedOn="31/07/2014 2:47:56 PM" Fps="30" Version="107" />
+	<Content>
+		<Spritesheets>
+			<Spritesheet Id="0" Path="costumes\costume_therootofanger.png" />
+		</Spritesheets>
+		<Layers>
+			<Layer Id="0" Name="body0" SpritesheetId="0" />
+		</Layers>
+		<Nulls />
+		<Events />
+	</Content>
+	<Animations DefaultAnimation="WalkDown">
+		<Animation FrameNum="1" Loop="true" Name="HeadDown">
+			<RootAnimation>
+				<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" XPosition="0" XScale="85" YPosition="-2" YScale="85" />
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Height="24" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" Width="24" XCrop="96" XPivot="12" XPosition="0" XScale="85" YCrop="0" YPivot="12" YPosition="-2" YScale="85" />
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations />
+			<Triggers />
+		</Animation>
+		<Animation FrameNum="1" Loop="true" Name="WalkDown">
+			<RootAnimation>
+				<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" XPosition="0" XScale="85" YPosition="-2" YScale="85" />
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Height="24" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" Width="24" XCrop="96" XPivot="12" XPosition="0" XScale="85" YCrop="0" YPivot="12" YPosition="-2" YScale="85" />
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations />
+			<Triggers />
+		</Animation>
+		<Animation FrameNum="1" Loop="true" Name="WalkRight">
+			<RootAnimation>
+				<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" XPosition="0" XScale="85" YPosition="-2" YScale="85" />
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Height="24" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" Width="24" XCrop="96" XPivot="12" XPosition="0" XScale="85" YCrop="0" YPivot="12" YPosition="-2" YScale="85" />
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations />
+			<Triggers />
+		</Animation>
+		<Animation FrameNum="1" Loop="true" Name="WalkUp">
+			<RootAnimation>
+				<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" XPosition="0" XScale="85" YPosition="-2" YScale="85" />
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Height="24" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" Width="24" XCrop="96" XPivot="12" XPosition="0" XScale="85" YCrop="0" YPivot="12" YPosition="-2" YScale="85" />
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations />
+			<Triggers />
+		</Animation>
+		<Animation FrameNum="1" Loop="true" Name="WalkLeft">
+			<RootAnimation>
+				<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" XPosition="0" XScale="85" YPosition="-2" YScale="85" />
+			</RootAnimation>
+			<LayerAnimations>
+				<LayerAnimation LayerId="0" Visible="true">
+					<Frame AlphaTint="255" BlueOffset="0" BlueTint="255" Delay="1" GreenOffset="0" GreenTint="255" Height="24" Interpolated="false" RedOffset="0" RedTint="255" Rotation="0" Visible="true" Width="24" XCrop="96" XPivot="12" XPosition="0" XScale="85" YCrop="0" YPivot="12" YPosition="-2" YScale="85" />
+				</LayerAnimation>
+			</LayerAnimations>
+			<NullAnimations />
+			<Triggers />
+		</Animation>
+	</Animations>
+</AnimatedActor>

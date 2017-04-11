@@ -23,7 +23,14 @@ function rootOfAnger:onUse()
 	local player = Isaac.GetPlayer(0);
 	rootOfAnger.isRooted = not rootOfAnger.isRooted
 	rootOfAnger.mult = 1
-	return true
+	if rootOfAnger.isRooted then
+		Agony:addToRender("effect/effect_therootofanger.anm2", "Appear", Game():GetLevel():GetCurrentRoom():WorldToScreenPosition(player.Position), 30)
+		Agony:renderSprites()
+		player.Velocity = Vector(0,0)
+		player:AddNullCostume(Isaac.GetCostumeIdByPath("gfx/characters/costume_therootofanger.anm2"))
+	else
+		player:TryRemoveNullCostume(Isaac.GetCostumeIdByPath("gfx/characters/costume_therootofanger.anm2"))
+	end
 end
 
 function rootOfAnger:cacheUpdate (player,cacheFlag)
