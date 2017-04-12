@@ -37,6 +37,7 @@
 	<costume name="Toy Hammer" anm2path="costume_toyhammer.anm2" type="passive"  id="48" />
 	<costume name="Stink Eye" anm2path="costume_stinkeye.anm2" type="passive"  id="52" />
 	<costume name="The Root of Anger" anm2path="costume_therootofanger.anm2" type="none" />
+	<costume name="Bowl Cut" anm2path="costume_bowlcut.anm2" type="passive" id="35"/>
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />

@@ -54,8 +54,19 @@ function bigD:onUpdate()
     	if entity.Type == EntityType.ENTITY_TEAR then
     		if entity.FrameCount == 1 and Prob == 0 then
     			--TODO : Change gfx to D
-    			entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_bigd.png")
+    			entity:GetSprite():Load("gfx/effect/tear_bigd.anm2", true)
+    			
+    			local anim = ""
+    			if player.Damage < 3.5 then
+    				anim = "RegularTear1"
+    			elseif player.Damage < 10 then
+					anim = "RegularTear2"
+    			else
+    				anim = "RegularTear3"
+    			end
+    			--entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_bigd.png")
           		entity:GetSprite():LoadGraphics()
+          		entity:GetSprite():Play(anim, true)
     			entity.SubType = AgonyTearSubtype.BIG_D
     		end
     	end
