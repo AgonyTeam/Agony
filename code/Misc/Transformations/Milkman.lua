@@ -31,35 +31,7 @@ end
 
 
 function milkman:onPlayerUpdate(player)
-  if Game():GetFrameCount() == 1 then
-    milkman.hasItem = false
-    milkman.Items = {}
-  end
-  for i = 1, #milkman.requireditems do
-    if player:HasCollectible(milkman.requireditems[i]) then
-      local isNew = true
-      for j = 1, #milkman.Items do
-        if milkman.Items[j] == milkman.requireditems[i] then
-          isNew = false
-        end
-      end
-      if isNew then
-        table.insert(milkman.Items, milkman.requireditems[i])
-        saveData.milkman.Items = milkman.Items
-        Agony:SaveNow()
-      end
-    end
-  end
-  if #milkman.Items > 2 then
-    if milkman.hasItem ~= true then
-      --player:AddNullCostume(milkman.costumeID)
-      milkman.hasItem = true
-      --POOF!
-      local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
-      col:Reset()
-      Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
-    end
-  end
+  Agony:TransformationUpdate(player, milkman ,saveData.milkman, false)
 end
 
 function milkman:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)

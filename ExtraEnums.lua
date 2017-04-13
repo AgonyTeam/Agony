@@ -69,7 +69,6 @@ Lists = {
 			CollectibleType.AGONY_C_DICE_TATTOO,
 			CollectibleType.AGONY_C_CASHEW_MILK,
 			CollectibleType.AGONY_C_EASTER_EGG,
-			
 		},
 
 		Milks = {
@@ -82,7 +81,13 @@ Lists = {
 			--Agony
 			CollectibleType.AGONY_C_NUT_MILK,
 			CollectibleType.AGONY_C_CASHEW_MILK,
-			
+		},
+
+		GodItemsIdk = {
+			--Vanilla
+			CollectibleType.COLLECTIBLE_SOUL,
+			CollectibleType.COLLECTIBLE_BODY,
+			CollectibleType.COLLECTIBLE_MIND,
 		},
 			
 		Garbage = {

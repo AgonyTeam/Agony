@@ -7,37 +7,40 @@ local bigD =  {
 bigD.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/trans_bigd.anm2")
 
 function bigD:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		bigD.hasItem = false
-		bigD.Items = {}
-	end
-	for i = 1, #bigD.requireditems do
-		if player:HasCollectible(bigD.requireditems[i]) then
-			local isNew = true
-			for j = 1, #bigD.Items do
-				if bigD.Items[j] == bigD.requireditems[i] then
-					isNew = false 
-				end
-			end
-			if isNew then
-				table.insert(bigD.Items, bigD.requireditems[i])
-				saveData.bigD.Items = bigD.Items
-				Agony:SaveNow()
-			end
-		end
-	end
-	if #bigD.Items > 2 then
-		if bigD.hasItem ~= true then
-			player:AddNullCostume(bigD.costumeID)
-			bigD.hasItem = true
-			--POOF!
-			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
-			col:Reset()
-			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
-		end
-	end
+	Agony:TransformationUpdate(player, bigD ,saveData.bigD, true)
 end
 
+-- function bigD:onPlayerUpdate(player)
+-- 	if Game():GetFrameCount() == 1 then
+-- 		bigD.hasItem = false
+-- 		bigD.Items = {}
+-- 	end
+-- 	for i = 1, #bigD.requireditems do
+-- 		if player:HasCollectible(bigD.requireditems[i]) then
+-- 			local isNew = true
+-- 			for j = 1, #bigD.Items do
+-- 				if bigD.Items[j] == bigD.requireditems[i] then
+-- 					isNew = false 
+-- 				end
+-- 			end
+-- 			if isNew then
+-- 				table.insert(bigD.Items, bigD.requireditems[i])
+-- 				saveData.bigD.Items = bigD.Items
+-- 				Agony:SaveNow()
+-- 			end
+-- 		end
+-- 	end
+-- 	if #bigD.Items > 2 then
+-- 		if bigD.hasItem ~= true then
+-- 			player:AddNullCostume(bigD.costumeID)
+-- 			bigD.hasItem = true
+-- 			--POOF!
+-- 			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+-- 			col:Reset()
+-- 			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
+-- 		end
+-- 	end
+-- end
 
 function bigD:onUpdate()
 	local ents = Isaac.GetRoomEntities()

@@ -30,6 +30,7 @@ saveData.misterBean = saveData.misterBean or {}
 saveData.goldMan = saveData.goldMan or {}
 saveData.cherry = saveData.cherry or {}
 saveData.milkman = saveData.milkman or {}
+saveData.god = saveData.god or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -445,6 +446,41 @@ function Agony:rotateTears()
 			else
 				ents[i]:GetSprite().Rotation = ents[i]:GetSprite().Rotation - 10
 			end
+		end
+	end
+end
+
+
+function Agony:TransformationUpdate(player, trans, data, hasCostume)
+	if Game():GetFrameCount() == 1 then
+		trans.hasItem = false
+		trans.Items = {}
+	end
+	for i = 1, #trans.requireditems do
+		if player:HasCollectible(trans.requireditems[i]) then
+			local isNew = true
+			for j = 1, #trans.Items do
+				if trans.Items[j] == trans.requireditems[i] then
+					isNew = false 
+				end
+			end
+			if isNew then
+				table.insert(trans.Items, trans.requireditems[i])
+				data.Items = trans.Items
+				Agony:SaveNow()
+			end
+		end
+	end
+	if #trans.Items > 2 then
+		if trans.hasItem ~= true then
+			if hasCostume then
+				player:AddNullCostume(trans.costumeID)
+			end
+			trans.hasItem = true
+			--POOF!
+			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+			col:Reset()
+			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
 		end
 	end
 end

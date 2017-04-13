@@ -7,35 +7,7 @@ local misterBean =  {
 misterBean.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/trans_misterbean.anm2")
 
 function misterBean:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		misterBean.hasItem = false
-		misterBean.Items = {}
-	end
-	for i = 1, #misterBean.requireditems do
-		if player:HasCollectible(misterBean.requireditems[i]) then
-			local isNew = true
-			for j = 1, #misterBean.Items do
-				if misterBean.Items[j] == misterBean.requireditems[i] then
-					isNew = false 
-				end
-			end
-			if isNew then
-				table.insert(misterBean.Items, misterBean.requireditems[i])
-				saveData.misterBean.Items = misterBean.Items
-				Agony:SaveNow()
-			end
-		end
-	end
-	if #misterBean.Items > 2 then
-		if misterBean.hasItem ~= true then
-			player:AddNullCostume(misterBean.costumeID)
-			misterBean.hasItem = true
-			--POOF!
-			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
-			col:Reset()
-			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
-		end
-	end
+		Agony:TransformationUpdate(player, misterBean ,saveData.misterBean, true)
 end
 
 
