@@ -49,6 +49,12 @@
     </entity>
     <!--/Joseph-->
 	
+	<!--Player Clone-->
+	<entity anm2path="001.000_Player.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="5" collisionRadius="10" friction="1" id="504" name="Player Clone" numGridCollisionPoints="40" shadowSize="16" stageHP="0" variant="0" shutdoors="false">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	<!--/Player Clone-->
+	
 	<!--Pickups-->
 	<entity anm2path="Items/Pick Ups/Pyrite Coin/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Pyrite Coin" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="520" subtype="51">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
@@ -57,6 +63,10 @@
     <entity anm2path="Items/Pick Ups/Safe/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="6" collisionRadius="12" friction="0" id="5" name="Safe" numGridCollisionPoints="24" shadowSize="28" stageHP="0" variant="550">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" subtype="0"/>
         <preload-snd id="22" /> <!-- CHEST_OPEN -->
+    </entity>
+	<entity anm2path="Items/Pick Ups/Cherry/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Cherry" numGridCollisionPoints="24" shadowSize="17" stageHP="0" variant="10" subtype="501">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+	    <preload-snd id="185" /> <!-- BOSS2_BUBBLES -->
     </entity>
 	<!--/Pickups-->
 	

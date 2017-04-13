@@ -517,6 +517,7 @@ require("code/Monsters/Flaming Alts/Clotty");
 require("code/Bosses/Joseph");
 --Other entities
 require("code/Items/Slots/TreasureHoarder");
+require("code/Monsters/PlayerClone");
 
 --Items
 require("code/Items/Collectibles/LuckyLeg");

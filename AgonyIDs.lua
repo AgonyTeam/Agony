@@ -133,6 +133,8 @@ Card["AGONY_CARD_REPAIR_WRENCH"] = Isaac.GetCardIdByName("Repair Wrench")
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
 --Coins Subtypes
 CoinSubType["AGONY_COIN_PYRITE"] = 51 --not sure how to read that one automatically
+--Heart Subtypes
+HeartSubType["AGONY_HEART_CHERRY"] = 501
 --Chests
 PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, since the subtype for chests is already used
 
@@ -143,6 +145,7 @@ PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!")
 EntityType["AGONY_ETYPE_TREASURE_HOARDER"] = Isaac.GetEntityTypeByName("Treasure Hoarder");
 --Monsters
 EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block")
+EntityType["AGONY_ETYPE_PLAYER_CLONE"] = Isaac.GetEntityTypeByName("Player Clone")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
 
