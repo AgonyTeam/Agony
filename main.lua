@@ -4,8 +4,8 @@ local json = require("json")
 
 --SaveData
 local newestSaveVer = 2;
-if Isaac.HasModData(Agony) then
-	saveData = json.decode(Isaac.LoadModData(Agony));
+if Agony:HasData() then
+	saveData = json.decode(Agony:LoadData());
 	if saveData.saveVer == nil or saveData.saveVer ~= newestSaveVer then
 		saveData = {saveVer = newestSaveVer};
 	end
@@ -28,6 +28,7 @@ saveData.placeholder = saveData.placeholder or {}
 saveData.bigD = saveData.bigD or {}
 saveData.misterBean = saveData.misterBean or {}
 saveData.goldMan = saveData.goldMan or {}
+saveData.cherry = saveData.cherry or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -558,6 +559,7 @@ require("code/Items/Trinkets/SwallowedDice")
 require("code/Items/Trinkets/PartyPooper")
 require("code/Items/Trinkets/BloodyNut")
 require("code/Items/Trinkets/LuckyEgg")
+require("code/Items/Trinkets/NuclearStone")
 
 --Transformations
 require("code/Misc/Transformations/God")
@@ -575,6 +577,8 @@ require("code/Items/Pick Ups/Cards/RepairWrench")
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
 require("code/Items/Pick Ups/Chests/Safe")
+--Hearts
+require("code/Items/Pick Ups/Other/Cherry")
 
 --Familiars
 require("code/Familiars/TinyTinyHorn");

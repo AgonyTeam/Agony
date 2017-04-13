@@ -121,17 +121,17 @@ TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
 TrinketType["AGONY_T_LUCKY_EGG"] = Isaac.GetTrinketIdByName("Lucky Egg")
 TrinketType["AGONY_T_PARTY_POOPER"] = Isaac.GetTrinketIdByName("Party Pooper")
 TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice")
+TrinketType["AGONY_T_NUCLEAR_STONE"] = Isaac.GetTrinketIdByName("Nuclear Stone")
 
 --Cards
 Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
-Card["AGONY_CARD_LOTTERY_TICKET"] = Isaac.GetCardIdByName("Lottery Ticket")
+--Card["AGONY_CARD_LOTTERY_TICKET"] = Isaac.GetCardIdByName("Lottery Ticket")
 Card["AGONY_CARD_REPAIR_WRENCH"] = Isaac.GetCardIdByName("Repair Wrench")
 
 --Coin Variant
 PickupVariant["AGONY_PICKUP_COIN"] = 520 --Agony Coins
 --Coins Subtypes
 CoinSubType["AGONY_COIN_PYRITE"] = 51 --not sure how to read that one automatically
-
 --Chests
 PickupVariant["AGONY_PICKUP_SAFE"] = 550 --Agony Chests, reserve 550 to 560, since the subtype for chests is already used
 
@@ -141,7 +141,7 @@ PillEffect["AGONY_PEFF_PARTY_PILLS"] = Isaac.GetPillEffectByName("Party Pills!")
 --Misc Entities
 EntityType["AGONY_ETYPE_TREASURE_HOARDER"] = Isaac.GetEntityTypeByName("Treasure Hoarder");
 --Monsters
-EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block");
+EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
 

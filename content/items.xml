@@ -109,4 +109,5 @@
 	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" id="2" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" id="3" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" id="4" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_nuclearstone.png" name="Nuclear Stone" id="5" />
 </items>
