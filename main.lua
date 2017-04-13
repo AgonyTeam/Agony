@@ -350,6 +350,9 @@ end
 function Agony:dataCopy(originData,targetData)
 	targetData.SpecialOne = originData.SpecialOne --Special One Item Data
 	targetData.RigidMind = originData.RigidMind --Rigid Mind Item Data
+	targetData.NutMilk = originData.NutMilk --Nut Milk Item Data
+	targetData.status_slagged = originData.status_slagged --Status Effect - take extra damage
+	targetData.status_stinks = originData.status_stinks --Status Effect - fares and poisons nearby enemies
 end
 
 --returns the items the player currently has
@@ -553,6 +556,7 @@ require("code/Items/Collectibles/SmokersLung")
 require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
 require("code/Items/Collectibles/EggBeater")
+require("code/Items/Collectibles/NutMilk")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

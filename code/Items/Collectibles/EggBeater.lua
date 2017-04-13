@@ -30,5 +30,4 @@ function eggBeater:cacheUpdate (player,cacheFlag)
 end
 
 Agony:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, eggBeater.cacheUpdate)
-Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, eggBeater.onTakeDmg);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, eggBeater.onUpdate)

@@ -63,6 +63,7 @@
         <Item Name="Stink Eye" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Root of Anger" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Egg Beater" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Nut Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

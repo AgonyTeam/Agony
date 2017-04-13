@@ -53,6 +53,7 @@
 	<passive cache="damage range" name="Smoker's Lung" description="Mysterious placeholder text" gfx="collectibles_smokerslung.png" id="51" />
 	<passive name="Stink Eye" description="Mysterious placeholder text" gfx="collectibles_stinkeye.png" id="52" />
 	<passive cache="shotspeed damage firedelay" name="Egg Beater" description="Mysterious placeholder text" gfx="collectibles_eggbeater.png" id="53" />
+	<passive name="Nut Milk" description="Mysterious placeholder text" gfx="collectibles_nutmilk.png" id="54" />
 
 	<!--Active IDs: 301-600 -->
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" id="301" />

@@ -1,10 +1,5 @@
 
-local rigidMind =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-rigidMind.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_rigidmind.anm2")
-
+local rigidMind = {}
 function rigidMind:FireRightAngledTears()
 	local player = Game():GetPlayer(0)
 	if player:HasCollectible(CollectibleType.AGONY_C_RIGID_MIND) then
@@ -23,15 +18,4 @@ function rigidMind:FireRightAngledTears()
 	end
 end
 
-function rigidMind:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		rigidMind.hasItem = false
-	end
-	if rigidMind.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_RIGID_MIND) then
-		--player:AddNullCostume(rigidMind.costumeID)
-		rigidMind.hasItem = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, rigidMind.FireRightAngledTears)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, rigidMind.onPlayerUpdate)
