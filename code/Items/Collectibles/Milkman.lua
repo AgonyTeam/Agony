@@ -1,19 +1,5 @@
 
-local milkman =  {
-	hasItem = nil, --used for costume
-	costumeID = nil
-}
-milkman.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/costume_milkman.anm2")
-
-function milkman:onPlayerUpdate(player)
-	if Game():GetFrameCount() == 1 then
-		milkman.hasItem = false
-	end
-	if milkman.hasItem == false and player:HasCollectible(CollectibleType.AGONY_C_MILKMAN) then
-		--player:AddNullCostume(milkman.costumeID)
-		milkman.hasItem = true
-	end
-end
+local milkman =  {}
 
 function milkman:onUpdate()
 	local ents = Isaac.GetRoomEntities()
@@ -54,4 +40,3 @@ end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, milkman.onTakeDmg);
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, milkman.onUpdate)
-Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, milkman.onPlayerUpdate)

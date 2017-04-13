@@ -9,6 +9,10 @@ function CashewMilk:cacheUpdate (player,cacheFlag)
 			--CashewMilk.TearBool = true
 			player.MaxFireDelay = math.floor(player.MaxFireDelay + math.sin(Game():GetFrameCount()/60)*player.MaxFireDelay)
 		end
+		if (cacheFlag == CacheFlag.CACHE_SHOTSPEED) then
+			--CashewMilk.TearBool = true
+			player.ShotSpeed = math.floor(player.ShotSpeed - math.sin(Game():GetFrameCount()/60)*player.ShotSpeed)
+		end
 	end
 end
 
@@ -18,6 +22,7 @@ function CashewMilk:onPlayerUpdate(player)
 		--Will improve the code as we get more callbacks nicolo pls
 		if Game():GetFrameCount()%3 == 0 then
 			player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+			player:AddCacheFlags(CacheFlag.CACHE_SHOTSPEED)
 			if Game():GetFrameCount()%60 == 0 then
 				player:AddCacheFlags(CacheFlag.CACHE_FIREDELAY)
 			end

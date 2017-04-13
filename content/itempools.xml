@@ -62,6 +62,7 @@
         <Item Name="Smoker's Lung" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Stink Eye" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Root of Anger" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Egg Beater" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -80,6 +81,7 @@
         <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <Item Name="Egg Beater" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="devil">
         <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>

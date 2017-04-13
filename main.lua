@@ -551,6 +551,7 @@ require("code/Items/Collectibles/EasterEgg")
 require("code/Items/Collectibles/SmokersLung")
 require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
+require("code/Items/Collectibles/EggBeater")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")
