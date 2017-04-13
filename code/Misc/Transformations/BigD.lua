@@ -27,7 +27,7 @@ function bigD:onPlayerUpdate(player)
 		end
 	end
 	if #bigD.Items > 2 then
-		if bigD.hasItem == false then
+		if bigD.hasItem ~= true then
 			player:AddNullCostume(bigD.costumeID)
 			bigD.hasItem = true
 			--POOF!

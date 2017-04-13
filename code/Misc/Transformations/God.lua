@@ -9,7 +9,7 @@ function god:onPlayerUpdate(player)
 		god.hasItem = false
 	end
 	if player:HasCollectible(CollectibleType.COLLECTIBLE_SOUL) and player:HasCollectible(CollectibleType.COLLECTIBLE_BODY) and player:HasCollectible(CollectibleType.COLLECTIBLE_MIND) then
-		if god.hasItem == false then
+		if god.hasItem ~= true then
 			--player:AddNullCostume(god.costumeID)
 			god.hasItem = true
 			--POOF!

@@ -40,7 +40,7 @@ function milkman:onPlayerUpdate(player)
       local isNew = true
       for j = 1, #milkman.Items do
         if milkman.Items[j] == milkman.requireditems[i] then
-          isNew = false 
+          isNew = false
         end
       end
       if isNew then
@@ -51,7 +51,7 @@ function milkman:onPlayerUpdate(player)
     end
   end
   if #milkman.Items > 2 then
-    if milkman.hasItem == false then
+    if milkman.hasItem ~= true then
       --player:AddNullCostume(milkman.costumeID)
       milkman.hasItem = true
       --POOF!

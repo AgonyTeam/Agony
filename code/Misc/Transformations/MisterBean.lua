@@ -27,7 +27,7 @@ function misterBean:onPlayerUpdate(player)
 		end
 	end
 	if #misterBean.Items > 2 then
-		if misterBean.hasItem == false then
+		if misterBean.hasItem ~= true then
 			player:AddNullCostume(misterBean.costumeID)
 			misterBean.hasItem = true
 			--POOF!
