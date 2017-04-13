@@ -71,6 +71,19 @@ Lists = {
 			CollectibleType.AGONY_C_EASTER_EGG,
 			
 		},
+
+		Milks = {
+			--Vanilla
+			CollectibleType.COLLECTIBLE_MILK,
+			CollectibleType.COLLECTIBLE_SOY_MILK,
+			CollectibleType.COLLECTIBLE_CHOCOLATE_MILK,
+			CollectibleType.COLLECTIBLE_BREAKFAST,
+
+			--Agony
+			CollectibleType.AGONY_C_NUT_MILK,
+			CollectibleType.AGONY_C_CASHEW_MILK,
+			
+		},
 			
 		Garbage = {
 			--Vanilla

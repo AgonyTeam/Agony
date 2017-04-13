@@ -38,7 +38,8 @@ CollectibleType["AGONY_C_BIRTHDAY_GIFT"] = Isaac.GetItemIdByName("Birthday Gift"
 CollectibleType["AGONY_C_BOWL_CUT"] = Isaac.GetItemIdByName("Bowl Cut");
 CollectibleType["AGONY_C_BREADY_MOLD"] = Isaac.GetItemIdByName("Bready Mold");
 CollectibleType["AGONY_C_BROTHER_CANCER"] = Isaac.GetItemIdByName("Brother Cancer");
-CollectibleType["AGONY_C_TUMOR"] = Isaac.GetItemIdByName("Tumor");CollectibleType["AGONY_C_CASHEW_MILK"] = Isaac.GetItemIdByName("Cashew Milk");
+CollectibleType["AGONY_C_TUMOR"] = Isaac.GetItemIdByName("Tumor");
+CollectibleType["AGONY_C_CASHEW_MILK"] = Isaac.GetItemIdByName("Cashew Milk");
 CollectibleType["AGONY_C_CORNUCOPIA"] = Isaac.GetItemIdByName("Cornucopia");
 CollectibleType["AGONY_C_CYANIDE"] = Isaac.GetItemIdByName("Cyanide");
 CollectibleType["AGONY_C_D3"] = Isaac.GetItemIdByName("D3");
@@ -60,7 +61,6 @@ CollectibleType["AGONY_C_LSD"] = Isaac.GetItemIdByName("Little Sugar Dumdum");
 CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
 CollectibleType["AGONY_C_LUCKY_LEG"] = Isaac.GetItemIdByName("Lucky Leg");
 CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
-CollectibleType["AGONY_C_MILKMAN"] = Isaac.GetItemIdByName("Milkman");
 CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
 CollectibleType["AGONY_C_PANDORASCHEST5"] = Isaac.GetItemIdByName("Pandora's Chest     ")
 CollectibleType["AGONY_C_PANDORASCHEST4"] = Isaac.GetItemIdByName("Pandora's Chest    ")

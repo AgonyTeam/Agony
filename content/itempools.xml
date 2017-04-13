@@ -51,7 +51,6 @@
         <Item Name="Birthday Gift" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Cashew Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Milkman" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Jaundice" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Vanity" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Placeholder" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -97,7 +96,6 @@
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Milkman" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Father's Blessing" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Smoker's Lung" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Root of Anger" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>

@@ -1,10 +1,16 @@
 
-local milkman =  {}
+local milkman =  {
+  hasItem = nil, --used for costume
+  costumeID = nil,
+  requireditems = Agony.ENUMS["ItemPools"]["Milks"],
+  Items = saveData.milkman.Items or {} --Keeps track of what Items the player has had}
+}
+milkman.costumeID = Isaac.GetCostumeIdByPath("gfx/characters/trans_milkman.anm2")
 
 function milkman:onUpdate()
 	local ents = Isaac.GetRoomEntities()
 	local player = Game():GetPlayer(0)
-  if player:HasCollectible(CollectibleType.AGONY_C_MILKMAN) then
+  if milkman.hasItem then
     if player.Luck > 0 then
   		milkProb = math.floor(math.random(5000)%(math.floor(300/(player.Luck+1))))
   	elseif player.Luck == 0 then
@@ -19,6 +25,39 @@ function milkman:onUpdate()
     			entity.SubType = AgonyTearSubtype.MILKMAN
     		end
     	end
+    end
+  end
+end
+
+
+function milkman:onPlayerUpdate(player)
+  if Game():GetFrameCount() == 1 then
+    milkman.hasItem = false
+    milkman.Items = {}
+  end
+  for i = 1, #milkman.requireditems do
+    if player:HasCollectible(milkman.requireditems[i]) then
+      local isNew = true
+      for j = 1, #milkman.Items do
+        if milkman.Items[j] == milkman.requireditems[i] then
+          isNew = false 
+        end
+      end
+      if isNew then
+        table.insert(milkman.Items, milkman.requireditems[i])
+        saveData.milkman.Items = milkman.Items
+        Agony:SaveNow()
+      end
+    end
+  end
+  if #milkman.Items > 2 then
+    if milkman.hasItem == false then
+      --player:AddNullCostume(milkman.costumeID)
+      milkman.hasItem = true
+      --POOF!
+      local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
+      col:Reset()
+      Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
     end
   end
 end
@@ -39,4 +78,6 @@ function milkman:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
 end
 
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, milkman.onTakeDmg);
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, milkman.onPlayerUpdate)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, milkman.onUpdate)
+

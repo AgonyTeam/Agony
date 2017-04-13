@@ -29,6 +29,7 @@ saveData.bigD = saveData.bigD or {}
 saveData.misterBean = saveData.misterBean or {}
 saveData.goldMan = saveData.goldMan or {}
 saveData.cherry = saveData.cherry or {}
+saveData.milkman = saveData.milkman or {}
 
 --respawnV2's vars
 local ent_before = {};
@@ -541,7 +542,6 @@ require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
 require("code/Items/Collectibles/SafeSpace")
 require("code/Items/Collectibles/SocialAnxiety")
-require("code/Items/Collectibles/Milkman")
 require("code/Items/Collectibles/Jaundice")
 require("code/Items/Collectibles/Vanity")
 require("code/Items/Collectibles/Placeholder")
@@ -569,6 +569,7 @@ require("code/Items/Trinkets/NuclearStone")
 require("code/Misc/Transformations/God")
 require("code/Misc/Transformations/MisterBean")
 require("code/Misc/Transformations/BigD")
+require("code/Misc/Transformations/Milkman")
 
 --Pickups
 --Pills
