@@ -67,7 +67,20 @@ function cherry:respawnClones()
 	end
 end
 
+function cherry:replacePickup()
+	local ents = Isaac.GetRoomEntities()
+	for _,ent in pairs(ents) do
+		local rng = ent:GetDropRNG()
+		if ent.FrameCount <= 1 and ent.Type == EntityType.ENTITY_PICKUP and ent.Variant == PickupVariant.PICKUP_HEART and ent.SubType ~= HeartSubType.AGONY_HEART_CHERRY and ent:GetSprite():IsPlaying("Appear") and rng:RandomFloat() <= (1/22) then
+			debug_text = "spawn cherry"
+			Isaac.Spawn(ent.Type, ent.Variant, HeartSubType.AGONY_HEART_CHERRY, ent.Position, ent.Velocity, nil)
+			ent:Remove()
+		end
+	end	
+end
+
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, cherry.onPickup)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, cherry.replacePickup)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, cherry.initPlayer)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, cherry.resetClones)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, cherry.respawnClones)
