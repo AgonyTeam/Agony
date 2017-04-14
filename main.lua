@@ -455,6 +455,8 @@ function Agony:TransformationUpdate(player, trans, data, hasCostume)
 	if Game():GetFrameCount() == 1 then
 		trans.hasItem = false
 		trans.Items = {}
+		data.Items = {}
+		Agony:SaveNow()
 	end
 	for i = 1, #trans.requireditems do
 		if player:HasCollectible(trans.requireditems[i]) then
