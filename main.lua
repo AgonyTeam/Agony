@@ -185,6 +185,16 @@ function Agony:getNearestEnemy(sourceEnt, whiteList, blackList)
 			end
 		end
 		entities = tmp
+	elseif blackList.mode == "only_whitelist" then
+		local tmp = {}
+		for i=1, #entities do
+			for j=1, #whiteList do
+				if entities[i].Type == whiteList[j] then
+					table.insert(tmp, 1, entities[i])
+				end
+			end
+		end
+		entities = tmp
 	elseif blackList.mode == nil then
 		for i=1, #blackList do
 			local tmp = {}
@@ -232,6 +242,16 @@ function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
 		for i=1, #entities do
 			if entities[i].Type == sourceEnt.Type and entities[i].Variant == sourceEnt.Variant and entities[i].SubType == sourceEnt.SubType then
 				table.insert(tmp, 1, entities[i])
+			end
+		end
+		entities = tmp
+	elseif blackList.mode == "only_whitelist" then
+		local tmp = {}
+		for i=1, #entities do
+			for j=1, #whiteList do
+				if entities[i].Type == whiteList[j] then
+					table.insert(tmp, 1, entities[i])
+				end
 			end
 		end
 		entities = tmp
@@ -651,4 +671,5 @@ Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
+Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)

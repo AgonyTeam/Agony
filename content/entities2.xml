@@ -50,7 +50,7 @@
     <!--/Joseph-->
 	
 	<!--Player Clone-->
-	<entity anm2path="001.000_Player.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="5" collisionRadius="10" friction="1" id="504" name="Player Clone" numGridCollisionPoints="40" shadowSize="16" stageHP="0" variant="0" shutdoors="false">
+	<entity anm2path="Monsters/Player Clone/Isaac.anm2" baseHP="1" boss="0" champion="0" collisionDamage="0" collisionMass="5" collisionRadius="10" friction="1" id="504" name="Player Clone" numGridCollisionPoints="40" shadowSize="16" stageHP="0" variant="0" shutdoors="false">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<!--/Player Clone-->

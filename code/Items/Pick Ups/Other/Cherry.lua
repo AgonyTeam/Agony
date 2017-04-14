@@ -20,7 +20,14 @@ function cherry:onPickup()
 			    sound:Play(SoundEffect.SOUND_BOSS2_BUBBLES, 1, 0, false, 1)
 			elseif entdata.Picked and entsprite:GetFrame() == 6 then
 				--spawn a clone!
-				Isaac.Spawn(EntityType.AGONY_ETYPE_PLAYER_CLONE, 0, 0, Isaac.GetFreeNearPosition(player.Position, 200), Vector(0,0), player)
+				local c = Isaac.Spawn(EntityType.AGONY_ETYPE_PLAYER_CLONE, 0, 0, Isaac.GetFreeNearPosition(player.Position, 200), Vector(0,0), player)
+				--familiar spawn stuff
+				--for _, entity in pairs(ents) do
+				--	if entity.Type == EntityType.ENTITY_FAMILIAR and not (entity.Parent ~= nil and entity.Parent.Type == EntityType.AGONY_ETYPE_PLAYER_CLONE) then
+				--		local f = Isaac.Spawn(entity.Type, entity.Variant, entity.SubType, c.Position, Vector(0,0), c)
+				--		f.Parent = c
+				--	end
+				--end
 				player:GetData().Clones = player:GetData().Clones + 1
 				saveData.cherry.Clones = player:GetData().Clones
 				Agony:SaveNow()
@@ -32,6 +39,11 @@ end
 
 function cherry:initPlayer(player)
 	player:GetData().Clones = saveData.cherry.Clones or 0
+	if Game():GetFrameCount() <= 1 then
+		player:GetData().Clones = 0
+		saveData.cherry.Clones = 0
+		Agony:SaveNow()
+	end
 end
 
 function cherry:resetClones()
@@ -44,7 +56,14 @@ end
 function cherry:respawnClones()
 	local player = Isaac.GetPlayer(0)
 	for i=1, player:GetData().Clones do
-		Isaac.Spawn(EntityType.AGONY_ETYPE_PLAYER_CLONE, 0, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), player)
+		local c = Isaac.Spawn(EntityType.AGONY_ETYPE_PLAYER_CLONE, 0, 0, Isaac.GetFreeNearPosition(player.Position, 50), Vector(0,0), player)
+		--familiar spawn stuff
+		--for _, entity in pairs(ents) do
+		--	if entity.Type == EntityType.ENTITY_FAMILIAR and not (entity.Parent ~= nil and entity.Parent.Type == EntityType.AGONY_ETYPE_PLAYER_CLONE) then
+		--		local f = Isaac.Spawn(entity.Type, entity.Variant, entity.SubType, c.Position, Vector(0,0), c)
+		--		f.Parent = c
+		--	end
+		--end
 	end
 end
 
