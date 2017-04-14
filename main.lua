@@ -621,7 +621,7 @@ require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
 require("code/Items/Pick Ups/Chests/Safe")
 --Hearts
-require("code/Items/Pick Ups/Other/Cherry")
+--require("code/Items/Pick Ups/Other/Cherry") --Might have forgot to commit the cherry code!
 
 --Familiars
 require("code/Familiars/TinyTinyHorn");

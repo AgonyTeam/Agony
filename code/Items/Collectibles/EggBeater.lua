@@ -7,7 +7,7 @@ function eggBeater:onUpdate()
   if player:HasCollectible(CollectibleType.AGONY_C_EGG_BEATER) then
     for _,entity in pairs(ents) do
     	if entity.Type == EntityType.ENTITY_TEAR then
-    		if entity.FrameCount == 1 then
+    		if entity.FrameCount == 0 then
     			entity.Velocity = entity.Velocity:Rotated(math.random(100)-50)
     		end
     	end
