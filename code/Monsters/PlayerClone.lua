@@ -153,7 +153,6 @@ end
 function clone:ai_attack(ent) --attack of clones
 	local player = Isaac.GetPlayer(0)
 	local fireDir = player:GetFireDirection()
-	debug_text = player:GetData().Clones
 	if player:HasWeaponType(WeaponType.WEAPON_TEARS) then --regular tears
 		if player.FireDelay == 0 and fireDir ~= Direction.NO_DIRECTION then
 			local vel = dirToVec(fireDir):__mul(player.ShotSpeed*10):__add(ent.Velocity:__mul(0.3))
