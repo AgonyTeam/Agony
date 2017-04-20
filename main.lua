@@ -507,6 +507,18 @@ function Agony:TransformationUpdate(player, trans, data, hasCostume)
 	end
 end
 
+--returns a velocity an entity must have to get closer to target
+--this differs from calcTearVel() by adding small normalized vectors to an existing velocity and normalizing the result instead of just calculating a vector pointing from ent to target
+--better suited for enemies because that way knockback has an effect on the enemy
+function Agony:calcEntVel(ent, target, mul)
+	local fMul = 1
+	if ent:HasEntityFlags(EntityFlag.FLAG_FEAR) then
+		fMul = -1
+	end
+	return ent.Velocity:__add(target.Position:__sub(ent.Position):Normalized():__mul(fMul)):Normalized():__mul(mul)
+end
+
+
 --Extra Bits
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
@@ -518,7 +530,8 @@ Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 --Debug
 require("Debug");
 --Enemies
-require("code/Monsters/YellowBlock");
+require("code/Monsters/YellowBlock")
+require("code/Monsters/HunchBone")
 --Eternals
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");

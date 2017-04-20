@@ -54,6 +54,14 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<!--/Player Clone-->
+	<!--Hunch Bone-->
+	<entity id="505" variant="0" name="Hunchbone" reroll="true" baseHP="16" stageHP="1" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" anm2path="227.000_Boney.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="WalkDown">
+        <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />
+		<preload id="9" variant="1" />
+        <preload-snd id="116" /> <!-- SOUND_MONSTER_ROAR_1 -->
+        <preload-snd id="249" /> <!-- SOUND_SCAMPER -->
+    </entity>
+	<!--Hunch Bone-->
 	
 	<!--Pickups-->
 	<entity anm2path="Items/Pick Ups/Pyrite Coin/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Pyrite Coin" numGridCollisionPoints="24" shadowSize="14" stageHP="0" variant="520" subtype="51">
