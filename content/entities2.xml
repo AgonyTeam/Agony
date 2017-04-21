@@ -43,7 +43,7 @@
     <!--/Treasure Hoarder-->
 
     <!--Joseph-->
-    <entity anm2path="Bosses/Joseph/animation.anm2" reroll="false" baseHP="200" boss="1" champion="0" collisionDamage="2" collisionMass="6" collisionRadius="26" friction="1" id="601" name="Joseph" numGridCollisionPoints="12" shadowSize="26" stageHP="0" variant="0" portrait="11" >
+    <entity anm2path="Bosses/Joseph/animation.anm2" reroll="false" baseHP="200" boss="1" champion="0" collisionDamage="2" collisionMass="75" collisionRadius="26" friction="1" id="601" name="Joseph" numGridCollisionPoints="12" shadowSize="26" stageHP="0" variant="0" portrait="11" >
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
         <preload-snd id="143" /> <!-- SOUND_SCARED_WHIMPER -->
     </entity>
@@ -54,6 +54,11 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<!--/Player Clone-->
+	<!--Rook>
+	<entity anm2path="041.000_Knight.anm2" reroll="true" baseHP="20" boss="0" champion="1" collisionDamage="1" collisionMass="10" collisionRadius="13" friction="1" id="503" name="Rook" numGridCollisionPoints="12" shadowSize="14" stageHP="0" variant="0" portrait="37" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Hori">
+        <gibs amount="6" blood="0" bone="1" eye="0" gut="1" large="0" worm="1" />
+    </entity>
+	<!--/Rook-->
 	<!--Hunch Bone-->
 	<entity id="505" variant="0" name="Hunchbone" reroll="true" baseHP="16" stageHP="1" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="14" portrait="104" anm2path="227.000_Boney.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="WalkDown">
         <gibs amount="10" blood="0" bone="1" eye="0" gut="0" large="0" />

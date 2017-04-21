@@ -1,63 +1,87 @@
-joseph = {
-	weakFlyList = {}
+local joseph = {
+	weakFlyList = Agony.ENUMS["EnemyLists"]["WeakFlies"],
+	attackChance = 0.6,
+	attackCooldown = 30
 };
 
-table.insert(joseph.weakFlyList,EntityType.ENTITY_FLY)
-table.insert(joseph.weakFlyList,EntityType.ENTITY_ATTACKFLY)
-table.insert(joseph.weakFlyList,EntityType.ENTITY_MOTER)
-table.insert(joseph.weakFlyList,EntityType.ENTITY_DART_FLY)
-table.insert(joseph.weakFlyList,EntityType.ENTITY_RING_OF_FLIES)
-
-function joseph:ai_main(entity)
-	local room = Game():GetRoom();
-	local sprite = entity:GetSprite();
-	local player = Game():GetPlayer(0)
+function joseph:ai_move(ent)
+	local rng = ent:GetDropRNG()
 	
-	--Movements
-	--Add random movement
-	if math.random(15) == 1 then
-		entity:AddVelocity(Vector (math.random(4)-2,math.random(4)-2))
-	end
-	--flee
-	if entity.HitPoints > entity.MaxHitPoints/3 then
-		--if the player is too close
-		if math.random(4) == 1 then
-			if entity.Position:Distance(player.Position) < 200 then
-				entity:AddVelocity(entity.Position:__sub(player.Position):Normalized():__mul(1))
-			elseif math.random(4) == 1 then
-				entity.Velocity = Vector(0,0)
+	if ent.HitPoints > ent.MaxHitPoints/3 then
+		if ent.State == NpcState.STATE_MOVE then
+			-- avoid player if too close
+			if ent.Position:Distance(ent:GetPlayerTarget().Position) < 200 then
+				ent.Pathfinder:EvadeTarget(ent:GetPlayerTarget().Position)
+				ent.Velocity = ent.Velocity:Normalized():__mul(4*(rng:RandomFloat()+0.3)+2)
+			else
+				ent.Velocity = ent.Velocity:__add(ent.Velocity:__mul(-0.15))
 			end
+			--slow down/stop when attacking
+		elseif ent.State == NpcState.STATE_ATTACK2 or ent.State == NpcState.STATE_ATTACK then
+			ent.Velocity = ent.Velocity:__add(ent.Velocity:__mul(-0.15))
 		end
-		--clamp max speed
-		entity.Velocity = entity.Velocity:Normalized():__mul(5)
 	else
 		--chase player
-		if math.random(4) == 1 then
-			entity:AddVelocity(player.Position:__sub(entity.Position):Normalized():__mul(2))
+		if ent.State == NpcState.STATE_MOVE then
+			ent.Velocity = Agony:calcEntVel(ent, ent:GetPlayerTarget(), ((3*rng:RandomFloat()+0.3)+5))
+		elseif ent.State == NpcState.STATE_ATTACK2 or ent.State == NpcState.STATE_ATTACK then
+			ent.Velocity = ent.Velocity:__add(ent.Velocity:__mul(-0.15))
 		end
-		--clamp max speed a little bit higher
-		entity.Velocity = entity.Velocity:Normalized():__mul(6.5)
 	end
+end
 
-	--Attacks
-	if math.random(10) == 1 then
-		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_YELLOW, 0, entity.Position, Vector (0,0), entity)
+function joseph:ai_attack(ent)
+	local rng = ent:GetDropRNG()
+	
+	if ent.State == NpcState.STATE_ATTACK then
+		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_YELLOW, 0, ent.Position, Vector (0,0), ent)
+		ent.State = NpcState.STATE_MOVE
 	end
-	if math.random(75) == 1 then
-		if math.random(2) == 1 then
-			Isaac.Spawn(joseph.weakFlyList[math.random(#joseph.weakFlyList)], 0, 0, entity.Position:__add(Vector (math.random(6)-3,math.random(6)-3)), Vector (0,0), entity)
-		elseif math.random(2) == 1 then
-			for i = 1, math.random(5)+3, 1 do
-				local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 0, 0, entity.Position, (Agony:calcTearVel(entity.Position, player.Position, math.random(5)+5)):Rotated(math.random(60)-30), entity);
-				t.SpawnerEntity = entity
+	if ent.State == NpcState.STATE_ATTACK2 then
+		local r = rng:RandomFloat()
+		if r < 0.425 then
+			Isaac.Spawn(joseph.weakFlyList[rng:RandomInt(#joseph.weakFlyList)+1], 0, 0, ent.Position:__add(Vector(rng:RandomInt(6)-2,rng:RandomInt(6)-2)),Vector (0,0), ent)
+		elseif r < 0.85 then
+			for i = 1, rng:RandomInt(5)+4, 1 do
+				local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 0, 0, ent.Position, (Agony:calcTearVel(ent.Position, player.Position, rng:RandomInt(5)+6)):Rotated(rng:RandomInt(60)-29), ent);
+				t.SpawnerEntity = ent
 			end
-		elseif math.random(2) == 1 then
-			Game():ButterBeanFart(entity.Position, 1000, entity, true)
+		else
+			Game():ButterBeanFart(ent.Position, 1000, ent, true)
+		end
+		ent.State = NpcState.STATE_MOVE
+	end
+end
+
+function joseph:init(ent)
+	local rng = ent:GetDropRNG()
+	local data = ent:GetData()
+	
+	if ent.State == NpcState.STATE_INIT then
+		data.attackCooldown = joseph.attackCooldown
+		ent.State = NpcState.STATE_MOVE
+	end
+	if ent.State == NpcState.STATE_MOVE and data.attackCooldown == 0 then
+		if rng:RandomFloat() < joseph.attackChance then
+			if rng:RandomFloat() < 0.5 then
+				ent.State = NpcState.STATE_ATTACK
+			else
+				ent.State = NpcState.STATE_ATTACK2
+			end
+			data.attackCooldown = joseph.attackCooldown
+		else
+			data.attackCooldown = joseph.attackCooldown
 		end
 	end
-
-
+	
+	if ent.State == NpcState.STATE_MOVE and data.attackCooldown ~= nil and data.attackCooldown > 0 then
+		data.attackCooldown = data.attackCooldown - 1
+	elseif ent.State ~= NpcState.STATE_MOVE then
+		data.attackCooldown = joseph.attackCooldown
+	end
 end
 
 --Callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_main, EntityType.AGONY_ETYPE_JOSEPH);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_move, EntityType.AGONY_ETYPE_JOSEPH)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_attack, EntityType.AGONY_ETYPE_JOSEPH)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.init, EntityType.AGONY_ETYPE_JOSEPH)

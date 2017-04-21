@@ -197,6 +197,13 @@ Lists = {
 			{EntityType.ENTITY_RAGLING, 0},
 			{303, 0}, --Blister,
 		},
+		WeakFlies = { --for Joseph
+			EntityType.ENTITY_FLY,
+			EntityType.ENTITY_ATTACKFLY,
+			EntityType.ENTITY_MOTER,
+			EntityType.ENTITY_DART_FLY,
+			EntityType.ENTITY_RING_OF_FLIES,
+		},
 		FlamingAlts = {
 			EntityType.ENTITY_CLOTTY,
 		},
