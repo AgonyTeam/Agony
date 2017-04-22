@@ -23,8 +23,12 @@ function diceTattoo:onUpdate()
 				--Reroll a random item
 				if player:GetCollectibleCount() >= 1 then --If the player has collectibles
 			    	local colletibles = Agony:getCurrentItems()
-		       		player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
-		        	player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES-1)+1, 0, true)
+					local numCol = #(Isaac.GetItemConfig():GetCollectibles())
+					if type(numCol) ~= number then
+						numCol = CollectibleType.NUM_COLLECTIBLES --do the old way if this fails
+					end
+					player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
+					player:AddCollectible(rng:RandomInt(numCol-1)+1, 0, true)
 		        	--POOF!
 					local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
 					col:Reset()

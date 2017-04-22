@@ -54,7 +54,7 @@ function theWay:onUse()
 
 	--player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1, 0, true)
 	local pos = Isaac.GetFreeNearPosition(player.Position, 50)
-	Isaac.Spawn(5, 100, rng:RandomInt(CollectibleType.NUM_COLLECTIBLES)+1 , pos, Vector (0,0), player)
+	Isaac.Spawn(5, 100, 0 , pos, Vector (0,0), player)
 	--POOF!
 	local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
 	col:Reset()

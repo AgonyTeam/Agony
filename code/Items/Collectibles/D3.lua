@@ -8,8 +8,12 @@ function dthree:onUse()
 	
 	if player:GetCollectibleCount() >= 1 then --If the player has collectibles
 	    local colletibles = Agony:getCurrentItems()
+		local numCol = #(Isaac.GetItemConfig():GetCollectibles())
+		if type(numCol) ~= number then
+			numCol = CollectibleType.NUM_COLLECTIBLES --do the old way if this fails
+		end
         player:RemoveCollectible(colletibles[rng:RandomInt(#colletibles)+1])
-        player:AddCollectible(rng:RandomInt(CollectibleType.NUM_COLLECTIBLES-1)+1, 0, true)
+        player:AddCollectible(rng:RandomInt(numCol-1)+1, 0, true)
     end
 	return true
 end
