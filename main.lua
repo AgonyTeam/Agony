@@ -380,18 +380,25 @@ end
 --returns the items the player currently has
 --a list of items can be specified to check if the player has any of these
 function Agony:getCurrentItems(pool)
+	local itemCfg = Isaac.GetItemConfig()
+	local numCol = #(itemCfg:GetCollectibles())
+	if type(numCol) ~= "number" then
+		numCol = 9999 --Mac seems to have trouble with this number thing
+	end
 	pool = pool or {}
 	local currList = {}
 	local player = Isaac.GetPlayer(0)
-	for name, id in pairs(CollectibleType) do
-		if #pool == 0 then
-			if name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id) then
-				table.insert(currList, id)
-			end
-		else
-			for _, poolId in pairs(pool) do
-				if id == poolId and name ~= "NUM_COLLECTIBLES" and player:HasCollectible(id) then
+	for id=1, numCol do
+		if itemCfg:GetCollectible(id) ~= nil then
+			if #pool == 0 then
+				if player:HasCollectible(id) then
 					table.insert(currList, id)
+				end
+			else
+				for _, poolId in pairs(pool) do
+					if id == poolId and player:HasCollectible(id) then
+						table.insert(currList, id)
+					end
 				end
 			end
 		end
