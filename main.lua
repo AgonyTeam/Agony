@@ -533,6 +533,7 @@ Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
 Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
+Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 
 --Debug
 require("Debug");
@@ -552,7 +553,9 @@ require("code/Monsters/Eternals/AttackFly");
 require("code/Monsters/Eternals/RedBoomFly");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
-require("code/Monsters/Flaming Alts/Clotty");
+require("code/Monsters/Flaming Alts/Clotty")
+--Cocoons
+require("code/Monsters/Cocoons/SpiderCocoon")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities

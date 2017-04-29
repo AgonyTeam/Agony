@@ -207,6 +207,12 @@ Lists = {
 		FlamingAlts = {
 			EntityType.ENTITY_CLOTTY,
 		},
+		SpiderCocoon = { --spiders spawned upon death of spider cocoon
+			{EntityType.ENTITY_BIGSPIDER, 0},
+			{EntityType.ENTITY_SPIDER_L2, 0},
+			{EntityType.ENTITY_RAGLING, 0},
+			{EntityType.ENTITY_HOPPER, 1}, --trite
+		},
 	},
 	--Custom Pedestals
 	Pedestals = {
@@ -214,6 +220,12 @@ Lists = {
 		PEDESTAL_SAFE = 1,
 		NUM_PEDESTALS = 2,
 		ANIMFILE = "gfx/Items/Pick Ups/Pedestals/animation.anm2",
+	},
+	--Cocoon Variants
+	CocoonVariant = {
+		COCOON_SPIDER = Isaac.GetEntityVariantByName("Spider Cocoon"),
+		COCOON_CHASING = Isaac.GetEntityVariantByName("Chasing Cocoon"),
+		COCOON_SHOOTING = Isaac.GetEntityVariantByName("Shooting Cocoon"),
 	},
 }
 
