@@ -1,6 +1,6 @@
 <items gfxroot="gfx/items/" version="1">
 	<!--Passive IDs: 1-300 -->
-	<passive cache="luck" name="Lucky Leg" description="You feel really lucky" gfx="collectibles_luckyleg.png" id="1" />
+	<passive cache="luck" name="Lucky's Paw" description="You feel really lucky" gfx="collectibles_luckyleg.png" id="1" />
 	<passive cache="damage" name="Double Down" description="Mysterious placeholder text" gfx="collectibles_doubledown.png" id="2" />
 	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" id="3" />
 	<passive cache="damage speed" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" id="4" />
@@ -35,7 +35,7 @@
 	<passive name="Till Death Do Us Apart" description="Form an alliance" gfx="collectibles_tilldeathdousapart.png" id="33" />
 	<passive name="Personal Bubble" description="Mysterious placeholder text" gfx="collectibles_PersonalBubble.png" id="34" />
 	<passive name="Bowl Cut" description="Mysterious placeholder text" gfx="collectibles_BowlCut.png" id="35" />
-	<passive cache="damage" name="Parasites" description="Mysterious placeholder text" gfx="collectibles_parasites.png" id="36" />
+	<passive cache="damage" name="Infestation 3" description="Mysterious placeholder text" gfx="collectibles_parasites.png" id="36" />
 	<passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" id="37" />
 	<passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" id="38" />
 	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" id="39" />

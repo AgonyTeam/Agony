@@ -564,7 +564,7 @@ require("code/Items/Slots/TreasureHoarder");
 require("code/Monsters/PlayerClone");
 
 --Items
-require("code/Items/Collectibles/LuckyLeg");
+require("code/Items/Collectibles/LuckysPaw");
 require("code/Items/Collectibles/DoubleDown");
 require("code/Items/Collectibles/GrowingAnxiety");
 require("code/Items/Collectibles/TheBigRock");
@@ -612,7 +612,7 @@ require("code/Items/Collectibles/DiceTattoo")
 require("code/Items/Collectibles/SomeonesShoe")
 require("code/Items/Collectibles/PersonalBubble")
 require("code/Items/Collectibles/BowlCut")
-require("code/Items/Collectibles/Parasites")
+require("code/Items/Collectibles/Infestation3")
 require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
 require("code/Items/Collectibles/GoldMan")
