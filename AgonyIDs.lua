@@ -59,7 +59,7 @@ CollectibleType["AGONY_C_LEPRECHAUNS_CONTRACT"] = Isaac.GetItemIdByName("Leprech
 CollectibleType["AGONY_C_LIL_RED_BOOK"] = Isaac.GetItemIdByName("Lil'Red Book");
 CollectibleType["AGONY_C_LSD"] = Isaac.GetItemIdByName("Little Sugar Dumdum");
 CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
-CollectibleType["AGONY_C_LUCKY_LEG"] = Isaac.GetItemIdByName("Lucky Leg");
+CollectibleType["AGONY_C_LUCKY_LEG"] = Isaac.GetItemIdByName("Lucky's Paw");
 CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
 CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
 CollectibleType["AGONY_C_PANDORASCHEST5"] = Isaac.GetItemIdByName("Pandora's Chest     ")
@@ -68,7 +68,7 @@ CollectibleType["AGONY_C_PANDORASCHEST3"] = Isaac.GetItemIdByName("Pandora's Che
 CollectibleType["AGONY_C_PANDORASCHEST2"] = Isaac.GetItemIdByName("Pandora's Chest  ")
 CollectibleType["AGONY_C_PANDORASCHEST1"] = Isaac.GetItemIdByName("Pandora's Chest ")
 CollectibleType["AGONY_C_PANDORASCHEST0"] = Isaac.GetItemIdByName("Pandora's Chest")
-CollectibleType["AGONY_C_PARASITES"] = Isaac.GetItemIdByName("Parasites");
+CollectibleType["AGONY_C_PARASITES"] = Isaac.GetItemIdByName("Infestation 3");
 CollectibleType["AGONY_C_PERSONAL_BUBBLE"] = Isaac.GetItemIdByName("Personal Bubble");
 CollectibleType["AGONY_C_PIP"] = Isaac.GetItemIdByName("Poverty = Power");
 CollectibleType["AGONY_C_PRODUCTIVE_SEIZURE"] =      Isaac.GetItemIdByName("Productive Seizure")
