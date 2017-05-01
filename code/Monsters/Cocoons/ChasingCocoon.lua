@@ -1,5 +1,5 @@
 local cocoon2 = {
-	spawnCooldown = 30, -- cooldown in entity updates until the next spider can spawn when hurt
+	spawnCooldown = 60, -- cooldown in entity updates until the next spider can be spawned
 	maxSpiders = 3, -- max number of spiders from single cocoon 1 on screen
 	spiders = Agony.ENUMS["EnemyLists"]["SpiderCocoon"],
 	spawnChance = 0.7
@@ -51,7 +51,8 @@ function cocoon2:ai_movement(ent)
 			ent.Velocity = ent.V1:__sub(ent.Position)
 		--chase player if awake
 		elseif ent.State == NpcState.STATE_MOVE then
-			ent.Velocity = Agony:calcEntVel(ent, ent:GetPlayerTarget(), (3+(3*rng:RandomFloat()+0.3)))
+			ent.Velocity = Agony:calcEntVel(ent, ent:GetPlayerTarget(), (4+(1.5*rng:RandomFloat()+0.1)))
+			debug_text = ent.Velocity:Length()
 		--stop while attacking
 		elseif ent.State == NpcState.STATE_ATTACK then
 			ent.Velocity = ent.Velocity:__add(ent.Velocity:__mul(-0.15))
@@ -89,17 +90,9 @@ function cocoon2:ai_attack(ent)
 	end
 end
 
---prevent the game from replacing trites spawned by the spider cocoon with flaming hoppers/ministros
-function cocoon2:unreplaceTrites(ent)
-	if ent.SpawnerEntity ~= nil and ent.SpawnerEntity.Type == EntityType.AGONY_ETYPE_COCOON and ent.SpawnerEntity.Variant == Agony.CocoonVariant.COCOON_CHASING and ent:GetData().unreplaced == nil then
-		ent:Morph(EntityType.ENTITY_HOPPER, 1, 0, -1)
-		ent.GetData().unreplaced = true
-	end
-end
-
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_update, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_reset_spiders, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_movement, EntityType.AGONY_ETYPE_COCOON)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_sound_sprite, EntityType.AGONY_ETYPE_COCOON)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_sprite, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon2.ai_attack, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, cocoon2.ai_take_damage, EntityType.AGONY_ETYPE_COCOON)
