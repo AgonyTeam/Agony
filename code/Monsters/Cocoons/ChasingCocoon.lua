@@ -81,9 +81,9 @@ function cocoon2:ai_attack(ent)
 	if ent.Variant == Agony.CocoonVariant.COCOON_CHASING and ent.State == NpcState.STATE_ATTACK then
 		local data = ent:GetData()
 		if ent.Velocity:Length() <= 1 then
-			local spider = Isaac.Spawn(EntityType.ENTITY_SPIDER, 0, 0, Isaac.GetFreeNearPosition(ent.Position, 50), Vector(0,0), ent)
+			EntityNPC.ThrowSpider(ent.Position, ent, Isaac.GetFreeNearPosition(ent.Position, 75), false, 1)
 			ent:PlaySound(SoundEffect.SOUND_BOIL_HATCH, 1, 0, false, 1.2)
-			table.insert(data.spiders, spider)
+			--table.insert(data.spiders, spider) --spider registration code handled in SpiderCocoon.lua
 			data.spawnCooldown = cocoon2.spawnCooldown
 			ent.State = NpcState.STATE_MOVE
 		end

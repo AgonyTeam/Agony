@@ -8,7 +8,7 @@ function cocoon1:ai_update(ent)
 	if ent.Variant == Agony.CocoonVariant.COCOON_SPIDER then
 		local data = ent:GetData()
 		local rng = ent:GetDropRNG()
-		
+		debug_tbl1 = data
 		--init variables in entdata
 		if ent.State == NpcState.STATE_INIT then
 			data.spawnCooldown = cocoon1.spawnCooldown
@@ -29,6 +29,7 @@ function cocoon1:ai_reset_spiders(ent)
 		--remove dead spiders from spider list
 		if ent.State > NpcState.STATE_INIT then
 			local data = ent:GetData()
+			debug_tbl2 = data.spiders
 			for i, sp in pairs(data.spiders) do
 				if not sp:Exists() then
 					data.spiders[i] = nil
@@ -58,8 +59,8 @@ function cocoon1:ai_take_damage(ent, dmg, _,_,_)
 			if data.spawnCooldown == 0 and #data.spiders < cocoon1.maxSpiders then
 				ent.State = NpcState.STATE_ATTACK
 				
-				local spider = Isaac.Spawn(EntityType.ENTITY_SPIDER, 0, 0, Isaac.GetFreeNearPosition(ent.Position, 50), Vector(0,0), ent)
-				table.insert(data.spiders, spider)
+				EntityNPC.ThrowSpider(ent.Position, ent, Isaac.GetFreeNearPosition(ent.Position, 75), false, 1)
+				--table.insert(data.spiders, spider)
 				
 				data.spawnCooldown = cocoon1.spawnCooldown
 			elseif data.spawnCooldown == 0 then
@@ -91,6 +92,17 @@ function cocoon1:unreplaceTrites(ent)
 	end
 end
 
+--needed because ThrowSpider doesn't return an Entity
+function cocoon1:registerSpider(ent)
+	if ent.SpawnerType == EntityType.AGONY_ETYPE_COCOON and ent.FrameCount <= 1 and ent:GetData().reg == nil then
+		local cocoon = Agony:getNearestEnemy(ent, {EntityType.AGONY_ETYPE_COCOON}, {mode = "only_whitelist"})
+		if cocoon:GetData().spiders ~= nil then
+			table.insert(cocoon:GetData().spiders, ent)
+			ent:GetData().reg = true
+		end
+	end
+end
+
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.ai_update, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.ai_reset_spiders, EntityType.AGONY_ETYPE_COCOON)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.ai_movement, EntityType.AGONY_ETYPE_COCOON)
@@ -100,3 +112,4 @@ Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, cocoon1.ai_take_damage, Entit
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.unreplaceTrites, EntityType.ENTITY_HOPPER)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.unreplaceTrites, EntityType.ENTITY_FLAMINGHOPPER)
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.unreplaceTrites, EntityType.ENTITY_MINISTRO)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, cocoon1.registerSpider, EntityType.ENTITY_SPIDER)
