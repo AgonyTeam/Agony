@@ -370,11 +370,9 @@ function Agony:removeFriendlyEnemies()
 end
 
 function Agony:dataCopy(originData,targetData)
-	targetData.SpecialOne = originData.SpecialOne --Special One Item Data
-	targetData.RigidMind = originData.RigidMind --Rigid Mind Item Data
-	targetData.NutMilk = originData.NutMilk --Nut Milk Item Data
-	targetData.status_slagged = originData.status_slagged --Status Effect - take extra damage
-	targetData.status_stinks = originData.status_stinks --Status Effect - fares and poisons nearby enemies
+	for k, v in pairs(originData) do
+		targetData[k] = v
+	end
 end
 
 --returns the items the player currently has
