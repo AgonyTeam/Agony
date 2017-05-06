@@ -538,6 +538,7 @@ require("Debug");
 --Enemies
 require("code/Monsters/YellowBlock")
 require("code/Monsters/HunchBone")
+require("code/Monsters/FatFly")
 --Eternals
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");
