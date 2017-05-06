@@ -370,11 +370,9 @@ function Agony:removeFriendlyEnemies()
 end
 
 function Agony:dataCopy(originData,targetData)
-	targetData.SpecialOne = originData.SpecialOne --Special One Item Data
-	targetData.RigidMind = originData.RigidMind --Rigid Mind Item Data
-	targetData.NutMilk = originData.NutMilk --Nut Milk Item Data
-	targetData.status_slagged = originData.status_slagged --Status Effect - take extra damage
-	targetData.status_stinks = originData.status_stinks --Status Effect - fares and poisons nearby enemies
+	for k, v in pairs(originData) do
+		targetData[k] = v
+	end
 end
 
 --returns the items the player currently has
@@ -533,6 +531,7 @@ Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
 Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
+Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 
 --Debug
 require("Debug");
@@ -552,7 +551,10 @@ require("code/Monsters/Eternals/AttackFly");
 require("code/Monsters/Eternals/RedBoomFly");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
-require("code/Monsters/Flaming Alts/Clotty");
+require("code/Monsters/Flaming Alts/Clotty")
+--Cocoons
+require("code/Monsters/Cocoons/SpiderCocoon")
+require("code/Monsters/Cocoons/ChasingCocoon")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
@@ -560,7 +562,7 @@ require("code/Items/Slots/TreasureHoarder");
 require("code/Monsters/PlayerClone");
 
 --Items
-require("code/Items/Collectibles/LuckyLeg");
+require("code/Items/Collectibles/LuckysPaw");
 require("code/Items/Collectibles/DoubleDown");
 require("code/Items/Collectibles/GrowingAnxiety");
 require("code/Items/Collectibles/TheBigRock");
@@ -608,7 +610,7 @@ require("code/Items/Collectibles/DiceTattoo")
 require("code/Items/Collectibles/SomeonesShoe")
 require("code/Items/Collectibles/PersonalBubble")
 require("code/Items/Collectibles/BowlCut")
-require("code/Items/Collectibles/Parasites")
+require("code/Items/Collectibles/Infestation3")
 require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
 require("code/Items/Collectibles/GoldMan")

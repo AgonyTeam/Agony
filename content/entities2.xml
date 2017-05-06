@@ -130,13 +130,13 @@
 	<!--/Flaming Alts-->
 	
 	<!--Cocoons-->
-	<entity id="231" subtype="20" anm2path="Monsters/Cocoons/Cocoon 1/animation.anm2" reroll="true" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Cocoon 1" numGridCollisionPoints="12" shadowSize="22" stageHP="0" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
+	<entity id="506" anm2path="Monsters/Cocoons/Spider Cocoon/animation.anm2" reroll="true" baseHP="30" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Spider Cocoon" numGridCollisionPoints="12" shadowSize="22" stageHP="2" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
 		<gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-	<entity anm2path="Monsters/Cocoons/Cocoon 2/animation.anm2" reroll="true" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Cocoon 2" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="1" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
+	<entity id="506" anm2path="Monsters/Cocoons/Chasing Cocoon/animation.anm2" reroll="true" baseHP="30" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Chasing Cocoon" numGridCollisionPoints="12" shadowSize="22" stageHP="2" variant="1" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
 		<gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
 	</entity>
-	<entity anm2path="Monsters/Cocoons/Cocoon 3/animation.anm2" reroll="true" baseHP="20" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Cocoon 3" numGridCollisionPoints="12" shadowSize="22" stageHP="0" variant="2" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
+	<entity id="506" anm2path="Monsters/Cocoons/Shooting Cocoon/animation.anm2" reroll="true" baseHP="30" boss="0" champion="1" collisionDamage="0" collisionMass="100" collisionRadius="13" friction="1" name="Shooting Cocoon" numGridCollisionPoints="12" shadowSize="22" stageHP="2" variant="2" portrait="108" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Idle">
 		<gibs amount="4" blood="1" bone="0" eye="0" gut="0" large="0" />
 	</entity>
 	<!--Cocoons-->
