@@ -148,6 +148,7 @@ EntityType["AGONY_ETYPE_YELLOW_BLOCK"] = Isaac.GetEntityTypeByName("Yellow Block
 EntityType["AGONY_ETYPE_PLAYER_CLONE"] = Isaac.GetEntityTypeByName("Player Clone")
 EntityType["AGONY_ETYPE_HUNCHBONE"] = Isaac.GetEntityTypeByName("Hunchbone")
 EntityType["AGONY_ETYPE_COCOON"] = Isaac.GetEntityTypeByName("Spider Cocoon")
+EntityType["AGONY_ETYPE_FATFLY"] = Isaac.GetEntityTypeByName("Fat Fly")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
 
