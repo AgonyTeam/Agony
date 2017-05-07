@@ -84,6 +84,7 @@
 	<active name="Worm Knot" description="Mysterious placeholder text" gfx="collectibles_wormknot.png" maxcharges="1" id="327" />
 	<active name="Easter Egg" description="Mysterious placeholder text" gfx="collectibles_easteregg.png" maxcharges="0" id="328" />
 	<active name="The Root Of Anger" description="Mysterious placeholder text" gfx="collectibles_therootofanger.png" maxcharges="0" id="329" />
+  <active name="Soaked Remote" description="It's wet" gfx="collectibles_soakedremote.png" maxcharges="1" id="330" />
 	
 	<!--Familiar IDs: 601-??? -->
 	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" id="601" />
