@@ -737,6 +737,7 @@ require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
 require("code/Items/Collectibles/EggBeater")
 require("code/Items/Collectibles/NutMilk")
+require("code/Items/Collectibles/SoakedRemote")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

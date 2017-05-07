@@ -116,6 +116,7 @@ CollectibleType["AGONY_C_STINK_EYE"] = Isaac.GetItemIdByName("Stink Eye");
 CollectibleType["AGONY_C_THE_ROOT_OF_ANGER"] = Isaac.GetItemIdByName("The Root Of Anger");
 CollectibleType["AGONY_C_EGG_BEATER"] = Isaac.GetItemIdByName("Egg Beater");
 CollectibleType["AGONY_C_NUT_MILK"] = Isaac.GetItemIdByName("Nut Milk");
+CollectibleType["AGONY_C_SOAKED_REMOTE"] = Isaac.GetItemIdByName("Soaked Remote");
 
 --Trinkets
 TrinketType["AGONY_T_BLOODY_NUT"] = Isaac.GetTrinketIdByName("Bloody Nut")
