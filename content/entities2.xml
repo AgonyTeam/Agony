@@ -142,7 +142,7 @@
 	<!--Cocoons-->
 	
 	<!--FatFly-->
-	<entity id="835" variant="0" name="Fat Fly" anm2path="Monsters/Fat Fly/animation.anm2" baseHP="18" stageHP="8" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.9" numGridCollisionPoints="12" shadowSize="19" shutdoors="1">
+	<entity id="507" variant="0" name="Fat Fly" anm2path="Monsters/Fat Fly/animation.anm2" baseHP="18" stageHP="8" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="0.9" numGridCollisionPoints="12" shadowSize="19" shutdoors="1">
         <gibs amount="5" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
 	<!--/FatFly-->
