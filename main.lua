@@ -55,6 +55,7 @@ spritesToRender = {}
 pedestalsToRender = {}
 --pickups
 pickUpTable = {}
+pickUpTree = {}
 
 --make the game save the saveData table
 function Agony:SaveNow()
@@ -529,7 +530,7 @@ function Agony:calcEntVel(ent, target, mul)
 end
 
 --add a custom PickUp to the PickupHandler
---functions are optional, but it would make sense pass a pickupF
+--functions are optional, but it would make sense to pass a pickupF
 function Agony:addPickup(type, var, sub, pickupF, spawnF, updateF)
 	local t = {
 		Type = type,
@@ -539,7 +540,25 @@ function Agony:addPickup(type, var, sub, pickupF, spawnF, updateF)
 		spawnPickup = spawnF,
 		onUpdate = updateF
 	}
-	table.insert(pickUpTable, t)
+  --Tree structure
+  --         pickUpTree = table of variants
+  --           /  \    
+  --    varianta   variantb = table of subtypes
+  --      /          |     \
+  --    subtypea   sub_b    sub_c = pickUp
+  --
+  if pickUpTree[type] == nil then
+    pickUpTree[type] = {}
+  end
+  
+  if pickUpTree[type][var] == nil then
+    pickUpTree[type][var] = {}
+  end
+  
+  pickUpTree[type][var][sub] = t
+  
+  --Store for easy iteration
+  table.insert(pickUpTable, t)
 end
 
 --the main PickupHandler Function
@@ -550,32 +569,55 @@ function Agony:updatePickups()
 	local sound = SFXManager()
 
 	for _,ent in pairs(ents) do
-		for _, pickUpObj in pairs(pickUpTable) do
-			if ent.Type == pickUpObj.Type and ent.Variant == pickUpObj.Variant and ent.SubType == pickUpObj.SubType then
-				local data = ent:GetData()
-				local sprite = ent:GetSprite()
-				--pick up the PickUp and run the pickup code
-				if player.Position:Distance(ent.Position) <= player.Size + ent.Size + 8 and data.Picked == nil then
-					data.Picked = true
-					ent.EntityCollisionClass = EntityCollisionClass.ENTCOLL_NONE
-					sprite:Play("Collect")
-					if pickUpObj.onPickup ~= nil then
-						pickUpObj:onPickup(player, sound, data, sprite, ent)
-					end
-				elseif data.Picked and sprite:GetFrame() == 6 then
-					ent:Remove()
-				end
-				
-				--called every frame for the pickup, if an update function is given
-				if pickUpObj.onUpdate ~= nil then
-					pickUpObj:onUpdate(player, sound, data, sprite, ent)
-				end
-			--try to replace the entity if a spawnfunc is given
-			elseif pickUpObj.spawnPickup ~= nil and ent.FrameCount <= 1 then
-				pickUpObj:spawnPickup(ent, ent:GetDropRNG())
-			end
-		end
+    
+    local isAgonyPickup = false
+    
+    --Check existence in pickUpTree
+    local variants = pickUpTree[ent.Type]
+    if variants ~= nil then
+      local subtypes = variants[ent.Variant]
+      if subtypes ~= nil then
+        local pickUpObj = subtypes[ent.SubType]
+        if pickUpObj ~= nil then
+          
+          isAgonyPickup = true
+          
+          local data = ent:GetData()
+          local sprite = ent:GetSprite()
+          
+          --called every frame for the pickup, if an update function is given
+          if pickUpObj.onUpdate ~= nil then
+            pickUpObj:onUpdate(player, sound, data, sprite, ent)
+          end
+          
+          --Pick up the PickUp and run the pickup code
+          if player.Position:Distance(ent.Position) <= player.Size + ent.Size + 8 and (data.Picked == nil or data.Picked == false) then
+            data.Picked = true
+            ent.EntityCollisionClass = EntityCollisionClass.ENTCOLL_NONE
+            ent.Velocity = Vector(0,0)
+            sprite:Play("Collect")
+            if pickUpObj.onPickup ~= nil then
+              pickUpObj:onPickup(player, sound, data, sprite, ent)
+            end
+          elseif data.Picked and sprite:GetFrame() == 6 then
+            ent:Remove()
+          end
+          
+        end
+      end
+    end
+    
+    --On pickup spawn
+    if isAgonyPickup == false and ent.FrameCount <= 1 then
+      for _, pickUpObj in pairs(pickUpTable) do
+        if pickUpObj.spawnPickup ~= nil then
+          pickUpObj:spawnPickup(ent, ent:GetDropRNG())
+        end
+      end
+    end
+    
 	end
+  
 end
 
 --Extra Bits
