@@ -53,6 +53,9 @@ local respawnIDs = { --holds all IDs that need to be respawned
 spritesToRender = {}
 --All custom pedestals that need to stay that way
 pedestalsToRender = {}
+--pickups
+pickUpTable = {}
+
 --make the game save the saveData table
 function Agony:SaveNow()
 	Isaac.SaveModData(Agony, json.encode(saveData));
@@ -525,6 +528,55 @@ function Agony:calcEntVel(ent, target, mul)
 	return ent.Velocity:__add(target.Position:__sub(ent.Position):Normalized():__mul(fMul)):Normalized():__mul(mul)
 end
 
+--add a custom PickUp to the PickupHandler
+--functions are optional, but it would make sense pass a pickupF
+function Agony:addPickup(type, var, sub, pickupF, spawnF, updateF)
+	local t = {
+		Type = type,
+		Variant = var,
+		SubType = sub,
+		onPickup = pickupF,
+		spawnPickup = spawnF,
+		onUpdate = updateF
+	}
+	table.insert(pickUpTable, t)
+end
+
+--the main PickupHandler Function
+--it runs the onPickup, spawnPickup and onUpdate functions of our custom PickUps
+function Agony:updatePickups()
+	local ents = Isaac.GetRoomEntities()
+	local player = Isaac.GetPlayer(0)
+	local sound = SFXManager()
+
+	for _,ent in pairs(ents) do
+		for _, pickUpObj in pairs(pickUpTable) do
+			if ent.Type == pickUpObj.Type and ent.Variant == pickUpObj.Variant and ent.SubType == pickUpObj.SubType then
+				local data = ent:GetData()
+				local sprite = ent:GetSprite()
+				--pick up the PickUp and run the pickup code
+				if player.Position:Distance(ent.Position) <= player.Size + ent.Size + 8 and data.Picked == nil then
+					data.Picked = true
+					ent.EntityCollisionClass = EntityCollisionClass.ENTCOLL_NONE
+					sprite:Play("Collect")
+					if pickUpObj.onPickup ~= nil then
+						pickUpObj:onPickup(player, sound, data, sprite, ent)
+					end
+				elseif data.Picked and sprite:GetFrame() == 6 then
+					ent:Remove()
+				end
+				
+				--called every frame for the pickup, if an update function is given
+				if pickUpObj.onUpdate ~= nil then
+					pickUpObj:onUpdate(player, sound, data, sprite, ent)
+				end
+			--try to replace the entity if a spawnfunc is given
+			elseif pickUpObj.spawnPickup ~= nil and ent.FrameCount <= 1 then
+				pickUpObj:spawnPickup(ent, ent:GetDropRNG())
+			end
+		end
+	end
+end
 
 --Extra Bits
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
@@ -700,3 +752,4 @@ Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)

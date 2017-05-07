@@ -1,6 +1,7 @@
 
 pyritecoin = {}
 
+--[[
 function pyritecoin:onPickup()
 	local ents = Isaac.GetRoomEntities()
 	local player = Isaac.GetPlayer(0)
@@ -25,5 +26,10 @@ function pyritecoin:onPickup()
 		end	
 	end
 end
+]]--
 
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, pyritecoin.onPickup)
+function pyritecoin:onPick(player, sound, data, sprite, ent)
+	sound:Play(SoundEffect.SOUND_PLOP, 1, 0, false, 1)
+end
+
+Agony:addPickup(EntityType.ENTITY_PICKUP, PickupVariant.AGONY_PICKUP_COIN, CoinSubType.AGONY_COIN_PYRITE, pyritecoin.onPick, nil, nil)
