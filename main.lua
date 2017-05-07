@@ -31,6 +31,8 @@ saveData.goldMan = saveData.goldMan or {}
 saveData.cherry = saveData.cherry or {}
 saveData.milkman = saveData.milkman or {}
 saveData.god = saveData.god or {}
+saveData.delusion = saveData.delusion or {}
+
 
 --respawnV2's vars
 local ent_before = {};
@@ -532,6 +534,7 @@ require("AgonyIDs")
 Agony.ENUMS = require("ExtraEnums")
 Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
+Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
 
 --Debug
 require("Debug");
@@ -539,6 +542,7 @@ require("Debug");
 require("code/Monsters/YellowBlock")
 require("code/Monsters/HunchBone")
 require("code/Monsters/FatFly")
+require("code/Monsters/Delusion")
 --Eternals
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");
