@@ -53,7 +53,7 @@
 	<passive name="Stink Eye" description="Mysterious placeholder text" gfx="collectibles_stinkeye.png" id="52" />
 	<passive cache="shotspeed damage firedelay" name="Egg Beater" description="Mysterious placeholder text" gfx="collectibles_eggbeater.png" id="53" />
 	<passive name="Nut Milk" description="Mysterious placeholder text" gfx="collectibles_nutmilk.png" id="54" />
-	<passive name="Strange Liquid" cache="range firedelay" description="Mysterious placeholder text" gfx="collectibles_strangeliquid.png" id="55" />
+	<passive name="Blind Faith" cache="range firedelay damage" description="Follow the shepherd" gfx="collectibles_blindfaith.png" id="55" />
 
 	<!--Active IDs: 301-600 -->
 	<active description="Mysterious placeholder text" gfx="collectibles_triplopia.png" maxcharges="0" name="Triplopia" id="301" />
