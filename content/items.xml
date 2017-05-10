@@ -13,7 +13,7 @@
 	<passive cache="damage" name="Wrath = Power" description="Mysterious placeholder text" gfx="collectibles_wrathequalspower.png" id="11" />
 	<passive cache ="firedelay speed" name="Hyperactive" description="Mysterious placeholder text" gfx="collectibles_hyperactive.png" id="12" />
 	<passive name="Tantrum" description="Mysterious placeholder text" gfx="collectibles_tantrum.png" id="13" />
-	<passive name="Suicide God" description="Mysterious placeholder text" gfx="collectibles_suicidegod.png" id="14" />
+	<!--FREE <passive name="" description="" gfx="" id="14" /> -->
 	<passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" id="15" />
 	<passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" id="16" />
 	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" id="17" />
@@ -112,4 +112,5 @@
 	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" id="3" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" id="4" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_nuclearstone.png" name="Nuclear Stone" id="5" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_suicidegod.png" name="Suicide God" id="6" />
 </items>

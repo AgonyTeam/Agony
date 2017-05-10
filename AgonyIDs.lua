@@ -85,7 +85,6 @@ CollectibleType["AGONY_C_SOLOMON_CROWN"] = Isaac.GetItemIdByName("Solomon's Crow
 CollectibleType["AGONY_C_SOMEONES_SHOE"] = Isaac.GetItemIdByName("Someone's Shoe")
 CollectibleType["AGONY_C_SPECIAL_ONE"] = Isaac.GetItemIdByName("Special One");
 CollectibleType["AGONY_C_SPOODER_BOI"] = Isaac.GetItemIdByName("Spooderboi");
-CollectibleType["AGONY_C_SUICIDE_GOD"] = Isaac.GetItemIdByName("Suicide God");
 CollectibleType["AGONY_C_TANTRUM"] = Isaac.GetItemIdByName("Tantrum");
 CollectibleType["AGONY_C_TILL_DEATH_DO_US_APART"] =      Isaac.GetItemIdByName("Till Death Do Us Apart")
 CollectibleType["AGONY_C_TECH_9000"] = Isaac.GetItemIdByName("Technology 9000");
@@ -125,6 +124,7 @@ TrinketType["AGONY_T_LUCKY_EGG"] = Isaac.GetTrinketIdByName("Lucky Egg")
 TrinketType["AGONY_T_PARTY_POOPER"] = Isaac.GetTrinketIdByName("Party Pooper")
 TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice")
 TrinketType["AGONY_T_NUCLEAR_STONE"] = Isaac.GetTrinketIdByName("Nuclear Stone")
+TrinketType["AGONY_T_SUICIDE_GOD"] = Isaac.GetTrinketIdByName("Suicide God");
 
 --Cards
 Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")

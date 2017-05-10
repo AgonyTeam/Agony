@@ -12,7 +12,6 @@
 	<costume name="Tumor" anm2path="costume_tumor.anm2" type="passive"  id="24" />
 	<costume name="Poverty = Power" anm2path="costume_povertyequalspower.anm2" type="passive"  id="23" />
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="passive"  id="27" />
-	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="passive"  id="14" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="passive"  id="29" />
 	<costume name="Overgrown Spine" anm2path="costume_overgrownspine.anm2" type="passive"  id="17" />
 	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="passive"  id="18" />
@@ -39,6 +38,9 @@
 	<costume name="The Root of Anger" anm2path="costume_therootofanger.anm2" type="none" />
 	<costume name="Bowl Cut" anm2path="costume_bowlcut.anm2" type="passive" id="35"/>
 	<costume name="Blind Faith" anm2path="costume_blindfaith.anm2" type="passive" id="55"/>
+	
+	<!--Trinkets-->
+	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="trinket"  id="6" />
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
