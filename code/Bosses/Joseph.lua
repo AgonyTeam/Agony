@@ -1,11 +1,12 @@
 local joseph = {
 	weakFlyList = Agony.ENUMS["EnemyLists"]["WeakFlies"],
 	attackChance = 0.6,
-	attackCooldown = 30
+	attackCooldown = 30,
+  chaseBaseSpeed = 5.3,
+  chaseRandomSpeed = 3
 };
 
-function joseph:ai_move(ent)
-	local rng = ent:GetDropRNG()
+function joseph:ai_move(ent, rng, data)
 	
 	if ent.HitPoints > ent.MaxHitPoints/3 then
 		if ent.State == NpcState.STATE_MOVE then
@@ -23,15 +24,14 @@ function joseph:ai_move(ent)
 	else
 		--chase player
 		if ent.State == NpcState.STATE_MOVE then
-			ent.Velocity = Agony:calcEntVel(ent, ent:GetPlayerTarget(), ((3*rng:RandomFloat()+0.3)+5))
+			ent.Velocity = Agony:calcEntVel(ent, ent:GetPlayerTarget(), (rng:RandomFloat() * joseph.chaseRandomSpeed + joseph.chaseBaseSpeed))
 		elseif ent.State == NpcState.STATE_ATTACK2 or ent.State == NpcState.STATE_ATTACK then
 			ent.Velocity = ent.Velocity:__add(ent.Velocity:__mul(-0.15))
 		end
 	end
 end
 
-function joseph:ai_attack(ent)
-	local rng = ent:GetDropRNG()
+function joseph:ai_attack(ent, rng, data)
 	
 	if ent.State == NpcState.STATE_ATTACK then
 		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_YELLOW, 0, ent.Position, Vector (0,0), ent)
@@ -42,6 +42,7 @@ function joseph:ai_attack(ent)
 		if r < 0.425 then
 			Isaac.Spawn(joseph.weakFlyList[rng:RandomInt(#joseph.weakFlyList)+1], 0, 0, ent.Position:__add(Vector(rng:RandomInt(6)-2,rng:RandomInt(6)-2)),Vector (0,0), ent)
 		elseif r < 0.85 then
+      local player = ent:GetPlayerTarget()
 			for i = 1, rng:RandomInt(5)+4, 1 do
 				local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 0, 0, ent.Position, (Agony:calcTearVel(ent.Position, player.Position, rng:RandomInt(5)+6)):Rotated(rng:RandomInt(60)-29), ent);
 				t.SpawnerEntity = ent
@@ -53,9 +54,7 @@ function joseph:ai_attack(ent)
 	end
 end
 
-function joseph:init(ent)
-	local rng = ent:GetDropRNG()
-	local data = ent:GetData()
+function joseph:ai_init(ent, rng, data)
 	
 	if ent.State == NpcState.STATE_INIT then
 		data.attackCooldown = joseph.attackCooldown
@@ -81,7 +80,13 @@ function joseph:init(ent)
 	end
 end
 
+function joseph:ai_update(ent)
+  local rng = ent:GetDropRNG()
+  local data = ent:GetData()
+  joseph:ai_init(ent, rng, data)
+  joseph:ai_move(ent, rng, data)
+  joseph:ai_attack(ent, rng, data)
+end
+
 --Callbacks
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_move, EntityType.AGONY_ETYPE_JOSEPH)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_attack, EntityType.AGONY_ETYPE_JOSEPH)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.init, EntityType.AGONY_ETYPE_JOSEPH)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, joseph.ai_update, EntityType.AGONY_ETYPE_JOSEPH)
