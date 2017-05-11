@@ -1,9 +1,8 @@
---local item_DoubleDown = Isaac.GetItemIdByName("Double Down")
 local doubleDown = {}
 
 -- Doubles player damage
 function doubleDown:cacheUpdate (player,cacheFlag)
-	if (player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN)) and (cacheFlag == CacheFlag.CACHE_DAMAGE) then
+	if player:HasCollectible(CollectibleType.AGONY_C_DOUBLE_DOWN) and cacheFlag == CacheFlag.CACHE_DAMAGE then
 		player.Damage = player.Damage*2*player:GetCollectibleNum(CollectibleType.AGONY_C_DOUBLE_DOWN)
 	end
 end
@@ -16,7 +15,11 @@ function doubleDown:onTakeDmg(entity,dmgAmount)
 		for i = 1, player:GetCollectibleNum(CollectibleType.AGONY_C_DOUBLE_DOWN) do
 			for i=1, dmgAmount do
 				if player:GetSoulHearts() > 0 then
-					player:AddSoulHearts(-1)
+					if player:IsBlackHeart(player:GetSoulHearts()) then
+						player:AddBlackHearts(-1)
+					else
+						player:AddSoulHearts(-1)
+					end
 				else
 					player:AddHearts(-1)
 				end
