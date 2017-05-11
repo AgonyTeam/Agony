@@ -2,8 +2,8 @@ local joseph = {
 	weakFlyList = Agony.ENUMS["EnemyLists"]["WeakFlies"],
 	attackChance = 0.6,
 	attackCooldown = 30,
-  chaseBaseSpeed = 5.3,
-  chaseRandomSpeed = 3
+	chaseBaseSpeed = 5.3,
+	chaseRandomSpeed = 3
 };
 
 function joseph:ai_move(ent, rng, data)
@@ -42,7 +42,7 @@ function joseph:ai_attack(ent, rng, data)
 		if r < 0.425 then
 			Isaac.Spawn(joseph.weakFlyList[rng:RandomInt(#joseph.weakFlyList)+1], 0, 0, ent.Position:__add(Vector(rng:RandomInt(6)-2,rng:RandomInt(6)-2)),Vector (0,0), ent)
 		elseif r < 0.85 then
-      local player = ent:GetPlayerTarget()
+			local player = ent:GetPlayerTarget()
 			for i = 1, rng:RandomInt(5)+4, 1 do
 				local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 0, 0, ent.Position, (Agony:calcTearVel(ent.Position, player.Position, rng:RandomInt(5)+6)):Rotated(rng:RandomInt(60)-29), ent);
 				t.SpawnerEntity = ent
@@ -81,11 +81,11 @@ function joseph:ai_init(ent, rng, data)
 end
 
 function joseph:ai_update(ent)
-  local rng = ent:GetDropRNG()
-  local data = ent:GetData()
-  joseph:ai_init(ent, rng, data)
-  joseph:ai_move(ent, rng, data)
-  joseph:ai_attack(ent, rng, data)
+	local rng = ent:GetDropRNG()
+	local data = ent:GetData()
+	joseph:ai_init(ent, rng, data)
+	joseph:ai_move(ent, rng, data)
+	joseph:ai_attack(ent, rng, data)
 end
 
 --Callbacks
