@@ -682,11 +682,11 @@ require("code/Items/Collectibles/Hyperactive");
 require("code/Items/Collectibles/Tantrum");
 require("code/Items/Collectibles/D3");
 require("code/Items/Collectibles/Cyanide");
---require(""); Previously code/Items/Collectibles/SuicideGod
+--require("");
 require("code/Items/Collectibles/PyramidHead");
 require("code/Items/Collectibles/BreadyMold");
 require("code/Items/Collectibles/OvergrownSpine");
-require("code/Items/Collectibles/SolomonsCrown");
+--require("");
 require("code/Items/Collectibles/Tech9000");
 require("code/Items/Collectibles/ElectricHair");
 require("code/Items/Collectibles/TDDUA");
@@ -747,6 +747,7 @@ require("code/Items/Trinkets/BloodyNut")
 require("code/Items/Trinkets/LuckyEgg")
 require("code/Items/Trinkets/NuclearStone")
 require("code/Items/Trinkets/SuicideGod");
+require("code/Items/Trinkets/SolomonsCrown");
 
 --Transformations
 require("code/Misc/Transformations/God")

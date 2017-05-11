@@ -17,7 +17,7 @@
 	<passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" id="15" />
 	<passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" id="16" />
 	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" id="17" />
-	<passive cache ="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" id="18" />
+	<!--FREE <passive cache="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" id="18" />-->
 	<passive name="Technology 9000" description="Mysterious placeholder text" gfx="collectibles_technology9000.png" id="19" />
 	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" id="20" />
 	<passive name="Pythagore's Body" description="Mysterious placeholder text" gfx="collectibles_pythagoresbody.png" id="21" />
@@ -113,4 +113,5 @@
 	<trinket description="Mysterious placeholder text" gfx="trinkets_luckyegg.png" name="Lucky Egg" id="4" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_nuclearstone.png" name="Nuclear Stone" id="5" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_suicidegod.png" name="Suicide God" id="6" />
+	<trinket description="Mysterious placeholder text" cache ="firedelay speed damage luck" gfx="trinkets_solomoncrown.png" name="Solomon's Crown" id="7" />
 </items>

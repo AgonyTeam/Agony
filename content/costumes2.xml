@@ -14,7 +14,6 @@
 	<costume name="Ferrofluid" anm2path="costume_ferrofluid.anm2" type="passive"  id="27" />
 	<costume name="Fragile Conception" anm2path="costume_fragileconception.anm2" type="passive"  id="29" />
 	<costume name="Overgrown Spine" anm2path="costume_overgrownspine.anm2" type="passive"  id="17" />
-	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="passive"  id="18" />
 	<costume name="Dice Tattoo" anm2path="costume_dicetattoo.anm2" type="passive"  id="32" />
 	<costume name="Till Death Do Us Apart" anm2path="costume_tilldeathdousappart.anm2" type="passive"  id="33" />
 	<costume name="Electric Hair" anm2path="costume_electrichair.anm2" type="passive"  id="20" />
@@ -41,6 +40,7 @@
 	
 	<!--Trinkets-->
 	<costume name="Suicide God" anm2path="costume_suicidegod.anm2" type="trinket"  id="6" />
+	<costume name="Solomon's Crown" anm2path="costume_solomonscrown.anm2" type="trinket"  id="7" />
 	
 	<!--Transformations-->
 	<costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" />
