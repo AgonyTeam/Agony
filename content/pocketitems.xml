@@ -1,5 +1,5 @@
 <pocketitems>
-	<pilleffect name="Party Pills!" />
+	<!-- <pilleffect name="Party Pills!" /> -->
 	
 	<!--Impotant note on cards to save everyone from headaches: hud and name HAVE TO be EXACTLY THE SAME or else we'll get -1 as an id.-->
 	<card description="RELOAD!!" hud="Reload!" name="Reload!" />

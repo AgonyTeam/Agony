@@ -45,7 +45,7 @@ local redo2 = false;
 local glowingHourglass_allow = true;
 
 local respawnIDs = { --holds all IDs that need to be respawned
-	EntityType.AGONY_ETYPE_TREASURE_HOARDER,
+	-- EntityType.AGONY_ETYPE_TREASURE_HOARDER,
 	EntityType.AGONY_ETYPE_YELLOW_BLOCK
 }
 
@@ -657,62 +657,62 @@ require("code/Monsters/Cocoons/ChasingCocoon")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
-require("code/Items/Slots/TreasureHoarder");
+-- require("code/Items/Slots/TreasureHoarder");
 require("code/Monsters/PlayerClone");
 
 --Items
 require("code/Items/Collectibles/LuckysPaw");
 require("code/Items/Collectibles/DoubleDown");
 require("code/Items/Collectibles/GrowingAnxiety");
-require("code/Items/Collectibles/TheBigRock");
-require("code/Items/Collectibles/GasolineJuicebox");
-require("code/Items/Collectibles/RadioactivePizza");
-require("code/Items/Collectibles/Triplopia");
+-- require("code/Items/Collectibles/TheBigRock");
+-- require("code/Items/Collectibles/GasolineJuicebox");
+-- require("code/Items/Collectibles/RadioactivePizza");
+-- require("code/Items/Collectibles/Triplopia");
 require("code/Items/Collectibles/TheRock");
-require("code/Items/Collectibles/VomitCake");
+-- require("code/Items/Collectibles/VomitCake");
 require("code/Items/Collectibles/Tourette");
 require("code/Items/Collectibles/Runestone");
 require("code/Items/Collectibles/MagicKit");
 require("code/Items/Collectibles/LittleSugarDumdum");
-require("code/Items/Collectibles/YoureABigGuy");
-require("code/Items/Collectibles/KnowledgeIsPower");
-require("code/Items/Collectibles/WrathIsPower");
+-- require("code/Items/Collectibles/YoureABigGuy");
+-- require("code/Items/Collectibles/KnowledgeIsPower");
+-- require("code/Items/Collectibles/WrathIsPower");
 require("code/Items/Collectibles/LoadedDice");
 require("code/Items/Collectibles/Hyperactive");
-require("code/Items/Collectibles/Tantrum");
-require("code/Items/Collectibles/D3");
+-- require("code/Items/Collectibles/Tantrum");
+-- require("code/Items/Collectibles/D3");
 require("code/Items/Collectibles/Cyanide");
 --require("");
-require("code/Items/Collectibles/PyramidHead");
-require("code/Items/Collectibles/BreadyMold");
+-- require("code/Items/Collectibles/PyramidHead");
+-- require("code/Items/Collectibles/BreadyMold");
 require("code/Items/Collectibles/OvergrownSpine");
 --require("");
-require("code/Items/Collectibles/Tech9000");
+-- require("code/Items/Collectibles/Tech9000");
 require("code/Items/Collectibles/ElectricHair");
 require("code/Items/Collectibles/TDDUA");
 require("code/Items/Collectibles/PythagoresBody");
 require("code/Items/Collectibles/YeuxRevolver");
-require("code/Items/Collectibles/PovertyIsPower");
+-- require("code/Items/Collectibles/PovertyIsPower");
 require("code/Items/Collectibles/BrotherCancer");
 require("code/Items/Collectibles/RememberMeNow");
 require("code/Items/Collectibles/Cornucopia");
 require("code/Items/Collectibles/PandorasChest");
-require("code/Items/Collectibles/D5");
-require("code/Items/Collectibles/SpecialOne");
+-- require("code/Items/Collectibles/D5");
+-- require("code/Items/Collectibles/SpecialOne");
 --require("code/Items/Collectibles/TheLudovicoExperiment"); --This needs to be reworked, it's not an interesting item atm
 require("code/Items/Collectibles/Ferrofluid");
-require("code/Items/Collectibles/LeprechaunsContract");
+-- require("code/Items/Collectibles/LeprechaunsContract");
 require("code/Items/Collectibles/FragileConception");
 --require("code/Items/Collectibles/TheLudovicoTheory"); --God damn these Ludovico variation are hard to get right
 require("code/Items/Collectibles/RigidMind")
-require("code/Items/Collectibles/DiceTattoo")
-require("code/Items/Collectibles/SomeonesShoe")
+-- require("code/Items/Collectibles/DiceTattoo")
+-- require("code/Items/Collectibles/SomeonesShoe")
 require("code/Items/Collectibles/PersonalBubble")
-require("code/Items/Collectibles/BowlCut")
+--require("code/Items/Collectibles/BowlCut")
 require("code/Items/Collectibles/Infestation3")
-require("code/Items/Collectibles/SpooderBoi")
+-- require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
-require("code/Items/Collectibles/GoldMan")
+-- require("code/Items/Collectibles/GoldMan")
 require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
 require("code/Items/Collectibles/PyriteNugget")
@@ -720,9 +720,9 @@ require("code/Items/Collectibles/IrritatingBracelets")
 require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
-require("code/Items/Collectibles/SafeSpace")
+-- require("code/Items/Collectibles/SafeSpace")
 require("code/Items/Collectibles/SocialAnxiety")
-require("code/Items/Collectibles/Jaundice")
+-- require("code/Items/Collectibles/Jaundice")
 require("code/Items/Collectibles/Vanity")
 require("code/Items/Collectibles/Placeholder")
 require("code/Items/Collectibles/FathersBlessing")
@@ -736,7 +736,7 @@ require("code/Items/Collectibles/SmokersLung")
 require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
 require("code/Items/Collectibles/EggBeater")
-require("code/Items/Collectibles/NutMilk")
+-- require("code/Items/Collectibles/NutMilk")
 require("code/Items/Collectibles/SoakedRemote")
 require("code/Items/Collectibles/BlindFaith")
 
@@ -750,14 +750,14 @@ require("code/Items/Trinkets/SuicideGod");
 require("code/Items/Trinkets/SolomonsCrown");
 
 --Transformations
-require("code/Misc/Transformations/God")
-require("code/Misc/Transformations/MisterBean")
-require("code/Misc/Transformations/BigD")
-require("code/Misc/Transformations/Milkman")
+-- require("code/Misc/Transformations/God")
+-- require("code/Misc/Transformations/MisterBean")
+-- require("code/Misc/Transformations/BigD")
+-- require("code/Misc/Transformations/Milkman")
 
 --Pickups
 --Pills
-require("code/Items/Pick Ups/Pills/PartyPills");
+-- require("code/Items/Pick Ups/Pills/PartyPills");
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
 --require("code/Items/Pick Ups/Cards/LotteryTicket")
@@ -765,7 +765,7 @@ require("code/Items/Pick Ups/Cards/RepairWrench")
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
-require("code/Items/Pick Ups/Chests/Safe")
+-- require("code/Items/Pick Ups/Chests/Safe")
 --Hearts
 require("code/Items/Pick Ups/Other/Cherry")
 
@@ -777,13 +777,13 @@ require("code/Familiars/DrunkenFly");
 require("code/Familiars/MetalBaby");
 require("code/Familiars/GoatFetus");
 require("code/Familiars/MommysDemon");
-require("code/Familiars/SackOfSacksOfSacks");
+-- require("code/Familiars/SackOfSacksOfSacks");
 require("code/Familiars/TeslaBaby");
 require("code/Familiars/BurntBaby");
 require("code/Familiars/ChestOfChests");
 require("code/Familiars/GrandpaFly");
 require("code/Familiars/BloatedBaby");
-require("code/Familiars/WaitNo");
+-- require("code/Familiars/WaitNo");
 require("code/Familiars/Despair");
 
 --Extra Bits 2

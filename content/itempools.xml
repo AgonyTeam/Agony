@@ -3,34 +3,34 @@
         <Item Name="Lucky's Paw" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Double Down" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Growing Anxiety" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Gasoline Juicebox" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Gasoline Juicebox" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="The Rock" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Vomit Cake" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Vomit Cake" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Tourette" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="You're a Big Guy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="You're a Big Guy" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Little Sugar Dumdum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Knowledge Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Knowledge Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Loaded Dice" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Cyanide" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Overgrown Spine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Technology 9000" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Technology 9000" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Brother Cancer" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pandora's Chest     " RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Despair" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="D5" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Special One" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="D5" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Special One" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Ferrofluid" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Fragile Conception" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Rigid Mind" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Dice Tattoo" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Someone's Shoe" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Dice Tattoo" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Someone's Shoe" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Soulmates" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Drunken Fly" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Goat Fetus" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -39,19 +39,19 @@
         <Item Name="Tesla Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Chest of Chests" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Spooderboi" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Spooderboi" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Grandpa Fly" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Wait, No." RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Wait, No." RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Lil'Red Book" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Irritating Bracelet" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Birthday Gift" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Cashew Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Jaundice" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Jaundice" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Vanity" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Placeholder" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Toy Hammer" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -62,17 +62,17 @@
         <Item Name="Stink Eye" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Root of Anger" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Egg Beater" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Nut Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Nut Milk" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Soaked Remote" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="shop">
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="D5" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Dice Tattoo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="D3" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="D5" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Dice Tattoo" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Chest of Chests" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Safe Space" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Safe Space" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Vanity" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Fireplace" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Worm Knot" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -80,21 +80,21 @@
         <Item Name="Soaked Remote" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="boss">
-        <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Radioactive Pizza" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Bready Mold" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Egg Beater" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
     </Pool>
     <Pool Name="devil">
-        <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Wrath Is Power" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Tantrum" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
+        <!-- <Item Name="Pyramid Head" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Overgrown Spine" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Til Death Do Us Apart" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pythagore's Body" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Despair" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Goat Fetus" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Parasites" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <Item Name="Infestation 3" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Burnt Baby" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Productive Seizure" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Social Anxiety" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
@@ -103,22 +103,22 @@
         <Item Name="The Root of Anger" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="angel">
-        <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Poverty is Power" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Cornucopia" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Bowl Cut" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="The Way" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Sacramental Wine" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="The Father's Blessing" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Pilgrim's Shoe" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
     <Pool Name="secret">
-        <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+        <!-- <Item Name="Triplopia" Weight="1" DecreaseBy="1" RemoveOn="0.1"/> -->
         <Item Name="Runestone" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Magic Kit" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Cyanide" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
         <Item Name="Pandora's Chest" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-        <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
-        <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
+        <!-- <Item Name="Sack of Sacks of Sacks" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
+        <!-- <Item Name="Gold Man" RemoveOn="0.1" Weight="1" DecreaseBy="1"/> -->
         <Item Name="Placeholder" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
         <Item Name="Easter Egg" RemoveOn="0.1" Weight="1" DecreaseBy="1"/>
     </Pool>
