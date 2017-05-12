@@ -7,12 +7,15 @@ local TinyTinyHorn = {
 	dbg2 = {data = "orbs"}]]--
 }
 --Orbspawner helper function
-local function spawnOrb(fam)
+local function spawnOrb(fam, friendly)
 	local famData = fam:GetData()
 	local orb = Isaac.Spawn(EntityType.ENTITY_LITTLE_HORN, 1, 0, fam.Position, Vector(0,0), nil)
 	orb:ToNPC().Scale = 0.5
 	orb:SetSize(1, Vector(1,1), 8) --need this to set the numGridCollisionPoints
-	orb:AddEntityFlags(EntityFlag.FLAG_NO_TARGET | EntityFlag.FLAG_DONT_OVERWRITE | EntityFlag.FLAG_CHARM | EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_NO_STATUS_EFFECTS )
+	if friendly then
+		orb:AddEntityFlags(EntityFlag.FLAG_NO_TARGET | EntityFlag.FLAG_DONT_OVERWRITE | EntityFlag.FLAG_CHARM | EntityFlag.FLAG_FRIENDLY | EntityFlag.FLAG_NO_STATUS_EFFECTS )
+		orb:ClearEntityFlags(EntityFlag.FLAG_APPEAR)
+	end
 	orb.MaxHitPoints = 5
 	orb.HitPoints = 5
 	
@@ -26,6 +29,38 @@ function TinyTinyHorn:updateFam(fam)
 	local player = Isaac.GetPlayer(0)
 	local fireDir = player:GetFireDirection()
 	local famSprite = fam:GetSprite()
+	
+	local littleHorn = nil
+	local littleHornFound = false
+	
+	local entities = Isaac.GetRoomEntities()
+	
+	debug_text = "NORMAL"
+	
+	for i = 1, #entities do
+		if entities[i].Type == EntityType.ENTITY_LITTLE_HORN and entities[i].Variant == 0 then
+			littleHorn = entities[i]
+			littleHornFound = true
+			fireDir = Direction.NO_DIRECTION
+			
+			local v = player.Position - fam.Position
+			if math.abs(v.X) > math.abs(v.Y) then
+				if v.X > 0 then
+					fireDir = Direction.RIGHT
+				elseif v.X < 0 then
+					fireDir = Direction.LEFT
+				end
+			else
+				if v.Y > 0 then
+					fireDir = Direction.DOWN
+				elseif v.Y < 0 then
+					fireDir = Direction.UP
+				end
+			end
+			debug_text = "LITTLE HORN"
+			break
+		end
+	end
 	
 	if famData.Cooldown <= 0 and fireDir ~= Direction.NO_DIRECTION and #famData.Orbs < TinyTinyHorn.MaxOrbCount then
 		famSprite.FlipX = false
@@ -41,7 +76,7 @@ function TinyTinyHorn:updateFam(fam)
 		end
 		famData.Cooldown = TinyTinyHorn.maxCooldown
 		famData.animCooldown = TinyTinyHorn.maxAnimCooldown
-		spawnOrb(fam)
+		spawnOrb(fam, not littleHornFound)
 	end
 	
 	if famData.Cooldown > 0 then
@@ -94,7 +129,7 @@ function TinyTinyHorn:updateFam(fam)
 	for entry, orb in pairs(famData.Orbs) do
 		if not orb:Exists() then
 			famData.Orbs[entry] = nil --delete all orbs that were killed so new ones can be made
-		else
+		elseif not littleHornFound then
 			local tmpTarget = Agony:getNearestEnemy(orb) --set nearest target
 			if tmpTarget == orb or tmpTarget == player then
 				orb.Target = fam
@@ -104,7 +139,11 @@ function TinyTinyHorn:updateFam(fam)
 		end
 	end
 	
-	fam:FollowParent() --important so the familiar stays in the line of familiars
+	if littleHornFound then
+		fam:FollowPosition(littleHorn.Position)
+	else
+		fam:FollowParent() --important so the familiar stays in the line of familiars
+	end
 end
 
 --called on init
