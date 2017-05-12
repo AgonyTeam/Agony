@@ -7,7 +7,9 @@ function drunkenFly:updateFam(fam)
 	fam.OrbitDistance = Vector (100,100)
 	fam.OrbitSpeed = 0.03
 	fam.OrbitLayer = 71
-	fam.Velocity = fam:GetOrbitPosition(player.Position:__add(player.Velocity)):__sub(fam.Position):__add(player.Position:__sub(fam.Position):__mul(math.sin(Game():GetFrameCount()/3)/5))
+	local orbitPos = fam:GetOrbitPosition( player.Position + player.Velocity )
+	local swingMotion = math.sin( Game():GetFrameCount() / 3 + fam:GetData().swingOffset ) / 5
+	fam.Velocity = orbitPos - fam.Position + ( ( player.Position - fam.Position ) * swingMotion )
 end
 
 --called on init
@@ -16,6 +18,7 @@ function drunkenFly:initFam(fam)
 	fam:GetSprite():Play("Idle")
 	fam.OrbitLayer = 71
 	fam:RecalculateOrbitOffset(fam.OrbitLayer, true)
+	fam:GetData().swingOffset = math.random(1000) / 200.0
 end
 
 --needed or else the familiar won't appear

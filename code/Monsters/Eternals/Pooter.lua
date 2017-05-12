@@ -9,7 +9,7 @@ function EternalPooter:ai_main(entity)
 	local rng = entity:GetDropRNG()
 
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_POOTER and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15 and entity.Variant == 0 and entity.SpawnerType ~= EntityType.ENTITY_FAMILIAR) then
+	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15 and entity.Variant == 0 and entity.SpawnerType ~= EntityType.ENTITY_FAMILIAR) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Pooter/animation.anm2", true);
 		--entity.HitPoints = 16;
@@ -18,7 +18,7 @@ function EternalPooter:ai_main(entity)
 		entity.HitPoints = entity.MaxHitPoints
 	end
 	
-	if (entity.Type == EntityType.ENTITY_POOTER and entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK and entity.Variant == 0) then
+	if (entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK and entity.Variant == 0) then
 		entity.ProjectileDelay = -1 --prevent original shot
 		local PlayerPos = entity:GetPlayerTarget().Position;
 		if (sprite:IsEventTriggered("EternalShoot")) then

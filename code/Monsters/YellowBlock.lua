@@ -45,7 +45,7 @@ function yellowblock:ai_main(npc)
 	
 	if (npc.StateFrame == 30 and npc.State ~= NpcState.STATE_IDLE) then
 		npc:PlaySound(237, 1.0, 0, false, 1.0)
-		npc.SetSpriteFrame(npc ,"Spikes", 0);
+		npc:SetSpriteFrame("Spikes", 0);
 		npc.CollisionDamage = 1.0;
 	end
 	
@@ -70,10 +70,10 @@ end
 function yellowblock:ai_turn(entity);
 	local room = Game():GetRoom();
   
-	local col_up = room.GetGridCollisionAtPos(room, Vector(entity.Position.X, entity.Position.Y - 20));
-	local col_down = room.GetGridCollisionAtPos(room, Vector(entity.Position.X, entity.Position.Y + 20));
-	local col_left = room.GetGridCollisionAtPos(room, Vector(entity.Position.X - 20, entity.Position.Y));
-	local col_right = room.GetGridCollisionAtPos(room, Vector(entity.Position.X + 20, entity.Position.Y));
+	local col_up = room:GetGridCollisionAtPos(Vector(entity.Position.X, entity.Position.Y - 20));
+	local col_down = room:GetGridCollisionAtPos(Vector(entity.Position.X, entity.Position.Y + 20));
+	local col_left = room:GetGridCollisionAtPos(Vector(entity.Position.X - 20, entity.Position.Y));
+	local col_right = room:GetGridCollisionAtPos(Vector(entity.Position.X + 20, entity.Position.Y));
 	
 	--debug_text = entity.V1.X .. " | " .. entity.V1.Y .. " isfirstvisit(): " .. tostring(room:IsFirstVisit());
 	

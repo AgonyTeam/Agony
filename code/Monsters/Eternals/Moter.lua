@@ -9,7 +9,7 @@ function EternalMoter:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_MOTER and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--Isaac.Spawn(18, 1, 15, entity.Position, Vector(0,0), entity);
 		--entity:Remove();
 		entity:Morph(EntityType.ENTITY_ATTACKFLY, 1, 15, -1)

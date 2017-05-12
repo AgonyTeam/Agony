@@ -15,7 +15,7 @@ function EternalSquirt:ai_main(entity)
 	--debug_text = tostring(entity.State)
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_SQUIRT and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Squirt/animation.anm2", true);
 		--entity.HitPoints = 30;
@@ -49,7 +49,7 @@ function EternalSquirt:ai_main(entity)
 		end
 	end
 	
-	if (entity.Type == EntityType.ENTITY_SQUIRT and entity.SubType == 15 and entity.State == NpcState.STATE_IDLE) then
+	if (entity.SubType == 15 and entity.State == NpcState.STATE_IDLE) then
 		local data = entity:GetData()
 		data.AllowVel = true
 	end

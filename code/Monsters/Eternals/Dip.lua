@@ -15,7 +15,7 @@ function EternalDip:ai_main(entity)
 
 	
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_DIP and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Dip/animation.anm2", true);
 		--entity.HitPoints = 6;
@@ -24,7 +24,7 @@ function EternalDip:ai_main(entity)
 		entity.HitPoints = entity.MaxHitPoints
 	end
 	
-	if (entity.Type == EntityType.ENTITY_DIP and entity.SubType == 15 and entity.State == NpcState.STATE_MOVE) then
+	if (entity.SubType == 15 and entity.State == NpcState.STATE_MOVE) then
 		local vLength = entity.Velocity:Length()
 		local player = Isaac.GetPlayer(0)
 		if vLength > 5 then

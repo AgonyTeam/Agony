@@ -9,7 +9,7 @@ function EternalRedBoomFly:ai_main(entity)
 	local rng = entity:GetDropRNG()
 
 	--Replace regular entity with eternal version
-	if (entity.Type == EntityType.ENTITY_BOOMFLY and entity.Variant == 1 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (entity.Variant == 1 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Red Boom Fly/animation.anm2", true);
 		--entity.HitPoints = 40;
