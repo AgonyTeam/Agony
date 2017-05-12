@@ -20,7 +20,7 @@ function EternalAttackFly:ai_main(entity)
 
 	--Random Dashes
 	if (entity.Variant == 0 and entity.SubType == 15 and rng:RandomFloat() < 0.15) then
-		entity.Velocity = ( entity.Velocity + Vector.FromAngle(rng:RandomInt(360)) ) * (rng:RandomInt(10)+1)
+		entity.Velocity = entity.Velocity + Vector.FromAngle(rng:RandomInt(360)) * (rng:RandomInt(10)+1)
 	end
 
 end
