@@ -748,6 +748,7 @@ require("code/Items/Trinkets/LuckyEgg")
 require("code/Items/Trinkets/NuclearStone")
 require("code/Items/Trinkets/SuicideGod");
 require("code/Items/Trinkets/SolomonsCrown");
+require("code/Items/Trinkets/BrokenSpike");
 
 --Transformations
 -- require("code/Misc/Transformations/God")

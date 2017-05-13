@@ -125,6 +125,7 @@ TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice
 TrinketType["AGONY_T_NUCLEAR_STONE"] = Isaac.GetTrinketIdByName("Nuclear Stone")
 TrinketType["AGONY_T_SUICIDE_GOD"] = Isaac.GetTrinketIdByName("Suicide God");
 TrinketType["AGONY_T_SOLOMON_CROWN"] = Isaac.GetTrinketIdByName("Solomon's Crown");
+TrinketType["AGONY_T_BROKEN_SPIKE"] = Isaac.GetTrinketIdByName("Broken Spike");
 
 --Cards
 Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
