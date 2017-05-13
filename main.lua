@@ -56,6 +56,8 @@ pedestalsToRender = {}
 --pickups
 pickUpTable = {}
 pickUpTree = {}
+--tearProjectiles
+tearTable = {}
 
 --make the game save the saveData table
 function Agony:SaveNow()
@@ -617,9 +619,100 @@ function Agony:updatePickups()
     end
     
 	end
-  
 end
 
+function Agony:TearConf()
+	local t = {}
+	t.TearFlags = 0
+	t.SpawnerEntity = nil
+	t.Height = -23
+	t.FallingAcceleration = 0
+	t.FallingSpeed = 0
+	t.Color = Color(1,1,1,1,0,0,0)
+	t.Data = {}
+
+	return t
+end
+
+--Agony.shit = nil
+function Agony:updateTears()
+	for i, tear in pairs(tearTable) do
+		local player = Game():GetNearestPlayer(tear.Position)
+		local tData = tear:GetData()
+		--debug_text = tear.Height
+		--debug_tbl2[#debug_tbl2+1] = tear.Height
+		if not tear:Exists() then
+			tearTable[i] = nil
+		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
+			player:TakeDamage(1, 0, EntityRef(tear), 0)
+			tear:Die()
+		elseif tData.Agony ~= nil and tData.Agony.homing then
+			tear.Velocity = Agony:calcTearVel(tear.Position, player.Position, tear.Velocity:Length())
+		end
+	end
+
+	--[[for _,ent in pairs(Isaac.GetRoomEntities()) do
+		if ent.Type == 2 and Agony.shit == nil then
+			Agony.shit = ent:ToTear()
+		end
+	end
+	if Agony.shit ~= nil and Agony.shit:Exists() then
+		debug_tbl2[#debug_tbl2+1] = tostring(Agony.shit.FallingAcceleration) .. " " .. tostring(Agony.shit.FallingSpeed) .. " " .. tostring(Agony.shit.Height)
+	elseif Agony.shit ~= nil then
+		Agony.shit = nil
+		debug_tbl2 = {}
+	end]]--
+end
+
+function Agony:fireTearProj(var, sub, pos, vel, tearConf)
+	local t = Isaac.Spawn(EntityType.ENTITY_TEAR, var, sub, pos, vel, tearConf.SpawnerEntity):ToTear()
+	t.SpawnerEntity = tearConf.SpawnerEntity
+	t.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
+	t.TearFlags = tearConf.TearFlags
+	t.Height = tearConf.Height or -23
+	t.FallingAcceleration = tearConf.FallingAcceleration or 0
+	t.FallingSpeed = tearConf.FallingSpeed or 0
+	t.Color = tearConf.Color or t.Color
+	if tearConf.Data ~= nil then
+		Agony:dataCopy(tearConf.Data, t:GetData())
+	end
+
+	table.insert(tearTable, t)
+end
+
+function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
+	for i = 1, num do
+		local deg = rng:RandomInt(21)-10 -- -5 to 5
+		local speed = vel:Length() * (1+((rng:RandomInt(8)+1)/10))
+		
+		tearConf.FallingAcceleration = 0.5
+		tearConf.FallingSpeed = rng:RandomInt(21)-10
+
+		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg):__mul(speed), tearConf)
+	end
+end
+
+function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
+	if not Agony:HasFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE) then
+		tearConf.TearFlags = Agony:AddFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE)
+	end
+
+	tearConf.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
+	tearConf.Height = -35
+	tearConf.FallingAcceleration = 0.6
+	tearConf.FallingSpeed = -10
+
+
+	Agony:fireTearProj(var, sub, pos, vel, tearConf)
+end
+
+function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
+	tearConf.Color = Color(1, 0.5, 1, 1, 0, 0, 0)
+	tearConf.Data.Agony = tearConf.Data.Agony or {}
+	tearConf.Data.Agony.homing = true
+	
+	Agony:fireTearProj(var, sub, pos, vel, tearConf)
+end
 --Extra Bits
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
@@ -800,3 +893,4 @@ Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)

@@ -163,6 +163,7 @@ AgonyTearSubtype["TOY_HAMMER"] = 3
 AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
 AgonyTearSubtype["BIG_D"] = 5
 AgonyTearSubtype["STINK_EYE"] = 6
+AgonyTearSubtype["ETERNAL"] = 507
 
 --Constants Updater
 local enumsToUpdate = {
