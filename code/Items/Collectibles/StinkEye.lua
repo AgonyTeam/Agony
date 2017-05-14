@@ -16,7 +16,7 @@ function stinkEye:onUpdate()
     		if entity.FrameCount == 1 and Prob == 0 then
 				entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_stinkeye.png")
 				entity:GetSprite():LoadGraphics()
-    			entity.SubType = AgonyTearSubtype.STINK_EYE
+    			entity.SubType = Agony.TearSubTypes.STINK_EYE
     		end
     	end
     end
@@ -25,7 +25,7 @@ end
 
 function stinkEye:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
-  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.STINK_EYE and hurtEntity:IsVulnerableEnemy() then
+  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == Agony.TearSubTypes.STINK_EYE and hurtEntity:IsVulnerableEnemy() then
     hurtEntity:GetData().status_stinks = 120
     hurtEntity:SetColor(Color(0.5, 0.2, 0, 1, 1, 1, 1), 120, 1, false, false)
     if hurtEntity.HitPoints < dmgAmount then

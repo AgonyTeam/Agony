@@ -470,10 +470,10 @@ function Agony:rotateTears()
 	local ents = Isaac.GetRoomEntities()
 	for i=1,#ents do
 		if ents[i].Type == EntityType.ENTITY_TEAR and
-			(ents[i].SubType == AgonyTearSubtype.BIG_D
-			or ents[i].SubType == AgonyTearSubtype.TOY_HAMMER
-			or ents[i].SubType == AgonyTearSubtype.MILKMAN
-			or ents[i].SubType == AgonyTearSubtype.TECH_LESS_THAN_3) then
+			(ents[i].SubType == Agony.TearSubTypes.BIG_D
+			or ents[i].SubType == Agony.TearSubTypes.TOY_HAMMER
+			or ents[i].SubType == Agony.TearSubTypes.MILKMAN
+			or ents[i].SubType == Agony.TearSubTypes.TECH_LESS_THAN_3) then
 			if ents[i].Velocity.X > 0 then
 				ents[i]:GetSprite().Rotation = ents[i]:GetSprite().Rotation + 10
 			else
