@@ -631,24 +631,42 @@ function Agony:TearConf()
 	t.Color = Color(1,1,1,1,0,0,0)
 	t.Data = {}
 	t.Scale = 1 --goes in 1/6 steps for the bigger tearsprite
+	t.Functions = {} --supported functions are onDeath, onUpdate and onHit
 
 	return t
 end
 
 function Agony:updateTears()
-	for i, tear in pairs(tearTable) do
+	for i, tearObj in pairs(tearTable) do
+		local tear = tearObj[1]
+		local func = tearObj[2]
+
 		local player = Game():GetNearestPlayer(tear.Position)
 		local tData = tear:GetData()
-		--debug_text = tear.Scale
+
 		if not tear:Exists() then
+			--run onDeath when the tear doesn't exist
+			if func ~= nil and func.onDeath ~= nil then
+				func:onDeath(tear.Position, tear.Velocity, tear.SpawnerEntity)
+			end
 			tearTable[i] = nil
 		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
 			player:TakeDamage(1, 0, EntityRef(tear), 0)
+			--run onHit when tear hits the player
+			if func ~= nil and func.onHit ~= nil then
+				func:onHit(tear)
+			end
+			--don't remove the tear if piercing
 			if not Agony:HasFlags(tear.TearFlags, TearFlags.TEAR_PIERCING) then
 				tear:Die()
 			end
 		elseif tData.Agony ~= nil and tData.Agony.homing then
 			tear.Velocity = Agony:calcTearVel(tear.Position, player.Position, tear.Velocity:Length())
+		end
+
+		--run onUpdate on every frame of existance
+		if tear:Exists() and func ~= nil and func.onUpdate ~= nil then
+			func:onUpdate(tear)
 		end
 	end
 end
@@ -668,7 +686,7 @@ function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 		Agony:dataCopy(tearConf.Data, t:GetData())
 	end
 
-	table.insert(tearTable, t)
+	table.insert(tearTable, {t, tearConf.Functions})
 end
 
 function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
@@ -745,6 +763,7 @@ require("code/Monsters/Flaming Alts/Clotty")
 --Cocoons
 require("code/Monsters/Cocoons/SpiderCocoon")
 require("code/Monsters/Cocoons/ChasingCocoon")
+require("code/Monsters/Cocoons/ShootingCocoon")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
