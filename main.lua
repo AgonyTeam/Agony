@@ -630,6 +630,7 @@ function Agony:TearConf()
 	t.FallingSpeed = 0
 	t.Color = Color(1,1,1,1,0,0,0)
 	t.Data = {}
+	t.Scale = 1 --goes in 1/6 steps for the bigger tearsprite
 
 	return t
 end
@@ -638,7 +639,7 @@ function Agony:updateTears()
 	for i, tear in pairs(tearTable) do
 		local player = Game():GetNearestPlayer(tear.Position)
 		local tData = tear:GetData()
-
+		--debug_text = tear.Scale
 		if not tear:Exists() then
 			tearTable[i] = nil
 		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
@@ -659,6 +660,8 @@ function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 	t.FallingAcceleration = tearConf.FallingAcceleration or 0
 	t.FallingSpeed = tearConf.FallingSpeed or 0
 	t.Color = tearConf.Color or t.Color
+	t.Scale = tearConf.Scale or 1
+
 	if tearConf.Data ~= nil then
 		Agony:dataCopy(tearConf.Data, t:GetData())
 	end
@@ -668,12 +671,13 @@ end
 
 function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
 	for i = 1, num do
-		local deg = rng:RandomInt(21)-10 -- -5 to 5
+		local deg = rng:RandomInt(21)-10 -- -10 to 10
 		local speed = vel:Length() * (1+((rng:RandomInt(8)+1)/10))
 		
 		--Monstro shot standards
 		tearConf.FallingAcceleration = 0.5
-		tearConf.FallingSpeed = rng:RandomInt(21)-10
+		tearConf.FallingSpeed = -5 - rng:RandomInt(11) -- -15 to -5
+		tearConf.Scale = 1 + (rng:RandomInt(5)-2)/6 -- 4/6 to 8/6
 
 		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg):__mul(speed), tearConf)
 	end
@@ -689,6 +693,7 @@ function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
 	tearConf.Height = -35
 	tearConf.FallingAcceleration = 0.6
 	tearConf.FallingSpeed = -10
+	tearConf.Scale = 1 + 1/3
 
 
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
