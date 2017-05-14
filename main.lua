@@ -648,6 +648,7 @@ require("code/Monsters/Eternals/Moter");
 require("code/Monsters/Eternals/Fly");
 require("code/Monsters/Eternals/AttackFly");
 require("code/Monsters/Eternals/RedBoomFly");
+require("code/Monsters/Eternals/BoomFly");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 require("code/Monsters/Flaming Alts/Clotty")
