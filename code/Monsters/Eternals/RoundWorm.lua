@@ -23,18 +23,21 @@ function EternalRoundWorm:ai_main(entity)
 	
 	if (entity.Type == EntityType.ENTITY_ROUND_WORM and entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK) then
 		local PlayerPos = entity:GetPlayerTarget().Position;
-		
+		local tearConf = Agony:TearConf()
+		tearConf.SpawnerEntity = entity
+
 		if (sprite:IsEventTriggered("EternalShoot3") == true) then
 			--Host-like triple shot
 			entity:PlaySound(SoundEffect.SOUND_WORM_SPIT, 1.0, 0, false, 1.0)
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-10), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Agony:calcTearVel(entity.Position, PlayerPos, 15), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(10), entity);
+
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 11)):Rotated(-10), tearConf)
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 12)), tearConf)
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 11)):Rotated(10), tearConf)
 		elseif (sprite:IsEventTriggered("EternalShoot2") == true) then
 			--V-shape double shot like Shroomers from EtG
 			entity:PlaySound(SoundEffect.SOUND_WORM_SPIT, 1.0, 0, false, 1.0)
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(-5), entity);
-			Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 14)):Rotated(5), entity);
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 11)):Rotated(-5), tearConf)
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 11)):Rotated(5), tearConf)
 		end
 	end
 end

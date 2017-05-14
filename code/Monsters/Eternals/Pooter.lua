@@ -20,11 +20,12 @@ function EternalPooter:ai_main(entity)
 	
 	if (entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK and entity.Variant == 0) then
 		entity.ProjectileDelay = -1 --prevent original shot
-		local PlayerPos = entity:GetPlayerTarget().Position;
+		local PlayerPos = entity:GetPlayerTarget().Position
+		local tearConf = Agony:TearConf()
+		tearConf.SpawnerEntity = entity
 		if (sprite:IsEventTriggered("EternalShoot")) then
 			entity:PlaySound(SoundEffect.SOUND_BLOODSHOOT, 1.0, 0, false, 1.0)
-			local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 13)):Rotated(math.random(20)-10), entity);
-			t.SpawnerEntity = entity 
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, PlayerPos, 11)):Rotated(rng:RandomInt(21)-10), tearConf)
 		end
 		
 	end

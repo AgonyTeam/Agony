@@ -155,16 +155,6 @@ EntityType["AGONY_ETYPE_FATFLY"] = Isaac.GetEntityTypeByName("Fat Fly")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
 
---Custom Tears
-AgonyTearSubtype = {}
-AgonyTearSubtype["MILKMAN"] = 1
-AgonyTearSubtype["JAUNDICE"] = 2
-AgonyTearSubtype["TOY_HAMMER"] = 3
-AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
-AgonyTearSubtype["BIG_D"] = 5
-AgonyTearSubtype["STINK_EYE"] = 6
-AgonyTearSubtype["ETERNAL"] = 507
-
 --Constants Updater
 local enumsToUpdate = {
 	CollectibleType,

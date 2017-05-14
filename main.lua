@@ -634,13 +634,11 @@ function Agony:TearConf()
 	return t
 end
 
---Agony.shit = nil
 function Agony:updateTears()
 	for i, tear in pairs(tearTable) do
 		local player = Game():GetNearestPlayer(tear.Position)
 		local tData = tear:GetData()
-		--debug_text = tear.Height
-		--debug_tbl2[#debug_tbl2+1] = tear.Height
+
 		if not tear:Exists() then
 			tearTable[i] = nil
 		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
@@ -650,18 +648,6 @@ function Agony:updateTears()
 			tear.Velocity = Agony:calcTearVel(tear.Position, player.Position, tear.Velocity:Length())
 		end
 	end
-
-	--[[for _,ent in pairs(Isaac.GetRoomEntities()) do
-		if ent.Type == 2 and Agony.shit == nil then
-			Agony.shit = ent:ToTear()
-		end
-	end
-	if Agony.shit ~= nil and Agony.shit:Exists() then
-		debug_tbl2[#debug_tbl2+1] = tostring(Agony.shit.FallingAcceleration) .. " " .. tostring(Agony.shit.FallingSpeed) .. " " .. tostring(Agony.shit.Height)
-	elseif Agony.shit ~= nil then
-		Agony.shit = nil
-		debug_tbl2 = {}
-	end]]--
 end
 
 function Agony:fireTearProj(var, sub, pos, vel, tearConf)
@@ -685,6 +671,7 @@ function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
 		local deg = rng:RandomInt(21)-10 -- -5 to 5
 		local speed = vel:Length() * (1+((rng:RandomInt(8)+1)/10))
 		
+		--Monstro shot standards
 		tearConf.FallingAcceleration = 0.5
 		tearConf.FallingSpeed = rng:RandomInt(21)-10
 
@@ -697,6 +684,7 @@ function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
 		tearConf.TearFlags = Agony:AddFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE)
 	end
 
+	--Ipecec tear standards
 	tearConf.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
 	tearConf.Height = -35
 	tearConf.FallingAcceleration = 0.6
@@ -707,6 +695,7 @@ function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
 end
 
 function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
+	--Homing tear standards
 	tearConf.Color = Color(1, 0.5, 1, 1, 0, 0, 0)
 	tearConf.Data.Agony = tearConf.Data.Agony or {}
 	tearConf.Data.Agony.homing = true
@@ -722,6 +711,7 @@ Agony.ENUMS = require("ExtraEnums")
 Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
+Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
 
 --Debug
 require("Debug");

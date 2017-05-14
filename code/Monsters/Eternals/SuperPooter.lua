@@ -4,12 +4,10 @@ EternalSuperPooter = {};
 Agony:AddEternal(EntityType.ENTITY_POOTER,1,"Super Pooter")
 
 --V-shot helper function
-local function doVShot(entity, playerPos, angle)
+local function doVShot(entity, playerPos, angle, tearConf)
 	entity:PlaySound(SoundEffect.SOUND_BLOODSHOOT, 1.0, 0, false, 1.0)
-	local t = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, playerPos, 13)):Rotated(angle - 2*angle), entity);
-	local t2 = Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, (Agony:calcTearVel(entity.Position, playerPos, 13)):Rotated(angle), entity);
-	t.SpawnerEntity = entity 
-	t2.SpawnerEntity = entity
+	Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, playerPos, 11)):Rotated(-angle), tearConf)
+	Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, (Agony:calcTearVel(entity.Position, playerPos, 11)):Rotated(angle), tearConf)
 end
 
 --Eternal Super Pooters
@@ -30,12 +28,15 @@ function EternalSuperPooter:ai_main(entity)
 	if (entity.SubType == 15 and entity.State == NpcState.STATE_ATTACK and entity.Variant == 1) then
 		entity.ProjectileDelay = -1 --prevent original shot
 		local PlayerPos = entity:GetPlayerTarget().Position;
+		local tearConf = Agony:TearConf()
+		tearConf.SpawnerEntity = entity
+
 		if (sprite:IsEventTriggered("EternalShoot")) then
-			doVShot(entity, PlayerPos, 45)
+			doVShot(entity, PlayerPos, 20, tearConf)
 		elseif (sprite:IsEventTriggered("EternalShoot2")) then
-			doVShot(entity, PlayerPos, 30)
+			doVShot(entity, PlayerPos, 15, tearConf)
 		elseif (sprite:IsEventTriggered("EternalShoot3")) then
-			doVShot(entity, PlayerPos, 15)
+			doVShot(entity, PlayerPos, 10, tearConf)
 		end
 		
 	end
