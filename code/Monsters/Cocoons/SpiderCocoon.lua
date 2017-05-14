@@ -8,7 +8,7 @@ function cocoon1:ai_update(ent)
 	if ent.Variant == Agony.CocoonVariant.COCOON_SPIDER then
 		local data = ent:GetData()
 		local rng = ent:GetDropRNG()
-		debug_tbl1 = data
+		--debug_tbl1 = data
 		--init variables in entdata
 		if ent.State == NpcState.STATE_INIT then
 			data.spawnCooldown = cocoon1.spawnCooldown
@@ -29,7 +29,7 @@ function cocoon1:ai_reset_spiders(ent)
 		--remove dead spiders from spider list
 		if ent.State > NpcState.STATE_INIT then
 			local data = ent:GetData()
-			debug_tbl2 = data.spiders
+			--debug_tbl2 = data.spiders
 			for i, sp in pairs(data.spiders) do
 				if not sp:Exists() then
 					data.spiders[i] = nil

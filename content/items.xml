@@ -114,4 +114,5 @@
 	<trinket description="Mysterious placeholder text" gfx="trinkets_nuclearstone.png" name="Nuclear Stone" id="5" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_suicidegod.png" name="Suicide God" id="6" />
 	<trinket description="Mysterious placeholder text" cache ="firedelay speed damage luck" gfx="trinkets_solomoncrown.png" name="Solomon's Crown" id="7" />
+	<trinket description="Mysterious placeholder text" gfx="trinkets_brokenspike.png" name="Broken Spike" id="8" />
 </items>

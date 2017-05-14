@@ -18,7 +18,7 @@ function toyHammer:onUpdate()
     			--TODO : Change gfx to hammer shit idc
           entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_toyhammer.png")
           entity:GetSprite():LoadGraphics()
-    			entity.SubType = AgonyTearSubtype.TOY_HAMMER
+    			entity.SubType = Agony.TearSubTypes.TOY_HAMMER
     		end
     	end
     end
@@ -27,7 +27,7 @@ end
 
 function toyHammer:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
-  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.TOY_HAMMER and hurtEntity:IsVulnerableEnemy() then
+  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == Agony.TearSubTypes.TOY_HAMMER and hurtEntity:IsVulnerableEnemy() then
     hurtEntity:GetData().status_slagged = 120
     hurtEntity:SetColor(Color(0.5, 0, 0.5, 1, 1, 1, 1), 120, 1, false, false)     	
   end

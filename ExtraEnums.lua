@@ -315,6 +315,16 @@ Lists = {
 		ST_ETERNALS = 501,
 		ST_DELUSIONS = 502,
 	},
+	--Tear subs
+	TearSubTypes = {
+		MILKMAN = 1,
+		JAUNDICE = 2,
+		TOY_HAMMER = 3,
+		TECH_LESS_THAN_3 = 4,
+		BIG_D = 5,
+		STINK_EYE = 6,
+		ETERNAL = 507,
+	},
 }
 
 return Lists

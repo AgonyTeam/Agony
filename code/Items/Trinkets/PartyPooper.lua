@@ -1,4 +1,3 @@
-
 local partyPooper = {}
 
 function partyPooper:onPlayerUpdate(player)

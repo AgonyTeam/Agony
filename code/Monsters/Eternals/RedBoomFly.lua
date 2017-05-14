@@ -21,12 +21,15 @@ end
 
 function EternalRedBoomFly:ai_take_damage(entity,damage,_,_,_)
 	if entity.Variant == 1 and entity.SubType == 15 and damage >= entity.HitPoints then
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi/3)*12,math.sin(math.pi/3)*12), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi/3)*12,math.sin(2*math.pi/3)*12), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(math.pi)*12,math.sin(math.pi)*12), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(4*math.pi/3)*12,math.sin(4*math.pi/3)*12), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(5*math.pi/3)*12,math.sin(5*math.pi/3)*12), entity);
-		Isaac.Spawn(EntityType.ENTITY_PROJECTILE, 6, 0, entity.Position, Vector(math.cos(2*math.pi)*12,math.sin(2*math.pi)*12), entity);
+		local tearConf = Agony:TearConf()
+		tearConf.SpawnerEntity = entity
+		
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(math.pi/3)*11,math.sin(math.pi/3)*11), tearConf)
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(2*math.pi/3)*11,math.sin(2*math.pi/3)*11), tearConf)
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(3*math.pi/3)*11,math.sin(3*math.pi/3)*11), tearConf)
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(4*math.pi/3)*11,math.sin(4*math.pi/3)*11), tearConf)
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(5*math.pi/3)*11,math.sin(5*math.pi/3)*11), tearConf)
+		Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, entity.Position, Vector(math.cos(6*math.pi/3)*11,math.sin(6*math.pi/3)*11), tearConf)
 	end
 end
 

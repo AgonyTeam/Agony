@@ -125,6 +125,7 @@ TrinketType["AGONY_T_SWALLOWED_DICE"] = Isaac.GetTrinketIdByName("Swallowed Dice
 TrinketType["AGONY_T_NUCLEAR_STONE"] = Isaac.GetTrinketIdByName("Nuclear Stone")
 TrinketType["AGONY_T_SUICIDE_GOD"] = Isaac.GetTrinketIdByName("Suicide God");
 TrinketType["AGONY_T_SOLOMON_CROWN"] = Isaac.GetTrinketIdByName("Solomon's Crown");
+TrinketType["AGONY_T_BROKEN_SPIKE"] = Isaac.GetTrinketIdByName("Broken Spike");
 
 --Cards
 Card["AGONY_CARD_RELOAD"] = Isaac.GetCardIdByName("Reload!")
@@ -153,15 +154,6 @@ EntityType["AGONY_ETYPE_COCOON"] = Isaac.GetEntityTypeByName("Spider Cocoon")
 EntityType["AGONY_ETYPE_FATFLY"] = Isaac.GetEntityTypeByName("Fat Fly")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
-
---Custom Tears
-AgonyTearSubtype = {}
-AgonyTearSubtype["MILKMAN"] = 1
-AgonyTearSubtype["JAUNDICE"] = 2
-AgonyTearSubtype["TOY_HAMMER"] = 3
-AgonyTearSubtype["TECH_LESS_THAN_3"] = 4
-AgonyTearSubtype["BIG_D"] = 5
-AgonyTearSubtype["STINK_EYE"] = 6
 
 --Constants Updater
 local enumsToUpdate = {

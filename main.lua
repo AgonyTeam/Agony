@@ -56,6 +56,8 @@ pedestalsToRender = {}
 --pickups
 pickUpTable = {}
 pickUpTree = {}
+--tearProjectiles
+tearTable = {}
 
 --make the game save the saveData table
 function Agony:SaveNow()
@@ -468,10 +470,10 @@ function Agony:rotateTears()
 	local ents = Isaac.GetRoomEntities()
 	for i=1,#ents do
 		if ents[i].Type == EntityType.ENTITY_TEAR and
-			(ents[i].SubType == AgonyTearSubtype.BIG_D
-			or ents[i].SubType == AgonyTearSubtype.TOY_HAMMER
-			or ents[i].SubType == AgonyTearSubtype.MILKMAN
-			or ents[i].SubType == AgonyTearSubtype.TECH_LESS_THAN_3) then
+			(ents[i].SubType == Agony.TearSubTypes.BIG_D
+			or ents[i].SubType == Agony.TearSubTypes.TOY_HAMMER
+			or ents[i].SubType == Agony.TearSubTypes.MILKMAN
+			or ents[i].SubType == Agony.TearSubTypes.TECH_LESS_THAN_3) then
 			if ents[i].Velocity.X > 0 then
 				ents[i]:GetSprite().Rotation = ents[i]:GetSprite().Rotation + 10
 			else
@@ -617,7 +619,113 @@ function Agony:updatePickups()
     end
     
 	end
-  
+end
+
+function Agony:TearConf()
+	local t = {}
+	t.TearFlags = 0
+	t.SpawnerEntity = nil
+	t.Height = -23
+	t.FallingAcceleration = 0
+	t.FallingSpeed = 0
+	t.Color = Color(1,1,1,1,0,0,0)
+	t.Data = {}
+	t.Scale = 1 --goes in 1/6 steps for the bigger tearsprite
+	t.Functions = {} --supported functions are onDeath, onUpdate and onHit
+
+	return t
+end
+
+function Agony:updateTears()
+	for i, tearObj in pairs(tearTable) do
+		local tear = tearObj[1]
+		local func = tearObj[2]
+
+		local player = Game():GetNearestPlayer(tear.Position)
+		local tData = tear:GetData()
+
+		if not tear:Exists() then
+			--run onDeath when the tear doesn't exist
+			if func ~= nil and func.onDeath ~= nil then
+				func:onDeath(tear.Position, tear.Velocity, tear.SpawnerEntity)
+			end
+			tearTable[i] = nil
+		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
+			player:TakeDamage(1, 0, EntityRef(tear), 0)
+			--run onHit when tear hits the player
+			if func ~= nil and func.onHit ~= nil then
+				func:onHit(tear)
+			end
+			--don't remove the tear if piercing
+			if not Agony:HasFlags(tear.TearFlags, TearFlags.TEAR_PIERCING) then
+				tear:Die()
+			end
+		elseif tData.Agony ~= nil and tData.Agony.homing then
+			tear.Velocity = Agony:calcTearVel(tear.Position, player.Position, tear.Velocity:Length())
+		end
+
+		--run onUpdate on every frame of existance
+		if tear:Exists() and func ~= nil and func.onUpdate ~= nil then
+			func:onUpdate(tear)
+		end
+	end
+end
+
+function Agony:fireTearProj(var, sub, pos, vel, tearConf)
+	local t = Isaac.Spawn(EntityType.ENTITY_TEAR, var, sub, pos, vel, tearConf.SpawnerEntity):ToTear()
+	t.SpawnerEntity = tearConf.SpawnerEntity
+	t.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
+	t.TearFlags = tearConf.TearFlags
+	t.Height = tearConf.Height or -23
+	t.FallingAcceleration = tearConf.FallingAcceleration or 0
+	t.FallingSpeed = tearConf.FallingSpeed or 0
+	t.Color = tearConf.Color or t.Color
+	t.Scale = tearConf.Scale or 1
+
+	if tearConf.Data ~= nil then
+		Agony:dataCopy(tearConf.Data, t:GetData())
+	end
+
+	table.insert(tearTable, {t, tearConf.Functions})
+end
+
+function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
+	for i = 1, num do
+		local deg = rng:RandomInt(21)-10 -- -10 to 10
+		local speed = vel:Length() * (1+((rng:RandomInt(8)+1)/10))
+		
+		--Monstro shot standards
+		tearConf.FallingAcceleration = 0.5
+		tearConf.FallingSpeed = -5 - rng:RandomInt(11) -- -15 to -5
+		tearConf.Scale = 1 + (rng:RandomInt(5)-2)/6 -- 4/6 to 8/6
+
+		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg):__mul(speed), tearConf)
+	end
+end
+
+function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
+	if not Agony:HasFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE) then
+		tearConf.TearFlags = Agony:AddFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE)
+	end
+
+	--Ipecec tear standards
+	tearConf.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
+	tearConf.Height = -35
+	tearConf.FallingAcceleration = 0.6
+	tearConf.FallingSpeed = -10
+	tearConf.Scale = 1 + 1/3
+
+
+	Agony:fireTearProj(var, sub, pos, vel, tearConf)
+end
+
+function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
+	--Homing tear standards
+	tearConf.Color = Color(1, 0.5, 1, 1, 0, 0, 0)
+	tearConf.Data.Agony = tearConf.Data.Agony or {}
+	tearConf.Data.Agony.homing = true
+	
+	Agony:fireTearProj(var, sub, pos, vel, tearConf)
 end
 
 --Extra Bits
@@ -629,6 +737,7 @@ Agony.ENUMS = require("ExtraEnums")
 Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
+Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
 
 --Debug
 require("Debug");
@@ -655,6 +764,7 @@ require("code/Monsters/Flaming Alts/Clotty")
 --Cocoons
 require("code/Monsters/Cocoons/SpiderCocoon")
 require("code/Monsters/Cocoons/ChasingCocoon")
+require("code/Monsters/Cocoons/ShootingCocoon")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
@@ -749,6 +859,7 @@ require("code/Items/Trinkets/LuckyEgg")
 require("code/Items/Trinkets/NuclearStone")
 require("code/Items/Trinkets/SuicideGod");
 require("code/Items/Trinkets/SolomonsCrown");
+require("code/Items/Trinkets/BrokenSpike");
 
 --Transformations
 -- require("code/Misc/Transformations/God")
@@ -800,3 +911,4 @@ Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)

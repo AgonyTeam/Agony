@@ -17,7 +17,7 @@ function techLessThanThree:onUpdate()
     			--TODO : Change gfx to idk
           entity:GetSprite():ReplaceSpritesheet(0, "gfx/effect/tear_techlessthan3.png")
           entity:GetSprite():LoadGraphics()
-    			entity.SubType = AgonyTearSubtype.TECH_LESS_THAN_3
+    			entity.SubType = Agony.TearSubTypes.TECH_LESS_THAN_3
     		end
     	end
     end
@@ -26,7 +26,7 @@ end
 
 function techLessThanThree:onTakeDmg(hurtEntity, dmgAmount, dmgFlags, source, countdown)
   local player = Isaac.GetPlayer(0)
-  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == AgonyTearSubtype.TECH_LESS_THAN_3 and hurtEntity:IsVulnerableEnemy() then
+  if source.Type == EntityType.ENTITY_TEAR and source.Entity.SubType == Agony.TearSubTypes.TECH_LESS_THAN_3 and hurtEntity:IsVulnerableEnemy() then
     hurtEntity:GetData().techsavvy = 600
   end 
 end
