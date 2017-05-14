@@ -644,7 +644,9 @@ function Agony:updateTears()
 			tearTable[i] = nil
 		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
 			player:TakeDamage(1, 0, EntityRef(tear), 0)
-			tear:Die()
+			if not Agony:HasFlags(tear.TearFlags, TearFlags.TEAR_PIERCING) then
+				tear:Die()
+			end
 		elseif tData.Agony ~= nil and tData.Agony.homing then
 			tear.Velocity = Agony:calcTearVel(tear.Position, player.Position, tear.Velocity:Length())
 		end
@@ -707,6 +709,7 @@ function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
 	
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
 end
+
 --Extra Bits
 Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
 
