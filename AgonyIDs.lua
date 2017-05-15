@@ -28,8 +28,8 @@ FamiliarVariant["AGONY_F_SOULMATE_JULIET"] = Isaac.GetEntityVariantByName("Julie
 FamiliarVariant["AGONY_F_SOULMATE_ROMEO"] = Isaac.GetEntityVariantByName("Romeo")
 CollectibleType["AGONY_C_TESLA_BABY"] = Isaac.GetItemIdByName("Tesla Baby")
 FamiliarVariant["AGONY_F_TESLA_BABY"] = Isaac.GetEntityVariantByName("Tesla Baby")
-CollectibleType["AGONY_C_TINY_TINY_HORN"] = Isaac.GetItemIdByName("Tiny Tiny Horn")
-FamiliarVariant["AGONY_F_TINY_TINY_HORN"] = Isaac.GetEntityVariantByName("Tiny Tiny Horn")
+-- CollectibleType["AGONY_C_TINY_TINY_HORN"] = Isaac.GetItemIdByName("Tiny Tiny Horn")
+-- FamiliarVariant["AGONY_F_TINY_TINY_HORN"] = Isaac.GetEntityVariantByName("Tiny Tiny Horn")
 -- CollectibleType["AGONY_C_WAIT_NO"] = Isaac.GetItemIdByName("Wait, No.")
 -- FamiliarVariant["AGONY_F_WAIT_NO"] = Isaac.GetEntityVariantByName("Wait No")
 
@@ -61,7 +61,7 @@ CollectibleType["AGONY_C_LSD"] = Isaac.GetItemIdByName("Little Sugar Dumdum");
 CollectibleType["AGONY_C_LOADED_DICE"] = Isaac.GetItemIdByName("Loaded Dice");
 CollectibleType["AGONY_C_LUCKY_LEG"] = Isaac.GetItemIdByName("Lucky's Paw");
 CollectibleType["AGONY_C_MAGIC_KIT"] = Isaac.GetItemIdByName("Magic Kit");
-CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
+-- CollectibleType["AGONY_C_OVERGROWN_SPINE"] = Isaac.GetItemIdByName("Overgrown Spine");
 CollectibleType["AGONY_C_PANDORASCHEST5"] = Isaac.GetItemIdByName("Pandora's Chest     ")
 CollectibleType["AGONY_C_PANDORASCHEST4"] = Isaac.GetItemIdByName("Pandora's Chest    ")
 CollectibleType["AGONY_C_PANDORASCHEST3"] = Isaac.GetItemIdByName("Pandora's Chest   ")
@@ -71,7 +71,7 @@ CollectibleType["AGONY_C_PANDORASCHEST0"] = Isaac.GetItemIdByName("Pandora's Che
 CollectibleType["AGONY_C_PARASITES"] = Isaac.GetItemIdByName("Infestation 3");
 CollectibleType["AGONY_C_PERSONAL_BUBBLE"] = Isaac.GetItemIdByName("Personal Bubble");
 -- CollectibleType["AGONY_C_PIP"] = Isaac.GetItemIdByName("Poverty = Power");
-CollectibleType["AGONY_C_PRODUCTIVE_SEIZURE"] =      Isaac.GetItemIdByName("Productive Seizure")
+-- CollectibleType["AGONY_C_PRODUCTIVE_SEIZURE"] =      Isaac.GetItemIdByName("Productive Seizure")
 -- CollectibleType["AGONY_C_PYRAMID_HEAD"] = Isaac.GetItemIdByName("Pyramid Head");
 CollectibleType["AGONY_C_PYRITE_NUGGET"] = Isaac.GetItemIdByName("Pyrite Nugget")
 CollectibleType["AGONY_C_PYTHAGORE_BODY"] = Isaac.GetItemIdByName("Pythagore's Body");
@@ -85,7 +85,7 @@ CollectibleType["AGONY_C_SOCIAL_ANXIETY"] = Isaac.GetItemIdByName("Social Anxiet
 -- CollectibleType["AGONY_C_SPECIAL_ONE"] = Isaac.GetItemIdByName("Special One");
 -- CollectibleType["AGONY_C_SPOODER_BOI"] = Isaac.GetItemIdByName("Spooderboi");
 -- CollectibleType["AGONY_C_TANTRUM"] = Isaac.GetItemIdByName("Tantrum");
-CollectibleType["AGONY_C_TILL_DEATH_DO_US_APART"] =      Isaac.GetItemIdByName("Till Death Do Us Apart")
+CollectibleType["AGONY_C_TILL_DEATH_DO_US_APART"] = Isaac.GetItemIdByName("Till Death Do Us Apart")
 -- CollectibleType["AGONY_C_TECH_9000"] = Isaac.GetItemIdByName("Technology 9000");
 -- CollectibleType["AGONY_C_THE_BIG_ROCK"] = Isaac.GetItemIdByName("The Big Rock");
 --CollectibleType["AGONY_C_THE_LUDOVICO_EXPERIMENT"] = Isaac.GetItemIdByName("The Ludovico Experiment");
@@ -114,7 +114,7 @@ CollectibleType["AGONY_C_STINK_EYE"] = Isaac.GetItemIdByName("Stink Eye");
 CollectibleType["AGONY_C_THE_ROOT_OF_ANGER"] = Isaac.GetItemIdByName("The Root Of Anger");
 CollectibleType["AGONY_C_EGG_BEATER"] = Isaac.GetItemIdByName("Egg Beater");
 -- CollectibleType["AGONY_C_NUT_MILK"] = Isaac.GetItemIdByName("Nut Milk");
-CollectibleType["AGONY_C_SOAKED_REMOTE"] = Isaac.GetItemIdByName("Soaked Remote");
+-- CollectibleType["AGONY_C_SOAKED_REMOTE"] = Isaac.GetItemIdByName("Soaked Remote");
 CollectibleType["AGONY_C_BLIND_FAITH"] = Isaac.GetItemIdByName("Blind Faith");
 
 --Trinkets

@@ -2,6 +2,18 @@
 Agony = RegisterMod("The Agony of Isaac", 1);
 local json = require("json")
 
+--Constants
+Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
+
+--Register Agony's IDs
+require("AgonyIDs")
+Agony.ENUMS = require("ExtraEnums")
+Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
+Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
+Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
+Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
+Agony.Callbacks = Agony.ENUMS.Callbacks
+
 --SaveData
 local newestSaveVer = 2;
 if Agony:HasData() then
@@ -13,24 +25,13 @@ else
 	saveData = {saveVer = newestSaveVer};
 end
 
-saveData.gasolinejb = saveData.gasolinejb or {};
-saveData.radioactivePizza = saveData.radioactivePizza or {};
-saveData.Sacks3 = saveData.Sacks3 or {};
-saveData.Sacks2 = saveData.Sacks2 or {};
 saveData.theWay = saveData.theWay or {}
-saveData.partypills = saveData.partypills or {}
 saveData.LSD = saveData.LSD or {}
 saveData.bloodyNut = saveData.bloodyNut or {}
 saveData.luckyEgg = saveData.luckyEgg or {}
 saveData.despair = saveData.despair or {}
-saveData.safeSpace = saveData.safeSpace or {}
 saveData.placeholder = saveData.placeholder or {}
-saveData.bigD = saveData.bigD or {}
-saveData.misterBean = saveData.misterBean or {}
-saveData.goldMan = saveData.goldMan or {}
 saveData.cherry = saveData.cherry or {}
-saveData.milkman = saveData.milkman or {}
-saveData.god = saveData.god or {}
 saveData.delusion = saveData.delusion or {}
 
 
@@ -729,18 +730,6 @@ function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
 	
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
 end
-
---Extra Bits
-Agony.ETERNAL_SPAWN_CHANCE = 0.2 --Eternals spawn chance constant
-
---Register Agony's ID
-require("AgonyIDs")
-Agony.ENUMS = require("ExtraEnums")
-Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
-Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
-Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
-Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
-Agony.Callbacks = Agony.ENUMS.Callbacks
 
 function Agony:addHelperCallback(callbackType, func)
 	if callbackTable[callbackType] == nil then
