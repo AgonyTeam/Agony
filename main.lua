@@ -678,7 +678,7 @@ function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 	local t = Isaac.Spawn(EntityType.ENTITY_TEAR, var, sub, pos, vel, tearConf.SpawnerEntity):ToTear()
 	t.SpawnerEntity = tearConf.SpawnerEntity
 	t.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
-	t.TearFlags = tearConf.TearFlags
+	t.TearFlags = tearConf.TearFlags or t.TearFlags
 	t.Height = tearConf.Height or -23
 	t.FallingAcceleration = tearConf.FallingAcceleration or 0
 	t.FallingSpeed = tearConf.FallingSpeed or 0
@@ -787,6 +787,7 @@ require("code/Monsters/Eternals/AttackFly");
 require("code/Monsters/Eternals/RedBoomFly");
 require("code/Monsters/Eternals/BoomFly");
 require("code/Monsters/Eternals/Corn");
+require("code/Monsters/Eternals/Sucker");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 --require("code/Monsters/Flaming Alts/Clotty")
