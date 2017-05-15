@@ -731,18 +731,23 @@ function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
 end
 
-function Agony:addHelperCallback(callbackType, func)
+function Agony:addHelperCallback(callbackType, func, arg)
 	if callbackTable[callbackType] == nil then
 		callbackTable[callbackType] = {}
 	end
-	table.insert(callbackTable[callbackType], func)
+	table.insert(callbackTable[callbackType], {func, arg})
 end
 
-function Agony:triggerCallback(callbackType, args)
+function Agony:triggerCallback(callbackType, args, callbackArg)
 	if callbackTable[callbackType] ~= nil then
 		local t = callbackTable[callbackType]
 		for i = 1, #t do
-			t[i](nil, args)
+			local func = t[i][1]
+			local desiredArg = t[i][2] --the wanted argument passed in addHelperCallback()
+
+			if desiredArg == nil or callbackArg == desiredArg then --only run the function if the wanted argument is passed by updateHelperCallbacks()
+				func(args[1], args[2], args[3], args[4], args[5], args[6], args[7], args[8], args[9], args[10]) --pass up to 10 arguments to function
+			end
 			if args.cancel == true then
 				break
 			end
@@ -756,7 +761,7 @@ function Agony:updateHelperCallbacks()
 		local ents = Isaac.GetRoomEntities()
 		for i = 1, #ents do
 			if ents[i].FrameCount <= 1 then
-				Agony:triggerCallback( Agony.Callbacks.ENTITY_SPAWN, {ent=ents[i]} )
+				Agony:triggerCallback(Agony.Callbacks.ENTITY_SPAWN, {ents[i]}, ents[i].Type)
 			end
 		end
 	end
