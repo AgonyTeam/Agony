@@ -1,4 +1,7 @@
-eternalSucker = {};
+eternalSucker = {
+	tearVel = 5,
+	tearRotSpeed = 10
+};
 
 --Add to Eternal List
 Agony:AddEternal(EntityType.ENTITY_SUCKER,0,"Sucker")
@@ -16,15 +19,16 @@ function eternalSucker:ai_main(entity)
 end
 
 function eternalSucker:tearUpdate(t)
-	t.Velocity = t.Velocity:Rotated(10)
+	t.Velocity = t.Velocity:Rotated(eternalSucker.tearRotSpeed)
 end
 
 function eternalSucker:ai_dmg(ent, dmg, flags, src, countdown)
 	if ent.Variant == 0 and ent.SubType == 15 and dmg >= ent.HitPoints then
-		Agony:fireTearProj(1, 0, ent.Position, Vector(5,5), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(-5,5), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(5,-5), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(-5,-5), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		local v = eternalSucker.tearVel
+		Agony:fireTearProj(1, 0, ent.Position, Vector(v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		Agony:fireTearProj(1, 0, ent.Position, Vector(-v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		Agony:fireTearProj(1, 0, ent.Position, Vector(v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		Agony:fireTearProj(1, 0, ent.Position, Vector(-v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
 	end
 end
 
