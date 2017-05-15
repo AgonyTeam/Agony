@@ -31,16 +31,16 @@ end
 
 function eternalBoomFly:update()
 	local explosions = eternalBoomFly.explosions
-	for i = 1, #explosions do
-		if explosions[i] ~= nil and Game():GetRoom():IsPositionInRoom(explosions[i].pos, 0) then
-			if explosions[i].time > eternalBoomFly.explosionDelay then
-				Isaac.Explode(explosions[i].pos, nil, eternalBoomFly.explosionDmg)
-				explosions[i].pos = explosions[i].pos + explosions[i].dir
-				explosions[i].time = 0
+	for k,expl in pairs(explosions) do
+		if Game():GetRoom():IsPositionInRoom(expl.pos, 0) then
+			if expl.time > eternalBoomFly.explosionDelay then
+				Isaac.Explode(expl.pos, nil, eternalBoomFly.explosionDmg)
+				expl.pos = expl.pos + expl.dir
+				expl.time = 0
 			end
-			explosions[i].time = explosions[i].time + 1
+			expl.time = expl.time + 1
 		else
-			explosions[i] = nil
+			explosions[k] = nil
 		end
 	end
 end
