@@ -14,10 +14,6 @@ function eternalBoomFly:ai_main(ent)
 		ent:Morph(ent.Type, ent.Variant, 15, -1)
 		ent.HitPoints = ent.MaxHitPoints
 	end
-	
-	if ent.Variant == 0 and ent.SubType == 15 then
-		ent:GetSprite().Color = Color(1,1,1,1,100,100,100) --Because there are no custom sprites for Eternal Boom Fly yet.
-	end
 end
 
 function eternalBoomFly:ai_dmg(ent, dmg, flags, src, countdown)
