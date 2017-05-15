@@ -753,7 +753,10 @@ function Agony:triggerCallback(callbackType, args)
 	if callbackTable[callbackType] ~= nil then
 		local t = callbackTable[callbackType]
 		for i = 1, #t do
-			t[i](args, args)
+			t[i](nil, args)
+			if args.cancel == true then
+				break
+			end
 		end
 	end
 	return args
