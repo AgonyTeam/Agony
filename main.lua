@@ -58,6 +58,8 @@ pickUpTable = {}
 pickUpTree = {}
 --tearProjectiles
 tearTable = {}
+--Helper Callbacks
+callbackTable = {}
 
 --make the game save the saveData table
 function Agony:SaveNow()
@@ -738,6 +740,35 @@ Agony.Pedestals = Agony.ENUMS.Pedestals --shortcuts
 Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
 Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
+Agony.Callbacks = Agony.ENUMS.Callbacks
+
+function Agony:addHelperCallback(callbackType, func)
+	if callbackTable[callbackType] == nil then
+		callbackTable[callbackType] = {}
+	end
+	table.insert(callbackTable[callbackType], func)
+end
+
+function Agony:triggerCallback(callbackType, args)
+	if callbackTable[callbackType] ~= nil then
+		local t = callbackTable[callbackType]
+		for i = 1, #t do
+			t[i](args, args)
+		end
+	end
+	return args
+end
+
+function Agony:updateHelperCallbacks()
+	if callbackTable[Agony.Callbacks.ENTITY_SPAWN] ~= nil then
+		local ents = Isaac.GetRoomEntities()
+		for i = 1, #ents do
+			if ents[i].FrameCount <= 1 then
+				Agony:triggerCallback( Agony.Callbacks.ENTITY_SPAWN, {ent=ents[i]} )
+			end
+		end
+	end
+end
 
 --Debug
 require("Debug");
@@ -912,3 +943,4 @@ Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateHelperCallbacks)

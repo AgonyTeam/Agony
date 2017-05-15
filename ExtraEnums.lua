@@ -325,6 +325,10 @@ Lists = {
 		STINK_EYE = 6,
 		ETERNAL = 507,
 	},
+	--Helper Callbacks
+	Callbacks = {
+		ENTITY_SPAWN = 1
+	}
 }
 
 return Lists
