@@ -16,7 +16,7 @@
 	<!--FREE <passive name="" description="" gfx="" id="14" /> -->
 	<!-- <passive name="Pyramid Head" description="Mysterious placeholder text" gfx="collectibles_pyramidhead.png" id="15" /> -->
 	<!-- <passive name="Bready Mold" description="Mysterious placeholder text" gfx="collectibles_breadymold.png" soulhearts="2" id="16" /> -->
-	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" id="17" />
+<!-- 	<passive name="Overgrown Spine" description="And his music was electric" gfx="collectibles_overgrownspine.png" id="17" /> -->
 	<!--FREE <passive cache="firedelay speed damage luck" name="Solomon's Crown" description="Mysterious placeholder text" gfx="collectibles_solomoncrown.png" id="18" />-->
 	<!-- <passive name="Technology 9000" description="Mysterious placeholder text" gfx="collectibles_technology9000.png" id="19" /> -->
 	<passive cache ="speed" name="Electric Hair" description="Mysterious placeholder text" gfx="collectibles_electrichair.png" id="20" />
@@ -39,7 +39,7 @@
 	<!-- <passive cache="speed" name="Spooderboi" description="Mysterious placeholder text" gfx="collectibles_spooderboi.png" id="37" /> -->
 	<!-- <passive name="Gold Man" description="Mysterious placeholder text" gfx="collectibles_goldman.png" id="38" /> -->
 	<passive cache="damage" name="Sacramental Wine" description="Mysterious placeholder text" gfx="collectibles_sacramentalwine.png" id="39" />
-	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" id="40" />
+<!-- 	<passive name="Productive Seizure" description="Mysterious placeholder text" gfx="collectibles_productiveseizure.png" id="40" /> -->
 	<passive cache="firedelay damage" name="Cashew Milk" description="Mysterious placeholder text" gfx="collectibles_cashewmilk.png" id="41" />
 	<!-- <passive cache="damage" name="Safe Space" description="Mysterious placeholder text" gfx="collectibles_safespace.png" maxhearts="2" id="42" /> -->
 	<passive name="Social Anxiety" description="Mysterious placeholder text" gfx="collectibles_socialanxiety.png" id="43" />
@@ -85,10 +85,10 @@
 	<active name="Worm Knot" description="Mysterious placeholder text" gfx="collectibles_wormknot.png" maxcharges="1" id="327" />
 	<active name="Easter Egg" description="Mysterious placeholder text" gfx="collectibles_easteregg.png" maxcharges="0" id="328" />
 	<active name="The Root Of Anger" description="Mysterious placeholder text" gfx="collectibles_therootofanger.png" maxcharges="0" id="329" />
-	<active name="Soaked Remote" description="It's wet" gfx="collectibles_soakedremote.png" maxcharges="1" id="330" />
-	
+<!-- 	<active name="Soaked Remote" description="It's wet" gfx="collectibles_soakedremote.png" maxcharges="1" id="330" />
+ -->	
 	<!--Familiar IDs: 601-??? -->
-	<familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" id="601" />
+	<!-- <familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" id="601" /> -->
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" id="602" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" id="603" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_drunkenfly.png" name="Drunken Fly" id="604" />

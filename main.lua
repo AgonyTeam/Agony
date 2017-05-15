@@ -795,7 +795,7 @@ require("code/Monsters/Eternals/BoomFly");
 require("code/Monsters/Eternals/Corn");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
-require("code/Monsters/Flaming Alts/Clotty")
+--require("code/Monsters/Flaming Alts/Clotty")
 --Cocoons
 require("code/Monsters/Cocoons/SpiderCocoon")
 require("code/Monsters/Cocoons/ChasingCocoon")
@@ -831,7 +831,7 @@ require("code/Items/Collectibles/Cyanide");
 --require("");
 -- require("code/Items/Collectibles/PyramidHead");
 -- require("code/Items/Collectibles/BreadyMold");
-require("code/Items/Collectibles/OvergrownSpine");
+--require("code/Items/Collectibles/OvergrownSpine");
 --require("");
 -- require("code/Items/Collectibles/Tech9000");
 require("code/Items/Collectibles/ElectricHair");
@@ -863,7 +863,7 @@ require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
 require("code/Items/Collectibles/PyriteNugget")
 require("code/Items/Collectibles/IrritatingBracelets")
-require("code/Items/Collectibles/ProductiveSeizure")
+-- require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
 -- require("code/Items/Collectibles/SafeSpace")
@@ -883,7 +883,7 @@ require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
 require("code/Items/Collectibles/EggBeater")
 -- require("code/Items/Collectibles/NutMilk")
-require("code/Items/Collectibles/SoakedRemote")
+--require("code/Items/Collectibles/SoakedRemote")
 require("code/Items/Collectibles/BlindFaith")
 
 --Trinkets
@@ -917,7 +917,7 @@ require("code/Items/Pick Ups/Coins/PyriteCoin")
 require("code/Items/Pick Ups/Other/Cherry")
 
 --Familiars
-require("code/Familiars/TinyTinyHorn");
+--require("code/Familiars/TinyTinyHorn");
 require("code/Familiars/GrudgeHolder");
 require("code/Familiars/Soulmates");
 require("code/Familiars/DrunkenFly");

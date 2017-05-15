@@ -205,7 +205,7 @@ Lists = {
 			EntityType.ENTITY_RING_OF_FLIES,
 		},
 		FlamingAlts = {
-			EntityType.ENTITY_CLOTTY,
+			--EntityType.ENTITY_CLOTTY,
 		},
 		SpiderCocoon = { --spiders spawned upon death of spider cocoon
 			{EntityType.ENTITY_BIGSPIDER, 0},
