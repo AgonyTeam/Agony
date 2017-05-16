@@ -89,7 +89,7 @@ Lists = {
 			CollectibleType.COLLECTIBLE_BODY,
 			CollectibleType.COLLECTIBLE_MIND,
 		},
-			
+
 		Garbage = {
 			--Vanilla
 			--Passives
@@ -137,7 +137,7 @@ Lists = {
 			CollectibleType.COLLECTIBLE_NOTCHED_AXE,
 			CollectibleType.COLLECTIBLE_ISAACS_TEARS,
 			CollectibleType.COLLECTIBLE_BEST_FRIEND,
-			
+
 						--Agony Garbage
 			CollectibleType.AGONY_C_PERSONAL_BUBBLE,
 			CollectibleType.AGONY_C_PYRITE_NUGGET,
@@ -145,7 +145,7 @@ Lists = {
 			CollectibleType.AGONY_C_WAIT_NO,
 			CollectibleType.AGONY_C_BIRTHDAY_GIFT, --Infinite Garbage, hell yeah
 		},
-			
+
 		FragileConceptionFams = {
 			CollectibleType.COLLECTIBLE_BROTHER_BOBBY,
 			CollectibleType.COLLECTIBLE_STEVEN,
@@ -214,13 +214,13 @@ Lists = {
 			{EntityType.ENTITY_HOPPER, 1}, --trite
 		},
 		Delusions = {
-			EntityType.ENTITY_GAPER,      
-			EntityType.ENTITY_GUSHER,     
-			EntityType.ENTITY_HORF,       
-			EntityType.ENTITY_FLY,        
-			EntityType.ENTITY_POOTER,     
-			EntityType.ENTITY_CLOTTY,     
-			EntityType.ENTITY_MULLIGAN,   
+			EntityType.ENTITY_GAPER,
+			EntityType.ENTITY_GUSHER,
+			EntityType.ENTITY_HORF,
+			EntityType.ENTITY_FLY,
+			EntityType.ENTITY_POOTER,
+			EntityType.ENTITY_CLOTTY,
+			EntityType.ENTITY_MULLIGAN,
 			EntityType.ENTITY_ATTACKFLY,
 			EntityType.ENTITY_MAGGOT,
 			EntityType.ENTITY_HIVE,
@@ -324,6 +324,7 @@ Lists = {
 		BIG_D = 5,
 		STINK_EYE = 6,
 		ETERNAL = 507,
+		INFESTATION_3 = 508,
 	},
 	--Helper Callbacks
 	Callbacks = {
