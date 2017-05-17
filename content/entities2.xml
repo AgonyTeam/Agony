@@ -156,6 +156,14 @@
         <gibs amount="5" blood="1" bone="0" eye="0" gut="1" large="0" />
     </entity>
 	<!--/FatFly-->
+
+	<!-- Creeps -->
+	<entity id="508" variant="0" name="Stuffed Creep" baseHP="10" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="93" anm2path="Monsters/Creeps/Stuffed Creep/animation.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Walk">
+        <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0" />
+        <preload-snd id="317" /> <!-- SOUND_SPIDER_SPIT_ROAR -->
+    </entity>
+    <!-- /Creeps -->
+
 	
 	<!--Familiars-->
 <!-- 	<entity anm2path="Familiars/Tiny Tiny Horn/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Tiny Tiny Horn" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="501">
@@ -211,8 +219,10 @@
     </entity>
 	<!--/Familiars-->
 
+	<!-- Agony tearProjectiles -->
     <entity anm2path="009.006_Hush Projectile.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="8" collisionRadius="8" friction="1" id="2" name="Eternal Tear" numGridCollisionPoints="8" shadowSize="8" stageHP="0" variant="0" subtype="507">
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
-	
+	<!-- /Agony tearProjectiles -->
+
 </entities>	

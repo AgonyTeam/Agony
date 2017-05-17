@@ -833,6 +833,8 @@ require("code/Monsters/Flaming Alts/core") --load fire damage detection
 require("code/Monsters/Cocoons/SpiderCocoon")
 require("code/Monsters/Cocoons/ChasingCocoon")
 require("code/Monsters/Cocoons/ShootingCocoon")
+--Creeps
+require("code/Monsters/Creeps/StuffedCreep")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
