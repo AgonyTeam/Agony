@@ -182,10 +182,10 @@ function stuffedCreep:ai_anim(ent, sprite, data)
 	if data.Wall == stuffedCreep.Wall.DOWN then
 		sprite.Rotation = 180
 	elseif data.Wall == stuffedCreep.Wall.LEFT then --left and right wall rotation is fucky and I don't know why. the sprites are oriented the wrong way, until the enemy does one attack animation.
-		sprite.Rotation = 270 --and for some reason left and right are turned by the same amount of degrees
+		sprite.Rotation = 90 --and for some reason left and right are turned by the same amount of degrees
 		--sprite.FlipY = true
 	elseif data.Wall == stuffedCreep.Wall.RIGHT then
-		sprite.Rotation = 270
+		sprite.Rotation = 90
 	end
 end
 
