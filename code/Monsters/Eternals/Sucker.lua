@@ -1,5 +1,6 @@
 eternalSucker = {
-	tearVel = 5,
+	tearAVel = 10,
+	tearBVel = 7,
 	tearRotSpeed = 10
 };
 
@@ -24,11 +25,33 @@ end
 
 function eternalSucker:ai_dmg(ent, dmg, flags, src, countdown)
 	if ent.Variant == 0 and ent.SubType == 15 and dmg >= ent.HitPoints then
-		local v = eternalSucker.tearVel
-		Agony:fireTearProj(1, 0, ent.Position, Vector(v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(-v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
-		Agony:fireTearProj(1, 0, ent.Position, Vector(-v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		Agony:addDelayedFunction(Agony:getCurrTime()+3, function (data)
+			
+			local pos = data.pos
+			local ent = data.ent
+			--Try to remove the original tears by Sucker
+			local roomEnts = Isaac.GetRoomEntities()
+			for _, rEnt in pairs(roomEnts) do
+				Isaac.DebugString(rEnt.Type.." - "..rEnt.Position:Distance(ent.Position).." - "..rEnt.FrameCount.." - "..rEnt.SpawnerType)
+				if rEnt.Type == EntityType.ENTITY_PROJECTILE and rEnt.Position:Distance(ent.Position) <= 64 and rEnt.FrameCount <= 5 and rEnt.SpawnerType == EntityType.ENTITY_SUCKER then
+					rEnt:Remove()
+				end
+			end
+			local v = eternalSucker.tearAVel
+			
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(v,0), {SpawnerEntity=ent})
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(-v,0), {SpawnerEntity=ent})
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(0,-v), {SpawnerEntity=ent})
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(0,v), {SpawnerEntity=ent})
+			
+			v = eternalSucker.tearBVel
+			
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(-v,v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+			Agony:fireTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Vector(-v,-v), {SpawnerEntity=ent, Functions={onUpdate=eternalSucker.tearUpdate} })
+		
+		end, {pos=ent.Position,ent=ent}, true)
 	end
 end
 
