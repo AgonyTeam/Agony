@@ -61,6 +61,9 @@ pickUpTree = {}
 tearTable = {}
 --Helper Callbacks
 callbackTable = {}
+--Delayed Functions
+local dfTime = 0
+delayedFunctions = {}
 
 --make the game save the saveData table
 function Agony:SaveNow()
@@ -767,6 +770,41 @@ function Agony:updateHelperCallbacks()
 	end
 end
 
+function Agony:getCurrTime()
+	return dfTime
+end
+
+--For example:
+--addDelayedFunction(Agony:GetCurrTime() + 30, function (data) DO.STUFF end, {target=69})
+--30 frames later
+function Agony:addDelayedFunction(time, func, data, cancelOnRoomChange)
+	local t = {
+		time = time,
+		func = func,
+		data = data,
+		cancelOnRoom = cancelOnRoomChange
+	}
+	table.insert(delayedFunctions, t)
+end
+
+function Agony:updateDelayedFunctions()
+	for k,v in pairs(delayedFunctions) do
+		if v.time <= dfTime then
+			v.func(v.data)
+			delayedFunctions[k] = nil
+		end
+	end
+	dfTime = dfTime + 1
+end
+
+function Agony:cancelRoomFunctions()
+	for k,v in pairs(delayedFunctions) do
+		if v.cancelOnRoom == true then
+			delayedFunctions[k] = nil
+		end
+	end
+end
+
 --Debug
 require("Debug");
 --Enemies
@@ -943,3 +981,5 @@ Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateHelperCallbacks)
+Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateDelayedFunctions)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.cancelRoomFunctions)
