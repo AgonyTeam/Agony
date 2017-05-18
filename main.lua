@@ -841,6 +841,7 @@ require("code/Monsters/Cocoons/ChasingCocoon")
 require("code/Monsters/Cocoons/ShootingCocoon")
 --Creeps
 require("code/Monsters/Creeps/StuffedCreep")
+require("code/Monsters/Creeps/SickCreep")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities

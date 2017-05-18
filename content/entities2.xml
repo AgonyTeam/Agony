@@ -168,6 +168,10 @@
         <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0" />
         <preload-snd id="317" /> <!-- SOUND_SPIDER_SPIT_ROAR -->
     </entity>
+    <entity id="509" variant="0" name="Sick Creep" baseHP="10" stageHP="0" boss="0" champion="0" collisionDamage="1" collisionMass="14" collisionRadius="13" friction="1" numGridCollisionPoints="12" shadowSize="0" portrait="93" anm2path="Monsters/Creeps/Sick Creep/animation.anm2" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Walk">
+        <gibs amount="4" blood="1" bone="0" eye="0" gut="1" large="0" />
+        <preload-snd id="317" /> <!-- SOUND_SPIDER_SPIT_ROAR -->
+    </entity>
     <!-- /Creeps -->
 
 	
