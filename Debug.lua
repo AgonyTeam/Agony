@@ -1,5 +1,5 @@
 local debugScript = {
-	show_debug = true,
+	show_debug = true, --TODO[ ] Set to false on release
 	button_pressed = false
 }
 
