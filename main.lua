@@ -680,6 +680,10 @@ end
 function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 	local t = Isaac.Spawn(EntityType.ENTITY_TEAR, var, sub, pos, vel, tearConf.SpawnerEntity):ToTear()
 	t.SpawnerEntity = tearConf.SpawnerEntity
+	if tearConf.SpawnerEntity ~= nil then
+		t.SpawnerType = tearConf.SpawnerEntity.Type
+		t.SpawnerVariant = tearConf.SpawnerEntity.Variant
+	end
 	t.EntityCollisionClass = EntityCollisionClass.ENTCOLL_PLAYERONLY
 	t.TearFlags = tearConf.TearFlags or t.TearFlags
 	t.Height = tearConf.Height or -23
