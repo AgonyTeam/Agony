@@ -32,7 +32,6 @@ function eternalSucker:ai_dmg(ent, dmg, flags, src, countdown)
 			--Try to remove the original tears by Sucker
 			local roomEnts = Isaac.GetRoomEntities()
 			for _, rEnt in pairs(roomEnts) do
-				Isaac.DebugString(rEnt.Type.." - "..rEnt.Position:Distance(ent.Position).." - "..rEnt.FrameCount.." - "..rEnt.SpawnerType)
 				if rEnt.Type == EntityType.ENTITY_PROJECTILE and rEnt.Position:Distance(ent.Position) <= 64 and rEnt.FrameCount <= 5 and rEnt.SpawnerType == EntityType.ENTITY_SUCKER then
 					rEnt:Remove()
 				end
