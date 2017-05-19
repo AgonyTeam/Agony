@@ -5,7 +5,8 @@ local sickCreep = {
 		DOWN = 2,
 		LEFT = 3
 	},
-	playerTrigger = 16,
+	playerTrigger = 10,
+	playerTriggerRegain = 0.1,
 	attackCooldown = 60,
 }
 
@@ -54,30 +55,34 @@ function sickCreep:ai_update(ent)
 		if (data.Wall == sickCreep.Wall.UP or data.Wall == sickCreep.Wall.DOWN) and math.abs(ent.Position.X - ent:GetPlayerTarget().Position.X) <= 16 then
 			if data.playerTrigger > 0 then
 				data.playerTrigger = data.playerTrigger - 1
-			elseif data.playerTrigger == 0 and data.attackCooldown == 0 then
+			elseif data.playerTrigger <= 0 and data.attackCooldown <= 0 then
 				ent.State = NpcState.STATE_ATTACK
 				data.playerTrigger = sickCreep.playerTrigger
 			end
 		elseif (data.Wall == sickCreep.Wall.LEFT or data.Wall == sickCreep.Wall.RIGHT) and math.abs(ent.Position.Y - ent:GetPlayerTarget().Position.Y) <= 16 then
 			if data.playerTrigger > 0 then
 				data.playerTrigger = data.playerTrigger - 1
-			elseif data.playerTrigger == 0 and data.attackCooldown == 0 then
+			elseif data.playerTrigger <= 0 and data.attackCooldown <= 0 then
 				ent.State = NpcState.STATE_ATTACK
 				data.playerTrigger = sickCreep.playerTrigger
 			end
 		else
-			data.playerTrigger = sickCreep.playerTrigger
+			data.playerTrigger = math.min(sickCreep.playerTrigger, data.playerTrigger + sickCreep.playerTriggerRegain)
 		end
 
 		if data.attackCooldown > 0 then
 			data.attackCooldown = data.attackCooldown - 1
 		end
 	elseif ent.State == NpcState.STATE_ATTACK then --attack
-		sickCreep:ai_stick(ent, data, room) --dont move while attacking
-		sickCreep:ai_attack(ent, data, rng)
-
-		data.attackCooldown = sickCreep.attackCooldown
-		ent.State = NpcState.STATE_MOVE
+		if ent:GetSprite():IsFinished("Attack") then
+			ent.State = NpcState.STATE_MOVE
+			data.attackCooldown = sickCreep.attackCooldown
+		else
+			sickCreep:ai_stick(ent, data, room) --dont move while attacking
+			if ent:GetSprite():IsEventTriggered("Attack") then
+				sickCreep:ai_attack(ent, data, rng)
+			end
+		end
 	end
 
 	sickCreep:ai_anim(ent, ent:GetSprite(), data) --update animations
@@ -162,7 +167,7 @@ function sickCreep:ai_anim(ent, sprite, data)
 		if not sprite:IsPlaying("Attack") then
 			ent:AnimWalkFrame("Walk", "Walk", 0.1)
 		end
-	elseif ent.State == NpcState.STATE_ATTACK then
+	elseif ent.State == NpcState.STATE_ATTACK and not sprite:IsPlaying("Attack") then
 		sprite:Play("Attack")
 	end
 
