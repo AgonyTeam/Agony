@@ -834,6 +834,7 @@ require("code/Monsters/Eternals/Corn");
 require("code/Monsters/Eternals/Sucker");
 require("code/Monsters/Eternals/Spider");
 require("code/Monsters/Eternals/FullFly");
+require("code/Monsters/Eternals/Spit");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 --require("code/Monsters/Flaming Alts/Clotty")
