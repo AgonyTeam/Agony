@@ -179,7 +179,7 @@ end
 
 --Calculates the velocity a tear needs to have to hit a target Position
 function Agony:calcTearVel(sourcePos, targetPos, multiplier)
-	return targetPos:__sub(sourcePos):Normalized():__mul(multiplier);
+	return (targetPos - sourcePos):Normalized() * multiplier;
 end
 
 --returns the nearest Enemy
@@ -653,7 +653,7 @@ function Agony:updateTears()
 		if not tear:Exists() then
 			--run onDeath when the tear doesn't exist
 			if func ~= nil and func.onDeath ~= nil then
-				func:onDeath(tear.Position, tear.Velocity, tear.SpawnerEntity)
+				func:onDeath(tear.Position, tear.Velocity, tear.SpawnerEntity, tear)
 			end
 			tearTable[i] = nil
 		elseif player.Position:Distance(tear.Position) <= player.Size + tear.Size + 8 and tear.Height >= -30 then
@@ -714,6 +714,7 @@ function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
 end
 
 function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
+	tearConf.TearFlags = tearConf.TearFlags or 0
 	if not Agony:HasFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE) then
 		tearConf.TearFlags = Agony:AddFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE)
 	end
@@ -723,7 +724,8 @@ function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
 	tearConf.Height = -35
 	tearConf.FallingAcceleration = 0.6
 	tearConf.FallingSpeed = -10
-	tearConf.Scale = 1 + 1/3
+	tearConf.Scale = tearConf.Scale or 1
+	tearConf.Scale = tearConf.Scale * (1 + 1/3)
 
 
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
