@@ -175,6 +175,9 @@ function sickCreep:ai_stick(ent, data, room)
 end
 
 function sickCreep:ai_attack(ent, data, rng)
+	
+	SFXManager():Play(SoundEffect.SOUND_SPIDER_SPIT_ROAR, 1, 0, false, 1)
+	
 	local tearConf = Agony:TearConf()
 
 	tearConf.SpawnerEntity = ent
