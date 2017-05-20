@@ -93,16 +93,44 @@ function sickCreep:ai_movement(ent, data, room)
 	local tarPos = ent:GetPlayerTarget().Position
 	local tl = room:GetTopLeftPos()
 	local br = room:GetBottomRightPos()
+	local speed = 2
 
-
-	if data.Wall == sickCreep.Wall.UP and entPos.X ~= tarPos.X and entPos.X > tl.X and entPos.X < br.X then
-		ent.Velocity = Vector(Agony:calcTearVel(entPos, tarPos, 5).X, tl.Y+4-entPos.Y) --they move too smooth, have to find something else
-	elseif data.Wall == sickCreep.Wall.RIGHT and entPos.Y ~= tarPos.Y and entPos.Y > tl.Y and entPos.Y < br.Y then
-		ent.Velocity = Vector(br.X-4-entPos.X, Agony:calcTearVel(entPos, tarPos, 5).Y)
-	elseif data.Wall == sickCreep.Wall.DOWN and entPos.X ~= tarPos.X and entPos.X > tl.X and entPos.X < br.X then
-		ent.Velocity = Vector(Agony:calcTearVel(entPos, tarPos, 5).X, br.Y-4-entPos.Y)
-	elseif data.Wall == sickCreep.Wall.LEFT and entPos.Y ~= tarPos.Y and entPos.Y > tl.Y and entPos.Y < br.Y then
-		ent.Velocity = Vector(tl.X+4-entPos.X, Agony:calcTearVel(entPos, tarPos, 5).Y)
+	if data.Wall == sickCreep.Wall.UP and math.abs(entPos.X - tarPos.X) > speed and entPos.X > tl.X and entPos.X < br.X then
+		local x = 0
+		if tarPos.X < entPos.X then
+			x = -speed
+		elseif tarPos.X > entPos.X then
+			x = speed
+		end
+		ent.Velocity = Vector(x, tl.Y+4-entPos.Y)
+		
+	elseif data.Wall == sickCreep.Wall.RIGHT and math.abs(entPos.Y - tarPos.Y) > speed and entPos.Y > tl.Y and entPos.Y < br.Y then
+		local y = 0
+		if tarPos.Y < entPos.Y then
+			y = -speed
+		elseif tarPos.Y > entPos.Y then
+			y = speed
+		end
+		ent.Velocity = Vector(br.X-4-entPos.X, y)
+		
+	elseif data.Wall == sickCreep.Wall.DOWN and math.abs(entPos.X - tarPos.X) > speed and entPos.X > tl.X and entPos.X < br.X then
+		local x = 0
+		if tarPos.X < entPos.X then
+			x = -speed
+		elseif tarPos.X > entPos.X then
+			x = speed
+		end
+		ent.Velocity = Vector(x, br.Y-4-entPos.Y)
+		
+	elseif data.Wall == sickCreep.Wall.LEFT and math.abs(entPos.Y - tarPos.Y) > speed and entPos.Y > tl.Y and entPos.Y < br.Y then
+		local y = 0
+		if tarPos.Y < entPos.Y then
+			y = -speed
+		elseif tarPos.Y > entPos.Y then
+			y = speed
+		end
+		ent.Velocity = Vector(tl.X+4-entPos.X, y)
+		
 	else
 		sickCreep:ai_stick(ent, data, room) --correct position if out of bounds
 	end
