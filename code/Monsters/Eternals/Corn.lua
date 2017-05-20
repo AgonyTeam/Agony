@@ -16,7 +16,8 @@ function eternalCorn:ai_main(entity)
 
 	--Leave slippery creep
 	if (entity.Variant == 1 and entity.SubType == 15 and entity.FrameCount % 4 == 0) then
-		Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_SLIPPERY_BROWN, 1, entity.Position, Vector(0,0), entity)
+		local creep = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_SLIPPERY_BROWN, 1, entity.Position, Vector(0,0), entity)
+		creep:Update()
 	end
 
 end
