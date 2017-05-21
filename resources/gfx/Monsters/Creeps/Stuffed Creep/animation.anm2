@@ -1,5 +1,5 @@
 <AnimatedActor>
-	<Info CreatedBy="Unknown" CreatedOn="17.05.2017 20:29:02" Version="2" Fps="30"/>
+	<Info CreatedBy="Unknown" CreatedOn="5/21/2017 2:40:40 PM" Version="3" Fps="30"/>
 	<Content>
 		<Spritesheets>
 			<Spritesheet Path="main.png" Id="0"/>
@@ -10,7 +10,9 @@
 		<Nulls>
 			<Null Name="OverlayEffect" Id="0"/>
 		</Nulls>
-		<Events/>
+		<Events>
+			<Event Name="Attack" Id="0"/>
+		</Events>
 	</Content>
 	<Animations DefaultAnimation="Walk">
 		<Animation Name="Walk" FrameNum="8" Loop="true">
@@ -54,7 +56,9 @@
 					<Frame XPosition="-1" YPosition="-22" XScale="100" YScale="100" Delay="1" Visible="true" RedTint="255" GreenTint="255" BlueTint="255" AlphaTint="255" RedOffset="0" GreenOffset="0" BlueOffset="0" Rotation="0" Interpolated="false"/>
 				</NullAnimation>
 			</NullAnimations>
-			<Triggers/>
+			<Triggers>
+				<Trigger EventId="0" AtFrame="10"/>
+			</Triggers>
 		</Animation>
 		<Animation Name="Charge" FrameNum="9" Loop="false">
 			<RootAnimation>

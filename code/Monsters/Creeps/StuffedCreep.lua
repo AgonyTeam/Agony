@@ -5,9 +5,7 @@ local stuffedCreep = {
 		DOWN = 2,
 		LEFT = 3
 	},
-	maxCharge = 8,
 	playerTrigger = 16,
-	holdCharge = 4,
 	attackCooldown = 60,
 }
 
@@ -15,10 +13,9 @@ function stuffedCreep:ai_update(ent)
 	local room = Game():GetRoom()
 	local rng = ent:GetDropRNG()
 	local data = ent:GetData()
+	local sprite = ent:GetSprite()
 
 	if ent.State == NpcState.STATE_INIT then
-		data.Charge = 0
-		data.holdCharge = 0
 		data.playerTrigger = stuffedCreep.playerTrigger
 		data.attackCooldown = 0
 
@@ -78,14 +75,11 @@ function stuffedCreep:ai_update(ent)
 		end
 	elseif ent.State == NpcState.STATE_ATTACK then --attack
 		stuffedCreep:ai_stick(ent, data, room) --dont move while attacking
-
-		if data.Charge == stuffedCreep.maxCharge then --if charged
+		
+		if sprite:IsEventTriggered("Attack") then --changed to event triggered attack because of how floof made the spritesheet 
 			stuffedCreep:ai_attack(ent, data, rng)
-			data.Charge = 0
 			data.attackCooldown = stuffedCreep.attackCooldown
 			ent.State = NpcState.STATE_MOVE
-		else
-			data.Charge = data.Charge + 1
 		end
 	end
 
@@ -179,13 +173,13 @@ function stuffedCreep:ai_stick(ent, data, room)
 end
 
 function stuffedCreep:ai_attack(ent, data, rng)
-	
 	SFXManager():Play(SoundEffect.SOUND_SPIDER_SPIT_ROAR, 1, 0, false, 1)
 	
 	local tearConf = Agony:TearConf()
 
 	tearConf.SpawnerEntity = ent
-	tearConf.Color = Color(1,1,1,1, 150,100,50) --still sceptic about the orange
+	tearConf.Functions.onUpdate = stuffedCreep.randomBones
+	--tearConf.Color = Color(1,1,1,1, 150,100,50) --still sceptic about the orange --jesus christ thanks floof deciding to remove that in the end
 
 	if data.Wall == stuffedCreep.Wall.UP then
 		Agony:fireMonstroTearProj(1, 0, Vector(ent.Position.X, ent.Position.Y+4), Vector(0,3), tearConf, 8, rng)
@@ -204,16 +198,33 @@ function stuffedCreep:ai_anim(ent, sprite, data)
 			ent:AnimWalkFrame("Walk", "Walk", 0.1)
 		end
 	elseif ent.State == NpcState.STATE_ATTACK then
-		sprite:SetFrame("Charge", data.Charge)
-		if data.Charge == 8 then
-			sprite:Play("Attack", true)
-		end
+		sprite:Play("Attack")
 	end
 
 	if data.Wall == stuffedCreep.Wall.DOWN then
 		sprite.Rotation = 180
 	elseif data.Wall == stuffedCreep.Wall.LEFT or data.Wall == stuffedCreep.Wall.RIGHT then
 		sprite.Rotation = 90
+	end
+end
+
+function stuffedCreep:randomBones(tear)
+	local rng = tear:GetDropRNG()
+
+	if tear.FrameCount == 1 and rng:RandomFloat() < 0.25 then
+
+		local tearConf = Agony:TearConf()
+		tearConf.SpawnerEntity = tear.SpawnerEntity
+		tearConf.Height = tear.Height
+		tearConf.TearFlags = tear.TearFlags
+		tearConf.FallingAcceleration = tear.FallingAcceleration
+		tearConf.FallingSpeed = tear.FallingSpeed
+		tearConf.Scale = tear.Scale
+		tearConf.Data = tear:GetData()
+		tearConf.Color = tear.Color
+
+		Agony:fireTearProj(29, 0, tear.Position, tear.Velocity, tearConf)
+		tear:Remove()
 	end
 end
 
