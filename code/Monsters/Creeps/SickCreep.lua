@@ -8,6 +8,7 @@ local sickCreep = {
 	playerTrigger = 10,
 	playerTriggerRegain = 0.1,
 	attackCooldown = 60,
+	ipecacSpeed = 5,
 }
 
 function sickCreep:ai_update(ent)
@@ -175,21 +176,24 @@ function sickCreep:ai_stick(ent, data, room)
 end
 
 function sickCreep:ai_attack(ent, data, rng)
-	
 	SFXManager():Play(SoundEffect.SOUND_SPIDER_SPIT_ROAR, 1, 0, false, 1)
 	
 	local tearConf = Agony:TearConf()
-
 	tearConf.SpawnerEntity = ent
+	tearConf.Functions.onDeath = sickCreep.splatTears
+
+	local orConf = {
+		Color = Color(1,1,1,1,0,0,0)
+	}
 
 	if data.Wall == sickCreep.Wall.UP then
-		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X, ent.Position.Y+4), Vector(0,6), tearConf)
+		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X, ent.Position.Y+4), Vector(0,sickCreep.ipecacSpeed), tearConf, orConf)
 	elseif data.Wall == sickCreep.Wall.RIGHT then
-		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X-4, ent.Position.Y), Vector(-6,0), tearConf)
+		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X-4, ent.Position.Y), Vector(-sickCreep.ipecacSpeed,0), tearConf, orConf)
 	elseif data.Wall == sickCreep.Wall.DOWN then
-		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X, ent.Position.Y-4), Vector(0,-6), tearConf)
+		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X, ent.Position.Y-4), Vector(0,-sickCreep.ipecacSpeed), tearConf, orConf)
 	elseif data.Wall == sickCreep.Wall.LEFT then
-		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X+4, ent.Position.Y), Vector(6,0), tearConf)
+		Agony:fireIpecacTearProj(1, 0, Vector(ent.Position.X+4, ent.Position.Y), Vector(sickCreep.ipecacSpeed,0), tearConf, orConf)
 	end
 end
 
@@ -208,5 +212,10 @@ function sickCreep:ai_anim(ent, sprite, data)
 		sprite.Rotation = 90
 	end
 end
+
+function sickCreep:splatTears(pos, vel, ent, tear)
+	Agony:makeSplat(pos, EffectVariant.CREEP_RED, 2, ent)
+end
+
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, sickCreep.ai_update, EntityType.AGONY_ETYPE_SICK_CREEP)

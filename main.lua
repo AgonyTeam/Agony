@@ -699,41 +699,45 @@ function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 	table.insert(tearTable, {t, tearConf.Functions})
 end
 
-function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng)
+function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng, overrideConf)
+	overrideConf = overrideConf or {}
 	for i = 1, num do
 		local deg = rng:RandomInt(21)-10 -- -10 to 10
 		local speed = vel:Length() * (1+((rng:RandomInt(8)+1)/10))
 		
 		--Monstro shot standards
-		tearConf.FallingAcceleration = 0.5
-		tearConf.FallingSpeed = -5 - rng:RandomInt(11) -- -15 to -5
-		tearConf.Scale = 1 + (rng:RandomInt(5)-2)/6 -- 4/6 to 8/6
+		tearConf.FallingAcceleration = overrideConf.FallingAcceleration or 0.5
+		tearConf.FallingSpeed = overrideConf.FallingSpeed or (-5 - rng:RandomInt(11)) -- -15 to -5
+		tearConf.Scale = overrideConf.Scale or (1 + (rng:RandomInt(5)-2)/6) -- 4/6 to 8/6
 
 		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg):__mul(speed), tearConf)
 	end
 end
 
-function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf)
+function Agony:fireIpecacTearProj(var, sub, pos, vel, tearConf, overrideConf)
+	overrideConf = overrideConf or {}
+
 	tearConf.TearFlags = tearConf.TearFlags or 0
 	if not Agony:HasFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE) then
 		tearConf.TearFlags = Agony:AddFlags(tearConf.TearFlags, TearFlags.TEAR_EXPLOSIVE)
 	end
 
 	--Ipecec tear standards
-	tearConf.Color = Color(0.5, 1, 0.5, 1, 0, 0, 0)
-	tearConf.Height = -35
-	tearConf.FallingAcceleration = 0.6
-	tearConf.FallingSpeed = -10
-	tearConf.Scale = tearConf.Scale or 1
+	tearConf.Color = overrideConf.Color or Color(0.5, 1, 0.5, 1, 0, 0, 0)
+	tearConf.Height = overrideConf.Height or -35
+	tearConf.FallingAcceleration = overrideConf.FallingAcceleration or 0.6
+	tearConf.FallingSpeed = overrideConf.FallingSpeed or -10
+	tearConf.Scale = overrideConf.Scale or 1
 	tearConf.Scale = tearConf.Scale * (1 + 1/3)
 
 
 	Agony:fireTearProj(var, sub, pos, vel, tearConf)
 end
 
-function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf)
+function Agony:fireHomingTearProj(var, sub, pos, vel, tearConf, overrideConf)
+	overrideConf = overrideConf or {}
 	--Homing tear standards
-	tearConf.Color = Color(1, 0.5, 1, 1, 0, 0, 0)
+	tearConf.Color = overrideConf.Color or Color(1, 0.5, 1, 1, 0, 0, 0)
 	tearConf.Data.Agony = tearConf.Data.Agony or {}
 	tearConf.Data.Agony.homing = true
 	
@@ -808,6 +812,28 @@ function Agony:cancelRoomFunctions()
 		if v.cancelOnRoom == true then
 			delayedFunctions[k] = nil
 		end
+	end
+end
+
+function Agony:makeSplat(pos, var, size, ent)
+	if size > 1 then
+		local num = 2^(2+size) - 8 --calculate number of spawns
+		local power = 1 --used to know which ring we're on
+		for i=1, num do
+			local sub = 2^(2+power) - 8 --need to clean i of the previous ring's numbers for incPowerTrig
+			local cleanI = i-sub-1
+
+			local splatNum = 2^(2+power) --how many splats the current ring contains
+
+			if cleanI == splatNum then --start new ring
+				power = power+1
+			end
+
+			local step = math.pi*(i/(2+2^power)) --input of sin and cos
+			Isaac.Spawn(EntityType.ENTITY_EFFECT, var, 0, pos:__add(Vector(power*16*math.sin(step),power*16*math.cos(step))), Vector(0,0), ent)
+		end
+	else
+		Isaac.Spawn(EntityType.ENTITY_EFFECT, var, 0, pos, Vector(0,0), ent)
 	end
 end
 
