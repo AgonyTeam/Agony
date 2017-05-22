@@ -1021,3 +1021,22 @@ Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateHelperCallbacks)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateDelayedFunctions)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.cancelRoomFunctions)
+
+--ShaderTest
+shader_test_strength = 0.0
+function Agony:GetShaderParams(shaderName)
+	local params = {
+		Strength = shader_test_strength,
+		Time = Isaac.GetFrameCount() / 30.0
+	}
+	return params;
+end
+function Agony:Dmg()
+	shader_test_strength = math.min(8,shader_test_strength + 0.5)
+end
+function Agony:ShaderParamUpdate()
+	shader_test_strength = math.max(0,shader_test_strength - 0.05)
+end
+--Agony:AddCallback(ModCallbacks.MC_GET_SHADER_PARAMS, Agony.GetShaderParams)
+--Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, Agony.Dmg)
+--Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.ShaderParamUpdate)
