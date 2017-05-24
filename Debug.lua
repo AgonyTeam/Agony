@@ -21,14 +21,18 @@ function debugScript:displayEntities()
 	elseif debugScript.entities_mode == 1 then
 		for i = 1, #entList, 1 do
 			local p = Isaac.WorldToRenderPosition(entList[i].Position,true)
-			local str = tostring(entList[i].Type) .. " " .. tostring(entList[i].Variant) .. " " .. tostring(entList[i].SubType)
+			local str = tostring(entList[i].Type) .. "." .. tostring(entList[i].Variant) .. "." .. tostring(entList[i].SubType)
 			local str2 = ""
 			if entList[i].HitPoints > 0 then
 				str2 = tostring(entList[i].HitPoints) .. "\\" .. tostring(entList[i].MaxHitPoints) .. " HP"
 			end
+			if entList[i]:ToNPC() ~= nil then
+				local npc = entList[i]:ToNPC()
+				str = str.."-"..tostring(npc.State)..":"..tostring(npc.StateFrame)
+			end
 			--Isaac.RenderText(tostring(entList[i].Type) .. " " .. tostring(entList[i].Variant) .. " " .. tostring(entList[i].SubType), p.X, p.Y, 255, 0, 0, 0.5)
-			Isaac.RenderScaledText(str, p.X-str:len()*1.5, p.Y, 0.5, 0.5, 255, 0, 0, 0.75)
-			Isaac.RenderScaledText(str2, p.X-str2:len()*1.5, p.Y+5, 0.5, 0.5, 0, 0, 255, 0.75)
+			Isaac.RenderScaledText(str, p.X-str:len()*1.5, p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
+			Isaac.RenderScaledText(str2, p.X-str2:len()*1.5, p.Y+5, 0.5, 0.5, 1, 1, 255, 0.75)
 		end
 		
 	elseif debugScript.entities_mode == 2 then
