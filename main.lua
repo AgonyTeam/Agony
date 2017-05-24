@@ -177,6 +177,18 @@ function Agony:redoSpawnList()
 	redo = true;
 end
 
+--Caclulates DamagePerSecond for current Isaac-stats
+--Doesn't account for tear-effects like burn, double shot
+function Agony:calcDPS(player)
+	return (player.Damage / player.MaxFireDelay) * 30.0
+end
+
+--Caclulates DamagePerFrame for current Isaac-stats
+--Doesn't account for tear-effects like burn, double shot
+function Agony:calcDPF(player)
+	return player.Damage / player.MaxFireDelay
+end
+
 --Calculates the velocity a tear needs to have to hit a target Position
 function Agony:calcTearVel(sourcePos, targetPos, multiplier)
 	return (targetPos - sourcePos):Normalized() * multiplier;
