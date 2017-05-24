@@ -1017,6 +1017,9 @@ require("code/Familiars/BloatedBaby");
 -- require("code/Familiars/WaitNo");
 require("code/Familiars/Despair");
 
+--Characters
+require("code/Characters/Hannah")
+
 --Extra Bits 2
 
 --Agony END

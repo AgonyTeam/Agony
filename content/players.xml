@@ -1,0 +1,9 @@
+<players root="gfx/characters/costumes/" 
+         portraitroot="gfx/ui/boss/" 
+         nameimageroot="gfx/ui/boss/" 
+         bigportraitroot="gfx/ui/stage/">
+	<player id="1" name="Hannah" skin="Character_001_Hannah.png" hp="6" armor="2"
+          nameimage="PlayerName_01_Hannah.png" 
+          portrait="PlayerPortrait_01_Hannah.png" 
+          bigportrait="PlayerPortraitBig_01_Hannah.png" skinColor="-1" />
+</players>

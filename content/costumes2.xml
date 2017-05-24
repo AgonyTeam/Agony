@@ -45,4 +45,7 @@
 	<!--Transformations-->
 	<!-- <costume name="Mister Bean" anm2path="trans_misterbean.anm2" type="none" /> -->
 	<!-- <costume name="Big D" anm2path="trans_bigd.anm2" type="none" /> -->
+
+	<!--Players-->
+	<costume name="Hannah" anm2path="Character_001_HannahHead.anm2" type="none" priority="99" />
 </costumes>

@@ -155,20 +155,29 @@ EntityType["AGONY_ETYPE_FATFLY"] = Isaac.GetEntityTypeByName("Fat Fly")
 EntityType["AGONY_ETYPE_STUFFED_CREEP"] = Isaac.GetEntityTypeByName("Stuffed Creep")
 EntityType["AGONY_ETYPE_SICK_CREEP"] = Isaac.GetEntityTypeByName("Sick Creep")
 --Bosses
-EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph");
+EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph")
+--PlayerTypes
+PlayerType["AGONY_PLAYER_HANNAH"] = Isaac.GetPlayerTypeByName("Hannah")
+--NullCostumes
+NullItemID["AGONY_ID_HANNAH"] = Isaac.GetCostumeIdByPath("gfx/characters/Character_001_HannahHead.anm2")
+
 
 --Constants Updater
 local enumsToUpdate = {
 	CollectibleType,
 	PillEffect,
 	TrinketType,
-	Card
+	Card,
+	PlayerType,
+	NullItemID,
 }
 local boosterConsts = { --nicalis forgot to update their enums with the new things added in the booster pack
-	9,
+	0,
+	0,
 	0,
 	3,
-	3
+	0,
+	0,
 }
 for _, enum in pairs(enumsToUpdate) do
 	local count = 0
