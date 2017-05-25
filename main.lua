@@ -33,7 +33,7 @@ saveData.despair = saveData.despair or {}
 saveData.placeholder = saveData.placeholder or {}
 saveData.cherry = saveData.cherry or {}
 saveData.delusion = saveData.delusion or {}
-saveData.faithsReward = saveData.faithsReward or {}
+saveData.saintsHood = saveData.saintsHood or {}
 saveData.lockedItems = saveData.lockedItems or {}
 
 
@@ -971,7 +971,7 @@ require("code/Items/Collectibles/EggBeater")
 -- require("code/Items/Collectibles/NutMilk")
 --require("code/Items/Collectibles/SoakedRemote")
 require("code/Items/Collectibles/BlindFaith")
-require("code/Items/Collectibles/FaithsReward")
+require("code/Items/Collectibles/SaintsHood")
 
 --Trinkets
 require("code/Items/Trinkets/SwallowedDice")

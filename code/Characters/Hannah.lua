@@ -1,6 +1,6 @@
 local hannah = {
 	unlockableItems = {
-		CollectibleType.AGONY_C_FAITHS_REWARD,
+		CollectibleType.AGONY_C_SAINTS_HOOD,
 	},
 }
 
