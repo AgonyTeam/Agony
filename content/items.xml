@@ -3,7 +3,7 @@
 	<passive cache="luck" name="Lucky's Paw" description="You feel really lucky" gfx="collectibles_luckyleg.png" id="1" />
 	<passive cache="damage" name="Double Down" description="Mysterious placeholder text" gfx="collectibles_doubledown.png" id="2" />
 	<passive name="Growing Anxiety" description="Once Bitten, twice shy" gfx="collectibles_growinganxiety.png" id="3" />
-	<!-- <passive cache="damage speed" name="The Big Rock" description="Mysterious placeholder text" gfx="collectibles_thebigrock.png" id="4" /> -->
+	<passive cache="damage" name="Faith's Reward" description="The right hand path reaps just rewards" gfx="collectibles_faithsreward.png" id="4" />
 	<!-- <passive cache="damage range firedelay" name="Gasoline Juicebox" description="Tastes weird..." gfx="collectibles_gasolinejuicebox.png" id="5" /> -->
 	<!-- <passive cache="all" name="Radioactive Pizza" description="Mysterious placeholder text" gfx="collectibles_radioactivepizza.png" id="6" /> -->
 	<!-- <passive name="Vomit Cake" description="Mysterious placeholder text" gfx="collectibles_vomitcake.png" id="7" /> -->

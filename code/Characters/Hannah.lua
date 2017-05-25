@@ -1,5 +1,7 @@
 local hannah = {
-	unlockableItems = {},
+	unlockableItems = {
+		CollectibleType.AGONY_C_FAITHS_REWARD,
+	},
 }
 
 function hannah:initStats(player, cacheFlag)
@@ -21,7 +23,7 @@ function hannah:initItems(player)
 		player:AddNullCostume(NullItemID.AGONY_ID_HANNAH)
 		for _,col in pairs(hannah.unlockableItems) do
 			if not saveData.lockedItems[col] then
-				player:AddCollectible(col, nil, true)
+				player:AddCollectible(col, 99, true)
 			end
 		end
 	end
