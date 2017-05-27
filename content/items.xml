@@ -107,6 +107,7 @@
 	
 	<!--Trinket IDs: 1-???-->
 	<!--dunno why nicalis seperated trinket ids from all others, but not actives from passives and familiars-->
+	<!--Probably because Trinkets can't spawn as items (like on pedestals)-->
 	<trinket description="Mysterious placeholder text" gfx="trinkets_swalloweddice.png" name="Swallowed Dice" id="1" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_partypooper.png" name="Party Pooper" id="2" />
 	<trinket description="Mysterious placeholder text" gfx="trinkets_bloodynut.png" name="Bloody Nut" id="3" />
