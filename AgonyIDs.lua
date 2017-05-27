@@ -155,6 +155,7 @@ EntityType["AGONY_ETYPE_COCOON"] = Isaac.GetEntityTypeByName("Spider Cocoon")
 EntityType["AGONY_ETYPE_FATFLY"] = Isaac.GetEntityTypeByName("Fat Fly")
 EntityType["AGONY_ETYPE_STUFFED_CREEP"] = Isaac.GetEntityTypeByName("Stuffed Creep")
 EntityType["AGONY_ETYPE_SICK_CREEP"] = Isaac.GetEntityTypeByName("Sick Creep")
+EntityType["AGONY_ETYPE_ETERNAL_SPIDER_JUMPING"] = Isaac.GetEntityTypeByName("Eternal Spider Jumping")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph")
 --PlayerTypes

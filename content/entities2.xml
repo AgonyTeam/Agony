@@ -179,6 +179,12 @@
         <preload-snd id="317" /> <!-- SOUND_SPIDER_SPIT_ROAR -->
     </entity>
     <!-- /Creeps -->
+	
+	<!-- Jump Workaround for Eternal Spider -->
+	<entity anm2path="Monsters/Eternals/Spider/animation.anm2" reroll="true" baseHP="8" boss="0" champion="0" collisionDamage="1" collisionMass="5" collisionRadius="13" friction="1" id="510" name="Eternal Spider Jumping" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="0" subtype="0" portrait="53" bestiary="true" bestiaryTransform="0,0,1" bestiaryAnim="Walk">
+        <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
+    </entity>
+	<!-- /Jump Workaround for Eternal Spider -->
 
 	
 	<!--Familiars-->
