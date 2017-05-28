@@ -43,6 +43,9 @@ function saintsHood:updateDealChance(player)
 				player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
 				player:EvaluateItems()
 				--debug_text = "evalled items " .. tostring(Game():GetFrameCount()) 
+			else
+				saveData.saintsHood.devilItems = itemCount
+				Agony:SaveNow()
 			end
 		end
 	end
