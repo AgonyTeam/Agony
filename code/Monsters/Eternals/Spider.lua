@@ -8,8 +8,8 @@ eternalSpider = {
 function eternalSpider:ai_update(ent)
 	debug_entity = ent
 	if ent.Variant == 0 and ent.SubType ~= 15 and ent.FrameCount <= 1 then
-		entity:Morph(entity.Type, entity.Variant, 15, -1)
-		entity.HitPoints = entity.MaxHitPoints
+		ent:Morph(ent.Type, ent.Variant, 15, -1)
+		ent.HitPoints = ent.MaxHitPoints
 	end
 	
 	if ent.Variant == 0 and ent.SubType == 15 and ent.State == NpcState.STATE_MOVE then
