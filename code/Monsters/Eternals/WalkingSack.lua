@@ -1,9 +1,8 @@
 EternalWalkingSack = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,0,"Walking Boil")
+Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,2,"Walking Boil")
 
---Eternal Attack Flies
 function EternalWalkingSack:ai_main(entity)
 	local sprite = entity:GetSprite();
 	local rng = entity:GetDropRNG()

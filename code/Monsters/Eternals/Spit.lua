@@ -19,7 +19,11 @@ end
 
 function eternalSpit:tearDeath(pos, vel, spawner, ent)
 	local v = pos:Distance(Isaac.GetPlayer(0).Position) / 30.0
-	Agony:fireIpecacTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Agony:calcTearVel(pos, Isaac.GetPlayer(0).Position, v), {SpawnerEntity = spawner}, {Scale = 0.5})
+	local tearConf = {
+				SpawnerEntity = spawner,
+				TearFlags = TearFlags.TEAR_SPECTRAL
+			}
+	Agony:fireIpecacTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Agony:calcTearVel(pos, Isaac.GetPlayer(0).Position, v), tearConf, {Scale = 0.5})
 end
 
 function eternalSpit:ai_dmg(ent, dmg, flags, src, countdown)
@@ -39,12 +43,13 @@ function eternalSpit:ai_dmg(ent, dmg, flags, src, countdown)
 			local v = pos:Distance(Isaac.GetPlayer(0).Position) / 30.0
 			local tearConf = {
 				SpawnerEntity = ent,
+				TearFlags = TearFlags.TEAR_SPECTRAL,
 				Functions = {
 					onDeath = eternalSpit.tearDeath
 				}
 			}
 			
-			Agony:fireIpecacTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Agony:calcTearVel(pos, Isaac.GetPlayer(0).Position, v), tearConf, {Scale = 0.5})
+			Agony:fireIpecacTearProj(0, Agony.TearSubTypes.ETERNAL, pos, Agony:calcTearVel(pos, Isaac.GetPlayer(0).Position, v), tearConf, {Scale = 0.75})
 		
 		end, {pos=ent.Position,ent=ent}, true)
 	end
