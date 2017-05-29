@@ -1,7 +1,9 @@
 local hannah = {
 	unlockableItems = {
-		CollectibleType.AGONY_C_SAINTS_HOOD,
 	},
+	starterItems = {
+		CollectibleType.AGONY_C_SAINTS_HOOD,
+	}
 }
 
 function hannah:initStats(player, cacheFlag)
@@ -22,7 +24,12 @@ function hannah:initItems(player)
 	if player:GetPlayerType() == PlayerType.AGONY_PLAYER_HANNAH then
 		player:AddNullCostume(NullItemID.AGONY_ID_HANNAH)
 		for _,col in pairs(hannah.unlockableItems) do
-			player:AddCollectible(col, 99, true)
+			if not saveData.lockedItems[tostring(Agony:getItemNameFromID(col))] then
+				player:AddCollectible(col, 999, true)
+			end
+		end
+		for _,col in pairs(hannah.starterItems) do
+			player:AddCollectible(col, 999, true)
 		end
 	end
 	hannah:unlockItems()
