@@ -22,10 +22,17 @@ function hannah:initItems(player)
 	if player:GetPlayerType() == PlayerType.AGONY_PLAYER_HANNAH then
 		player:AddNullCostume(NullItemID.AGONY_ID_HANNAH)
 		for _,col in pairs(hannah.unlockableItems) do
-			if not saveData.lockedItems[col] then
-				player:AddCollectible(col, 99, true)
-			end
+			player:AddCollectible(col, 99, true)
 		end
+	end
+	hannah:unlockItems()
+end
+
+function hannah:unlockItems()
+	if saveData.lockedItems["Saint's Hood"] == nil then
+		saveData.lockedItems["Saint's Hood"] = true
+	elseif saveData.lockedItems["Saint's Hood"] and saveData.unlockFlags.Hannah.Satan then
+		saveData.lockedItems["Saint's Hood"] = false
 	end
 end
 

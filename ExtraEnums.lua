@@ -329,7 +329,23 @@ Lists = {
 	--Helper Callbacks
 	Callbacks = {
 		ENTITY_SPAWN = 1
-	}
+	},
+	--Default unlockflags
+	DefUnlockFlags = {
+		Satan = false,
+		Isaac = false,
+		Lamb = false,
+		BlueBaby = false,
+		Greed = false,
+		Greedier = false,
+		BossRush = false,
+		Mom = false,
+		Heart = false,
+		Delirium = false,
+		MegaSatan = false,
+		Hush = false,
+		Ezekiel = false,
+	},
 }
 
 return Lists

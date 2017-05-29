@@ -15,14 +15,14 @@ Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
 Agony.Callbacks = Agony.ENUMS.Callbacks
 
 --SaveData
-local newestSaveVer = 2;
+local newestSaveVer = 3
 if Agony:HasData() then
-	saveData = json.decode(Agony:LoadData());
+	saveData = json.decode(Agony:LoadData())
 	if saveData.saveVer == nil or saveData.saveVer ~= newestSaveVer then
-		saveData = {saveVer = newestSaveVer};
+		saveData = {saveVer = newestSaveVer}
 	end
 else
-	saveData = {saveVer = newestSaveVer};
+	saveData = {saveVer = newestSaveVer}
 end
 
 saveData.theWay = saveData.theWay or {}
@@ -34,7 +34,12 @@ saveData.placeholder = saveData.placeholder or {}
 saveData.cherry = saveData.cherry or {}
 saveData.delusion = saveData.delusion or {}
 saveData.saintsHood = saveData.saintsHood or {}
+
+--unlocks and stuff
 saveData.lockedItems = saveData.lockedItems or {}
+saveData.unlockFlags = saveData.unlockFlags or {}
+saveData.unlockFlags.Hannah = saveData.unlockFlags.Hannah or Agony.ENUMS.DefUnlockFlags
+unlockBoss = nil
 
 
 --respawnV2's vars
@@ -376,7 +381,7 @@ end
 function Agony:clearSaveData()
 	if Game():GetFrameCount() <= 1 then
 		for group,_ in pairs(saveData) do
-			if group ~= "saveVer" then
+			if group ~= "saveVer" and group ~= "lockedItems" and group ~= "unlockFlags" then
 				saveData[group] = {}
 			end
 		end
@@ -851,6 +856,102 @@ function Agony:makeSplat(pos, var, size, ent)
 	end
 end
 
+function Agony:getItemNameFromID(id)
+	--debug_text = tostring(Isaac.GetItemConfig():GetCollectible(id).Name)
+	if id > 0 then
+		return tostring(Isaac.GetItemConfig():GetCollectible(id).Name)
+	else
+		return "zero"
+	end
+end
+
+--originally wrote this for rerollLockedItems(), but then I thought of something way better
+--[[function Agony:pickRandomCol(rng, poolType, includeLocked) 
+	poolType = poolType or ItemPoolType.POOL_NULL
+
+	--local numCol = #(Isaac.GetItemConfig():GetCollectibles())
+	--if type(numCol) ~= "number" then
+	--	numCol = CollectibleType.NUM_COLLECTIBLES
+	--end
+	-- local col = 0
+
+	local col = Game():GetItemPool():GetCollectible(poolType, false, rng:GetSeed())
+	local colName = Agony:getItemNameFromID(col)
+
+	if not includeLocked then
+		while saveData.lockedItems[colName] do
+			col = Game():GetItemPool():GetCollectible(poolType, false, rng:GetSeed())
+			colName = Agony:getItemNameFromID(col)
+		end
+	end
+
+	return col
+end]]
+
+function Agony:removeLockedItems()
+	local itemPools = Game():GetItemPool()
+	for item, locked in pairs(saveData.lockedItems) do
+		if locked then
+			itemPools:RemoveCollectible(Isaac.GetItemIdByName(tostring(item)))
+		end
+	end
+end
+
+function Agony:trackUnlockFlags(player)
+	--todo: add greed and greedier
+	local abort = false
+	local unlockTbl = nil
+	if player:GetPlayerType() == PlayerType.AGONY_PLAYER_HANNAH then
+		unlockTbl = saveData.unlockFlags.Hannah
+	else
+		abort = true
+	end
+
+	if abort then
+		Agony:RemoveCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Agony.trackUnlockFlags)
+	else
+		--debug_tbl2 = unlockTbl
+		local room = Game():GetRoom()
+		local level = Game():GetLevel()
+		local stage = level:GetStage()
+
+		if room:GetType() == RoomType.ROOM_BOSS then
+			if stage == LevelStage.STAGE3_2 and not unlockTbl.Mom and room:IsClear() then --depths 2, mom fight
+				Agony:triggerUnlockFlag(unlockTbl, "Mom")
+			elseif stage == LevelStage.STAGE4_2 and not unlockTbl.Heart and room:IsClear() then --womb 2, heart fight
+				Agony:triggerUnlockFlag(unlockTbl, "Heart")
+			elseif stage == LevelStage.STAGE4_3 and not unlockTbl.Hush and room:IsClear() then --womb "3", hush fight
+				Agony:triggerUnlockFlag(unlockTbl, "Hush")
+			elseif stage == LevelStage.STAGE5 and room:IsClear() then --sheol or cathedral, boss fight
+				if level:IsAltStage() and not unlockTbl.Isaac then --cathedral is alt
+					Agony:triggerUnlockFlag(unlockTbl, "Isaac") 
+				elseif not level:IsAltStage() and not unlockTbl.Satan then --sheol
+					Agony:triggerUnlockFlag(unlockTbl, "Satan")
+				end
+			elseif stage == LevelStage.STAGE6 and room:IsClear() then --dark room and chest, boss fight
+				if level:IsAltStage() and not unlockTbl.BlueBaby then --chest is alt
+					Agony:triggerUnlockFlag(unlockTbl, "BlueBaby") 
+				elseif not level:IsAltStage() and not unlockTbl.Lamb then --dark room
+					Agony:triggerUnlockFlag(unlockTbl, "Lamb")
+				end
+			elseif stage == LevelStage.STAGE7 and room:GetBossID() == 70 and not unlockTbl.Delirium and room:IsClear() then --delirium
+				Agony:triggerUnlockFlag(unlockTbl, "Delirium")
+			elseif stage == LevelStage.STAGE6 and room:GetBossID() == 55 and not unlockTbl.MegaSatan and room:IsClear() then --mega stan
+				Agony:triggerUnlockFlag(unlockTbl, "MegaSatan")
+			end
+		elseif room:GetType() == RoomType.ROOM_BOSSRUSH and not unlockTbl.BossRush and room:IsAmbushDone() then --boss rush
+			Agony:triggerUnlockFlag(unlockTbl, "BossRush")
+		end
+	end
+end
+
+function Agony:triggerUnlockFlag(unlocks, flag)
+	unlocks[flag] = true
+	Agony:SaveNow()
+	
+	--todo: add unlock animation stuff
+end
+
 --Debug
 require("Debug");
 --Enemies
@@ -1040,6 +1141,8 @@ Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateHelperCallbacks)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateDelayedFunctions)
+Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.removeLockedItems)
+Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Agony.trackUnlockFlags)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.cancelRoomFunctions)
 
 --ShaderTest
