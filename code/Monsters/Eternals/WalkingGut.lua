@@ -29,7 +29,7 @@ function EternalWalkingGut:ai_main(entity)
 			end
 		end
 		
-		if entity:GetSprite():IsEventTriggered("Shoot") or true then
+		if entity:GetSprite():IsEventTriggered("Shoot") then
 			SFXManager():Play(SoundEffect.SOUND_BLOODSHOOT,1.2,0,false,0.85)
 			local pos = entity.Position
 			local v = pos:Distance(Isaac.GetPlayer(0).Position) / 30.0
