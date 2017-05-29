@@ -697,6 +697,10 @@ function Agony:updateTears()
 	end
 end
 
+function Agony:deleteTears()
+	tearTable = {}
+end
+
 function Agony:fireTearProj(var, sub, pos, vel, tearConf)
 	local t = Isaac.Spawn(EntityType.ENTITY_TEAR, var, sub, pos, vel, tearConf.SpawnerEntity):ToTear()
 	t.SpawnerEntity = tearConf.SpawnerEntity
@@ -1141,6 +1145,7 @@ Agony:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, Agony.removeFriendlyEnemies
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.reloadPedestal)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updatePickups)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateTears)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.deleteTears)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateHelperCallbacks)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.updateDelayedFunctions)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.removeLockedItems)
