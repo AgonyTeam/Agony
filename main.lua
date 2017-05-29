@@ -979,6 +979,7 @@ require("code/Monsters/Eternals/FullFly");
 require("code/Monsters/Eternals/Spit");
 require("code/Monsters/Eternals/WalkingSack");
 require("code/Monsters/Eternals/BigSpider");
+require("code/Monsters/Eternals/WalkingGut");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 --require("code/Monsters/Flaming Alts/Clotty")
