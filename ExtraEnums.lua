@@ -346,6 +346,11 @@ Lists = {
 		Hush = false,
 		Ezekiel = false,
 	},
+	--Eternal jumping workaround
+	JumpVariant = {
+		ETERNAL_SPIDER = Isaac.GetEntityVariantByName("Eternal Spider Jumping"),
+		ETERNAL_BIG_SPIDER = Isaac.GetEntityVariantByName("Eternal Big Spider Jumping"),
+	},
 }
 
 return Lists

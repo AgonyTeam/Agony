@@ -24,25 +24,27 @@ function eternalSpider:ai_update(ent)
 			ent.Velocity = vel
 			ent.State = NpcState.STATE_JUMP
 			ent.StateFrame = 0
-			ent:Morph(EntityType.AGONY_ETYPE_ETERNAL_SPIDER_JUMPING,0,0,-1)
+			ent:Morph(EntityType.AGONY_ETYPE_ETERNALS_JUMPING,Agony.JumpVariant.ETERNAL_SPIDER,0,-1)
 		end
 	end
 	
 end
 
 function eternalSpider:ai_jump(ent)
-	if ent.StateFrame == 0 then
-		ent:GetSprite():Play("Hop")
-	end
-	ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
-	local sprite = ent:GetSprite()
-	if ent.StateFrame >= 22 then
-		ent.State = 4
-		ent:Morph(EntityType.ENTITY_SPIDER, 0, 15, -1)
+	if ent.Variant == Agony.JumpVariant.ETERNAL_SPIDER then
+		if ent.StateFrame == 0 then
+			ent:GetSprite():Play("Hop")
+		end
 		ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
+		local sprite = ent:GetSprite()
+		if ent.StateFrame >= 22 then
+			ent.State = 4
+			ent:Morph(EntityType.ENTITY_SPIDER, 0, 15, -1)
+			ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
+		end
+		ent.StateFrame = ent.StateFrame + 1
 	end
-	ent.StateFrame = ent.StateFrame + 1
 end
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalSpider.ai_update, EntityType.ENTITY_SPIDER)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalSpider.ai_jump, EntityType.AGONY_ETYPE_ETERNAL_SPIDER_JUMPING)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalSpider.ai_jump, EntityType.AGONY_ETYPE_ETERNALS_JUMPING)

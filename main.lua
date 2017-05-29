@@ -13,6 +13,7 @@ Agony.CocoonVariant = Agony.ENUMS.CocoonVariant
 Agony.EnemySubTypes = Agony.ENUMS.EnemySubTypes
 Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
 Agony.Callbacks = Agony.ENUMS.Callbacks
+Agony.JumpVariant = Agony.ENUMS.JumpVariant
 
 --SaveData
 local newestSaveVer = 3

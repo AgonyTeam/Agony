@@ -24,27 +24,29 @@ function eternalBigSpider:ai_update(ent)
 			ent.Velocity = vel
 			ent.State = NpcState.STATE_JUMP
 			ent.StateFrame = 0
-			ent:Morph(EntityType.AGONY_ETYPE_ETERNAL_BIGSPIDER_JUMPING,0,0,-1)
+			ent:Morph(EntityType.AGONY_ETYPE_ETERNALS_JUMPING,Agony.JumpVariant.ETERNAL_BIG_SPIDER,0,-1)
 		end
 	end
 	
 end
 
 function eternalBigSpider:ai_jump(ent)
-	if ent.StateFrame == 0 then
-		ent:GetSprite():Play("Hop")
-	end
-	ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
-	local sprite = ent:GetSprite()
-	if not sprite:IsPlaying("Hop") then
-		sprite:Play("Hop")
-	end
-	if ent.StateFrame >= 22 then
-		ent.State = 4
-		ent:Morph(EntityType.ENTITY_BIGSPIDER, 0, 15, -1)
+	if ent.Variant == Agony.JumpVariant.ETERNAL_BIG_SPIDER then
+		if ent.StateFrame == 0 then
+			ent:GetSprite():Play("Hop")
+		end
 		ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
+		local sprite = ent:GetSprite()
+		if not sprite:IsPlaying("Hop") then
+			sprite:Play("Hop")
+		end
+		if ent.StateFrame >= 22 then
+			ent.State = 4
+			ent:Morph(EntityType.ENTITY_BIGSPIDER, 0, 15, -1)
+			ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_WALLS
+		end
+		ent.StateFrame = ent.StateFrame + 1
 	end
-	ent.StateFrame = ent.StateFrame + 1
 end
 
 function eternalBigSpider:ai_dmg(ent, dmg, flags, src, countdown)
@@ -57,7 +59,7 @@ function eternalBigSpider:ai_dmg(ent, dmg, flags, src, countdown)
 			local roomEnts = Isaac.GetRoomEntities()
 			for _, rEnt in pairs(roomEnts) do
 				if rEnt.Type == EntityType.ENTITY_SPIDER and rEnt.Position:Distance(pos) <= 80 and rEnt.FrameCount <= 5 then
-					rEnt:Morph(EntityType.ENTITY_SPIDER, 0, 15, -1)
+					rEnt:ToNPC():Morph(EntityType.ENTITY_SPIDER, 0, 15, -1)
 				end
 			end
 		
@@ -66,13 +68,13 @@ function eternalBigSpider:ai_dmg(ent, dmg, flags, src, countdown)
 end
 
 function eternalBigSpider:ai_dmg_jumping(ent, dmg, flags, src, countdown)
-	if dmg >= ent.HitPoints then
+	if ent.Variant == Agony.JumpVariant.ETERNAL_BIG_SPIDER and dmg >= ent.HitPoints then
 		Isaac.Spawn(EntityType.ENTITY_SPIDER,0,15,ent.Position,Vector(0,0),ent)
 		Isaac.Spawn(EntityType.ENTITY_SPIDER,0,15,ent.Position,Vector(0,0),ent)
 	end
 end
 
 Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalBigSpider.ai_update, EntityType.ENTITY_BIGSPIDER)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalBigSpider.ai_jump, EntityType.AGONY_ETYPE_ETERNAL_BIGSPIDER_JUMPING)
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalBigSpider.ai_jump, EntityType.AGONY_ETYPE_ETERNALS_JUMPING)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, eternalBigSpider.ai_dmg, EntityType.ENTITY_BIGSPIDER)
-Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, eternalBigSpider.ai_dmg_jumping, EntityType.AGONY_ETYPE_ETERNAL_BIGSPIDER_JUMPING)
+Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, eternalBigSpider.ai_dmg_jumping, EntityType.AGONY_ETYPE_ETERNALS_JUMPING)
