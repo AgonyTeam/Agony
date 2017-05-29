@@ -43,10 +43,15 @@ end
 function debugScript:universalDebugText()
 	if not debugScript.show_debug then return end
 	
+	local room = Game():GetRoom():GetType()
+	local stage = Game():GetLevel():GetStage()
+
 	Isaac.RenderText(tostring(debug_text), 40, 250, 255, 255, 0, 255);
-	if debug_entity ~= nil then
-		Isaac.RenderText(tostring(debug_entity.State), 10, 250, 255, 255, 255, 255);
-	end
+	--if debug_entity ~= nil then
+	--	Isaac.RenderText(tostring(debug_entity.State), 10, 250, 255, 255, 255, 255);
+	--end
+	local str = "Stage: " .. tostring(stage) .. " RoomType: " .. tostring(room)
+	Isaac.RenderText(str, 420-str:len()*6, 10, 0, 10, 200, 255)
 end
 
 function debugScript:universalTableParser()
@@ -55,11 +60,13 @@ function debugScript:universalTableParser()
 	local count = 0
 	local count2 = 0
 	for a,b in pairs(debug_tbl1) do
-		Isaac.RenderText(tostring(a).. ": " .. tostring(b), 150, 10 + count*10, 0, 255, 0, 255)
+		local str = tostring(a).. ": " .. tostring(b)
+		Isaac.RenderScaledText(str, 470-str:len()*3, 80 + count*5, 0.5, 0.5, 0, 255, 0, 255)
 		count = count + 1
 	end
 	for a,b in pairs(debug_tbl2) do
-		Isaac.RenderText(tostring(a).. ": " .. tostring(b), 150, 10 + count2*10 + count*10, 255, 0, 255, 255)
+		local str = tostring(a).. ": " .. tostring(b)
+		Isaac.RenderScaledText(str, 470-str:len()*3, 80 + count2*5 + count*5, 0.5, 0.5, 255, 0, 255, 255)
 		count2 = count2 + 1
 	end
 end
@@ -90,5 +97,5 @@ end
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.displayEntities)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalDebugText)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, debugScript.universalTableParser)
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, debugScript.stateReader, EntityType.ENTITY_POOTER)
+--Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, debugScript.stateReader, EntityType.ENTITY_POOTER)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, debugScript.checkToggle)
