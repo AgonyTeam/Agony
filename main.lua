@@ -915,34 +915,44 @@ function Agony:trackUnlockFlags(player)
 	if abort then
 		Agony:RemoveCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Agony.trackUnlockFlags)
 	else
-		--debug_tbl2 = unlockTbl
+		debug_tbl2 = unlockTbl
 		local room = Game():GetRoom()
 		local level = Game():GetLevel()
 		local stage = level:GetStage()
 
 		if room:GetType() == RoomType.ROOM_BOSS then
-			if stage == LevelStage.STAGE3_2 and not unlockTbl.Mom and room:IsClear() then --depths 2, mom fight
-				Agony:triggerUnlockFlag(unlockTbl, "Mom")
-			elseif stage == LevelStage.STAGE4_2 and not unlockTbl.Heart and room:IsClear() then --womb 2, heart fight
-				Agony:triggerUnlockFlag(unlockTbl, "Heart")
-			elseif stage == LevelStage.STAGE4_3 and not unlockTbl.Hush and room:IsClear() then --womb "3", hush fight
-				Agony:triggerUnlockFlag(unlockTbl, "Hush")
-			elseif stage == LevelStage.STAGE5 and room:IsClear() then --sheol or cathedral, boss fight
-				if level:IsAltStage() and not unlockTbl.Isaac then --cathedral is alt
-					Agony:triggerUnlockFlag(unlockTbl, "Isaac") 
-				elseif not level:IsAltStage() and not unlockTbl.Satan then --sheol
-					Agony:triggerUnlockFlag(unlockTbl, "Satan")
+			if not Game():IsGreedMode() then
+				if stage == LevelStage.STAGE3_2 and not unlockTbl.Mom and room:IsClear() then --depths 2, mom fight
+					Agony:triggerUnlockFlag(unlockTbl, "Mom")
+				elseif stage == LevelStage.STAGE4_2 and not unlockTbl.Heart and room:IsClear() then --womb 2, heart fight
+					Agony:triggerUnlockFlag(unlockTbl, "Heart")
+				elseif stage == LevelStage.STAGE4_3 and not unlockTbl.Hush and room:IsClear() then --womb "3", hush fight
+					Agony:triggerUnlockFlag(unlockTbl, "Hush")
+				elseif stage == LevelStage.STAGE5 and room:IsClear() then --sheol or cathedral, boss fight
+					if level:IsAltStage() and not unlockTbl.Isaac then --cathedral is alt
+						Agony:triggerUnlockFlag(unlockTbl, "Isaac") 
+					elseif not level:IsAltStage() and not unlockTbl.Satan then --sheol
+						Agony:triggerUnlockFlag(unlockTbl, "Satan")
+					end
+				elseif stage == LevelStage.STAGE6 and room:IsClear() then --dark room and chest, boss fight
+					if level:IsAltStage() and not unlockTbl.BlueBaby then --chest is alt
+						Agony:triggerUnlockFlag(unlockTbl, "BlueBaby") 
+					elseif not level:IsAltStage() and not unlockTbl.Lamb then --dark room
+						Agony:triggerUnlockFlag(unlockTbl, "Lamb")
+					end
+				elseif stage == LevelStage.STAGE7 and room:GetBossID() == 70 and not unlockTbl.Delirium and room:IsClear() then --delirium
+					Agony:triggerUnlockFlag(unlockTbl, "Delirium")
+				elseif stage == LevelStage.STAGE6 and room:GetBossID() == 55 and not unlockTbl.MegaSatan and room:IsClear() then --mega stan
+					Agony:triggerUnlockFlag(unlockTbl, "MegaSatan")
 				end
-			elseif stage == LevelStage.STAGE6 and room:IsClear() then --dark room and chest, boss fight
-				if level:IsAltStage() and not unlockTbl.BlueBaby then --chest is alt
-					Agony:triggerUnlockFlag(unlockTbl, "BlueBaby") 
-				elseif not level:IsAltStage() and not unlockTbl.Lamb then --dark room
-					Agony:triggerUnlockFlag(unlockTbl, "Lamb")
+			else
+				if stage == LevelStage.STAGE7_GREED and room:GetBossID() == 62 and room:IsClear() then
+					if Game().Difficulty == Difficulty.DIFFICULTY_GREEDIER then
+						Agony:triggerUnlockFlag(unlockTbl, "Greedier")
+					else
+						Agony:triggerUnlockFlag(unlockTbl, "Greed")
+					end
 				end
-			elseif stage == LevelStage.STAGE7 and room:GetBossID() == 70 and not unlockTbl.Delirium and room:IsClear() then --delirium
-				Agony:triggerUnlockFlag(unlockTbl, "Delirium")
-			elseif stage == LevelStage.STAGE6 and room:GetBossID() == 55 and not unlockTbl.MegaSatan and room:IsClear() then --mega stan
-				Agony:triggerUnlockFlag(unlockTbl, "MegaSatan")
 			end
 		elseif room:GetType() == RoomType.ROOM_BOSSRUSH and not unlockTbl.BossRush and room:IsAmbushDone() then --boss rush
 			Agony:triggerUnlockFlag(unlockTbl, "BossRush")
