@@ -362,7 +362,7 @@ function Agony:renderSprites()
 		local animObj = anims[1]
 		if animObj ~= nil then
 			animObj.Name = tostring(animObj.Name)
-			debug_text = tostring(animObj.Name) .. " " .. tostring(animObj.Loops) .. " " .. tostring(animObj.killLoop) .. " " .. tostring(Game():GetFrameCount())
+			--debug_text = tostring(animObj.Name) .. " " .. tostring(animObj.Loops) .. " " .. tostring(animObj.killLoop) .. " " .. tostring(Game():GetFrameCount())
 			if not sprite:IsPlaying(animObj.Name) and animObj.Loops > 0 then --play one loop
 				sprite:Play(animObj.Name, true)
 				animObj.Loops = animObj.Loops - 1
@@ -973,7 +973,7 @@ function Agony:trackUnlockFlags(player)
 	if abort then
 		Agony:RemoveCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Agony.trackUnlockFlags)
 	else
-		debug_tbl2 = unlockTbl
+		--debug_tbl2 = unlockTbl
 		local room = Game():GetRoom()
 		local level = Game():GetLevel()
 		local stage = level:GetStage()
