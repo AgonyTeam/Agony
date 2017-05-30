@@ -325,57 +325,115 @@ end
 --Display Giant Book anim take 2
 function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
 	customAnm2 = customAnm2 or "giantbook.anm2"
-	local giantbook = Sprite()
-	local player = Isaac.GetPlayer(0)
-	giantbook:Load("gfx/ui/giantbook/" .. customAnm2, true)
-	giantbook:ReplaceSpritesheet(0, "gfx/ui/giantbook/" .. bookSprite)
-	giantbook:LoadGraphics()
-	giantbook:Play(animName, true)
-	spritesToRender[#spritesToRender+1] = { 
-		giantbook,
-		Vector((640-128-48)/2, (460-128-48)/2), --640 is the room width, 460 is height. Have to subtract 128 to center the book sprite and 48 because only then it apparently is like the vanilla giant book effect
-		animName,
-		30
+
+	local pos = Vector((640-128-48)/2, (460-128-48)/2)
+	local rS = {
+		[0] = "gfx/ui/giantbook/" .. tostring(bookSprite),
 	}
+	local aQ = {
+		{
+			Name = tostring(animName),
+			Loops = 1
+		},
+		--[[ some testing stuff for the rewritten addToRender()
+		{
+			Name = "Idle",
+			Loops = 3,
+			killLoop = 10
+		},
+		{
+			Name = "Shake",
+			Loops = -1,
+			killLoop = 120
+		}]]
+	}
+	Agony:addToRender("gfx/ui/giantbook/" .. tostring(customAnm2), aQ, pos, 30, rS)
 end
 
 --Render all sprites in spritesToRender
 function Agony:renderSprites()
 	for _,spriteTable in pairs(spritesToRender) do
-		local sprite = spriteTable[1]
-		local renderPos = spriteTable[2]
-		local animName = spriteTable[3]
-		local fps = spriteTable[4] or 60
+		local sprite = spriteTable.Sprite
+		local renderPos = spriteTable.Position
+		local anims = spriteTable.Animations
+		local fps = spriteTable.fps or 60
 		
+		::reload::
+		local animObj = anims[1]
+		if animObj ~= nil then
+			animObj.Name = tostring(animObj.Name)
+			debug_text = tostring(animObj.Name) .. " " .. tostring(animObj.Loops) .. " " .. tostring(animObj.killLoop) .. " " .. tostring(Game():GetFrameCount())
+			if not sprite:IsPlaying(animObj.Name) and animObj.Loops > 0 then --play one loop
+				sprite:Play(animObj.Name, true)
+				animObj.Loops = animObj.Loops - 1
+			elseif sprite:IsFinished(animObj.Name) and animObj.Loops == 0 then --remove if no more loops
+				table.remove(anims, 1)
+				goto reload
+			elseif not sprite:IsPlaying(animObj.Name) and animObj.Loops < 0 and animObj.killLoop == nil then --loop forever if loop is negative and no killLoop is given
+				sprite:Play(animObj.Name, true)
+			elseif animObj.killLoop ~= nil and animObj.killLoop > 0 then --if killLoop is greater than zero, play until is zero
+				if animObj.killLoopBackup == nil then
+					animObj.killLoopBackup = animObj.killLoop
+				end
+				if not sprite:IsPlaying(animObj.Name) then
+					sprite:Play(animObj.Name, true)
+				end
+				if Game():GetFrameCount() % (60/fps) == 0 then --only count rendered frames
+					animObj.killLoop = animObj.killLoop - 1
+				end
+			elseif animObj.killLoop ~= nil and animObj.killLoop <= 0 then 
+				if animObj.Loops > 0 then --start a new loop
+					sprite:Play(animObj.Name, true)
+					animObj.killLoop = animObj.killLoopBackup
+					animObj.Loops = animObj.Loops - 1
+				elseif animObj.Loops <= 0 then --remove if no more loops
+					table.remove(anims, 1)
+					goto reload					
+				end
+			end
+		end
+
 		sprite:Render(renderPos, Vector(0,0), Vector(0,0))
 		if Game():GetFrameCount() % (60/fps) == 0 and not Game():IsPaused() then
 			sprite:Update()
 		end
 		
-		if sprite:IsFinished(animName) then
+		if #anims == 0 then
 			spritesToRender[_] = nil
 		end
+
 	end
 end
 
 --Add sprite to render list
-function Agony:addToRender(anm2, animName, pos, fps)
+--          animQueue
+--			/ 		\
+--		animTbl1	animTbl2
+--		/   |   \
+--	 Name Loops *killLoop
+--
+function Agony:addToRender(anm2, animQueue, pos, fps, replaceGfx)
 	anm2 = tostring(anm2)
-	animName = tostring(animName)
 	pos = pos or Vector(0,0)
 	fps = fps or 60
-	
+	replaceGfx = replaceGfx or {}
+
 	local sprite = Sprite()
-	sprite:Load("gfx/" .. anm2, true)
-	sprite:Play(animName, true)
-	spritesToRender[#spritesToRender+1] = {
-		sprite,
-		pos,
-		animName,
-		fps
+	sprite:Load(anm2, false) --init sprite
+
+	for layerId, gfx in pairs(replaceGfx) do
+		sprite:ReplaceSpritesheet(layerId, tostring(gfx))
+	end
+	sprite:LoadGraphics() --replace spritesheets
+
+	spritesToRender[#spritesToRender+1] = { --add to tbl
+		Sprite = sprite,
+		Position = pos,
+		Animations = animQueue,
+		fps = fps
 	}
 	
-	return spritesToRender[#spritesToRender][1], #spritesToRender --returns sprite and the index in the table
+	return spritesToRender[#spritesToRender].Sprite, #spritesToRender --returns sprite and the index in the table
 end
 
 --clears savedata on new run
