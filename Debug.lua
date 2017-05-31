@@ -1,6 +1,6 @@
 local debugScript = {
 	show_debug = true, --TODO[ ] Set to false on release
-	entities_mode = 0,
+	entities_mode = 0, -- 0 = Room list, 1 = Entity data, 2 = Show GridFairnessDebug(In RoomFairness.lua)
 	toggle_pressed = false
 }
 
@@ -19,24 +19,30 @@ function debugScript:displayEntities()
 		end
 		
 	elseif debugScript.entities_mode == 1 then
+		local room = Game():GetRoom()
 		for i = 1, #entList, 1 do
-			local p = Isaac.WorldToRenderPosition(entList[i].Position,true)
-			local str = tostring(entList[i].Type) .. "." .. tostring(entList[i].Variant) .. "." .. tostring(entList[i].SubType)
+			local e = entList[i]
+			local p = Isaac.WorldToRenderPosition(e.Position,true) + room:GetRenderScrollOffset()
+			local str = tostring(e.Type) .. "." .. tostring(e.Variant) .. "." .. tostring(e.SubType)
 			local str2 = ""
-			if entList[i].HitPoints > 0 then
-				str2 = tostring(entList[i].HitPoints) .. "\\" .. tostring(entList[i].MaxHitPoints) .. " HP"
+			if e.HitPoints > 0 then
+				str2 = tostring(e.HitPoints) .. "\\" .. tostring(e.MaxHitPoints) .. " HP"
 			end
-			if entList[i]:ToNPC() ~= nil then
-				local npc = entList[i]:ToNPC()
+			if e:ToNPC() ~= nil then
+				local npc = e:ToNPC()
 				str = str.."-"..tostring(npc.State)..":"..tostring(npc.StateFrame)
 			end
-			--Isaac.RenderText(tostring(entList[i].Type) .. " " .. tostring(entList[i].Variant) .. " " .. tostring(entList[i].SubType), p.X, p.Y, 255, 0, 0, 0.5)
+			--Isaac.RenderText(tostring(e.Type) .. " " .. tostring(e.Variant) .. " " .. tostring(e.SubType), p.X, p.Y, 255, 0, 0, 0.5)
 			Isaac.RenderScaledText(str, p.X-str:len()*1.5, p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
 			Isaac.RenderScaledText(str2, p.X-str2:len()*1.5, p.Y+5, 0.5, 0.5, 1, 1, 255, 0.75)
+			if e.Type == EntityType.ENTITY_PLAYER then
+				Isaac.RenderScaledText(tostring(e.Position.X).." - "..tostring(e.Position.Y), p.X-str2:len()*1.5, p.Y+10, 0.5, 0.5, 1, 1, 1, 0.75)
+			end
 		end
 		
 	elseif debugScript.entities_mode == 2 then
-		
+		--Inside RoomFairness.lua
+		Agony:RenderGridFairnessDebug()
 	end
 end
  

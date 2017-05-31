@@ -15,6 +15,10 @@ Agony.TearSubTypes = Agony.ENUMS.TearSubTypes
 Agony.Callbacks = Agony.ENUMS.Callbacks
 Agony.JumpVariant = Agony.ENUMS.JumpVariant
 
+--Systems
+require("code/Systems/HelperFunctions")
+require("code/Systems/RoomFairness")
+
 --SaveData
 local newestSaveVer = 3
 if Agony:HasData() then
