@@ -12,7 +12,7 @@ function eternalSpider:ai_update(ent)
 		ent.HitPoints = ent.MaxHitPoints
 	end
 	
-	if ent.Variant == 0 and ent.SubType == 15 and ent.State == NpcState.STATE_MOVE then
+	if ent.Variant == 0 and ent.SubType == 15 and ent.State == NpcState.STATE_MOVE and ent.FrameCount <= 1 then
 		if Game():GetRoom():GetGridCollisionAtPos(ent.Position) == GridCollisionClass.COLLISION_NONE then
 			ent.GridCollisionClass = EntityGridCollisionClass.GRIDCOLL_GROUND
 			ent.Velocity = ent.Velocity * eternalSpider.walkVelMult
