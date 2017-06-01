@@ -1,9 +1,11 @@
 roomGridFairness = 0
 
 local recalculateGridFairness = false
+local roomCalculated = false
 local checkedPositions = {}
 local rfdebug = {}
 local freedomSum = 0
+local dangerSum = 0
 local gridSize = 40.0
 
 function Agony:GetGridCountAroundPos(oPos)
@@ -101,10 +103,16 @@ end
 
 function Agony:CalculateGridFairness()
 	recalculateGridFairness = true
+	roomCalculated = false
+	checkedPositions = {}
+	rfdebug = {}
+	freedomSum = 0
+	dangerSum = 0
 end
 
 function Agony:UpdateFairness()
 	if recalculateGridFairness then
+		--GRID
 		recalculateGridFairness = false
 		checkedPositions = {}
 		rfdebug = {}
@@ -112,8 +120,25 @@ function Agony:UpdateFairness()
 		local sPos = Isaac.GetPlayer(0).Position
 		sPos = Vector(math.floor(sPos.X/40.0)*40.0,math.floor(sPos.Y/40.0)*40.0)
 		Agony:ProcessFillNode(sPos)
-		Isaac.DebugString("DONE - "..tostring(freedomSum))
+		
+		--ENEMIES
+		dangerSum = 0
+		local ents = Isaac.GetRoomEntities()
+		
+		
+		
+		roomCalculated = true
 	end
+	
+	debug_text = "GridFairness: "..tostring(freedomSum).." EnemyDanger: "..tostring(dangerSum)
+end
+
+function Agony:IsGridFairnessCalculated()
+	return roomCalculated
+end
+
+function Agony:GetGridFairness()
+	return freedomSum
 end
 
 function Agony:RenderGridFairnessDebug()
