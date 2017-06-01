@@ -107,17 +107,17 @@ function Agony:CalculateGridFairness()
 	roomCalculated = false
 	checkedPositions = {}
 	rfdebug = {}
-	freedomSum = 0
-	dangerSum = 0
-	maxDanger = 0
+	freedomSum = 0.0
+	dangerSum = 0.0
+	maxDanger = 0.0
 end
 
 function Agony:CalcDangerNonEternal(ent)
 	local d = 0
 	if ent:IsActiveEnemy(false) then
-		d = ent.MaxHitPoints + 5
+		d = ent.MaxHitPoints + 5.0
 		if not ent:IsVulnerableEnemy() then
-			d = 5
+			d = 5.0
 		end
 		if ent.CollisionDamage == 0 then
 			d = d * 0.5
@@ -129,24 +129,26 @@ end
 
 function Agony:UpdateFairness()
 	if recalculateGridFairness then
-		--GRID
+		
 		recalculateGridFairness = false
 		checkedPositions = {}
 		rfdebug = {}
-		freedomSum = 0
-		maxDanger = 0
+		freedomSum = 0.0
+		maxDanger = 0.0
+		
+		--GRID
 		local sPos = Isaac.GetPlayer(0).Position
 		sPos = Vector(math.floor(sPos.X/40.0)*40.0,math.floor(sPos.Y/40.0)*40.0)
 		Agony:ProcessFillNode(sPos)
 		
 		--ENEMIES
-		dangerSum = 0
+		dangerSum = 0.0
 		local ents = Isaac.GetRoomEntities()
 		local possibleEternals = {}
 		for _,v in pairs(ents) do
 			if Agony:HasEternalSubtype(v.Type,v.Variant) then
-				possibleEternals[#possibleEternals] = v:ToNPC()
-			elseif v:ToNPC() then
+				table.insert(possibleEternals,v:ToNPC())
+			elseif v:ToNPC() ~= nil then
 				local d = Agony:CalcDangerNonEternal(v:ToNPC())
 				v:GetData().fairDebug = d
 				dangerSum = dangerSum + d
@@ -158,7 +160,7 @@ function Agony:UpdateFairness()
 		math.randomseed(Game():GetRoom():GetSpawnSeed())
 		while #possibleEternals > 0 do
 			local i = math.random(#possibleEternals)
-			shuffled[#shuffled] = possibleEternals[i]
+			table.insert(shuffled, possibleEternals[i])
 			table.remove(possibleEternals,i)
 		end
 		
@@ -166,18 +168,19 @@ function Agony:UpdateFairness()
 		--An empty 1x1 room will always have a freedomSum of 81.0
 		maxDanger = freedomSum / 81.0 --TODO: Multiply based on floor
 		maxDanger = maxDanger ^ 0.75 -- Apply a curve
-		maxDanger = maxDanger * 120 -- * floorDifficulty
+		maxDanger = maxDanger * 100.0 -- * floorDifficulty
 		for _,v in pairs(shuffled) do
 			local et = Agony:getEternal(v.Type,v.Variant)
 			local danger = et.danger
 			--Limit to maxDanger
-			if danger + dangerSum <= maxDanger then
+			if (danger + dangerSum) <= maxDanger then
 				dangerSum = dangerSum + danger
 				--Morph Eternal
-				v:Morph(v.Type, v.Variant, 15, -1)
+				v:ToNPC():Morph(v.Type, v.Variant, 15, -1)
 				v.HitPoints = v.MaxHitPoints
 				v:GetData().fairDebug = danger
 			else
+				Isaac.DebugString("FUCK NO"..tostring(danger + dangerSum))
 				local d = Agony:CalcDangerNonEternal(v)
 				v:GetData().fairDebug = d
 				dangerSum = dangerSum + d

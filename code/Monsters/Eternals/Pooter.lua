@@ -1,7 +1,7 @@
 EternalPooter = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_POOTER,0,"Pooter")
+Agony:AddEternal(EntityType.ENTITY_POOTER,0,"Pooter",20)
 
 --Eternal Pooters
 function EternalPooter:ai_main(entity)

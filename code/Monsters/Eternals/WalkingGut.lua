@@ -1,7 +1,7 @@
 EternalWalkingGut = {}
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,1,"Walking Boil")
+Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,1,"Walking Gut", 27)
 
 function EternalWalkingGut:tearDeath(pos, vel, spawner, ent)
 	local tearConf = {

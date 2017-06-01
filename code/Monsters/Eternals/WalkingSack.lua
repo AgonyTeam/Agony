@@ -1,7 +1,7 @@
 EternalWalkingSack = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,2,"Walking Boil")
+Agony:AddEternal(EntityType.ENTITY_WALKINGBOIL,2,"Walking Sack", 30)
 
 function EternalWalkingSack:ai_main(entity)
 	local sprite = entity:GetSprite();

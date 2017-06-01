@@ -5,7 +5,7 @@ EternalSquirt = {
 };
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_SQUIRT,0,"Squirt")
+Agony:AddEternal(EntityType.ENTITY_SQUIRT,0,"Squirt",22)
 
 --Eternal Squirts
 function EternalSquirt:ai_main(entity)

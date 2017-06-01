@@ -86,9 +86,9 @@ end
 local EternalsList = {}
 function Agony:AddEternal(Type,Variant,Name,Danger)
 	if EternalsList[Type] == nil then
-		EternalsList[Type] = {[Variant] = {name = Name, danger = Danger or 0}}
+		EternalsList[Type] = {[Variant] = {name = Name, danger = Danger or 20}}
 	else
-		EternalsList[Type][Variant] = {name = Name, danger = Danger or 0}
+		EternalsList[Type][Variant] = {name = Name, danger = Danger or 20}
 	end
 end
 
