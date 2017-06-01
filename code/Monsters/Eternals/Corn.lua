@@ -1,7 +1,7 @@
 eternalCorn = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_DIP,1,"Corn")
+Agony:AddEternal(EntityType.ENTITY_DIP,1,"Corn",9)
 
 --Eternal Attack Flies
 function eternalCorn:ai_main(entity)
@@ -9,7 +9,7 @@ function eternalCorn:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Variant == 1 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and entity.Variant == 1 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		entity:Morph(entity.Type, entity.Variant, 15, -1)
 		entity.HitPoints = entity.MaxHitPoints
 	end

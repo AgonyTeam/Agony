@@ -1,7 +1,7 @@
 EternalFly = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_FLY,1,"Fly")
+Agony:AddEternal(EntityType.ENTITY_FLY,1,"Fly",8)
 
 --Eternal Flies
 function EternalFly:ai_main(entity)
@@ -9,7 +9,7 @@ function EternalFly:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Fly/animation.anm2", true);
 		--entity.MaxHitPoints = 0;

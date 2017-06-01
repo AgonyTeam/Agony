@@ -6,6 +6,7 @@ local checkedPositions = {}
 local rfdebug = {}
 local freedomSum = 0
 local dangerSum = 0
+local maxDanger = 0
 local gridSize = 40.0
 
 function Agony:GetGridCountAroundPos(oPos)
@@ -108,6 +109,22 @@ function Agony:CalculateGridFairness()
 	rfdebug = {}
 	freedomSum = 0
 	dangerSum = 0
+	maxDanger = 0
+end
+
+function Agony:CalcDangerNonEternal(ent)
+	local d = 0
+	if ent:IsActiveEnemy(false) then
+		d = ent.MaxHitPoints + 5
+		if not ent:IsVulnerableEnemy() then
+			d = 5
+		end
+		if ent.CollisionDamage == 0 then
+			d = d * 0.5
+		end
+	end
+	--TODO: Other calculations?
+	return d
 end
 
 function Agony:UpdateFairness()
@@ -117,6 +134,7 @@ function Agony:UpdateFairness()
 		checkedPositions = {}
 		rfdebug = {}
 		freedomSum = 0
+		maxDanger = 0
 		local sPos = Isaac.GetPlayer(0).Position
 		sPos = Vector(math.floor(sPos.X/40.0)*40.0,math.floor(sPos.Y/40.0)*40.0)
 		Agony:ProcessFillNode(sPos)
@@ -124,13 +142,52 @@ function Agony:UpdateFairness()
 		--ENEMIES
 		dangerSum = 0
 		local ents = Isaac.GetRoomEntities()
+		local possibleEternals = {}
+		for _,v in pairs(ents) do
+			if Agony:HasEternalSubtype(v.Type,v.Variant) then
+				possibleEternals[#possibleEternals] = v:ToNPC()
+			elseif v:ToNPC() then
+				local d = Agony:CalcDangerNonEternal(v:ToNPC())
+				v:GetData().fairDebug = d
+				dangerSum = dangerSum + d
+			end
+		end
 		
+		--Shuffle Possible Eternals
+		local shuffled = {}
+		math.randomseed(Game():GetRoom():GetSpawnSeed())
+		while #possibleEternals > 0 do
+			local i = math.random(#possibleEternals)
+			shuffled[#shuffled] = possibleEternals[i]
+			table.remove(possibleEternals,i)
+		end
 		
+		--Calc Max Danger
+		--An empty 1x1 room will always have a freedomSum of 81.0
+		maxDanger = freedomSum / 81.0 --TODO: Multiply based on floor
+		maxDanger = maxDanger ^ 0.75 -- Apply a curve
+		maxDanger = maxDanger * 120 -- * floorDifficulty
+		for _,v in pairs(shuffled) do
+			local et = Agony:getEternal(v.Type,v.Variant)
+			local danger = et.danger
+			--Limit to maxDanger
+			if danger + dangerSum <= maxDanger then
+				dangerSum = dangerSum + danger
+				--Morph Eternal
+				v:Morph(v.Type, v.Variant, 15, -1)
+				v.HitPoints = v.MaxHitPoints
+				v:GetData().fairDebug = danger
+			else
+				local d = Agony:CalcDangerNonEternal(v)
+				v:GetData().fairDebug = d
+				dangerSum = dangerSum + d
+			end
+		end
 		
 		roomCalculated = true
 	end
 	
-	debug_text = "GridFairness: "..tostring(freedomSum).." EnemyDanger: "..tostring(dangerSum)
+	debug_text = "GridFairness: "..tostring(freedomSum).." EnemyDanger: "..tostring(dangerSum).." / "..tostring(maxDanger)
 end
 
 function Agony:IsGridFairnessCalculated()
@@ -143,10 +200,22 @@ end
 
 function Agony:RenderGridFairnessDebug()
 	local room = Game():GetRoom()
+	local entList = Isaac.GetRoomEntities()
+	
 	for _,node in pairs(rfdebug) do
 		local p = Isaac.WorldToRenderPosition(Vector(node.x,node.y),true) + room:GetRenderScrollOffset()
 		Isaac.RenderScaledText(tostring(node.v), p.X-tostring(node.v):len(), p.Y, 0.5, 0.5, 4-(node.v*4), node.v*2+0.5, node.v*2+0.5, 0.5)
 	end
+	
+	for i = 1, #entList, 1 do
+			local e = entList[i]
+			local p = Isaac.WorldToRenderPosition(e.Position,true) + room:GetRenderScrollOffset()
+			local v = e:GetData().fairDebug
+			if v then
+				local str = "f: "..tostring(v)
+				Isaac.RenderScaledText(str, p.X-str:len(), p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
+			end
+		end
 end
 
 function Agony:D()

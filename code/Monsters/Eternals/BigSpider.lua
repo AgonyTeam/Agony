@@ -5,9 +5,12 @@ eternalBigSpider = {
 	walkVelMult = 0.75
 }
 
+--Add to Eternal List
+Agony:AddEternal(EntityType.ENTITY_BIGSPIDER,0,"Big Spider",30)
+
 function eternalBigSpider:ai_update(ent)
 	debug_entity = ent
-	if ent.Variant == 0 and ent.SubType ~= 15 and ent.FrameCount <= 1 then
+	if false and ent.Variant == 0 and ent.SubType ~= 15 and ent.FrameCount <= 1 then
 		ent:Morph(ent.Type, ent.Variant, 15, -1)
 		ent.HitPoints = ent.MaxHitPoints
 	end

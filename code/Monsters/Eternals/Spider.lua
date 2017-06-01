@@ -5,6 +5,9 @@ eternalSpider = {
 	walkVelMult = 0.75
 }
 
+--Add to Eternal List
+Agony:AddEternal(EntityType.ENTITY_SPIDER,0,"Spider",13)
+
 function eternalSpider:ai_update(ent)
 	debug_entity = ent
 	if ent.Variant == 0 and ent.SubType ~= 15 and ent.FrameCount <= 1 then

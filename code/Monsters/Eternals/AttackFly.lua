@@ -1,7 +1,7 @@
 EternalAttackFly = {};
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_ATTACKFLY,0,"Attack Fly")
+Agony:AddEternal(EntityType.ENTITY_ATTACKFLY,0,"Attack Fly",14)
 
 --Eternal Attack Flies
 function EternalAttackFly:ai_main(entity)
@@ -9,7 +9,7 @@ function EternalAttackFly:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Attack Fly/animation.anm2", true);
 		--entity.HitPoints = 10;

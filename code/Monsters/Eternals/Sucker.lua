@@ -5,7 +5,7 @@ eternalSucker = {
 };
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_SUCKER,0,"Sucker")
+Agony:AddEternal(EntityType.ENTITY_SUCKER,0,"Sucker",20)
 
 --Eternal Attack Flies
 function eternalSucker:ai_main(entity)
@@ -13,7 +13,7 @@ function eternalSucker:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		entity:Morph(entity.Type, entity.Variant, 15, -1)
 		entity.HitPoints = entity.MaxHitPoints
 	end

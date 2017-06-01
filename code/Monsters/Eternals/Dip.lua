@@ -5,7 +5,7 @@ EternalDip = {
 };
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_DIP,0,"Dip")
+Agony:AddEternal(EntityType.ENTITY_DIP,0,"Dip",9)
 
 --Eternal Dips
 function EternalDip:ai_main(entity)
@@ -15,7 +15,7 @@ function EternalDip:ai_main(entity)
 
 	
 	--Replace regular entity with eternal version
-	if (entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Dip/animation.anm2", true);
 		--entity.HitPoints = 6;

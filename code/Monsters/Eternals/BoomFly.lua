@@ -5,12 +5,12 @@ eternalBoomFly = {
 }
 
 --Add to Eternal List
-Agony:AddEternal(EntityType.ENTITY_BOOMFLY,0,"Boom Fly")
+Agony:AddEternal(EntityType.ENTITY_BOOMFLY,0,"Boom Fly", 35)
 
 function eternalBoomFly:ai_main(ent)
 	local rng = ent:GetDropRNG()
 	
-	if (ent.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and ent.FrameCount <= 1 and ent.SubType ~= 15) then
+	if (false and ent.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and ent.FrameCount <= 1 and ent.SubType ~= 15) then
 		ent:Morph(ent.Type, ent.Variant, 15, -1)
 		ent.HitPoints = ent.MaxHitPoints
 	end

@@ -17,7 +17,7 @@ function eternalFullFly:ai_main(entity)
 	local rng = entity:GetDropRNG()
 	
 	--Replace regular entity with eternal version
-	if (entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
+	if (false and entity.Variant == 0 and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15) then
 		entity:Morph(entity.Type, entity.Variant, 15, -1)
 		entity.HitPoints = entity.MaxHitPoints
 	end

@@ -9,7 +9,7 @@ function EternalPooter:ai_main(entity)
 	local rng = entity:GetDropRNG()
 
 	--Replace regular entity with eternal version
-	if (rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15 and entity.Variant == 0 and entity.SpawnerType ~= EntityType.ENTITY_FAMILIAR) then
+	if (false and rng:RandomFloat() < Agony.ETERNAL_SPAWN_CHANCE and entity.FrameCount <= 1 and entity.SubType ~= 15 and entity.Variant == 0 and entity.SpawnerType ~= EntityType.ENTITY_FAMILIAR) then
 		--entity.SubType = 15;
 		--sprite:Load("gfx/Monsters/Eternals/Pooter/animation.anm2", true);
 		--entity.HitPoints = 16;
