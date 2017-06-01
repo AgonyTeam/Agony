@@ -2,7 +2,7 @@
 	<costume name="Lucky Leg" anm2path="costume_luckyleg.anm2" type="passive" id="1" />
 	<costume name="Double Down" anm2path="costume_doubledown.anm2" type="passive" hasSkinAlt="true" id="2" />
 	<costume name="Growing Anxiety" anm2path="costume_growinganxiety.anm2" type="passive"  id="3" />
-	<!-- <costume name="The Big Rock" anm2path="costume_thebigrock.anm2" type="passive"  id="4" /> -->
+	<costume name="Saint's Hood" anm2path="costume_saintshood.anm2" type="passive"  id="4" />
 	<!-- <costume name="Gasoline Juicebox" anm2path="costume_gasolinejuicebox.anm2" type="passive" hasSkinAlt="true" id="5" /> -->
 	<!-- <costume name="Radioactive Pizza" anm2path="costume_radioactivepizza.anm2" type="passive"  id="6" /> -->
 	<!-- <costume name="Vomit Cake" anm2path="costume_vomitcake.anm2" type="passive"  id="7" /> -->
