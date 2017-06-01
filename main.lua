@@ -84,15 +84,29 @@ end
 
 --Eternal al list
 local EternalsList = {}
-function Agony:AddEternal(Type,Variant,Name)
-	table.insert(EternalsList, Type)
-	table.insert(EternalsList, Variant)
-	table.insert(EternalsList, Name)
+function Agony:AddEternal(Type,Variant,Name,Danger)
+	if EternalsList[Type] == nil then
+		EternalsList[Type] = {[Variant] = {name = Name, danger = Danger}}
+	else
+		EternalsList[Type][Variant] = {name = Name, danger = Danger}
+	end
 end
 
 function Agony:getEternalList()
 	return EternalsList
 end 
+
+function Agony:HasEternalSubtype(Type,Variant)
+	return EternalsList[Type] ~= nil and EternalsList[Type][Variant] ~= nil
+end
+
+function Agony:IsEternal(Type,Variant,Subtype)
+	return Agony:HasEternalSubtype(Type,Variant) and Subtype == 15
+end
+
+function Agony:IsEntityEternal(ent)
+	return Agony:HasEternalSubtype(ent.Type,ent.Variant) and ent.SubType == 15
+end
 
 function Agony:respawnV2()
 	local room = Game():GetRoom();
