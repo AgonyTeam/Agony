@@ -817,7 +817,23 @@ function Agony:fireMonstroTearProj(var, sub, pos, vel, tearConf, num, rng, overr
 		tearConf.FallingSpeed = overrideConf.FallingSpeed or (-5 - rng:RandomInt(11)) -- -15 to -5
 		tearConf.Scale = overrideConf.Scale or (1 + (rng:RandomInt(5)-2)/6) -- 4/6 to 8/6
 
-		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg):__mul(speed), tearConf)
+		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg) * speed, tearConf)
+	end
+end
+
+--Kinda like Ministro. Not fully.
+function Agony:fireMinistroTearProj(var, sub, pos, vel, tearConf, num, rng, overrideConf)
+	overrideConf = overrideConf or {}
+	for i = 1, num do
+		local deg = rng:RandomInt(32)-15 -- -10 to 10
+		local speed = vel:Length() * (rng:RandomFloat()+0.5)
+		
+		--Monstro shot standards
+		tearConf.FallingAcceleration = overrideConf.FallingAcceleration or 0.8
+		tearConf.FallingSpeed = overrideConf.FallingSpeed or (-7 - rng:RandomInt(10))
+		tearConf.Scale = overrideConf.Scale or (1 + (rng:RandomInt(4)-2)/8)
+
+		Agony:fireTearProj(var, sub, pos, vel:Normalized():Rotated(deg) * speed, tearConf)
 	end
 end
 
@@ -1077,6 +1093,8 @@ require("code/Monsters/Eternals/Spit");
 require("code/Monsters/Eternals/WalkingSack");
 require("code/Monsters/Eternals/BigSpider");
 require("code/Monsters/Eternals/WalkingGut");
+require("code/Monsters/Eternals/TickingSpider");
+require("code/Monsters/Eternals/Horf");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 --require("code/Monsters/Flaming Alts/Clotty")

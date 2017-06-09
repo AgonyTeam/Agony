@@ -49,7 +49,7 @@ function eternalBoomFly:newRoom()
 	eternalBoomFly.explosions = {}
 end
 
-Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalBoomFly.ai_main, EntityType.ENTITY_BOOMFLY);
+Agony:AddCallback(ModCallbacks.MC_NPC_UPDATE, eternalBoomFly.ai_main, EntityType.ENTITY_BOOMFLY)
 Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, eternalBoomFly.ai_dmg, EntityType.ENTITY_BOOMFLY)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, eternalBoomFly.update)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, eternalBoomFly.newRoom)
