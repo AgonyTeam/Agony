@@ -198,7 +198,7 @@ function Agony:UpdateFairness()
 					first = false
 					--Reset Chance. but only if the room is a first visit
 					if roomd == nil then
-						eternalChance = -eternalChancePerRoom
+						eternalChance = -eternalChancePerRoom * 2
 					end
 					dangerSum = dangerSum + danger
 					--Morph Eternal
