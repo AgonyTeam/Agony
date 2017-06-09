@@ -9,6 +9,10 @@ local dangerSum = 0
 local maxDanger = 0
 local gridSize = 40.0
 
+local eternalRooms = {}
+local eternalChance = 0
+local eternalChancePerRoom = 0.1
+
 function Agony:GetGridCountAroundPos(oPos)
 	local room = Game():GetRoom()
 	local count = 0
@@ -157,6 +161,7 @@ function Agony:UpdateFairness()
 		
 		--Shuffle Possible Eternals
 		local shuffled = {}
+		--Seed by Room for consistency
 		math.randomseed(Game():GetRoom():GetSpawnSeed())
 		while #possibleEternals > 0 do
 			local i = math.random(#possibleEternals)
@@ -168,23 +173,50 @@ function Agony:UpdateFairness()
 		--An empty 1x1 room will always have a freedomSum of 81.0
 		maxDanger = freedomSum / 81.0 --TODO: Multiply based on floor
 		maxDanger = maxDanger ^ 0.75 -- Apply a curve
+		--            ___---1.0
+		--       __-- 
+		--    ..
+		--  ..
+		-- |
+		--|0.0
 		maxDanger = maxDanger * 100.0 -- * floorDifficulty
-		for _,v in pairs(shuffled) do
-			local et = Agony:getEternal(v.Type,v.Variant)
-			local danger = et.danger
-			--Limit to maxDanger
-			if (danger + dangerSum) <= maxDanger then
-				dangerSum = dangerSum + danger
-				--Morph Eternal
-				v:ToNPC():Morph(v.Type, v.Variant, 15, -1)
-				v.HitPoints = v.MaxHitPoints
-				v:GetData().fairDebug = danger
-			else
-				Isaac.DebugString("FUCK NO"..tostring(danger + dangerSum))
-				local d = Agony:CalcDangerNonEternal(v)
-				v:GetData().fairDebug = d
-				dangerSum = dangerSum + d
+		
+		local roomi = Game():GetLevel():GetCurrentRoomDesc().GridIndex
+		local roomd = eternalRooms[roomi]
+		--Spawn Eternals?
+		if ((math.random(0,100) * 0.01) < eternalChance or roomd == true) and roomd ~= false then
+			
+			eternalRooms[roomi] = true;
+			local randomDanger = maxDanger * math.random(50,100) * 0.01
+			local first = true
+			
+			for _,v in pairs(shuffled) do
+				local et = Agony:getEternal(v.Type,v.Variant)
+				local danger = et.danger
+				--Limit to maxDanger
+				if first or (danger + dangerSum) <= randomDanger then
+					first = false
+					--Reset Chance. but only if the room is a first visit
+					if roomd == nil then
+						eternalChance = -eternalChancePerRoom
+					end
+					dangerSum = dangerSum + danger
+					--Morph Eternal
+					v:ToNPC():Morph(v.Type, v.Variant, 15, -1)
+					v.HitPoints = v.MaxHitPoints
+					v:GetData().fairDebug = danger
+				else
+					local d = Agony:CalcDangerNonEternal(v)
+					v:GetData().fairDebug = d
+					dangerSum = dangerSum + d
+				end
 			end
+			
+		else eternalRooms[roomi] = false end
+		
+		--Increase Chance. but only if the room is a first visit
+		if roomd == nil then
+			eternalChance = eternalChance + eternalChancePerRoom
 		end
 		
 		roomCalculated = true
@@ -211,14 +243,21 @@ function Agony:RenderGridFairnessDebug()
 	end
 	
 	for i = 1, #entList, 1 do
-			local e = entList[i]
-			local p = Isaac.WorldToRenderPosition(e.Position,true) + room:GetRenderScrollOffset()
-			local v = e:GetData().fairDebug
-			if v then
-				local str = "f: "..tostring(v)
-				Isaac.RenderScaledText(str, p.X-str:len(), p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
-			end
+		local e = entList[i]
+		local p = Isaac.WorldToRenderPosition(e.Position,true) + room:GetRenderScrollOffset()
+		local v = e:GetData().fairDebug
+		if v then
+			local str = "f: "..tostring(v)
+			Isaac.RenderScaledText(str, p.X-str:len(), p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
 		end
+	end
+	
+	Isaac.RenderText("eChance:"..tostring(eternalChance), 40, 200, 1, 1, 0, 0.75);
+end
+
+function Agony:ResetFairness()
+	eternalRooms = {}
+	eternalChance = 0
 end
 
 function Agony:D()
@@ -231,5 +270,6 @@ function Agony:D()
 end
 
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.CalculateGridFairness)
+Agony:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, Agony.ResetFairness)
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.UpdateFairness)
 --Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.D)
