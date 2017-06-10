@@ -1095,6 +1095,8 @@ require("code/Monsters/Eternals/BigSpider");
 require("code/Monsters/Eternals/WalkingGut");
 require("code/Monsters/Eternals/TickingSpider");
 require("code/Monsters/Eternals/Horf");
+--Eternal Spirit
+require("code/Monsters/Eternals/Spirit");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
 --require("code/Monsters/Flaming Alts/Clotty")

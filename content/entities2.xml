@@ -201,7 +201,12 @@
         <gibs amount="0" blood="0" bone="0" eye="0" gut="0" large="0" />
     </entity>
 	<!-- /Jump Workaround for Eternal Spider -->
-
+	
+	<!-- Eternal Spirit -->
+	<entity id="511" variant="0" name="Eternal Spirit" anm2path="Monsters/Eternals/Spirit/animation.anm2" baseHP="20" stageHP="5" boss="0" champion="0" collisionDamage="1" collisionMass="3" collisionRadius="16" friction="1" numGridCollisionPoints="0" shadowSize="10" shutdoors="1" gridCollision="walls">
+        <gibs amount="50" blood="0" bone="1" eye="0" gut="0" large="0" />
+    </entity>
+	<!-- /Eternal Spirit -->
 	
 	<!--Familiars-->
 <!-- 	<entity anm2path="Familiars/Tiny Tiny Horn/animation.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="0" collisionRadius="13" friction="1" id="3" name="Tiny Tiny Horn" numGridCollisionPoints="12" shadowSize="11" stageHP="0" variant="501">
