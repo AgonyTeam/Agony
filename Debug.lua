@@ -23,7 +23,7 @@ function debugScript:displayEntities()
 		for i = 1, #entList, 1 do
 			local e = entList[i]
 			local p = Isaac.WorldToRenderPosition(e.Position,true) + room:GetRenderScrollOffset()
-			local str = tostring(e.Type) .. "." .. tostring(e.Variant) .. "." .. tostring(e.SubType)
+			local str = tostring(e.Index) .. ": " .. tostring(e.Type) .. "." .. tostring(e.Variant) .. "." .. tostring(e.SubType)
 			local str2 = ""
 			if e.HitPoints > 0 then
 				str2 = tostring(e.HitPoints) .. "\\" .. tostring(e.MaxHitPoints) .. " HP"
@@ -36,7 +36,8 @@ function debugScript:displayEntities()
 			Isaac.RenderScaledText(str, p.X-str:len()*1.5, p.Y, 0.5, 0.5, 4, 0, 0, 0.75)
 			Isaac.RenderScaledText(str2, p.X-str2:len()*1.5, p.Y+5, 0.5, 0.5, 1, 1, 255, 0.75)
 			if e.Type == EntityType.ENTITY_PLAYER then
-				Isaac.RenderScaledText(tostring(e.Position.X).." - "..tostring(e.Position.Y), p.X-str2:len()*1.5, p.Y+10, 0.5, 0.5, 1, 1, 1, 0.75)
+				local posstr = tostring(e.Position.X).." - "..tostring(e.Position.Y)
+				Isaac.RenderScaledText(posstr, p.X-posstr:len()*1.5, p.Y+10, 0.5, 0.5, 1, 1, 1, 0.75)
 			end
 		end
 		
