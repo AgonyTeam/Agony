@@ -88,7 +88,7 @@
 <!-- 	<active name="Soaked Remote" description="It's wet" gfx="collectibles_soakedremote.png" maxcharges="1" id="330" />
  -->	
 	<!--Familiar IDs: 601-??? -->
-	<!-- <familiar description="So tiny that it fights for you!" gfx="collectibles_tinytinyhorn.png" name="Tiny Tiny Horn" id="601" /> -->
+	<familiar description="Sing For The Choir!" gfx="collectibles_tinytinyhorn.png" name="Gospel Child" id="601" />
 	<familiar description="I Hate You" gfx="collectibles_grudgeholder.png" name="Grudge Holder" id="602" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_soulmates.png" name="Soulmates" id="603" />
 	<familiar description="Mysterious placeholder text" gfx="collectibles_drunkenfly.png" name="Drunken Fly" id="604" />

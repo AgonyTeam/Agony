@@ -1073,6 +1073,7 @@ require("code/Monsters/YellowBlock")
 require("code/Monsters/HunchBone")
 require("code/Monsters/FatFly")
 require("code/Monsters/Delusion")
+require("code/Monsters/HauntedSkull")
 --Eternals
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");
@@ -1225,7 +1226,7 @@ require("code/Items/Pick Ups/Coins/PyriteCoin")
 require("code/Items/Pick Ups/Other/Cherry")
 
 --Familiars
---require("code/Familiars/TinyTinyHorn");
+require("code/Familiars/GospelChild");
 require("code/Familiars/GrudgeHolder");
 require("code/Familiars/Soulmates");
 require("code/Familiars/DrunkenFly");

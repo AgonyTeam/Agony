@@ -32,6 +32,8 @@ FamiliarVariant["AGONY_F_TESLA_BABY"] = Isaac.GetEntityVariantByName("Tesla Baby
 -- FamiliarVariant["AGONY_F_TINY_TINY_HORN"] = Isaac.GetEntityVariantByName("Tiny Tiny Horn")
 -- CollectibleType["AGONY_C_WAIT_NO"] = Isaac.GetItemIdByName("Wait, No.")
 -- FamiliarVariant["AGONY_F_WAIT_NO"] = Isaac.GetEntityVariantByName("Wait No")
+CollectibleType["AGONY_C_GOSPEL_CHILD"] = Isaac.GetItemIdByName("Gospel Child")
+FamiliarVariant["AGONY_F_GOSPEL_CHILD"] = Isaac.GetEntityVariantByName("Gospel Child")
 
 --Collectibles
 CollectibleType["AGONY_C_BIRTHDAY_GIFT"] = Isaac.GetItemIdByName("Birthday Gift");
