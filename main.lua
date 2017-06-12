@@ -1073,7 +1073,7 @@ require("code/Monsters/YellowBlock")
 require("code/Monsters/HunchBone")
 require("code/Monsters/FatFly")
 require("code/Monsters/Delusion")
-require("code/Monsters/HauntedSkull")
+--require("code/Monsters/HauntedSkull")
 --Eternals
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");
