@@ -1,4 +1,3 @@
---StartDebug();
 Agony = RegisterMod("The Agony of Isaac", 1);
 local json = require("json")
 
@@ -16,8 +15,8 @@ Agony.Callbacks = Agony.ENUMS.Callbacks
 Agony.JumpVariant = Agony.ENUMS.JumpVariant
 
 --Systems
-require("code/Systems/HelperFunctions")
-require("code/Systems/RoomFairness")
+--require("code/Systems/HelperFunctions")
+--require("code/Systems/RoomFairness")
 
 --SaveData
 local newestSaveVer = 3
@@ -46,21 +45,6 @@ saveData.unlockFlags = saveData.unlockFlags or {}
 saveData.unlockFlags.Hannah = saveData.unlockFlags.Hannah or Agony.ENUMS.DefUnlockFlags
 unlockBoss = nil
 
-
---respawnV2's vars
-local ent_before = {};
-local rspwn_allow = false;
-saveData.spwn_list = saveData.spwn_list or {}; --either load list from save, or make an empty one
-saveData.rseed_list = saveData.rseed_list or {};
-local level_seed_backup = 666;
-local redo = false;
-local redo2 = false;
-local glowingHourglass_allow = true;
-
-local respawnIDs = { --holds all IDs that need to be respawned
-	-- EntityType.AGONY_ETYPE_TREASURE_HOARDER,
-	EntityType.AGONY_ETYPE_YELLOW_BLOCK
-}
 
 --spritesToRender table
 spritesToRender = {}
@@ -115,237 +99,6 @@ function Agony:getEternal(Type,Variant)
 	return nil
 end 
 
-function Agony:respawnV2()
-	local room = Game():GetRoom();
-	local level = Game():GetLevel();
-
-	local level_seed = level:GetDungeonPlacementSeed(); --level identification
-	local room_seed = room:GetSpawnSeed(); --for room identification
-	
-	--debug_text = tostring(room:IsClear()) .. " " .. tostring(room:IsFirstVisit()) --room_seed .. " | " .. level_seed .. " | GameFrmcnt: " .. Game():GetFrameCount();-- " | RoomFrmcnt: " .. room:GetFrameCount() .. " | GameFrmcnt: " .. Game():GetFrameCount() .. " | IsClear: " .. tostring(room:IsClear());
-	--debug_text = Isaac.LoadModData(Agony) .. " | " .. tostring(Isaac.HasModData(Agony));
-	
-	if(Isaac.HasModData(Agony) == true and Game():GetFrameCount() > 1 and level_seed_backup == 666) then --restore data when continuing run after having the game closed
-		--spwn_list = string_totable(Isaac.LoadModData(Agony));
-		--saveData.spwn_list = ;
-		level_seed_backup = level_seed;
-		rspwn_allow = true;
-	end
-	
-	if(Game():GetFrameCount() == 1 or (level_seed ~= level_seed_backup and Game():GetFrameCount() > 1)) then --reset vars and delete savedata when restarting run and entering a new level
-		saveData.spwn_list = {};
-		saveData.rseed_list = {};
-		rspwn_allow = false;
-		glowingHourglass_allow = true;
-		ent_before = {};
-		--Isaac.RemoveModData(Agony);
-		Agony:SaveNow();
-		level_seed_backup = level_seed;
-	end
-
-	for i = 1, #saveData.spwn_list, 6 do
-		--Isaac.RenderText(spwn_list[i], 400, 100 + ((i / 6) *10), 255, 0, 0, 255);
-		if (room:IsFirstVisit() == false and room:IsClear() == true and saveData.spwn_list[i] == room_seed and room:GetFrameCount() == 1) then
-			rspwn_allow = true;
-		end	
-	end
-	
-	for i=1, #saveData.rseed_list do
-		if (saveData.rseed_list[i] == room_seed) then
-			glowingHourglass_allow = false;
-		end
-	end
-	
-	if (redo == true) then
-		local tmp = {};
-		
-		for i=1, #saveData.spwn_list, 6 do
-			if (saveData.spwn_list[i] ~= room_seed) then --save all entries from other rooms
-				table.insert(tmp, 1, saveData.spwn_list[i]);
-				table.insert(tmp, 2, saveData.spwn_list[i+1]);
-				table.insert(tmp, 3, saveData.spwn_list[i+2]);
-				table.insert(tmp, 4, saveData.spwn_list[i+3]);
-				table.insert(tmp, 5, saveData.spwn_list[i+4]);
-				table.insert(tmp, 6, saveData.spwn_list[i+5]);
-			end
-		end
-		
-		saveData.spwn_list = tmp; --removes all entries of the current room
-		redo = false;
-		redo2 = true; --allow recreation of entries in current room
-	end
-	
-	if (room:IsFirstVisit() == false and room:IsClear() == true and rspwn_allow == true) then --run only if this room truly has been visited before and actually cleared (not skipped with e.g. bombs)
-		for i = 1, #saveData.spwn_list, 6 do
-			if (saveData.spwn_list[i] == room_seed) then
-				Isaac.Spawn(saveData.spwn_list[i+1], saveData.spwn_list[i+2], saveData.spwn_list[i+3], Vector(saveData.spwn_list[i+4], saveData.spwn_list[i+5]), Vector(0,0), Isaac.GetPlayer(0));
-			end	
-		end
-		rspwn_allow = false; --avoid looping the respawn and remove
-	elseif ((room:IsFirstVisit() == true and room:GetFrameCount() == 1 and glowingHourglass_allow == true) or redo2 == true) then --check if new room has respawnable entity inside, only once on the first room entry
-		ent_before = Isaac.GetRoomEntities();
-		table.insert(saveData.rseed_list, 1 ,room_seed)
-		for i = 1, #ent_before do
-			for j=1, #respawnIDs do
-				if (ent_before[i].Type == respawnIDs[j]) then
-					table.insert(saveData.spwn_list, 1, room_seed);
-					table.insert(saveData.spwn_list, 2, ent_before[i].Type);
-					table.insert(saveData.spwn_list, 3, ent_before[i].Variant);
-					table.insert(saveData.spwn_list, 4, ent_before[i].SubType);
-					table.insert(saveData.spwn_list, 5, ent_before[i].Position.X);
-					table.insert(saveData.spwn_list, 6, ent_before[i].Position.Y);
-				end
-			end	
-		end
-		--Isaac.SaveModData(Agony, table_tostring(spwn_list)); --save the latest table for the case of game exit
-		redo2 = false;
-		Agony:SaveNow();
-	elseif (room:GetFrameCount() > 10 and glowingHourglass_allow == false) then
-		glowingHourglass_allow = true;
-	end
-end
-
---recreates entries for spwn_list of current room
-function Agony:redoSpawnList()
-	redo = true;
-end
-
---Caclulates DamagePerSecond for current Isaac-stats
---Doesn't account for tear-effects like burn, double shot
-function Agony:calcDPS(player)
-	return (player.Damage / player.MaxFireDelay) * 30.0
-end
-
---Caclulates DamagePerFrame for current Isaac-stats
---Doesn't account for tear-effects like burn, double shot
-function Agony:calcDPF(player)
-	return player.Damage / player.MaxFireDelay
-end
-
---Calculates the velocity a tear needs to have to hit a target Position
-function Agony:calcTearVel(sourcePos, targetPos, multiplier)
-	return (targetPos - sourcePos):Normalized() * multiplier;
-end
-
---returns the nearest Enemy
-function Agony:getNearestEnemy(sourceEnt, whiteList, blackList)
-	whiteList = whiteList or {0}
-	blackList = blackList or {}
-	local entities = Isaac.GetRoomEntities();
-	local smallestDist = nil;
-	local nearestEnt = nil;
-	
-	::redo::
-	if blackList.mode == "only_same_ent" then
-		local tmp = {}
-		for i=1, #entities do
-			if entities[i].Type == sourceEnt.Type and entities[i].Variant == sourceEnt.Variant and entities[i].SubType == sourceEnt.SubType then
-				table.insert(tmp, 1, entities[i])
-			end
-		end
-		entities = tmp
-	elseif blackList.mode == "only_whitelist" then
-		local tmp = {}
-		for i=1, #entities do
-			for j=1, #whiteList do
-				if entities[i].Type == whiteList[j] then
-					table.insert(tmp, 1, entities[i])
-				end
-			end
-		end
-		entities = tmp
-	elseif blackList.mode == nil then
-		for i=1, #blackList do
-			local tmp = {}
-			for j=1, #entities do
-				if entities[j].Type ~= blackList[i] then
-					 table.insert(tmp, 1, entities[j])
-				end
-			end
-			entities = tmp
-		end
-	else
-		blackList.mode = nil
-		goto redo
-	end
-	
-	for i = 1, #entities do
-		for j = 1, #whiteList do
-			if (entities[i].Index ~= sourceEnt.Index and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j])) then
-				if (smallestDist == nil or sourceEnt.Position:Distance(entities[i].Position) < smallestDist) then
-					smallestDist = sourceEnt.Position:Distance(entities[i].Position);
-					nearestEnt = entities[i];
-				end
-			end
-		end
-	end
-	
-	if (nearestEnt == nil) then
-		return sourceEnt;
-	else	
-		return nearestEnt;
-	end
-end
-
---returns the furthest enemy
-function Agony:getFurthestEnemy(sourceEnt, whiteList, blackList)
-	whiteList = whiteList or {0}
-	blackList = blackList or {}
-	local entities = Isaac.GetRoomEntities();
-	local largestDist = nil;
-	local furthestEnt = nil;
-	
-	::redo::
-	if blackList.mode == "only_same_ent" then
-		local tmp = {}
-		for i=1, #entities do
-			if entities[i].Type == sourceEnt.Type and entities[i].Variant == sourceEnt.Variant and entities[i].SubType == sourceEnt.SubType then
-				table.insert(tmp, 1, entities[i])
-			end
-		end
-		entities = tmp
-	elseif blackList.mode == "only_whitelist" then
-		local tmp = {}
-		for i=1, #entities do
-			for j=1, #whiteList do
-				if entities[i].Type == whiteList[j] then
-					table.insert(tmp, 1, entities[i])
-				end
-			end
-		end
-		entities = tmp
-	elseif blackList.mode == nil then
-		for i=1, #blackList do
-			local tmp = {}
-			for j=1, #entities do
-				if entities[j].Type ~= blackList[i] then
-					 table.insert(tmp, 1, entities[j])
-				end
-			end
-			entities = tmp
-		end
-	else
-		blackList.mode = nil
-		goto redo
-	end
-	
-	for i = 1, #entities do
-		for j=1, #whiteList do
-			if entities[i].Index ~= sourceEnt.Index and (entities[i]:IsVulnerableEnemy() or entities[i].Type == whiteList[j]) then
-				if (largestDist == nil or sourceEnt.Position:Distance(entities[i].Position) > largestDist) then
-					largestDist = sourceEnt.Position:Distance(entities[i].Position);
-					furthestEnt = entities[i];
-				end
-			end
-		end
-	end
-	
-	if (furthestEnt == nil) then
-		return sourceEnt;
-	else	
-		return furthestEnt;
-	end
-end
 
 --Display Giant Book anim take 2
 function Agony:AnimGiantBook(bookSprite, animName, customAnm2)
@@ -486,61 +239,6 @@ function Agony:removeFriendlyEnemies()
 	end
 end
 
-function Agony:dataCopy(originData,targetData)
-	for k, v in pairs(originData) do
-		targetData[k] = v
-	end
-end
-
---returns the items the player currently has
---a list of items can be specified to check if the player has any of these
-function Agony:getCurrentItems(pool)
-	local itemCfg = Isaac.GetItemConfig()
-	local numCol = #(itemCfg:GetCollectibles())
-	if type(numCol) ~= "number" then
-		numCol = 9999 --Mac seems to have trouble with this number thing
-	end
-	pool = pool or {}
-	local currList = {}
-	local player = Isaac.GetPlayer(0)
-	for id=1, numCol do
-		if itemCfg:GetCollectible(id) ~= nil then
-			if #pool == 0 then
-				if player:HasCollectible(id) then
-					table.insert(currList, id)
-				end
-			else
-				for _, poolId in pairs(pool) do
-					if id == poolId and player:HasCollectible(id) then
-						table.insert(currList, id)
-					end
-				end
-			end
-		end
-	end
-	--debug_tbl1 = currList
-	return currList
-end
-
---these are some Flag manipulation functions, they are similar to the EntityFlags functions
-function Agony:AddFlags(flagSource, flags)
-	return flagSource | flags
-end
-
-function Agony:HasFlags(flagSource, flags)
-	return (flagSource & flags) ~= 0
-end
-
-function Agony:ClearFlags(flagSource, flags)
-	return flagSource & (~flags)
-end
-
---gets the sprite path of a collectible
-function Agony:getItemGfxFromId(id)
-	--id = tonumber(id) or 1
-	local item = Isaac.GetItemConfig():GetCollectible(id)
-	return item.GfxFileName
-end
 
 --loads a custom pedestal sprite
 function Agony:loadCustomPedestal(ped, pType, data, index)
@@ -590,54 +288,6 @@ function Agony:rotateTears()
 			end
 		end
 	end
-end
-
-
-function Agony:TransformationUpdate(player, trans, data, hasCostume)
-	if Game():GetFrameCount() == 1 then
-		trans.hasItem = false
-		trans.Items = {}
-		data.Items = {}
-		Agony:SaveNow()
-	end
-	for i = 1, #trans.requireditems do
-		if player:HasCollectible(trans.requireditems[i]) then
-			local isNew = true
-			for j = 1, #trans.Items do
-				if trans.Items[j] == trans.requireditems[i] then
-					isNew = false 
-				end
-			end
-			if isNew then
-				table.insert(trans.Items, trans.requireditems[i])
-				data.Items = trans.Items
-				Agony:SaveNow()
-			end
-		end
-	end
-	if #trans.Items > 2 then
-		if trans.hasItem ~= true then
-			if hasCostume then
-				player:AddNullCostume(trans.costumeID)
-			end
-			trans.hasItem = true
-			--POOF!
-			local col = Color(255,255,255,255,0,0,0) -- Used to set the poof color
-			col:Reset()
-			Game():SpawnParticles(player.Position, EffectVariant.POOF01, 1, 1, col, 0)
-		end
-	end
-end
-
---returns a velocity an entity must have to get closer to target
---this differs from calcTearVel() by adding small normalized vectors to an existing velocity and normalizing the result instead of just calculating a vector pointing from ent to target
---better suited for enemies because that way knockback has an effect on the enemy
-function Agony:calcEntVel(ent, target, mul)
-	local fMul = 1
-	if ent:HasEntityFlags(EntityFlag.FLAG_FEAR) then
-		fMul = -1
-	end
-	return ent.Velocity:__add(target.Position:__sub(ent.Position):Normalized():__mul(fMul)):Normalized():__mul(mul)
 end
 
 --add a custom PickUp to the PickupHandler
@@ -938,60 +588,6 @@ function Agony:cancelRoomFunctions()
 	end
 end
 
-function Agony:makeSplat(pos, var, size, ent)
-	if size > 1 then
-		local num = 2^(2+size) - 8 --calculate number of spawns
-		local power = 1 --used to know which ring we're on
-		for i=1, num do
-			local sub = 2^(2+power) - 8 --need to clean i of the previous ring's numbers for incPowerTrig
-			local cleanI = i-sub-1
-
-			local splatNum = 2^(2+power) --how many splats the current ring contains
-
-			if cleanI == splatNum then --start new ring
-				power = power+1
-			end
-
-			local step = math.pi*(i/(2+2^power)) --input of sin and cos
-			Isaac.Spawn(EntityType.ENTITY_EFFECT, var, 0, pos:__add(Vector(power*16*math.sin(step),power*16*math.cos(step))), Vector(0,0), ent)
-		end
-	else
-		Isaac.Spawn(EntityType.ENTITY_EFFECT, var, 0, pos, Vector(0,0), ent)
-	end
-end
-
-function Agony:getItemNameFromID(id)
-	--debug_text = tostring(Isaac.GetItemConfig():GetCollectible(id).Name)
-	if id > 0 then
-		return tostring(Isaac.GetItemConfig():GetCollectible(id).Name)
-	else
-		return "zero"
-	end
-end
-
---originally wrote this for rerollLockedItems(), but then I thought of something way better
---[[function Agony:pickRandomCol(rng, poolType, includeLocked) 
-	poolType = poolType or ItemPoolType.POOL_NULL
-
-	--local numCol = #(Isaac.GetItemConfig():GetCollectibles())
-	--if type(numCol) ~= "number" then
-	--	numCol = CollectibleType.NUM_COLLECTIBLES
-	--end
-	-- local col = 0
-
-	local col = Game():GetItemPool():GetCollectible(poolType, false, rng:GetSeed())
-	local colName = Agony:getItemNameFromID(col)
-
-	if not includeLocked then
-		while saveData.lockedItems[colName] do
-			col = Game():GetItemPool():GetCollectible(poolType, false, rng:GetSeed())
-			colName = Agony:getItemNameFromID(col)
-		end
-	end
-
-	return col
-end]]
-
 function Agony:removeLockedItems()
 	local itemPools = Game():GetItemPool()
 	for item, locked in pairs(saveData.lockedItems) do
@@ -1066,15 +662,13 @@ function Agony:triggerUnlockFlag(unlocks, flag)
 	--todo: add unlock animation stuff
 end
 
---Debug
-require("Debug");
+--[[
 --Enemies
 require("code/Monsters/YellowBlock")
 require("code/Monsters/HunchBone")
 require("code/Monsters/FatFly")
 require("code/Monsters/Delusion")
---require("code/Monsters/HauntedSkull")
---Eternals
+
 require("code/Monsters/Eternals/RoundWorm");
 require("code/Monsters/Eternals/Dip");
 require("code/Monsters/Eternals/Squirt");
@@ -1100,7 +694,7 @@ require("code/Monsters/Eternals/Horf");
 require("code/Monsters/Eternals/Spirit");
 --Flaming Alts
 require("code/Monsters/Flaming Alts/core") --load fire damage detection
---require("code/Monsters/Flaming Alts/Clotty")
+
 --Cocoons
 require("code/Monsters/Cocoons/SpiderCocoon")
 require("code/Monsters/Cocoons/ChasingCocoon")
@@ -1111,72 +705,41 @@ require("code/Monsters/Creeps/SickCreep")
 --Bosses
 require("code/Bosses/Joseph");
 --Other entities
--- require("code/Items/Slots/TreasureHoarder");
 require("code/Monsters/PlayerClone");
 
 --Items
 require("code/Items/Collectibles/LuckysPaw");
 require("code/Items/Collectibles/DoubleDown");
 require("code/Items/Collectibles/GrowingAnxiety");
--- require("code/Items/Collectibles/TheBigRock");
--- require("code/Items/Collectibles/GasolineJuicebox");
--- require("code/Items/Collectibles/RadioactivePizza");
--- require("code/Items/Collectibles/Triplopia");
 require("code/Items/Collectibles/TheRock");
--- require("code/Items/Collectibles/VomitCake");
 require("code/Items/Collectibles/Tourette");
 require("code/Items/Collectibles/Runestone");
 require("code/Items/Collectibles/MagicKit");
 require("code/Items/Collectibles/LittleSugarDumdum");
--- require("code/Items/Collectibles/YoureABigGuy");
--- require("code/Items/Collectibles/KnowledgeIsPower");
--- require("code/Items/Collectibles/WrathIsPower");
 require("code/Items/Collectibles/LoadedDice");
 require("code/Items/Collectibles/Hyperactive");
--- require("code/Items/Collectibles/Tantrum");
--- require("code/Items/Collectibles/D3");
 require("code/Items/Collectibles/Cyanide");
---require("");
--- require("code/Items/Collectibles/PyramidHead");
--- require("code/Items/Collectibles/BreadyMold");
---require("code/Items/Collectibles/OvergrownSpine");
---require("");
--- require("code/Items/Collectibles/Tech9000");
 require("code/Items/Collectibles/ElectricHair");
 require("code/Items/Collectibles/TDDUA");
 require("code/Items/Collectibles/PythagoresBody");
 require("code/Items/Collectibles/YeuxRevolver");
--- require("code/Items/Collectibles/PovertyIsPower");
 require("code/Items/Collectibles/BrotherCancer");
 require("code/Items/Collectibles/RememberMeNow");
 require("code/Items/Collectibles/Cornucopia");
 require("code/Items/Collectibles/PandorasChest");
--- require("code/Items/Collectibles/D5");
--- require("code/Items/Collectibles/SpecialOne");
---require("code/Items/Collectibles/TheLudovicoExperiment"); --This needs to be reworked, it's not an interesting item atm
 require("code/Items/Collectibles/Ferrofluid");
--- require("code/Items/Collectibles/LeprechaunsContract");
 require("code/Items/Collectibles/FragileConception");
---require("code/Items/Collectibles/TheLudovicoTheory"); --God damn these Ludovico variation are hard to get right
 require("code/Items/Collectibles/RigidMind")
--- require("code/Items/Collectibles/DiceTattoo")
--- require("code/Items/Collectibles/SomeonesShoe")
 require("code/Items/Collectibles/PersonalBubble")
---require("code/Items/Collectibles/BowlCut")
 require("code/Items/Collectibles/Infestation3")
--- require("code/Items/Collectibles/SpooderBoi")
 require("code/Items/Collectibles/TheWay")
--- require("code/Items/Collectibles/GoldMan")
 require("code/Items/Collectibles/LilRedBook")
 require("code/Items/Collectibles/SacramentalWine")
 require("code/Items/Collectibles/PyriteNugget")
 require("code/Items/Collectibles/IrritatingBracelets")
--- require("code/Items/Collectibles/ProductiveSeizure")
 require("code/Items/Collectibles/BirthdayGift")
 require("code/Items/Collectibles/CashewMilk")
--- require("code/Items/Collectibles/SafeSpace")
 require("code/Items/Collectibles/SocialAnxiety")
--- require("code/Items/Collectibles/Jaundice")
 require("code/Items/Collectibles/Vanity")
 require("code/Items/Collectibles/Placeholder")
 require("code/Items/Collectibles/FathersBlessing")
@@ -1190,8 +753,6 @@ require("code/Items/Collectibles/SmokersLung")
 require("code/Items/Collectibles/StinkEye")
 require("code/Items/Collectibles/TheRootOfAnger")
 require("code/Items/Collectibles/EggBeater")
--- require("code/Items/Collectibles/NutMilk")
---require("code/Items/Collectibles/SoakedRemote")
 require("code/Items/Collectibles/BlindFaith")
 require("code/Items/Collectibles/SaintsHood")
 
@@ -1205,23 +766,16 @@ require("code/Items/Trinkets/SuicideGod");
 require("code/Items/Trinkets/SolomonsCrown");
 require("code/Items/Trinkets/BrokenSpike");
 
---Transformations
--- require("code/Misc/Transformations/God")
--- require("code/Misc/Transformations/MisterBean")
--- require("code/Misc/Transformations/BigD")
--- require("code/Misc/Transformations/Milkman")
+
 
 --Pickups
 --Pills
--- require("code/Items/Pick Ups/Pills/PartyPills");
 --Cards
 require("code/Items/Pick Ups/Cards/Reload")
---require("code/Items/Pick Ups/Cards/LotteryTicket")
 require("code/Items/Pick Ups/Cards/RepairWrench")
 --Coins
 require("code/Items/Pick Ups/Coins/PyriteCoin")
 --Chests
--- require("code/Items/Pick Ups/Chests/Safe")
 --Hearts
 require("code/Items/Pick Ups/Other/Cherry")
 
@@ -1233,25 +787,21 @@ require("code/Familiars/DrunkenFly");
 require("code/Familiars/MetalBaby");
 require("code/Familiars/GoatFetus");
 require("code/Familiars/MommysDemon");
--- require("code/Familiars/SackOfSacksOfSacks");
 require("code/Familiars/TeslaBaby");
 require("code/Familiars/BurntBaby");
 require("code/Familiars/ChestOfChests");
 require("code/Familiars/GrandpaFly");
 require("code/Familiars/BloatedBaby");
--- require("code/Familiars/WaitNo");
 require("code/Familiars/Despair");
 
 --Characters
 require("code/Characters/Hannah")
-
---Extra Bits 2
+]]
 
 --Agony END
 
 --Callbacks
 Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.rotateTears)
-Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.respawnV2)
 Agony:AddCallback(ModCallbacks.MC_POST_RENDER, Agony.renderSprites)
 Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.clearSaveData)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.removeFriendlyEnemies)
@@ -1266,21 +816,20 @@ Agony:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, Agony.removeLockedItems)
 --Agony:AddCallback(ModCallbacks.MC_POST_PEFFECT_UPDATE, Agony.trackUnlockFlags)
 Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.cancelRoomFunctions)
 
---ShaderTest
-shader_test_strength = 0.0
-function Agony:GetShaderParams(shaderName)
-	local params = {
-		Strength = shader_test_strength,
-		Time = Isaac.GetFrameCount() / 30.0
-	}
-	return params;
+
+--/\/\/\/\/\/\/\/\/\/\/\/\--
+--		old code above    --
+local function run()
+	Agony.FW = ExtraFW:addMod(Agony)
+	function upd()
+		debug_text = "test"
+	end
+	Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, upd)
 end
-function Agony:Dmg()
-	shader_test_strength = math.min(8,shader_test_strength + 0.5)
+
+if ExtraFW then
+	run()
+else
+	runExtraFW = runExtraFW or {}
+	runExtraFW[#runExtraFW+1] = run
 end
-function Agony:ShaderParamUpdate()
-	shader_test_strength = math.max(0,shader_test_strength - 0.05)
-end
---Agony:AddCallback(ModCallbacks.MC_GET_SHADER_PARAMS, Agony.GetShaderParams)
---Agony:AddCallback(ModCallbacks.MC_ENTITY_TAKE_DMG, Agony.Dmg)
---Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, Agony.ShaderParamUpdate)
