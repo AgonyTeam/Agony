@@ -821,10 +821,8 @@ Agony:AddCallback(ModCallbacks.MC_POST_NEW_ROOM, Agony.cancelRoomFunctions)
 --		old code above    --
 local function run()
 	Agony.FW = ExtraFW:addMod(Agony)
-	function upd()
-		debug_text = "test"
-	end
-	Agony:AddCallback(ModCallbacks.MC_POST_UPDATE, upd)
+
+	require("code/Bosses/Dross Bros/Slicker")
 end
 
 if ExtraFW then

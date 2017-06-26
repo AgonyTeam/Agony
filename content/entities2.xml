@@ -47,6 +47,9 @@
         <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
         <preload-snd id="143" /> <!-- SOUND_SCARED_WHIMPER -->
     </entity>
+    <entity anm2path="slicker.anm2" reroll="false" baseHP="200" boss="1" champion="0" collisionDamage="2" collisionMass="75" collisionRadius="26" friction="1" id="602" name="Dross Bros" numGridCollisionPoints="12" shadowSize="26" stageHP="0" variant="0" portrait="11" >
+        <gibs amount="12" blood="1" bone="1" eye="1" gut="1" large="1" />
+    </entity>
     <!--/Joseph-->
 	
 	<!--Player Clone-->

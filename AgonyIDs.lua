@@ -161,6 +161,7 @@ EntityType["AGONY_ETYPE_ETERNALS_JUMPING"] = Isaac.GetEntityTypeByName("Eternal 
 EntityType["AGONY_ETYPE_ETERNAL_SPIRIT"] = Isaac.GetEntityTypeByName("Eternal Spirit")
 --Bosses
 EntityType["AGONY_ETYPE_JOSEPH"] = Isaac.GetEntityTypeByName("Joseph")
+EntityType["AGONY_ETYPE_DROSS_BROS"] = Isaac.GetEntityTypeByName("Dross Bros")
 --PlayerTypes
 PlayerType["AGONY_PLAYER_HANNAH"] = Isaac.GetPlayerTypeByName("Hannah")
 --NullCostumes
