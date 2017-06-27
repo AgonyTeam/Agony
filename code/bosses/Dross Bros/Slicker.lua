@@ -1,6 +1,13 @@
 local slicker = {
-	normSpeed = 0.75,
+	normSpeed = 1.5,
 	attackCooldown = 120,
+	shoot1tc = {
+		Functions = {
+			onDeath = function (ref, pos, vel, spEnt, tear)
+				Agony.FW:Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, pos, Vector(0,0), spEnt)
+			end
+		}
+	}
 }
 
 local slickerAI = Agony.FW.Classes.AI()
@@ -32,9 +39,7 @@ end
 
 function slicker.ai_creeptrail(ent, state, rng, data, ai)
 	if ent:IsFrame(6, 0) then
-		local e = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, ent.Position, Vector(0,0), ent)
-		e.SpawnerEntity = ent
-		--note to ded: make this a helper function
+		Agony.FW:Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, ent.Position, Vector(0,0), ent)
 	end
 end
 
@@ -50,7 +55,7 @@ function slicker.ai_attack(ent, state, rng, data, ai)
 		local tl = Game():GetRoom():GetTopLeftPos()
 		local br = Game():GetRoom():GetBottomRightPos()
 
-		if target.Position.X <= ent.Position.X + target.Size/2 and target.Position.X >= ent.Position.X - target.Size/2 and data.targetPos == nil then
+		if target.Position.X <= ent.Position.X + target.Size and target.Position.X >= ent.Position.X - target.Size and data.targetPos == nil then
 			local y
 			if math.abs(tl.Y - target.Position.Y) < math.abs(br.Y - target.Position.Y) then
 				y = tl.Y
@@ -58,7 +63,7 @@ function slicker.ai_attack(ent, state, rng, data, ai)
 				y = br.Y
 			end
 			data.targetPos = Vector(ent.Position.X, y)
-		elseif target.Position.Y <= ent.Position.Y + target.Size/2 and target.Position.Y >= ent.Position.Y - target.Size/2 and data.targetPos == nil then
+		elseif target.Position.Y <= ent.Position.Y + target.Size and target.Position.Y >= ent.Position.Y - target.Size and data.targetPos == nil then
 			local x
 			if math.abs(tl.X - target.Position.X) < math.abs(br.X - target.Position.X) then
 				x = tl.X
@@ -70,7 +75,7 @@ function slicker.ai_attack(ent, state, rng, data, ai)
 		elseif ent:CollidesWithGrid() then
 			Game():ShakeScreen(4)
 			Agony.FW:makeSplat(ent.Position, EffectVariant.CREEP_BLACK, 2.6, ent)
-			slicker.fireMeatballTearProj(ent, rng, 5+rng:RandomInt(5))
+			Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), slicker.shoot1tc, 7 + rng:RandomInt(5), rng)
 			data.targetPos = nil
 			data.stickPos = ent.Position
 			ai:setState(NpcState.STATE_IDLE)
@@ -97,33 +102,9 @@ function slicker.ai_endconfusion(ent, state, rng, data, ai)
 end
 
 function slicker.shoot(ent, state, rng, data, ai) 
- 	if ent:IsFrame(3, 0) then
- 		slicker.fireMeatballTearProj(ent, rng)
+ 	if ent:IsFrame(2, 0) then
+ 		Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), slicker.shoot1tc, 1, rng)
 	end 
-end
-
-function slicker.fireMeatballTearProj(ent, rng, num) --note to ded: improve this and add it to the firetearproj function familiy
-	num = num or 1
-
-	for i=1, num do
-		local speed = 3 + rng:RandomInt(12)/10
-		local dir = Vector.FromAngle(rng:RandomInt(360))
-			
-		local tc = {
-			SpawnerEntity = ent,
-			FallingAcceleration = 0.5,
-			FallingSpeed = (-10 - rng:RandomInt(20)),
-			Scale = (1 + (rng:RandomInt(5)-2)/6),
-			Functions = {
-				onDeath = function (ref, pos, vel, spEnt, tear)
-					local e = Isaac.Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, tear.Position, Vector(0,0), spEnt)
-					e.SpawnerEntity = spEnt
-				end,
-			},
-		}
-
-		Agony.FW:fireTearProj(0, 0, ent.Position, dir * speed, tc)
-	end
 end
 
 function slicker.ai_shootstart(ent, state, rng, data, ai)
