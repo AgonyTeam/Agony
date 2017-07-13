@@ -1,21 +1,14 @@
 local slicker = {
 	normSpeed = 1.5,
 	attackCooldown = 120,
-	shoot1tc = {
-		Functions = {
-			onDeath = function (ref, pos, vel, spEnt, tear)
-				Agony.FW:Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, pos, Vector(0,0), spEnt)
-			end
-		}
-	}
 }
 
 local slickerAI = Agony.FW.Classes.AI()
 
 function slicker.ai_update(ent, state, rng, data, ai)
 	data = data.Agony
-	debug_tbl1 = ai.updateFns
-	debug_tbl2 = ai.eventFns
+	--debug_tbl1 = ai.updateFns
+	--debug_tbl2 = ai.eventFns
 	if data.attackCooldown > 0 and state == NpcState.STATE_MOVE then
 		data.attackCooldown = data.attackCooldown - 1
 	elseif data.attackCooldown == 0 then
@@ -33,7 +26,7 @@ function slicker.ai_move(ent, state, rng, data, ai)
 
 		ent.Velocity = Agony.FW:calcEntVel(ent, targetPos, slicker.normSpeed)
 	elseif (state == NpcState.STATE_IDLE or state == NpcState.STATE_ATTACK2) and data.stickPos ~= nil then --confused state, stick to place
-		ent.Velocity = data.stickPos - ent.Position
+		ent.Velocity = Vector(0,0)--data.stickPos - ent.Position
 	end
 end
 
@@ -54,6 +47,14 @@ function slicker.ai_attack(ent, state, rng, data, ai)
 		local target = ent:GetPlayerTarget()
 		local tl = Game():GetRoom():GetTopLeftPos()
 		local br = Game():GetRoom():GetBottomRightPos()
+		 local tc = {
+			Functions = {
+				onDeath = function (tear)
+					Agony.FW:Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, tear.Position, Vector(0,0), tear.SpawnerEntity)
+				end
+			},
+			SpawnerEntity = ent
+		}
 
 		if target.Position.X <= ent.Position.X + target.Size and target.Position.X >= ent.Position.X - target.Size and data.targetPos == nil then
 			local y
@@ -75,7 +76,7 @@ function slicker.ai_attack(ent, state, rng, data, ai)
 		elseif ent:CollidesWithGrid() then
 			Game():ShakeScreen(4)
 			Agony.FW:makeSplat(ent.Position, EffectVariant.CREEP_BLACK, 2.6, ent)
-			Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), slicker.shoot1tc, 7 + rng:RandomInt(5), rng)
+			Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), tc, 7 + rng:RandomInt(5), rng)
 			data.targetPos = nil
 			data.stickPos = ent.Position
 			ai:setState(NpcState.STATE_IDLE)
@@ -103,7 +104,15 @@ end
 
 function slicker.shoot(ent, state, rng, data, ai) 
  	if ent:IsFrame(2, 0) then
- 		Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), slicker.shoot1tc, 1, rng)
+ 		local tc = {
+			Functions = {
+				onDeath = function (tear)
+					Agony.FW:Spawn(EntityType.ENTITY_EFFECT, EffectVariant.CREEP_BLACK, 0, tear.Position, Vector(0,0), tear.SpawnerEntity)
+				end
+			},
+			SpawnerEntity = ent
+		}
+ 		Agony.FW:fireMeatballTearProj(0, 0, ent.Position, Vector(0, 3.5), tc, 1, rng)
 	end 
 end
 
@@ -143,4 +152,3 @@ slickerAI:addFn(Agony.FW.fnTypes.EVENT, slicker.ai_shootstart, "ShootStart")
 slickerAI:addFn(Agony.FW.fnTypes.EVENT, slicker.ai_endshoot, "ShootEnd")
 
 Agony.FW:addNPC(slickerAI, EntityType.AGONY_ETYPE_DROSS_BROS, 0)
-Agony.FW:addNPC(slickerAI, EntityType.AGONY_ETYPE_DROSS_BROS, 1)
