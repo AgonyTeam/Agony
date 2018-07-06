@@ -1,6 +1,6 @@
 
 
-# The Agony of Isaac
+# The Agony of Isaac (Development on halt)
 
                                                                                                                                                                                                                              
 
